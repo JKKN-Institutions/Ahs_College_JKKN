@@ -21,7 +21,8 @@ export const config = {
      * - favicon.ico (favicon file)
      * - robots.txt (SEO crawler instructions)
      * - sitemap.xml (SEO sitemap)
+     * - google*.html (Google Search Console verification files)
      */
-    '/((?!_next/static|_next/image|favicon.ico|robots.txt|sitemap.xml).*)',
+    '/((?!_next/static|_next/image|favicon.ico|robots.txt|sitemap.xml|google.*\\.html).*)',
   ],
 };
