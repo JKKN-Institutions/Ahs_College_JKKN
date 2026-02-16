@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { ArrowRight, Play, CheckCircle2 } from 'lucide-react';
 
@@ -30,7 +31,7 @@ export function Hero() {
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8 }}
+                        transition={{ duration: 0.3, ease: "easeOut" }}
                     >
                         <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md px-3 sm:px-4 py-1.5 rounded-full text-white text-xs font-semibold mb-3 sm:mb-4 border border-white/30 shadow-lg">
                             <span className="bg-[#ffde59] text-[#0b6d41] px-2 py-0.5 rounded-full text-xs font-bold uppercase tracking-wider">New</span>
@@ -83,12 +84,21 @@ export function Hero() {
                     <motion.div
                         initial={{ opacity: 0, x: 50 }}
                         animate={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 1 }}
+                        transition={{ duration: 0.4, ease: "easeOut" }}
                         className="relative mt-6 lg:mt-0"
                     >
                         <div className="relative z-10 rounded-2xl sm:rounded-3xl overflow-hidden shadow-[0_20px_40px_-12px_rgba(11,109,65,0.2)] border-4 sm:border-6 border-white/50 backdrop-blur-md max-w-sm lg:max-w-md mx-auto lg:mx-0">
-                            <div className="aspect-[5/4] lg:aspect-[4/3] bg-gray-100">
-                                <img src="/allied-health-science-hero.png" alt="Allied Health Science - JKKN College" className="w-full h-full object-cover" />
+                            <div className="aspect-[5/4] lg:aspect-[4/3] bg-gray-100 relative">
+                                <Image
+                                    src="/allied-health-science-hero.png"
+                                    alt="Allied Health Science - JKKN College"
+                                    fill
+                                    priority
+                                    placeholder="blur"
+                                    blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiMwYjZkNDEiLz48L3N2Zz4="
+                                    sizes="(max-width: 768px) 100vw, 50vw"
+                                    className="object-cover"
+                                />
                             </div>
                         </div>
 
@@ -127,7 +137,7 @@ export function Hero() {
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.6, duration: 0.8 }}
+                    transition={{ delay: 0.3, duration: 0.3, ease: "easeOut" }}
                     className="mt-5 sm:mt-6 lg:mt-8 bg-white/95 backdrop-blur-xl rounded-xl sm:rounded-2xl shadow-2xl p-3 sm:p-4 grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 border border-white/20"
                 >
                     <div className="flex items-start gap-2 sm:gap-3">

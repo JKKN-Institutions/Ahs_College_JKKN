@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { CheckCircle2 } from 'lucide-react';
 import { BRAND_LEGACY } from '@/lib/constants';
@@ -56,11 +57,15 @@ export function AboutSection() {
                         className="lg:w-1/2 relative mt-8 lg:mt-0 w-full"
                     >
                         <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl">
-                            <div className="aspect-[4/3] bg-gray-200">
-                                <img
+                            <div className="aspect-[4/3] bg-gray-200 relative">
+                                <Image
                                     src="/allied-health-science-about.png"
                                     alt="JKKN Allied Health Sciences College Laboratory"
-                                    className="w-full h-full object-cover"
+                                    fill
+                                    placeholder="blur"
+                                    blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiMwYjZkNDEiLz48L3N2Zz4="
+                                    sizes="(max-width: 768px) 100vw, 50vw"
+                                    className="object-cover"
                                 />
                             </div>
                         </div>

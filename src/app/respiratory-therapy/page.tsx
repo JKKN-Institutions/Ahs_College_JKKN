@@ -73,8 +73,11 @@ function HeroSection() {
                             src="/images/departments/respiratory-therapy-hero.png"
                             alt="Respiratory Therapy Department"
                             fill
-                            className="object-cover group-hover:scale-105 transition-transform duration-700"
                             priority
+                            placeholder="blur"
+                            blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiMwYjZkNDEiLz48L3N2Zz4="
+                            sizes="(max-width: 768px) 100vw, 50vw"
+                            className="object-cover group-hover:scale-105 transition-transform duration-700"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-[#064225] to-transparent opacity-60"></div>
                         <span className="absolute bottom-6 left-6 font-bold text-xl letter-spacing-wide text-white">Respiratory Care Lab</span>
