@@ -17,7 +17,7 @@ export default function AccidentEmergencyCare() {
         <div className="min-h-screen flex flex-col bg-[#fbfbee]">
             <Navbar />
 
-            <main className="flex-grow pt-20">
+            <main className="flex-grow pt-2 md:pt-5">
                 <HeroSection />
                 <StatsSection />
                 <AboutSection />
@@ -38,7 +38,7 @@ export default function AccidentEmergencyCare() {
 // 1. Hero Section
 function HeroSection() {
     return (
-        <section className="bg-[#fbfbee] text-[#0b6d41] py-20 relative overflow-hidden">
+        <section className="bg-[#fbfbee] text-[#0b6d41] pt-2 pb-5 md:py-5 relative overflow-hidden">
             <div className="max-w-7xl mx-auto px-4 relative z-10 flex flex-col md:flex-row gap-12 items-center">
                 <div className="md:w-1/2">
                     <span className="text-[#0b6d41] font-bold tracking-widest uppercase text-xs mb-4 block p-1 bg-[#0b6d41]/10 w-fit rounded">Allied Health Sciences</span>
@@ -99,7 +99,7 @@ function StatsSection() {
     ];
 
     return (
-        <section className="relative z-20 -mt-10 px-4">
+        <section className="relative z-20 -mt-10 px-4 py-10">
             <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4">
                 {stats.map((stat, i) => (
                     <motion.div
@@ -122,7 +122,7 @@ function StatsSection() {
 // 3. About Section with Sidebar
 function AboutSection() {
     return (
-        <section className="py-24 max-w-7xl mx-auto px-4 flex flex-col lg:flex-row gap-16">
+        <section className="py-24 max-w-7xl mx-auto px-4 py-4 flex flex-col lg:flex-row gap-16">
             <div className="lg:w-2/3">
                 <span className="text-[#0b6d41] font-bold tracking-widest uppercase text-xs mb-2 block p-1 bg-[#0b6d41]/10 w-fit rounded">Program Overview</span>
                 <h2 className="text-3xl font-black text-[#0b6d41] mb-6">What is B.Sc Accident & Emergency Care Technology?</h2>
@@ -287,16 +287,18 @@ function SyllabusSection() {
                 <p className="text-gray-500 mt-2">Comprehensive curriculum with strong foundation in emergency medicine and extensive practical training</p>
             </div>
 
-            <div className="flex justify-center flex-wrap gap-4 mb-12 bg-white p-2 rounded-full shadow-md w-fit mx-auto">
-                {years.map(year => (
-                    <button
-                        key={year}
-                        onClick={() => setActiveYear(year)}
-                        className={`px-8 py-3 rounded-full font-bold transition-all ${activeYear === year ? 'bg-[#0b6d41] text-white shadow-lg' : 'text-gray-700 hover:bg-gray-100'}`}
-                    >
-                        {year}
-                    </button>
-                ))}
+            <div className="mb-12 overflow-x-auto px-4 md:px-0">
+                <div className="flex justify-center gap-4 bg-white p-2 rounded-full shadow-md w-fit mx-auto min-w-max">
+                    {years.map(year => (
+                        <button
+                            key={year}
+                            onClick={() => setActiveYear(year)}
+                            className={`px-8 py-3 rounded-full font-bold transition-all whitespace-nowrap ${activeYear === year ? 'bg-[#0b6d41] text-white shadow-lg' : 'text-gray-700 hover:bg-gray-100'}`}
+                        >
+                            {year}
+                        </button>
+                    ))}
+                </div>
             </div>
 
             <motion.div
@@ -320,9 +322,8 @@ function SyllabusSection() {
                                             <div className={`w-2 h-2 rounded-full shrink-0 ${type === 'THEORY + PRACTICAL' ? 'bg-purple-600' : 'bg-orange-500'}`}></div>
                                             <span className="font-medium text-[15px]">{sub.name}</span>
                                         </div>
-                                        <span className={`text-[10px] uppercase font-bold px-3 py-1.5 rounded-md whitespace-nowrap tracking-wide ${
-                                            type === 'THEORY + PRACTICAL' ? 'bg-green-100 text-green-700' : 'bg-blue-100 text-blue-700'
-                                        }`}>
+                                        <span className={`text-[10px] uppercase font-bold px-3 py-1.5 rounded-md whitespace-nowrap tracking-wide ${type === 'THEORY + PRACTICAL' ? 'bg-green-100 text-green-700' : 'bg-blue-100 text-blue-700'
+                                            }`}>
                                             {type}
                                         </span>
                                     </li>

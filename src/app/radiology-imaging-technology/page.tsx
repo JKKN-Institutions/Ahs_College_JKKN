@@ -286,16 +286,18 @@ function SyllabusSection() {
                 <p className="text-gray-500 mt-2">Comprehensive curriculum with strong foundation in radiological sciences and extensive practical training</p>
             </div>
 
-            <div className="flex justify-center flex-wrap gap-4 mb-12 bg-white p-2 rounded-full shadow-md w-fit mx-auto">
-                {years.map(year => (
-                    <button
-                        key={year}
-                        onClick={() => setActiveYear(year)}
-                        className={`px-8 py-3 rounded-full font-bold transition-all ${activeYear === year ? 'bg-[#0b6d41] text-white shadow-lg' : 'text-gray-700 hover:bg-gray-100'}`}
-                    >
-                        {year}
-                    </button>
-                ))}
+            <div className="mb-12 overflow-x-auto px-4 md:px-0">
+                <div className="flex justify-center gap-4 bg-white p-2 rounded-full shadow-md w-fit mx-auto min-w-max">
+                    {years.map(year => (
+                        <button
+                            key={year}
+                            onClick={() => setActiveYear(year)}
+                            className={`px-8 py-3 rounded-full font-bold transition-all whitespace-nowrap ${activeYear === year ? 'bg-[#0b6d41] text-white shadow-lg' : 'text-gray-700 hover:bg-gray-100'}`}
+                        >
+                            {year}
+                        </button>
+                    ))}
+                </div>
             </div>
 
             <motion.div
@@ -311,18 +313,18 @@ function SyllabusSection() {
                     </div>
 
                     {/* Table Header */}
-                    <div className="grid grid-cols-[1fr_120px_120px] gap-4 px-8 py-4 bg-gray-50 border-b border-gray-200">
-                        <div className="font-bold text-[#0b6d41] text-sm uppercase tracking-wide">Subject</div>
-                        <div className="font-bold text-[#0b6d41] text-sm uppercase tracking-wide text-center">Theory</div>
-                        <div className="font-bold text-[#0b6d41] text-sm uppercase tracking-wide text-center">Practical</div>
+                    <div className="grid grid-cols-[1fr_80px_80px] md:grid-cols-[1fr_120px_120px] gap-2 md:gap-4 px-4 md:px-8 py-4 bg-gray-50 border-b border-gray-200">
+                        <div className="font-bold text-[#0b6d41] text-xs md:text-sm uppercase tracking-wide">Subject</div>
+                        <div className="font-bold text-[#0b6d41] text-xs md:text-sm uppercase tracking-wide text-center">Theory</div>
+                        <div className="font-bold text-[#0b6d41] text-xs md:text-sm uppercase tracking-wide text-center">Practical</div>
                     </div>
 
                     {/* Table Body */}
-                    <div className="p-8 bg-[#fbfbee]">
+                    <div className="p-4 md:p-8 bg-[#fbfbee]">
                         <div className="space-y-3">
                             {(syllabus as any)[activeYear].subjects.map((sub: any, idx: number) => (
-                                <div key={idx} className="grid grid-cols-[1fr_120px_120px] gap-4 items-center py-3 border-b border-gray-200 last:border-0">
-                                    <div className="font-medium text-gray-800 text-[15px]">{sub.name}</div>
+                                <div key={idx} className="grid grid-cols-[1fr_80px_80px] md:grid-cols-[1fr_120px_120px] gap-2 md:gap-4 items-start py-3 border-b border-gray-200 last:border-0">
+                                    <div className="font-medium text-gray-800 text-sm md:text-[15px] break-words leading-snug">{sub.name}</div>
                                     <div className="text-center">
                                         {sub.hasTheory ? (
                                             <span className="inline-block px-4 py-1.5 bg-green-100 text-green-700 text-xs font-bold rounded-md">YES</span>

@@ -14,16 +14,6 @@ export default function AcademicCalendar() {
 
             <main className="flex-grow pt-4 md:pt-20 lg:pt-32 pb-20">
                 <div className="max-w-7xl mx-auto px-4">
-                    {/* Back to Home Link */}
-                    <div className="mb-8">
-                        <Link
-                            href="/"
-                            className="inline-flex items-center gap-2 text-primary font-bold hover:underline"
-                        >
-                            <ArrowLeft className="w-4 h-4" /> Back to Home
-                        </Link>
-                    </div>
-
                     {/* Page Title */}
                     <motion.div
                         initial={{ opacity: 0, y: -20 }}

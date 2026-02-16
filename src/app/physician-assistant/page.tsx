@@ -308,20 +308,22 @@ function SyllabusSection() {
             </div>
 
             {/* Year Tabs */}
-            <div className="flex justify-center flex-wrap gap-4 mb-12 bg-white p-2 rounded-full shadow-md w-fit mx-auto">
-                {years.map(year => (
-                    <button
-                        key={year}
-                        onClick={() => setActiveYear(year)}
-                        className={`px-8 py-3 rounded-full font-bold transition-all ${
-                            activeYear === year
-                                ? 'bg-[#0b6d41] text-white shadow-lg'
-                                : 'text-gray-700 hover:bg-gray-100'
-                        }`}
-                    >
-                        {year}
-                    </button>
-                ))}
+            <div className="mb-12 overflow-x-auto px-4 md:px-0">
+                <div className="flex justify-center gap-4 bg-white p-2 rounded-full shadow-md w-fit mx-auto min-w-max">
+                    {years.map(year => (
+                        <button
+                            key={year}
+                            onClick={() => setActiveYear(year)}
+                            className={`px-8 py-3 rounded-full font-bold transition-all whitespace-nowrap ${
+                                activeYear === year
+                                    ? 'bg-[#0b6d41] text-white shadow-lg'
+                                    : 'text-gray-700 hover:bg-gray-100'
+                            }`}
+                        >
+                            {year}
+                        </button>
+                    ))}
+                </div>
             </div>
 
             {/* Curriculum Content */}
@@ -347,15 +349,15 @@ function SyllabusSection() {
                                     className="flex items-start justify-between gap-6 group"
                                 >
                                     {/* Paper Name with Purple Bullet */}
-                                    <div className="flex items-start gap-4 flex-1">
+                                    <div className="flex items-start gap-3 md:gap-4 flex-1 min-w-0">
                                         <div className="w-3 h-3 rounded-full bg-purple-500 mt-1.5 shrink-0"></div>
-                                        <p className="text-gray-800 font-medium leading-relaxed">
+                                        <p className="text-gray-800 font-medium leading-relaxed text-sm md:text-base break-words">
                                             {paper.name}
                                         </p>
                                     </div>
 
                                     {/* Tag */}
-                                    <span className="px-4 py-2 bg-[#d4f4dd] text-[#0b6d41] text-xs font-bold rounded-lg whitespace-nowrap shrink-0">
+                                    <span className="px-3 md:px-4 py-2 bg-[#d4f4dd] text-[#0b6d41] text-[10px] md:text-xs font-bold rounded-lg whitespace-nowrap shrink-0">
                                         {paper.tag}
                                     </span>
                                 </div>

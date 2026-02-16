@@ -15,16 +15,6 @@ export default function Library() {
 
             <main className="flex-grow pt-4 md:pt-20 lg:pt-24 pb-20">
                 <div className="max-w-7xl mx-auto px-4">
-                    {/* Breadcrumb / Back Link */}
-                    <div className="mb-8">
-                        <Link
-                            href="/"
-                            className="inline-flex items-center gap-2 text-[#0b6d41] font-bold hover:underline transition-all"
-                        >
-                            <ArrowLeft className="w-4 h-4" /> Back to Home
-                        </Link>
-                    </div>
-
                     {/* Header Section */}
                     <div className="text-center mb-12 sm:mb-14 md:mb-16 relative px-4">
                         <motion.div

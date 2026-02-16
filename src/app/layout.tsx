@@ -10,8 +10,15 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "JKKN Allied Health Sciences",
-  description: "Welcome to JKKN Allied Health Sciences Website",
+  title: "Best Allied Health Science Colleges in Tamilnadu | JKKN",
+  description: "JKKN is among the best allied health science colleges in Tamilnadu. Explore BSc allied health science courses with clinical training. Admissions 2026-27 open!",
+  keywords: [
+    "best allied health science colleges in tamilnadu",
+    "allied health science courses in tamilnadu",
+    "bsc allied health science colleges in tamilnadu",
+    "top 10 allied health science colleges in tamilnadu",
+    "bsc allied health science courses in tamilnadu"
+  ],
   icons: {
     icon: "/ahs-logo.svg",
   },

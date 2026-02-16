@@ -69,22 +69,6 @@ export default function VisionMission() {
 
             <main className="flex-grow pt-4 md:pt-20 lg:pt-32 pb-20">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    {/* Back Button */}
-                    <motion.div
-                        initial={{ opacity: 0, x: -20 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.5 }}
-                        className="mb-12"
-                    >
-                        <Link
-                            href="/"
-                            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/60 backdrop-blur-sm border border-white/20 text-[#0b6d41] font-semibold hover:bg-white/80 hover:shadow-lg transition-all duration-300 group"
-                        >
-                            <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
-                            Back to Home
-                        </Link>
-                    </motion.div>
-
                     {/* Hero Section */}
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}

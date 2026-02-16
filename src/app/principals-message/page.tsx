@@ -15,16 +15,6 @@ export default function PrincipalsMessage() {
 
             <main className="flex-grow pt-4 md:pt-20 lg:pt-24 pb-16">
                 <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-                    {/* Back Link */}
-                    <div className="mb-8">
-                        <Link
-                            href="/"
-                            className="inline-flex items-center gap-2 text-[#0b6d41] font-bold hover:underline transition-all"
-                        >
-                            <ArrowLeft className="w-4 h-4" /> Back to Home
-                        </Link>
-                    </div>
-
                     {/* Main Content Card */}
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}

@@ -293,16 +293,18 @@ function SyllabusSection() {
                 <p className="text-gray-500 mt-2">Comprehensive curriculum with strong foundation in health information management and extensive practical training</p>
             </div>
 
-            <div className="flex justify-center flex-wrap gap-4 mb-12 bg-white p-2 rounded-full shadow-md w-fit mx-auto">
-                {years.map(year => (
-                    <button
-                        key={year}
-                        onClick={() => setActiveYear(year)}
-                        className={`px-8 py-3 rounded-full font-bold transition-all ${activeYear === year ? 'bg-[#0b6d41] text-white shadow-lg' : 'text-gray-700 hover:bg-gray-100'}`}
-                    >
-                        {year}
-                    </button>
-                ))}
+            <div className="mb-12 overflow-x-auto px-4 md:px-0">
+                <div className="flex justify-center gap-4 bg-white p-2 rounded-full shadow-md w-fit mx-auto min-w-max">
+                    {years.map(year => (
+                        <button
+                            key={year}
+                            onClick={() => setActiveYear(year)}
+                            className={`px-8 py-3 rounded-full font-bold transition-all whitespace-nowrap ${activeYear === year ? 'bg-[#0b6d41] text-white shadow-lg' : 'text-gray-700 hover:bg-gray-100'}`}
+                        >
+                            {year}
+                        </button>
+                    ))}
+                </div>
             </div>
 
             <motion.div
@@ -321,12 +323,12 @@ function SyllabusSection() {
                             {(syllabus as any)[activeYear].subjects.map((sub: any, idx: number) => {
                                 const type = getSubjectType(sub.hasTheory, sub.hasPractical);
                                 return (
-                                    <li key={idx} className="flex items-center justify-between gap-4 text-gray-800 py-2">
-                                        <div className="flex items-center gap-3 flex-1">
-                                            <div className={`w-2 h-2 rounded-full shrink-0 ${type === 'THEORY + PRACTICAL' ? 'bg-purple-600' : 'bg-orange-500'}`}></div>
-                                            <span className="font-medium text-[15px]">{sub.name}</span>
+                                    <li key={idx} className="flex items-start justify-between gap-3 md:gap-4 text-gray-800 py-2">
+                                        <div className="flex items-start gap-2 md:gap-3 flex-1 min-w-0">
+                                            <div className={`w-2 h-2 rounded-full shrink-0 mt-1.5 ${type === 'THEORY + PRACTICAL' ? 'bg-purple-600' : 'bg-orange-500'}`}></div>
+                                            <span className="font-medium text-sm md:text-[15px] break-words leading-snug">{sub.name}</span>
                                         </div>
-                                        <span className={`text-[10px] uppercase font-bold px-3 py-1.5 rounded-md whitespace-nowrap tracking-wide ${
+                                        <span className={`text-[9px] md:text-[10px] uppercase font-bold px-2 md:px-3 py-1.5 rounded-md whitespace-nowrap tracking-wide shrink-0 ${
                                             type === 'THEORY + PRACTICAL' ? 'bg-green-100 text-green-700' : 'bg-blue-100 text-blue-700'
                                         }`}>
                                             {type}
@@ -522,18 +524,18 @@ function CTASection() {
                     <h2 className="text-3xl md:text-4xl font-black mb-2">Ready to Start Your Career in Medical Record Science?</h2>
                     <p className="font-medium opacity-90 text-[#0b6d41]">Join JKKN College and become a skilled health information management professional.</p>
                 </div>
-                <div className="flex flex-nowrap gap-3 items-center justify-center shrink-0">
+                <div className="flex flex-nowrap gap-2 items-center justify-center shrink-0">
                     <a
                         href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="px-6 md:px-8 py-3 bg-[#0b6d41] text-white rounded-full font-bold shadow-lg hover:bg-opacity-90 transition-colors whitespace-nowrap text-sm md:text-base"
+                        className="px-4 md:px-6 py-2.5 md:py-3 bg-[#0b6d41] text-white rounded-full font-bold shadow-lg hover:bg-opacity-90 transition-colors whitespace-nowrap text-xs md:text-sm"
                     >
                         Apply Now
                     </a>
                     <a
                         href="tel:91 9345855001"
-                        className="px-6 md:px-8 py-3 border-2 border-[#0b6d41] text-[#0b6d41] rounded-full font-bold hover:bg-[#0b6d41] hover:text-white transition-colors whitespace-nowrap text-sm md:text-base"
+                        className="px-4 md:px-6 py-2.5 md:py-3 border-2 border-[#0b6d41] text-[#0b6d41] rounded-full font-bold hover:bg-[#0b6d41] hover:text-white transition-colors whitespace-nowrap text-xs md:text-sm"
                     >
                         Contact Admissions
                     </a>
