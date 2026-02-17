@@ -23,6 +23,6 @@ export const config = {
      * - sitemap.xml (SEO sitemap)
      * - google*.html (Google Search Console verification files)
      */
-    '/((?!_next/static|_next/image|favicon.ico|robots.txt|sitemap.xml|google.*\\.html).*)',
+    '/((?!_next/static|_next/image|favicon.ico|robots.txt|sitemap.*\\.xml|google.*\\.html).*)',
   ],
 };
