@@ -159,7 +159,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(collegeSchema) }}
         />
       </head>
-      <body className={`${poppins.variable} antialiased`}>
+      <body className={`${poppins.variable} antialiased`} suppressHydrationWarning>
         {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe
