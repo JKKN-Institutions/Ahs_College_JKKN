@@ -66,6 +66,77 @@ const breadcrumbSchema = {
   ]
 };
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is B.Sc Physician Assistant?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "B.Sc Physician Assistant is a 3 years + 1 year internship program that trains healthcare professionals to work alongside physicians in clinical settings. Physician Assistants are skilled in patient assessment, diagnosis support, medical procedures, treatment planning, and patient care management across various medical specialties including general medicine, surgery, emergency care, and community health."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the eligibility criteria?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Candidates must have passed +2 with Physics, Chemistry, and Biology with minimum 50% aggregate marks (45% for reserved categories). Minimum age is 17 years as on December 31st of the admission year. A medical fitness certificate is also required."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the salary of a Physician Assistant in India?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Entry-level Physician Assistants earn ₹3-5 lakhs per annum. With 3-5 years of experience, salaries range from ₹6-10 lakhs. Senior Physician Assistants and those in specialized roles at corporate hospitals can earn ₹12-20 lakhs per annum. International opportunities offer significantly higher packages."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the career opportunities?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Graduates can work as Clinical Physician Assistant, Emergency Care Assistant, Surgical Assistant, ICU/Critical Care Assistant, OPD Coordinator, Community Health Officer, Primary Care Provider, and Clinical Research Associate in hospitals, clinics, community health centers, and pharmaceutical companies."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is B.Sc Physician Assistant a good career choice?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, B.Sc Physician Assistant is an excellent career choice due to growing demand for mid-level healthcare providers in India, competitive salaries, diverse work environments, opportunities for specialization, and the fulfilling nature of patient care. With India's expanding healthcare infrastructure, PAs are increasingly recognized as vital healthcare team members."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I pursue higher education after this course?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, graduates can pursue M.Sc in Physician Assistant Studies, M.Sc in Clinical Medicine, M.Sc in Public Health (MPH), MBA in Healthcare Management, or specialized certifications in Emergency Medicine, Critical Care, or specific medical specialties for advanced career opportunities."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What practical training is included?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The program includes 2000+ hours of clinical training across OPD, emergency departments, ICU, operation theaters, and community health settings with hands-on experience in patient assessment, medical procedures, diagnostic interpretations, and clinical rotations in multiple specialties including medicine, surgery, pediatrics, and emergency care."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between a Physician Assistant and a Doctor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Physician Assistants practice medicine under the supervision of physicians. While doctors have independent practice rights, PAs work as part of a healthcare team. PAs can diagnose, treat, and prescribe medications but always collaborate with physicians for complex cases. The 4-year PA program focuses on clinical practice, while medical doctors complete 5.5 years of MBBS."
+      }
+    }
+  ]
+};
+
 export default function PhysicianAssistantLayout({
   children,
 }: {
@@ -80,6 +151,10 @@ export default function PhysicianAssistantLayout({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       {children}
     </>

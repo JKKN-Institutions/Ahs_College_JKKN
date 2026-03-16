@@ -219,6 +219,17 @@ export function getMobileNavLinks(pathname: string): MenuGroup[] {
       ]
     },
     {
+      groupLabel: 'Blog',
+      menus: [
+        {
+          href: '/blog',
+          label: 'Blog',
+          icon: FileText,
+          active: pathname === '/blog' || pathname.startsWith('/blog/')
+        }
+      ]
+    },
+    {
       groupLabel: 'Contact',
       menus: [
         {

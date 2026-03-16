@@ -64,6 +64,77 @@ const breadcrumbSchema = {
   ]
 };
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is B.Sc Dialysis Technology?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "B.Sc Dialysis Technology is a 3 years + 1 year internship program that trains professionals in renal replacement therapy. It covers hemodialysis, peritoneal dialysis, water treatment systems, vascular access management, patient care, and dialysis unit operations. Graduates become qualified to operate dialysis equipment and provide critical care to patients with kidney failure."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the eligibility criteria?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Candidates must have passed 10+2 with Physics, Chemistry, and Biology with minimum 50% aggregate marks (45% for reserved categories). Minimum age is 17 years as on December 31st of the admission year. A medical fitness certificate is also required."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the salary of a Dialysis Technologist?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Entry-level dialysis technologists earn ₹2.5-4 lakhs per annum. With 3-5 years experience, salaries range from ₹5-10 lakhs. Senior positions like Dialysis Unit Supervisors or Coordinators in corporate hospitals offer ₹12-20 lakhs per annum. International opportunities offer even higher remuneration."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the career opportunities?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Graduates can work as Dialysis Technicians, Hemodialysis Specialists, Peritoneal Dialysis Technicians, Renal Care Coordinators, Dialysis Unit Supervisors, and Research Associates in hospitals, standalone dialysis centers, nephrology departments, and research institutions. There are also opportunities in medical equipment companies and healthcare consulting."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I pursue higher education after this course?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, graduates can pursue M.Sc in Dialysis Technology, M.Sc in Renal Sciences, M.Sc in Medical Technology, MBA in Healthcare Management, or specialized certifications in advanced dialysis techniques like CRRT (Continuous Renal Replacement Therapy) for enhanced career opportunities."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What practical training is included?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The program includes 2000+ hours of clinical training in hemodialysis units, peritoneal dialysis centers, and nephrology departments with hands-on experience in machine operations, vascular access cannulation, patient monitoring, water treatment system management, and emergency response procedures."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there a demand for Dialysis Technologists in India?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, the demand is rapidly growing. India has over 2 lakh patients requiring regular dialysis, with the number increasing by 10-15% annually due to rising diabetes and hypertension cases. The government's initiatives to establish dialysis centers in every district further increase employment opportunities. Globally, the dialysis market is expected to reach $135 billion by 2028."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between Hemodialysis and Peritoneal Dialysis?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hemodialysis uses an external machine to filter blood through a dialyzer, typically performed at a dialysis center 3 times weekly for 4 hours. Peritoneal Dialysis uses the patient's peritoneal membrane as a natural filter, with dialysate fluid introduced into the abdomen. It can be done at home daily. Our program covers both modalities comprehensively."
+      }
+    }
+  ]
+};
+
 export default function DialysisTechnologyLayout({
   children,
 }: {
@@ -78,6 +149,10 @@ export default function DialysisTechnologyLayout({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       {children}
     </>

@@ -83,6 +83,11 @@ const collegeSchema = {
     "postalCode": "638183",
     "addressCountry": "IN"
   },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "11.445190",
+    "longitude": "77.726549"
+  },
   "sameAs": [
     "https://www.facebook.com/jkknallied",
     "https://www.instagram.com/jkknallied/",
@@ -119,10 +124,16 @@ const collegeSchema = {
     { "@type": "Organization", "name": "Department of Medical Record Science" },
     { "@type": "Organization", "name": "Department of Accident and Emergency Care Technology" }
   ],
-  "areaServed": {
-    "@type": "State",
-    "name": "Tamil Nadu"
-  },
+  "areaServed": [
+    { "@type": "City", "name": "Erode" },
+    { "@type": "City", "name": "Salem" },
+    { "@type": "City", "name": "Namakkal" },
+    { "@type": "City", "name": "Tiruchengode" },
+    { "@type": "City", "name": "Coimbatore" },
+    { "@type": "City", "name": "Tiruppur" },
+    { "@type": "AdministrativeArea", "name": "Namakkal District" },
+    { "@type": "State", "name": "Tamil Nadu" }
+  ],
   "knowsAbout": [
     "Allied Health Sciences",
     "Cardiac Technology",

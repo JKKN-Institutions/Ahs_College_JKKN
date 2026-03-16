@@ -72,6 +72,53 @@ const breadcrumbSchema = {
   ]
 };
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is B.Sc Cardiac Technology?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "B.Sc Cardiac Technology is an allied health science course that deals with the diagnosis and treatment of heart-related problems using advanced medical equipment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the eligibility criteria?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Students must have passed 10+2 with Physics, Chemistry, and Biology/Maths with a minimum of 50% aggregate marks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the scope of Cardiac Technology?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Scope is vast, including roles in hospitals, cath labs, cardiac rehabilitation centers, and medical device companies."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the career opportunities?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Graduates can work as Cardiovascular Technologists, Echo Technicians, Cath Lab Technicians, and Application Specialists."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I pursue higher education after this course?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, you can pursue M.Sc in Cardiac Technology or other varied specializations in public health or hospital administration."
+      }
+    }
+  ]
+};
+
 export default function CardiacTechnologyLayout({
   children,
 }: {
@@ -86,6 +133,10 @@ export default function CardiacTechnologyLayout({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       {children}
     </>

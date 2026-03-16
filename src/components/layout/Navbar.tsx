@@ -27,7 +27,7 @@ const navLinks: NavLink[] = [
     },
     {
         name: 'DEPARTMENTS',
-        href: '#',
+        href: '/departments',
         submenu: [
             { name: 'B.SC - Accident and Emergency Care Technology', href: '/accident-emergency-care' },
             { name: 'B.SC - Cardiac Technology', href: '/cardiac-technology' },
@@ -65,6 +65,7 @@ const navLinks: NavLink[] = [
             { name: 'Academic Calendar', href: '/academic-calendar' }
         ]
     },
+    { name: 'BLOG', href: '/blog' },
     { name: 'CONTACT', href: '/contact' },
 ];
 

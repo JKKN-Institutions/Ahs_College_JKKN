@@ -62,6 +62,77 @@ const breadcrumbSchema = {
   ]
 };
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is B.Sc Medical Record Science?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "B.Sc Medical Record Science is a 3 years + 1 year internship program that trains professionals in health information management, medical coding, ICD classification, health records administration, healthcare data analytics, and hospital information systems. Graduates manage patient health records and ensure data accuracy for quality healthcare delivery."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the eligibility criteria?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Candidates must have passed 10+2 with Physics, Chemistry, and Biology/Mathematics with minimum 50% aggregate marks (45% for reserved categories). Minimum age is 17 years as on December 31st of the admission year."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the salary of a Medical Record Science professional?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Entry-level medical record technicians earn ₹2.5-4 lakhs per annum. With experience, salaries range from ₹5-10 lakhs. Senior Health Information Managers and Certified Coders in corporate hospitals, insurance companies, and international organizations earn ₹12-20 lakhs per annum."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the career opportunities?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Graduates can work as Medical Record Technician, Health Information Manager, Medical Coder, Clinical Data Analyst, Medical Transcriptionist, Quality Assurance Officer, Medical Auditor, and Healthcare IT Specialist in hospitals, diagnostic centers, insurance companies, pharmaceutical firms, and healthcare IT organizations."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is medical coding covered in this course?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, comprehensive medical coding training is a core component of the program. Students learn ICD-10 coding for diagnoses, CPT coding for procedures, and other classification systems like ICD-O for oncology. The curriculum includes extensive hands-on practice with real medical records and coding scenarios."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I work abroad after this course?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, medical record science professionals are in high demand globally. Countries like USA, UK, Canada, Australia, and Gulf nations hire trained medical coders and health information managers. Additional certifications like RHIT (Registered Health Information Technician) or CPC (Certified Professional Coder) increase international job opportunities."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I pursue higher education after this course?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, graduates can pursue M.Sc in Medical Record Science, M.Sc in Health Informatics, MBA in Healthcare Management, or professional certifications like RHIA (Registered Health Information Administrator), CCS (Certified Coding Specialist), or CCA (Certified Coding Associate) for advanced career opportunities."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What practical training is included?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The program includes 2000+ hours of practical training in medical record departments, coding laboratories, health information management systems, and hospital internships. Students gain hands-on experience with electronic health records (EHR), medical coding software, health information systems, and real-world medical record management."
+      }
+    }
+  ]
+};
+
 export default function MedicalRecordScienceLayout({
   children,
 }: {
@@ -76,6 +147,10 @@ export default function MedicalRecordScienceLayout({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       {children}
     </>

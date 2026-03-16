@@ -62,6 +62,61 @@ const breadcrumbSchema = {
   ]
 };
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is B.Sc Critical Care Technology?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "B.Sc Critical Care Technology is a 3 years + 1 year internship undergraduate degree that trains professionals in intensive care unit (ICU) management, ventilator support, hemodynamic monitoring, advanced life support systems, dialysis technology, and emergency care. Graduates are equipped to work in ICUs, trauma centers, and emergency departments."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the eligibility criteria?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Candidates must have passed 10+2 with Physics, Chemistry, and Biology/Mathematics with minimum 50% aggregate marks (45% for reserved categories). Minimum age is 17 years as on December 31st of the admission year."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the salary of a Critical Care Technologist?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Entry-level critical care technologists earn ₹3-5 lakhs per annum. With experience, salaries range from ₹6-12 lakhs. Senior positions in corporate hospitals and specialized ICU units offer ₹15-25 lakhs per annum."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the career opportunities?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Graduates can work as ICU Technician, Ventilator Technician, Emergency Care Specialist, Respiratory Therapist, ECMO Specialist, and Critical Care Coordinator in hospitals, trauma centers, dialysis centers, and emergency care facilities."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I pursue higher education after this course?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, graduates can pursue M.Sc in Critical Care Technology, M.Sc in Emergency Medicine, M.Sc in Respiratory Care, Post Graduate Diploma in Critical Care, or MBA in Healthcare Management for advanced career opportunities."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What practical training is included?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The program includes 2000+ hours of clinical training in ICUs, emergency departments, dialysis units, NICU/PICU, and trauma care centers with hands-on experience in ventilator management, hemodynamic monitoring, and all major critical care procedures."
+      }
+    }
+  ]
+};
+
 export default function CriticalCareTechnologyLayout({
   children,
 }: {
@@ -76,6 +131,10 @@ export default function CriticalCareTechnologyLayout({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       {children}
     </>
