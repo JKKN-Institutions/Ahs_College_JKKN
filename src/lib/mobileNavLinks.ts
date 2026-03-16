@@ -77,7 +77,6 @@ export function getMobileNavLinks(pathname: string): MenuGroup[] {
     },
     {
       groupLabel: 'Departments',
-      mainHref: '/departments',
       menus: [
         {
           href: '/accident-emergency-care',
