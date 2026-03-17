@@ -36,6 +36,50 @@ const CTASection = dynamic(() => import("@/components/sections/CTASection").then
   loading: () => <div className="h-32 bg-gray-50 animate-pulse" />
 });
 
+const howToSchema = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to Apply for B.Sc Allied Health Sciences at JKKN College",
+  "description": "Step-by-step admission process for B.Sc Allied Health Sciences programs at JKKN College of Allied Health Sciences, Komarapalayam, Tamil Nadu. Applications open for 2026-27 academic year.",
+  "totalTime": "P3D",
+  "estimatedCost": {
+    "@type": "MonetaryAmount",
+    "currency": "INR",
+    "value": "500"
+  },
+  "supply": [
+    { "@type": "HowToSupply", "name": "10+2 Mark Sheet (Physics, Chemistry, Biology)" },
+    { "@type": "HowToSupply", "name": "Transfer Certificate (TC)" },
+    { "@type": "HowToSupply", "name": "Community Certificate" },
+    { "@type": "HowToSupply", "name": "Passport-size Photographs" },
+    { "@type": "HowToSupply", "name": "Aadhaar Card" },
+    { "@type": "HowToSupply", "name": "Medical Fitness Certificate" }
+  ],
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "Submit Online Application",
+      "text": "Visit the JKKN admissions portal and fill out the online application form with your personal details, academic qualifications, and preferred B.Sc Allied Health Sciences program. Upload required documents including 10+2 mark sheet, transfer certificate, and passport-size photographs.",
+      "url": "https://admission.jkkn.ac.in/"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "Document Verification",
+      "text": "Submit original documents for verification either online or in-person at the JKKN campus. The admissions team will verify your 10+2 marks, eligibility criteria (minimum 50% aggregate, 40% for reserved categories), and age requirement (17-25 years).",
+      "url": "https://ahs.jkkn.ac.in/#admissions"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "Complete Fee Payment and Enrollment",
+      "text": "After successful document verification, complete the fee payment through the admissions portal or at the campus office. Receive your admission confirmation letter and begin your journey towards a career in Allied Health Sciences at JKKN.",
+      "url": "https://admission.jkkn.ac.in/"
+    }
+  ]
+};
+
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -126,6 +170,10 @@ const faqSchema = {
 export default function Home() {
   return (
     <div className="min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}

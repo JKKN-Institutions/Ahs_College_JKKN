@@ -30,6 +30,28 @@ export async function generateMetadata(): Promise<Metadata> {
     alternates: {
       canonical: `https://ahs.jkkn.ac.in${pathname}`,
     },
+    openGraph: {
+      title: "Best Allied Health Science Colleges in Tamilnadu | JKKN",
+      description: "JKKN is among the best allied health science colleges in Tamilnadu. Explore BSc allied health science courses with clinical training. Admissions 2026-27 open!",
+      url: `https://ahs.jkkn.ac.in${pathname}`,
+      siteName: "JKKN College of Allied Health Sciences",
+      images: [
+        {
+          url: "https://ahs.jkkn.ac.in/allied-health-science-hero.png",
+          width: 1200,
+          height: 630,
+          alt: "JKKN College of Allied Health Sciences — Best AHS College in Tamil Nadu",
+        },
+      ],
+      locale: "en_IN",
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Best Allied Health Science Colleges in Tamilnadu | JKKN",
+      description: "JKKN is among the best allied health science colleges in Tamilnadu. Explore BSc allied health science courses with clinical training. Admissions 2026-27 open!",
+      images: ["https://ahs.jkkn.ac.in/allied-health-science-hero.png"],
+    },
   };
 }
 
