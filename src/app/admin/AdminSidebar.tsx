@@ -65,6 +65,7 @@ export default function AdminSidebar({
 
   const isBlogActive = pathname === '/admin/blogs' || pathname.startsWith('/admin/blogs/');
   const [blogOpen, setBlogOpen] = useState(isBlogActive);
+  const [showLogoutModal, setShowLogoutModal] = useState(false);
 
   const currentCollege = colleges.find((c) => c.id === currentCollegeId);
   const currentCollegeName = currentCollege?.name ?? currentCollegeId;
@@ -258,7 +259,7 @@ export default function AdminSidebar({
           </div>
         </div>
         <button
-          onClick={handleLogout}
+          onClick={() => setShowLogoutModal(true)}
           className="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium text-white/70 hover:bg-red-500/20 hover:text-red-300 transition-all"
         >
           <LogOut size={18} />
@@ -299,6 +300,30 @@ export default function AdminSidebar({
       <div className="hidden lg:flex fixed left-0 top-0 bottom-0 w-64 bg-[#002309] flex-col z-30">
         <SidebarContent />
       </div>
+
+      {/* Sign Out Confirmation Modal */}
+      {showLogoutModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50">
+          <div className="bg-white rounded-2xl shadow-xl p-6 w-80 mx-4">
+            <h2 className="text-base font-semibold text-gray-900 mb-2">Sign Out</h2>
+            <p className="text-sm text-gray-500 mb-6">Are you sure you want to sign out?</p>
+            <div className="flex gap-3">
+              <button
+                onClick={() => setShowLogoutModal(false)}
+                className="flex-1 px-4 py-2 rounded-xl text-sm font-medium border border-gray-200 text-gray-700 hover:bg-gray-50 transition"
+              >
+                Cancel
+              </button>
+              <button
+                onClick={handleLogout}
+                className="flex-1 px-4 py-2 rounded-xl text-sm font-medium bg-red-500 text-white hover:bg-red-600 transition"
+              >
+                Yes, Sign Out
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </>
   );
 }

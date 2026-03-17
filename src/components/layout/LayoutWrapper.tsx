@@ -4,9 +4,16 @@ import { BottomNavbar } from "@/components/BottomNav";
 import { MobileHeader } from "@/components/layout/MobileHeader";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { cn } from "@/lib/utils";
+import { usePathname } from "next/navigation";
 
 export function LayoutWrapper({ children }: { children: React.ReactNode }) {
   const isMobile = useIsMobile();
+  const pathname = usePathname();
+  const isAdmin = pathname?.startsWith('/admin');
+
+  if (isAdmin) {
+    return <>{children}</>;
+  }
 
   return (
     <>

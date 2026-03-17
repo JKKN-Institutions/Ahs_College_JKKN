@@ -84,6 +84,7 @@ export default function BlogsTableClient({ blogs, categories }: Props) {
   const [statusFilter, setStatusFilter] = useState('all');
   const [categoryFilter, setCategoryFilter] = useState('all');
   const [openMenu, setOpenMenu] = useState<string | null>(null);
+  const [menuPos, setMenuPos] = useState<{ top: number; right: number }>({ top: 0, right: 0 });
   const [deletingId, setDeletingId] = useState<string | null>(null);
   const [selected, setSelected] = useState<Set<string>>(new Set());
   const [pendingDeleteId, setPendingDeleteId] = useState<string | null>(null);
@@ -306,7 +307,15 @@ export default function BlogsTableClient({ blogs, categories }: Props) {
                     <td className="px-4 py-4">
                       <div className="relative">
                         <button
-                          onClick={() => setOpenMenu(openMenu === blog.id ? null : blog.id)}
+                          onClick={(e) => {
+                            if (openMenu === blog.id) {
+                              setOpenMenu(null);
+                            } else {
+                              const rect = (e.currentTarget as HTMLButtonElement).getBoundingClientRect();
+                              setMenuPos({ top: rect.bottom + 4, right: window.innerWidth - rect.right });
+                              setOpenMenu(blog.id);
+                            }
+                          }}
                           className="p-1.5 rounded-lg hover:bg-gray-100 transition"
                         >
                           {deletingId === blog.id ? (
@@ -322,7 +331,10 @@ export default function BlogsTableClient({ blogs, categories }: Props) {
                               className="fixed inset-0 z-10"
                               onClick={() => setOpenMenu(null)}
                             />
-                            <div className="absolute right-0 top-8 z-20 bg-white rounded-xl border border-gray-100 shadow-lg py-1 min-w-[140px]">
+                            <div
+                              className="fixed z-20 bg-white rounded-xl border border-gray-100 shadow-lg py-1 min-w-[140px]"
+                              style={{ top: menuPos.top, right: menuPos.right }}
+                            >
                               <Link
                                 href={`/admin/blogs/${blog.id}`}
                                 className="flex items-center gap-2.5 px-3 py-2 text-sm text-gray-700 hover:bg-gray-50"

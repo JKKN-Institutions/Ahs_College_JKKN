@@ -32,6 +32,10 @@ const FAQ = dynamic(() => import("@/components/sections/FAQ").then(m => ({ defau
   loading: () => <div className="h-96 bg-gray-50 animate-pulse" />
 });
 
+const HomeEvents = dynamic(() => import("@/components/sections/HomeEvents").then(m => ({ default: m.HomeEvents })), {
+  loading: () => null
+});
+
 const CTASection = dynamic(() => import("@/components/sections/CTASection").then(m => ({ default: m.CTASection })), {
   loading: () => <div className="h-32 bg-gray-50 animate-pulse" />
 });
@@ -186,6 +190,7 @@ export default function Home() {
         <WhyChoose />
         <CareerPaths />
         <Facilities />
+        <HomeEvents />
         <AdmissionJourney />
         <Testimonials />
         <FAQ />
