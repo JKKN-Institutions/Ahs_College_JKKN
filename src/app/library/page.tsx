@@ -51,7 +51,7 @@ export default function Library() {
                             className="relative w-full aspect-[4/3] overflow-hidden rounded-2xl sm:rounded-3xl shadow-lg"
                         >
                             <Image
-                                src="/library/labrary (1).png"
+                                src="/library/library-1.png"
                                 alt="Allied Health Science Library with wooden desks and study areas"
                                 fill
                                 className="object-cover"
@@ -65,7 +65,7 @@ export default function Library() {
                             className="relative w-full aspect-[4/3] overflow-hidden rounded-2xl sm:rounded-3xl shadow-lg"
                         >
                             <Image
-                                src="/library/labrary1 (1).webp"
+                                src="/library/library-1.webp"
                                 alt="Students studying with books in the library"
                                 fill
                                 className="object-cover"
@@ -78,7 +78,7 @@ export default function Library() {
                             className="relative w-full aspect-[4/3] overflow-hidden rounded-2xl sm:rounded-3xl shadow-lg"
                         >
                             <Image
-                                src="/library/labrary3 (1).png"
+                                src="/library/library-3.png"
                                 alt="Student reading in the library"
                                 fill
                                 className="object-cover"

@@ -1,8 +1,20 @@
-import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
-  title: "Our Management — JKKN College of Allied Health Sciences | Leadership Team",
-  description: "Meet the visionary leadership of JKKN College of Allied Health Sciences — Chairperson Smt. N. Sendamaraai and Director Shri. S. Ommsharravana guiding excellence in allied health education since 1952.",
+export const metadata = createPageMetadata({
+  title: "Our Management | JKKN College of Allied Health Sciences",
+  description: "Meet the leadership of JKKN College of Allied Health Sciences — Chairperson Smt. N. Sendamaraai and Director Shri. S. Ommsharravana.",
+  path: "/our-management",
+});
+
+const speakableSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Our Management | JKKN College of Allied Health Sciences",
+  "url": "https://ahs.jkkn.ac.in/our-management",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": ["h1", "h2"]
+  }
 };
 
 const chairpersonSchema = {
@@ -39,6 +51,16 @@ const directorSchema = {
   }
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "JKKN Institutions", "item": "https://jkkn.ac.in/" },
+    { "@type": "ListItem", "position": 2, "name": "Allied Health Sciences", "item": "https://ahs.jkkn.ac.in/" },
+    { "@type": "ListItem", "position": 3, "name": "Our Management", "item": "https://ahs.jkkn.ac.in/our-management" }
+  ]
+};
+
 export default function OurManagementLayout({
   children,
 }: {
@@ -54,6 +76,8 @@ export default function OurManagementLayout({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(directorSchema) }}
       />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       {children}
     </>
   );

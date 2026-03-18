@@ -91,7 +91,7 @@ export function Hero() {
                             <div className="aspect-[5/4] lg:aspect-[4/3] bg-gray-100 relative">
                                 <Image
                                     src="/allied-health-science-hero.png"
-                                    alt="Allied Health Science - JKKN College"
+                                    alt="Allied Health Sciences — JKKN College of Allied Health Sciences, Komarapalayam"
                                     fill
                                     priority
                                     placeholder="blur"

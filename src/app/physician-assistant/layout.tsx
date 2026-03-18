@@ -1,8 +1,9 @@
-import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata = createPageMetadata({
   title: "Physician Assistant Course in Tamilnadu | JKKN AHS College",
-  description: "JKKN offers the best physician assistant course in Tamilnadu. BSc physician assistant programme with hospital training & placements. Admissions 2026-27 open!",
+  description: "JKKN offers the best physician assistant course in Tamilnadu. BSc physician assistant programme with hospital training & placements. Admissions 2026-27!",
+  path: "/physician-assistant",
   keywords: [
     "physician assistant course in tamilnadu",
     "bsc physician assistant colleges in tamilnadu",
@@ -10,7 +11,7 @@ export const metadata: Metadata = {
     "bsc physician assistant course in tamilnadu",
     "physician assistant course colleges in tamilnadu"
   ],
-};
+});
 
 const courseSchema = {
   "@context": "https://schema.org",
@@ -28,11 +29,11 @@ const courseSchema = {
   "educationalCredentialAwarded": "Bachelor of Science (B.Sc)",
   "timeRequired": "P4Y",
   "inLanguage": "en",
-  "coursePrerequisites": "10+2 or equivalent with Physics, Chemistry, and Biology. Minimum 50% aggregate (40% for SC/ST/OBC). Age 17+ years.",
+  "coursePrerequisites": "10+2 or equivalent with Physics, Chemistry, and Biology. Minimum 50% aggregate (40% for SC/ST, 45% for OBC). Age 17+ years.",
   "hasCourseInstance": {
     "@type": "CourseInstance",
     "courseMode": "full-time",
-    "startDate": "2026",
+    "startDate": "2026-08-01",
     "location": {
       "@type": "Place",
       "name": "JKKN College of Allied Health Sciences",
@@ -53,7 +54,26 @@ const courseSchema = {
     "Treatment Planning",
     "Emergency Response",
     "Patient Care Management"
-  ]
+  ],
+  "offers": {
+    "@type": "Offer",
+    "category": "Tuition Fees",
+    "priceCurrency": "INR",
+    "url": "https://admission.jkkn.ac.in/",
+    "availability": "https://schema.org/InStock",
+    "validFrom": "2026-03-01"
+  }
+};
+
+const speakableSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Physician Assistant Course in Tamilnadu | JKKN AHS College",
+  "url": "https://ahs.jkkn.ac.in/physician-assistant",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": ["h1", "h2"]
+  }
 };
 
 const breadcrumbSchema = {
@@ -83,7 +103,7 @@ const faqSchema = {
       "name": "What is the eligibility criteria?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Candidates must have passed +2 with Physics, Chemistry, and Biology with minimum 50% aggregate marks (45% for reserved categories). Minimum age is 17 years as on December 31st of the admission year. A medical fitness certificate is also required."
+        "text": "Candidates must have passed +2 with Physics, Chemistry, and Biology with minimum 50% aggregate marks (40% for SC/ST, 45% for OBC). Minimum age is 17 years as on December 31st of the admission year. A medical fitness certificate is also required."
       }
     },
     {
@@ -99,7 +119,7 @@ const faqSchema = {
       "name": "What are the career opportunities?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Graduates can work as Clinical Physician Assistant, Emergency Care Assistant, Surgical Assistant, ICU/Critical Care Assistant, OPD Coordinator, Community Health Officer, Primary Care Provider, and Clinical Research Associate in hospitals, clinics, community health centers, and pharmaceutical companies."
+        "text": "Physician Assistant graduates work as Clinical Physician Assistants, Emergency Care Assistants, Surgical Assistants, and ICU/Critical Care Assistants in hospitals and clinics. Additional roles include OPD Coordinator, Community Health Officer, and Clinical Research Associate."
       }
     },
     {
@@ -107,7 +127,7 @@ const faqSchema = {
       "name": "Is B.Sc Physician Assistant a good career choice?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, B.Sc Physician Assistant is an excellent career choice due to growing demand for mid-level healthcare providers in India, competitive salaries, diverse work environments, opportunities for specialization, and the fulfilling nature of patient care. With India's expanding healthcare infrastructure, PAs are increasingly recognized as vital healthcare team members."
+        "text": "Yes, B.Sc Physician Assistant is an excellent career choice with growing demand for mid-level healthcare providers in India. The field offers competitive salaries, diverse work environments, and opportunities for specialization. With India's expanding healthcare infrastructure, PAs are increasingly recognized as vital healthcare team members."
       }
     },
     {
@@ -115,7 +135,7 @@ const faqSchema = {
       "name": "Can I pursue higher education after this course?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, graduates can pursue M.Sc in Physician Assistant Studies, M.Sc in Clinical Medicine, M.Sc in Public Health (MPH), MBA in Healthcare Management, or specialized certifications in Emergency Medicine, Critical Care, or specific medical specialties for advanced career opportunities."
+        "text": "Yes, graduates can pursue M.Sc in Physician Assistant Studies, Clinical Medicine, or Public Health (MPH) for advanced specialization. MBA in Healthcare Management and certifications in Emergency Medicine or Critical Care are also available."
       }
     },
     {
@@ -123,7 +143,7 @@ const faqSchema = {
       "name": "What practical training is included?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The program includes 2000+ hours of clinical training across OPD, emergency departments, ICU, operation theaters, and community health settings with hands-on experience in patient assessment, medical procedures, diagnostic interpretations, and clinical rotations in multiple specialties including medicine, surgery, pediatrics, and emergency care."
+        "text": "The program includes 2000+ hours of clinical training across OPD, emergency departments, ICU, operation theaters, and community health settings. Students gain hands-on experience in patient assessment, medical procedures, diagnostic interpretations, and clinical rotations in medicine, surgery, pediatrics, and emergency care."
       }
     },
     {
@@ -155,6 +175,10 @@ export default function PhysicianAssistantLayout({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }}
       />
       {children}
     </>

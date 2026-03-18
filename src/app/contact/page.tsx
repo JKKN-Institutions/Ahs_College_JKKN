@@ -86,7 +86,7 @@ export default function ContactPage() {
                                         <div>
                                             <h3 className="font-semibold text-gray-900 mb-1">Address</h3>
                                             <p className="text-gray-600">
-                                                JKKN College of Allied Health Sciences, NH-544 (Salem To Coimbatore National Highway), Kumarapalayam (TK), Namakkal (DT). Tamil Nadu. 638183.
+                                                JKKN College of Allied Health Sciences, NH-544 (Salem To Coimbatore National Highway), Komarapalayam (TK), Namakkal (DT). Tamil Nadu. 638183.
                                             </p>
                                         </div>
                                     </div>

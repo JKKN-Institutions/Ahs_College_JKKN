@@ -1,14 +1,15 @@
-import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata = createPageMetadata({
   title: "BSc Respiratory Therapy Colleges in Tamilnadu | JKKN",
   description: "Looking for BSc respiratory therapy colleges in Tamilnadu? JKKN offers respiratory therapy course with clinical training & scholarships. Apply 2026-27!",
+  path: "/respiratory-therapy",
   keywords: [
     "bsc respiratory therapy colleges in tamilnadu",
     "respiratory therapy course in tamilnadu",
     "bsc respiratory therapy in tamilnadu"
   ],
-};
+});
 
 const courseSchema = {
   "@context": "https://schema.org",
@@ -26,11 +27,11 @@ const courseSchema = {
   "educationalCredentialAwarded": "Bachelor of Science (B.Sc)",
   "timeRequired": "P4Y",
   "inLanguage": "en",
-  "coursePrerequisites": "10+2 or equivalent with Physics, Chemistry, and Biology/Mathematics. Minimum 50% aggregate (40% for SC/ST/OBC). Age 17+ years.",
+  "coursePrerequisites": "10+2 or equivalent with Physics, Chemistry, and Biology/Mathematics. Minimum 50% aggregate (40% for SC/ST, 45% for OBC). Age 17+ years.",
   "hasCourseInstance": {
     "@type": "CourseInstance",
     "courseMode": "full-time",
-    "startDate": "2026",
+    "startDate": "2026-08-01",
     "location": {
       "@type": "Place",
       "name": "JKKN College of Allied Health Sciences",
@@ -52,7 +53,26 @@ const courseSchema = {
     "Arterial Blood Gas Analysis",
     "Oxygen Therapy",
     "Cardiopulmonary Rehabilitation"
-  ]
+  ],
+  "offers": {
+    "@type": "Offer",
+    "category": "Tuition Fees",
+    "priceCurrency": "INR",
+    "url": "https://admission.jkkn.ac.in/",
+    "availability": "https://schema.org/InStock",
+    "validFrom": "2026-03-01"
+  }
+};
+
+const speakableSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "BSc Respiratory Therapy Colleges in Tamilnadu | JKKN",
+  "url": "https://ahs.jkkn.ac.in/respiratory-therapy",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": ["h1", "h2"]
+  }
 };
 
 const breadcrumbSchema = {
@@ -82,7 +102,7 @@ const faqSchema = {
       "name": "What is the eligibility criteria for B.Sc Respiratory Therapy?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "To be eligible for B.Sc Respiratory Therapy, candidates must have passed 10+2 or equivalent examination with Physics, Chemistry, and Biology/Mathematics as core subjects from a recognized board. A minimum of 50% aggregate marks is required (45% for SC/ST/OBC candidates). Applicants must be at least 17 years of age as on December 31st of the admission year and possess a medical fitness certificate."
+        "text": "To be eligible for B.Sc Respiratory Therapy, candidates must have passed 10+2 or equivalent with Physics, Chemistry, and Biology/Mathematics from a recognized board. A minimum of 50% aggregate marks is required (40% for SC/ST, 45% for OBC candidates). Applicants must be at least 17 years of age as on December 31st of the admission year and possess a medical fitness certificate."
       }
     },
     {
@@ -98,7 +118,7 @@ const faqSchema = {
       "name": "What are the career opportunities after B.Sc Respiratory Therapy?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Graduates can pursue diverse career paths including Respiratory Therapist, ICU Ventilator Specialist, Pulmonary Function Technologist, Sleep Lab Technician, Neonatal Respiratory Care Specialist, Cardiopulmonary Rehabilitation Specialist, Home Care Respiratory Therapist, and Medical Equipment Sales Representative. Employment opportunities exist in multi-specialty hospitals, ICUs, pulmonary function laboratories, sleep centers, neonatal units, rehabilitation centers, home healthcare companies, and medical device organizations."
+        "text": "Respiratory Therapy graduates work as Respiratory Therapists, ICU Ventilator Specialists, Pulmonary Function Technologists, and Sleep Lab Technicians. Employment opportunities exist in multi-specialty hospitals, ICUs, pulmonary function laboratories, sleep centers, neonatal units, rehabilitation centers, and home healthcare companies."
       }
     },
     {
@@ -154,6 +174,10 @@ export default function RespiratoryTherapyLayout({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }}
       />
       {children}
     </>

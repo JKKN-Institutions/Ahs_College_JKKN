@@ -18,7 +18,7 @@ export default function PrivacyPolicy() {
 
                     {/* Introduction */}
                     <p className="text-sm sm:text-base text-gray-700 mb-8 sm:mb-10 leading-relaxed">
-                        At JKKN Allied Health Science College, we are committed to protecting the privacy of our students, faculty, staff, and website visitors. This Privacy Policy outlines our practices with respect to the collection, use, and disclosure of personal information.
+                        At JKKN College of Allied Health Sciences, we are committed to protecting the privacy of our students, faculty, staff, and website visitors. This Privacy Policy outlines our practices with respect to the collection, use, and disclosure of personal information.
                     </p>
 
                     {/* Personal Information We Collect */}
@@ -49,7 +49,7 @@ export default function PrivacyPolicy() {
                         <ul className="list-disc pl-5 sm:pl-6 space-y-2 text-sm sm:text-base text-gray-700">
                             <li>To process and evaluate your application for admission to our programs or for employment</li>
                             <li>To provide educational and support services to our students and faculty</li>
-                            <li>To communicate with you about news, events, and other updates related to JKKN Allied Health Science College</li>
+                            <li>To communicate with you about news, events, and other updates related to JKKN College of Allied Health Sciences</li>
                             <li>To conduct research and analysis to improve our programs and services</li>
                             <li>To comply with legal obligations or requests from government authorities</li>
                         </ul>
@@ -115,7 +115,7 @@ export default function PrivacyPolicy() {
                             Contact Us
                         </h2>
                         <p className="text-sm sm:text-base text-gray-700 mb-4 leading-relaxed">
-                            If you have any questions or concerns about this Privacy Policy, please contact us at JKKN Allied Health Science College.
+                            If you have any questions or concerns about this Privacy Policy, please contact us at JKKN College of Allied Health Sciences.
                         </p>
                         <div className="space-y-2 text-sm sm:text-base text-gray-700">
                             <p>
@@ -123,7 +123,7 @@ export default function PrivacyPolicy() {
                                 <span className="ml-4 font-semibold">Email:</span> alliedhealth@jkkn.ac.in
                             </p>
                             <p>
-                                <span className="font-semibold">Address:</span> JKKN Allied Health Science College, B, Komarapalayam, Namakkal District, Tamil Nadu, India – 638183.
+                                <span className="font-semibold">Address:</span> JKKN College of Allied Health Sciences, B, Komarapalayam, Namakkal District, Tamil Nadu, India – 638183.
                             </p>
                         </div>
                     </section>

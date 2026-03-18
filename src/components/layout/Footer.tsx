@@ -10,7 +10,7 @@ export function Footer() {
             url: 'https://dental.jkkn.ac.in/'
         },
         {
-            name: 'JKKN College Of Allied Health Science',
+            name: 'JKKN College of Allied Health Sciences',
             url: 'https://ahs.jkkn.ac.in/'
         },
         {
@@ -51,7 +51,7 @@ export function Footer() {
                     {/* Left Column - College Info with Map */}
                     <div>
                         <h3 className="text-base sm:text-lg md:text-xl font-black mb-4 sm:mb-6 uppercase border-b-2 border-white pb-2 sm:pb-3">
-                            JKKN COLLEGE OF ALLIED HEALTH SCIENCE
+                            JKKN COLLEGE OF ALLIED HEALTH SCIENCES
                         </h3>
                         <div className="mb-4 sm:mb-6 rounded-lg overflow-hidden">
                             <iframe
@@ -106,7 +106,7 @@ export function Footer() {
                             <div>
                                 <p className="text-white font-semibold mb-2 text-xs sm:text-sm">Address:</p>
                                 <p className="text-white/90 text-xs sm:text-sm leading-relaxed">
-                                    JKKN College of Allied Health Sciences, NH-544 (Salem To Coimbatore National Highway), Kumarapalayam (TK), Namakkal (DT), Tamil Nadu. 638183.
+                                    JKKN College of Allied Health Sciences, NH-544 (Salem To Coimbatore National Highway), Komarapalayam (TK), Namakkal (DT), Tamil Nadu. 638183.
                                 </p>
                             </div>
                         </div>
@@ -136,7 +136,7 @@ export function Footer() {
                 {/* Bottom Copyright */}
                 <div className="pt-4 sm:pt-6 border-t border-white/20 text-center">
                     <p className="text-white/80 text-xs sm:text-sm">
-                        © 2025 JKKN Allied Health Sciences. All rights reserved.
+                        © 2026 JKKN Allied Health Sciences. All rights reserved.
                     </p>
                 </div>
             </div>

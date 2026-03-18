@@ -1,27 +1,68 @@
 import { NextResponse } from 'next/server';
+import { createClient } from '@supabase/supabase-js';
 
-const posts = [
-  { loc: 'https://ahs.jkkn.ac.in/radiology-week-celebration' },
-  { loc: 'https://ahs.jkkn.ac.in/ahs-brainstorm-session-2' },
-  { loc: 'https://ahs.jkkn.ac.in/77th-independence-day-celebration' },
-  { loc: 'https://ahs.jkkn.ac.in/iic-7-0-2' },
-  { loc: 'https://ahs.jkkn.ac.in/pathfinder-your-gateway-to-your-future' },
-  { loc: 'https://ahs.jkkn.ac.in/world-safety-health-at-work-day-on-28th-april-2023-2' },
-  { loc: 'https://ahs.jkkn.ac.in/jkkn-college-of-allied-health-science-bsc-allied-technology-admissions-open-apply-now' },
-  { loc: 'https://ahs.jkkn.ac.in/jkkn-educational-institutions-celebrated-world-malaria-day-on-25th-april-2023-on-our-campus' },
-  { loc: 'https://ahs.jkkn.ac.in/1st-year-students-of-jkkn-college-of-allied-health-science-participated-in-the-painting-competition' },
+const staticPosts = [
+  { loc: 'https://ahs.jkkn.ac.in/blog/top-10-career-options-after-bed-2026', changefreq: 'monthly', priority: '0.6' },
 ];
 
-const lastmod = new Date().toISOString().split('T')[0];
+export async function GET() {
+  const lastmod = new Date().toISOString().split('T')[0];
+  const collegeId = process.env.NEXT_PUBLIC_COLLEGE_ID ?? 'ahs';
 
-export function GET() {
-  const urls = posts
+  // Fetch dynamic blog posts from Supabase (anon key, no auth required for public reads)
+  const supabase = createClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+  );
+
+  let dynamicPosts: { loc: string; lastmod: string; changefreq: string; priority: string }[] = [];
+
+  try {
+    const { data: blogs } = await supabase
+      .from('blogs')
+      .select('slug, category, updated_at, published_at, created_at')
+      .eq('college_id', collegeId)
+      .eq('is_published', true)
+      .order('created_at', { ascending: false });
+
+    if (blogs) {
+      dynamicPosts = blogs.map((post) => {
+        const isCampus =
+          post.category?.toLowerCase() === 'campus' ||
+          post.category?.toLowerCase() === 'campus news';
+        const path = isCampus
+          ? `https://ahs.jkkn.ac.in/blog/campus/${post.slug}`
+          : `https://ahs.jkkn.ac.in/blog/${post.slug}`;
+        const postLastmod = (post.updated_at ?? post.published_at ?? post.created_at ?? lastmod)
+          .split('T')[0];
+        return {
+          loc: path,
+          lastmod: postLastmod,
+          changefreq: 'weekly',
+          priority: '0.7',
+        };
+      });
+    }
+  } catch {
+    // If Supabase fetch fails, fall back to static entries only
+  }
+
+  // Merge static + dynamic, deduplicate by loc
+  const allPosts = [...staticPosts.map((p) => ({ ...p, lastmod })), ...dynamicPosts];
+  const seen = new Set<string>();
+  const uniquePosts = allPosts.filter((p) => {
+    if (seen.has(p.loc)) return false;
+    seen.add(p.loc);
+    return true;
+  });
+
+  const urls = uniquePosts
     .map(
       (post) => `  <url>
     <loc>${post.loc}</loc>
-    <lastmod>${lastmod}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <lastmod>${post.lastmod}</lastmod>
+    <changefreq>${post.changefreq}</changefreq>
+    <priority>${post.priority}</priority>
   </url>`
     )
     .join('\n');
@@ -35,7 +76,7 @@ ${urls}
     status: 200,
     headers: {
       'Content-Type': 'application/xml; charset=utf-8',
-      'Cache-Control': 'public, max-age=86400, stale-while-revalidate=43200',
+      'Cache-Control': 'public, max-age=3600, stale-while-revalidate=1800',
     },
   });
 }

@@ -18,7 +18,7 @@ const nextConfig: NextConfig = {
     return [
       {
         source: '/principal-message',
-        destination: '/',
+        destination: '/principals-message',
         permanent: true,
       },
     ];

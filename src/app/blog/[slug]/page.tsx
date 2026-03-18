@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
+import { useParams } from 'next/navigation';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { ScrollToTop } from '@/components/ScrollToTop';
@@ -17,86 +18,86 @@ import {
 } from 'lucide-react';
 
 const tocItems = [
-  { id: 'what-is-bed', label: 'What is B.Ed? Course Overview' },
-  { id: 'eligibility', label: 'B.Ed Eligibility Criteria' },
-  { id: 'curriculum', label: 'B.Ed Course Curriculum' },
-  { id: 'tnteu-counseling', label: 'TNTEU Counseling 2026' },
-  { id: 'fee-structure', label: 'B.Ed Fee Structure' },
-  { id: 'career-scope', label: 'Career Scope After B.Ed' },
-  { id: 'why-jkkn', label: 'Why Choose JKKN College of Education?' },
+  { id: 'overview', label: 'Allied Health Sciences Overview' },
+  { id: 'eligibility', label: 'Eligibility Criteria' },
+  { id: 'curriculum', label: 'Course Curriculum' },
+  { id: 'clinical-training', label: 'Clinical Training & Exposure' },
+  { id: 'fee-structure', label: 'Fee Structure' },
+  { id: 'career-scope', label: 'Career Scope & Placements' },
+  { id: 'why-jkkn', label: 'Why Choose JKKN AHS?' },
   { id: 'admission-process', label: 'Admission Process 2026' },
   { id: 'faq', label: 'Frequently Asked Questions' },
 ];
 
 const popularPosts = [
   {
-    category: 'Exam Prep',
-    title: 'How to Crack TNTET 2026: Complete Study Plan & Strategy',
-    date: 'Feb 12, 2026',
+    category: 'Allied Health',
+    title: 'Top Allied Health Science Courses With Best Placement Rates in 2026',
+    date: 'Mar 10, 2026',
   },
   {
-    category: 'B.Ed Admissions',
-    title: 'B.Ed vs D.El.Ed: Which Teacher Training Course is Right for You?',
-    date: 'Feb 5, 2026',
+    category: 'Career Guide',
+    title: 'Cardiac Technology vs Radiology: Which BSc Course Is Right for You?',
+    date: 'Mar 5, 2026',
   },
   {
-    category: 'Teaching Careers',
-    title: 'Top 10 Career Options After B.Ed in India [2026 Updated]',
-    date: 'Feb 18, 2026',
+    category: 'Admissions',
+    title: 'Allied Health Sciences Admission 2026: Eligibility, Process & Dates',
+    date: 'Mar 1, 2026',
   },
 ];
 
 const faqs = [
   {
-    q: 'What is the eligibility for B.Ed admission at JKKN College of Education?',
-    a: 'Candidates must hold a Bachelor\'s degree with minimum 50% marks (45% for SC/ST/OBC) from a recognized university. The degree should be in the subject you wish to specialize in. Contact our admissions office at +91 9345855001 for detailed eligibility criteria.',
+    q: 'What is the eligibility for allied health science courses at JKKN?',
+    a: 'Candidates must have passed +2 with Physics, Chemistry, and Biology with minimum 50% aggregate marks (40% for SC/ST, 45% for OBC). Minimum age is 17 years as on December 31st of the admission year.',
   },
   {
-    q: 'Is hostel facility available at JKKN College of Education?',
-    a: 'Yes, JKKN provides separate hostel facilities for boys and girls within the campus at Natarajapuram, Komarapalayam. The campus is residential with mess, library, and recreational facilities.',
+    q: 'Is hostel facility available at JKKN College of Allied Health Sciences?',
+    a: 'Yes, JKKN provides separate hostel facilities for boys and girls within the campus at Natarajapuram, Komarapalayam. The campus includes mess, library, Wi-Fi, and recreational facilities.',
   },
   {
-    q: 'What is the B.Ed fee structure at JKKN College of Education?',
-    a: 'Fee structure is regulated by the Tamil Nadu government fee committee and varies by admission category (state quota/management). Contact admissions for current fees: +91 9345855001.',
+    q: 'What are the placement opportunities after BSc Allied Health Sciences?',
+    a: 'JKKN AHS graduates work in hospitals, diagnostic centres, and healthcare companies across India and abroad. Recruiters include Apollo, Fortis, KIMS, and NHS UK, with packages ranging from 3-25 LPA.',
   },
   {
-    q: 'Is JKKN College of Education NCTE approved?',
-    a: 'Yes, JKKN College of Education is approved by the National Council for Teacher Education (NCTE) and affiliated to Tamil Nadu Teachers Education University (TNTEU), Chennai — ensuring your B.Ed degree is recognized for government and private school teaching positions across India.',
+    q: 'Which allied health science courses does JKKN offer?',
+    a: 'JKKN offers 9 BSc programs: Cardiac Technology, Dialysis Technology, Radiology & Imaging Technology, Operation Theatre & Anaesthesia Technology, Respiratory Therapy, Physician Assistant, Critical Care Technology, Medical Record Science, and Accident & Emergency Care.',
   },
   {
-    q: 'What are the career opportunities after B.Ed from JKKN?',
-    a: 'JKKN College of Education has a 98% placement rate. Graduates secure teaching positions in government and private schools, qualify for TNTET/TRB examinations, and advance to M.Ed or Ph.D programs. Many alumni teach in CBSE, ICSE, and Tamil Nadu State Board schools across the region.',
+    q: 'Is JKKN College of Allied Health Sciences affiliated to a university?',
+    a: 'Yes, JKKN College of Allied Health Sciences is affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, ensuring all degrees are recognized for employment and higher education across India.',
   },
 ];
 
 const relatedArticles = [
   {
-    category: 'Teaching Careers',
+    category: 'Healthcare Careers',
     readTime: '10 min',
-    title: 'Top 10 Career Options After B.Ed in India [2026 Updated]',
+    title: 'Top Allied Health Science Courses With Best Placement Rates in 2026',
     description:
-      'From school teaching to curriculum development, ed-tech to school administration — discover the best career paths open to B.Ed graduates in 2026...',
-    date: 'Feb 18, 2026',
+      'From cardiac technology to radiology, discover which allied health science courses offer the best career prospects and placement rates in 2026...',
+    date: 'Mar 10, 2026',
     Icon: Briefcase,
     gradient: 'from-[#6ba872] to-[#002309]',
   },
   {
-    category: 'B.Ed Admissions',
+    category: 'Course Comparison',
     readTime: '13 min',
-    title: 'B.Ed vs D.El.Ed: Which Teacher Training Course is Right for You?',
+    title: 'Cardiac Technology vs Radiology: Which BSc Course Is Right for You?',
     description:
-      'An honest comparison of B.Ed and D.El.Ed — course duration, eligibility, career scope, salary expectations, and which suits your teaching ambitions...',
-    date: 'Feb 5, 2026',
+      'An honest comparison of BSc Cardiac Technology and BSc Radiology — course structure, clinical training, career scope, and salary expectations...',
+    date: 'Mar 5, 2026',
     Icon: ArrowLeftRight,
     gradient: 'from-[#7cb983] to-[#006837]',
   },
   {
     category: 'Campus Life',
     readTime: '7 min',
-    title: 'Day in the Life of a B.Ed Student at JKKN College of Education',
+    title: 'A Day in the Life of an Allied Health Sciences Student at JKKN',
     description:
-      'Follow a typical day of a B.Ed student at JKKN — from morning sessions and micro-teaching practice to school internships and campus activities...',
-    date: 'Feb 8, 2026',
+      'Follow a typical day of a BSc student at JKKN AHS — from clinical lab sessions and hospital rotations to library study and campus activities...',
+    date: 'Mar 1, 2026',
     Icon: ClipboardList,
     gradient: 'from-[#7cb983] via-[#6ba872] to-[#006837]',
   },
@@ -106,7 +107,8 @@ const relatedArticles = [
 const FIXED_TOP = 104;
 
 export default function BlogDetailPage() {
-  const [activeSection, setActiveSection] = useState('what-is-bed');
+  const { slug } = useParams<{ slug: string }>();
+  const [activeSection, setActiveSection] = useState('overview');
   const [openFaq, setOpenFaq] = useState<number | null>(0);
 
   // JS-based sticky sidebar — 3 states: normal → fixed → bottom
@@ -193,8 +195,53 @@ export default function BlogDetailPage() {
     if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
 
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Allied Health Sciences Blog — JKKN College of Allied Health Sciences",
+    "description": "Explore insights on allied health science courses, career paths, admissions, and healthcare trends from JKKN College of Allied Health Sciences, Komarapalayam.",
+    "url": `https://ahs.jkkn.ac.in/blog/${slug}`,
+    "datePublished": "2026-03-01",
+    "dateModified": "2026-03-18",
+    "author": {
+      "@type": "Person",
+      "name": "JKKN AHS Editorial Team",
+      "url": "https://ahs.jkkn.ac.in/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "JKKN College of Allied Health Sciences",
+      "url": "https://ahs.jkkn.ac.in/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://ahs.jkkn.ac.in/ahs-logo.svg"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `https://ahs.jkkn.ac.in/blog/${slug}`
+    },
+    "image": "https://ahs.jkkn.ac.in/allied-health-science-hero.png",
+    "articleSection": "Allied Health Sciences",
+    "inLanguage": "en",
+    "keywords": "allied health sciences, BSc courses Tamil Nadu, JKKN AHS, healthcare careers, medical technology courses"
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "JKKN Institutions", "item": "https://jkkn.ac.in/" },
+      { "@type": "ListItem", "position": 2, "name": "Allied Health Sciences", "item": "https://ahs.jkkn.ac.in/" },
+      { "@type": "ListItem", "position": 3, "name": "Blog", "item": "https://ahs.jkkn.ac.in/blog" },
+      { "@type": "ListItem", "position": 4, "name": "Article", "item": `https://ahs.jkkn.ac.in/blog/${slug}` }
+    ]
+  };
+
   return (
     <div className="min-h-screen bg-white">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <Header />
 
       {/* ── Article Header ── */}
@@ -202,7 +249,7 @@ export default function BlogDetailPage() {
         {/* Meta row */}
         <div className="flex flex-wrap items-center gap-3 mb-5">
           <span className="bg-[#FBFBEE] text-[#006837] text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wide">
-            B.Ed Admissions
+            Allied Health Sciences
           </span>
           <div className="flex items-center gap-1.5 text-gray-400 text-sm">
             <Clock className="w-4 h-4" />
@@ -214,16 +261,16 @@ export default function BlogDetailPage() {
 
         {/* Title */}
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 leading-tight mb-6">
-          B.Ed Admission 2026 in Tamil Nadu: Eligibility, Process &amp; Key Dates
+          Allied Health Sciences Admission 2026: Courses, Eligibility &amp; Careers
         </h1>
 
         {/* Author row */}
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 rounded-full bg-[#FBFBEE] flex items-center justify-center flex-shrink-0">
-            <span className="text-[#006837] font-bold text-sm">JE</span>
+            <span className="text-[#006837] font-bold text-sm">JA</span>
           </div>
           <div>
-            <p className="font-semibold text-gray-800 text-sm">By JKKN Education Team</p>
+            <p className="font-semibold text-gray-800 text-sm">By JKKN AHS Team</p>
             <p className="text-gray-400 text-xs">
               Published Feb 20, 2026 &bull; Updated Feb 20, 2026
             </p>
@@ -335,7 +382,7 @@ export default function BlogDetailPage() {
                   <tbody>
                     {[
                       ['Education', 'Bachelor\'s degree (B.A. / B.Sc. / B.Com. or equivalent) from a recognized university'],
-                      ['Minimum Marks', '50% aggregate in qualifying degree (45% for SC/ST/OBC candidates)'],
+                      ['Minimum Marks', '50% aggregate in qualifying degree (40% for SC/ST, 45% for OBC candidates)'],
                       ['Entrance Exam', 'No entrance exam — admission based on merit in qualifying degree'],
                       ['Age', 'No upper age limit for B.Ed admission in Tamil Nadu'],
                       ['Nationality', 'Indian citizens and NRI candidates'],
@@ -694,7 +741,7 @@ export default function BlogDetailPage() {
                 {[
                   [
                     'Complete your Bachelor\'s degree',
-                    'with minimum 50% aggregate marks (45% for reserved categories) in a relevant subject from a recognized university.',
+                    'with minimum 50% aggregate marks (40% for SC/ST, 45% for OBC) in a relevant subject from a recognized university.',
                   ],
                   [
                     'Register on the TNTEU portal',

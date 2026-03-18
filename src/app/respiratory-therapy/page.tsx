@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { motion, AnimatePresence } from 'framer-motion';
+import Link from 'next/link';
 import {
     Clock, Users, Building2, Activity, ArrowRight, CheckCircle2,
     Download, Calendar, Laptop, Sparkles, Wind,
@@ -28,6 +29,41 @@ export default function RespiratoryTherapy() {
                 <FAQSection />
                 <CTASection />
             </main>
+
+            {/* Related Programs */}
+            <section className="py-12 px-4 bg-gray-50">
+                <div className="max-w-6xl mx-auto">
+                    <h2 className="text-2xl md:text-3xl font-bold text-[#0b6d41] text-center mb-8">
+                        Explore Other Programs
+                    </h2>
+                    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+                        <Link href="/cardiac-technology" className="bg-white rounded-xl p-4 text-center shadow-sm border border-gray-100 hover:shadow-md hover:border-[#0b6d41]/30 transition-all">
+                            <p className="text-sm font-semibold text-gray-800">B.Sc Cardiac Technology</p>
+                        </Link>
+                        <Link href="/dialysis-technology" className="bg-white rounded-xl p-4 text-center shadow-sm border border-gray-100 hover:shadow-md hover:border-[#0b6d41]/30 transition-all">
+                            <p className="text-sm font-semibold text-gray-800">B.Sc Dialysis Technology</p>
+                        </Link>
+                        <Link href="/radiology-imaging-technology" className="bg-white rounded-xl p-4 text-center shadow-sm border border-gray-100 hover:shadow-md hover:border-[#0b6d41]/30 transition-all">
+                            <p className="text-sm font-semibold text-gray-800">B.Sc Radiology & Imaging Technology</p>
+                        </Link>
+                        <Link href="/operation-theatre-anaesthesia" className="bg-white rounded-xl p-4 text-center shadow-sm border border-gray-100 hover:shadow-md hover:border-[#0b6d41]/30 transition-all">
+                            <p className="text-sm font-semibold text-gray-800">B.Sc Operation Theatre & Anaesthesia Technology</p>
+                        </Link>
+                        <Link href="/physician-assistant" className="bg-white rounded-xl p-4 text-center shadow-sm border border-gray-100 hover:shadow-md hover:border-[#0b6d41]/30 transition-all">
+                            <p className="text-sm font-semibold text-gray-800">B.Sc Physician Assistant</p>
+                        </Link>
+                        <Link href="/critical-care-technology" className="bg-white rounded-xl p-4 text-center shadow-sm border border-gray-100 hover:shadow-md hover:border-[#0b6d41]/30 transition-all">
+                            <p className="text-sm font-semibold text-gray-800">B.Sc Critical Care Technology</p>
+                        </Link>
+                        <Link href="/medical-record-science" className="bg-white rounded-xl p-4 text-center shadow-sm border border-gray-100 hover:shadow-md hover:border-[#0b6d41]/30 transition-all">
+                            <p className="text-sm font-semibold text-gray-800">B.Sc Medical Record Science</p>
+                        </Link>
+                        <Link href="/accident-emergency-care" className="bg-white rounded-xl p-4 text-center shadow-sm border border-gray-100 hover:shadow-md hover:border-[#0b6d41]/30 transition-all">
+                            <p className="text-sm font-semibold text-gray-800">B.Sc Accident & Emergency Care Technology</p>
+                        </Link>
+                    </div>
+                </div>
+            </section>
 
             <Footer />
         </div>
@@ -209,7 +245,7 @@ function EligibilitySection() {
                             {[
                                 "Passed +2 or equivalent examination from a recognized board",
                                 "Physics, Chemistry, and Biology/Mathematics as core subjects",
-                                "Minimum 50% aggregate marks (40% for SC/ST/OBC categories)",
+                                "Minimum 50% aggregate marks (40% for SC/ST, 45% for OBC)",
                                 "English as a compulsory subject in +2"
                             ].map((item, i) => (
                                 <li key={i} className="flex gap-3 text-gray-900">
@@ -442,7 +478,7 @@ function FAQSection() {
     const [openIndex, setOpenIndex] = useState<number | null>(0);
     const faqs = [
         { q: "What is B.Sc Respiratory Therapy and what does it involve?", a: "B.Sc Respiratory Therapy is a 4-year undergraduate degree program that trains healthcare professionals in respiratory care, pulmonary diagnostics, and cardiopulmonary management. The program covers pulmonary function testing, mechanical ventilation, oxygen therapy, arterial blood gas analysis, airway management, critical care respiratory therapy, and cardiopulmonary rehabilitation. Graduates work as respiratory therapists in hospitals, ICUs, diagnostic centers, and rehabilitation facilities, assisting pulmonologists and critical care physicians in managing patients with breathing disorders." },
-        { q: "What is the eligibility criteria for B.Sc Respiratory Therapy?", a: "To be eligible for B.Sc Respiratory Therapy, candidates must have passed 10+2 or equivalent examination with Physics, Chemistry, and Biology/Mathematics as core subjects from a recognized board. A minimum of 50% aggregate marks is required (45% for SC/ST/OBC candidates). Applicants must be at least 17 years of age as on December 31st of the admission year and possess a medical fitness certificate." },
+        { q: "What is the eligibility criteria for B.Sc Respiratory Therapy?", a: "To be eligible for B.Sc Respiratory Therapy, candidates must have passed 10+2 or equivalent examination with Physics, Chemistry, and Biology/Mathematics as core subjects from a recognized board. A minimum of 50% aggregate marks is required (40% for SC/ST, 45% for OBC candidates). Applicants must be at least 17 years of age as on December 31st of the admission year and possess a medical fitness certificate." },
         { q: "What is the salary of a Respiratory Therapist in India?", a: "Entry-level respiratory therapists in India typically earn between ₹3-5 lakhs per annum. With 3-5 years of experience and specialization in areas like critical care or neonatal respiratory care, salaries can range from ₹6-12 lakhs per annum. Senior respiratory therapists in corporate hospitals and those working abroad can earn ₹15-25 lakhs or more per annum. Salaries vary based on location, hospital type, and specialized skills in mechanical ventilation and critical care." },
         { q: "What are the career opportunities after B.Sc Respiratory Therapy?", a: "Graduates can pursue diverse career paths including Respiratory Therapist, ICU Ventilator Specialist, Pulmonary Function Technologist, Sleep Lab Technician, Neonatal Respiratory Care Specialist, Cardiopulmonary Rehabilitation Specialist, Home Care Respiratory Therapist, and Medical Equipment Sales Representative. Employment opportunities exist in multi-specialty hospitals, ICUs, pulmonary function laboratories, sleep centers, neonatal units, rehabilitation centers, home healthcare companies, and medical device organizations." },
         { q: "Can I pursue higher education after B.Sc Respiratory Therapy?", a: "Yes, graduates can pursue M.Sc in Respiratory Therapy, M.Sc in Critical Care Technology, MBA in Healthcare Management, or MPH (Master of Public Health). Research-oriented individuals can pursue Ph.D. in Respiratory Sciences. International certifications such as Registered Respiratory Therapist (RRT) from the National Board for Respiratory Care (USA) can significantly enhance career prospects globally. Many graduates also pursue specialized certifications in mechanical ventilation, sleep medicine, and neonatal respiratory care." },

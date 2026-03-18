@@ -1,15 +1,16 @@
-import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata = createPageMetadata({
   title: "Best Radiography Course in Tamilnadu | JKKN AHS College",
-  description: "JKKN offers the best radiography course in Tamilnadu. BSc radiography programme with hospital-attached imaging training & placements. Admissions 2026-27 open!",
+  description: "JKKN offers the best radiography course in Tamilnadu. BSc radiography programme with hospital-attached imaging training & placements. Admissions 2026-27!",
+  path: "/radiology-imaging-technology",
   keywords: [
     "radiography course in tamilnadu",
     "b sc radiography colleges in tamilnadu",
     "bsc radiography colleges in tamilnadu",
     "radiography courses in tamilnadu"
   ],
-};
+});
 
 const courseSchema = {
   "@context": "https://schema.org",
@@ -27,11 +28,11 @@ const courseSchema = {
   "educationalCredentialAwarded": "Bachelor of Science (B.Sc)",
   "timeRequired": "P4Y",
   "inLanguage": "en",
-  "coursePrerequisites": "10+2 or equivalent with Physics, Chemistry, and Biology/Mathematics. Minimum 50% aggregate (40% for SC/ST/OBC). Age 17+ years.",
+  "coursePrerequisites": "10+2 or equivalent with Physics, Chemistry, and Biology/Mathematics. Minimum 50% aggregate (40% for SC/ST, 45% for OBC). Age 17+ years.",
   "hasCourseInstance": {
     "@type": "CourseInstance",
     "courseMode": "full-time",
-    "startDate": "2026",
+    "startDate": "2026-08-01",
     "location": {
       "@type": "Place",
       "name": "JKKN College of Allied Health Sciences",
@@ -53,7 +54,26 @@ const courseSchema = {
     "Ultrasound Imaging",
     "Mammography",
     "PACS Systems"
-  ]
+  ],
+  "offers": {
+    "@type": "Offer",
+    "category": "Tuition Fees",
+    "priceCurrency": "INR",
+    "url": "https://admission.jkkn.ac.in/",
+    "availability": "https://schema.org/InStock",
+    "validFrom": "2026-03-01"
+  }
+};
+
+const speakableSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Best Radiography Course in Tamilnadu | JKKN AHS College",
+  "url": "https://ahs.jkkn.ac.in/radiology-imaging-technology",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": ["h1", "h2"]
+  }
 };
 
 const breadcrumbSchema = {
@@ -83,7 +103,7 @@ const faqSchema = {
       "name": "What is the eligibility criteria?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Candidates must have passed 10+2 with Physics, Chemistry, and Biology/Mathematics with minimum 50% aggregate marks (45% for reserved categories). Minimum age is 17 years as on December 31st of the admission year. A medical fitness certificate is also required."
+        "text": "Candidates must have passed 10+2 with Physics, Chemistry, and Biology/Mathematics with minimum 50% aggregate marks (40% for SC/ST, 45% for OBC). Minimum age is 17 years as on December 31st of the admission year. A medical fitness certificate is also required."
       }
     },
     {
@@ -99,7 +119,7 @@ const faqSchema = {
       "name": "What are the career opportunities?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Graduates can work as X-ray Technician, CT Scan Technologist, MRI Technologist, Ultrasound Technician, Mammography Specialist, Interventional Radiology Technician, Nuclear Medicine Technologist, and Quality Assurance Officer in hospitals, diagnostic centers, and research institutions."
+        "text": "Radiography graduates work as X-ray Technicians, CT Scan Technologists, MRI Technologists, and Ultrasound Technicians in hospitals and diagnostic centers. Additional roles include Mammography Specialist, Interventional Radiology Technician, Nuclear Medicine Technologist, and Quality Assurance Officer."
       }
     },
     {
@@ -115,7 +135,7 @@ const faqSchema = {
       "name": "Can I pursue higher education after this course?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, graduates can pursue M.Sc in Radiography Imaging Technology, M.Sc in Medical Imaging, M.Sc in Radiological Sciences, PG Diploma in CT/MRI Technology, or MBA in Healthcare Management for advanced career opportunities and leadership roles."
+        "text": "Yes, graduates can pursue M.Sc in Radiography Imaging Technology, Medical Imaging, or Radiological Sciences for advanced specialization. PG Diploma in CT/MRI Technology and MBA in Healthcare Management are also available for career advancement and leadership roles."
       }
     },
     {
@@ -155,6 +175,10 @@ export default function RadiologyImagingTechnologyLayout({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }}
       />
       {children}
     </>

@@ -1,8 +1,9 @@
-import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata = createPageMetadata({
   title: "BSc Cardiac Technology Colleges in Tamilnadu | JKKN",
   description: "Looking for BSc cardiac technology colleges in Tamilnadu? JKKN offers cardiac care technology courses with clinical training & scholarships. Apply 2026-27!",
+  path: "/cardiac-technology",
   keywords: [
     "bsc cardiac technology colleges in tamilnadu",
     "cardiac technology college in tamilnadu",
@@ -16,7 +17,7 @@ export const metadata: Metadata = {
     "b sc cardiac perfusion technology colleges in tamilnadu",
     "cardiac perfusion technology course in tamilnadu"
   ],
-};
+});
 
 const courseSchema = {
   "@context": "https://schema.org",
@@ -34,11 +35,11 @@ const courseSchema = {
   "educationalCredentialAwarded": "Bachelor of Science (B.Sc)",
   "timeRequired": "P4Y",
   "inLanguage": "en",
-  "coursePrerequisites": "10+2 or equivalent with Physics, Chemistry, and Biology/Mathematics. Minimum 50% aggregate (40% for SC/ST/OBC). Age 17+ years.",
+  "coursePrerequisites": "10+2 or equivalent with Physics, Chemistry, and Biology/Mathematics. Minimum 50% aggregate (40% for SC/ST, 45% for OBC). Age 17+ years.",
   "hasCourseInstance": {
     "@type": "CourseInstance",
     "courseMode": "full-time",
-    "startDate": "2026",
+    "startDate": "2026-08-01",
     "location": {
       "@type": "Place",
       "name": "JKKN College of Allied Health Sciences",
@@ -59,7 +60,26 @@ const courseSchema = {
     "Echocardiography",
     "Cardiac Catheterization",
     "Patient Monitoring"
-  ]
+  ],
+  "offers": {
+    "@type": "Offer",
+    "category": "Tuition Fees",
+    "priceCurrency": "INR",
+    "url": "https://admission.jkkn.ac.in/",
+    "availability": "https://schema.org/InStock",
+    "validFrom": "2026-03-01"
+  }
+};
+
+const speakableSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "BSc Cardiac Technology Colleges in Tamilnadu | JKKN",
+  "url": "https://ahs.jkkn.ac.in/cardiac-technology",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": ["h1", "h2"]
+  }
 };
 
 const breadcrumbSchema = {
@@ -81,7 +101,7 @@ const faqSchema = {
       "name": "What is B.Sc Cardiac Technology?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "B.Sc Cardiac Technology is an allied health science course that deals with the diagnosis and treatment of heart-related problems using advanced medical equipment."
+        "text": "B.Sc Cardiac Technology is a four-year allied health science degree that trains professionals in cardiovascular diagnosis and treatment using advanced medical equipment. Graduates work as ECG Technicians, Echo Technologists, and Cath Lab Technicians in hospitals and cardiac care centers."
       }
     },
     {
@@ -89,7 +109,7 @@ const faqSchema = {
       "name": "What is the eligibility criteria?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Students must have passed 10+2 with Physics, Chemistry, and Biology/Maths with a minimum of 50% aggregate marks."
+        "text": "Eligibility requires 10+2 with Physics, Chemistry, and Biology or Maths with a minimum of 50% aggregate marks. SC/ST candidates require 40% aggregate, OBC candidates require 45% aggregate. Applicants must be at least 17 years of age."
       }
     },
     {
@@ -97,7 +117,7 @@ const faqSchema = {
       "name": "What is the scope of Cardiac Technology?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Scope is vast, including roles in hospitals, cath labs, cardiac rehabilitation centers, and medical device companies."
+        "text": "Cardiac Technology graduates are employed in hospitals, cath labs, cardiac rehabilitation centers, and medical device companies. The scope spans ECG services, echocardiography, interventional cardiology, and cardiac monitoring roles across government and private healthcare institutions."
       }
     },
     {
@@ -137,6 +157,10 @@ export default function CardiacTechnologyLayout({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }}
       />
       {children}
     </>

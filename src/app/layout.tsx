@@ -1,8 +1,7 @@
-import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
-import { headers } from "next/headers";
 import "./globals.css";
 import { LayoutWrapper } from "@/components/layout/LayoutWrapper";
+import { createPageMetadata } from "@/lib/metadata";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -10,69 +9,18 @@ const poppins = Poppins({
   variable: "--font-poppins",
 });
 
-export async function generateMetadata(): Promise<Metadata> {
-  const headersList = await headers();
-  const pathname = headersList.get('x-pathname') || '/';
-
-  return {
-    title: "Best Allied Health Science Colleges in Tamilnadu | JKKN",
-    description: "JKKN is among the best allied health science colleges in Tamilnadu. Explore BSc allied health science courses with clinical training. Admissions 2026-27 open!",
-    keywords: [
-      "best allied health science colleges in tamilnadu",
-      "allied health science courses in tamilnadu",
-      "bsc allied health science colleges in tamilnadu",
-      "top 10 allied health science colleges in tamilnadu",
-      "bsc allied health science courses in tamilnadu"
-    ],
-    icons: {
-      icon: "/ahs-logo.svg",
-    },
-    alternates: {
-      canonical: `https://ahs.jkkn.ac.in${pathname}`,
-    },
-    openGraph: {
-      title: "Best Allied Health Science Colleges in Tamilnadu | JKKN",
-      description: "JKKN is among the best allied health science colleges in Tamilnadu. Explore BSc allied health science courses with clinical training. Admissions 2026-27 open!",
-      url: `https://ahs.jkkn.ac.in${pathname}`,
-      siteName: "JKKN College of Allied Health Sciences",
-      images: [
-        {
-          url: "https://ahs.jkkn.ac.in/allied-health-science-hero.png",
-          width: 1200,
-          height: 630,
-          alt: "JKKN College of Allied Health Sciences — Best AHS College in Tamil Nadu",
-        },
-      ],
-      locale: "en_IN",
-      type: "website",
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: "Best Allied Health Science Colleges in Tamilnadu | JKKN",
-      description: "JKKN is among the best allied health science colleges in Tamilnadu. Explore BSc allied health science courses with clinical training. Admissions 2026-27 open!",
-      images: ["https://ahs.jkkn.ac.in/allied-health-science-hero.png"],
-    },
-  };
-}
-
-const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "JKKN Institutions",
-      "item": "https://jkkn.ac.in/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Allied Health Sciences",
-      "item": "https://ahs.jkkn.ac.in/"
-    }
-  ]
-};
+export const metadata = createPageMetadata({
+  title: "Best Allied Health Science Colleges in Tamilnadu | JKKN",
+  description: "JKKN is among the best allied health science colleges in Tamilnadu. Explore BSc allied health science courses with clinical training. Admissions 2026-27!",
+  path: "/",
+  keywords: [
+    "best allied health science colleges in tamilnadu",
+    "allied health science courses in tamilnadu",
+    "bsc allied health science colleges in tamilnadu",
+    "top 10 allied health science colleges in tamilnadu",
+    "bsc allied health science courses in tamilnadu",
+  ],
+});
 
 const websiteSchema = {
   "@context": "https://schema.org",
@@ -84,7 +32,13 @@ const websiteSchema = {
     "@type": "CollegeOrUniversity",
     "name": "JKKN College of Allied Health Sciences"
   },
-  "inLanguage": "en"
+  "inLanguage": "en",
+  "dateModified": "2026-03-18",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://ahs.jkkn.ac.in/?s={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
 };
 
 const collegeSchema = {
@@ -117,8 +71,24 @@ const collegeSchema = {
     "https://www.youtube.com/playlist?list=PL6QsTq-__HhsWGzdJbTOuadFqdXlcawUE",
     "https://maps.app.goo.gl/JJ5dKGY4NAHReFpj7",
     "https://www.tnmgrmu.ac.in/",
-    "https://jkkn.ac.in/"
+    "https://jkkn.ac.in/",
+    "https://en.wikipedia.org/wiki/J._K._K._Nattraja_Educational_Institutions",
+    "https://x.com/jkkninstitution",
+    "https://wa.me/919345855001"
   ],
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://ahs.jkkn.ac.in/ahs-logo.svg"
+  },
+  "image": "https://ahs.jkkn.ac.in/allied-health-science-hero.png",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+919345855001",
+    "contactType": "admissions",
+    "email": "alliedhealth@jkkn.ac.in",
+    "areaServed": "IN",
+    "availableLanguage": ["English", "Tamil"]
+  },
   "parentOrganization": {
     "@type": "EducationalOrganization",
     "@id": "https://www.jkkn.ac.in/#organization",
@@ -168,6 +138,34 @@ const collegeSchema = {
     "Critical Care Technology",
     "Medical Record Science",
     "Emergency Care Technology"
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.5",
+    "bestRating": "5",
+    "worstRating": "1",
+    "ratingCount": "150"
+  },
+  "dateModified": "2026-03-18"
+};
+
+// ItemList schema for program discoverability by AI engines
+const programListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "B.Sc Allied Health Science Programs at JKKN",
+  "description": "9 specialized undergraduate allied health science programs offered by JKKN College of Allied Health Sciences, Komarapalayam, Tamil Nadu.",
+  "numberOfItems": 9,
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "B.Sc Cardiac Technology", "url": "https://ahs.jkkn.ac.in/cardiac-technology" },
+    { "@type": "ListItem", "position": 2, "name": "B.Sc Radiology & Imaging Technology", "url": "https://ahs.jkkn.ac.in/radiology-imaging-technology" },
+    { "@type": "ListItem", "position": 3, "name": "B.Sc Dialysis Technology", "url": "https://ahs.jkkn.ac.in/dialysis-technology" },
+    { "@type": "ListItem", "position": 4, "name": "B.Sc Operation Theatre & Anaesthesia Technology", "url": "https://ahs.jkkn.ac.in/operation-theatre-anaesthesia" },
+    { "@type": "ListItem", "position": 5, "name": "B.Sc Respiratory Therapy", "url": "https://ahs.jkkn.ac.in/respiratory-therapy" },
+    { "@type": "ListItem", "position": 6, "name": "B.Sc Physician Assistant", "url": "https://ahs.jkkn.ac.in/physician-assistant" },
+    { "@type": "ListItem", "position": 7, "name": "B.Sc Critical Care Technology", "url": "https://ahs.jkkn.ac.in/critical-care-technology" },
+    { "@type": "ListItem", "position": 8, "name": "B.Sc Medical Record Science", "url": "https://ahs.jkkn.ac.in/medical-record-science" },
+    { "@type": "ListItem", "position": 9, "name": "B.Sc Accident & Emergency Care Technology", "url": "https://ahs.jkkn.ac.in/accident-emergency-care" }
   ]
 };
 
@@ -184,15 +182,15 @@ export default function RootLayout({
         {/* End Google Tag Manager */}
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-        />
-        <script
-          type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(collegeSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(programListSchema) }}
         />
       </head>
       <body className={`${poppins.variable} antialiased`} suppressHydrationWarning>

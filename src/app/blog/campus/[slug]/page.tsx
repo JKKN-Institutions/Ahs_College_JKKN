@@ -1,10 +1,62 @@
 import { createClient } from '@/lib/supabase/server';
 import { notFound } from 'next/navigation';
+import type { Metadata } from 'next';
 import { Navbar as Header } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import CampusBlogContent from './CampusBlogContent';
 
 export const revalidate = 300;
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const supabase = await createClient();
+  const collegeId = process.env.NEXT_PUBLIC_COLLEGE_ID!;
+
+  const { data: post } = await supabase
+    .from('blogs')
+    .select('title, excerpt, cover_image_url, published_at, created_at')
+    .eq('slug', slug)
+    .eq('college_id', collegeId)
+    .eq('is_published', true)
+    .single();
+
+  if (!post) {
+    return {
+      title: 'Campus Blog | JKKN College of Allied Health Sciences',
+      description: 'Latest campus news and updates from JKKN College of Allied Health Sciences.',
+    };
+  }
+
+  const title = `${post.title} | JKKN AHS Campus Blog`;
+  const description = post.excerpt ?? 'Read the latest campus news and updates from JKKN College of Allied Health Sciences.';
+  const url = `https://ahs.jkkn.ac.in/blog/campus/${slug}`;
+  const imageUrl = post.cover_image_url ?? 'https://ahs.jkkn.ac.in/allied-health-science-hero.png';
+
+  return {
+    title,
+    description,
+    alternates: { canonical: url },
+    openGraph: {
+      title,
+      description,
+      url,
+      siteName: 'JKKN College of Allied Health Sciences',
+      images: [{ url: imageUrl, width: 1200, height: 630, alt: post.title }],
+      type: 'article',
+      publishedTime: post.published_at ?? post.created_at,
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: [imageUrl],
+    },
+  };
+}
 
 /** Extract h2/h3 headings from HTML and inject id attributes for TOC */
 function processContent(
@@ -120,8 +172,55 @@ export default async function CampusBlogPost({
 
   const { words, readTime } = calcReadMeta(rawHtml);
 
+  const siteUrl = 'https://ahs.jkkn.ac.in';
+  const postUrl = `${siteUrl}/blog/campus/${slug}`;
+  const blogPostingSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: post.title,
+    description: post.excerpt ?? '',
+    url: postUrl,
+    datePublished: post.published_at ?? post.created_at,
+    dateModified: post.updated_at ?? post.published_at ?? post.created_at,
+    author: {
+      '@type': 'Person',
+      name: 'JKKN Editorial Team',
+      url: siteUrl,
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'JKKN College of Allied Health Sciences',
+      url: siteUrl,
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': postUrl,
+    },
+    ...(post.cover_image_url ? { image: post.cover_image_url } : {}),
+    ...(post.tags ? { keywords: Array.isArray(post.tags) ? post.tags.join(', ') : post.tags } : {}),
+  };
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'JKKN Institutions', item: 'https://jkkn.ac.in/' },
+      { '@type': 'ListItem', position: 2, name: 'Allied Health Sciences', item: siteUrl },
+      { '@type': 'ListItem', position: 3, name: 'Blog', item: `${siteUrl}/blog` },
+      { '@type': 'ListItem', position: 4, name: post.title, item: postUrl },
+    ],
+  };
+
   return (
     <div className="min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <Header />
       <CampusBlogContent
         post={post}

@@ -1,14 +1,15 @@
-import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata = createPageMetadata({
   title: "B Sc Dialysis Technology Colleges in Tamilnadu | JKKN",
-  description: "Looking for BSc dialysis technology colleges in Tamilnadu? JKKN offers renal dialysis technology courses with clinical training & placements. Apply 2026-27!",
+  description: "Looking for BSc dialysis technology colleges in Tamilnadu? JKKN offers renal dialysis technology courses with clinical training & placements. Apply now.",
+  path: "/dialysis-technology",
   keywords: [
     "b sc dialysis technology colleges in tamilnadu",
     "bsc dialysis technology colleges in tamilnadu",
     "bsc renal dialysis technology colleges in tamilnadu"
   ],
-};
+});
 
 const courseSchema = {
   "@context": "https://schema.org",
@@ -26,11 +27,11 @@ const courseSchema = {
   "educationalCredentialAwarded": "Bachelor of Science (B.Sc)",
   "timeRequired": "P4Y",
   "inLanguage": "en",
-  "coursePrerequisites": "10+2 or equivalent with Physics, Chemistry, and Biology. Minimum 50% aggregate (40% for SC/ST/OBC). Age 17+ years.",
+  "coursePrerequisites": "10+2 or equivalent with Physics, Chemistry, and Biology. Minimum 50% aggregate (40% for SC/ST, 45% for OBC). Age 17+ years.",
   "hasCourseInstance": {
     "@type": "CourseInstance",
     "courseMode": "full-time",
-    "startDate": "2026",
+    "startDate": "2026-08-01",
     "location": {
       "@type": "Place",
       "name": "JKKN College of Allied Health Sciences",
@@ -51,7 +52,26 @@ const courseSchema = {
     "Water Treatment Systems",
     "Renal Patient Care",
     "Dialysis Equipment Management"
-  ]
+  ],
+  "offers": {
+    "@type": "Offer",
+    "category": "Tuition Fees",
+    "priceCurrency": "INR",
+    "url": "https://admission.jkkn.ac.in/",
+    "availability": "https://schema.org/InStock",
+    "validFrom": "2026-03-01"
+  }
+};
+
+const speakableSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "B Sc Dialysis Technology Colleges in Tamilnadu | JKKN",
+  "url": "https://ahs.jkkn.ac.in/dialysis-technology",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": ["h1", "h2"]
+  }
 };
 
 const breadcrumbSchema = {
@@ -73,7 +93,7 @@ const faqSchema = {
       "name": "What is B.Sc Dialysis Technology?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "B.Sc Dialysis Technology is a 3 years + 1 year internship program that trains professionals in renal replacement therapy. It covers hemodialysis, peritoneal dialysis, water treatment systems, vascular access management, patient care, and dialysis unit operations. Graduates become qualified to operate dialysis equipment and provide critical care to patients with kidney failure."
+        "text": "B.Sc Dialysis Technology is a four-year degree that trains professionals in hemodialysis, peritoneal dialysis, and renal replacement therapy. It covers water treatment systems, vascular access management, patient care, and dialysis unit operations. Graduates operate dialysis equipment and provide critical care to patients with kidney failure."
       }
     },
     {
@@ -81,7 +101,7 @@ const faqSchema = {
       "name": "What is the eligibility criteria?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Candidates must have passed 10+2 with Physics, Chemistry, and Biology with minimum 50% aggregate marks (45% for reserved categories). Minimum age is 17 years as on December 31st of the admission year. A medical fitness certificate is also required."
+        "text": "Candidates must have passed 10+2 with Physics, Chemistry, and Biology with minimum 50% aggregate marks (40% for SC/ST, 45% for OBC). Minimum age is 17 years as on December 31st of the admission year. A medical fitness certificate is also required."
       }
     },
     {
@@ -97,7 +117,7 @@ const faqSchema = {
       "name": "What are the career opportunities?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Graduates can work as Dialysis Technicians, Hemodialysis Specialists, Peritoneal Dialysis Technicians, Renal Care Coordinators, Dialysis Unit Supervisors, and Research Associates in hospitals, standalone dialysis centers, nephrology departments, and research institutions. There are also opportunities in medical equipment companies and healthcare consulting."
+        "text": "Dialysis Technology graduates work as Dialysis Technicians, Hemodialysis Specialists, Renal Care Coordinators, and Dialysis Unit Supervisors. Employment opportunities exist in hospitals, standalone dialysis centers, nephrology departments, medical equipment companies, research institutions, and healthcare consulting firms."
       }
     },
     {
@@ -105,7 +125,7 @@ const faqSchema = {
       "name": "Can I pursue higher education after this course?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, graduates can pursue M.Sc in Dialysis Technology, M.Sc in Renal Sciences, M.Sc in Medical Technology, MBA in Healthcare Management, or specialized certifications in advanced dialysis techniques like CRRT (Continuous Renal Replacement Therapy) for enhanced career opportunities."
+        "text": "Yes, graduates can pursue M.Sc in Dialysis Technology, Renal Sciences, or Medical Technology after completing this degree. Advanced options include MBA in Healthcare Management and specialized certifications in CRRT (Continuous Renal Replacement Therapy) for enhanced career opportunities."
       }
     },
     {
@@ -113,7 +133,7 @@ const faqSchema = {
       "name": "What practical training is included?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The program includes 2000+ hours of clinical training in hemodialysis units, peritoneal dialysis centers, and nephrology departments with hands-on experience in machine operations, vascular access cannulation, patient monitoring, water treatment system management, and emergency response procedures."
+        "text": "The program includes 2000+ hours of clinical training in hemodialysis units, peritoneal dialysis centers, and nephrology departments. Students gain hands-on experience in machine operations, vascular access cannulation, patient monitoring, water treatment system management, and emergency response procedures."
       }
     },
     {
@@ -153,6 +173,10 @@ export default function DialysisTechnologyLayout({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }}
       />
       {children}
     </>

@@ -40,7 +40,7 @@ export default async function BlogPage() {
                 Latest Articles
               </h2>
               <p className="text-gray-500 text-sm mt-1.5">
-                Expert insights on teacher education and careers
+                Expert insights on allied health sciences and healthcare careers
               </p>
             </div>
 

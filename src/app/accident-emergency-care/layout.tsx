@@ -1,12 +1,18 @@
-import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata = createPageMetadata({
   title: "BSc Accident and Emergency Care Technology in Tamilnadu",
   description: "Looking for BSc accident and emergency care technology colleges in Tamilnadu? JKKN provides hospital training, placements & scholarships. Enrol 2026-27!",
+  path: "/accident-emergency-care",
   keywords: [
-    "bsc accident and emergency care technology colleges in tamilnadu"
+    "bsc accident and emergency care technology colleges in tamilnadu",
+    "trauma care technology course",
+    "emergency medical technician course tamilnadu",
+    "bsc emergency care admission 2026",
+    "emt training college namakkal",
+    "accident emergency care technology course"
   ],
-};
+});
 
 const courseSchema = {
   "@context": "https://schema.org",
@@ -24,11 +30,11 @@ const courseSchema = {
   "educationalCredentialAwarded": "Bachelor of Science (B.Sc)",
   "timeRequired": "P4Y",
   "inLanguage": "en",
-  "coursePrerequisites": "10+2 or equivalent with Physics, Chemistry, and Biology. Minimum 50% aggregate (40% for SC/ST/OBC). Age 17+ years.",
+  "coursePrerequisites": "10+2 or equivalent with Physics, Chemistry, and Biology. Minimum 50% aggregate (40% for SC/ST, 45% for OBC). Age 17+ years.",
   "hasCourseInstance": {
     "@type": "CourseInstance",
     "courseMode": "full-time",
-    "startDate": "2026",
+    "startDate": "2026-08-01",
     "location": {
       "@type": "Place",
       "name": "JKKN College of Allied Health Sciences",
@@ -49,7 +55,26 @@ const courseSchema = {
     "Advanced Life Support",
     "Disaster Management",
     "Pre-Hospital Emergency Care"
-  ]
+  ],
+  "offers": {
+    "@type": "Offer",
+    "category": "Tuition Fees",
+    "priceCurrency": "INR",
+    "url": "https://admission.jkkn.ac.in/",
+    "availability": "https://schema.org/InStock",
+    "validFrom": "2026-03-01"
+  }
+};
+
+const speakableSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "BSc Accident and Emergency Care Technology in Tamilnadu",
+  "url": "https://ahs.jkkn.ac.in/accident-emergency-care",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": ["h1", "h2"]
+  }
 };
 
 const breadcrumbSchema = {
@@ -71,7 +96,7 @@ const faqSchema = {
       "name": "What is B.Sc Accident and Emergency Care Technology?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "B.Sc Accident and Emergency Care Technology is a 3 years + 1 year internship undergraduate degree program that trains professionals in emergency medical services, trauma care, critical care management, advanced life support, disaster management, and emergency response coordination. Graduates become skilled first responders and emergency care specialists capable of handling any medical crisis."
+        "text": "B.Sc Accident and Emergency Care Technology is a four-year degree that trains professionals in emergency medical services, trauma care, and advanced life support. The program also covers disaster management and emergency response coordination. Graduates become skilled first responders and emergency care specialists capable of handling any medical crisis."
       }
     },
     {
@@ -79,7 +104,7 @@ const faqSchema = {
       "name": "What is the eligibility criteria?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Candidates must have passed 10+2 with Physics, Chemistry, and Biology with minimum 50% aggregate marks (40% for reserved categories). Minimum age is 17 years as on December 31st of the admission year. A medical fitness certificate is also required."
+        "text": "Candidates must have passed 10+2 with Physics, Chemistry, and Biology with minimum 50% aggregate marks (40% for SC/ST, 45% for OBC). Minimum age is 17 years as on December 31st of the admission year. A medical fitness certificate is also required."
       }
     },
     {
@@ -95,7 +120,7 @@ const faqSchema = {
       "name": "What are the career opportunities?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Graduates can work as Emergency Medical Technicians, Trauma Care Specialists, Critical Care Technologists, Disaster Management Coordinators, Emergency Room Technicians, Ambulance Service Managers, and Research Associates in hospitals, trauma centers, and emergency services."
+        "text": "Accident and Emergency Care graduates work as Emergency Medical Technicians, Trauma Care Specialists, and Critical Care Technologists in hospitals and trauma centers. Additional roles include Disaster Management Coordinator, Emergency Room Technician, and Ambulance Service Manager."
       }
     },
     {
@@ -103,7 +128,7 @@ const faqSchema = {
       "name": "What certifications will I receive?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The program includes certifications in Basic Life Support (BLS), Advanced Cardiac Life Support (ACLS), Advanced Trauma Life Support (ATLS), Pediatric Advanced Life Support (PALS), and Pre-Hospital Trauma Life Support (PHTLS), making graduates highly qualified for emergency care positions."
+        "text": "The program includes certifications in BLS, ACLS, ATLS, PALS, and PHTLS, making graduates highly qualified for emergency care positions. These industry-recognized credentials cover Basic Life Support, Advanced Cardiac, Trauma, Pediatric, and Pre-Hospital Trauma Life Support."
       }
     },
     {
@@ -111,7 +136,7 @@ const faqSchema = {
       "name": "Can I pursue higher education after this course?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, graduates can pursue M.Sc in Emergency Medicine, M.Sc in Critical Care, M.Sc in Disaster Management, MBA in Healthcare Management, or specialized certifications in trauma care, disaster management, or emergency medical services for advanced career opportunities."
+        "text": "Yes, graduates can pursue M.Sc in Emergency Medicine, Critical Care, or Disaster Management for advanced specialization. MBA in Healthcare Management and specialized certifications in trauma care or emergency medical services are also available."
       }
     },
     {
@@ -119,7 +144,7 @@ const faqSchema = {
       "name": "What practical training is included?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The program includes 2000+ hours of clinical training in emergency departments, trauma centers, ICUs, ambulance services, and disaster management units with hands-on experience in patient assessment, triage, CPR, airway management, trauma care, and all major emergency medical procedures."
+        "text": "The program includes 2000+ hours of clinical training in emergency departments, trauma centers, ICUs, ambulance services, and disaster management units. Students gain hands-on experience in patient assessment, triage, CPR, airway management, trauma care, and all major emergency medical procedures."
       }
     },
     {
@@ -151,6 +176,10 @@ export default function AccidentEmergencyCareLayout({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }}
       />
       {children}
     </>

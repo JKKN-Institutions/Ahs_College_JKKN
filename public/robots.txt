@@ -528,6 +528,9 @@ Disallow: /
 # 8. SITEMAP & HOST
 # ---------------------------------------------------------------------------
 
+# LLM-readable institution data
+# llms.txt: https://ahs.jkkn.ac.in/llms.txt
+
 Sitemap: https://ahs.jkkn.ac.in/sitemap.xml
 Host: https://ahs.jkkn.ac.in
 

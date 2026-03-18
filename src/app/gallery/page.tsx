@@ -27,9 +27,9 @@ const hardcodedAlbums = [
     id: 'hc-library',
     name: 'Library',
     images: [
-      { url: '/library/labrary (1).png', caption: 'Library' },
-      { url: '/library/labrary1 (1).webp', caption: 'Library Reading Area' },
-      { url: '/library/labrary3 (1).png', caption: 'Library Collection' },
+      { url: '/library/library-1.png', caption: 'Library' },
+      { url: '/library/library-1.webp', caption: 'Library Reading Area' },
+      { url: '/library/library-3.png', caption: 'Library Collection' },
     ],
   },
   {

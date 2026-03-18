@@ -12,7 +12,7 @@ const faqs = [
     },
     {
         question: "What is the eligibility for B.Sc. Allied Health Sciences admission at JKKN?",
-        answer: "Eligibility requires completion of 10+2 with Physics, Chemistry, and Biology (PCB) with minimum 50% marks (45% for reserved categories). Age should be 17-25 years as on 31st December of the admission year. NEET is not mandatory. Both Indian nationals and NRI candidates are eligible. Admission is through merit-based selection and counseling."
+        answer: "Eligibility requires completion of 10+2 with Physics, Chemistry, and Biology (PCB) with minimum 50% marks (40% for SC/ST, 45% for OBC). Age should be 17-25 years as on 31st December of the admission year. NEET is not mandatory. Both Indian nationals and NRI candidates are eligible. Admission is through merit-based selection and counseling."
     },
     {
         question: "Which university is JKKN Allied Health Sciences College affiliated with?",

@@ -1,12 +1,18 @@
-import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata = createPageMetadata({
   title: "BSc Medical Record Science Colleges in Tamilnadu | JKKN",
   description: "Looking for BSc medical record science colleges in Tamilnadu? JKKN offers clinical training, NAAC accreditation & placement support. Apply for 2026-27!",
+  path: "/medical-record-science",
   keywords: [
-    "bsc medical record science colleges in tamilnadu"
+    "bsc medical record science colleges in tamilnadu",
+    "health information management course",
+    "medical coding course tamilnadu",
+    "icd-10 training college",
+    "bsc medical records admission 2026",
+    "medical record science course namakkal"
   ],
-};
+});
 
 const courseSchema = {
   "@context": "https://schema.org",
@@ -24,11 +30,11 @@ const courseSchema = {
   "educationalCredentialAwarded": "Bachelor of Science (B.Sc)",
   "timeRequired": "P4Y",
   "inLanguage": "en",
-  "coursePrerequisites": "10+2 or equivalent with Physics, Chemistry, and Biology/Mathematics. Minimum 50% aggregate (40% for SC/ST/OBC). Age 17+ years.",
+  "coursePrerequisites": "10+2 or equivalent with Physics, Chemistry, and Biology/Mathematics. Minimum 50% aggregate (40% for SC/ST, 45% for OBC). Age 17+ years.",
   "hasCourseInstance": {
     "@type": "CourseInstance",
     "courseMode": "full-time",
-    "startDate": "2026",
+    "startDate": "2026-08-01",
     "location": {
       "@type": "Place",
       "name": "JKKN College of Allied Health Sciences",
@@ -49,7 +55,26 @@ const courseSchema = {
     "Electronic Health Records",
     "Healthcare Data Analytics",
     "Hospital Information Systems"
-  ]
+  ],
+  "offers": {
+    "@type": "Offer",
+    "category": "Tuition Fees",
+    "priceCurrency": "INR",
+    "url": "https://admission.jkkn.ac.in/",
+    "availability": "https://schema.org/InStock",
+    "validFrom": "2026-03-01"
+  }
+};
+
+const speakableSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "BSc Medical Record Science Colleges in Tamilnadu | JKKN",
+  "url": "https://ahs.jkkn.ac.in/medical-record-science",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": ["h1", "h2"]
+  }
 };
 
 const breadcrumbSchema = {
@@ -71,7 +96,7 @@ const faqSchema = {
       "name": "What is B.Sc Medical Record Science?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "B.Sc Medical Record Science is a 3 years + 1 year internship program that trains professionals in health information management, medical coding, ICD classification, health records administration, healthcare data analytics, and hospital information systems. Graduates manage patient health records and ensure data accuracy for quality healthcare delivery."
+        "text": "B.Sc Medical Record Science is a four-year degree that trains professionals in health information management, medical coding, and ICD classification. The program covers healthcare data analytics and hospital information systems. Graduates manage patient health records and ensure data accuracy for quality healthcare delivery."
       }
     },
     {
@@ -79,7 +104,7 @@ const faqSchema = {
       "name": "What is the eligibility criteria?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Candidates must have passed 10+2 with Physics, Chemistry, and Biology/Mathematics with minimum 50% aggregate marks (45% for reserved categories). Minimum age is 17 years as on December 31st of the admission year."
+        "text": "Candidates must have passed 10+2 with Physics, Chemistry, and Biology/Mathematics with minimum 50% aggregate marks (40% for SC/ST, 45% for OBC). Minimum age is 17 years as on December 31st of the admission year."
       }
     },
     {
@@ -95,7 +120,7 @@ const faqSchema = {
       "name": "What are the career opportunities?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Graduates can work as Medical Record Technician, Health Information Manager, Medical Coder, Clinical Data Analyst, Medical Transcriptionist, Quality Assurance Officer, Medical Auditor, and Healthcare IT Specialist in hospitals, diagnostic centers, insurance companies, pharmaceutical firms, and healthcare IT organizations."
+        "text": "Medical Record Science graduates work as Medical Record Technicians, Health Information Managers, Medical Coders, and Clinical Data Analysts in hospitals and insurance companies. Additional roles include Medical Auditor, Healthcare IT Specialist, and Quality Assurance Officer in pharmaceutical firms."
       }
     },
     {
@@ -119,7 +144,7 @@ const faqSchema = {
       "name": "Can I pursue higher education after this course?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, graduates can pursue M.Sc in Medical Record Science, M.Sc in Health Informatics, MBA in Healthcare Management, or professional certifications like RHIA (Registered Health Information Administrator), CCS (Certified Coding Specialist), or CCA (Certified Coding Associate) for advanced career opportunities."
+        "text": "Yes, graduates can pursue M.Sc in Medical Record Science, Health Informatics, or MBA in Healthcare Management. Professional certifications like RHIA, CCS (Certified Coding Specialist), and CCA (Certified Coding Associate) are also available for career advancement."
       }
     },
     {
@@ -151,6 +176,10 @@ export default function MedicalRecordScienceLayout({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }}
       />
       {children}
     </>

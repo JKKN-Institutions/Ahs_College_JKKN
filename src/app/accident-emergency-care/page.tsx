@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { motion, AnimatePresence } from 'framer-motion';
+import Link from 'next/link';
 import {
     Clock, Users, Building2, Activity, ArrowRight, CheckCircle2,
     Download, Calendar, Laptop, Sparkles, Heart,
@@ -29,6 +30,41 @@ export default function AccidentEmergencyCare() {
                 <FAQSection />
                 <CTASection />
             </main>
+
+            {/* Related Programs */}
+            <section className="py-12 px-4 bg-gray-50">
+                <div className="max-w-6xl mx-auto">
+                    <h2 className="text-2xl md:text-3xl font-bold text-[#0b6d41] text-center mb-8">
+                        Explore Other Programs
+                    </h2>
+                    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+                        <Link href="/cardiac-technology" className="bg-white rounded-xl p-4 text-center shadow-sm border border-gray-100 hover:shadow-md hover:border-[#0b6d41]/30 transition-all">
+                            <p className="text-sm font-semibold text-gray-800">B.Sc Cardiac Technology</p>
+                        </Link>
+                        <Link href="/dialysis-technology" className="bg-white rounded-xl p-4 text-center shadow-sm border border-gray-100 hover:shadow-md hover:border-[#0b6d41]/30 transition-all">
+                            <p className="text-sm font-semibold text-gray-800">B.Sc Dialysis Technology</p>
+                        </Link>
+                        <Link href="/radiology-imaging-technology" className="bg-white rounded-xl p-4 text-center shadow-sm border border-gray-100 hover:shadow-md hover:border-[#0b6d41]/30 transition-all">
+                            <p className="text-sm font-semibold text-gray-800">B.Sc Radiology & Imaging Technology</p>
+                        </Link>
+                        <Link href="/operation-theatre-anaesthesia" className="bg-white rounded-xl p-4 text-center shadow-sm border border-gray-100 hover:shadow-md hover:border-[#0b6d41]/30 transition-all">
+                            <p className="text-sm font-semibold text-gray-800">B.Sc Operation Theatre & Anaesthesia Technology</p>
+                        </Link>
+                        <Link href="/respiratory-therapy" className="bg-white rounded-xl p-4 text-center shadow-sm border border-gray-100 hover:shadow-md hover:border-[#0b6d41]/30 transition-all">
+                            <p className="text-sm font-semibold text-gray-800">B.Sc Respiratory Therapy</p>
+                        </Link>
+                        <Link href="/physician-assistant" className="bg-white rounded-xl p-4 text-center shadow-sm border border-gray-100 hover:shadow-md hover:border-[#0b6d41]/30 transition-all">
+                            <p className="text-sm font-semibold text-gray-800">B.Sc Physician Assistant</p>
+                        </Link>
+                        <Link href="/critical-care-technology" className="bg-white rounded-xl p-4 text-center shadow-sm border border-gray-100 hover:shadow-md hover:border-[#0b6d41]/30 transition-all">
+                            <p className="text-sm font-semibold text-gray-800">B.Sc Critical Care Technology</p>
+                        </Link>
+                        <Link href="/medical-record-science" className="bg-white rounded-xl p-4 text-center shadow-sm border border-gray-100 hover:shadow-md hover:border-[#0b6d41]/30 transition-all">
+                            <p className="text-sm font-semibold text-gray-800">B.Sc Medical Record Science</p>
+                        </Link>
+                    </div>
+                </div>
+            </section>
 
             <Footer />
         </div>
@@ -208,7 +244,7 @@ function EligibilitySection() {
                             {[
                                 "Passed +2 or equivalent from a recognized board",
                                 "Physics, Chemistry, and Biology as core subjects",
-                                "Minimum 50% aggregate marks (40% for SC/ST/OBC)",
+                                "Minimum 50% aggregate marks (40% for SC/ST, 45% for OBC)",
                                 "English as a compulsory subject in +2"
                             ].map((item, i) => (
                                 <li key={i} className="flex gap-3 text-gray-600">
@@ -445,7 +481,7 @@ function FAQSection() {
         },
         {
             q: "What is the eligibility criteria?",
-            a: "Candidates must have passed 10+2 with Physics, Chemistry, and Biology with minimum 50% aggregate marks (40% for reserved categories). Minimum age is 17 years as on December 31st of the admission year. A medical fitness certificate is also required."
+            a: "Candidates must have passed 10+2 with Physics, Chemistry, and Biology with minimum 50% aggregate marks (40% for SC/ST, 45% for OBC). Minimum age is 17 years as on December 31st of the admission year. A medical fitness certificate is also required."
         },
         {
             q: "What is the salary of an Emergency Care Technologist?",
