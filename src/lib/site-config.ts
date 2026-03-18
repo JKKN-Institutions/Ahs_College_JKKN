@@ -10,22 +10,22 @@
  */
 export const siteConfig = {
   /** Database college identifier — must match the `id` in the colleges table */
-  id: process.env.NEXT_PUBLIC_COLLEGE_ID ?? 'education',
+  id: process.env.NEXT_PUBLIC_COLLEGE_ID ?? 'ahs',
 
   /** Full institution name shown in metadata, headers, footer */
   name:
     process.env.NEXT_PUBLIC_COLLEGE_NAME ??
-    'JKKN College of Education',
+    'JKKN College of Allied Health Sciences',
 
   /** Short name used in compact UI (admin sidebar subtitle, login page) */
   shortName:
     process.env.NEXT_PUBLIC_COLLEGE_SHORT_NAME ??
-    'Education College',
+    'Allied Health Sciences',
 
   /** Main tagline — shown on the hero / homepage */
   tagline:
     process.env.NEXT_PUBLIC_COLLEGE_TAGLINE ??
-    'Shaping the future of education',
+    'Advancing health through science and compassion',
 
   /** Primary brand color (hex) — used for buttons, headings, accents */
   primaryColor:
@@ -45,15 +45,15 @@ export const siteConfig = {
 
   /** Contact */
   phone: process.env.NEXT_PUBLIC_COLLEGE_PHONE ?? '+919345855001',
-  email: process.env.NEXT_PUBLIC_COLLEGE_EMAIL ?? 'education@jkkn.ac.in',
+  email: process.env.NEXT_PUBLIC_COLLEGE_EMAIL ?? 'ahs@jkkn.ac.in',
   address:
     process.env.NEXT_PUBLIC_COLLEGE_ADDRESS ??
-    'JKKN College of Education, NH-544 (Salem to Coimbatore Highway), Kumarapalayam, Namakkal (DT), Tamil Nadu. 638183.',
+    'JKKN College of Allied Health Sciences, NH-544 (Salem to Coimbatore Highway), Kumarapalayam, Namakkal (DT), Tamil Nadu. 638183.',
 
   /** Google Maps embed src URL */
   mapsEmbedUrl:
     process.env.NEXT_PUBLIC_MAPS_EMBED_URL ??
-    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3910.495264960904!2d77.72893427452533!3d11.444134546524035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba96a44bd8b7e95%3A0x60d03be57a6fca11!2sJKKN%20College%20of%20Education!5e0!3m2!1sen!2sin!4v1706000000000!5m2!1sen!2sin',
+    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3910.495264960904!2d77.72893427452533!3d11.444134546524035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba96a44bd8b7e95%3A0x60d03be57a6fca11!2sJKKN%20College%20of%20Allied%20Health%20Sciences!5e0!3m2!1sen!2sin!4v1706000000000!5m2!1sen!2sin',
 
   /** Admission form URL (can differ per college) */
   admissionFormUrl:
@@ -62,7 +62,7 @@ export const siteConfig = {
 
   /** Site domain — used for canonical URLs and footer links */
   domain:
-    process.env.NEXT_PUBLIC_SITE_DOMAIN ?? 'education.jkkn.ac.in',
+    process.env.NEXT_PUBLIC_SITE_DOMAIN ?? 'ahs.jkkn.ac.in',
 
   /** Logo path (relative to /public) */
   logoPath: process.env.NEXT_PUBLIC_LOGO_PATH ?? '/images/logo.png',

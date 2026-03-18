@@ -19,12 +19,27 @@ export default function AdminLogin() {
 
     try {
       const supabase = createClient();
-      const { error: authError } = await supabase.auth.signInWithPassword({ email, password });
+      const { data: authData, error: authError } = await supabase.auth.signInWithPassword({ email, password });
       if (authError) {
         setError(authError.message);
-      } else {
-        window.location.href = '/admin/dashboard';
+        return;
       }
+
+      // Check if the user belongs to this college
+      const { data: profile } = await supabase
+        .from('staff_profiles')
+        .select('college_id')
+        .eq('id', authData.user.id)
+        .single();
+
+      const siteCollegeId = process.env.NEXT_PUBLIC_COLLEGE_ID;
+      if (!profile || profile.college_id !== siteCollegeId) {
+        await supabase.auth.signOut();
+        setError('Access denied. You are not authorized to access this college portal.');
+        return;
+      }
+
+      window.location.href = '/admin/dashboard';
     } catch {
       setError('Network error — please check your connection and try again.');
     } finally {
