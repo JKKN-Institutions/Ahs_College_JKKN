@@ -4,6 +4,14 @@ export const metadata = createPageMetadata({
   title: "Our Management | JKKN College of Allied Health Sciences",
   description: "Meet the leadership of JKKN College of Allied Health Sciences — Chairperson Smt. N. Sendamaraai and Director Shri. S. Ommsharravana.",
   path: "/our-management",
+  keywords: [
+    "JKKN College management leadership",
+    "JKKN Allied Health Sciences chairperson",
+    "JKKN administration Komarapalayam",
+    "allied health college director Tamil Nadu",
+    "JKKN institutional leadership",
+    "college management team JKKN Namakkal",
+  ],
 });
 
 const speakableSchema = {

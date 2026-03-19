@@ -5,6 +5,14 @@ export const metadata = createPageMetadata({
   description:
     "Learn about JKKN Educational Trust, founded in 1952 — managing 9 institutions offering dental, pharmacy, nursing, engineering, and allied health education.",
   path: "/our-trust",
+  keywords: [
+    "JKKN educational trust",
+    "J K K Nattraja trust Komarapalayam",
+    "JKKN trust founded 1952 Tamil Nadu",
+    "Nattraja educational institutions trust",
+    "JKKN group trust Namakkal",
+    "educational trust allied health college Tamil Nadu",
+  ],
 });
 
 const organizationSchema = {

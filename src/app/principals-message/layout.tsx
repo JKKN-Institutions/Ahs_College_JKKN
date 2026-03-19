@@ -5,6 +5,14 @@ export const metadata = createPageMetadata({
   description:
     "Read the Principal's message at JKKN College of Allied Health Sciences — leadership vision for allied health education excellence in Tamil Nadu.",
   path: "/principals-message",
+  keywords: [
+    "JKKN AHS principal message",
+    "allied health college principal Tamil Nadu",
+    "JKKN College of Allied Health Sciences principal",
+    "principal message Komarapalayam college",
+    "JKKN leadership vision allied health",
+    "allied health sciences college head message",
+  ],
 });
 
 // TODO [NEEDS ADMIN INPUT]: Replace with correct AHS principal details

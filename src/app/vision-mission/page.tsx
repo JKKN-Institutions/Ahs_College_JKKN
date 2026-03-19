@@ -7,6 +7,7 @@ import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { motion } from 'framer-motion';
 import Typography from '@/components/ui/Typography';
+import { Breadcrumb } from '@/components/Breadcrumb';
 
 export default function VisionMission() {
     const containerVariants = {
@@ -69,6 +70,10 @@ export default function VisionMission() {
 
             <main className="flex-grow pt-4 md:pt-20 lg:pt-32 pb-20">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <Breadcrumb items={[
+                        { label: 'Home', href: '/' },
+                        { label: 'Vision & Mission' }
+                    ]} />
                     {/* Hero Section */}
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}

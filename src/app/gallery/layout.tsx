@@ -5,6 +5,14 @@ export const metadata = createPageMetadata({
   description:
     "Browse photos of JKKN College of Allied Health Sciences campus — classrooms, labs, hostel, library, and student life at Komarapalayam, Tamil Nadu.",
   path: "/gallery",
+  keywords: [
+    "JKKN campus gallery photos",
+    "allied health college campus images Komarapalayam",
+    "JKKN College photo gallery Tamil Nadu",
+    "JKKN AHS campus life pictures",
+    "allied health sciences college facilities photos",
+    "JKKN student life campus Namakkal",
+  ],
 });
 
 const speakableSchema = {

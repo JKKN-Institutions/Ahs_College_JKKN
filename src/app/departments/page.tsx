@@ -6,6 +6,7 @@ import { siteConfig } from '@/lib/site-config';
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { ArrowRight } from "lucide-react";
+import { Breadcrumb } from '@/components/Breadcrumb';
 
 const departments = [
   {
@@ -102,6 +103,12 @@ export default function DepartmentsPage() {
       <Navbar />
 
       <main className="flex-grow pt-20 pb-20 md:pb-0">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-2">
+          <Breadcrumb items={[
+            { label: 'Home', href: '/' },
+            { label: 'Departments' }
+          ]} />
+        </div>
         {/* ── Hero / Header ── */}
         <section className="bg-[#fbfbee] pt-10 pb-6 px-4">
           <div className="max-w-7xl mx-auto">

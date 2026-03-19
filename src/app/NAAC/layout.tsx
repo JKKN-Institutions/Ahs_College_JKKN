@@ -5,6 +5,14 @@ export const metadata = createPageMetadata({
   description:
     "JKKN College of Allied Health Sciences NAAC accreditation details — quality assurance, assessment reports, and institutional excellence standards.",
   path: "/NAAC",
+  keywords: [
+    "NAAC accreditation JKKN",
+    "JKKN College NAAC grade Tamil Nadu",
+    "accredited allied health college Komarapalayam",
+    "NAAC assessment JKKN Allied Health Sciences",
+    "quality accreditation medical college Tamil Nadu",
+    "JKKN NAAC A+ accredited college",
+  ],
 });
 
 const speakableSchema = {

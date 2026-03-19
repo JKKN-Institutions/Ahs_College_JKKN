@@ -6,11 +6,19 @@ import { siteConfig } from '@/lib/site-config';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import Image from 'next/image';
+import { Breadcrumb } from '@/components/Breadcrumb';
 
 export default function ContactPage() {
     return (
         <div className="min-h-screen">
             <Navbar />
+
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20">
+                <Breadcrumb items={[
+                    { label: 'Home', href: '/' },
+                    { label: 'Contact Us' }
+                ]} />
+            </div>
 
             {/* Hero Section */}
             <section className="relative bg-[#0b6d41] pt-4 md:pt-20 lg:pt-32 pb-16 px-4 overflow-hidden">

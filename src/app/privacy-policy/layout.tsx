@@ -5,6 +5,14 @@ export const metadata = createPageMetadata({
   description:
     "Privacy policy for JKKN College of Allied Health Sciences website — how we collect, use, and protect your personal information.",
   path: "/privacy-policy",
+  keywords: [
+    "privacy policy JKKN",
+    "JKKN College data protection",
+    "student privacy allied health sciences",
+    "JKKN website privacy",
+    "data protection policy Komarapalayam college",
+    "personal information policy JKKN",
+  ],
 });
 
 const speakableSchema = {

@@ -6,6 +6,7 @@ import { Footer } from '@/components/layout/Footer';
 import { motion } from 'framer-motion';
 import { Utensils, Coffee, Leaf, ShieldCheck, IndianRupee, Heart } from 'lucide-react';
 import Image from 'next/image';
+import { Breadcrumb } from '@/components/Breadcrumb';
 
 export default function FoodCourt() {
     return (
@@ -13,6 +14,12 @@ export default function FoodCourt() {
             <Navbar />
 
             <main className="flex-grow pt-24">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <Breadcrumb items={[
+                        { label: 'Home', href: '/' },
+                        { label: 'Food Court' }
+                    ]} />
+                </div>
                 {/* Hero Title Section */}
                 <section className="relative py-20 bg-[#0b6d41] overflow-hidden">
                     <div className="absolute inset-0">
@@ -258,6 +265,30 @@ export default function FoodCourt() {
                       <a href="/critical-care-technology" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors">BSc Critical Care Technology</a>
                       <a href="/medical-record-science" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors">BSc Medical Record Science</a>
                       <a href="/accident-emergency-care" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors">BSc Accident &amp; Emergency Care</a>
+                    </div>
+                  </div>
+                </section>
+                {/* Explore Our Programs */}
+                <section className="py-12 px-4 sm:px-6 lg:px-8 bg-[#f0f7f2]">
+                  <div className="max-w-6xl mx-auto">
+                    <h2 className="text-xl sm:text-2xl font-bold text-[#002309] mb-6">Explore Our Programs</h2>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                      {[
+                        { name: 'B.Sc Cardiac Technology', href: '/cardiac-technology' },
+                        { name: 'B.Sc Radiology & Imaging', href: '/radiology-imaging-technology' },
+                        { name: 'B.Sc Dialysis Technology', href: '/dialysis-technology' },
+                        { name: 'B.Sc OT & Anaesthesia', href: '/operation-theatre-anaesthesia' },
+                        { name: 'B.Sc Respiratory Therapy', href: '/respiratory-therapy' },
+                        { name: 'B.Sc Physician Assistant', href: '/physician-assistant' },
+                        { name: 'B.Sc Critical Care Technology', href: '/critical-care-technology' },
+                        { name: 'B.Sc Medical Record Science', href: '/medical-record-science' },
+                        { name: 'B.Sc Emergency Care', href: '/accident-emergency-care' },
+                      ].map((p) => (
+                        <a key={p.href} href={p.href} className="flex items-center gap-2 py-3 px-4 rounded-xl bg-white hover:bg-[#e8f5ec] transition-colors text-sm font-medium text-[#0b6d41] shadow-sm">
+                          <span className="w-2 h-2 rounded-full bg-[#0b6d41] flex-shrink-0" />
+                          {p.name}
+                        </a>
+                      ))}
                     </div>
                   </div>
                 </section>

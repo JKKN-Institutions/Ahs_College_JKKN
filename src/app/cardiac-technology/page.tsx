@@ -12,6 +12,7 @@ import {
     Download, Calendar, Laptop, Sparkles, HeartPulse,
     Stethoscope, FileText, ChevronDown, Plus, Minus
 } from 'lucide-react';
+import { Breadcrumb } from '@/components/Breadcrumb';
 
 export default function CardiacTechnology() {
     return (
@@ -19,6 +20,13 @@ export default function CardiacTechnology() {
             <Navbar />
 
             <main className="flex-grow pt-20">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-2">
+                    <Breadcrumb items={[
+                        { label: 'Home', href: '/' },
+                        { label: 'Departments', href: '/departments' },
+                        { label: 'Cardiac Technology' }
+                    ]} />
+                </div>
                 <HeroSection />
                 <StatsSection />
                 <AboutSection />
@@ -80,6 +88,31 @@ export default function CardiacTechnology() {
                         </Link>
                     </div>
                 </div>
+            </section>
+
+            {/* Campus Facilities */}
+            <section className="py-12 px-4 sm:px-6 lg:px-8 bg-white">
+              <div className="max-w-6xl mx-auto">
+                <h2 className="text-xl sm:text-2xl font-bold text-[#002309] mb-6">Campus Facilities</h2>
+                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
+                  {[
+                    { name: 'Library', href: '/library' },
+                    { name: 'Laboratories', href: '/lab' },
+                    { name: 'Hostel', href: '/hostel' },
+                    { name: 'Transport', href: '/transport' },
+                    { name: 'Food Court', href: '/food-court' },
+                    { name: 'Classrooms', href: '/classroom' },
+                    { name: 'Wi-Fi Campus', href: '/wifi' },
+                    { name: 'Ambulance', href: '/ambulance-service' },
+                    { name: 'Bank & Post Office', href: '/bank-post-office' },
+                    { name: 'Contact Us', href: '/contact' },
+                  ].map((f) => (
+                    <Link key={f.href} href={f.href} className="text-center py-3 px-2 rounded-xl bg-[#f0f7f2] hover:bg-[#d4eadc] transition-colors text-sm font-medium text-[#0b6d41]">
+                      {f.name}
+                    </Link>
+                  ))}
+                </div>
+              </div>
             </section>
 
             <Footer />

@@ -5,6 +5,14 @@ export const metadata = createPageMetadata({
   description:
     "View the academic calendar for JKKN College of Allied Health Sciences — semester dates, exam schedules, holidays, and important academic events.",
   path: "/academic-calendar",
+  keywords: [
+    "JKKN academic calendar 2026-27",
+    "allied health college semester dates Tamil Nadu",
+    "JKKN exam schedule Komarapalayam",
+    "JKKN College holiday calendar",
+    "allied health sciences academic events JKKN",
+    "JKKN AHS semester timetable Namakkal",
+  ],
 });
 
 const eventSchema = {

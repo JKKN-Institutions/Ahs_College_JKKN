@@ -5,6 +5,14 @@ export const metadata = createPageMetadata({
   description:
     "Explore all 9 JKKN institutions — colleges for dental, pharmacy, nursing, engineering, allied health, arts & science, and education in Komarapalayam.",
   path: "/our-institutions",
+  keywords: [
+    "JKKN group of institutions",
+    "JKKN colleges Komarapalayam",
+    "educational institutions Tamil Nadu",
+    "J K K Nattraja colleges Namakkal",
+    "allied health dental pharmacy nursing colleges JKKN",
+    "JKKN educational group Tamil Nadu",
+  ],
 });
 
 const itemListSchema = {

@@ -5,6 +5,14 @@ export const metadata = createPageMetadata({
   description:
     "Get in touch with JKKN College of Allied Health Sciences. Campus address: NH-544, Komarapalayam, Namakkal. Phone, email, and Google Maps directions.",
   path: "/contact",
+  keywords: [
+    "contact JKKN Allied Health Sciences",
+    "admission enquiry Komarapalayam college",
+    "JKKN college phone number Namakkal",
+    "allied health college address Tamil Nadu",
+    "JKKN AHS contact email",
+    "Komarapalayam college directions NH-544",
+  ],
 });
 
 const speakableSchema = {
@@ -30,7 +38,7 @@ const contactSchema = {
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "NH-544 (Salem to Coimbatore National Highway), Natarajapuram",
-    "addressLocality": "Komarapalayam",
+    "addressLocality": "Komarapalayam, Namakkal District",
     "addressRegion": "Tamil Nadu",
     "postalCode": "638183",
     "addressCountry": "IN"
@@ -40,6 +48,7 @@ const contactSchema = {
     "latitude": "11.445190",
     "longitude": "77.726549"
   },
+  "hasMap": "https://maps.app.goo.gl/JJ5dKGY4NAHReFpj7",
   "openingHoursSpecification": [
     {
       "@type": "OpeningHoursSpecification",
@@ -61,6 +70,14 @@ const contactSchema = {
       "email": "alliedhealth@jkkn.ac.in",
       "contactType": "customer service",
       "areaServed": "IN",
+      "availableLanguage": ["English", "Tamil"]
+    },
+    {
+      "@type": "ContactPoint",
+      "telephone": "+919345855001",
+      "contactType": "admissions",
+      "contactOption": "TollFree",
+      "url": "https://wa.me/919345855001",
       "availableLanguage": ["English", "Tamil"]
     }
   ],

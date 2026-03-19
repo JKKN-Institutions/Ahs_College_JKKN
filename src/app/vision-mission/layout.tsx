@@ -5,6 +5,14 @@ export const metadata = createPageMetadata({
   description:
     "Discover the vision and mission of JKKN College of Allied Health Sciences — excellence in healthcare education, clinical training, and student success.",
   path: "/vision-mission",
+  keywords: [
+    "JKKN vision mission allied health",
+    "JKKN College of Allied Health Sciences goals",
+    "allied health education mission Tamil Nadu",
+    "JKKN college vision Komarapalayam",
+    "healthcare education excellence JKKN",
+    "allied health sciences college objectives",
+  ],
 });
 
 const aboutPageSchema = {

@@ -5,6 +5,14 @@ export const metadata = createPageMetadata({
   description:
     "Explore 9 B.Sc Allied Health departments at JKKN — Cardiac, Dialysis, Radiology, OT, Respiratory, Physician Assistant, Critical Care & more.",
   path: "/departments",
+  keywords: [
+    "JKKN allied health departments",
+    "BSc allied health science courses Tamil Nadu",
+    "JKKN College departments Komarapalayam",
+    "allied health BSc programs JKKN Namakkal",
+    "cardiac dialysis radiology courses JKKN",
+    "allied health science college departments Tamil Nadu",
+  ],
 });
 
 const speakableSchema = {
