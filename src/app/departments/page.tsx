@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { siteConfig } from '@/lib/site-config';
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { ArrowRight } from "lucide-react";
@@ -202,7 +203,7 @@ export default function DepartmentsPage() {
               </div>
               <div className="flex flex-wrap gap-3 justify-center shrink-0">
                 <a
-                  href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8"
+                  href={siteConfig.admissionFormUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-6 py-3 bg-[#ffde59] text-[#085231] rounded-full font-black text-sm shadow-md hover:bg-yellow-300 transition-colors whitespace-nowrap"

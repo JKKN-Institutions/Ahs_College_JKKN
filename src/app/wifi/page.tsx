@@ -14,8 +14,8 @@ export default function WiFiPage() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     {/* Page Title */}
                     <div className="mb-8 sm:mb-10">
-                        <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-[#0b6d41] uppercase tracking-tight">
-                            WI-FI
+                        <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-[#0b6d41] tracking-tight">
+                            WiFi and Internet Facilities at JKKN College
                         </h1>
                     </div>
 
@@ -117,6 +117,46 @@ export default function WiFiPage() {
                         </div>
                     </div>
                 </div>
+
+                {/* FAQ Section */}
+                <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+                    <h2 className="text-2xl sm:text-3xl font-bold text-[#0b6d41] mb-8">Frequently Asked Questions — WiFi and Internet</h2>
+                    <div className="space-y-4">
+                        {[
+                            {
+                                q: "Is free WiFi available on the JKKN campus?",
+                                a: "Yes. JKKN campus offers free WiFi access to all students and staff across classrooms, labs, libraries, common areas, and outdoor spaces."
+                            },
+                            {
+                                q: "What is the internet speed at JKKN College campus?",
+                                a: "JKKN campus provides high-speed internet that supports video streaming, large file downloads, video conferencing, and simultaneous access by multiple users."
+                            },
+                            {
+                                q: "Can students access WiFi in hostel rooms at JKKN?",
+                                a: "Yes. WiFi connectivity extends to the JKKN hostel, allowing students to access the internet from their rooms for both academic and personal use."
+                            },
+                            {
+                                q: "Is WiFi available in classrooms and labs at JKKN?",
+                                a: "Yes. WiFi is available in all classrooms, labs, and lecture halls at JKKN, supporting digital learning tools and online academic resources."
+                            },
+                            {
+                                q: "How do students connect to the JKKN campus WiFi network?",
+                                a: "Students connect to the JKKN campus WiFi using credentials provided during admission. The network is secured with multi-layered security protocols."
+                            }
+                        ].map((faq, i) => (
+                            <div key={i} className="border border-gray-200 rounded-2xl overflow-hidden bg-white">
+                                <h3 className="m-0 text-base">
+                                    <div className="w-full flex justify-between items-center p-6 text-left">
+                                        <span className="font-bold text-[#0b6d41]">{faq.q}</span>
+                                    </div>
+                                </h3>
+                                <div className="faq-answer px-6 pb-6 text-gray-700 text-sm leading-relaxed">
+                                    {faq.a}
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </section>
             </main>
 
             <Footer />

@@ -5,6 +5,16 @@ export const metadata = createPageMetadata({
   description:
     "State-of-the-art labs at JKKN AHS — fully equipped for cardiac, dialysis, radiology, respiratory, and emergency care practical training.",
   path: "/lab",
+  keywords: [
+    "JKKN college laboratory facilities",
+    "clinical lab allied health sciences",
+    "medical lab practical training Komarapalayam",
+    "simulation lab health science college Tamil Nadu",
+    "JKKN AHS lab equipment",
+    "radiology lab Namakkal",
+    "cardiac technology lab JKKN",
+  ],
+  ogImage: { url: "https://ahs.jkkn.ac.in/lab/allied health science lab1.png", width: 1200, height: 630, alt: "Laboratory Facilities at JKKN College" },
 });
 
 const breadcrumbSchema = {

@@ -14,11 +14,19 @@ export function createPageMetadata({
   description,
   path,
   keywords,
+  ogType = "website",
+  ogImage,
+  datePublished,
+  dateModified,
 }: {
   title: string;
   description: string;
   path: string;
   keywords?: string[];
+  ogType?: "website" | "article";
+  ogImage?: { url: string; width: number; height: number; alt: string };
+  datePublished?: string;
+  dateModified?: string;
 }): Metadata {
   const url = `${SITE_URL}${path}`;
   return {
@@ -45,15 +53,23 @@ export function createPageMetadata({
       description,
       url,
       siteName: SITE_NAME,
-      images: [DEFAULT_OG_IMAGE],
+      images: [ogImage ?? DEFAULT_OG_IMAGE],
       locale: "en_IN",
-      type: "website",
+      type: ogType,
+      ...(ogType === "article" && datePublished && { publishedTime: datePublished }),
+      ...(ogType === "article" && dateModified && { modifiedTime: dateModified }),
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
-      images: [DEFAULT_OG_IMAGE.url],
+      images: [(ogImage ?? DEFAULT_OG_IMAGE).url],
     },
+    ...(dateModified && {
+      other: {
+        "article:modified_time": dateModified,
+        ...(datePublished && { "article:published_time": datePublished }),
+      },
+    }),
   };
 }

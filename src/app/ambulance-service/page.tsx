@@ -14,8 +14,8 @@ export default function AmbulanceService() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     {/* Header Section */}
                     <div className="mb-12 md:mb-16">
-                        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-[#0b6d41] uppercase tracking-tight">
-                            AMBULANCE SERVICES
+                        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-[#0b6d41] tracking-tight">
+                            Ambulance Service at JKKN College Campus
                         </h1>
                     </div>
 
@@ -43,6 +43,46 @@ export default function AmbulanceService() {
                         </p>
                     </div>
                 </div>
+
+                {/* FAQ Section */}
+                <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+                    <h2 className="text-2xl sm:text-3xl font-bold text-[#0b6d41] mb-8">Frequently Asked Questions — Ambulance Service</h2>
+                    <div className="space-y-4">
+                        {[
+                            {
+                                q: "Does JKKN College have an ambulance service on campus?",
+                                a: "Yes. JKKN College campus has a dedicated ambulance service managed by certified emergency medical technicians, ready to respond to all medical emergencies."
+                            },
+                            {
+                                q: "Is the JKKN ambulance service available 24 hours?",
+                                a: "Yes. The JKKN ambulance service operates around the clock, providing 24-hour emergency medical transportation and response for students, staff, and the campus community."
+                            },
+                            {
+                                q: "What medical emergencies does the JKKN ambulance handle?",
+                                a: "The JKKN ambulance handles all medical emergencies including accidents, sudden illness, cardiac events, and any situation requiring urgent medical transportation to a hospital."
+                            },
+                            {
+                                q: "Is there a first aid centre at JKKN College?",
+                                a: "Yes. JKKN College has a first aid centre on campus that provides immediate medical attention before patients are transported via ambulance if required."
+                            },
+                            {
+                                q: "How quickly can the JKKN ambulance respond to emergencies?",
+                                a: "The JKKN ambulance is stationed on campus for rapid response. Being on-site, it can reach any point on campus within minutes of an emergency call."
+                            }
+                        ].map((faq, i) => (
+                            <div key={i} className="border border-gray-200 rounded-2xl overflow-hidden bg-white">
+                                <h3 className="m-0 text-base">
+                                    <div className="w-full flex justify-between items-center p-6 text-left">
+                                        <span className="font-bold text-[#0b6d41]">{faq.q}</span>
+                                    </div>
+                                </h3>
+                                <div className="faq-answer px-6 pb-6 text-gray-700 text-sm leading-relaxed">
+                                    {faq.a}
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </section>
             </main>
 
             <Footer />

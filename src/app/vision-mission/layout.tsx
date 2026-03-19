@@ -34,6 +34,22 @@ const breadcrumbSchema = {
   ]
 };
 
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "CollegeOrUniversity",
+  "name": "JKKN College of Allied Health Sciences",
+  "url": "https://ahs.jkkn.ac.in/",
+  "description": "JKKN College of Allied Health Sciences trains healthcare professionals through nine specialized Bachelor of Science programs with clinical exposure from year one.",
+  "foundingDate": "1952",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Komarapalayam",
+    "addressRegion": "Tamil Nadu",
+    "postalCode": "638183",
+    "addressCountry": "IN"
+  }
+};
+
 export default function VisionMissionLayout({
   children,
 }: {
@@ -43,6 +59,7 @@ export default function VisionMissionLayout({
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutPageSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
       {children}
     </>
   );

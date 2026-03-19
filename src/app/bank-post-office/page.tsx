@@ -13,8 +13,8 @@ export default function BankPostOffice() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     {/* Header Section */}
                     <div className="mb-12 md:mb-16">
-                        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-[#0b6d41] uppercase tracking-tight">
-                            BANK & POST OFFICE
+                        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-[#0b6d41] tracking-tight">
+                            Bank and Post Office at JKKN College Campus
                         </h1>
                     </div>
 
@@ -68,6 +68,46 @@ export default function BankPostOffice() {
                         </div>
                     </div>
                 </div>
+
+                {/* FAQ Section */}
+                <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+                    <h2 className="text-2xl sm:text-3xl font-bold text-[#0b6d41] mb-8">Frequently Asked Questions — Bank and Post Office</h2>
+                    <div className="space-y-4">
+                        {[
+                            {
+                                q: "Is there a bank inside the JKKN College campus?",
+                                a: "Yes. JKKN College campus has a fully functional bank branch inside campus, allowing students and staff to manage all their banking needs conveniently."
+                            },
+                            {
+                                q: "Which bank branch is available at JKKN campus?",
+                                a: "JKKN campus has a branch of a popular nationalised bank offering services like account opening, deposits, withdrawals, and fund transfers for students and staff."
+                            },
+                            {
+                                q: "Can students open bank accounts at the JKKN campus bank?",
+                                a: "Yes. Students can open bank accounts directly at the JKKN campus branch. Special offers and discounts are available exclusively for JKKN students and staff."
+                            },
+                            {
+                                q: "Is there a post office at JKKN College campus?",
+                                a: "Yes. JKKN campus has a dedicated post office offering domestic and international mail, speed post, registered post, parcel delivery, and postal savings schemes."
+                            },
+                            {
+                                q: "Are ATM facilities available at JKKN campus?",
+                                a: "Yes. ATM facilities are available on the JKKN campus, giving students and staff easy access to cash and basic banking transactions at any time."
+                            }
+                        ].map((faq, i) => (
+                            <div key={i} className="border border-gray-200 rounded-2xl overflow-hidden bg-white">
+                                <h3 className="m-0 text-base">
+                                    <div className="w-full flex justify-between items-center p-6 text-left">
+                                        <span className="font-bold text-[#0b6d41]">{faq.q}</span>
+                                    </div>
+                                </h3>
+                                <div className="faq-answer px-6 pb-6 text-gray-700 text-sm leading-relaxed">
+                                    {faq.a}
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </section>
             </main>
 
             <Footer />

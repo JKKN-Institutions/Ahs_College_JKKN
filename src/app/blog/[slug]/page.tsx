@@ -5,6 +5,7 @@ import { useParams } from 'next/navigation';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { ScrollToTop } from '@/components/ScrollToTop';
+import { siteConfig } from '@/lib/site-config';
 import {
   Clock,
   BookOpen,
@@ -666,7 +667,7 @@ export default function BlogDetailPage() {
                   TNTEU affiliated, and 98% placement rate.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 justify-center relative z-10">
-                  <a href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8" className="bg-white text-[#006837] font-semibold px-6 py-2.5 rounded-lg text-sm hover:bg-gray-100 transition-colors">
+                  <a href={siteConfig.admissionFormUrl} className="bg-white text-[#006837] font-semibold px-6 py-2.5 rounded-lg text-sm hover:bg-gray-100 transition-colors">
                     Apply Now →
                   </a>
                   <a href="tel:+919345855001" className="border border-white/50 text-white font-semibold px-6 py-2.5 rounded-lg text-sm hover:bg-white/10 transition-colors">
@@ -931,7 +932,7 @@ export default function BlogDetailPage() {
                 <p className="text-gray-500 text-xs mb-4">
                   100 Seats Available at JKKN College of Education, Komarapalayam
                 </p>
-                <a href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8" className="block w-full bg-[#006837] text-white font-semibold text-sm py-2.5 rounded-lg hover:bg-[#004d28] transition-colors text-center">
+                <a href={siteConfig.admissionFormUrl} className="block w-full bg-[#006837] text-white font-semibold text-sm py-2.5 rounded-lg hover:bg-[#004d28] transition-colors text-center">
                   Apply Now →
                 </a>
                 <a href="tel:+919345855001" className="block text-center text-[#006837] text-xs font-medium mt-3">

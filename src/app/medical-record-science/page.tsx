@@ -6,6 +6,7 @@ import { Footer } from '@/components/layout/Footer';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
+import { siteConfig } from '@/lib/site-config';
 import {
     Clock, Users, Building2, Activity, ArrowRight, CheckCircle2,
     Download, Calendar, Laptop, Sparkles, FileText,
@@ -29,6 +30,22 @@ export default function MedicalRecordScience() {
                 <AdmissionProcessSection />
                 <FAQSection />
                 <CTASection />
+                {/* Internal Cross-Links */}
+                <section className="py-12 px-4 md:px-8 lg:px-16 bg-white/50">
+                  <div className="max-w-6xl mx-auto">
+                    <h2 className="text-xl font-semibold text-[#0b6d41] mb-6">Campus Facilities for Students</h2>
+                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+                      <a href="/lab" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors text-center">Laboratories</a>
+                      <a href="/library" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors text-center">Library</a>
+                      <a href="/classroom" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors text-center">Classrooms</a>
+                      <a href="/hostel" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors text-center">Hostel</a>
+                      <a href="/transport" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors text-center">Transport</a>
+                      <a href="/food-court" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors text-center">Food Court</a>
+                      <a href="/wifi" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors text-center">WiFi Campus</a>
+                      <a href="/ambulance-service" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors text-center">Ambulance</a>
+                    </div>
+                  </div>
+                </section>
             </main>
 
             {/* Related Programs */}
@@ -86,7 +103,7 @@ function HeroSection() {
                     </p>
                     <div className="flex flex-wrap gap-4">
                         <a
-                            href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8"
+                            href={siteConfig.admissionFormUrl}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="px-8 py-3.5 bg-[#0b6d41] text-white rounded-full font-bold shadow-lg hover:bg-[#095c37] transition-all transform hover:-translate-y-1 inline-block"
@@ -138,6 +155,7 @@ function StatsSection() {
 
     return (
         <section className="relative z-20 -mt-10 px-4">
+            <h2 className="sr-only">Program Highlights</h2>
             <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4">
                 {stats.map((stat, i) => (
                     <motion.div
@@ -527,13 +545,16 @@ function FAQSection() {
             <div className="space-y-4">
                 {faqs.map((faq, i) => (
                     <div key={i} className="border border-gray-200 rounded-2xl overflow-hidden bg-white">
+                        <h3 className="m-0 text-base">
                         <button
                             onClick={() => setOpenIndex(openIndex === i ? null : i)}
+                            aria-expanded={openIndex === i}
                             className="w-full flex justify-between items-center p-6 text-left hover:bg-gray-50 transition-colors"
                         >
                             <span className="font-bold text-[#0b6d41]">{faq.q}</span>
                             {openIndex === i ? <Minus className="w-5 h-5 text-[#ffde59]" /> : <Plus className="w-5 h-5 text-gray-400" />}
                         </button>
+                        </h3>
                         <AnimatePresence>
                             {openIndex === i && (
                                 <motion.div
@@ -542,7 +563,7 @@ function FAQSection() {
                                     exit={{ height: 0 }}
                                     className="overflow-hidden"
                                 >
-                                    <div className="p-6 pt-0 text-gray-600 text-sm leading-relaxed">
+                                    <div className="faq-answer p-6 pt-0 text-gray-600 text-sm leading-relaxed">
                                         {faq.a}
                                     </div>
                                 </motion.div>
@@ -566,7 +587,7 @@ function CTASection() {
                 </div>
                 <div className="flex flex-nowrap gap-2 items-center justify-center shrink-0">
                     <a
-                        href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8"
+                        href={siteConfig.admissionFormUrl}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="px-4 md:px-6 py-2.5 md:py-3 bg-[#0b6d41] text-white rounded-full font-bold shadow-lg hover:bg-opacity-90 transition-colors whitespace-nowrap text-xs md:text-sm"
@@ -574,7 +595,7 @@ function CTASection() {
                         Apply Now
                     </a>
                     <a
-                        href="tel:91 9345855001"
+                        href="tel:+919345855001"
                         className="px-4 md:px-6 py-2.5 md:py-3 border-2 border-[#0b6d41] text-[#0b6d41] rounded-full font-bold hover:bg-[#0b6d41] hover:text-white transition-colors whitespace-nowrap text-xs md:text-sm"
                     >
                         Contact Admissions

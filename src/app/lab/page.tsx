@@ -14,7 +14,7 @@ export default function Labs() {
                 <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
                     {/* Header Section */}
                     <h1 className="text-4xl md:text-5xl font-bold text-[#0b6d41] mb-8">
-                        Labs
+                        Laboratory Facilities at JKKN College of Allied Health Sciences
                     </h1>
 
                     {/* Lab Images Gallery */}
@@ -91,6 +91,46 @@ export default function Labs() {
                         </p>
                     </div>
                 </div>
+
+                {/* FAQ Section */}
+                <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+                    <h2 className="text-2xl sm:text-3xl font-bold text-[#0b6d41] mb-8">Frequently Asked Questions — Lab Facilities</h2>
+                    <div className="space-y-4">
+                        {[
+                            {
+                                q: "What lab facilities are available at JKKN College of Allied Health Sciences?",
+                                a: "JKKN College of Allied Health Sciences has discipline-specific labs for medical technology, radiology, respiratory therapy, and more, all equipped with advanced medical equipment."
+                            },
+                            {
+                                q: "Are JKKN labs equipped with modern medical equipment?",
+                                a: "Yes. JKKN labs are equipped with advanced, specialised medical equipment tailored to each allied health science programme, ensuring students gain hands-on clinical experience."
+                            },
+                            {
+                                q: "How many hours of practical training do students get in JKKN labs?",
+                                a: "JKKN allied health science students receive extensive lab hours as per university curriculum guidelines, providing sufficient hands-on practice for clinical skill development."
+                            },
+                            {
+                                q: "Do JKKN labs have simulation equipment for clinical training?",
+                                a: "Yes. JKKN labs incorporate simulated patient encounters and clinical procedure setups, allowing students to practise safely before working with real patients."
+                            },
+                            {
+                                q: "Are lab sessions included in the allied health sciences curriculum at JKKN?",
+                                a: "Yes. Lab sessions are a core part of the JKKN allied health sciences curriculum, ensuring every student completes required practical hours alongside theory classes."
+                            }
+                        ].map((faq, i) => (
+                            <div key={i} className="border border-gray-200 rounded-2xl overflow-hidden bg-white">
+                                <h3 className="m-0 text-base">
+                                    <div className="w-full flex justify-between items-center p-6 text-left">
+                                        <span className="font-bold text-[#0b6d41]">{faq.q}</span>
+                                    </div>
+                                </h3>
+                                <div className="faq-answer px-6 pb-6 text-gray-700 text-sm leading-relaxed">
+                                    {faq.a}
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </section>
             </main>
 
             <Footer />

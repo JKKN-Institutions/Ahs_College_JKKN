@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
@@ -5,6 +6,58 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { createClient } from "@/lib/supabase/server";
 import { CalendarDays, Clock, MapPin } from "lucide-react";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const supabase = await createClient();
+  const collegeId = process.env.NEXT_PUBLIC_COLLEGE_ID ?? "nursing";
+
+  const { data: event } = await supabase
+    .from("events")
+    .select("title, description, image_url, event_date")
+    .eq("slug", slug)
+    .eq("college_id", collegeId)
+    .eq("is_published", true)
+    .single();
+
+  if (!event) {
+    return { title: "Event Not Found" };
+  }
+
+  const title = `${event.title} | JKKN College of Allied Health Sciences`;
+  const description = event.description
+    ? event.description.slice(0, 155).trim()
+    : `${event.title} at JKKN College of Allied Health Sciences, Komarapalayam.`;
+
+  return {
+    title,
+    description,
+    alternates: {
+      canonical: `https://ahs.jkkn.ac.in/events/${slug}`,
+    },
+    openGraph: {
+      title: event.title,
+      description,
+      url: `https://ahs.jkkn.ac.in/events/${slug}`,
+      siteName: "JKKN College of Allied Health Sciences",
+      type: "article",
+      ...(event.image_url && {
+        images: [{ url: event.image_url, width: 1200, height: 630, alt: event.title }],
+      }),
+      ...(event.event_date && { publishedTime: event.event_date }),
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: event.title,
+      description,
+      ...(event.image_url && { images: [event.image_url] }),
+    },
+  };
+}
 
 export default async function EventPage({
   params,
@@ -33,8 +86,49 @@ export default async function EventPage({
       })
     : null;
 
+  const eventSchema = {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": event.title,
+    "description": event.description || "",
+    "url": `https://ahs.jkkn.ac.in/events/${slug}`,
+    ...(event.event_date && { "startDate": event.event_date }),
+    ...(event.image_url && { "image": event.image_url }),
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": event.venue || "JKKN College of Allied Health Sciences",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Komarapalayam",
+        "addressRegion": "Tamil Nadu",
+        "postalCode": "638183",
+        "addressCountry": "IN"
+      }
+    },
+    "organizer": {
+      "@type": "CollegeOrUniversity",
+      "name": "JKKN College of Allied Health Sciences",
+      "url": "https://ahs.jkkn.ac.in/"
+    }
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "JKKN Institutions", "item": "https://jkkn.ac.in/" },
+      { "@type": "ListItem", "position": 2, "name": "Allied Health Sciences", "item": "https://ahs.jkkn.ac.in/" },
+      { "@type": "ListItem", "position": 3, "name": "Events", "item": "https://ahs.jkkn.ac.in/events" },
+      { "@type": "ListItem", "position": 4, "name": event.title, "item": `https://ahs.jkkn.ac.in/events/${slug}` }
+    ]
+  };
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(eventSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <Header />
       <main className="min-h-screen bg-[#FBFBEE]">
         {/* Hero */}

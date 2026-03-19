@@ -5,6 +5,16 @@ export const metadata = createPageMetadata({
   description:
     "JKKN provides college bus transport covering Salem, Erode, Namakkal, Tiruchengode, and surrounding areas for student commute.",
   path: "/transport",
+  keywords: [
+    "JKKN college bus transport",
+    "student transport Komarapalayam",
+    "college bus Salem Erode Namakkal",
+    "JKKN AHS transport facility",
+    "college bus service Tamil Nadu",
+    "Tiruchengode college bus route",
+    "JKKN campus transport facilities",
+  ],
+  ogImage: { url: "https://ahs.jkkn.ac.in/transport/transport-1.webp", width: 1200, height: 630, alt: "Transport Facilities at JKKN College" },
 });
 
 const breadcrumbSchema = {

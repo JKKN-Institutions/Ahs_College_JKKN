@@ -5,6 +5,15 @@ export const metadata = createPageMetadata({
   description:
     "Hygienic food court at JKKN campus offering nutritious vegetarian and non-vegetarian meals for students and staff at affordable prices.",
   path: "/food-court",
+  keywords: [
+    "JKKN college food court",
+    "campus canteen Komarapalayam",
+    "college mess facility Tamil Nadu",
+    "JKKN AHS dining hall",
+    "student canteen Namakkal college",
+    "hygienic food court campus",
+    "vegetarian non-vegetarian meals JKKN",
+  ],
 });
 
 const breadcrumbSchema = {

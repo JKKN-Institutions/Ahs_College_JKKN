@@ -5,6 +5,16 @@ export const metadata = createPageMetadata({
   description:
     "24/7 ambulance service available at JKKN campus, Komarapalayam. Emergency medical transport for students, staff, and hospital patients.",
   path: "/ambulance-service",
+  keywords: [
+    "JKKN campus ambulance service",
+    "24/7 emergency medical transport Komarapalayam",
+    "college ambulance facility Tamil Nadu",
+    "JKKN AHS emergency service",
+    "campus medical emergency Namakkal",
+    "ambulance service allied health college",
+    "first aid centre JKKN campus",
+  ],
+  ogImage: { url: "https://ahs.jkkn.ac.in/ambulance.webp", width: 1200, height: 630, alt: "Ambulance Service at JKKN College" },
 });
 
 const breadcrumbSchema = {

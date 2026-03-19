@@ -46,8 +46,8 @@ export default function Hostel() {
             <main className="flex-grow pt-4 md:pt-20 lg:pt-24 pb-16">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     {/* Page Title */}
-                    <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#0b6d41] mb-12 uppercase tracking-tight">
-                        HOSTEL
+                    <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#0b6d41] mb-12 tracking-tight">
+                        Hostel Facilities at JKKN College of Allied Health Sciences
                     </h1>
 
                     {/* Hostel Sections */}
@@ -116,6 +116,31 @@ export default function Hostel() {
                         ))}
                     </div>
                 </div>
+
+                {/* FAQ Section */}
+                <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+                    <h2 className="text-2xl sm:text-3xl font-bold text-[#0b6d41] mb-8">Frequently Asked Questions About JKKN Hostel</h2>
+                    <div className="space-y-4">
+                        {[
+                            { q: "Is hostel accommodation available for both boys and girls at JKKN?", a: "Yes, JKKN provides separate hostel facilities for boys and girls within the campus with round-the-clock security and CCTV surveillance." },
+                            { q: "What amenities are included in the JKKN hostel?", a: "JKKN hostels include furnished rooms, attached bathrooms, high-speed WiFi, study areas, gymnasium, and recreational facilities for students." },
+                            { q: "Is the JKKN hostel located within the campus?", a: "Yes, both boys and girls hostels are situated within the JKKN campus at Natarajapuram, Komarapalayam, ensuring convenient access to classes." },
+                            { q: "What food facilities are available for hostel students at JKKN?", a: "JKKN hostels have an in-campus mess providing nutritious vegetarian and non-vegetarian meals three times daily with snacks." },
+                            { q: "What is the hostel fee at JKKN College?", a: "Hostel fees vary by room type. Contact JKKN admissions at 9345855001 for current hostel fee details and room availability." },
+                        ].map((faq, i) => (
+                            <div key={i} className="border border-gray-200 rounded-2xl overflow-hidden bg-white">
+                                <h3 className="m-0 text-base">
+                                    <div className="w-full flex justify-between items-center p-6 text-left">
+                                        <span className="font-bold text-[#0b6d41]">{faq.q}</span>
+                                    </div>
+                                </h3>
+                                <div className="faq-answer px-6 pb-6 text-gray-700 text-sm leading-relaxed">
+                                    {faq.a}
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </section>
             </main>
 
             <Footer />

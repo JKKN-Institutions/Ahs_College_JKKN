@@ -48,6 +48,23 @@ const breadcrumbSchema = {
   ]
 };
 
+const institutionsSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "JKKN Institutions",
+  "url": "https://jkkn.ac.in/",
+  "description": "JKKN Institutions is a multi-disciplinary educational group with colleges offering dental, pharmacy, nursing, engineering, allied health sciences, arts and science, and education programs.",
+  "member": [
+    { "@type": "CollegeOrUniversity", "name": "JKKN Dental College & Hospital", "url": "https://dental.jkkn.ac.in/" },
+    { "@type": "CollegeOrUniversity", "name": "JKKN College of Pharmacy", "url": "https://pharmacy.jkkn.ac.in/" },
+    { "@type": "CollegeOrUniversity", "name": "JKKN College of Nursing", "url": "https://nursing.sresakthimayeil.jkkn.ac.in/" },
+    { "@type": "CollegeOrUniversity", "name": "JKKN College of Engineering & Technology", "url": "https://engg.jkkn.ac.in/" },
+    { "@type": "CollegeOrUniversity", "name": "JKKN College of Allied Health Sciences", "url": "https://ahs.jkkn.ac.in/" },
+    { "@type": "CollegeOrUniversity", "name": "JKKN College of Arts & Science", "url": "https://cas.jkkn.ac.in/" },
+    { "@type": "CollegeOrUniversity", "name": "JKKN College of Education", "url": "https://edu.jkkn.ac.in/" }
+  ]
+};
+
 export default function OurInstitutionsLayout({
   children,
 }: {
@@ -58,6 +75,7 @@ export default function OurInstitutionsLayout({
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(institutionsSchema) }} />
       {children}
     </>
   );

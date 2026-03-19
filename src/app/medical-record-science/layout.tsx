@@ -12,6 +12,7 @@ export const metadata = createPageMetadata({
     "bsc medical records admission 2026",
     "medical record science course namakkal"
   ],
+  ogImage: { url: "https://ahs.jkkn.ac.in/medical-record-science-hero.png", width: 1200, height: 630, alt: "BSc Medical Record Science at JKKN College" },
 });
 
 const courseSchema = {

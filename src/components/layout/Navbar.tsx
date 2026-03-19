@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { siteConfig } from '@/lib/site-config';
 import { motion, AnimatePresence } from 'framer-motion';
 
 interface NavLink {
@@ -179,7 +180,7 @@ export function Navbar() {
                         </div>
                     ))}
                     <Link
-                        href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8"
+                        href={siteConfig.admissionFormUrl}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-sm py-2 px-6 bg-[#0b6d41] text-white rounded-full font-semibold transition-all hover:bg-[#085231] hover:shadow-lg"

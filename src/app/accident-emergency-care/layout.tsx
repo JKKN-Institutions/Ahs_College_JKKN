@@ -12,6 +12,7 @@ export const metadata = createPageMetadata({
     "emt training college namakkal",
     "accident emergency care technology course"
   ],
+  ogImage: { url: "https://ahs.jkkn.ac.in/accident-emergency-care-hero.png", width: 1200, height: 630, alt: "BSc Accident and Emergency Care at JKKN College" },
 });
 
 const courseSchema = {

@@ -9,6 +9,7 @@ export const metadata = createPageMetadata({
     "bsc dialysis technology colleges in tamilnadu",
     "bsc renal dialysis technology colleges in tamilnadu"
   ],
+  ogImage: { url: "https://ahs.jkkn.ac.in/dialysis-technology-hero.png", width: 1200, height: 630, alt: "BSc Dialysis Technology at JKKN College" },
 });
 
 const courseSchema = {

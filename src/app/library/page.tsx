@@ -30,7 +30,7 @@ export default function Library() {
                             animate={{ opacity: 1, scale: 1 }}
                             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-[#0b6d41] mb-3 sm:mb-4 uppercase tracking-tight break-words"
                         >
-                            Library
+                            Library at JKKN College of Allied Health Sciences
                         </motion.h1>
                         <motion.p
                             initial={{ opacity: 0 }}
@@ -106,6 +106,8 @@ export default function Library() {
                                 </p>
                             </div>
 
+                            <h2 className="text-2xl sm:text-3xl font-bold text-[#0b6d41] mb-4">Library Features and Resources</h2>
+
                             {/* Feature Cards Grid */}
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5 md:gap-6 mt-8 sm:mt-10 md:mt-12">
                                 <FeatureCard
@@ -173,6 +175,7 @@ export default function Library() {
                     </motion.div>
 
                     {/* Stats Section */}
+                    <h2 className="text-2xl sm:text-3xl font-bold text-[#0b6d41] mb-6 text-center">Library at a Glance</h2>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 md:gap-6 max-w-6xl mx-auto">
                         <StatsCard
                             icon={<BookOpen className="w-8 h-8 text-[#0b6d41]" />}
@@ -194,6 +197,30 @@ export default function Library() {
                             value="Modern"
                             label="Infrastructure"
                         />
+                    </div>
+                    {/* FAQ Section */}
+                    <div className="max-w-6xl mx-auto mt-16">
+                        <h2 className="text-2xl sm:text-3xl font-bold text-[#0b6d41] mb-8">Frequently Asked Questions About JKKN Library</h2>
+                        <div className="space-y-4">
+                            {[
+                                { q: "What are the library timings at JKKN College?", a: "The JKKN library is open from 8 AM to 8 PM on weekdays and 9 AM to 5 PM on Saturdays for all enrolled students." },
+                                { q: "Does the JKKN library have digital resources and e-journals?", a: "Yes, the library provides access to e-journals, e-books, online databases, and multimedia resources for all health science disciplines." },
+                                { q: "How many books are available in the JKKN library?", a: "The JKKN library has over 5000 books, journals, and reference materials covering all allied health science specializations." },
+                                { q: "Can students borrow books from the JKKN library?", a: "Yes, enrolled students can borrow up to three books at a time with a valid library membership card for two weeks." },
+                                { q: "Is there a separate reading room in the JKKN library?", a: "Yes, the library has dedicated reading rooms, quiet study zones, and group discussion areas for different learning needs." },
+                            ].map((faq, i) => (
+                                <div key={i} className="border border-gray-200 rounded-2xl overflow-hidden bg-white">
+                                    <h3 className="m-0 text-base">
+                                        <div className="w-full flex justify-between items-center p-6 text-left">
+                                            <span className="font-bold text-[#0b6d41]">{faq.q}</span>
+                                        </div>
+                                    </h3>
+                                    <div className="faq-answer px-6 pb-6 text-gray-700 text-sm leading-relaxed">
+                                        {faq.a}
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </main>

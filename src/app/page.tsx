@@ -178,7 +178,7 @@ const speakableSchema = {
   "url": "https://ahs.jkkn.ac.in/",
   "speakable": {
     "@type": "SpeakableSpecification",
-    "cssSelector": ["h1", "h2"]
+    "cssSelector": [".faq-answer", ".snippet-answer", ".voice-answer", "h1", "h2"]
   },
   "datePublished": "2024-01-01",
   "dateModified": "2026-03-18"

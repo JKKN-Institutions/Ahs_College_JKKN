@@ -9,6 +9,7 @@ export const metadata = createPageMetadata({
     "respiratory therapy course in tamilnadu",
     "bsc respiratory therapy in tamilnadu"
   ],
+  ogImage: { url: "https://ahs.jkkn.ac.in/images/departments/respiratory-therapy-hero.png", width: 1200, height: 630, alt: "BSc Respiratory Therapy at JKKN College" },
 });
 
 const courseSchema = {

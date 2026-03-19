@@ -5,6 +5,16 @@ export const metadata = createPageMetadata({
   description:
     "JKKN offers campus-wide high-speed Wi-Fi connectivity for students to access digital resources, e-journals, and online learning platforms.",
   path: "/wifi",
+  keywords: [
+    "JKKN campus WiFi",
+    "high-speed internet college Komarapalayam",
+    "WiFi enabled campus Tamil Nadu",
+    "JKKN AHS internet facility",
+    "campus-wide connectivity Namakkal",
+    "free WiFi college campus",
+    "digital campus allied health sciences JKKN",
+  ],
+  ogImage: { url: "https://ahs.jkkn.ac.in/wifi-1.png", width: 1200, height: 630, alt: "WiFi Campus at JKKN College" },
 });
 
 const breadcrumbSchema = {

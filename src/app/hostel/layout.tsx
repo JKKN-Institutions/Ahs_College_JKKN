@@ -5,6 +5,16 @@ export const metadata = createPageMetadata({
   description:
     "JKKN provides separate boys and girls hostels with modern amenities, mess facilities, and 24/7 security at Komarapalayam campus.",
   path: "/hostel",
+  keywords: [
+    "JKKN college hostel",
+    "boys hostel Komarapalayam",
+    "girls hostel allied health sciences",
+    "student accommodation JKKN Tamil Nadu",
+    "hostel facilities Namakkal college",
+    "JKKN AHS hostel with mess",
+    "college hostel near Salem Erode",
+  ],
+  ogImage: { url: "https://ahs.jkkn.ac.in/images/boys-hostel.png", width: 1200, height: 630, alt: "Hostel Facilities at JKKN College" },
 });
 
 const breadcrumbSchema = {

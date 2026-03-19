@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { ArrowRight, Play, CheckCircle2 } from 'lucide-react';
+import { siteConfig } from '@/lib/site-config';
 
 export function Hero() {
     const stats = [
@@ -57,7 +58,7 @@ export function Hero() {
                                 Explore Programs <ArrowRight className="w-4 h-4" />
                             </button>
                             <Link
-                                href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8"
+                                href={siteConfig.admissionFormUrl}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="w-full sm:w-auto px-5 sm:px-6 py-2.5 bg-white/20 backdrop-blur-md text-white rounded-full font-semibold transition-all hover:bg-white/30 border-2 border-white/40 hover:shadow-xl hover:scale-105 text-sm text-center"

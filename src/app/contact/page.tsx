@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { Phone, Mail, MapPin, Send, Clock, ExternalLink } from 'lucide-react';
+import { siteConfig } from '@/lib/site-config';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import Image from 'next/image';
@@ -119,7 +120,7 @@ export default function ContactPage() {
                                     Fill out our online admission form to begin your application process. Our team will guide you through every step.
                                 </p>
 
-                                <a href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-8 py-3 bg-[#0b6d41] text-white rounded-full font-semibold transition-all hover:bg-[#085231] hover:shadow-lg mx-auto">
+                                <a href={siteConfig.admissionFormUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-8 py-3 bg-[#0b6d41] text-white rounded-full font-semibold transition-all hover:bg-[#085231] hover:shadow-lg mx-auto">
                                     Apply Now
                                     <ExternalLink className="w-4 h-4" />
                                 </a>

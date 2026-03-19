@@ -35,9 +35,8 @@ const websiteSchema = {
   "inLanguage": "en",
   "dateModified": "2026-03-18",
   "potentialAction": {
-    "@type": "SearchAction",
-    "target": "https://ahs.jkkn.ac.in/?s={search_term_string}",
-    "query-input": "required name=search_term_string"
+    "@type": "ReadAction",
+    "target": "https://ahs.jkkn.ac.in/"
   }
 };
 

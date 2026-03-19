@@ -12,6 +12,7 @@ export const metadata = createPageMetadata({
     "bsc critical care technology admission 2026",
     "icu technician course tamilnadu"
   ],
+  ogImage: { url: "https://ahs.jkkn.ac.in/critical-care-technology-hero.png", width: 1200, height: 630, alt: "BSc Critical Care Technology at JKKN College" },
 });
 
 const courseSchema = {

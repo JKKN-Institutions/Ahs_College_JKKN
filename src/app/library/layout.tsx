@@ -5,6 +5,16 @@ export const metadata = createPageMetadata({
   description:
     "JKKN AHS library offers medical textbooks, journals, digital resources, and study spaces for allied health science students.",
   path: "/library",
+  keywords: [
+    "JKKN college library",
+    "medical library Komarapalayam",
+    "digital library allied health sciences",
+    "e-journals health science college Tamil Nadu",
+    "JKKN AHS library resources",
+    "medical textbooks library Namakkal",
+    "college library with study rooms",
+  ],
+  ogImage: { url: "https://ahs.jkkn.ac.in/library/library-1.webp", width: 1200, height: 630, alt: "Library at JKKN College of Allied Health Sciences" },
 });
 
 const breadcrumbSchema = {

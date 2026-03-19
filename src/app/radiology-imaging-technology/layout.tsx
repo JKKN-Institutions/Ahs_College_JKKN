@@ -10,6 +10,7 @@ export const metadata = createPageMetadata({
     "bsc radiography colleges in tamilnadu",
     "radiography courses in tamilnadu"
   ],
+  ogImage: { url: "https://ahs.jkkn.ac.in/radiology-technology-hero.png", width: 1200, height: 630, alt: "BSc Radiology Imaging Technology at JKKN College" },
 });
 
 const courseSchema = {

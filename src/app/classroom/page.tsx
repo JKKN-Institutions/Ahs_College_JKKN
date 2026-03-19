@@ -13,12 +13,13 @@ export default function ClassRoom() {
             <main className="flex-grow pt-4 md:pt-20 lg:pt-24 pb-16">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     {/* Page Title */}
-                    <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#0b6d41] mb-12 uppercase tracking-tight">
-                        CLASS ROOM
+                    <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#0b6d41] mb-12 tracking-tight">
+                        Classroom Facilities at JKKN College of Allied Health Sciences
                     </h1>
 
                     {/* Content Section */}
                     <div className="space-y-6 text-gray-700 leading-relaxed">
+                        <h2 className="text-2xl sm:text-3xl font-bold text-[#0b6d41] mb-4">Smart Classrooms for Allied Health Sciences</h2>
                         <p className="text-base sm:text-lg text-justify">
                             At JKKN Educational Institutions, we prioritize the importance of exceptional classroom facilities for an excellent learning experience. Our classrooms are specifically designed to create an engaging and comfortable environment where students can immerse themselves in their studies and develop their skills.
                         </p>
@@ -43,6 +44,7 @@ export default function ClassRoom() {
                             </div>
                         </div>
 
+                        <h2 className="text-2xl sm:text-3xl font-bold text-[#0b6d41] mb-4">Technology-Enabled Learning Environment</h2>
                         <p className="text-base sm:text-lg text-justify">
                             Our facilities are equipped with state-of-the-art technology, including high-speed internet, multimedia projectors, and interactive whiteboards, to provide students with easy access to a vast amount of information. We also offer comfortable seating arrangements to ensure that students can focus on their studies without any discomfort or distractions.
                         </p>
@@ -51,6 +53,7 @@ export default function ClassRoom() {
                             Apart from functionality, we believe that the aesthetics of the learning environment are vital in inspiring creativity and encouraging positive attitudes towards learning.
                         </p>
 
+                        <h2 className="text-2xl sm:text-3xl font-bold text-[#0b6d41] mb-4">Diverse Learning Spaces</h2>
                         <p className="text-base sm:text-lg text-justify">
                             We understand that each student has unique learning needs, and that's why we offer various classroom settings to cater to diverse learning styles. Our classrooms range from traditional lecture-style setups to collaborative workspaces, providing students with a comfortable environment that suits their learning preferences.
                         </p>
@@ -64,6 +67,30 @@ export default function ClassRoom() {
                         </p>
                     </div>
                 </div>
+                {/* FAQ Section */}
+                <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+                    <h2 className="text-2xl sm:text-3xl font-bold text-[#0b6d41] mb-8">Frequently Asked Questions About JKKN Classrooms</h2>
+                    <div className="space-y-4">
+                        {[
+                            { q: "Are classrooms at JKKN College air-conditioned?", a: "Yes, all classrooms at JKKN College of Allied Health Sciences are air-conditioned with modern ventilation systems for comfortable learning." },
+                            { q: "Do JKKN classrooms have smart boards and projectors?", a: "Yes, every classroom is equipped with smart boards, multimedia projectors, and interactive whiteboards for technology-enhanced teaching." },
+                            { q: "How many students does each classroom accommodate?", a: "JKKN classrooms accommodate 30 to 60 students depending on the course, with ergonomic seating and adequate spacing." },
+                            { q: "Is high-speed internet available in JKKN classrooms?", a: "Yes, all classrooms have high-speed WiFi connectivity enabling students to access online resources and digital learning materials." },
+                            { q: "Are there different types of classrooms at JKKN?", a: "Yes, JKKN offers lecture halls, seminar rooms, collaborative workspaces, and laboratory classrooms to support diverse learning styles." },
+                        ].map((faq, i) => (
+                            <div key={i} className="border border-gray-200 rounded-2xl overflow-hidden bg-white">
+                                <h3 className="m-0 text-base">
+                                    <div className="w-full flex justify-between items-center p-6 text-left">
+                                        <span className="font-bold text-[#0b6d41]">{faq.q}</span>
+                                    </div>
+                                </h3>
+                                <div className="faq-answer px-6 pb-6 text-gray-700 text-sm leading-relaxed">
+                                    {faq.a}
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </section>
             </main>
 
             <Footer />

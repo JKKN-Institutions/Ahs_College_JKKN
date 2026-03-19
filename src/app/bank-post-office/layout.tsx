@@ -5,6 +5,15 @@ export const metadata = createPageMetadata({
   description:
     "On-campus banking and postal services at JKKN, Komarapalayam — ATM, bank branch, and post office for student convenience.",
   path: "/bank-post-office",
+  keywords: [
+    "JKKN campus bank branch",
+    "on-campus ATM Komarapalayam",
+    "college post office Tamil Nadu",
+    "JKKN AHS banking facility",
+    "student bank account Namakkal college",
+    "campus postal service JKKN",
+    "bank and post office allied health college",
+  ],
 });
 
 const breadcrumbSchema = {

@@ -5,6 +5,16 @@ export const metadata = createPageMetadata({
   description:
     "Modern, air-conditioned classrooms with smart boards and AV equipment at JKKN College of Allied Health Sciences, Komarapalayam.",
   path: "/classroom",
+  keywords: [
+    "smart classroom JKKN",
+    "allied health sciences classroom facilities",
+    "modern classroom Komarapalayam",
+    "JKKN AHS learning facilities",
+    "air-conditioned classroom Tamil Nadu",
+    "smart board classroom Namakkal",
+    "JKKN College classroom infrastructure",
+  ],
+  ogImage: { url: "https://ahs.jkkn.ac.in/classroom/digital-class-room-1.webp", width: 1200, height: 630, alt: "Smart Classrooms at JKKN College" },
 });
 
 const breadcrumbSchema = {

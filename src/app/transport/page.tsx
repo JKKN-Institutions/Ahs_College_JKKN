@@ -15,7 +15,7 @@ export default function Transport() {
                     {/* Page Title */}
                     <div className="mb-8">
                         <h1 className="text-4xl md:text-5xl font-bold text-[#0b6d41] mb-8">
-                            TRANSPORT
+                            Transport Facilities at JKKN College of Allied Health Sciences
                         </h1>
                     </div>
 
@@ -120,6 +120,31 @@ export default function Transport() {
                         </div>
                     </div>
                 </div>
+
+                {/* FAQ Section */}
+                <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+                    <h2 className="text-2xl sm:text-3xl font-bold text-[#0b6d41] mb-8">Frequently Asked Questions About JKKN Transport</h2>
+                    <div className="space-y-4">
+                        {[
+                            { q: "Does JKKN College provide bus transport for students?", a: "Yes, JKKN College of Allied Health Sciences provides a well-maintained bus fleet for students and faculty from nearby towns and cities." },
+                            { q: "What areas does the JKKN college bus service cover?", a: "JKKN buses cover Salem, Erode, Namakkal, Tiruchengode, Komarapalayam, and surrounding areas, ensuring broad accessibility for students." },
+                            { q: "What is the transport fee at JKKN College?", a: "Transport fees vary by distance and route. Contact JKKN admissions at 9345855001 for current bus fee details and route schedules." },
+                            { q: "Are there separate buses for boys and girls at JKKN?", a: "JKKN transport is mixed but ensures safety with CCTV cameras on buses and female attendants available to assist girl students." },
+                            { q: "What is the bus timing for JKKN College?", a: "JKKN buses operate on a strict schedule aligned with college hours. Contact the transport office at 9345855001 for exact timings." },
+                        ].map((faq, i) => (
+                            <div key={i} className="border border-gray-200 rounded-2xl overflow-hidden bg-white">
+                                <h3 className="m-0 text-base">
+                                    <div className="w-full flex justify-between items-center p-6 text-left">
+                                        <span className="font-bold text-[#0b6d41]">{faq.q}</span>
+                                    </div>
+                                </h3>
+                                <div className="faq-answer px-6 pb-6 text-gray-700 text-sm leading-relaxed">
+                                    {faq.a}
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </section>
             </main>
 
             <Footer />

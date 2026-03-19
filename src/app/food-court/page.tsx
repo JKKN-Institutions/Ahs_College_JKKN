@@ -32,8 +32,8 @@ export default function FoodCourt() {
                             <span className="inline-block py-1 px-3 rounded-full bg-[#ffde59] text-[#0b6d41] text-xs font-bold uppercase tracking-wider mb-4">
                                 Campus Life
                             </span>
-                            <h1 className="text-4xl md:text-6xl font-black text-white uppercase tracking-tight">
-                                Food Court
+                            <h1 className="text-4xl md:text-6xl font-black text-white tracking-tight">
+                                Food Court at JKKN College of Allied Health Sciences
                             </h1>
                             <p className="mt-4 text-white/90 text-lg max-w-2xl mx-auto font-medium">
                                 A vibrant social hub fueling success with healthy, diverse, and sustainable dining options.
@@ -217,6 +217,31 @@ export default function FoodCourt() {
                                 </div>
                             </div>
                         </motion.div>
+                    </div>
+                </section>
+
+                {/* FAQ Section */}
+                <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+                    <h2 className="text-2xl sm:text-3xl font-bold text-[#0b6d41] mb-8">Frequently Asked Questions About JKKN Food Court</h2>
+                    <div className="space-y-4">
+                        {[
+                            { q: "Does JKKN College have a food court on campus?", a: "Yes, JKKN College of Allied Health Sciences has a modern food court on campus offering diverse, hygienic, and affordable meals daily." },
+                            { q: "Is vegetarian food available at the JKKN food court?", a: "Yes, the JKKN food court serves a wide variety of fresh vegetarian meals, snacks, and beverages to cater to all dietary preferences." },
+                            { q: "What are the food court timings at JKKN College?", a: "The JKKN food court operates throughout college hours, from morning to evening, serving breakfast, lunch, and evening snacks daily." },
+                            { q: "Are meals included in the hostel fee at JKKN?", a: "Yes, hostel students receive three nutritious meals daily through the campus mess as part of their hostel accommodation package." },
+                            { q: "Is the JKKN food court hygienic and clean?", a: "Yes, the JKKN food court maintains strict hygiene standards with regular inspections, fresh ingredients, and eco-friendly food-grade packaging." },
+                        ].map((faq, i) => (
+                            <div key={i} className="border border-gray-200 rounded-2xl overflow-hidden bg-white">
+                                <h3 className="m-0 text-base">
+                                    <div className="w-full flex justify-between items-center p-6 text-left">
+                                        <span className="font-bold text-[#0b6d41]">{faq.q}</span>
+                                    </div>
+                                </h3>
+                                <div className="faq-answer px-6 pb-6 text-gray-700 text-sm leading-relaxed">
+                                    {faq.a}
+                                </div>
+                            </div>
+                        ))}
                     </div>
                 </section>
             </main>

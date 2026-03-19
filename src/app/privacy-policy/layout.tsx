@@ -28,6 +28,23 @@ const breadcrumbSchema = {
   ]
 };
 
+const policySchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Privacy Policy — JKKN College of Allied Health Sciences",
+  "url": "https://ahs.jkkn.ac.in/privacy-policy",
+  "about": {
+    "@type": "Thing",
+    "name": "Privacy Policy"
+  },
+  "publisher": {
+    "@type": "CollegeOrUniversity",
+    "name": "JKKN College of Allied Health Sciences",
+    "url": "https://ahs.jkkn.ac.in/"
+  },
+  "dateModified": "2026-03-19"
+};
+
 export default function PrivacyPolicyLayout({
   children,
 }: {
@@ -37,6 +54,7 @@ export default function PrivacyPolicyLayout({
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(policySchema) }} />
       {children}
     </>
   );
