@@ -330,6 +330,7 @@ Allow: /
 # --- Common Crawl (open dataset — trains many AI models) ---
 User-agent: CCBot
 Allow: /
+Crawl-delay: 3
 
 # --- ByteDance (TikTok search, Doubao AI) ---
 User-agent: Bytespider
@@ -341,6 +342,7 @@ Allow: /
 # --- Diffbot (AI-powered web data extraction — feeds many AI systems) ---
 User-agent: Diffbot
 Allow: /
+Crawl-delay: 3
 
 # --- Yandex (Russian search + YandexGPT AI) ---
 User-agent: YandexBot

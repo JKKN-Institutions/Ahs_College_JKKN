@@ -15,18 +15,29 @@ export const metadata = createPageMetadata({
   ],
 });
 
-// TODO [NEEDS ADMIN INPUT]: Replace with correct AHS principal details
 const personSchema = {
   "@context": "https://schema.org",
   "@type": "Person",
+  "@id": "https://ahs.jkkn.ac.in/#principal",
   "name": "Dr. Dhanasekar Balakrishnan",
   "jobTitle": "Principal",
+  "honorificPrefix": "Dr.",
+  "hasCredential": [
+    { "@type": "EducationalOccupationalCredential", "credentialCategory": "degree", "name": "BDS" },
+    { "@type": "EducationalOccupationalCredential", "credentialCategory": "degree", "name": "MDS" },
+    { "@type": "EducationalOccupationalCredential", "credentialCategory": "fellowship", "name": "FDS RCS (England)" },
+    { "@type": "EducationalOccupationalCredential", "credentialCategory": "fellowship", "name": "MDTFEd (Edinburgh)" },
+    { "@type": "EducationalOccupationalCredential", "credentialCategory": "membership", "name": "MFDS RCPS (Glasgow)" },
+    { "@type": "EducationalOccupationalCredential", "credentialCategory": "membership", "name": "MFDS RCS (Edinburgh)" }
+  ],
   "worksFor": {
     "@type": "CollegeOrUniversity",
+    "@id": "https://ahs.jkkn.ac.in/#organization",
     "name": "JKKN College of Allied Health Sciences",
     "url": "https://ahs.jkkn.ac.in/"
   },
-  "description": "Principal of JKKN College of Allied Health Sciences, Komarapalayam, Tamil Nadu.",
+  "image": "https://ahs.jkkn.ac.in/principal.png",
+  "description": "Principal of JKKN College of Allied Health Sciences and JKKN Dental College and Hospital, Komarapalayam, Tamil Nadu. Holds BDS, MDS, FDS RCS (England), MDTFEd (Edinburgh), MFDS RCPS (Glasgow), and MFDS RCS (Edinburgh).",
   "url": "https://ahs.jkkn.ac.in/principals-message"
 };
 

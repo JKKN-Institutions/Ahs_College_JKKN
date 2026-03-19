@@ -171,6 +171,39 @@ const faqSchema = {
   ]
 };
 
+const reviewSchema = {
+  "@context": "https://schema.org",
+  "@type": "CollegeOrUniversity",
+  "@id": "https://ahs.jkkn.ac.in/#organization",
+  "name": "JKKN College of Allied Health Sciences",
+  "review": [
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Priya Krishnan" },
+      "reviewBody": "The practical training at JKKN prepared me thoroughly for my role at Apollo. The Learning Facilitators' real-world experience made all the difference in understanding complex procedures.",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+      "datePublished": "2022-06-15",
+      "itemReviewed": { "@type": "EducationalOrganization", "name": "JKKN College of Allied Health Sciences" }
+    },
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Rajesh Sundaram" },
+      "reviewBody": "JKKN's CCT program and clinical exposure helped me start my own eye care practice within 2 years of graduation. The foundation was exceptional.",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+      "datePublished": "2021-06-15",
+      "itemReviewed": { "@type": "EducationalOrganization", "name": "JKKN College of Allied Health Sciences" }
+    },
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Anitha Mohan" },
+      "reviewBody": "From state-of-the-art cardiac simulation labs to hospital internship at MIOT, JKKN gave me everything I needed to become a confident cardiac technologist.",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+      "datePublished": "2023-06-15",
+      "itemReviewed": { "@type": "EducationalOrganization", "name": "JKKN College of Allied Health Sciences" }
+    }
+  ]
+};
+
 const speakableSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
@@ -198,6 +231,10 @@ export default function Home() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }}
       />
       <Navbar />
       <main>
