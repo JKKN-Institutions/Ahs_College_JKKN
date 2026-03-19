@@ -9,18 +9,21 @@ const poppins = Poppins({
   variable: "--font-poppins",
 });
 
-export const metadata = createPageMetadata({
-  title: "Best Allied Health Science Colleges in Tamilnadu | JKKN",
-  description: "JKKN is among the best allied health science colleges in Tamilnadu. Explore BSc allied health science courses with clinical training. Admissions 2026-27!",
-  path: "/",
-  keywords: [
-    "best allied health science colleges in tamilnadu",
-    "allied health science courses in tamilnadu",
-    "bsc allied health science colleges in tamilnadu",
-    "top 10 allied health science colleges in tamilnadu",
-    "bsc allied health science courses in tamilnadu",
-  ],
-});
+export const metadata = {
+  icons: { icon: "/ahs-logo.svg" },
+  ...createPageMetadata({
+    title: "Best Allied Health Science Colleges in Tamilnadu | JKKN",
+    description: "JKKN is among the best allied health science colleges in Tamilnadu. Explore BSc allied health science courses with clinical training. Admissions 2026-27!",
+    path: "/",
+    keywords: [
+      "best allied health science colleges in tamilnadu",
+      "allied health science courses in tamilnadu",
+      "bsc allied health science colleges in tamilnadu",
+      "top 10 allied health science colleges in tamilnadu",
+      "bsc allied health science courses in tamilnadu",
+    ],
+  }),
+};
 
 const websiteSchema = {
   "@context": "https://schema.org",
