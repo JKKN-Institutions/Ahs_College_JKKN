@@ -5,6 +5,14 @@ export const metadata = createPageMetadata({
   description:
     "Latest news, events, and updates from JKKN College of Allied Health Sciences — campus activities, student achievements, and allied health insights.",
   path: "/blog",
+  keywords: [
+    "JKKN AHS blog",
+    "allied health sciences news",
+    "JKKN college campus updates",
+    "healthcare education blog Tamil Nadu",
+    "allied health student achievements",
+    "JKKN Komarapalayam news",
+  ],
 });
 
 const speakableSchema = {
@@ -36,6 +44,7 @@ const collectionPageSchema = {
   "url": "https://ahs.jkkn.ac.in/blog",
   "publisher": {
     "@type": "CollegeOrUniversity",
+    "@id": "https://ahs.jkkn.ac.in/#organization",
     "name": "JKKN College of Allied Health Sciences",
     "url": "https://ahs.jkkn.ac.in/"
   }

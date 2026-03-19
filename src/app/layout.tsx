@@ -43,6 +43,7 @@ const websiteSchema = {
 const collegeSchema = {
   "@context": "https://schema.org",
   "@type": "CollegeOrUniversity",
+  "@id": "https://ahs.jkkn.ac.in/#organization",
   "name": "JKKN College of Allied Health Sciences",
   "alternateName": ["JKKN AHS", "JKKN Allied Health Sciences"],
   "url": "https://ahs.jkkn.ac.in/",
@@ -72,6 +73,7 @@ const collegeSchema = {
     "https://www.tnmgrmu.ac.in/",
     "https://jkkn.ac.in/",
     "https://en.wikipedia.org/wiki/J._K._K._Nattraja_Educational_Institutions",
+    "https://www.wikidata.org/wiki/Q55090877",
     "https://x.com/jkkninstitution",
     "https://wa.me/919345855001"
   ],
@@ -143,7 +145,8 @@ const collegeSchema = {
     "ratingValue": "4.5",
     "bestRating": "5",
     "worstRating": "1",
-    "ratingCount": "150"
+    "ratingCount": "150",
+    "url": "https://maps.app.goo.gl/JJ5dKGY4NAHReFpj7"
   },
   "dateModified": "2026-03-18"
 };
@@ -176,6 +179,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta name="author" content="JKKN College of Allied Health Sciences" />
         {/* Google Tag Manager */}
         <script dangerouslySetInnerHTML={{ __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-W5JJJVHB');` }} />
         {/* End Google Tag Manager */}

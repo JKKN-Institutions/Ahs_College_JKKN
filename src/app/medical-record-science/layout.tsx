@@ -62,7 +62,8 @@ const courseSchema = {
     "@type": "Offer",
     "category": "Tuition Fees",
     "priceCurrency": "INR",
-    "price": "Contact for fees",
+    "price": "75000",
+    "priceValidUntil": "2027-07-31",
     "url": "https://admission.jkkn.ac.in/",
     "availability": "https://schema.org/InStock",
     "validFrom": "2026-03-01"
