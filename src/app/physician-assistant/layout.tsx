@@ -16,6 +16,7 @@ export const metadata = createPageMetadata({
 const courseSchema = {
   "@context": "https://schema.org",
   "@type": "Course",
+  "dateModified": "2026-03-19",
   "name": "B.Sc Physician Assistant",
   "description": "Comprehensive program that prepares students to become skilled clinical professionals with expertise in patient assessment, diagnostic support, and therapeutic procedures across medical specialties. Graduates work alongside physicians in clinical settings.",
   "url": "https://ahs.jkkn.ac.in/physician-assistant",
@@ -59,9 +60,19 @@ const courseSchema = {
     "@type": "Offer",
     "category": "Tuition Fees",
     "priceCurrency": "INR",
+    "price": "Contact for fees",
     "url": "https://admission.jkkn.ac.in/",
     "availability": "https://schema.org/InStock",
     "validFrom": "2026-03-01"
+  },
+  "potentialAction": {
+    "@type": "ApplyAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://admission.jkkn.ac.in/",
+      "actionPlatform": "http://schema.org/DesktopWebPlatform"
+    },
+    "name": "Apply for B.Sc Physician Assistant"
   }
 };
 
@@ -72,7 +83,7 @@ const speakableSchema = {
   "url": "https://ahs.jkkn.ac.in/physician-assistant",
   "speakable": {
     "@type": "SpeakableSpecification",
-    "cssSelector": ["h1", "h2"]
+    "cssSelector": [".faq-answer", ".snippet-answer", ".voice-answer", "h1", "h2"]
   }
 };
 
@@ -89,69 +100,70 @@ const breadcrumbSchema = {
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
+  "dateModified": "2026-03-19",
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is B.Sc Physician Assistant?",
+      "name": "What is the Bachelor of Science Physician Assistant course at JKKN College Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "B.Sc Physician Assistant is a 3 years + 1 year internship program that trains healthcare professionals to work alongside physicians in clinical settings. Physician Assistants are skilled in patient assessment, diagnosis support, medical procedures, treatment planning, and patient care management across various medical specialties including general medicine, surgery, emergency care, and community health."
+        "text": "The Bachelor of Science Physician Assistant course at JKKN College Tamil Nadu is a three-year degree plus one-year internship that trains students to assist physicians in clinical diagnosis, treatment, and patient care."
       }
     },
     {
       "@type": "Question",
-      "name": "What is the eligibility criteria?",
+      "name": "What is the eligibility to join the Bachelor of Science Physician Assistant program at JKKN College Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Candidates must have passed +2 with Physics, Chemistry, and Biology with minimum 50% aggregate marks (40% for SC/ST, 45% for OBC). Minimum age is 17 years as on December 31st of the admission year. A medical fitness certificate is also required."
+        "text": "Candidates need 10+2 with Physics, Chemistry, and Biology, minimum 50% marks. Scheduled Caste and Scheduled Tribe candidates need 40%, Other Backward Classes candidates need 45%. Minimum age is 17 years."
       }
     },
     {
       "@type": "Question",
-      "name": "What is the salary of a Physician Assistant in India?",
+      "name": "What is the salary of a Physician Assistant graduate from JKKN College Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Entry-level Physician Assistants earn ₹3-5 lakhs per annum. With 3-5 years of experience, salaries range from ₹6-10 lakhs. Senior Physician Assistants and those in specialized roles at corporate hospitals can earn ₹12-20 lakhs per annum. International opportunities offer significantly higher packages."
+        "text": "Entry-level Physician Assistant graduates earn three to five lakhs per year. Experienced professionals earn six to ten lakhs. Senior roles in corporate hospitals offer twelve to twenty lakhs per year."
       }
     },
     {
       "@type": "Question",
-      "name": "What are the career opportunities?",
+      "name": "What career opportunities are available after the Bachelor of Science Physician Assistant course at JKKN College Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Physician Assistant graduates work as Clinical Physician Assistants, Emergency Care Assistants, Surgical Assistants, and ICU/Critical Care Assistants in hospitals and clinics. Additional roles include OPD Coordinator, Community Health Officer, and Clinical Research Associate."
+        "text": "Graduates work as Clinical Physician Assistants, Emergency Care Assistants, Surgical Assistants, Intensive Care Unit Assistants, Outpatient Department Coordinators, and Community Health Officers in hospitals and clinics."
       }
     },
     {
       "@type": "Question",
-      "name": "Is B.Sc Physician Assistant a good career choice?",
+      "name": "Is the Bachelor of Science Physician Assistant course at JKKN College Tamil Nadu a good career choice?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, B.Sc Physician Assistant is an excellent career choice with growing demand for mid-level healthcare providers in India. The field offers competitive salaries, diverse work environments, and opportunities for specialization. With India's expanding healthcare infrastructure, PAs are increasingly recognized as vital healthcare team members."
+        "text": "Yes. Growing demand for mid-level healthcare providers, competitive salaries, diverse roles, and India's expanding healthcare infrastructure make Physician Assistant an excellent career choice."
       }
     },
     {
       "@type": "Question",
-      "name": "Can I pursue higher education after this course?",
+      "name": "Can I pursue higher studies after the Bachelor of Science Physician Assistant course at JKKN College Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, graduates can pursue M.Sc in Physician Assistant Studies, Clinical Medicine, or Public Health (MPH) for advanced specialization. MBA in Healthcare Management and certifications in Emergency Medicine or Critical Care are also available."
+        "text": "Yes. Graduates can pursue Master of Science in Physician Assistant Studies, Master of Science in Clinical Medicine, Master of Public Health, or a Master of Business Administration in Healthcare Management."
       }
     },
     {
       "@type": "Question",
-      "name": "What practical training is included?",
+      "name": "What practical training is included in the Bachelor of Science Physician Assistant course at JKKN College Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The program includes 2000+ hours of clinical training across OPD, emergency departments, ICU, operation theaters, and community health settings. Students gain hands-on experience in patient assessment, medical procedures, diagnostic interpretations, and clinical rotations in medicine, surgery, pediatrics, and emergency care."
+        "text": "The program includes over two thousand hours of clinical training across outpatient departments, emergency departments, Intensive Care Units, operation theatres, and community health settings."
       }
     },
     {
       "@type": "Question",
-      "name": "What is the difference between a Physician Assistant and a Doctor?",
+      "name": "What is the difference between a Physician Assistant and a doctor at JKKN College Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Physician Assistants practice medicine under the supervision of physicians. While doctors have independent practice rights, PAs work as part of a healthcare team. PAs can diagnose, treat, and prescribe medications but always collaborate with physicians for complex cases. The 4-year PA program focuses on clinical practice, while medical doctors complete 5.5 years of MBBS."
+        "text": "Physician Assistants practice under physician supervision and assist in diagnosis and treatment. Doctors hold independent practice rights and complete five and a half years of MBBS training."
       }
     }
   ]

@@ -24,7 +24,7 @@ const speakableSchema = {
   "url": "https://ahs.jkkn.ac.in/food-court",
   "speakable": {
     "@type": "SpeakableSpecification",
-    "cssSelector": ["h1", "h2"]
+    "cssSelector": [".faq-answer", ".snippet-answer", ".voice-answer", "h1", "h2"]
   }
 };
 
@@ -49,6 +49,19 @@ const facilitySchema = {
   }
 };
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "dateModified": "2026-03-19",
+  "mainEntity": [
+    { "@type": "Question", "name": "Does JKKN College have a food court on campus?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, JKKN College of Allied Health Sciences has a modern food court on campus offering diverse, hygienic, and affordable meals daily." } },
+    { "@type": "Question", "name": "Is vegetarian food available at the JKKN food court?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, the JKKN food court serves a wide variety of fresh vegetarian meals, snacks, and beverages to cater to all dietary preferences." } },
+    { "@type": "Question", "name": "What are the food court timings at JKKN College?", "acceptedAnswer": { "@type": "Answer", "text": "The JKKN food court operates throughout college hours, from morning to evening, serving breakfast, lunch, and evening snacks daily." } },
+    { "@type": "Question", "name": "Are meals included in the hostel fee at JKKN?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, hostel students receive three nutritious meals daily through the campus mess as part of their hostel accommodation package." } },
+    { "@type": "Question", "name": "Is the JKKN food court hygienic and clean?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, the JKKN food court maintains strict hygiene standards with regular inspections, fresh ingredients, and eco-friendly food-grade packaging." } }
+  ]
+};
+
 export default function FoodCourtLayout({
   children,
 }: {
@@ -59,6 +72,7 @@ export default function FoodCourtLayout({
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(facilitySchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       {children}
     </>
   );

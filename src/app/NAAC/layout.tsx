@@ -14,7 +14,7 @@ const speakableSchema = {
   "url": "https://ahs.jkkn.ac.in/NAAC",
   "speakable": {
     "@type": "SpeakableSpecification",
-    "cssSelector": ["h1", "h2"]
+    "cssSelector": [".faq-answer", ".snippet-answer", ".voice-answer", "h1", "h2"]
   }
 };
 
@@ -28,6 +28,22 @@ const breadcrumbSchema = {
   ]
 };
 
+const naacSchema = {
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "JKKN College of Allied Health Sciences",
+  "url": "https://ahs.jkkn.ac.in/",
+  "hasCredential": {
+    "@type": "EducationalOccupationalCredential",
+    "credentialCategory": "Accreditation",
+    "recognizedBy": {
+      "@type": "Organization",
+      "name": "National Assessment and Accreditation Council (NAAC)",
+      "url": "http://www.naac.gov.in/"
+    }
+  }
+};
+
 export default function NAACLayout({
   children,
 }: {
@@ -37,6 +53,7 @@ export default function NAACLayout({
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(naacSchema) }} />
       {children}
     </>
   );

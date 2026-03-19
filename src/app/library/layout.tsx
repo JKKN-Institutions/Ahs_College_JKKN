@@ -24,7 +24,7 @@ const speakableSchema = {
   "url": "https://ahs.jkkn.ac.in/library",
   "speakable": {
     "@type": "SpeakableSpecification",
-    "cssSelector": ["h1", "h2"]
+    "cssSelector": [".faq-answer", ".snippet-answer", ".voice-answer", "h1", "h2"]
   }
 };
 
@@ -49,6 +49,19 @@ const facilitySchema = {
   }
 };
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "dateModified": "2026-03-19",
+  "mainEntity": [
+    { "@type": "Question", "name": "What are the library timings at JKKN College?", "acceptedAnswer": { "@type": "Answer", "text": "The JKKN library is open from 8 AM to 8 PM on weekdays and 9 AM to 5 PM on Saturdays for all enrolled students." } },
+    { "@type": "Question", "name": "Does the JKKN library have digital resources and e-journals?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, the library provides access to e-journals, e-books, online databases, and multimedia resources for all health science disciplines." } },
+    { "@type": "Question", "name": "How many books are available in the JKKN library?", "acceptedAnswer": { "@type": "Answer", "text": "The JKKN library has over 5000 books, journals, and reference materials covering all allied health science specializations." } },
+    { "@type": "Question", "name": "Can students borrow books from the JKKN library?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, enrolled students can borrow up to three books at a time with a valid library membership card for two weeks." } },
+    { "@type": "Question", "name": "Is there a separate reading room in the JKKN library?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, the library has dedicated reading rooms, quiet study zones, and group discussion areas for different learning needs." } }
+  ]
+};
+
 export default function LibraryLayout({
   children,
 }: {
@@ -59,6 +72,7 @@ export default function LibraryLayout({
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(facilitySchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       {children}
     </>
   );

@@ -17,6 +17,7 @@ export const metadata = createPageMetadata({
 const courseSchema = {
   "@context": "https://schema.org",
   "@type": "Course",
+  "dateModified": "2026-03-19",
   "name": "B.Sc Medical Record Science",
   "description": "Undergraduate program training healthcare professionals in health information management, medical coding, disease classification systems (ICD-10, CPT), healthcare data analytics, electronic health records, and hospital information systems.",
   "url": "https://ahs.jkkn.ac.in/medical-record-science",
@@ -60,9 +61,19 @@ const courseSchema = {
     "@type": "Offer",
     "category": "Tuition Fees",
     "priceCurrency": "INR",
+    "price": "Contact for fees",
     "url": "https://admission.jkkn.ac.in/",
     "availability": "https://schema.org/InStock",
     "validFrom": "2026-03-01"
+  },
+  "potentialAction": {
+    "@type": "ApplyAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://admission.jkkn.ac.in/",
+      "actionPlatform": "http://schema.org/DesktopWebPlatform"
+    },
+    "name": "Apply for B.Sc Medical Record Science"
   }
 };
 
@@ -73,7 +84,7 @@ const speakableSchema = {
   "url": "https://ahs.jkkn.ac.in/medical-record-science",
   "speakable": {
     "@type": "SpeakableSpecification",
-    "cssSelector": ["h1", "h2"]
+    "cssSelector": [".faq-answer", ".snippet-answer", ".voice-answer", "h1", "h2"]
   }
 };
 
@@ -90,69 +101,70 @@ const breadcrumbSchema = {
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
+  "dateModified": "2026-03-19",
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is B.Sc Medical Record Science?",
+      "name": "What is Bachelor of Science Medical Record Science at JKKN College Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "B.Sc Medical Record Science is a four-year degree that trains professionals in health information management, medical coding, and ICD classification. The program covers healthcare data analytics and hospital information systems. Graduates manage patient health records and ensure data accuracy for quality healthcare delivery."
+        "text": "Bachelor of Science Medical Record Science at JKKN College Tamil Nadu is a four-year degree training professionals in Health Information Management, medical coding, International Classification of Diseases, and hospital information systems."
       }
     },
     {
       "@type": "Question",
-      "name": "What is the eligibility criteria?",
+      "name": "What is the eligibility to join Bachelor of Science Medical Record Science at JKKN College Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Candidates must have passed 10+2 with Physics, Chemistry, and Biology/Mathematics with minimum 50% aggregate marks (40% for SC/ST, 45% for OBC). Minimum age is 17 years as on December 31st of the admission year."
+        "text": "Candidates need 10+2 with Physics, Chemistry, and Biology or Mathematics, minimum 50% marks. Scheduled Caste and Scheduled Tribe students need 40%, Other Backward Classes students need 45%. Minimum age is 17 years."
       }
     },
     {
       "@type": "Question",
-      "name": "What is the salary of a Medical Record Science professional?",
+      "name": "What salary can I earn after Bachelor of Science Medical Record Science at JKKN College Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Entry-level medical record technicians earn ₹2.5-4 lakhs per annum. With experience, salaries range from ₹5-10 lakhs. Senior Health Information Managers and Certified Coders in corporate hospitals, insurance companies, and international organizations earn ₹12-20 lakhs per annum."
+        "text": "Entry-level Medical Record Science professionals earn 2.5 to 4 lakhs per year. Experienced Health Information Management specialists earn 5 to 12 lakhs. Senior roles in corporate hospitals pay up to 20 lakhs annually."
       }
     },
     {
       "@type": "Question",
-      "name": "What are the career opportunities?",
+      "name": "What career opportunities are available after Bachelor of Science Medical Record Science at JKKN College Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Medical Record Science graduates work as Medical Record Technicians, Health Information Managers, Medical Coders, and Clinical Data Analysts in hospitals and insurance companies. Additional roles include Medical Auditor, Healthcare IT Specialist, and Quality Assurance Officer in pharmaceutical firms."
+        "text": "Graduates work as Medical Record Technicians, Health Information Managers, Medical Coders, Clinical Data Analysts, and Healthcare Information Technology Specialists in hospitals, insurance companies, and pharmaceutical firms."
       }
     },
     {
       "@type": "Question",
-      "name": "Is medical coding covered in this course?",
+      "name": "Is medical coding using International Classification of Diseases taught in Bachelor of Science Medical Record Science at JKKN College Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, comprehensive medical coding training is a core component of the program. Students learn ICD-10 coding for diagnoses, CPT coding for procedures, and other classification systems like ICD-O for oncology. The curriculum includes extensive hands-on practice with real medical records and coding scenarios."
+        "text": "Yes, International Classification of Diseases coding and Electronic Medical Records are core components. Students learn disease classification, procedural coding, and hands-on practice with real medical records and coding software."
       }
     },
     {
       "@type": "Question",
-      "name": "Can I work abroad after this course?",
+      "name": "Can I work abroad after completing Bachelor of Science Medical Record Science at JKKN College Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, medical record science professionals are in high demand globally. Countries like USA, UK, Canada, Australia, and Gulf nations hire trained medical coders and health information managers. Additional certifications like RHIT (Registered Health Information Technician) or CPC (Certified Professional Coder) increase international job opportunities."
+        "text": "Yes, Health Information Management professionals are globally in demand. USA, UK, Canada, Australia, and Gulf nations hire trained medical coders. Additional international certifications further increase overseas job opportunities."
       }
     },
     {
       "@type": "Question",
-      "name": "Can I pursue higher education after this course?",
+      "name": "Can I pursue Master of Science after Bachelor of Science Medical Record Science at JKKN College Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, graduates can pursue M.Sc in Medical Record Science, Health Informatics, or MBA in Healthcare Management. Professional certifications like RHIA, CCS (Certified Coding Specialist), and CCA (Certified Coding Associate) are also available for career advancement."
+        "text": "Yes, graduates can pursue Master of Science in Medical Record Science or Health Informatics, or an MBA in Healthcare Management. Professional certifications in coding specialization are also available for career advancement."
       }
     },
     {
       "@type": "Question",
-      "name": "What practical training is included?",
+      "name": "What practical training is included in Bachelor of Science Medical Record Science at JKKN College Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The program includes 2000+ hours of practical training in medical record departments, coding laboratories, health information management systems, and hospital internships. Students gain hands-on experience with electronic health records (EHR), medical coding software, health information systems, and real-world medical record management."
+        "text": "The program includes over 2000 hours of practical training in medical record departments, coding laboratories, Electronic Medical Records systems, and hospital internships with hands-on Health Information Management experience."
       }
     }
   ]

@@ -14,7 +14,7 @@ const speakableSchema = {
   "url": "https://ahs.jkkn.ac.in/contact",
   "speakable": {
     "@type": "SpeakableSpecification",
-    "cssSelector": ["h1", "h2"]
+    "cssSelector": [".faq-answer", ".snippet-answer", ".voice-answer", "h1", "h2"]
   }
 };
 
@@ -69,6 +69,25 @@ const contactSchema = {
     "https://www.instagram.com/jkknallied/",
     "https://www.linkedin.com/company/jkknallied/",
     "https://maps.app.goo.gl/JJ5dKGY4NAHReFpj7"
+  ],
+  "potentialAction": [
+    {
+      "@type": "CommunicateAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "tel:+919345855001",
+        "actionPlatform": "http://schema.org/TelephoneAction"
+      },
+      "name": "Call JKKN Allied Health Sciences"
+    },
+    {
+      "@type": "CommunicateAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "mailto:alliedhealth@jkkn.ac.in"
+      },
+      "name": "Email JKKN Allied Health Sciences"
+    }
   ]
 };
 

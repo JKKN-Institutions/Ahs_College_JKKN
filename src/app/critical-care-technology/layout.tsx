@@ -17,6 +17,7 @@ export const metadata = createPageMetadata({
 const courseSchema = {
   "@context": "https://schema.org",
   "@type": "Course",
+  "dateModified": "2026-03-19",
   "name": "B.Sc Critical Care Technology",
   "description": "Comprehensive program that prepares students to become skilled critical care technologists, mastering ICU management, ventilator support, hemodynamic monitoring, and advanced life support systems for critically ill patients.",
   "url": "https://ahs.jkkn.ac.in/critical-care-technology",
@@ -60,9 +61,19 @@ const courseSchema = {
     "@type": "Offer",
     "category": "Tuition Fees",
     "priceCurrency": "INR",
+    "price": "Contact for fees",
     "url": "https://admission.jkkn.ac.in/",
     "availability": "https://schema.org/InStock",
     "validFrom": "2026-03-01"
+  },
+  "potentialAction": {
+    "@type": "ApplyAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://admission.jkkn.ac.in/",
+      "actionPlatform": "http://schema.org/DesktopWebPlatform"
+    },
+    "name": "Apply for B.Sc Critical Care Technology"
   }
 };
 
@@ -73,7 +84,7 @@ const speakableSchema = {
   "url": "https://ahs.jkkn.ac.in/critical-care-technology",
   "speakable": {
     "@type": "SpeakableSpecification",
-    "cssSelector": ["h1", "h2"]
+    "cssSelector": [".faq-answer", ".snippet-answer", ".voice-answer", "h1", "h2"]
   }
 };
 
@@ -90,53 +101,54 @@ const breadcrumbSchema = {
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
+  "dateModified": "2026-03-19",
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is B.Sc Critical Care Technology?",
+      "name": "What is the Bachelor of Science Critical Care Technology course at JKKN College Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "B.Sc Critical Care Technology is a four-year degree that trains professionals in ICU management, ventilator support, and hemodynamic monitoring. The program also covers advanced life support systems, dialysis technology, and emergency care. Graduates are equipped to work in ICUs, trauma centers, and emergency departments."
+        "text": "The Bachelor of Science Critical Care Technology course at JKKN College Tamil Nadu is a four-year program training students in Intensive Care Unit management, ventilator support, hemodynamic monitoring, and emergency care."
       }
     },
     {
       "@type": "Question",
-      "name": "What is the eligibility criteria?",
+      "name": "What is the eligibility to join the Bachelor of Science Critical Care Technology program at JKKN College Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Candidates must have passed 10+2 with Physics, Chemistry, and Biology/Mathematics with minimum 50% aggregate marks (40% for SC/ST, 45% for OBC). Minimum age is 17 years as on December 31st of the admission year."
+        "text": "Candidates need 10+2 with Physics, Chemistry, and Biology or Mathematics, minimum 50% marks. Scheduled Caste and Scheduled Tribe candidates need 40%, Other Backward Classes candidates need 45%. Minimum age is 17 years."
       }
     },
     {
       "@type": "Question",
-      "name": "What is the salary of a Critical Care Technologist?",
+      "name": "What is the salary of a Critical Care Technology graduate from JKKN College Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Entry-level critical care technologists earn ₹3-5 lakhs per annum. With experience, salaries range from ₹6-12 lakhs. Senior positions in corporate hospitals and specialized ICU units offer ₹15-25 lakhs per annum."
+        "text": "Entry-level critical care technologists earn three to five lakhs per year. With experience, salaries reach six to twelve lakhs. Senior Intensive Care Unit roles in corporate hospitals offer fifteen to twenty-five lakhs annually."
       }
     },
     {
       "@type": "Question",
-      "name": "What are the career opportunities?",
+      "name": "What career opportunities are available after the Bachelor of Science Critical Care Technology course at JKKN College Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Critical Care Technology graduates work as ICU Technicians, Ventilator Technicians, Emergency Care Specialists, and ECMO Specialists in hospitals and trauma centers. Additional roles include Respiratory Therapist and Critical Care Coordinator in dialysis centers and emergency care facilities."
+        "text": "Graduates work as Intensive Care Unit Technicians, Ventilator Technicians, Emergency Care Specialists, Respiratory Therapists, and Critical Care Coordinators in hospitals, trauma centers, and dialysis centers."
       }
     },
     {
       "@type": "Question",
-      "name": "Can I pursue higher education after this course?",
+      "name": "Can I pursue higher studies after the Bachelor of Science Critical Care Technology course at JKKN College Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, graduates can pursue M.Sc in Critical Care Technology, Emergency Medicine, or Respiratory Care for advanced specialization. PG Diploma in Critical Care and MBA in Healthcare Management are also available for career advancement."
+        "text": "Yes. Graduates can pursue Master of Science in Critical Care Technology, Emergency Medicine, or Respiratory Care, or a Postgraduate Diploma in Critical Care and Master of Business Administration in Healthcare Management."
       }
     },
     {
       "@type": "Question",
-      "name": "What practical training is included?",
+      "name": "What practical training is included in the Bachelor of Science Critical Care Technology course at JKKN College Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The program includes 2000+ hours of clinical training in ICUs, emergency departments, dialysis units, NICU/PICU, and trauma care centers. Students gain hands-on experience in ventilator management, hemodynamic monitoring, and all major critical care procedures."
+        "text": "The program includes over two thousand hours of clinical training in Intensive Care Units, Coronary Care Units, emergency departments, dialysis units, neonatal and paediatric Intensive Care Units, and trauma care centers."
       }
     }
   ]

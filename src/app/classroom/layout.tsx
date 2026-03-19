@@ -24,7 +24,7 @@ const speakableSchema = {
   "url": "https://ahs.jkkn.ac.in/classroom",
   "speakable": {
     "@type": "SpeakableSpecification",
-    "cssSelector": ["h1", "h2"]
+    "cssSelector": [".faq-answer", ".snippet-answer", ".voice-answer", "h1", "h2"]
   }
 };
 
@@ -49,6 +49,19 @@ const facilitySchema = {
   }
 };
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "dateModified": "2026-03-19",
+  "mainEntity": [
+    { "@type": "Question", "name": "Are classrooms at JKKN College air-conditioned?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, all classrooms at JKKN College of Allied Health Sciences are air-conditioned with modern ventilation systems for comfortable learning." } },
+    { "@type": "Question", "name": "Do JKKN classrooms have smart boards and projectors?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, every classroom is equipped with smart boards, multimedia projectors, and interactive whiteboards for technology-enhanced teaching." } },
+    { "@type": "Question", "name": "How many students does each classroom accommodate?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN classrooms accommodate 30 to 60 students depending on the course, with ergonomic seating and adequate spacing." } },
+    { "@type": "Question", "name": "Is high-speed internet available in JKKN classrooms?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, all classrooms have high-speed WiFi connectivity enabling students to access online resources and digital learning materials." } },
+    { "@type": "Question", "name": "Are there different types of classrooms at JKKN?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, JKKN offers lecture halls, seminar rooms, collaborative workspaces, and laboratory classrooms to support diverse learning styles." } }
+  ]
+};
+
 export default function ClassroomLayout({
   children,
 }: {
@@ -59,6 +72,7 @@ export default function ClassroomLayout({
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(facilitySchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       {children}
     </>
   );

@@ -14,7 +14,7 @@ const speakableSchema = {
   "url": "https://ahs.jkkn.ac.in/gallery",
   "speakable": {
     "@type": "SpeakableSpecification",
-    "cssSelector": ["h1", "h2"]
+    "cssSelector": [".faq-answer", ".snippet-answer", ".voice-answer", "h1", "h2"]
   }
 };
 

@@ -15,6 +15,7 @@ export const metadata = createPageMetadata({
 const courseSchema = {
   "@context": "https://schema.org",
   "@type": "Course",
+  "dateModified": "2026-03-19",
   "name": "B.Sc Radiography Imaging Technology",
   "description": "Comprehensive program that prepares students to become skilled radiography technologists, mastering X-ray, CT scan, MRI, ultrasound, mammography, and advanced radiological procedures for accurate disease diagnosis and treatment planning.",
   "url": "https://ahs.jkkn.ac.in/radiology-imaging-technology",
@@ -59,9 +60,19 @@ const courseSchema = {
     "@type": "Offer",
     "category": "Tuition Fees",
     "priceCurrency": "INR",
+    "price": "Contact for fees",
     "url": "https://admission.jkkn.ac.in/",
     "availability": "https://schema.org/InStock",
     "validFrom": "2026-03-01"
+  },
+  "potentialAction": {
+    "@type": "ApplyAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://admission.jkkn.ac.in/",
+      "actionPlatform": "http://schema.org/DesktopWebPlatform"
+    },
+    "name": "Apply for B.Sc Radiography Imaging Technology"
   }
 };
 
@@ -72,7 +83,7 @@ const speakableSchema = {
   "url": "https://ahs.jkkn.ac.in/radiology-imaging-technology",
   "speakable": {
     "@type": "SpeakableSpecification",
-    "cssSelector": ["h1", "h2"]
+    "cssSelector": [".faq-answer", ".snippet-answer", ".voice-answer", "h1", "h2"]
   }
 };
 
@@ -89,69 +100,70 @@ const breadcrumbSchema = {
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
+  "dateModified": "2026-03-19",
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is B.Sc Radiography Imaging Technology?",
+      "name": "What is Bachelor of Science Radiography Imaging Technology at JKKN College of Allied Health Sciences in Komarapalayam?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "B.Sc Radiography Imaging Technology is a 3 years + 1 year internship program that trains professionals in diagnostic medical imaging. It covers X-ray, CT scan, MRI, ultrasound, mammography, fluoroscopy, interventional radiology, and nuclear medicine imaging techniques. Graduates become skilled in operating imaging equipment, patient positioning, radiation safety, and producing high-quality diagnostic images."
+        "text": "Bachelor of Science Radiography Imaging Technology is a three-year plus one-year internship undergraduate program training students in X-ray, Computed Tomography, Magnetic Resonance Imaging, and ultrasound diagnostic imaging."
       }
     },
     {
       "@type": "Question",
-      "name": "What is the eligibility criteria?",
+      "name": "What is the eligibility criteria for Bachelor of Science Radiography Imaging Technology at JKKN Allied Health Sciences Komarapalayam?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Candidates must have passed 10+2 with Physics, Chemistry, and Biology/Mathematics with minimum 50% aggregate marks (40% for SC/ST, 45% for OBC). Minimum age is 17 years as on December 31st of the admission year. A medical fitness certificate is also required."
+        "text": "Candidates need 10+2 with Physics, Chemistry, and Biology or Mathematics, minimum 50% marks. Scheduled Caste and Scheduled Tribe: 40%. Other Backward Classes: 45%. Age minimum 17 years."
       }
     },
     {
       "@type": "Question",
-      "name": "What is the salary of a Radiology Technologist?",
+      "name": "What is the salary after completing Bachelor of Science Radiography Imaging Technology from JKKN College Komarapalayam Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Entry-level radiology technologists earn ₹3-5 lakhs per annum. With 3-5 years experience, salaries range from ₹6-10 lakhs. Specialists in CT/MRI and senior positions at corporate hospitals can earn ₹12-20 lakhs per annum. International opportunities offer significantly higher packages."
+        "text": "Entry-level radiology technologists earn three to five lakhs per year. Experienced Computed Tomography and Magnetic Resonance Imaging specialists at corporate hospitals earn twelve to twenty lakhs annually."
       }
     },
     {
       "@type": "Question",
-      "name": "What are the career opportunities?",
+      "name": "What are the career opportunities after Bachelor of Science Radiography Imaging Technology from JKKN Allied Health Sciences in Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Radiography graduates work as X-ray Technicians, CT Scan Technologists, MRI Technologists, and Ultrasound Technicians in hospitals and diagnostic centers. Additional roles include Mammography Specialist, Interventional Radiology Technician, Nuclear Medicine Technologist, and Quality Assurance Officer."
+        "text": "Graduates work as X-ray Technician, Computed Tomography Technologist, Magnetic Resonance Imaging Technologist, Ultrasound Technician, Mammography Specialist, and Interventional Radiology Technician in hospitals."
       }
     },
     {
       "@type": "Question",
-      "name": "Is B.Sc Radiography Imaging Technology a good career choice?",
+      "name": "Is Bachelor of Science Radiography Imaging Technology at JKKN College of Allied Health Sciences Komarapalayam a good career choice?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, B.Sc Radiography Imaging Technology offers excellent career prospects due to growing healthcare infrastructure, increasing demand for diagnostic services, technological advancements in medical imaging, and competitive salaries. The field offers diverse specializations and opportunities for continuous professional development."
+        "text": "Yes. Growing healthcare demand, advanced imaging technology, competitive salaries, and diverse specializations make Bachelor of Science Radiography Imaging Technology an excellent career choice in Tamil Nadu."
       }
     },
     {
       "@type": "Question",
-      "name": "Can I pursue higher education after this course?",
+      "name": "Can I pursue higher education after Bachelor of Science Radiography Imaging Technology from JKKN Allied Health Sciences Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, graduates can pursue M.Sc in Radiography Imaging Technology, Medical Imaging, or Radiological Sciences for advanced specialization. PG Diploma in CT/MRI Technology and MBA in Healthcare Management are also available for career advancement and leadership roles."
+        "text": "Yes. Graduates can pursue Master of Science in Radiography, Medical Imaging, or Radiological Sciences. Postgraduate Diploma in Computed Tomography or Magnetic Resonance Imaging technology is also available."
       }
     },
     {
       "@type": "Question",
-      "name": "What practical training is included?",
+      "name": "What practical training is included in Bachelor of Science Radiography Imaging Technology at JKKN College Komarapalayam?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The program includes 2000+ hours of clinical training in radiology departments with hands-on experience in X-ray, CT, MRI, ultrasound, mammography, fluoroscopy, and interventional radiology. Students work with latest imaging equipment and learn patient care, positioning techniques, image processing, and radiation safety protocols."
+        "text": "The program includes over two thousand hours of clinical training covering X-ray, Computed Tomography, Magnetic Resonance Imaging, ultrasound, mammography, and radiation safety in hospital radiology departments."
       }
     },
     {
       "@type": "Question",
-      "name": "Is radiation exposure a concern in this profession?",
+      "name": "Is radiation exposure a concern for Radiography Imaging Technology students at JKKN Allied Health Sciences in Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Modern radiology technology and strict safety protocols minimize radiation exposure. Radiology technologists are trained in radiation safety, use protective equipment, and follow ALARA (As Low As Reasonably Achievable) principles. With proper safety measures, this is a safe and rewarding healthcare career."
+        "text": "No. Strict safety protocols, protective equipment, and As Low As Reasonably Achievable radiation principles keep exposure minimal. Technologists receive thorough radiation safety training before clinical practice."
       }
     }
   ]

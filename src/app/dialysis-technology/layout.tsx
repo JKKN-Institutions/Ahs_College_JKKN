@@ -14,6 +14,7 @@ export const metadata = createPageMetadata({
 const courseSchema = {
   "@context": "https://schema.org",
   "@type": "Course",
+  "dateModified": "2026-03-19",
   "name": "B.Sc Dialysis Technology",
   "description": "Specialized program that prepares students to become skilled dialysis technologists, mastering hemodialysis procedures, peritoneal dialysis techniques, water treatment systems, and advanced kidney patient care management.",
   "url": "https://ahs.jkkn.ac.in/dialysis-technology",
@@ -57,9 +58,19 @@ const courseSchema = {
     "@type": "Offer",
     "category": "Tuition Fees",
     "priceCurrency": "INR",
+    "price": "Contact for fees",
     "url": "https://admission.jkkn.ac.in/",
     "availability": "https://schema.org/InStock",
     "validFrom": "2026-03-01"
+  },
+  "potentialAction": {
+    "@type": "ApplyAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://admission.jkkn.ac.in/",
+      "actionPlatform": "http://schema.org/DesktopWebPlatform"
+    },
+    "name": "Apply for B.Sc Dialysis Technology"
   }
 };
 
@@ -70,7 +81,7 @@ const speakableSchema = {
   "url": "https://ahs.jkkn.ac.in/dialysis-technology",
   "speakable": {
     "@type": "SpeakableSpecification",
-    "cssSelector": ["h1", "h2"]
+    "cssSelector": [".faq-answer", ".snippet-answer", ".voice-answer", "h1", "h2"]
   }
 };
 
@@ -87,61 +98,62 @@ const breadcrumbSchema = {
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
+  "dateModified": "2026-03-19",
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is B.Sc Dialysis Technology?",
+      "name": "What is Bachelor of Science in Dialysis Technology at JKKN College Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "B.Sc Dialysis Technology is a four-year degree that trains professionals in hemodialysis, peritoneal dialysis, and renal replacement therapy. It covers water treatment systems, vascular access management, patient care, and dialysis unit operations. Graduates operate dialysis equipment and provide critical care to patients with kidney failure."
+        "text": "Bachelor of Science in Dialysis Technology is a four-year degree training professionals in hemodialysis, peritoneal dialysis, and renal replacement therapy at JKKN College."
       }
     },
     {
       "@type": "Question",
-      "name": "What is the eligibility criteria?",
+      "name": "What are the eligibility requirements for Bachelor of Science Dialysis Technology in Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Candidates must have passed 10+2 with Physics, Chemistry, and Biology with minimum 50% aggregate marks (40% for SC/ST, 45% for OBC). Minimum age is 17 years as on December 31st of the admission year. A medical fitness certificate is also required."
+        "text": "Candidates need Plus Two with Physics, Chemistry, and Biology with minimum 50 percent aggregate marks. Scheduled Caste and Scheduled Tribe need 40 percent."
       }
     },
     {
       "@type": "Question",
-      "name": "What is the salary of a Dialysis Technologist?",
+      "name": "What is the salary of a Dialysis Technologist in India?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Entry-level dialysis technologists earn ₹2.5-4 lakhs per annum. With 3-5 years experience, salaries range from ₹5-10 lakhs. Senior positions like Dialysis Unit Supervisors or Coordinators in corporate hospitals offer ₹12-20 lakhs per annum. International opportunities offer even higher remuneration."
+        "text": "Entry-level dialysis technologists earn two to four lakhs per annum. With experience, salaries range from five to twenty lakhs depending on position and hospital."
       }
     },
     {
       "@type": "Question",
-      "name": "What are the career opportunities?",
+      "name": "What are the career opportunities after Bachelor of Science Dialysis Technology?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Dialysis Technology graduates work as Dialysis Technicians, Hemodialysis Specialists, Renal Care Coordinators, and Dialysis Unit Supervisors. Employment opportunities exist in hospitals, standalone dialysis centers, nephrology departments, medical equipment companies, research institutions, and healthcare consulting firms."
+        "text": "Graduates work as Dialysis Technicians, Hemodialysis Specialists, Renal Care Coordinators, and Dialysis Unit Supervisors in hospitals and dialysis centers."
       }
     },
     {
       "@type": "Question",
-      "name": "Can I pursue higher education after this course?",
+      "name": "Can I pursue higher education after Bachelor of Science Dialysis Technology?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, graduates can pursue M.Sc in Dialysis Technology, Renal Sciences, or Medical Technology after completing this degree. Advanced options include MBA in Healthcare Management and specialized certifications in CRRT (Continuous Renal Replacement Therapy) for enhanced career opportunities."
+        "text": "Yes, graduates can pursue Master of Science in Dialysis Technology, Renal Sciences, or Healthcare Management for advanced career opportunities."
       }
     },
     {
       "@type": "Question",
-      "name": "What practical training is included?",
+      "name": "What practical training is included in the Dialysis Technology program at JKKN?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The program includes 2000+ hours of clinical training in hemodialysis units, peritoneal dialysis centers, and nephrology departments. Students gain hands-on experience in machine operations, vascular access cannulation, patient monitoring, water treatment system management, and emergency response procedures."
+        "text": "The program includes over two thousand hours of clinical training in hemodialysis units, peritoneal dialysis centers, and nephrology departments with hands-on experience."
       }
     },
     {
       "@type": "Question",
-      "name": "Is there a demand for Dialysis Technologists in India?",
+      "name": "Is there demand for Dialysis Technologists in India?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, the demand is rapidly growing. India has over 2 lakh patients requiring regular dialysis, with the number increasing by 10-15% annually due to rising diabetes and hypertension cases. The government's initiatives to establish dialysis centers in every district further increase employment opportunities. Globally, the dialysis market is expected to reach $135 billion by 2028."
+        "text": "Yes, India has over two lakh patients needing regular dialysis, with demand growing annually due to rising diabetes and kidney disease cases."
       }
     },
     {
@@ -149,7 +161,7 @@ const faqSchema = {
       "name": "What is the difference between Hemodialysis and Peritoneal Dialysis?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Hemodialysis uses an external machine to filter blood through a dialyzer, typically performed at a dialysis center 3 times weekly for 4 hours. Peritoneal Dialysis uses the patient's peritoneal membrane as a natural filter, with dialysate fluid introduced into the abdomen. It can be done at home daily. Our program covers both modalities comprehensively."
+        "text": "Hemodialysis uses an external machine to filter blood at a center. Peritoneal dialysis uses the abdominal membrane as a natural filter and can be done at home."
       }
     }
   ]

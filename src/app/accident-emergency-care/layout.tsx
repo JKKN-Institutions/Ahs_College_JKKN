@@ -17,6 +17,7 @@ export const metadata = createPageMetadata({
 const courseSchema = {
   "@context": "https://schema.org",
   "@type": "Course",
+  "dateModified": "2026-03-19",
   "name": "B.Sc Accident and Emergency Care Technology",
   "description": "Comprehensive program that prepares students to become skilled emergency care technologists, mastering trauma management, emergency response, critical care, advanced life support, disaster management, and pre-hospital emergency care.",
   "url": "https://ahs.jkkn.ac.in/accident-emergency-care",
@@ -60,9 +61,19 @@ const courseSchema = {
     "@type": "Offer",
     "category": "Tuition Fees",
     "priceCurrency": "INR",
+    "price": "Contact for fees",
     "url": "https://admission.jkkn.ac.in/",
     "availability": "https://schema.org/InStock",
     "validFrom": "2026-03-01"
+  },
+  "potentialAction": {
+    "@type": "ApplyAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://admission.jkkn.ac.in/",
+      "actionPlatform": "http://schema.org/DesktopWebPlatform"
+    },
+    "name": "Apply for B.Sc Accident and Emergency Care Technology"
   }
 };
 
@@ -73,7 +84,7 @@ const speakableSchema = {
   "url": "https://ahs.jkkn.ac.in/accident-emergency-care",
   "speakable": {
     "@type": "SpeakableSpecification",
-    "cssSelector": ["h1", "h2"]
+    "cssSelector": [".faq-answer", ".snippet-answer", ".voice-answer", "h1", "h2"]
   }
 };
 
@@ -90,69 +101,70 @@ const breadcrumbSchema = {
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
+  "dateModified": "2026-03-19",
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is B.Sc Accident and Emergency Care Technology?",
+      "name": "What is Bachelor of Science Accident and Emergency Care Technology at JKKN College Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "B.Sc Accident and Emergency Care Technology is a four-year degree that trains professionals in emergency medical services, trauma care, and advanced life support. The program also covers disaster management and emergency response coordination. Graduates become skilled first responders and emergency care specialists capable of handling any medical crisis."
+        "text": "Bachelor of Science Accident and Emergency Care Technology at JKKN College Tamil Nadu is a four-year degree training professionals in Emergency Medical Services, trauma care, Advanced Cardiac Life Support, disaster management, and emergency response coordination."
       }
     },
     {
       "@type": "Question",
-      "name": "What is the eligibility criteria?",
+      "name": "What is the eligibility to join Bachelor of Science Accident and Emergency Care Technology at JKKN College Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Candidates must have passed 10+2 with Physics, Chemistry, and Biology with minimum 50% aggregate marks (40% for SC/ST, 45% for OBC). Minimum age is 17 years as on December 31st of the admission year. A medical fitness certificate is also required."
+        "text": "Candidates need 10+2 with Physics, Chemistry, and Biology, minimum 50% marks. Scheduled Caste and Scheduled Tribe students need 40%, Other Backward Classes students need 45%. Minimum age is 17 years. A medical fitness certificate is required."
       }
     },
     {
       "@type": "Question",
-      "name": "What is the salary of an Emergency Care Technologist?",
+      "name": "What salary can I earn after Bachelor of Science Accident and Emergency Care Technology at JKKN College Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Entry-level emergency care technologists earn ₹3-5 lakhs per annum. With 3-5 years experience, salaries range from ₹6-10 lakhs. Senior positions in corporate hospitals and emergency services offer ₹12-20 lakhs per annum. International opportunities offer significantly higher packages."
+        "text": "Entry-level emergency care technologists earn 3 to 5 lakhs per year. With three to five years experience, salaries reach 6 to 10 lakhs. Senior Emergency Room and disaster management positions pay up to 20 lakhs annually."
       }
     },
     {
       "@type": "Question",
-      "name": "What are the career opportunities?",
+      "name": "What career opportunities are available after Bachelor of Science Accident and Emergency Care Technology at JKKN College Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Accident and Emergency Care graduates work as Emergency Medical Technicians, Trauma Care Specialists, and Critical Care Technologists in hospitals and trauma centers. Additional roles include Disaster Management Coordinator, Emergency Room Technician, and Ambulance Service Manager."
+        "text": "Graduates work as Emergency Medical Technicians, Trauma Care Specialists, Critical Care Technologists, Disaster Management Coordinators, Emergency Room Technicians, and Ambulance Service Managers in hospitals and trauma centers."
       }
     },
     {
       "@type": "Question",
-      "name": "What certifications will I receive?",
+      "name": "What certifications are provided in Bachelor of Science Accident and Emergency Care Technology at JKKN College Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The program includes certifications in BLS, ACLS, ATLS, PALS, and PHTLS, making graduates highly qualified for emergency care positions. These industry-recognized credentials cover Basic Life Support, Advanced Cardiac, Trauma, Pediatric, and Pre-Hospital Trauma Life Support."
+        "text": "Students receive Basic Life Support and Advanced Cardiac Life Support certifications. The program also covers Advanced Trauma Life Support and Pediatric Advanced Life Support, making graduates highly qualified for emergency care positions."
       }
     },
     {
       "@type": "Question",
-      "name": "Can I pursue higher education after this course?",
+      "name": "Can I pursue Master of Science after Bachelor of Science Accident and Emergency Care Technology at JKKN College Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, graduates can pursue M.Sc in Emergency Medicine, Critical Care, or Disaster Management for advanced specialization. MBA in Healthcare Management and specialized certifications in trauma care or emergency medical services are also available."
+        "text": "Yes, graduates can pursue Master of Science in Emergency Medicine, Critical Care, or Disaster Management. MBA in Healthcare Management and specialized Emergency Medical Services certifications are also available for advancement."
       }
     },
     {
       "@type": "Question",
-      "name": "What practical training is included?",
+      "name": "What practical training is included in Bachelor of Science Accident and Emergency Care Technology at JKKN College Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The program includes 2000+ hours of clinical training in emergency departments, trauma centers, ICUs, ambulance services, and disaster management units. Students gain hands-on experience in patient assessment, triage, CPR, airway management, trauma care, and all major emergency medical procedures."
+        "text": "The program includes over 2000 hours of clinical training in emergency departments, trauma centers, ambulance services, and disaster management units with hands-on patient assessment, triage, and Advanced Cardiac Life Support experience."
       }
     },
     {
       "@type": "Question",
-      "name": "Is this a physically demanding career?",
+      "name": "Is Bachelor of Science Accident and Emergency Care Technology at JKKN College Tamil Nadu a physically demanding career?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, emergency care requires physical stamina, quick thinking, and emotional resilience. The program includes physical fitness training and prepares students to handle high-stress situations, long shifts, and physically demanding tasks. However, the rewarding nature of saving lives makes it a fulfilling career choice."
+        "text": "Yes, Accident and Emergency Care requires physical stamina, quick thinking, and emotional resilience. Training includes physical fitness preparation for high-stress situations, long shifts, and physically demanding emergency care tasks."
       }
     }
   ]

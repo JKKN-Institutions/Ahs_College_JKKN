@@ -22,6 +22,7 @@ export const metadata = createPageMetadata({
 const courseSchema = {
   "@context": "https://schema.org",
   "@type": "Course",
+  "dateModified": "2026-03-19",
   "name": "B.Sc Cardiac Technology",
   "description": "Specialized undergraduate program designed to train healthcare professionals in the diagnosis, monitoring, and treatment support for patients with cardiovascular diseases. The curriculum combines theoretical knowledge with extensive practical training, preparing graduates to work alongside cardiologists and cardiac surgeons.",
   "url": "https://ahs.jkkn.ac.in/cardiac-technology",
@@ -65,9 +66,19 @@ const courseSchema = {
     "@type": "Offer",
     "category": "Tuition Fees",
     "priceCurrency": "INR",
+    "price": "Contact for fees",
     "url": "https://admission.jkkn.ac.in/",
     "availability": "https://schema.org/InStock",
     "validFrom": "2026-03-01"
+  },
+  "potentialAction": {
+    "@type": "ApplyAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://admission.jkkn.ac.in/",
+      "actionPlatform": "http://schema.org/DesktopWebPlatform"
+    },
+    "name": "Apply for B.Sc Cardiac Technology"
   }
 };
 
@@ -78,7 +89,7 @@ const speakableSchema = {
   "url": "https://ahs.jkkn.ac.in/cardiac-technology",
   "speakable": {
     "@type": "SpeakableSpecification",
-    "cssSelector": ["h1", "h2"]
+    "cssSelector": [".faq-answer", ".snippet-answer", ".voice-answer", "h1", "h2"]
   }
 };
 
@@ -95,45 +106,46 @@ const breadcrumbSchema = {
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
+  "dateModified": "2026-03-19",
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is B.Sc Cardiac Technology?",
+      "name": "What is Bachelor of Science in Cardiac Technology at JKKN College Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "B.Sc Cardiac Technology is a four-year allied health science degree that trains professionals in cardiovascular diagnosis and treatment using advanced medical equipment. Graduates work as ECG Technicians, Echo Technologists, and Cath Lab Technicians in hospitals and cardiac care centers."
+        "text": "Bachelor of Science in Cardiac Technology is a four-year allied health science degree training professionals in cardiovascular diagnosis using electrocardiogram, echocardiography, and cardiac catheterization."
       }
     },
     {
       "@type": "Question",
-      "name": "What is the eligibility criteria?",
+      "name": "What are the eligibility requirements for Bachelor of Science Cardiac Technology in Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Eligibility requires 10+2 with Physics, Chemistry, and Biology or Maths with a minimum of 50% aggregate marks. SC/ST candidates require 40% aggregate, OBC candidates require 45% aggregate. Applicants must be at least 17 years of age."
+        "text": "Candidates need Plus Two with Physics, Chemistry, and Biology with minimum 50 percent aggregate marks. Scheduled Caste and Scheduled Tribe candidates need 40 percent."
       }
     },
     {
       "@type": "Question",
-      "name": "What is the scope of Cardiac Technology?",
+      "name": "What is the career scope of Cardiac Technology after graduation in India?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Cardiac Technology graduates are employed in hospitals, cath labs, cardiac rehabilitation centers, and medical device companies. The scope spans ECG services, echocardiography, interventional cardiology, and cardiac monitoring roles across government and private healthcare institutions."
+        "text": "Cardiac Technology graduates work in hospitals, catheterization labs, rehabilitation centers, and medical device companies in electrocardiogram, echocardiography, and interventional cardiology roles."
       }
     },
     {
       "@type": "Question",
-      "name": "What are the career opportunities?",
+      "name": "What are the career opportunities after Bachelor of Science Cardiac Technology?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Graduates can work as Cardiovascular Technologists, Echo Technicians, Cath Lab Technicians, and Application Specialists."
+        "text": "Graduates work as Cardiovascular Technologists, Echocardiogram Technicians, Catheterization Lab Technicians, Pacemaker Technicians, and Application Specialists in hospitals."
       }
     },
     {
       "@type": "Question",
-      "name": "Can I pursue higher education after this course?",
+      "name": "Can I pursue higher education after Bachelor of Science Cardiac Technology?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, you can pursue M.Sc in Cardiac Technology or other varied specializations in public health or hospital administration."
+        "text": "Yes, graduates can pursue Master of Science in Cardiac Technology, public health, or hospital administration specializations for advanced career opportunities."
       }
     }
   ]

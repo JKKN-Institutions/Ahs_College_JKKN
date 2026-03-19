@@ -24,7 +24,7 @@ const speakableSchema = {
   "url": "https://ahs.jkkn.ac.in/lab",
   "speakable": {
     "@type": "SpeakableSpecification",
-    "cssSelector": ["h1", "h2"]
+    "cssSelector": [".faq-answer", ".snippet-answer", ".voice-answer", "h1", "h2"]
   }
 };
 
@@ -49,6 +49,19 @@ const facilitySchema = {
   }
 };
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "dateModified": "2026-03-19",
+  "mainEntity": [
+    { "@type": "Question", "name": "What lab facilities are available at JKKN College of Allied Health Sciences?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN College of Allied Health Sciences has discipline-specific labs for medical technology, radiology, respiratory therapy, and more, all equipped with advanced medical equipment." } },
+    { "@type": "Question", "name": "Are JKKN labs equipped with modern medical equipment?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. JKKN labs are equipped with advanced, specialised medical equipment tailored to each allied health science programme, ensuring students gain hands-on clinical experience." } },
+    { "@type": "Question", "name": "How many hours of practical training do students get in JKKN labs?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN allied health science students receive extensive lab hours as per university curriculum guidelines, providing sufficient hands-on practice for clinical skill development." } },
+    { "@type": "Question", "name": "Do JKKN labs have simulation equipment for clinical training?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. JKKN labs incorporate simulated patient encounters and clinical procedure setups, allowing students to practise safely before working with real patients." } },
+    { "@type": "Question", "name": "Are lab sessions included in the allied health sciences curriculum at JKKN?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Lab sessions are a core part of the JKKN allied health sciences curriculum, ensuring every student completes required practical hours alongside theory classes." } }
+  ]
+};
+
 export default function LabLayout({
   children,
 }: {
@@ -59,6 +72,7 @@ export default function LabLayout({
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(facilitySchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       {children}
     </>
   );

@@ -15,6 +15,7 @@ export const metadata = createPageMetadata({
 const courseSchema = {
   "@context": "https://schema.org",
   "@type": "Course",
+  "dateModified": "2026-03-19",
   "name": "B.Sc Operation Theatre and Anaesthesia Technology",
   "description": "Comprehensive program that prepares students to become skilled OT and anaesthesia technologists with expertise in surgical assistance, anaesthesia support, patient monitoring, sterilization, and perioperative care management.",
   "url": "https://ahs.jkkn.ac.in/operation-theatre-anaesthesia",
@@ -58,9 +59,19 @@ const courseSchema = {
     "@type": "Offer",
     "category": "Tuition Fees",
     "priceCurrency": "INR",
+    "price": "Contact for fees",
     "url": "https://admission.jkkn.ac.in/",
     "availability": "https://schema.org/InStock",
     "validFrom": "2026-03-01"
+  },
+  "potentialAction": {
+    "@type": "ApplyAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://admission.jkkn.ac.in/",
+      "actionPlatform": "http://schema.org/DesktopWebPlatform"
+    },
+    "name": "Apply for B.Sc Operation Theatre and Anaesthesia Technology"
   }
 };
 
@@ -71,7 +82,7 @@ const speakableSchema = {
   "url": "https://ahs.jkkn.ac.in/operation-theatre-anaesthesia",
   "speakable": {
     "@type": "SpeakableSpecification",
-    "cssSelector": ["h1", "h2"]
+    "cssSelector": [".faq-answer", ".snippet-answer", ".voice-answer", "h1", "h2"]
   }
 };
 
@@ -88,69 +99,70 @@ const breadcrumbSchema = {
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
+  "dateModified": "2026-03-19",
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is B.Sc Operation Theatre & Anaesthesia Technology?",
+      "name": "What is Bachelor of Science Operation Theatre and Anaesthesia Technology at JKKN College Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "B.Sc Operation Theatre & Anaesthesia Technology is a four-year degree that trains professionals in surgical assistance and anaesthesia support. The program covers patient monitoring during surgery, sterilization techniques, and perioperative care management. Graduates become essential members of surgical teams in operation theatres."
+        "text": "It is a four-year undergraduate degree at JKKN College Tamil Nadu training students in surgical assistance, anaesthesia support, patient monitoring, sterilization, and perioperative care management."
       }
     },
     {
       "@type": "Question",
-      "name": "What is the eligibility criteria?",
+      "name": "What is the eligibility criteria for Bachelor of Science Operation Theatre and Anaesthesia Technology at JKKN College Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Candidates must have passed 10+2 with Physics, Chemistry, and Biology with minimum 50% aggregate marks (40% for SC/ST, 45% for OBC). Minimum age is 17 years as on December 31st of the admission year. A medical fitness certificate is also required."
+        "text": "Candidates need 10+2 with Physics, Chemistry, and Biology, minimum 50% marks (40% for Scheduled Caste and Scheduled Tribe, 45% for Other Backward Classes), and must be 17 years or older."
       }
     },
     {
       "@type": "Question",
-      "name": "What is the salary of an OT Technician?",
+      "name": "What is the salary of an Operation Theatre technician after studying at JKKN College Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Entry-level OT technicians earn ₹3-5 lakhs per annum. With 3-5 years experience, salaries range from ₹5-10 lakhs. Senior positions like OT Coordinators or Supervisors in corporate hospitals offer ₹12-20 lakhs per annum. International opportunities offer even higher remuneration."
+        "text": "Entry-level Operation Theatre technicians earn 3 to 5 lakhs per year. With experience, salaries reach 10 to 20 lakhs. International placements offer higher remuneration."
       }
     },
     {
       "@type": "Question",
-      "name": "What are the career opportunities?",
+      "name": "What are the career opportunities after Bachelor of Science Operation Theatre and Anaesthesia Technology at JKKN College Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "OT & Anaesthesia graduates work as OT Technicians, Anaesthesia Technicians, Surgical Assistants, and CSSD Technicians in multi-specialty hospitals and surgical centers. Additional roles include Endoscopy Technician, ICU Technician, Perfusionist Assistant, and Medical Device Specialist."
+        "text": "Graduates work as Operation Theatre Technicians, Anaesthesia Technicians, Surgical Assistants, Central Sterile Supply Department Technicians, Endoscopy Technicians, and Intensive Care Unit Technicians."
       }
     },
     {
       "@type": "Question",
-      "name": "What is the scope of OT Technology in India?",
+      "name": "What is the scope of Operation Theatre Technology in India for JKKN College Tamil Nadu graduates?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "OT and Anaesthesia technologists are in high demand across government hospitals, private healthcare chains, and international medical facilities. Increasing surgical procedures and growing healthcare infrastructure drive this demand. The healthcare sector is expected to grow at 22% CAGR, creating extensive opportunities."
+        "text": "Skilled Operation Theatre and anaesthesia technologists are in high demand across government hospitals, private healthcare chains, and international facilities due to rapid healthcare sector growth."
       }
     },
     {
       "@type": "Question",
-      "name": "Can I pursue higher education after this course?",
+      "name": "Can I pursue higher education after Bachelor of Science Operation Theatre and Anaesthesia Technology at JKKN College Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, graduates can pursue M.Sc in OT & Anaesthesia Technology, Critical Care, or a PG Diploma in Surgical Technology. MBA in Healthcare Management and specialized certifications in perfusion technology, endoscopy, or laparoscopy are also available."
+        "text": "Yes, graduates can pursue Master of Science in Operation Theatre and Anaesthesia Technology, Critical Care, Post Graduate Diploma in Surgical Technology, or an MBA in Healthcare Management."
       }
     },
     {
       "@type": "Question",
-      "name": "What practical training is included?",
+      "name": "What practical training is included in Bachelor of Science Operation Theatre and Anaesthesia Technology at JKKN College Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The program includes 2000+ hours of clinical training in operation theatres, anaesthesia departments, CSSD units, and ICUs. Students gain hands-on experience in surgical procedures, anaesthesia equipment handling, instrument sterilization, and patient monitoring systems."
+        "text": "The program provides 2000 plus hours of clinical training in operation theatres, anaesthesia departments, Central Sterile Supply Department units, and Intensive Care Units with hands-on surgical experience."
       }
     },
     {
       "@type": "Question",
-      "name": "What is the difference between OT Technician and Anaesthesia Technician?",
+      "name": "What is the difference between Operation Theatre Technician and Anaesthesia Technician at JKKN College Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "OT Technicians assist surgeons during procedures, manage surgical instruments, and maintain sterile environments. Anaesthesia Technicians specifically support anaesthesiologists, prepare and maintain anaesthesia equipment, monitor patients during anaesthesia, and manage airway equipment. Our program trains you in both specializations."
+        "text": "Operation Theatre Technicians assist surgeons and manage instruments. Anaesthesia Technicians support anaesthesiologists, prepare equipment, and monitor patients. JKKN's program trains graduates in both specializations."
       }
     }
   ]
