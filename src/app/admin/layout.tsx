@@ -36,8 +36,9 @@ export default async function AdminLayout({ children }: { children: React.ReactN
         currentCollegeId = await getAdminCollegeId();
       }
     }
-  } catch {
+  } catch (error) {
     // Cookie parse error — render layout without sidebar
+    console.error('[Admin layout] Auth check failed:', error);
   }
 
   return (

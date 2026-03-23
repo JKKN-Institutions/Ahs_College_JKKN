@@ -3,40 +3,18 @@ import { createServerClient } from '@supabase/ssr';
 import https from 'node:https';
 import http from 'node:http';
 import tls from 'node:tls';
-import { execSync } from 'node:child_process';
 
 // ---------------------------------------------------------------------------
-// Proxy detection — env vars first, then Windows Internet Settings registry.
-// Chrome/Edge on Windows use the system proxy automatically; Node.js does not.
+// Proxy detection — env vars only (set HTTPS_PROXY or HTTP_PROXY if needed).
 // ---------------------------------------------------------------------------
 function getProxy(): string | null {
-  const fromEnv =
+  return (
     process.env.HTTPS_PROXY ||
     process.env.https_proxy ||
     process.env.HTTP_PROXY ||
-    process.env.http_proxy;
-  if (fromEnv) return fromEnv;
-
-  if (process.platform !== 'win32') return null;
-
-  try {
-    const enabled = execSync(
-      'reg query "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings" /v ProxyEnable',
-      { encoding: 'utf-8', timeout: 1500 }
-    );
-    if (!enabled.includes('0x1')) return null;
-
-    const server = execSync(
-      'reg query "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings" /v ProxyServer',
-      { encoding: 'utf-8', timeout: 1500 }
-    );
-    const m = server.match(/ProxyServer\s+REG_SZ\s+(\S+)/);
-    if (!m) return null;
-    const p = m[1].trim();
-    return p.includes('://') ? p : `http://${p}`;
-  } catch {
-    return null;
-  }
+    process.env.http_proxy ||
+    null
+  );
 }
 
 const PROXY = getProxy(); // resolved once at module load

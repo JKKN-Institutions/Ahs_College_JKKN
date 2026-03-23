@@ -1,5 +1,6 @@
 import { createClient } from '@/lib/supabase/server';
 import { notFound } from 'next/navigation';
+import { cache } from 'react';
 import type { Metadata } from 'next';
 import { Navbar as Header } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
@@ -7,22 +8,27 @@ import CampusBlogContent from './CampusBlogContent';
 
 export const revalidate = 300;
 
+// Cached fetcher — deduplicates DB call between generateMetadata and the page component
+const getPost = cache(async (slug: string) => {
+  const supabase = await createClient();
+  const collegeId = process.env.NEXT_PUBLIC_COLLEGE_ID!;
+  const { data } = await supabase
+    .from('blogs')
+    .select('*')
+    .eq('slug', slug)
+    .eq('college_id', collegeId)
+    .eq('is_published', true)
+    .single();
+  return data;
+});
+
 export async function generateMetadata({
   params,
 }: {
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const supabase = await createClient();
-  const collegeId = process.env.NEXT_PUBLIC_COLLEGE_ID!;
-
-  const { data: post } = await supabase
-    .from('blogs')
-    .select('title, excerpt, cover_image_url, published_at, created_at')
-    .eq('slug', slug)
-    .eq('college_id', collegeId)
-    .eq('is_published', true)
-    .single();
+  const post = await getPost(slug);
 
   if (!post) {
     return {
@@ -107,18 +113,12 @@ export default async function CampusBlogPost({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const supabase = await createClient();
-
-  const collegeId = process.env.NEXT_PUBLIC_COLLEGE_ID!;
-  const { data: post } = await supabase
-    .from('blogs')
-    .select('*')
-    .eq('slug', slug)
-    .eq('college_id', collegeId)
-    .eq('is_published', true)
-    .single();
+  const post = await getPost(slug);
 
   if (!post) notFound();
+
+  const supabase = await createClient();
+  const collegeId = process.env.NEXT_PUBLIC_COLLEGE_ID!;
 
   const [{ data: popularPosts }, { data: relatedPosts }, { data: initialComments }] = await Promise.all([
     // Popular: other recent published blogs

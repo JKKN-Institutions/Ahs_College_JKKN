@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { Clock, Calendar, Tag, MessageSquare, Send, Check, Loader2, ChevronUp, ChevronDown } from 'lucide-react';
 import { createClient } from '@/lib/supabase/client';
+import { formatDate } from '@/lib/utils';
 
 // ── Types ──────────────────────────────────────────────────────────────────
 interface Post {
@@ -54,13 +55,6 @@ interface Props {
 }
 
 // ── Helpers ────────────────────────────────────────────────────────────────
-function formatDate(d: string) {
-  return new Date(d).toLocaleDateString('en-IN', {
-    day: 'numeric',
-    month: 'long',
-    year: 'numeric',
-  });
-}
 
 function parseTags(tags: string | null | undefined): string[] {
   if (!tags) return [];

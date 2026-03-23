@@ -97,6 +97,7 @@ export default function Hostel() {
                                                                 alt={section.title}
                                                                 fill
                                                                 className="object-cover"
+                                                                sizes="(max-width: 1024px) 100vw, 33vw"
                                                             />
                                                         </div>
                                                     </div>

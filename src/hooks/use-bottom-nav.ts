@@ -78,7 +78,7 @@ export const useBottomNav = create<BottomNavStateExtended>()(
           activeNavId: null,
           isExpanded: false,
           isMoreMenuOpen: false,
-          isMinimized: true,
+          isMinimized: false,
           activePage: null,
           selectedSubItem: null
         })

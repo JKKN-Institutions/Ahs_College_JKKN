@@ -61,6 +61,7 @@ export default function Library() {
                                 fill
                                 className="object-cover"
                                 unoptimized
+                                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                             />
                         </motion.div>
                         <motion.div
@@ -74,6 +75,7 @@ export default function Library() {
                                 alt="Students studying with books in the library"
                                 fill
                                 className="object-cover"
+                                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                             />
                         </motion.div>
                         <motion.div
@@ -88,6 +90,7 @@ export default function Library() {
                                 fill
                                 className="object-cover"
                                 unoptimized
+                                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                             />
                         </motion.div>
                     </div>

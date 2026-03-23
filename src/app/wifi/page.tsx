@@ -33,6 +33,7 @@ export default function WiFiPage() {
                                 fill
                                 className="object-cover"
                                 priority
+                                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                             />
                         </div>
                         <div className="relative w-full aspect-[4/3] rounded-lg overflow-hidden shadow-lg">
@@ -42,6 +43,7 @@ export default function WiFiPage() {
                                 fill
                                 className="object-cover"
                                 priority
+                                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                             />
                         </div>
                         <div className="relative w-full aspect-[4/3] rounded-lg overflow-hidden shadow-lg">
@@ -51,6 +53,7 @@ export default function WiFiPage() {
                                 fill
                                 className="object-cover"
                                 priority
+                                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                             />
                         </div>
                     </div>

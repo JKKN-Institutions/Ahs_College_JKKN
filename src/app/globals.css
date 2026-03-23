@@ -156,7 +156,7 @@ body {
 
 .masonry-card:hover {
   transform: translateZ(80px) scale(1.05) rotateZ(0deg) !important;
-  z-index: 999 !important;
+  z-index: 50 !important;
 }
 
 /* Swiper Custom Styles for Gallery */

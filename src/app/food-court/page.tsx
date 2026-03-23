@@ -29,6 +29,7 @@ export default function FoodCourt() {
                             fill
                             className="object-cover opacity-20"
                             priority
+                            sizes="100vw"
                         />
                     </div>
                     <div className="max-w-7xl mx-auto px-4 relative z-10 text-center">

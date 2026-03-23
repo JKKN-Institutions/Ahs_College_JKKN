@@ -48,15 +48,12 @@ export function Hero() {
                         </p>
 
                         <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
-                            <button
-                                onClick={() => {
-                                    const programsSection = document.getElementById('programs');
-                                    programsSection?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                                }}
+                            <a
+                                href="#programs"
                                 className="w-full sm:w-auto px-5 sm:px-6 py-2.5 bg-white text-[#0b6d41] rounded-full font-semibold transition-all hover:bg-white/90 hover:shadow-2xl hover:scale-105 flex items-center justify-center gap-2 text-sm"
                             >
                                 Explore Programs <ArrowRight className="w-4 h-4" />
-                            </button>
+                            </a>
                             <Link
                                 href={siteConfig.admissionFormUrl}
                                 target="_blank"
@@ -88,7 +85,7 @@ export function Hero() {
                         transition={{ duration: 0.4, ease: "easeOut" }}
                         className="relative mt-6 lg:mt-0"
                     >
-                        <div className="relative z-10 rounded-2xl sm:rounded-3xl overflow-hidden shadow-[0_20px_40px_-12px_rgba(11,109,65,0.2)] border-4 sm:border-6 border-white/50 backdrop-blur-md max-w-sm lg:max-w-md mx-auto lg:mx-0">
+                        <div className="relative z-10 rounded-2xl sm:rounded-3xl overflow-hidden shadow-[0_20px_40px_-12px_rgba(11,109,65,0.2)] border-4 sm:border-[6px] border-white/50 backdrop-blur-md max-w-sm lg:max-w-md mx-auto lg:mx-0">
                             <div className="aspect-[5/4] lg:aspect-[4/3] bg-gray-100 relative">
                                 <Image
                                     src="/allied-health-science-hero.png"

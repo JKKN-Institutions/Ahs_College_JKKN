@@ -33,6 +33,7 @@ export default function AmbulanceService() {
                                 fill
                                 className="object-cover"
                                 priority
+                                sizes="100vw"
                             />
                         </div>
                     </div>

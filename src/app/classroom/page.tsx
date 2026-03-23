@@ -37,6 +37,7 @@ export default function ClassRoom() {
                                     alt="Digital Classroom with Projector"
                                     fill
                                     className="object-cover"
+                                    sizes="(max-width: 768px) 100vw, 50vw"
                                 />
                             </div>
                             <div className="relative w-full h-64 sm:h-80 md:h-96 rounded-lg overflow-hidden shadow-lg">
@@ -45,6 +46,7 @@ export default function ClassRoom() {
                                     alt="Interactive Classroom Session"
                                     fill
                                     className="object-cover"
+                                    sizes="(max-width: 768px) 100vw, 50vw"
                                 />
                             </div>
                         </div>

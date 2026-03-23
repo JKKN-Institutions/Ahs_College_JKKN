@@ -7,18 +7,16 @@ export default async function AdminDashboard() {
   const supabase = await createClient();
 
   const collegeId = await getAdminCollegeId();
+  // 8 queries: events combined, blogs combined with recent, notices combined with recent
   const results = await Promise.allSettled([
-    supabase.from('events').select('*', { count: 'exact', head: true }).eq('college_id', collegeId),
-    supabase.from('events').select('*', { count: 'exact', head: true }).eq('college_id', collegeId).eq('is_published', true),
-    supabase.from('blogs').select('*', { count: 'exact', head: true }).eq('college_id', collegeId),
-    supabase.from('blogs').select('*', { count: 'exact', head: true }).eq('college_id', collegeId).eq('is_published', true),
-    supabase.from('gallery_albums').select('*', { count: 'exact', head: true }).eq('college_id', collegeId),
-    supabase.from('gallery_images').select('*', { count: 'exact', head: true }).eq('college_id', collegeId),
-    supabase.from('notices').select('*', { count: 'exact', head: true }).eq('college_id', collegeId),
-    supabase.from('notices').select('*', { count: 'exact', head: true }).eq('college_id', collegeId).eq('is_active', true),
-    supabase.from('faculty').select('*', { count: 'exact', head: true }).eq('college_id', collegeId).eq('is_active', true),
-    supabase.from('blogs').select('id, title, category, created_at, is_published').eq('college_id', collegeId).order('created_at', { ascending: false }).limit(3),
-    supabase.from('notices').select('id, title, notice_type, created_at, is_active').eq('college_id', collegeId).order('created_at', { ascending: false }).limit(3),
+    /* 0 */ supabase.from('events').select('id, is_published').eq('college_id', collegeId),
+    /* 1 */ supabase.from('blogs').select('id, title, category, created_at, is_published', { count: 'exact' }).eq('college_id', collegeId).order('created_at', { ascending: false }).limit(3),
+    /* 2 */ supabase.from('blogs').select('*', { count: 'exact', head: true }).eq('college_id', collegeId).eq('is_published', true),
+    /* 3 */ supabase.from('gallery_albums').select('*', { count: 'exact', head: true }).eq('college_id', collegeId),
+    /* 4 */ supabase.from('gallery_images').select('*', { count: 'exact', head: true }).eq('college_id', collegeId),
+    /* 5 */ supabase.from('notices').select('id, title, notice_type, created_at, is_active', { count: 'exact' }).eq('college_id', collegeId).order('created_at', { ascending: false }).limit(3),
+    /* 6 */ supabase.from('notices').select('*', { count: 'exact', head: true }).eq('college_id', collegeId).eq('is_active', true),
+    /* 7 */ supabase.from('faculty').select('*', { count: 'exact', head: true }).eq('college_id', collegeId).eq('is_active', true),
   ]);
 
   function getCount(r: typeof results[number]) {
@@ -28,9 +26,21 @@ export default async function AdminDashboard() {
     return r.status === 'fulfilled' ? ((r.value as { data: T[] }).data ?? []) : [];
   }
 
-  const [eventsCount, publishedEvents, blogsCount, publishedBlogs, albumsCount, photosCount, noticesCount, activeNotices, facultyCount] = results.slice(0, 9).map(getCount);
-  const recentBlogs = getData<{ id: string; title: string; category: string; created_at: string; is_published: boolean }>(results[9]);
-  const recentNotices = getData<{ id: string; title: string; notice_type: string; created_at: string; is_active: boolean }>(results[10]);
+  // Events: compute from fetched rows
+  const eventsRows = getData<{ id: string; is_published: boolean }>(results[0]);
+  const eventsCount = results[0].status === 'fulfilled' ? (eventsRows.length) : 0;
+  const publishedEvents = eventsRows.filter((e) => e.is_published).length;
+
+  const blogsCount = getCount(results[1]);
+  const publishedBlogs = getCount(results[2]);
+  const albumsCount = getCount(results[3]);
+  const photosCount = getCount(results[4]);
+  const noticesCount = getCount(results[5]);
+  const activeNotices = getCount(results[6]);
+  const facultyCount = getCount(results[7]);
+
+  const recentBlogs = getData<{ id: string; title: string; category: string; created_at: string; is_published: boolean }>(results[1]);
+  const recentNotices = getData<{ id: string; title: string; notice_type: string; created_at: string; is_active: boolean }>(results[5]);
 
   const stats = [
     {

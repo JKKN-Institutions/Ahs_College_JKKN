@@ -37,7 +37,7 @@ const navLinks: NavLink[] = [
             { name: 'B.SC - Medical Record Science', href: '/medical-record-science' },
             { name: 'B.SC - Operation Theatre & Anaesthesia Technology', href: '/operation-theatre-anaesthesia' },
             { name: 'B.SC - Physician Assistant', href: '/physician-assistant' },
-            { name: 'B.SC - Radiogrphy & Imaging Technology', href: '/radiology-imaging-technology' },
+            { name: 'B.SC - Radiography & Imaging Technology', href: '/radiology-imaging-technology' },
             { name: 'B.SC - Respiratory Therapy', href: '/respiratory-therapy' }
         ]
     },
@@ -121,6 +121,8 @@ export function Navbar() {
                             {link.submenu ? (
                                 <button
                                     className="flex items-center gap-1 text-sm font-medium transition-colors text-gray-700 hover:text-primary"
+                                    aria-haspopup="true"
+                                    aria-expanded={hoveredDropdown === link.name}
                                 >
                                     {link.name}
                                     <ChevronDown className="w-5 h-5" />

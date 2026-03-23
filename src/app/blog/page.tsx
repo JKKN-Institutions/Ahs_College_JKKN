@@ -2,6 +2,8 @@ import { Navbar as Header } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { Calendar, Clock } from 'lucide-react';
 import { createClient } from '@/lib/supabase/server';
+import Image from 'next/image';
+import { formatDate } from '@/lib/utils';
 
 export const revalidate = 60;
 
@@ -9,7 +11,7 @@ export default async function BlogPage() {
   // Fetch admin-created posts from Supabase
   const supabase = await createClient();
   const collegeId = process.env.NEXT_PUBLIC_COLLEGE_ID!;
-  const { data: campusPosts } = await supabase
+  const { data: campusPosts, error: postsError } = await supabase
     .from('blogs')
     .select('id, title, slug, excerpt, author_name, category, cover_image_url, published_at, created_at, read_time')
     .eq('college_id', collegeId)
@@ -17,15 +19,9 @@ export default async function BlogPage() {
     .order('created_at', { ascending: false })
     .limit(9);
 
-  const hasCampusPosts = campusPosts && campusPosts.length > 0;
+  if (postsError) console.error('[Blog] Failed to fetch posts:', postsError);
 
-  function formatDate(d: string) {
-    return new Date(d).toLocaleDateString('en-IN', {
-      day: 'numeric',
-      month: 'long',
-      year: 'numeric',
-    });
-  }
+  const hasCampusPosts = campusPosts && campusPosts.length > 0;
 
   return (
     <div className="min-h-screen bg-[#FBFBEE]">
@@ -69,11 +65,12 @@ export default async function BlogPage() {
                     {/* Cover image / placeholder */}
                     <div className="relative" style={{ height: '13rem' }}>
                       {post.cover_image_url ? (
-                        // eslint-disable-next-line @next/next/no-img-element
-                        <img
+                        <Image
                           src={post.cover_image_url}
                           alt={post.title}
-                          className="w-full h-full object-cover"
+                          fill
+                          className="object-cover"
+                          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                         />
                       ) : (
                         <div className="w-full h-full bg-[#e8f0ec] flex items-center justify-center">

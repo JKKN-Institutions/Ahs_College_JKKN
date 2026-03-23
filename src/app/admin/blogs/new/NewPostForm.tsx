@@ -102,6 +102,9 @@ function Toggle({ checked, onChange, label, icon }: { checked: boolean; onChange
       </span>
       <button
         type="button"
+        role="switch"
+        aria-checked={checked}
+        aria-label={label}
         onClick={() => onChange(!checked)}
         className={`relative w-10 h-5 rounded-full transition-colors flex-shrink-0 ${checked ? 'bg-[#006837]' : 'bg-gray-200'}`}
       >

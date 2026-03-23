@@ -1,9 +1,8 @@
-'use client';
-
-import { useEffect, useState } from 'react';
-import { createClient } from '@/lib/supabase/client';
+import { createClient } from '@/lib/supabase/server';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Calendar, MapPin } from 'lucide-react';
+import { formatDate } from '@/lib/utils';
 
 interface Event {
   id: string;
@@ -15,33 +14,18 @@ interface Event {
   image_url: string | null;
 }
 
-function formatDate(dateStr: string) {
-  return new Date(dateStr).toLocaleDateString('en-IN', {
-    day: 'numeric',
-    month: 'long',
-    year: 'numeric',
-  });
-}
+export async function HomeEvents() {
+  const supabase = await createClient();
+  const { data: events, error } = await supabase
+    .from('events')
+    .select('id, title, slug, description, event_date, venue, image_url')
+    .eq('college_id', process.env.NEXT_PUBLIC_COLLEGE_ID!)
+    .eq('is_published', true)
+    .order('event_date', { ascending: false })
+    .limit(6);
 
-export function HomeEvents() {
-  const [events, setEvents] = useState<Event[]>([]);
-  const [loaded, setLoaded] = useState(false);
-
-  useEffect(() => {
-    const supabase = createClient();
-    supabase
-      .from('events')
-      .select('id, title, slug, description, event_date, venue, image_url')
-      .eq('college_id', process.env.NEXT_PUBLIC_COLLEGE_ID!)
-      .eq('is_published', true)
-      .order('event_date', { ascending: false })
-      .then(({ data }) => {
-        setEvents(data ?? []);
-        setLoaded(true);
-      });
-  }, []);
-
-  if (!loaded || events.length === 0) return null;
+  if (error) console.error('[HomeEvents] Failed to fetch events:', error);
+  if (!events || events.length === 0) return null;
 
   return (
     <section className="py-16 bg-[#FBFBEE]">
@@ -63,10 +47,12 @@ export function HomeEvents() {
               {/* Image */}
               <div className="relative h-48 bg-[#e8f0ec] flex items-center justify-center flex-shrink-0">
                 {event.image_url ? (
-                  <img
+                  <Image
                     src={event.image_url}
                     alt={event.title}
-                    className="w-full h-full object-cover"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   />
                 ) : (
                   <Calendar className="w-12 h-12 text-[#c5d9cc]" />

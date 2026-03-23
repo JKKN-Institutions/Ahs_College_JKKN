@@ -5,11 +5,11 @@ export function GET() {
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <sitemap>
     <loc>https://ahs.jkkn.ac.in/sitemap-pages.xml</loc>
-    <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
+    <lastmod>2026-03-20</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://ahs.jkkn.ac.in/sitemap-blog.xml</loc>
-    <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
+    <lastmod>2026-03-20</lastmod>
   </sitemap>
 </sitemapindex>`;
 

@@ -65,7 +65,7 @@ export const siteConfig = {
     process.env.NEXT_PUBLIC_SITE_DOMAIN ?? 'ahs.jkkn.ac.in',
 
   /** Logo path (relative to /public) */
-  logoPath: process.env.NEXT_PUBLIC_LOGO_PATH ?? '/images/logo.png',
+  logoPath: process.env.NEXT_PUBLIC_LOGO_PATH ?? '/ahs-logo.svg',
 } as const;
 
 export type SiteConfig = typeof siteConfig;

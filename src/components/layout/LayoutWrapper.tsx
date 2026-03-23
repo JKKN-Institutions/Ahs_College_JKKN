@@ -2,12 +2,9 @@
 
 import { BottomNavbar } from "@/components/BottomNav";
 import { MobileHeader } from "@/components/layout/MobileHeader";
-import { useIsMobile } from "@/hooks/use-mobile";
-import { cn } from "@/lib/utils";
 import { usePathname } from "next/navigation";
 
 export function LayoutWrapper({ children }: { children: React.ReactNode }) {
-  const isMobile = useIsMobile();
   const pathname = usePathname();
   const isAdmin = pathname?.startsWith('/admin');
 
@@ -20,12 +17,9 @@ export function LayoutWrapper({ children }: { children: React.ReactNode }) {
       {/* Mobile-only header with logo */}
       <MobileHeader />
 
-      <main className={cn(
-        'min-h-screen bg-background',
-        isMobile ? 'pt-14 pb-20' : 'pt-20'  // Reduced mobile top padding from pt-16 to pt-14 (56px)
-      )}>
+      <div className="min-h-screen bg-background pt-14 pb-20 md:pt-20 md:pb-0">
         {children}
-      </main>
+      </div>
 
       {/* Mobile bottom navigation */}
       <BottomNavbar />

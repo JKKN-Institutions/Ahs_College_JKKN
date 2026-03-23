@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import { Navbar as Header } from "@/components/layout/Navbar";
+import { Footer } from "@/components/layout/Footer";
 import { createClient } from "@/lib/supabase/server";
 import { CalendarDays, Clock, MapPin } from "lucide-react";
 
