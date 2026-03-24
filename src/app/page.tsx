@@ -4,6 +4,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Hero } from "@/components/sections/Hero";
 import { AboutSection } from "@/components/sections/AboutSection";
 import { Programs } from "@/components/sections/Programs";
+import { ScrollToSection } from "@/components/ScrollToSection";
 
 // Lazy-load below-fold sections
 const WhyChoose = dynamic(() => import("@/components/sections/WhyChoose").then(m => ({ default: m.WhyChoose })), {
@@ -234,6 +235,7 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }}
       />
+      <ScrollToSection />
       <Navbar />
       <main>
         <Hero />
