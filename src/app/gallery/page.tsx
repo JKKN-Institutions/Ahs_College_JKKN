@@ -2,6 +2,7 @@ import { createClient } from '@/lib/supabase/server';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import AlbumCarousel from './AlbumCarousel';
+import { generateBreadcrumbSchema } from '@/lib/breadcrumb-schema';
 
 export const revalidate = 60;
 
@@ -86,8 +87,14 @@ export default async function GalleryPage() {
 
   const displayAlbums = hasAdminAlbums ? adminAlbums : hardcodedAlbums;
 
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", url: "https://ahs.jkkn.ac.in/" },
+    { name: "Gallery", url: "https://ahs.jkkn.ac.in/gallery" }
+  ]);
+
   return (
     <div className="min-h-screen flex flex-col bg-[#FBFBEE]">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <Navbar />
 
       <main className="flex-grow pt-4 md:pt-20 lg:pt-24 pb-12">

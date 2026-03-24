@@ -119,7 +119,7 @@ export function Navbar() {
                 <Link href="/" className="flex items-center gap-3">
                     <Image
                         src="/ahs-logo.svg"
-                        alt="JKKN Allied Health Sciences"
+                        alt="JKKN College of Allied Health Sciences Logo"
                         width={180}
                         height={60}
                         className="h-14 w-auto"

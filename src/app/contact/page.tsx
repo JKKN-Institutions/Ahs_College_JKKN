@@ -7,10 +7,17 @@ import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import Image from 'next/image';
 import { Breadcrumb } from '@/components/Breadcrumb';
+import { generateBreadcrumbSchema } from '@/lib/breadcrumb-schema';
 
 export default function ContactPage() {
+    const breadcrumbSchema = generateBreadcrumbSchema([
+        { name: "Home", url: "https://ahs.jkkn.ac.in/" },
+        { name: "Contact Us", url: "https://ahs.jkkn.ac.in/contact" }
+    ]);
+
     return (
         <div className="min-h-screen">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <Navbar />
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20">

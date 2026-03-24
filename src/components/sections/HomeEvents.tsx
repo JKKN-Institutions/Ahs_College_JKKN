@@ -27,11 +27,46 @@ export async function HomeEvents() {
   if (error) console.error('[HomeEvents] Failed to fetch events:', error);
   if (!events || events.length === 0) return null;
 
+  const eventSchemas = events.map(event => ({
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": event.title,
+    ...(event.event_date && { "startDate": event.event_date }),
+    ...(event.description && { "description": event.description }),
+    ...(event.image_url && { "image": event.image_url }),
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": event.venue || "JKKN Campus",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "NH-544, Natarajapuram",
+        "addressLocality": "Komarapalayam",
+        "addressRegion": "IN-TN",
+        "postalCode": "638183",
+        "addressCountry": "IN"
+      }
+    },
+    "organizer": {
+      "@type": "CollegeOrUniversity",
+      "@id": "https://ahs.jkkn.ac.in/#organization",
+      "name": "JKKN College of Allied Health Sciences"
+    }
+  }));
+
   return (
-    <section className="py-16 bg-[#FBFBEE]">
+    <>
+      {eventSchemas.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(eventSchemas) }}
+        />
+      )}
+      <section className="py-16 bg-[#FBFBEE]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-10">
-          <h2 className="text-3xl sm:text-4xl font-bold text-[#002309]">Events</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#002309]">Latest Events at JKKN Allied Health Sciences</h2>
           <p className="text-gray-500 text-sm mt-2">
             Latest happenings at JKKN Allied Health Sciences
           </p>
@@ -89,5 +124,6 @@ export async function HomeEvents() {
         </div>
       </div>
     </section>
+    </>
   );
 }

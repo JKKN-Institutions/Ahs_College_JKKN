@@ -8,10 +8,18 @@ import { Footer } from '@/components/layout/Footer';
 import { motion } from 'framer-motion';
 import { ArrowLeft, BookOpen, Users, Lightbulb, Globe, Sparkles, Award, Layers, Database } from 'lucide-react';
 import { Breadcrumb } from '@/components/Breadcrumb';
+import { generateBreadcrumbSchema } from '@/lib/breadcrumb-schema';
 
 export default function Library() {
+    const breadcrumbSchema = generateBreadcrumbSchema([
+        { name: "Home", url: "https://ahs.jkkn.ac.in/" },
+        { name: "Facilities", url: "https://ahs.jkkn.ac.in/#facilities" },
+        { name: "Library", url: "https://ahs.jkkn.ac.in/library" }
+    ]);
+
     return (
         <div className="min-h-screen flex flex-col bg-[#fbfbee]">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <Navbar />
 
             <main className="flex-grow pt-4 md:pt-20 lg:pt-24 pb-20">

@@ -7,6 +7,7 @@ import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { motion } from 'framer-motion';
 import { User, ArrowLeft, Quote, Award } from 'lucide-react';
+import { generateBreadcrumbSchema } from '@/lib/breadcrumb-schema';
 
 const managementTeam = [
     {
@@ -24,8 +25,15 @@ const managementTeam = [
 ];
 
 export default function OurManagement() {
+    const breadcrumbSchema = generateBreadcrumbSchema([
+        { name: "Home", url: "https://ahs.jkkn.ac.in/" },
+        { name: "About", url: "https://ahs.jkkn.ac.in/#about" },
+        { name: "Our Management", url: "https://ahs.jkkn.ac.in/our-management" }
+    ]);
+
     return (
         <div className="min-h-screen flex flex-col bg-[#fbfbee]">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <Navbar />
 
             <main className="flex-grow pt-4 md:pt-20 lg:pt-24 pb-20">

@@ -14,10 +14,54 @@ import {
     Shield, Heart, Monitor, Filter
 } from 'lucide-react';
 import { Breadcrumb } from '@/components/Breadcrumb';
+import { generateBreadcrumbSchema } from '@/lib/breadcrumb-schema';
+
+const courseSchema = {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "B.Sc Dialysis Technology",
+    "description": "Focused program on renal replacement therapy including hemodialysis, peritoneal dialysis, and continuous renal replacement therapy with clinical training at nephrology centers.",
+    "provider": {
+        "@type": "CollegeOrUniversity",
+        "@id": "https://ahs.jkkn.ac.in/#organization",
+        "name": "JKKN College of Allied Health Sciences"
+    },
+    "url": "https://ahs.jkkn.ac.in/dialysis-technology",
+    "timeRequired": "P4Y",
+    "educationalCredentialAwarded": "B.Sc Dialysis Technology",
+    "occupationalCredentialAwarded": "Dialysis Technologist",
+    "hasCourseInstance": {
+        "@type": "CourseInstance",
+        "courseMode": "In-Person",
+        "startDate": "2026-08-01"
+    },
+    "offers": {
+        "@type": "Offer",
+        "category": "Tuition",
+        "price": "75000",
+        "priceCurrency": "INR",
+        "priceValidUntil": "2027-03-31",
+        "availability": "https://schema.org/InStock"
+    }
+};
+
+const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", url: "https://ahs.jkkn.ac.in/" },
+    { name: "Departments", url: "https://ahs.jkkn.ac.in/#programs" },
+    { name: "Dialysis Technology", url: "https://ahs.jkkn.ac.in/dialysis-technology" }
+]);
 
 export default function DialysisTechnology() {
     return (
         <div className="min-h-screen flex flex-col bg-[#fbfbee]">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+            />
             <Navbar />
 
             <main className="flex-grow pt-20">

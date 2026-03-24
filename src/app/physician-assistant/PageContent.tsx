@@ -14,10 +14,54 @@ import {
     Shield, Syringe, ClipboardList, UserCog, Microscope, HeartPulse
 } from 'lucide-react';
 import { Breadcrumb } from '@/components/Breadcrumb';
+import { generateBreadcrumbSchema } from '@/lib/breadcrumb-schema';
+
+const courseSchema = {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "B.Sc Physician Assistant",
+    "description": "Comprehensive medical training program preparing students to assist physicians in patient care including history taking, physical examination, diagnostic procedures, and treatment planning.",
+    "provider": {
+        "@type": "CollegeOrUniversity",
+        "@id": "https://ahs.jkkn.ac.in/#organization",
+        "name": "JKKN College of Allied Health Sciences"
+    },
+    "url": "https://ahs.jkkn.ac.in/physician-assistant",
+    "timeRequired": "P4Y",
+    "educationalCredentialAwarded": "B.Sc Physician Assistant",
+    "occupationalCredentialAwarded": "Physician Assistant",
+    "hasCourseInstance": {
+        "@type": "CourseInstance",
+        "courseMode": "In-Person",
+        "startDate": "2026-08-01"
+    },
+    "offers": {
+        "@type": "Offer",
+        "category": "Tuition",
+        "price": "75000",
+        "priceCurrency": "INR",
+        "priceValidUntil": "2027-03-31",
+        "availability": "https://schema.org/InStock"
+    }
+};
+
+const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", url: "https://ahs.jkkn.ac.in/" },
+    { name: "Departments", url: "https://ahs.jkkn.ac.in/#programs" },
+    { name: "Physician Assistant", url: "https://ahs.jkkn.ac.in/physician-assistant" }
+]);
 
 export default function PhysicianAssistant() {
     return (
         <div className="min-h-screen flex flex-col bg-[#fbfbee]">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+            />
             <Navbar />
 
             <main className="flex-grow pt-20">

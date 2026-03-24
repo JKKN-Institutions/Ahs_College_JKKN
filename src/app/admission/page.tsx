@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { Breadcrumb } from '@/components/Breadcrumb';
+import { generateBreadcrumbSchema } from '@/lib/breadcrumb-schema';
 import { motion, AnimatePresence } from 'framer-motion';
 import { siteConfig } from '@/lib/site-config';
 import {
@@ -17,8 +18,14 @@ import {
 } from 'lucide-react';
 
 export default function AdmissionPage() {
+    const breadcrumbSchema = generateBreadcrumbSchema([
+        { name: "Home", url: "https://ahs.jkkn.ac.in/" },
+        { name: "Admission", url: "https://ahs.jkkn.ac.in/admission" }
+    ]);
+
     return (
         <div className="min-h-screen flex flex-col bg-[#fbfbee]">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <Navbar />
 
             <main className="flex-grow pt-16">

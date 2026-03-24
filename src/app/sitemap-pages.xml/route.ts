@@ -16,6 +16,9 @@ const pages = [
   { loc: 'https://ahs.jkkn.ac.in/critical-care-technology', changefreq: 'monthly', priority: '0.9', lastmod: '2026-03-18' },
   { loc: 'https://ahs.jkkn.ac.in/departments', changefreq: 'monthly', priority: '0.8', lastmod: '2026-03-18' },
 
+  // Admission page
+  { loc: 'https://ahs.jkkn.ac.in/admission', changefreq: 'monthly', priority: '0.9', lastmod: '2026-03-24' },
+
   // Institutional pages
   { loc: 'https://ahs.jkkn.ac.in/our-management', changefreq: 'monthly', priority: '0.8', lastmod: '2026-02-15' },
   { loc: 'https://ahs.jkkn.ac.in/our-trust', changefreq: 'monthly', priority: '0.8', lastmod: '2026-02-15' },

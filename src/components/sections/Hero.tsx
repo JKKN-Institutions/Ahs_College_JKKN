@@ -11,7 +11,7 @@ export function Hero() {
     const stats = [
         { label: 'Specialized Programs', value: '8+' },
         { label: 'Placement Rate', value: '95%' },
-        { label: 'Hospital Partners', value: '25+' },
+        { label: 'Hospital Partners', value: '50+' },
         { label: 'Active Learners', value: '250+' },
     ];
 
@@ -40,7 +40,7 @@ export function Hero() {
                         </div>
 
                         <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-4xl font-black text-white leading-[1.2] mb-3 sm:mb-4">
-                            Shape the Future of <span className="text-[#ffde59]">Healthcare</span> with JKKN College of Allied Health Sciences
+                            Best Allied Health Sciences College in Tamil Nadu — <span className="text-[#ffde59]">Shape Your Healthcare Career</span> at JKKN
                         </h1>
 
                         <p className="text-sm sm:text-base text-white/90 mb-4 sm:mb-6 max-w-2xl leading-relaxed">

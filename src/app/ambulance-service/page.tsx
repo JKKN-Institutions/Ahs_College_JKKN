@@ -5,10 +5,18 @@ import Image from 'next/image';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { Breadcrumb } from '@/components/Breadcrumb';
+import { generateBreadcrumbSchema } from '@/lib/breadcrumb-schema';
 
 export default function AmbulanceService() {
+    const breadcrumbSchema = generateBreadcrumbSchema([
+        { name: "Home", url: "https://ahs.jkkn.ac.in/" },
+        { name: "Facilities", url: "https://ahs.jkkn.ac.in/#facilities" },
+        { name: "Ambulance Service", url: "https://ahs.jkkn.ac.in/ambulance-service" }
+    ]);
+
     return (
         <div className="min-h-screen flex flex-col bg-[#fbfbee]">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <Navbar />
 
             <main className="flex-grow pt-4 md:pt-20 lg:pt-24 pb-20">

@@ -14,10 +14,54 @@ import {
     Hospital, Settings, Dumbbell, Microscope
 } from 'lucide-react';
 import { Breadcrumb } from '@/components/Breadcrumb';
+import { generateBreadcrumbSchema } from '@/lib/breadcrumb-schema';
+
+const courseSchema = {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "B.Sc Cardiac Technology",
+    "description": "Specialized undergraduate program in cardiovascular diagnostics covering ECG interpretation, echocardiography, cardiac catheterization, and pacemaker technology with hands-on clinical training at partner hospitals.",
+    "provider": {
+        "@type": "CollegeOrUniversity",
+        "@id": "https://ahs.jkkn.ac.in/#organization",
+        "name": "JKKN College of Allied Health Sciences"
+    },
+    "url": "https://ahs.jkkn.ac.in/cardiac-technology",
+    "timeRequired": "P4Y",
+    "educationalCredentialAwarded": "B.Sc Cardiac Technology",
+    "occupationalCredentialAwarded": "Cardiac Technologist",
+    "hasCourseInstance": {
+        "@type": "CourseInstance",
+        "courseMode": "In-Person",
+        "startDate": "2026-08-01"
+    },
+    "offers": {
+        "@type": "Offer",
+        "category": "Tuition",
+        "price": "75000",
+        "priceCurrency": "INR",
+        "priceValidUntil": "2027-03-31",
+        "availability": "https://schema.org/InStock"
+    }
+};
+
+const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", url: "https://ahs.jkkn.ac.in/" },
+    { name: "Departments", url: "https://ahs.jkkn.ac.in/#programs" },
+    { name: "Cardiac Technology", url: "https://ahs.jkkn.ac.in/cardiac-technology" }
+]);
 
 export default function CardiacTechnology() {
     return (
         <div className="min-h-screen flex flex-col bg-[#fbfbee]">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+            />
             <Navbar />
 
             <main className="flex-grow pt-20">

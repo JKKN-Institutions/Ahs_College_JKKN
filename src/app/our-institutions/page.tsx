@@ -6,10 +6,18 @@ import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { motion } from 'framer-motion';
 import { Phone, Mail, MapPin, MessageCircle } from 'lucide-react';
+import { generateBreadcrumbSchema } from '@/lib/breadcrumb-schema';
 
 export default function OurInstitutions() {
+    const breadcrumbSchema = generateBreadcrumbSchema([
+        { name: "Home", url: "https://ahs.jkkn.ac.in/" },
+        { name: "About", url: "https://ahs.jkkn.ac.in/#about" },
+        { name: "Our Institutions", url: "https://ahs.jkkn.ac.in/our-institutions" }
+    ]);
+
     return (
         <div className="min-h-screen flex flex-col bg-[#fbfbee]">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <Navbar />
 
             {/* Main Content */}

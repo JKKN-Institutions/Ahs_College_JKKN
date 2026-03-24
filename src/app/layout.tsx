@@ -91,7 +91,13 @@ const collegeSchema = {
     "contactType": "admissions",
     "email": "alliedhealth@jkkn.ac.in",
     "areaServed": "IN",
-    "availableLanguage": ["English", "Tamil"]
+    "availableLanguage": ["English", "Tamil"],
+    "hoursAvailable": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "09:00",
+      "closes": "17:00"
+    }
   },
   "parentOrganization": {
     "@type": "EducationalOrganization",
@@ -174,6 +180,38 @@ const programListSchema = {
   ]
 };
 
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://ahs.jkkn.ac.in/#localbusiness",
+  "name": "JKKN College of Allied Health Sciences",
+  "image": "https://ahs.jkkn.ac.in/allied-health-science-hero.png",
+  "telephone": "+919345855001",
+  "email": "alliedhealth@jkkn.ac.in",
+  "url": "https://ahs.jkkn.ac.in/",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "NH-544 (Salem to Coimbatore National Highway), Natarajapuram",
+    "addressLocality": "Komarapalayam",
+    "addressRegion": "IN-TN",
+    "postalCode": "638183",
+    "addressCountry": "IN"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "11.445190",
+    "longitude": "77.726549"
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+    "opens": "09:00",
+    "closes": "17:00"
+  },
+  "priceRange": "$$",
+  "areaServed": { "@type": "State", "name": "Tamil Nadu" }
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -197,6 +235,10 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(programListSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
         />
       </head>
       <body className={`${poppins.variable} antialiased`} suppressHydrationWarning>

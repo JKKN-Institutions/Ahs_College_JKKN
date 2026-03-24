@@ -8,6 +8,7 @@ import { Footer } from '@/components/layout/Footer';
 import { motion } from 'framer-motion';
 import Typography from '@/components/ui/Typography';
 import { Breadcrumb } from '@/components/Breadcrumb';
+import { generateBreadcrumbSchema } from '@/lib/breadcrumb-schema';
 
 export default function VisionMission() {
     const containerVariants = {
@@ -32,8 +33,15 @@ export default function VisionMission() {
         }
     };
 
+    const breadcrumbSchema = generateBreadcrumbSchema([
+        { name: "Home", url: "https://ahs.jkkn.ac.in/" },
+        { name: "About", url: "https://ahs.jkkn.ac.in/#about" },
+        { name: "Vision & Mission", url: "https://ahs.jkkn.ac.in/vision-mission" }
+    ]);
+
     return (
         <div className="min-h-screen flex flex-col relative overflow-hidden">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             {/* Animated Background */}
             <div className="fixed inset-0 -z-10 bg-gradient-to-br from-[#f5f5dc] via-[#fbfbee] to-[#e8f5e9]">
                 <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-[0.02]" />

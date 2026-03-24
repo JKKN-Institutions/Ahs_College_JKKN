@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react';
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { Building2, FlaskConical, Microscope, Eye, Package, Globe, GraduationCap, Home, Users } from 'lucide-react';
 
@@ -53,7 +54,7 @@ export function CareerPaths() {
                         Where Will Allied Health Sciences<br className="hidden sm:block" />Take You?
                     </h2>
                     <p className="text-gray-600 max-w-3xl mx-auto text-sm sm:text-base px-4">
-                        Allied Health professionals are in high demand across hospitals, diagnostics, research, and healthcare administration.
+                        Allied Health professionals are in high demand across hospitals, diagnostics, research, and healthcare administration. Explore our <Link href="/departments" className="text-[#0b6d41] font-semibold hover:underline">9 specialized B.Sc. programs</Link> to find your path.
                     </p>
                 </div>
 
@@ -92,7 +93,7 @@ export function CareerPaths() {
                     <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6 mb-8 sm:mb-12 md:mb-16">
                         {[
                             { label: "Placement Rate", value: "95%" },
-                            { label: "Recruiting Partners", value: "20+" },
+                            { label: "Recruiting Partners", value: "100+" },
                             { label: "Highest Package", value: "₹7.5L" },
                             { label: "Average Package", value: "₹3.2L" },
                         ].map((stat, i) => (

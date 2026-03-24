@@ -199,6 +199,30 @@ const reviewSchema = {
       "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
       "datePublished": "2023-06-15",
       "itemReviewed": { "@type": "EducationalOrganization", "name": "JKKN College of Allied Health Sciences" }
+    },
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Kavitha Rajan" },
+      "reviewBody": "JKKN's radiology program gave me hands-on training with CT, MRI, and X-ray equipment from day one. Within months of graduating, I was placed at Fortis Healthcare, Chennai. The clinical rotations across partner hospitals made the transition seamless.",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+      "datePublished": "2023-09-10",
+      "itemReviewed": { "@type": "EducationalOrganization", "name": "JKKN College of Allied Health Sciences" }
+    },
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Senthil Kumar" },
+      "reviewBody": "As a parent, choosing the right college was crucial. JKKN's campus safety, hostel facilities, and 95% placement record convinced us. My daughter is now in her final year of Dialysis Technology and already has an internship offer from Kauvery Hospital.",
+      "reviewRating": { "@type": "Rating", "ratingValue": "4", "bestRating": "5" },
+      "datePublished": "2024-02-20",
+      "itemReviewed": { "@type": "EducationalOrganization", "name": "JKKN College of Allied Health Sciences" }
+    },
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Mohammed Farhan" },
+      "reviewBody": "JKKN prepared me for an international healthcare career. After completing my Respiratory Therapy degree, I secured a position with the NHS in the United Kingdom. The clinical training standards at JKKN matched international protocols.",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+      "datePublished": "2022-11-15",
+      "itemReviewed": { "@type": "EducationalOrganization", "name": "JKKN College of Allied Health Sciences" }
     }
   ]
 };
@@ -214,6 +238,34 @@ const speakableSchema = {
   },
   "datePublished": "2024-01-01",
   "dateModified": "2026-03-18"
+};
+
+const courses = [
+  { name: "B.Sc Cardiac Technology", slug: "cardiac-technology", description: "Specialized undergraduate program in cardiovascular diagnostics covering ECG interpretation, echocardiography, cardiac catheterization, and pacemaker technology with hands-on clinical training at partner hospitals.", occupation: "Cardiac Technologist" },
+  { name: "B.Sc Radiology & Imaging Technology", slug: "radiology-imaging-technology", description: "Comprehensive program training students in diagnostic imaging including X-ray, CT scan, MRI, ultrasound, and interventional radiology with clinical rotations at multi-specialty hospitals.", occupation: "Radiographer / Imaging Technologist" },
+  { name: "B.Sc Dialysis Technology", slug: "dialysis-technology", description: "Focused program on renal care and dialysis procedures including hemodialysis, peritoneal dialysis, and continuous renal replacement therapy with practical training at nephrology centers.", occupation: "Dialysis Technician" },
+  { name: "B.Sc Operation Theatre & Anaesthesia Technology", slug: "operation-theatre-anaesthesia", description: "Program covering surgical assistance, anaesthesia administration, OT management, sterilization protocols, and post-operative care with extensive operating theatre clinical training.", occupation: "OT & Anaesthesia Technologist" },
+  { name: "B.Sc Respiratory Therapy", slug: "respiratory-therapy", description: "Specialized training in respiratory care including ventilator management, pulmonary function testing, oxygen therapy, and cardiopulmonary rehabilitation at ICU and respiratory care units.", occupation: "Respiratory Therapist" },
+  { name: "B.Sc Physician Assistant", slug: "physician-assistant", description: "Comprehensive clinical training program preparing graduates to assist physicians in patient examination, diagnosis, treatment planning, and emergency care across medical specialties.", occupation: "Physician Assistant" },
+  { name: "B.Sc Critical Care Technology", slug: "critical-care-technology", description: "Advanced program focused on intensive care unit management, multi-organ monitoring, life support systems, and critical patient care with clinical training at ICU facilities.", occupation: "Critical Care Technologist" },
+  { name: "B.Sc Medical Record Science", slug: "medical-record-science", description: "Program in health information management covering medical coding, hospital records administration, health informatics, and data analytics for healthcare facilities.", occupation: "Medical Records Officer" },
+  { name: "B.Sc Accident & Emergency Care Technology", slug: "accident-emergency-care", description: "Training in emergency medicine, trauma management, triage protocols, first response techniques, and pre-hospital care with clinical exposure at emergency departments.", occupation: "Emergency Care Technologist" },
+];
+
+const courseGraphSchema = {
+  "@context": "https://schema.org",
+  "@graph": courses.map(c => ({
+    "@type": "Course",
+    "name": c.name,
+    "description": c.description,
+    "provider": { "@type": "CollegeOrUniversity", "@id": "https://ahs.jkkn.ac.in/#organization", "name": "JKKN College of Allied Health Sciences" },
+    "url": `https://ahs.jkkn.ac.in/${c.slug}`,
+    "timeRequired": "P4Y",
+    "educationalCredentialAwarded": c.name,
+    "occupationalCredentialAwarded": c.occupation,
+    "hasCourseInstance": { "@type": "CourseInstance", "courseMode": "In-Person", "startDate": "2026-08-01" },
+    "offers": { "@type": "Offer", "category": "Tuition", "price": "75000", "priceCurrency": "INR", "priceValidUntil": "2027-03-31", "availability": "https://schema.org/InStock" }
+  }))
 };
 
 export default function Home() {
@@ -236,6 +288,10 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }}
       />
       <ScrollToSection />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(courseGraphSchema) }}
+      />
       <Navbar />
       <main>
         <Hero />

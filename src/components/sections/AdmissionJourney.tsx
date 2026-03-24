@@ -8,7 +8,7 @@ export function AdmissionJourney() {
     const eligibilityCriteria = [
         "+2 with Physics, Chemistry & Biology (PCB)",
         "Minimum 50% aggregate marks (40% for SC/ST, 45% for OBC)",
-        "Age: 17-25 years as on 31st December 2025",
+        "Age: 17-25 years as on 31st December 2026",
         "Indian nationals and NRI candidates eligible",
         "NEET score not mandatory (merit-based admission)"
     ];

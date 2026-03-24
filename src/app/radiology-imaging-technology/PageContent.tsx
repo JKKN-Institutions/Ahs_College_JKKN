@@ -14,10 +14,54 @@ import {
     Shield, Zap, ClipboardList, UserCog, Microscope, Radio
 } from 'lucide-react';
 import { Breadcrumb } from '@/components/Breadcrumb';
+import { generateBreadcrumbSchema } from '@/lib/breadcrumb-schema';
+
+const courseSchema = {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "B.Sc Radiology & Imaging Technology",
+    "description": "Comprehensive program training students in diagnostic imaging including X-ray, CT scan, MRI, ultrasound, and interventional radiology with clinical rotations at multi-specialty hospitals.",
+    "provider": {
+        "@type": "CollegeOrUniversity",
+        "@id": "https://ahs.jkkn.ac.in/#organization",
+        "name": "JKKN College of Allied Health Sciences"
+    },
+    "url": "https://ahs.jkkn.ac.in/radiology-imaging-technology",
+    "timeRequired": "P4Y",
+    "educationalCredentialAwarded": "B.Sc Radiology & Imaging Technology",
+    "occupationalCredentialAwarded": "Radiographer / Imaging Technologist",
+    "hasCourseInstance": {
+        "@type": "CourseInstance",
+        "courseMode": "In-Person",
+        "startDate": "2026-08-01"
+    },
+    "offers": {
+        "@type": "Offer",
+        "category": "Tuition",
+        "price": "75000",
+        "priceCurrency": "INR",
+        "priceValidUntil": "2027-03-31",
+        "availability": "https://schema.org/InStock"
+    }
+};
+
+const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", url: "https://ahs.jkkn.ac.in/" },
+    { name: "Departments", url: "https://ahs.jkkn.ac.in/#programs" },
+    { name: "Radiology & Imaging Technology", url: "https://ahs.jkkn.ac.in/radiology-imaging-technology" }
+]);
 
 export default function RadiologyImagingTechnology() {
     return (
         <div className="min-h-screen flex flex-col bg-[#fbfbee]">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+            />
             <Navbar />
 
             <main className="flex-grow pt-20">

@@ -3,6 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 import { CheckCircle2 } from 'lucide-react';
 import { BRAND_LEGACY } from '@/lib/constants';
 
@@ -26,7 +27,7 @@ export function AboutSection() {
                     >
                         <span className="text-[#0b6d41] font-bold tracking-wider uppercase text-xs sm:text-sm mb-3 sm:mb-4 block">ABOUT JKKN AHS</span>
                         <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#0b6d41] leading-tight mb-4 sm:mb-6">
-                            Transforming Healthcare Careers Since 2019
+                            About JKKN — Transforming Allied Health Sciences Education Since 2019
                         </h2>
 
                         <p className="text-gray-700 text-sm sm:text-base mb-4 sm:mb-6 leading-relaxed">
@@ -34,7 +35,7 @@ export function AboutSection() {
                         </p>
 
                         <p className="text-gray-700 text-sm sm:text-base mb-6 sm:mb-8 leading-relaxed">
-                            Affiliated with The Tamil Nadu Dr. M.G.R. Medical University, we offer comprehensive programs in Critical Care Technology, Physician Assistant, Cardiac Technology, Radiology, and more. Our Learning Facilitators (Senior Learners) bring decades of clinical and academic experience to every Learning Studio.
+                            Affiliated with The Tamil Nadu Dr. M.G.R. Medical University, we offer comprehensive programs in <Link href="/critical-care-technology" className="text-[#0b6d41] font-semibold hover:underline">Critical Care Technology</Link>, <Link href="/physician-assistant" className="text-[#0b6d41] font-semibold hover:underline">Physician Assistant</Link>, <Link href="/cardiac-technology" className="text-[#0b6d41] font-semibold hover:underline">Cardiac Technology</Link>, <Link href="/radiology-imaging-technology" className="text-[#0b6d41] font-semibold hover:underline">Radiology</Link>, and more. Our Learning Facilitators (Senior Learners) bring decades of clinical and academic experience to every Learning Studio.
                         </p>
 
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-6 sm:mb-8">

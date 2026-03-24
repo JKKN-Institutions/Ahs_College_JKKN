@@ -14,10 +14,54 @@ import {
     Shield, Syringe, ClipboardList, UserCog, Microscope
 } from 'lucide-react';
 import { Breadcrumb } from '@/components/Breadcrumb';
+import { generateBreadcrumbSchema } from '@/lib/breadcrumb-schema';
+
+const courseSchema = {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "B.Sc Operation Theatre & Anaesthesia Technology",
+    "description": "Dual-specialization program covering surgical assistance, anaesthesia administration, and operation theatre management with extensive hands-on training in surgical suites.",
+    "provider": {
+        "@type": "CollegeOrUniversity",
+        "@id": "https://ahs.jkkn.ac.in/#organization",
+        "name": "JKKN College of Allied Health Sciences"
+    },
+    "url": "https://ahs.jkkn.ac.in/operation-theatre-anaesthesia",
+    "timeRequired": "P4Y",
+    "educationalCredentialAwarded": "B.Sc Operation Theatre & Anaesthesia Technology",
+    "occupationalCredentialAwarded": "OT Technologist / Anaesthesia Technician",
+    "hasCourseInstance": {
+        "@type": "CourseInstance",
+        "courseMode": "In-Person",
+        "startDate": "2026-08-01"
+    },
+    "offers": {
+        "@type": "Offer",
+        "category": "Tuition",
+        "price": "75000",
+        "priceCurrency": "INR",
+        "priceValidUntil": "2027-03-31",
+        "availability": "https://schema.org/InStock"
+    }
+};
+
+const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", url: "https://ahs.jkkn.ac.in/" },
+    { name: "Departments", url: "https://ahs.jkkn.ac.in/#programs" },
+    { name: "Operation Theatre & Anaesthesia", url: "https://ahs.jkkn.ac.in/operation-theatre-anaesthesia" }
+]);
 
 export default function OperationTheatreAnaesthesia() {
     return (
         <div className="min-h-screen flex flex-col bg-[#fbfbee]">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+            />
             <Navbar />
 
             <main className="flex-grow pt-20">

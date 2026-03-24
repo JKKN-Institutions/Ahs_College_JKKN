@@ -7,10 +7,18 @@ import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { motion } from 'framer-motion';
 import { ArrowLeft } from 'lucide-react';
+import { generateBreadcrumbSchema } from '@/lib/breadcrumb-schema';
 
 export default function PrincipalsMessage() {
+    const breadcrumbSchema = generateBreadcrumbSchema([
+        { name: "Home", url: "https://ahs.jkkn.ac.in/" },
+        { name: "About", url: "https://ahs.jkkn.ac.in/#about" },
+        { name: "Principal's Message", url: "https://ahs.jkkn.ac.in/principals-message" }
+    ]);
+
     return (
         <div className="min-h-screen flex flex-col bg-[#fbfbee]">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <Navbar />
 
             <main className="flex-grow pt-4 md:pt-20 lg:pt-24 pb-16">

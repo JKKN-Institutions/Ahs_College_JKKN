@@ -6,6 +6,7 @@ import { ArrowLeft, FileText, Download } from 'lucide-react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { motion } from 'framer-motion';
+import { generateBreadcrumbSchema } from '@/lib/breadcrumb-schema';
 
 interface TabContent {
   id: string;
@@ -965,8 +966,15 @@ export default function NAACPage() {
     }
   ];
 
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", url: "https://ahs.jkkn.ac.in/" },
+    { name: "About", url: "https://ahs.jkkn.ac.in/#about" },
+    { name: "NAAC Accreditation", url: "https://ahs.jkkn.ac.in/NAAC" }
+  ]);
+
   return (
     <div className="min-h-screen flex flex-col bg-[#fbfbee]">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <Navbar />
 
       <main className="flex-grow pt-4 md:pt-20 lg:pt-32 pb-20">

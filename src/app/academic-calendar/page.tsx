@@ -6,10 +6,18 @@ import { ArrowLeft } from 'lucide-react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { motion } from 'framer-motion';
+import { generateBreadcrumbSchema } from '@/lib/breadcrumb-schema';
 
 export default function AcademicCalendar() {
+    const breadcrumbSchema = generateBreadcrumbSchema([
+        { name: "Home", url: "https://ahs.jkkn.ac.in/" },
+        { name: "Academics", url: "https://ahs.jkkn.ac.in/#academics" },
+        { name: "Academic Calendar", url: "https://ahs.jkkn.ac.in/academic-calendar" }
+    ]);
+
     return (
         <div className="min-h-screen flex flex-col bg-[#fbfbee]">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <Navbar />
 
             <main className="flex-grow pt-4 md:pt-20 lg:pt-32 pb-20">

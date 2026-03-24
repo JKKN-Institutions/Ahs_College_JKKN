@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react';
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { Trophy, Microscope, Building2, Briefcase } from 'lucide-react';
 import { BRAND_LEGACY } from '@/lib/constants';
@@ -23,13 +24,13 @@ const reasons = [
     },
     {
         title: "95% Placement Rate",
-        description: "Placement with 20+ recruiters. Our alumni work at top hospitals, diagnostic chains, and healthcare organizations globally.",
+        description: "Placement with 100+ recruiters. Our alumni work at top hospitals, diagnostic chains, and healthcare organizations globally.",
         icon: <Briefcase className="w-10 h-10" />,
     },
 
     {
-        title: "Dental Hospital",
-        description: "Allied Health Science professionals bridge doctors and patients by providing vital diagnostic and therapeutic care, rapid emergency response, early patient support, and smart use of medical technology.",
+        title: "Clinical Training Excellence",
+        description: "Allied Health Sciences professionals bridge doctors and patients by providing vital diagnostic and therapeutic care, rapid emergency response, early patient support, and smart use of medical technology — trained at 50+ partner hospitals.",
         icon: <Briefcase className="w-10 h-10" />,
     }
 ];
@@ -45,7 +46,7 @@ export function WhyChoose() {
                         Why Choose JKKN College<br className="hidden sm:block" />of Allied Health Sciences?
                     </h2>
                     <p className="text-gray-700 text-sm sm:text-base md:text-lg max-w-3xl mx-auto px-4">
-                        Experience world-class healthcare education backed by {BRAND_LEGACY.YEARS} of JKKN's commitment to excellence.
+                        Experience world-class healthcare education backed by {BRAND_LEGACY.YEARS} of JKKN&apos;s commitment to excellence. Explore our <Link href="/lab" className="text-[#0b6d41] font-semibold hover:underline">advanced laboratories</Link> and <Link href="/#careers" className="text-[#0b6d41] font-semibold hover:underline">career opportunities</Link>.
                     </p>
                 </div>
 

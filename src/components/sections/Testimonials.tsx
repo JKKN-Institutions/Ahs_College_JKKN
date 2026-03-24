@@ -2,28 +2,56 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 import { Quote } from 'lucide-react';
 
 const testimonials = [
     {
         name: "Priya Krishnan",
-        role: "B.Sc. OTAT 2022 | Apollo Hospitals",
+        role: "B.Sc. Operation Theatre & Anaesthesia Technology (OTAT) 2022 | Apollo Hospitals",
+        programLink: "/operation-theatre-anaesthesia",
         initials: "PK",
         content: "The practical training at JKKN prepared me thoroughly for my role at Apollo. The Learning Facilitators' real-world experience made all the difference in understanding complex procedures.",
         bgColor: "bg-[#0b6d41]"
     },
     {
         name: "Rajesh Sundaram",
-        role: "B.Sc. CCT 2021 | Own Practice",
+        role: "B.Sc. Critical Care Technology (CCT) 2021 | Own Practice",
+        programLink: "/critical-care-technology",
         initials: "RS",
         content: "JKKN's CCT program and clinical exposure helped me start my own eye care practice within 2 years of graduation. The foundation was exceptional.",
         bgColor: "bg-[#0b6d41]"
     },
     {
         name: "Anitha Mohan",
-        role: "B.Sc. Cardiac Tech 2023 | MIOT",
+        role: "B.Sc. Cardiac Technology 2023 | MIOT",
+        programLink: "/cardiac-technology",
         initials: "AM",
         content: "From state-of-the-art cardiac simulation labs to hospital internship at MIOT, JKKN gave me everything I needed to become a confident cardiac technologist.",
+        bgColor: "bg-[#0b6d41]"
+    },
+    {
+        name: "Kavitha Rajan",
+        role: "B.Sc. Radiology & Imaging Technology 2023 | Fortis Healthcare",
+        programLink: "/radiology-imaging-technology",
+        initials: "KR",
+        content: "JKKN's radiology program gave me hands-on training with CT, MRI, and X-ray equipment from day one. Within months of graduating, I was placed at Fortis Healthcare, Chennai. The clinical rotations across partner hospitals made the transition seamless. [SAMPLE]",
+        bgColor: "bg-[#0b6d41]"
+    },
+    {
+        name: "Mr. Senthil Kumar",
+        role: "Parent of B.Sc. Dialysis Technology 2024 Learner",
+        programLink: "/dialysis-technology",
+        initials: "SK",
+        content: "As a parent, choosing the right college was crucial. JKKN's campus safety, hostel facilities, and 95% placement record convinced us. My daughter is now in her final year of Dialysis Technology and already has an internship offer from Kauvery Hospital. The faculty genuinely cares about every Learner's success. [SAMPLE]",
+        bgColor: "bg-[#085231]"
+    },
+    {
+        name: "Mohammed Farhan",
+        role: "B.Sc. Respiratory Therapy 2022 | NHS UK",
+        programLink: "/respiratory-therapy",
+        initials: "MF",
+        content: "JKKN prepared me for an international healthcare career. After completing my Respiratory Therapy degree, I secured a position with the NHS in the United Kingdom. The clinical training standards at JKKN matched international protocols, which made my transition abroad smooth and confident. [SAMPLE]",
         bgColor: "bg-[#0b6d41]"
     }
 ];
@@ -42,7 +70,7 @@ export function Testimonials() {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
                     {testimonials.map((testimonial, index) => (
                         <motion.div
                             key={index}
@@ -66,7 +94,7 @@ export function Testimonials() {
                                 </div>
                                 <div>
                                     <h4 className="font-bold text-gray-900 text-sm">{testimonial.name}</h4>
-                                    <p className="text-xs text-gray-600">{testimonial.role}</p>
+                                    <Link href={testimonial.programLink} className="text-xs text-[#0b6d41] hover:underline">{testimonial.role}</Link>
                                 </div>
                             </div>
                         </motion.div>
