@@ -3,15 +3,21 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Menu, X, ChevronDown } from 'lucide-react';
+import { Menu, X, ChevronDown, ChevronRight } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { siteConfig } from '@/lib/site-config';
 import { motion, AnimatePresence } from 'framer-motion';
 
-interface NavLink {
+interface SubLink {
     name: string;
     href: string;
     submenu?: { name: string; href: string }[];
+}
+
+interface NavLink {
+    name: string;
+    href: string;
+    submenu?: SubLink[];
 }
 
 const navLinks: NavLink[] = [
@@ -23,7 +29,18 @@ const navLinks: NavLink[] = [
             { name: 'Our Management', href: '/our-management' },
             { name: 'Our Institutions', href: '/our-institutions' },
             { name: "Principal's Message", href: '/principals-message' },
-            { name: 'Vision & Mission', href: '/vision-mission' }
+            { name: 'Vision & Mission', href: '/vision-mission' },
+            {
+                name: 'Why Students Choose JKKN?',
+                href: '#',
+                submenu: [
+                    { name: 'Why Erode Students?', href: '/erode' },
+                    { name: 'Why Salem Students?', href: '/salem' },
+                    { name: 'Why Tirupur Students?', href: '/tiruppur' },
+                    { name: 'Why Namakkal Students?', href: '/namakkal' },
+                    { name: 'Why Coimbatore Students?', href: '/coimbatore' },
+                ]
+            }
         ]
     },
     {
@@ -74,6 +91,7 @@ export function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
     const [hoveredDropdown, setHoveredDropdown] = useState<string | null>(null);
+    const [hoveredNestedItem, setHoveredNestedItem] = useState<string | null>(null);
     const [mobileDropdownOpen, setMobileDropdownOpen] = useState<string | null>(null);
 
     useEffect(() => {
@@ -153,10 +171,43 @@ export function Navbar() {
                                         animate={{ opacity: 1, y: 0 }}
                                         exit={{ opacity: 0, y: 10 }}
                                         transition={{ duration: 0.2 }}
-                                        className="absolute top-full left-0 mt-2 w-56 bg-white shadow-xl rounded-lg p-2 border border-gray-100 overflow-hidden"
+                                        className="absolute top-full left-0 mt-2 w-56 bg-white shadow-xl rounded-lg p-2 border border-gray-100"
                                     >
                                         {link.submenu.map((sub) => (
-                                            sub.href.endsWith('.pdf') ? (
+                                            sub.submenu ? (
+                                                <div
+                                                    key={sub.name}
+                                                    className="relative"
+                                                    onMouseEnter={() => setHoveredNestedItem(sub.name)}
+                                                    onMouseLeave={() => setHoveredNestedItem(null)}
+                                                >
+                                                    <button className="flex items-center justify-between w-full px-4 py-2 text-sm text-gray-700 hover:bg-[#0b6d41] hover:text-white rounded-md transition-colors">
+                                                        {sub.name}
+                                                        <ChevronRight className="w-4 h-4 shrink-0" />
+                                                    </button>
+                                                    <AnimatePresence>
+                                                        {hoveredNestedItem === sub.name && (
+                                                            <motion.div
+                                                                initial={{ opacity: 0, x: 10 }}
+                                                                animate={{ opacity: 1, x: 0 }}
+                                                                exit={{ opacity: 0, x: 10 }}
+                                                                transition={{ duration: 0.2 }}
+                                                                className="absolute top-0 left-full ml-1 w-56 bg-white shadow-xl rounded-lg p-2 border border-gray-100"
+                                                            >
+                                                                {sub.submenu.map((nested) => (
+                                                                    <Link
+                                                                        key={nested.name}
+                                                                        href={nested.href}
+                                                                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#0b6d41] hover:text-white rounded-md transition-colors"
+                                                                    >
+                                                                        {nested.name}
+                                                                    </Link>
+                                                                ))}
+                                                            </motion.div>
+                                                        )}
+                                                    </AnimatePresence>
+                                                </div>
+                                            ) : sub.href.endsWith('.pdf') ? (
                                                 <a
                                                     key={sub.name}
                                                     href={sub.href}
