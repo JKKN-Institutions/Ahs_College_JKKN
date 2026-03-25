@@ -16,6 +16,13 @@ const pages = [
   { loc: 'https://ahs.jkkn.ac.in/critical-care-technology', changefreq: 'monthly', priority: '0.9', lastmod: '2026-03-18' },
   { loc: 'https://ahs.jkkn.ac.in/departments', changefreq: 'monthly', priority: '0.8', lastmod: '2026-03-18' },
 
+  // City landing pages
+  { loc: 'https://ahs.jkkn.ac.in/erode', changefreq: 'monthly', priority: '0.8', lastmod: '2026-03-24' },
+  { loc: 'https://ahs.jkkn.ac.in/namakkal', changefreq: 'monthly', priority: '0.8', lastmod: '2026-03-24' },
+  { loc: 'https://ahs.jkkn.ac.in/salem', changefreq: 'monthly', priority: '0.8', lastmod: '2026-03-24' },
+  { loc: 'https://ahs.jkkn.ac.in/tiruppur', changefreq: 'monthly', priority: '0.8', lastmod: '2026-03-24' },
+  { loc: 'https://ahs.jkkn.ac.in/coimbatore', changefreq: 'monthly', priority: '0.8', lastmod: '2026-03-24' },
+
   // Admission page
   { loc: 'https://ahs.jkkn.ac.in/admission', changefreq: 'monthly', priority: '0.9', lastmod: '2026-03-24' },
 

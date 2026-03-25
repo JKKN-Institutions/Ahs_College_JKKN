@@ -3,13 +3,15 @@
 import { useState } from "react";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteConfig } from "@/lib/site-config";
-import { MapPin, ChevronDown, ChevronUp, GraduationCap, Phone, TrendingUp, Building2, GitBranch, Target, Globe, Bus, Activity, Microscope, Camera, Heart, Map, Train, Plane, Home, BookOpen, Trophy, Wifi } from "lucide-react";
+import { MapPin, ChevronDown, ChevronUp, GraduationCap, Phone, TrendingUp, Building2, GitBranch, Target, Globe, Bus, Activity, Microscope, HeartPulse, Droplet, ShieldCheck, Wind, Stethoscope, Heart, FileText, Ambulance, Map, Train, Plane, Home, BookOpen, Trophy, Wifi } from "lucide-react";
 
 export default function TiruppurPage() {
   return (
     <>
       <Navbar />
+      <Breadcrumb items={[{ label: "Tiruppur" }]} />
       <TopBanner />
       <HeroSection />
       <AffiliationBar />
@@ -19,7 +21,6 @@ export default function TiruppurPage() {
       <PlacementHighlights />
       <HowToReachSection />
       <FacilitiesSection />
-      <TestimonialsSection />
       <FAQSection />
       <ExploreCitiesSection />
       <Footer />
@@ -62,7 +63,7 @@ function HeroSection() {
 
         {/* Heading */}
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-black leading-tight mb-6">
-          Best Allied Health Sciences College Near{" "}
+          Allied Health Science Courses in{" "}
           <span className="text-[#7cb983]">Tiruppur</span>
         </h1>
 
@@ -70,17 +71,17 @@ function HeroSection() {
         <p className="text-white/85 text-base sm:text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
           Tiruppur students — world-class education without the big-city hassle.
           JKKN College of Allied Health Sciences offers top-tier allied health
-          sciences programmes with 85%+ placement support — no need to go to
+          sciences programmes with 92%+ placement support — no need to go to
           Coimbatore — quality education is closer than you think.
         </p>
 
         {/* Stats */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-2xl mx-auto mb-10">
           {[
-            { value: "85%+", label: "PLACEMENTS" },
-            { value: "5-7", label: "LPA HIGHEST" },
+            { value: "92%+", label: "PLACEMENTS" },
+            { value: "12", label: "LPA HIGHEST" },
             { value: "85km", label: "FROM TIRUPPUR" },
-            { value: "4", label: "PROGRAMMES" },
+            { value: "9", label: "PROGRAMMES" },
           ].map((stat) => (
             <div
               key={stat.label}
@@ -248,51 +249,100 @@ function WhyChooseSection() {
 function ProgrammesSection() {
   const programmes = [
     {
-      icon: Activity,
-      name: "BPT (Bachelor of Physiotherapy)",
-      duration: "4.5 years (incl. internship)",
-      level: "UG",
-      intake: "50 seats",
-      eligibility: "10+2 with Physics, Chemistry, Biology",
-    },
-    {
-      icon: Microscope,
-      name: "B.Sc Medical Laboratory Technology (MLT)",
-      duration: "3 years",
-      level: "UG",
-      intake: "40 seats",
-      eligibility: "10+2 with Physics, Chemistry, Biology",
-    },
-    {
-      icon: Camera,
-      name: "B.Sc Radiology & Imaging Technology",
-      duration: "3 years",
-      level: "UG",
-      intake: "40 seats",
-      eligibility: "10+2 with Physics, Chemistry, Biology",
-    },
-    {
-      icon: Heart,
-      name: "B.Sc Cardiac Technology",
-      duration: "3 years",
+      icon: HeartPulse,
+      name: "B.Sc. Cardiac Technology",
+      duration: "3 Years + 1 Year Internship",
       level: "UG",
       intake: "30 seats",
       eligibility: "10+2 with Physics, Chemistry, Biology",
+      link: "/cardiac-technology",
+    },
+    {
+      icon: Activity,
+      name: "B.Sc. Radiography & Imaging Technology",
+      duration: "3 Years + 1 Year Internship",
+      level: "UG",
+      intake: "40 seats",
+      eligibility: "10+2 with Physics, Chemistry, Biology",
+      link: "/radiology-imaging-technology",
+    },
+    {
+      icon: Droplet,
+      name: "B.Sc. Dialysis Technology",
+      duration: "3 Years + 1 Year Internship",
+      level: "UG",
+      intake: "40 seats",
+      eligibility: "10+2 with Physics, Chemistry, Biology",
+      link: "/dialysis-technology",
+    },
+    {
+      icon: ShieldCheck,
+      name: "B.Sc. Operation Theatre & Anaesthesia Technology",
+      duration: "3 Years + 1 Year Internship",
+      level: "UG",
+      intake: "40 seats",
+      eligibility: "10+2 with Physics, Chemistry, Biology",
+      link: "/operation-theatre-anaesthesia",
+    },
+    {
+      icon: Wind,
+      name: "B.Sc. Respiratory Therapy",
+      duration: "3 Years + 1 Year Internship",
+      level: "UG",
+      intake: "30 seats",
+      eligibility: "10+2 with Physics, Chemistry, Biology",
+      link: "/respiratory-therapy",
+    },
+    {
+      icon: Stethoscope,
+      name: "B.Sc. Physician Assistant",
+      duration: "3 Years + 1 Year Internship",
+      level: "UG",
+      intake: "40 seats",
+      eligibility: "10+2 with Physics, Chemistry, Biology",
+      link: "/physician-assistant",
+    },
+    {
+      icon: Heart,
+      name: "B.Sc. Critical Care Technology",
+      duration: "3 Years + 1 Year Internship",
+      level: "UG",
+      intake: "30 seats",
+      eligibility: "10+2 with Physics, Chemistry, Biology",
+      link: "/critical-care-technology",
+    },
+    {
+      icon: FileText,
+      name: "B.Sc. Medical Record Science",
+      duration: "3 Years + 1 Year Internship",
+      level: "UG",
+      intake: "30 seats",
+      eligibility: "10+2 with Physics, Chemistry, Biology",
+      link: "/medical-record-science",
+    },
+    {
+      icon: Ambulance,
+      name: "B.Sc. Accident & Emergency Care Technology",
+      duration: "3 Years + 1 Year Internship",
+      level: "UG",
+      intake: "30 seats",
+      eligibility: "10+2 with Physics, Chemistry, Biology",
+      link: "/accident-emergency-care",
     },
   ];
 
   return (
     <section className="bg-[#FBFBEE] py-14 px-4">
-      <div className="max-w-5xl mx-auto text-center">
+      <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-2xl sm:text-3xl font-black text-gray-900 mb-3">
           Programmes Offered
         </h2>
         <p className="text-gray-500 text-sm mb-3">
-          Choose the right programme for your career goals
+          9 B.Sc. Allied Health Sciences programmes — choose the right career path
         </p>
         <div className="w-12 h-1 bg-[#7cb983] rounded mx-auto mb-10"></div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {programmes.map((p) => {
             const Icon = p.icon;
             return (
@@ -320,12 +370,10 @@ function ProgrammesSection() {
                 </div>
                 <p className="text-[11px] text-gray-400 mt-auto">{p.eligibility}</p>
                 <a
-                  href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href={p.link}
                   className="block text-center text-xs font-semibold text-[#006837] bg-[#e8f5ea] rounded-lg py-2.5 hover:bg-[#006837] hover:text-white transition-colors mt-1"
                 >
-                  Enquire About This Course
+                  View Course Details
                 </a>
               </div>
             );
@@ -341,19 +389,22 @@ function ProgrammesSection() {
 ────────────────────────────────────────── */
 function PlacementHighlights() {
   const stats = [
-    { value: "85%+", label: "PLACEMENT RATE" },
-    { value: "5-7", label: "LPA HIGHEST" },
-    { value: "2.5-4", label: "LPA AVERAGE" },
-    { value: "6+", label: "TOP RECRUITERS" },
+    { value: "92%+", label: "PLACEMENT RATE" },
+    { value: "12", label: "LPA HIGHEST" },
+    { value: "3.2–4.5", label: "LPA AVERAGE" },
+    { value: "60+", label: "TOP RECRUITERS" },
   ];
 
   const companies = [
     "Apollo Hospitals",
-    "Fortis",
+    "Fortis Healthcare",
     "Manipal Hospitals",
     "SRL Diagnostics",
     "Thyrocare",
     "Dr. Lal PathLabs",
+    "Sun Pharma",
+    "NHS UK",
+    "Cleveland Clinic Abu Dhabi",
   ];
 
   return (
@@ -363,7 +414,7 @@ function PlacementHighlights() {
           Placement Highlights
         </h2>
         <p className="text-gray-500 text-sm mb-3">
-          Our placement cell connects you with India&apos;s top employers
+          92%+ placement rate — our students work at India&apos;s and the world&apos;s top hospitals
         </p>
         <div className="w-12 h-1 bg-[#7cb983] rounded mx-auto mb-10"></div>
 
@@ -549,60 +600,6 @@ function FacilitiesSection() {
               </div>
             );
           })}
-        </div>
-      </div>
-    </section>
-  );
-}
-
-/* ──────────────────────────────────────────
-   TESTIMONIALS SECTION
-────────────────────────────────────────── */
-function TestimonialsSection() {
-  const testimonials = [
-    {
-      quote:
-        "[Student testimonial from Tiruppur to be added here. Include their experience at JKKN AHS, what they liked about the campus, and their career outcomes.]",
-      name: "[Student Name]",
-      detail: "[Course], Batch of [Year] • Now at [Company]",
-    },
-    {
-      quote:
-        "[Second student testimonial from Tiruppur to be added here. Focus on the ease of commute/hostel life and the quality of education.]",
-      name: "[Student Name]",
-      detail: "[Course], Batch of [Year]",
-    },
-  ];
-
-  return (
-    <section className="bg-[#FBFBEE] py-14 px-4">
-      <div className="max-w-5xl mx-auto text-center">
-        <h2 className="text-2xl sm:text-3xl font-black text-gray-900 mb-3">
-          Students from Tiruppur Love JKKN AHS
-        </h2>
-        <p className="text-gray-500 text-sm mb-3">
-          Hear from students who made the right choice
-        </p>
-        <div className="w-12 h-1 bg-[#7cb983] rounded mx-auto mb-10"></div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-          {testimonials.map((t, i) => (
-            <div key={i} className="bg-white rounded-2xl p-6 text-left shadow-sm">
-              <div className="text-4xl text-gray-200 font-serif mb-3">&ldquo;</div>
-              <p className="text-sm text-gray-500 italic leading-relaxed mb-4">
-                {t.quote}
-              </p>
-              <div className="font-bold text-gray-900 text-sm">{t.name}</div>
-              <div className="text-xs text-gray-400 mt-1">{t.detail}</div>
-            </div>
-          ))}
-
-          {/* Placeholder note card */}
-          <div className="border-2 border-dashed border-orange-300 bg-orange-50 rounded-2xl p-6 flex items-center justify-center text-center">
-            <p className="text-[#7cb983] text-sm font-medium leading-relaxed">
-              Add 2-3 real student testimonials from Tiruppur or nearby areas before deployment.
-            </p>
-          </div>
         </div>
       </div>
     </section>
