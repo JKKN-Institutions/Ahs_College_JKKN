@@ -5,24 +5,35 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteConfig } from "@/lib/site-config";
-import { MapPin, ChevronDown, ChevronUp, GraduationCap, Phone, TrendingUp, Building2, GitBranch, Target, Globe, Bus, Activity, Microscope, HeartPulse, Droplet, ShieldCheck, Wind, Stethoscope, Heart, FileText, Ambulance, Map, Train, Plane, Home, BookOpen, Trophy, Wifi } from "lucide-react";
+import { MapPin, ChevronDown, ChevronUp, GraduationCap, Phone, TrendingUp, Building2, GitBranch, Target, Globe, Bus, Activity, Microscope, HeartPulse, Droplet, ShieldCheck, Wind, Stethoscope, Heart, FileText, Ambulance, Map, Train, Plane, Home, BookOpen, Trophy, Wifi, CheckCircle } from "lucide-react";
+import Image from "next/image";
 
 export default function TiruppurPage() {
   return (
     <>
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:bg-white focus:px-4 focus:py-2 focus:rounded-lg focus:shadow-lg focus:text-[#0b6d41] focus:font-semibold"
+      >
+        Skip to main content
+      </a>
       <Navbar />
       <Breadcrumb items={[{ label: "Tiruppur" }]} />
-      <TopBanner />
-      <HeroSection />
-      <AffiliationBar />
-      <DistanceCard />
-      <WhyChooseSection />
-      <ProgrammesSection />
-      <PlacementHighlights />
-      <HowToReachSection />
-      <FacilitiesSection />
-      <FAQSection />
-      <ExploreCitiesSection />
+      <main id="main-content">
+        <TopBanner />
+        <HeroSection />
+        <AffiliationBar />
+        <DistanceCard />
+        <WhyChooseSection />
+        <ProgrammesSection />
+        <PlacementHighlights />
+        <CompetitiveAdvantageSection />
+        <HowToReachSection />
+        <FacilitiesSection />
+        <CampusGallerySection />
+        <FAQSection />
+        <ExploreCitiesSection />
+      </main>
       <Footer />
     </>
   );
@@ -88,7 +99,7 @@ function HeroSection() {
               className="bg-white/10 rounded-xl px-4 py-4 text-center"
             >
               <div className="text-xl sm:text-2xl font-black">{stat.value}</div>
-              <div className="text-[10px] sm:text-xs text-white/70 font-medium tracking-wider mt-1">
+              <div className="text-xs text-white/70 font-medium tracking-wider mt-1">
                 {stat.label}
               </div>
             </div>
@@ -368,7 +379,7 @@ function ProgrammesSection() {
                     <span className="font-medium text-gray-700">{p.intake}</span>
                   </div>
                 </div>
-                <p className="text-[11px] text-gray-400 mt-auto">{p.eligibility}</p>
+                <p className="text-xs text-gray-400 mt-auto">{p.eligibility}</p>
                 <a
                   href={p.link}
                   className="block text-center text-xs font-semibold text-[#006837] bg-[#e8f5ea] rounded-lg py-2.5 hover:bg-[#006837] hover:text-white transition-colors mt-1"
@@ -427,7 +438,7 @@ function PlacementHighlights() {
               <div className="text-2xl sm:text-3xl font-black text-[#006837]">
                 {s.value}
               </div>
-              <div className="text-[10px] text-gray-400 font-medium tracking-wider mt-2">
+              <div className="text-xs text-gray-400 font-medium tracking-wider mt-2">
                 {s.label}
               </div>
             </div>
@@ -518,7 +529,7 @@ function HowToReachSection() {
                   <Icon className="w-5 h-5 text-[#006837]" />
                 </div>
                 <div>
-                  <div className="text-[10px] font-semibold text-gray-400 tracking-widest uppercase mb-1">
+                  <div className="text-xs font-semibold text-gray-400 tracking-widest uppercase mb-1">
                     {r.label}
                   </div>
                   <div className="text-sm text-gray-700">{r.desc}</div>
@@ -607,6 +618,90 @@ function FacilitiesSection() {
 }
 
 /* ──────────────────────────────────────────
+   CAMPUS GALLERY SECTION
+────────────────────────────────────────── */
+function CampusGallerySection() {
+  const images = [
+    { src: "/images/institution.avif", alt: "JKKN College of Allied Health Sciences campus building near Tiruppur" },
+    { src: "/images/boys-hostel.png", alt: "Boys hostel at JKKN AHS — allied health science college near Tiruppur" },
+    { src: "/images/girls-hostel.png", alt: "Girls hostel at JKKN AHS — allied health science college near Tiruppur" },
+    { src: "/allied health science main image6.png", alt: "Campus life at JKKN College of Allied Health Sciences near Tiruppur" },
+    { src: "/allied health science main image7.png", alt: "Students at JKKN Allied Health Sciences campus near Tiruppur" },
+    { src: "/allied health science main image8.png", alt: "JKKN AHS facilities and campus infrastructure near Tiruppur" },
+  ];
+
+  return (
+    <section className="bg-[#FBFBEE] py-14 px-4">
+      <div className="max-w-5xl mx-auto text-center">
+        <h2 className="text-2xl sm:text-3xl font-black text-gray-900 mb-3">
+          Campus Gallery
+        </h2>
+        <p className="text-gray-500 text-sm mb-3">
+          A glimpse of our world-class campus and facilities
+        </p>
+        <div className="w-12 h-1 bg-[#7cb983] rounded mx-auto mb-10"></div>
+
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+          {images.map((img) => (
+            <div key={img.src} className="relative aspect-[4/3] rounded-2xl overflow-hidden group">
+              <Image
+                src={img.src}
+                alt={img.alt}
+                fill
+                sizes="(max-width: 768px) 50vw, 33vw"
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ──────────────────────────────────────────
+   COMPETITIVE ADVANTAGE SECTION
+────────────────────────────────────────── */
+function CompetitiveAdvantageSection() {
+  const advantages = [
+    { title: "Wider Course Selection Than Local Options", desc: "With 9 BSc programmes covering cardiac, dialysis, radiology, respiratory, critical care, and more — JKKN offers more specialization options than most colleges accessible from Tiruppur." },
+    { title: "85%+ Placement Rate — Proven Results", desc: "Our graduates secure positions with top hospitals, diagnostic centres, and international healthcare organizations. 60+ recruiting partners including TCS, Apollo, and NHS UK." },
+    { title: "NAAC Approved — Trusted Credential", desc: "NAAC approval and affiliation to The Tamil Nadu Dr. M.G.R. Medical University, Chennai ensures your degree is recognized across India and abroad." },
+    { title: "500+ Bed Teaching Hospital on Campus", desc: "Hands-on clinical training from Year 1 at our multi-specialty teaching hospital. Real patients, real experience — not just classroom theory." },
+    { title: "Well-Connected via NH-544", desc: "Located on the Salem–Coimbatore Highway, JKKN is easily accessible from Tiruppur via Erode. Hostel and transport services available for outstation students." },
+  ];
+
+  return (
+    <section className="bg-white py-14 px-4">
+      <div className="max-w-4xl mx-auto">
+        <h2 className="text-2xl sm:text-3xl font-black text-gray-900 mb-3 text-center">
+          Why Tiruppur Students Choose JKKN AHS
+        </h2>
+        <p className="voice-answer text-gray-500 text-sm mb-3 text-center">
+          More courses, better placements, and trusted credentials
+        </p>
+        <div className="w-12 h-1 bg-[#7cb983] rounded mx-auto mb-10"></div>
+
+        <div className="grid gap-4">
+          {advantages.map((item, i) => (
+            <div
+              key={i}
+              className="snippet-answer flex items-start gap-4 bg-[#f0f7f2] rounded-2xl p-5"
+            >
+              <CheckCircle className="w-6 h-6 text-[#0b6d41] flex-shrink-0 mt-0.5" />
+              <div>
+                <h3 className="font-semibold text-gray-900 text-sm mb-1">{item.title}</h3>
+                <p className="text-sm text-gray-600 leading-relaxed">{item.desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ──────────────────────────────────────────
    FAQ SECTION
 ────────────────────────────────────────── */
 function FAQSection() {
@@ -639,6 +734,22 @@ function FAQSection() {
       q: "How can I apply for admission at JKKN AHS?",
       a: "You can apply online through the official website at https://ahs.jkkn.ac.in/ or visit the campus directly. Admissions for 2026-27 are currently open. Contact the admission office for guidance.",
     },
+    {
+      q: "What are the fees for BSc allied health science in Tamil Nadu?",
+      a: "BSc Allied Health Science fees in Tamil Nadu typically range from ₹50,000 to ₹2,00,000 per year depending on the college and course. At JKKN College of Allied Health Sciences, fees are competitively priced with scholarship options available for meritorious students. Contact the admission office at +91 9345855001 for the latest fee structure.",
+    },
+    {
+      q: "What is the salary after BSc allied health science?",
+      a: "BSc Allied Health Science graduates can expect starting salaries of ₹2.5–4.5 LPA in India, with experienced professionals earning ₹6–12 LPA. International opportunities in Gulf countries, UK, and Australia offer ₹8–25 LPA. JKKN AHS graduates benefit from an 85%+ placement rate with 60+ recruiting partners.",
+    },
+    {
+      q: "How many allied health science colleges are there near Tiruppur?",
+      a: "Tiruppur has limited allied health science colleges within the city. JKKN College of Allied Health Sciences, located 80–90 km from Tiruppur via NH-544, offers a wider selection of 9 BSc programmes with NAAC approval and an 85%+ placement rate.",
+    },
+    {
+      q: "What are the eligibility requirements for allied health science courses?",
+      a: "To pursue BSc Allied Health Sciences at JKKN AHS, candidates must have passed 12th standard (HSC/CBSE/ISC) with Physics, Chemistry, and Biology with a minimum aggregate of 50% (40% for reserved categories). Admission is based on merit and counselling. JKKN is affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai.",
+    },
   ];
 
   const [open, setOpen] = useState<number | null>(0);
@@ -665,6 +776,7 @@ function FAQSection() {
               <button
                 className="w-full flex items-center justify-between px-6 py-5 text-left"
                 onClick={() => setOpen(open === i ? null : i)}
+                aria-expanded={open === i}
               >
                 <span className="font-semibold text-gray-900 text-sm pr-4">
                   {faq.q}
@@ -676,7 +788,7 @@ function FAQSection() {
                 )}
               </button>
               {open === i && (
-                <div className="px-6 pb-5 text-sm text-gray-500 leading-relaxed">
+                <div className="faq-answer snippet-answer px-6 pb-5 text-sm text-gray-500 leading-relaxed">
                   {faq.a}
                 </div>
               )}

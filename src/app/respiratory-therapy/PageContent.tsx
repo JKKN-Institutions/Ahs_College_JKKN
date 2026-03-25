@@ -81,6 +81,24 @@ export default function RespiratoryTherapy() {
                 <AdmissionProcessSection />
                 <FAQSection />
                 <CTASection />
+                {/* City Pages Cross-Links */}
+                <section className="py-12 px-4 md:px-8 lg:px-16 bg-[#f0f7f2]">
+                  <div className="max-w-6xl mx-auto">
+                    <h2 className="text-xl font-semibold text-[#0b6d41] mb-2">
+                      Accessible from Nearby Cities
+                    </h2>
+                    <p className="text-sm text-gray-600 mb-6">
+                      JKKN College is well-connected via NH-544 from major Tamil Nadu cities
+                    </p>
+                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
+                      <Link href="/erode" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors text-center">Erode (30-40 km)</Link>
+                      <Link href="/namakkal" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors text-center">Namakkal (5-10 km)</Link>
+                      <Link href="/salem" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors text-center">Salem (40-50 km)</Link>
+                      <Link href="/tiruppur" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors text-center">Tiruppur (80-90 km)</Link>
+                      <Link href="/coimbatore" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors text-center">Coimbatore (100-110 km)</Link>
+                    </div>
+                  </div>
+                </section>
                 {/* Internal Cross-Links */}
                 <section className="py-12 px-4 md:px-8 lg:px-16 bg-white/50">
                   <div className="max-w-6xl mx-auto">

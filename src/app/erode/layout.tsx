@@ -17,6 +17,12 @@ export const metadata = createPageMetadata({
     "jkkn allied health sciences erode",
     "allied health science admission erode",
   ],
+  ogImage: {
+    url: "https://ahs.jkkn.ac.in/allied-health-science-hero.png",
+    width: 1200,
+    height: 630,
+    alt: "JKKN College of Allied Health Sciences — Best AHS College Near Erode",
+  },
 });
 
 const breadcrumbSchema = {
@@ -105,7 +111,106 @@ const faqSchema = {
         text: "You can apply online through the official website at https://ahs.jkkn.ac.in/ or visit the campus directly. Admissions for 2026-27 are currently open. Contact the admission office for guidance.",
       },
     },
+    {
+      "@type": "Question",
+      name: "What are the fees for BSc allied health science in Tamil Nadu?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "BSc Allied Health Science fees in Tamil Nadu typically range from ₹50,000 to ₹2,00,000 per year depending on the college and course. At JKKN College of Allied Health Sciences, fees are competitively priced with scholarship options available for meritorious students. Contact the admission office at +91 9345855001 for the latest fee structure.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What is the salary after BSc allied health science?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "BSc Allied Health Science graduates can expect starting salaries of ₹2.5–4.5 LPA in India, with experienced professionals earning ₹6–12 LPA. International opportunities in Gulf countries, UK, and Australia offer ₹8–25 LPA. JKKN AHS graduates benefit from an 85%+ placement rate with 60+ recruiting partners.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How many allied health science colleges are there near Erode?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Erode district has a limited number of allied health science colleges. JKKN College of Allied Health Sciences, located just 30–40 km from Erode on NH-544, stands out with 9 BSc programmes, NAAC approval, and an 85%+ placement rate — making it one of the top choices for Erode students.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What are the eligibility requirements for allied health science courses?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "To pursue BSc Allied Health Sciences at JKKN AHS, candidates must have passed 12th standard (HSC/CBSE/ISC) with Physics, Chemistry, and Biology with a minimum aggregate of 50% (40% for reserved categories). Admission is based on merit and counselling. JKKN is affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai.",
+      },
+    },
   ],
+};
+
+const educationalOrgSchema = {
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "@id": "https://ahs.jkkn.ac.in/#organization",
+  name: "JKKN College of Allied Health Sciences",
+  alternateName: "JKKN AHS",
+  url: "https://ahs.jkkn.ac.in/",
+  logo: "https://ahs.jkkn.ac.in/ahs-logo.svg",
+  image: "https://ahs.jkkn.ac.in/allied-health-science-hero.png",
+  foundingDate: "1952",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Natarajapuram, NH-544 (Salem–Coimbatore Highway)",
+    addressLocality: "Komarapalayam",
+    addressRegion: "Tamil Nadu",
+    postalCode: "638183",
+    addressCountry: "IN",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 11.4467,
+    longitude: 77.7046,
+  },
+  telephone: "+919345855001",
+  email: "info@jkkn.ac.in",
+  sameAs: ["https://maps.app.goo.gl/JJ5dKGY4NAHReFpj7"],
+  areaServed: {
+    "@type": "City",
+    name: "Erode",
+  },
+  parentOrganization: {
+    "@type": "Organization",
+    name: "JKKN Institutions",
+    url: "https://jkkn.ac.in/",
+  },
+  hasCredential: {
+    "@type": "EducationalOccupationalCredential",
+    credentialCategory: "Accreditation",
+    recognizedBy: {
+      "@type": "Organization",
+      name: "NAAC",
+    },
+  },
+  department: [
+    { "@type": "EducationalOrganization", name: "B.Sc Cardiac Technology", url: "https://ahs.jkkn.ac.in/cardiac-technology" },
+    { "@type": "EducationalOrganization", name: "B.Sc Dialysis Technology", url: "https://ahs.jkkn.ac.in/dialysis-technology" },
+    { "@type": "EducationalOrganization", name: "B.Sc Radiology & Imaging Technology", url: "https://ahs.jkkn.ac.in/radiology-imaging-technology" },
+    { "@type": "EducationalOrganization", name: "B.Sc Operation Theatre & Anaesthesia Technology", url: "https://ahs.jkkn.ac.in/operation-theatre-anaesthesia" },
+    { "@type": "EducationalOrganization", name: "B.Sc Respiratory Therapy", url: "https://ahs.jkkn.ac.in/respiratory-therapy" },
+    { "@type": "EducationalOrganization", name: "B.Sc Physician Assistant", url: "https://ahs.jkkn.ac.in/physician-assistant" },
+    { "@type": "EducationalOrganization", name: "B.Sc Critical Care Technology", url: "https://ahs.jkkn.ac.in/critical-care-technology" },
+    { "@type": "EducationalOrganization", name: "B.Sc Medical Record Science", url: "https://ahs.jkkn.ac.in/medical-record-science" },
+    { "@type": "EducationalOrganization", name: "B.Sc Accident & Emergency Care Technology", url: "https://ahs.jkkn.ac.in/accident-emergency-care" },
+  ],
+};
+
+const speakableSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  name: "Allied Health Science Colleges in Erode | JKKN AHS",
+  url: "https://ahs.jkkn.ac.in/erode",
+  speakable: {
+    "@type": "SpeakableSpecification",
+    cssSelector: [".faq-answer", ".snippet-answer", ".voice-answer", "h1", "h2"],
+  },
 };
 
 export default function ErodeLayout({
@@ -122,6 +227,14 @@ export default function ErodeLayout({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(educationalOrgSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }}
       />
       {children}
     </>
