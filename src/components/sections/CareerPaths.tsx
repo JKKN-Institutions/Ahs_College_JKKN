@@ -141,6 +141,9 @@ export function CareerPaths() {
                                 </motion.div>
                             ))}
                         </div>
+                        <Link href="/placements" className="inline-flex items-center gap-2 mt-8 text-[#0b6d41] font-bold hover:underline text-sm">
+                            View Full Placement Record <span aria-hidden="true">&rarr;</span>
+                        </Link>
                     </div>
                 </div>
             </div>

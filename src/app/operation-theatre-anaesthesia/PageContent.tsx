@@ -686,6 +686,9 @@ function CTASection() {
                     >
                         Contact Admissions
                     </a>
+                    <Link href="/placements" className="px-4 md:px-6 py-2.5 md:py-3 border-2 border-[#0b6d41] text-[#0b6d41] rounded-full font-bold hover:bg-[#0b6d41] hover:text-white transition-colors whitespace-nowrap text-xs md:text-sm">
+                        Placement Record
+                    </Link>
                 </div>
             </div>
         </section>

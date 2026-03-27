@@ -7,6 +7,7 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteConfig } from "@/lib/site-config";
 import { MapPin, ChevronDown, ChevronUp, GraduationCap, Phone, TrendingUp, Building2, GitBranch, Target, Globe, Bus, Activity, Microscope, HeartPulse, Droplet, ShieldCheck, Wind, Stethoscope, Heart, FileText, Ambulance, Map, Train, Plane, Home, BookOpen, Trophy, Wifi, CheckCircle } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function NamakkalPage() {
   return (
@@ -457,6 +458,9 @@ function PlacementHighlights() {
             </span>
           ))}
         </div>
+        <Link href="/placements" className="inline-flex items-center gap-2 mt-6 text-[#006837] font-bold hover:underline text-sm">
+            View full placement details <span aria-hidden="true">&rarr;</span>
+        </Link>
       </div>
     </section>
   );

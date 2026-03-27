@@ -589,7 +589,7 @@ function WhyChooseSection() {
 function FAQSection() {
     const [openIndex, setOpenIndex] = useState<number | null>(0);
 
-    const faqs = [
+    const faqs: { q: string; a: React.ReactNode }[] = [
         {
             q: "What are the eligibility criteria for BSc Allied Health Sciences at JKKN?",
             a: "Candidates must have completed +2 with Physics, Chemistry, and Biology (PCB) with minimum 50% marks for General category, 45% for OBC, and 40% for SC/ST. Age should be 17 years or above as on 31st December 2026. English must be a compulsory subject."
@@ -620,7 +620,7 @@ function FAQSection() {
         },
         {
             q: "What is the placement record at JKKN AHS?",
-            a: "JKKN has a 95% placement rate with an average package of ₹3.2 LPA. Graduates are placed in leading hospitals like Apollo, Fortis, MIOT, and international healthcare facilities in UK, UAE, Saudi Arabia, and Singapore."
+            a: <>JKKN has a 95% placement rate with an average package of ₹3.2 LPA. Graduates are placed in leading hospitals like Apollo, Fortis, MIOT, and international healthcare facilities in UK, UAE, Saudi Arabia, and Singapore. <Link href="/placements" className="text-[#0b6d41] font-semibold hover:underline">View full placement record</Link>.</>
         },
         {
             q: "Can NRI students apply for admission?",

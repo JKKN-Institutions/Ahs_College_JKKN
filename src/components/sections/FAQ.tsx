@@ -25,7 +25,7 @@ const faqs: { question: string; answer: ReactNode }[] = [
     },
     {
         question: "What is the placement record and average salary after B.Sc. AHS?",
-        answer: <>JKKN Allied Health Sciences College has 95%+ placement rate with 100+ recruiting partners including Apollo, MIOT, Fortis, Manipal, SRL, Thyrocare, and Dr. Lal PathLabs. The average package is ₹3.2 LPA with highest packages reaching ₹7.5 LPA. International placement opportunities are also available in UAE, Saudi Arabia, UK, and Australia. <Link href="/#placements" className="text-[#0b6d41] font-semibold hover:underline">See placement details</Link>.</>
+        answer: <>JKKN Allied Health Sciences College has 95%+ placement rate with 100+ recruiting partners including Apollo, MIOT, Fortis, Manipal, SRL, Thyrocare, and Dr. Lal PathLabs. The average package is ₹3.2 LPA with highest packages reaching ₹7.5 LPA. International placement opportunities are also available in UAE, Saudi Arabia, UK, and Australia. <Link href="/placements" className="text-[#0b6d41] font-semibold hover:underline">See placement details</Link>.</>
     },
     {
         question: "Does JKKN provide hospital training and internship?",
@@ -45,7 +45,7 @@ const faqs: { question: string; answer: ReactNode }[] = [
     },
     {
         question: "What makes JKKN different from other Allied Health Sciences colleges?",
-        answer: <>JKKN stands apart with its {BRAND_LEGACY.FULL_TEXT} of educational excellence, state-of-the-art <Link href="/lab" className="text-[#0b6d41] font-semibold hover:underline">laboratories</Link> matching hospital standards, partnerships with 50+ leading hospitals for clinical training, experienced Learning Facilitators with industry expertise, 95%+ <Link href="/#placements" className="text-[#0b6d41] font-semibold hover:underline">placement rate</Link> with top healthcare organizations, scholarship programs for deserving Learners, and comprehensive support from <Link href="/admission" className="text-[#0b6d41] font-semibold hover:underline">admissions</Link> through career placement.</>
+        answer: <>JKKN stands apart with its {BRAND_LEGACY.FULL_TEXT} of educational excellence, state-of-the-art <Link href="/lab" className="text-[#0b6d41] font-semibold hover:underline">laboratories</Link> matching hospital standards, partnerships with 50+ leading hospitals for clinical training, experienced Learning Facilitators with industry expertise, 95%+ <Link href="/placements" className="text-[#0b6d41] font-semibold hover:underline">placement rate</Link> with top healthcare organizations, scholarship programs for deserving Learners, and comprehensive support from <Link href="/admission" className="text-[#0b6d41] font-semibold hover:underline">admissions</Link> through career placement.</>
     }
 ];
 

@@ -26,6 +26,9 @@ const pages = [
   // Admission page
   { loc: 'https://ahs.jkkn.ac.in/admission', changefreq: 'monthly', priority: '0.9', lastmod: '2026-03-24' },
 
+  // Placements page
+  { loc: 'https://ahs.jkkn.ac.in/placements', changefreq: 'monthly', priority: '0.9', lastmod: '2026-03-26' },
+
   // Institutional pages
   { loc: 'https://ahs.jkkn.ac.in/our-management', changefreq: 'monthly', priority: '0.8', lastmod: '2026-02-15' },
   { loc: 'https://ahs.jkkn.ac.in/our-trust', changefreq: 'monthly', priority: '0.8', lastmod: '2026-02-15' },
