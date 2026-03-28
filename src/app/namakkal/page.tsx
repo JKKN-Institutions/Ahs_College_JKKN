@@ -91,7 +91,7 @@ function HeroSection() {
           {[
             { value: "92%+", label: "PLACEMENTS" },
             { value: "12", label: "LPA HIGHEST" },
-            { value: "10km", label: "FROM NAMAKKAL" },
+            { value: "~15km", label: "FROM TIRUCHENGODE" },
             { value: "9", label: "PROGRAMMES" },
           ].map((stat) => (
             <div
@@ -157,15 +157,15 @@ function DistanceCard() {
       <div className="max-w-3xl mx-auto">
         <div className="bg-white rounded-2xl shadow-sm flex flex-col sm:flex-row items-center gap-4 p-6">
           <div className="flex-1 text-center sm:text-left">
-            <span className="text-5xl font-black text-[#006837]">10</span>
+            <span className="text-5xl font-black text-[#006837]">15</span>
             <span className="text-xl font-bold text-[#006837] ml-1">km</span>
           </div>
           <div className="flex-[3] text-center sm:text-left">
             <div className="font-bold text-gray-800 text-base">
-              From Namakkal to JKKN AHS
+              In Namakkal district — from Tiruchengode
             </div>
             <div className="text-gray-500 text-sm mt-1">
-              15-20 minutes via NH-544 (Salem-Coimbatore Highway)
+              Located in Komarapalayam via NH-544 (Salem-Coimbatore Highway)
             </div>
           </div>
           <a
@@ -216,7 +216,7 @@ function WhyChooseSection() {
     {
       icon: Bus,
       title: "Easy Commute",
-      desc: "Just 5-10 km from Namakkal. Daily commute or comfortable hostel — your choice.",
+      desc: "Located in Namakkal district (Komarapalayam), just 15 km from Tiruchengode. Daily commute or comfortable hostel — your choice.",
     },
   ];
 
@@ -514,10 +514,10 @@ function HowToReachSection() {
           <MapPin className="w-5 h-5" />
           <div>
             <div className="font-bold text-base">
-              Namakkal → JKKN AHS Campus
+              Tiruchengode → JKKN AHS Campus
             </div>
             <div className="text-white/70 text-xs mt-0.5">
-              5-10 km • 15-20 minutes
+              ~15 km • In Namakkal district (Komarapalayam)
             </div>
           </div>
         </div>
@@ -667,7 +667,7 @@ function CampusGallerySection() {
 ────────────────────────────────────────── */
 function CompetitiveAdvantageSection() {
   const advantages = [
-    { title: "Closest AHS Campus to Namakkal — Just 5–10 km", desc: "Located in Komarapalayam, JKKN is the nearest allied health sciences college to Namakkal city. Daily commute is easy, and hostel is available for those who prefer staying on campus." },
+    { title: "In Namakkal District — Komarapalayam Campus", desc: "Located in Komarapalayam (Namakkal district), JKKN is the closest allied health sciences college for Namakkal district residents. Just 15 km from Tiruchengode. Daily commute or hostel accommodation — your choice." },
     { title: "9 BSc Programmes — Widest Selection in the District", desc: "From Cardiac Technology to Emergency Care, JKKN offers the most diverse range of allied health programmes in Namakkal district." },
     { title: "85%+ Placement with International Opportunities", desc: "Our graduates secure positions in top hospitals across India, Gulf countries, UK (NHS), and Australia. 60+ recruiting partners ensure strong career outcomes." },
     { title: "74+ Years of Institutional Legacy", desc: "Founded in 1952, JKKN Institutions brings over seven decades of educational excellence. A trusted name for Namakkal families." },
@@ -711,11 +711,11 @@ function FAQSection() {
   const faqs = [
     {
       q: "What is the best allied health sciences college in Namakkal?",
-      a: "JKKN College of Allied Health Sciences, located just 5-10 km from Namakkal on NH-544, is widely regarded as one of the top allied health sciences colleges in Namakkal district. Approved by NAAC and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers excellent programmes with strong placement support.",
+      a: "JKKN College of Allied Health Sciences is located in Komarapalayam, Namakkal district, on NH-544. It's widely regarded as one of the top allied health sciences colleges in Namakkal district. Approved by NAAC and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers excellent programmes with strong placement support.",
     },
     {
       q: "How far is JKKN AHS from Namakkal?",
-      a: "JKKN AHS is approximately 5-10 km from Namakkal city centre, which takes about 15-20 minutes by road via NH-544 (Salem-Coimbatore Highway). Regular bus services are available from Namakkal.",
+      a: "JKKN AHS is located in Komarapalayam, Namakkal district (not Namakkal town). It's approximately 15 km from Tiruchengode and around 66 km from Namakkal town via NH-544 (Salem-Coimbatore Highway). Regular bus services connect the campus to nearby towns.",
     },
     {
       q: "What is Allied Health Sciences?",
@@ -747,7 +747,7 @@ function FAQSection() {
     },
     {
       q: "How many allied health science colleges are there in Namakkal?",
-      a: "Namakkal district has several allied health science colleges. JKKN College of Allied Health Sciences, located just 5–10 km from Namakkal city centre, is the closest and offers 9 BSc programmes with NAAC approval and an 85%+ placement rate — making it the preferred choice for Namakkal students.",
+      a: "Namakkal district has several allied health science colleges. JKKN College of Allied Health Sciences, located in Komarapalayam (Namakkal district), offers 9 BSc programmes with NAAC approval and an 85%+ placement rate — making it the preferred choice for Namakkal district students.",
     },
     {
       q: "What are the eligibility requirements for allied health science courses?",
@@ -790,11 +790,13 @@ function FAQSection() {
                   <ChevronDown className="w-5 h-5 text-gray-400 flex-shrink-0" />
                 )}
               </button>
-              {open === i && (
-                <div className="faq-answer snippet-answer px-6 pb-5 text-sm text-gray-500 leading-relaxed">
-                  {faq.a}
-                </div>
-              )}
+              <div
+                className={`faq-answer snippet-answer px-6 pb-5 text-sm text-gray-500 leading-relaxed ${
+                  open === i ? "" : "hidden"
+                }`}
+              >
+                {faq.a}
+              </div>
             </div>
           ))}
         </div>
@@ -808,10 +810,10 @@ function FAQSection() {
 ────────────────────────────────────────── */
 function ExploreCitiesSection() {
   const cities = [
-    { name: "Salem", distance: "40-50 km", href: "/salem" },
-    { name: "Erode", distance: "30-40 km", href: "/erode" },
-    { name: "Coimbatore", distance: "100-110 km", href: "/coimbatore" },
-    { name: "Tiruppur", distance: "80-90 km", href: "/tiruppur" },
+    { name: "Salem", distance: "~58 km", href: "/salem" },
+    { name: "Erode", distance: "~22 km", href: "/erode" },
+    { name: "Coimbatore", distance: "~105 km", href: "/coimbatore" },
+    { name: "Tiruppur", distance: "~67 km", href: "/tiruppur" },
   ];
 
   return (

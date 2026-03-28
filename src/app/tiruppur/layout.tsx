@@ -1,9 +1,9 @@
 import { createPageMetadata } from "@/lib/metadata";
 
 export const metadata = createPageMetadata({
-  title: "Allied Health Science Courses in Tiruppur | JKKN AHS — Admissions 2026-27",
+  title: "Allied Health Sciences Colleges in Tiruppur | JKKN AHS",
   description:
-    "Looking for allied health science courses in Tiruppur? JKKN College of Allied Health Sciences is accessible via NH-544. 9 BSc courses, 85%+ placements, NAAC approved. Apply now!",
+    "JKKN AHS — ~67 km from Tiruppur via NH-544. 9 BSc allied health programmes, NAAC accredited, 85%+ placements, 500+ bed hospital. Admissions open 2026-27.",
   path: "/tiruppur",
   keywords: [
     "allied health science courses in tiruppur",
@@ -60,7 +60,7 @@ const faqSchema = {
       name: "What is the best allied health sciences college in Tiruppur?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "JKKN College of Allied Health Sciences, located just 80-90 km from Tiruppur on NH-544, is widely regarded as one of the top allied health sciences colleges accessible from Tiruppur. Approved by NAAC and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers excellent programmes with strong placement support.",
+        text: "JKKN College of Allied Health Sciences, located just ~67 km from Tiruppur on NH-544, is widely regarded as one of the top allied health sciences colleges accessible from Tiruppur. Approved by NAAC and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers excellent programmes with strong placement support.",
       },
     },
     {
@@ -68,7 +68,7 @@ const faqSchema = {
       name: "How far is JKKN AHS from Tiruppur?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "JKKN AHS is approximately 80-90 km from Tiruppur city centre, which takes about 1.5-2 hours by road via NH-544 via Erode, then State Highway towards Tiruppur. Regular bus services are available from Tiruppur.",
+        text: "JKKN AHS is approximately ~67 km from Tiruppur city centre, which takes about 1.5 hours by road via NH-544 through Erode. Regular bus services are available from Tiruppur.",
       },
     },
     {
@@ -132,7 +132,7 @@ const faqSchema = {
       name: "How many allied health science colleges are there near Tiruppur?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Tiruppur has limited allied health science colleges within the city. JKKN College of Allied Health Sciences, located 80–90 km from Tiruppur via NH-544, offers a wider selection of 9 BSc programmes with NAAC approval and an 85%+ placement rate.",
+        text: "Tiruppur has limited allied health science colleges within the city. JKKN College of Allied Health Sciences, located ~67 km from Tiruppur via NH-544, offers a wider selection of 9 BSc programmes with NAAC approval and an 85%+ placement rate.",
       },
     },
     {

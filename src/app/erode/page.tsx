@@ -83,7 +83,7 @@ function HeroSection() {
         <p className="text-white/85 text-base sm:text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
           Erode to JKKN — a short, smooth ride on NH-544. JKKN College of Allied
           Health Sciences offers top-tier allied health sciences programmes with
-          92%+ placement support — just 30-40 km from Erode with excellent
+          92%+ placement support — just ~22 km from Erode with excellent
           highway connectivity.
         </p>
 
@@ -158,7 +158,7 @@ function DistanceCard() {
       <div className="max-w-3xl mx-auto">
         <div className="bg-white rounded-2xl shadow-sm flex flex-col sm:flex-row items-center gap-4 p-6">
           <div className="flex-1 text-center sm:text-left">
-            <span className="text-5xl font-black text-[#006837]">35</span>
+            <span className="text-5xl font-black text-[#006837]">~22</span>
             <span className="text-xl font-bold text-[#006837] ml-1">km</span>
           </div>
           <div className="flex-[3] text-center sm:text-left">
@@ -166,7 +166,7 @@ function DistanceCard() {
               From Erode to JKKN AHS
             </div>
             <div className="text-gray-500 text-sm mt-1">
-              40-50 minutes via NH-544 — direct highway connectivity
+              35-40 minutes via NH-544 — direct highway connectivity
             </div>
           </div>
           <a
@@ -217,7 +217,7 @@ function WhyChooseSection() {
     {
       icon: Bus,
       title: "Easy Commute",
-      desc: "Just 30-40 km from Erode. Daily commute or comfortable hostel — your choice.",
+      desc: "Just ~22 km from Erode. Daily commute or comfortable hostel — your choice.",
     },
   ];
 
@@ -229,7 +229,7 @@ function WhyChooseSection() {
         </h2>
         <p className="text-gray-500 max-w-2xl mx-auto mb-3 text-sm sm:text-base leading-relaxed">
           Erode&apos;s strong industrial base means families value quality education with
-          good placement outcomes. JKKN is just 30-40 km away — closer than many
+          good placement outcomes. JKKN is just ~22 km away — closer than many
           colleges within Erode city itself. The excellent NH-544 connectivity makes
           daily commute comfortable and quick.
         </p>
@@ -518,7 +518,7 @@ function HowToReachSection() {
               Erode → JKKN AHS Campus
             </div>
             <div className="text-white/70 text-xs mt-0.5">
-              30-40 km • 40-50 minutes
+              ~22 km • 35-40 minutes
             </div>
           </div>
         </div>
@@ -712,11 +712,11 @@ function FAQSection() {
   const faqs = [
     {
       q: "What is the best allied health sciences college near Erode?",
-      a: "JKKN College of Allied Health Sciences, located just 30-40 km from Erode on NH-544, is widely regarded as one of the top allied health sciences colleges accessible from Erode. Approved by NAAC and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers excellent programmes with strong placement support.",
+      a: "JKKN College of Allied Health Sciences, located just ~22 km from Erode on NH-544, is widely regarded as one of the top allied health sciences colleges accessible from Erode. Approved by NAAC and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers excellent programmes with strong placement support.",
     },
     {
       q: "How far is JKKN AHS from Erode?",
-      a: "JKKN AHS is approximately 30-40 km from Erode city centre, which takes about 40-50 minutes by road via NH-544 — direct highway connectivity. Regular bus services are available from Erode.",
+      a: "JKKN AHS is approximately ~22 km from Erode city centre, which takes about 35-40 minutes by road via NH-544 — direct highway connectivity. Regular bus services are available from Erode.",
     },
     {
       q: "What is Allied Health Sciences?",
@@ -732,7 +732,7 @@ function FAQSection() {
     },
     {
       q: "Does JKKN AHS provide hostel for Erode students?",
-      a: "Yes, JKKN AHS provides separate hostel facilities for boys and girls. Students from Erode can also opt for daily commute as the campus is just 40-50 minutes away. College transport services are available.",
+      a: "Yes, JKKN AHS provides separate hostel facilities for boys and girls. Students from Erode can also opt for daily commute as the campus is just 35-40 minutes away. College transport services are available.",
     },
     {
       q: "How can I apply for admission at JKKN AHS?",
@@ -748,7 +748,7 @@ function FAQSection() {
     },
     {
       q: "How many allied health science colleges are there near Erode?",
-      a: "Erode district has a limited number of allied health science colleges. JKKN College of Allied Health Sciences, located just 30–40 km from Erode on NH-544, stands out with 9 BSc programmes, NAAC approval, and an 85%+ placement rate — making it one of the top choices for Erode students.",
+      a: "Erode district has a limited number of allied health science colleges. JKKN College of Allied Health Sciences, located just ~22 km from Erode on NH-544, stands out with 9 BSc programmes, NAAC approval, and an 85%+ placement rate — making it one of the top choices for Erode students.",
     },
     {
       q: "What are the eligibility requirements for allied health science courses?",
@@ -793,11 +793,13 @@ function FAQSection() {
                   <ChevronDown className="w-5 h-5 text-gray-400 flex-shrink-0" />
                 )}
               </button>
-              {open === i && (
-                <div className="faq-answer snippet-answer px-6 pb-5 text-sm text-gray-500 leading-relaxed">
-                  {faq.a}
-                </div>
-              )}
+              <div
+                className={`faq-answer snippet-answer px-6 pb-5 text-sm text-gray-500 leading-relaxed ${
+                  open === i ? "" : "hidden"
+                }`}
+              >
+                {faq.a}
+              </div>
             </div>
           ))}
         </div>
@@ -811,10 +813,10 @@ function FAQSection() {
 ────────────────────────────────────────── */
 function ExploreCitiesSection() {
   const cities = [
-    { name: "Namakkal", distance: "5-10 km", href: "/namakkal" },
-    { name: "Salem", distance: "40-50 km", href: "/salem" },
-    { name: "Tiruppur", distance: "80-90 km", href: "/tiruppur" },
-    { name: "Coimbatore", distance: "100-110 km", href: "/coimbatore" },
+    { name: "Namakkal", distance: "~66 km", href: "/namakkal" },
+    { name: "Salem", distance: "~58 km", href: "/salem" },
+    { name: "Tiruppur", distance: "~67 km", href: "/tiruppur" },
+    { name: "Coimbatore", distance: "~105 km", href: "/coimbatore" },
   ];
 
   return (

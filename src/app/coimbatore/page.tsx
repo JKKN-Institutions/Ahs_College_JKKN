@@ -217,7 +217,7 @@ function WhyChooseSection() {
     {
       icon: Bus,
       title: "Easy Commute",
-      desc: "Just 100-110 km from Coimbatore. Daily commute or comfortable hostel — your choice.",
+      desc: "Just ~105 km from Coimbatore. Daily commute or comfortable hostel — your choice.",
     },
   ];
 
@@ -490,7 +490,7 @@ function HowToReachSection() {
     {
       icon: Plane,
       label: "NEAREST AIRPORT",
-      desc: "Coimbatore International Airport (Code: CJB) (~100 km)",
+      desc: "Coimbatore International Airport (Code: CJB) (~105 km)",
     },
     {
       icon: Home,
@@ -518,7 +518,7 @@ function HowToReachSection() {
               Coimbatore → JKKN AHS Campus
             </div>
             <div className="text-white/70 text-xs mt-0.5">
-              100-110 km • 2-2.5 hours
+              ~105 km • 2-2.5 hours
             </div>
           </div>
         </div>
@@ -712,11 +712,11 @@ function FAQSection() {
   const faqs = [
     {
       q: "What is the best allied health sciences college in Coimbatore?",
-      a: "JKKN College of Allied Health Sciences, located just 100-110 km from Coimbatore on NH-544, is widely regarded as one of the top allied health sciences colleges accessible from Coimbatore. Approved by NAAC and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers excellent programmes with strong placement support.",
+      a: "JKKN College of Allied Health Sciences, located just ~105 km from Coimbatore on NH-544, is widely regarded as one of the top allied health sciences colleges accessible from Coimbatore. Approved by NAAC and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers excellent programmes with strong placement support.",
     },
     {
       q: "How far is JKKN AHS from Coimbatore?",
-      a: "JKKN AHS is approximately 100-110 km from Coimbatore city centre, which takes about 2-2.5 hours by road via NH-544 (Coimbatore-Salem Highway) — direct route. Regular bus services are available from Coimbatore.",
+      a: "JKKN AHS is approximately ~105 km from Coimbatore city centre, which takes about 2-2.5 hours by road via NH-544 (Coimbatore-Salem Highway) — direct route. Regular bus services are available from Coimbatore.",
     },
     {
       q: "What is Allied Health Sciences?",
@@ -748,7 +748,7 @@ function FAQSection() {
     },
     {
       q: "How many allied health science colleges are there in Coimbatore?",
-      a: "Coimbatore has 14+ allied health science colleges. JKKN College of Allied Health Sciences, located 100–110 km from Coimbatore on NH-544, offers a strong value proposition with competitive fees, 9 BSc programmes, NAAC approval, and an 85%+ placement rate with international opportunities.",
+      a: "Coimbatore has 14+ allied health science colleges. JKKN College of Allied Health Sciences, located ~105 km from Coimbatore on NH-544, offers a strong value proposition with competitive fees, 9 BSc programmes, NAAC approval, and an 85%+ placement rate with international opportunities.",
     },
     {
       q: "What are the eligibility requirements for allied health science courses?",
@@ -793,11 +793,13 @@ function FAQSection() {
                   <ChevronDown className="w-5 h-5 text-gray-400 flex-shrink-0" />
                 )}
               </button>
-              {open === i && (
-                <div className="faq-answer snippet-answer px-6 pb-5 text-sm text-gray-500 leading-relaxed">
-                  {faq.a}
-                </div>
-              )}
+              <div
+                className={`faq-answer snippet-answer px-6 pb-5 text-sm text-gray-500 leading-relaxed ${
+                  open === i ? "" : "hidden"
+                }`}
+              >
+                {faq.a}
+              </div>
             </div>
           ))}
         </div>
@@ -811,10 +813,10 @@ function FAQSection() {
 ────────────────────────────────────────── */
 function ExploreCitiesSection() {
   const cities = [
-    { name: "Namakkal", distance: "5-10 km", href: "/namakkal" },
-    { name: "Salem", distance: "40-50 km", href: "/salem" },
-    { name: "Erode", distance: "30-40 km", href: "/erode" },
-    { name: "Tiruppur", distance: "80-90 km", href: "/tiruppur" },
+    { name: "Namakkal", distance: "~66 km", href: "/namakkal" },
+    { name: "Salem", distance: "~58 km", href: "/salem" },
+    { name: "Erode", distance: "~22 km", href: "/erode" },
+    { name: "Tiruppur", distance: "~67 km", href: "/tiruppur" },
   ];
 
   return (

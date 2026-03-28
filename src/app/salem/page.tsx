@@ -91,7 +91,7 @@ function HeroSection() {
           {[
             { value: "92%+", label: "PLACEMENTS" },
             { value: "12", label: "LPA HIGHEST" },
-            { value: "45km", label: "FROM SALEM" },
+            { value: "~58 km", label: "FROM SALEM" },
             { value: "9", label: "PROGRAMMES" },
           ].map((stat) => (
             <div
@@ -216,7 +216,7 @@ function WhyChooseSection() {
     {
       icon: Bus,
       title: "Easy Commute",
-      desc: "Just 40-50 km from Salem. Daily commute or comfortable hostel — your choice.",
+      desc: "Just ~58 km from Salem. Daily commute or comfortable hostel — your choice.",
     },
   ];
 
@@ -484,7 +484,7 @@ function HowToReachSection() {
     {
       icon: Train,
       label: "NEAREST RAILWAY STATION",
-      desc: "Salem Junction (~45 km from campus)",
+      desc: "Salem Junction (~58 km from campus)",
     },
     {
       icon: Plane,
@@ -517,7 +517,7 @@ function HowToReachSection() {
               Salem → JKKN AHS Campus
             </div>
             <div className="text-white/70 text-xs mt-0.5">
-              40-50 km • 50-60 minutes
+              ~58 km • about 1 hour
             </div>
           </div>
         </div>
@@ -711,11 +711,11 @@ function FAQSection() {
   const faqs = [
     {
       q: "What is the best allied health sciences college near Salem?",
-      a: "JKKN College of Allied Health Sciences, located just 40-50 km from Salem on NH-544, is widely regarded as one of the top allied health sciences colleges accessible from Salem. Approved by NAAC and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers excellent programmes with strong placement support.",
+      a: "JKKN College of Allied Health Sciences, located just ~58 km from Salem on NH-544, is widely regarded as one of the top allied health sciences colleges accessible from Salem. Approved by NAAC and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers excellent programmes with strong placement support.",
     },
     {
       q: "How far is JKKN AHS from Salem?",
-      a: "JKKN AHS is approximately 40-50 km from Salem city centre, which takes about 50-60 minutes by road via NH-544 (Salem-Coimbatore Highway) — direct route. Regular bus services are available from Salem.",
+      a: "JKKN AHS is approximately ~58 km from Salem city centre, which takes about 1 hour by road via NH-544 (Salem-Coimbatore Highway) — direct route. Regular bus services are available from Salem.",
     },
     {
       q: "What is Allied Health Sciences?",
@@ -747,7 +747,7 @@ function FAQSection() {
     },
     {
       q: "How many allied health science colleges are there near Salem?",
-      a: "Salem has multiple allied health science colleges including government and private institutions. JKKN College of Allied Health Sciences, located 40–50 km from Salem on NH-544, offers a competitive alternative with 9 BSc programmes, NAAC approval, affordable fees, and strong placement support.",
+      a: "Salem has multiple allied health science colleges including government and private institutions. JKKN College of Allied Health Sciences, located ~58 km from Salem on NH-544, offers a competitive alternative with 9 BSc programmes, NAAC approval, affordable fees, and strong placement support.",
     },
     {
       q: "What are the eligibility requirements for allied health science courses?",
@@ -790,11 +790,13 @@ function FAQSection() {
                   <ChevronDown className="w-5 h-5 text-gray-400 flex-shrink-0" />
                 )}
               </button>
-              {open === i && (
-                <div className="faq-answer snippet-answer px-6 pb-5 text-sm text-gray-500 leading-relaxed">
-                  {faq.a}
-                </div>
-              )}
+              <div
+                className={`faq-answer snippet-answer px-6 pb-5 text-sm text-gray-500 leading-relaxed ${
+                  open === i ? "" : "hidden"
+                }`}
+              >
+                {faq.a}
+              </div>
             </div>
           ))}
         </div>
@@ -808,10 +810,10 @@ function FAQSection() {
 ────────────────────────────────────────── */
 function ExploreCitiesSection() {
   const cities = [
-    { name: "Namakkal", distance: "5-10 km", href: "/namakkal" },
-    { name: "Erode", distance: "30-40 km", href: "/erode" },
-    { name: "Tiruppur", distance: "80-90 km", href: "/tiruppur" },
-    { name: "Coimbatore", distance: "100-110 km", href: "/coimbatore" },
+    { name: "Namakkal", distance: "~66 km", href: "/namakkal" },
+    { name: "Erode", distance: "~22 km", href: "/erode" },
+    { name: "Tiruppur", distance: "~67 km", href: "/tiruppur" },
+    { name: "Coimbatore", distance: "~105 km", href: "/coimbatore" },
   ];
 
   return (

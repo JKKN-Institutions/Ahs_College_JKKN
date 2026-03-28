@@ -1,9 +1,9 @@
 import { createPageMetadata } from "@/lib/metadata";
 
 export const metadata = createPageMetadata({
-  title: "Allied Health Science Courses in Salem | JKKN AHS — Admissions 2026-27",
+  title: "Allied Health Science Courses in Salem | JKKN AHS",
   description:
-    "Looking for allied health science courses in Salem? JKKN College of Allied Health Sciences is just 40-50 km from Salem on NH-544. 9 BSc courses, 85%+ placements, NAAC approved. Apply now!",
+    "JKKN AHS — ~58 km from Salem on NH-544. 9 BSc allied health programmes, NAAC accredited, 85%+ placements, 500+ bed hospital. Admissions open 2026-27.",
   path: "/salem",
   keywords: [
     "allied health science courses in salem",
@@ -60,7 +60,7 @@ const faqSchema = {
       name: "What is the best allied health sciences college near Salem?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "JKKN College of Allied Health Sciences, located just 40-50 km from Salem on NH-544, is widely regarded as one of the top allied health sciences colleges accessible from Salem. Approved by NAAC and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers excellent programmes with strong placement support.",
+        text: "JKKN College of Allied Health Sciences, located just ~58 km from Salem on NH-544, is widely regarded as one of the top allied health sciences colleges accessible from Salem. Approved by NAAC and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers excellent programmes with strong placement support.",
       },
     },
     {
@@ -68,7 +68,7 @@ const faqSchema = {
       name: "How far is JKKN AHS from Salem?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "JKKN AHS is approximately 40-50 km from Salem city centre, which takes about 50-60 minutes by road via NH-544 (Salem-Coimbatore Highway) — direct route. Regular bus services are available from Salem.",
+        text: "JKKN AHS is approximately ~58 km from Salem city centre, which takes about 1 hour by road via NH-544 (Salem-Coimbatore Highway) — direct route. Regular bus services are available from Salem.",
       },
     },
     {
@@ -132,7 +132,7 @@ const faqSchema = {
       name: "How many allied health science colleges are there near Salem?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Salem has multiple allied health science colleges including government and private institutions. JKKN College of Allied Health Sciences, located 40–50 km from Salem on NH-544, offers a competitive alternative with 9 BSc programmes, NAAC approval, affordable fees, and strong placement support.",
+        text: "Salem has multiple allied health science colleges including government and private institutions. JKKN College of Allied Health Sciences, located ~58 km from Salem on NH-544, offers a competitive alternative with 9 BSc programmes, NAAC approval, affordable fees, and strong placement support.",
       },
     },
     {

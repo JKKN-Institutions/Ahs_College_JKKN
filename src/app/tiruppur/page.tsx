@@ -92,7 +92,7 @@ function HeroSection() {
           {[
             { value: "92%+", label: "PLACEMENTS" },
             { value: "12", label: "LPA HIGHEST" },
-            { value: "85km", label: "FROM TIRUPPUR" },
+            { value: "~67 km", label: "FROM TIRUPPUR" },
             { value: "9", label: "PROGRAMMES" },
           ].map((stat) => (
             <div
@@ -158,7 +158,7 @@ function DistanceCard() {
       <div className="max-w-3xl mx-auto">
         <div className="bg-white rounded-2xl shadow-sm flex flex-col sm:flex-row items-center gap-4 p-6">
           <div className="flex-1 text-center sm:text-left">
-            <span className="text-5xl font-black text-[#006837]">85</span>
+            <span className="text-5xl font-black text-[#006837]">~67</span>
             <span className="text-xl font-bold text-[#006837] ml-1">km</span>
           </div>
           <div className="flex-[3] text-center sm:text-left">
@@ -166,7 +166,7 @@ function DistanceCard() {
               From Tiruppur to JKKN AHS
             </div>
             <div className="text-gray-500 text-sm mt-1">
-              1.5-2 hours via NH-544 via Erode, then State Highway towards Tiruppur
+              about 1.5 hours via NH-544 through Erode
             </div>
           </div>
           <a
@@ -217,7 +217,7 @@ function WhyChooseSection() {
     {
       icon: Bus,
       title: "Easy Commute",
-      desc: "Just 80-90 km from Tiruppur. Daily commute or comfortable hostel — your choice.",
+      desc: "Just ~67 km from Tiruppur. Daily commute or comfortable hostel — your choice.",
     },
   ];
 
@@ -518,7 +518,7 @@ function HowToReachSection() {
               Tiruppur → JKKN AHS Campus
             </div>
             <div className="text-white/70 text-xs mt-0.5">
-              80-90 km • 1.5-2 hours
+              ~67 km • about 1.5 hours
             </div>
           </div>
         </div>
@@ -712,11 +712,11 @@ function FAQSection() {
   const faqs = [
     {
       q: "What is the best allied health sciences college in Tiruppur?",
-      a: "JKKN College of Allied Health Sciences, located just 80-90 km from Tiruppur on NH-544, is widely regarded as one of the top allied health sciences colleges accessible from Tiruppur. Approved by NAAC and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers excellent programmes with strong placement support.",
+      a: "JKKN College of Allied Health Sciences, located just ~67 km from Tiruppur on NH-544, is widely regarded as one of the top allied health sciences colleges accessible from Tiruppur. Approved by NAAC and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers excellent programmes with strong placement support.",
     },
     {
       q: "How far is JKKN AHS from Tiruppur?",
-      a: "JKKN AHS is approximately 80-90 km from Tiruppur city centre, which takes about 1.5-2 hours by road via NH-544 via Erode, then State Highway towards Tiruppur. Regular bus services are available from Tiruppur.",
+      a: "JKKN AHS is approximately ~67 km from Tiruppur city centre, which takes about 1.5 hours by road via NH-544 through Erode. Regular bus services are available from Tiruppur.",
     },
     {
       q: "What is Allied Health Sciences?",
@@ -732,7 +732,7 @@ function FAQSection() {
     },
     {
       q: "Does JKKN AHS provide hostel for Tiruppur students?",
-      a: "Yes, JKKN AHS provides separate hostel facilities for boys and girls. Students from Tiruppur can also opt for daily commute as the campus is just 1.5-2 hours away. College transport services are available.",
+      a: "Yes, JKKN AHS provides separate hostel facilities for boys and girls. Students from Tiruppur can also opt for daily commute as the campus is just about 1.5 hours away. College transport services are available.",
     },
     {
       q: "How can I apply for admission at JKKN AHS?",
@@ -748,7 +748,7 @@ function FAQSection() {
     },
     {
       q: "How many allied health science colleges are there near Tiruppur?",
-      a: "Tiruppur has limited allied health science colleges within the city. JKKN College of Allied Health Sciences, located 80–90 km from Tiruppur via NH-544, offers a wider selection of 9 BSc programmes with NAAC approval and an 85%+ placement rate.",
+      a: "Tiruppur has limited allied health science colleges within the city. JKKN College of Allied Health Sciences, located ~67 km from Tiruppur via NH-544, offers a wider selection of 9 BSc programmes with NAAC approval and an 85%+ placement rate.",
     },
     {
       q: "What are the eligibility requirements for allied health science courses?",
@@ -791,11 +791,13 @@ function FAQSection() {
                   <ChevronDown className="w-5 h-5 text-gray-400 flex-shrink-0" />
                 )}
               </button>
-              {open === i && (
-                <div className="faq-answer snippet-answer px-6 pb-5 text-sm text-gray-500 leading-relaxed">
-                  {faq.a}
-                </div>
-              )}
+              <div
+                className={`faq-answer snippet-answer px-6 pb-5 text-sm text-gray-500 leading-relaxed ${
+                  open === i ? "" : "hidden"
+                }`}
+              >
+                {faq.a}
+              </div>
             </div>
           ))}
         </div>
@@ -809,10 +811,10 @@ function FAQSection() {
 ────────────────────────────────────────── */
 function ExploreCitiesSection() {
   const cities = [
-    { name: "Namakkal", distance: "5-10 km", href: "/namakkal" },
-    { name: "Salem", distance: "40-50 km", href: "/salem" },
-    { name: "Erode", distance: "30-40 km", href: "/erode" },
-    { name: "Coimbatore", distance: "100-110 km", href: "/coimbatore" },
+    { name: "Namakkal", distance: "~66 km", href: "/namakkal" },
+    { name: "Salem", distance: "~58 km", href: "/salem" },
+    { name: "Erode", distance: "~22 km", href: "/erode" },
+    { name: "Coimbatore", distance: "~105 km", href: "/coimbatore" },
   ];
 
   return (
