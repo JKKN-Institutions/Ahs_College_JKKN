@@ -1,11 +1,9 @@
-"use client";
-
-import { useState } from "react";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
+import { CityFAQAccordion } from "@/components/ui/CityFAQAccordion";
 import { siteConfig } from "@/lib/site-config";
-import { MapPin, ChevronDown, ChevronUp, GraduationCap, Phone, TrendingUp, Building2, GitBranch, Target, Globe, Bus, Activity, Microscope, HeartPulse, Droplet, ShieldCheck, Wind, Stethoscope, Heart, FileText, Ambulance, Map, Train, Plane, Home, BookOpen, Trophy, Wifi, CheckCircle } from "lucide-react";
+import { MapPin, GraduationCap, Phone, TrendingUp, Building2, GitBranch, Target, Globe, Bus, Activity, Microscope, HeartPulse, Droplet, ShieldCheck, Wind, Stethoscope, Heart, FileText, Ambulance, Map, Train, Plane, Home, BookOpen, Trophy, Wifi, CheckCircle } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -32,7 +30,65 @@ export default function CoimbatorePage() {
         <HowToReachSection />
         <FacilitiesSection />
         <CampusGallerySection />
-        <FAQSection />
+        <SnippetBaitSection />
+        <CityFAQAccordion cityName="Coimbatore" faqs={[
+          {
+            q: "What is the best allied health sciences college in Coimbatore?",
+            a: "JKKN College of Allied Health Sciences, located just ~105 km from Coimbatore on NH-544, is widely regarded as one of the top allied health sciences colleges accessible from Coimbatore. Approved by NAAC and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers excellent programmes with strong placement support.",
+          },
+          {
+            q: "How far is JKKN AHS from Coimbatore?",
+            a: "JKKN AHS is approximately ~105 km from Coimbatore city centre, which takes about 2-2.5 hours by road via NH-544 (Coimbatore-Salem Highway) — direct route. Regular bus services are available from Coimbatore.",
+          },
+          {
+            q: "What is Allied Health Sciences?",
+            a: "Allied Health Sciences includes healthcare professions that support doctors and nurses in diagnosing, treating, and rehabilitating patients. At JKKN College of Allied Health Sciences, you can study physiotherapy, medical lab technology, radiology, cardiac technology, and more.",
+          },
+          {
+            q: "Is BPT a good career option?",
+            a: "Yes, BPT (Bachelor of Physiotherapy) is an excellent career choice. Physiotherapists are in high demand in hospitals, sports clinics, rehabilitation centres, and private practice. Graduates can also pursue international careers in Gulf countries, UK, and Australia.",
+          },
+          {
+            q: "How is AHS different from nursing?",
+            a: "While nursing focuses on patient care and bedside support, Allied Health Sciences covers specialised diagnostic and therapeutic roles like physiotherapy, lab testing, radiology imaging, and cardiac monitoring. Both are valuable healthcare careers, but AHS offers more specialisation options.",
+          },
+          {
+            q: "Does JKKN AHS provide hostel for Coimbatore students?",
+            a: "Yes, JKKN AHS provides separate hostel facilities for boys and girls. Students from Coimbatore can also opt for daily commute as the campus is just 2-2.5 hours away. College transport services are available.",
+          },
+          {
+            q: "How can I apply for admission at JKKN AHS?",
+            a: "You can apply online through the official website at https://ahs.jkkn.ac.in/ or visit the campus directly. Admissions for 2026-27 are currently open. Contact the admission office for guidance.",
+          },
+          {
+            q: "What are the fees for BSc allied health science in Tamil Nadu?",
+            a: "BSc Allied Health Science fees in Tamil Nadu typically range from ₹50,000 to ₹2,00,000 per year depending on the college and course. At JKKN College of Allied Health Sciences, fees are competitively priced with scholarship options available for meritorious students. Contact the admission office at +91 9345855001 for the latest fee structure.",
+          },
+          {
+            q: "What is the salary after BSc allied health science?",
+            a: "BSc Allied Health Science graduates can expect starting salaries of ₹2.5–4.5 LPA in India, with experienced professionals earning ₹6–12 LPA. International opportunities in Gulf countries, UK, and Australia offer ₹8–25 LPA. JKKN AHS graduates benefit from an 85%+ placement rate with 60+ recruiting partners.",
+          },
+          {
+            q: "How many allied health science colleges are there in Coimbatore?",
+            a: "Coimbatore has 14+ allied health science colleges. JKKN College of Allied Health Sciences, located ~105 km from Coimbatore on NH-544, offers a strong value proposition with competitive fees, 9 BSc programmes, NAAC approval, and an 85%+ placement rate with international opportunities.",
+          },
+          {
+            q: "What are the eligibility requirements for allied health science courses?",
+            a: "To pursue BSc Allied Health Sciences at JKKN AHS, candidates must have passed 12th standard (HSC/CBSE/ISC) with Physics, Chemistry, and Biology with a minimum aggregate of 50% (40% for reserved categories). Admission is based on merit and counselling. JKKN is affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai.",
+          },
+          {
+            q: "With so many colleges in Coimbatore, why should I choose JKKN AHS?",
+            a: "While Coimbatore has 14+ allied health science colleges, JKKN AHS offers distinct advantages: NAAC accreditation with strong university affiliation, a 500+ bed multi-specialty teaching hospital on campus (rare among competitors), 85%+ placement rate with international opportunities (NHS UK, Cleveland Clinic Abu Dhabi), smaller batch sizes for personalised attention, and significantly lower cost of living compared to Coimbatore city. The NH-544 location ensures easy weekend travel home.",
+          },
+          {
+            q: "How does Coimbatore's medical hub benefit JKKN AHS graduates?",
+            a: "Coimbatore is Tamil Nadu's second-largest medical hub with 40+ multi-specialty hospitals including KMCH, PSG Hospital, Ganga Hospital, and Sri Ramakrishna Hospital. JKKN AHS graduates benefit from this ecosystem through placement partnerships, clinical exposure visits, guest lectures from Coimbatore specialists, and a ready job market just 2 hours from campus. Many JKKN alumni work across Coimbatore's healthcare sector.",
+          },
+          {
+            q: "Does proximity to Coimbatore International Airport benefit JKKN AHS students?",
+            a: "Yes, Coimbatore International Airport (CJB) — just ~80 km from campus — is a significant advantage for international placements. JKKN AHS has placed students at NHS UK, Cleveland Clinic Abu Dhabi, and hospitals in Singapore and Saudi Arabia. The airport connection makes international career transitions smooth, with direct flights to major cities and Gulf destinations.",
+          },
+        ]} />
         <ExploreCitiesSection />
       </main>
       <Footer />
@@ -92,7 +148,7 @@ function HeroSection() {
           {[
             { value: "92%+", label: "PLACEMENTS" },
             { value: "12", label: "LPA HIGHEST" },
-            { value: "105km", label: "FROM COIMBATORE" },
+            { value: "~105km", label: "FROM COIMBATORE" },
             { value: "9", label: "PROGRAMMES" },
           ].map((stat) => (
             <div
@@ -250,6 +306,14 @@ function WhyChooseSection() {
             );
           })}
         </div>
+
+        <p className="text-center text-sm text-gray-500 mt-8">
+          Students from nearby cities also choose JKKN AHS:{" "}
+          <a href="/erode" className="text-[#006837] hover:underline font-medium">Erode (~22 km)</a>,{" "}
+          <a href="/salem" className="text-[#006837] hover:underline font-medium">Salem (~58 km)</a>,{" "}
+          <a href="/tiruppur" className="text-[#006837] hover:underline font-medium">Tiruppur (~67 km)</a>, and{" "}
+          <a href="/namakkal" className="text-[#006837] hover:underline font-medium">Namakkal</a>.
+        </p>
       </div>
     </section>
   );
@@ -706,102 +770,47 @@ function CompetitiveAdvantageSection() {
 }
 
 /* ──────────────────────────────────────────
-   FAQ SECTION
+   SNIPPET BAIT SECTION
 ────────────────────────────────────────── */
-function FAQSection() {
-  const faqs = [
-    {
-      q: "What is the best allied health sciences college in Coimbatore?",
-      a: "JKKN College of Allied Health Sciences, located just ~105 km from Coimbatore on NH-544, is widely regarded as one of the top allied health sciences colleges accessible from Coimbatore. Approved by NAAC and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers excellent programmes with strong placement support.",
-    },
-    {
-      q: "How far is JKKN AHS from Coimbatore?",
-      a: "JKKN AHS is approximately ~105 km from Coimbatore city centre, which takes about 2-2.5 hours by road via NH-544 (Coimbatore-Salem Highway) — direct route. Regular bus services are available from Coimbatore.",
-    },
-    {
-      q: "What is Allied Health Sciences?",
-      a: "Allied Health Sciences includes healthcare professions that support doctors and nurses in diagnosing, treating, and rehabilitating patients. At JKKN College of Allied Health Sciences, you can study physiotherapy, medical lab technology, radiology, cardiac technology, and more.",
-    },
-    {
-      q: "Is BPT a good career option?",
-      a: "Yes, BPT (Bachelor of Physiotherapy) is an excellent career choice. Physiotherapists are in high demand in hospitals, sports clinics, rehabilitation centres, and private practice. Graduates can also pursue international careers in Gulf countries, UK, and Australia.",
-    },
-    {
-      q: "How is AHS different from nursing?",
-      a: "While nursing focuses on patient care and bedside support, Allied Health Sciences covers specialised diagnostic and therapeutic roles like physiotherapy, lab testing, radiology imaging, and cardiac monitoring. Both are valuable healthcare careers, but AHS offers more specialisation options.",
-    },
-    {
-      q: "Does JKKN AHS provide hostel for Coimbatore students?",
-      a: "Yes, JKKN AHS provides separate hostel facilities for boys and girls. Students from Coimbatore can also opt for daily commute as the campus is just 2-2.5 hours away. College transport services are available.",
-    },
-    {
-      q: "How can I apply for admission at JKKN AHS?",
-      a: "You can apply online through the official website at https://ahs.jkkn.ac.in/ or visit the campus directly. Admissions for 2026-27 are currently open. Contact the admission office for guidance.",
-    },
-    {
-      q: "What are the fees for BSc allied health science in Tamil Nadu?",
-      a: "BSc Allied Health Science fees in Tamil Nadu typically range from ₹50,000 to ₹2,00,000 per year depending on the college and course. At JKKN College of Allied Health Sciences, fees are competitively priced with scholarship options available for meritorious students. Contact the admission office at +91 9345855001 for the latest fee structure.",
-    },
-    {
-      q: "What is the salary after BSc allied health science?",
-      a: "BSc Allied Health Science graduates can expect starting salaries of ₹2.5–4.5 LPA in India, with experienced professionals earning ₹6–12 LPA. International opportunities in Gulf countries, UK, and Australia offer ₹8–25 LPA. JKKN AHS graduates benefit from an 85%+ placement rate with 60+ recruiting partners.",
-    },
-    {
-      q: "How many allied health science colleges are there in Coimbatore?",
-      a: "Coimbatore has 14+ allied health science colleges. JKKN College of Allied Health Sciences, located ~105 km from Coimbatore on NH-544, offers a strong value proposition with competitive fees, 9 BSc programmes, NAAC approval, and an 85%+ placement rate with international opportunities.",
-    },
-    {
-      q: "What are the eligibility requirements for allied health science courses?",
-      a: "To pursue BSc Allied Health Sciences at JKKN AHS, candidates must have passed 12th standard (HSC/CBSE/ISC) with Physics, Chemistry, and Biology with a minimum aggregate of 50% (40% for reserved categories). Admission is based on merit and counselling. JKKN is affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai.",
-    },
-  ];
-
-  const [open, setOpen] = useState<number | null>(0);
-
+function SnippetBaitSection() {
   return (
-    <section className="bg-white py-14 px-4">
-      <div className="max-w-3xl mx-auto text-center">
-        <h2 className="text-2xl sm:text-3xl font-black text-gray-900 mb-3">
-          Frequently Asked Questions
+    <section className="bg-[#FBFBEE] py-14 px-4">
+      <div className="max-w-3xl mx-auto">
+        <h2 className="text-2xl sm:text-3xl font-black text-gray-900 mb-3 text-center">
+          Allied Health Sciences in Coimbatore — Quick Guide
         </h2>
-        <p className="text-gray-500 text-sm mb-3">
-          Allied Health Sciences College in Coimbatore — Your Questions Answered
-        </p>
         <div className="w-12 h-1 bg-[#7cb983] rounded mx-auto mb-10"></div>
 
-        <div className="text-left flex flex-col gap-3">
-          {faqs.map((faq, i) => (
-            <div
-              key={i}
-              className={`rounded-2xl border transition-colors ${
-                open === i
-                  ? "border-[#7cb983]"
-                  : "border-gray-200"
-              } bg-white`}
-            >
-              <button
-                className="w-full flex items-center justify-between px-6 py-5 text-left"
-                onClick={() => setOpen(open === i ? null : i)}
-                aria-expanded={open === i}
-              >
-                <span className="font-semibold text-gray-900 text-sm pr-4">
-                  {faq.q}
-                </span>
-                {open === i ? (
-                  <ChevronUp className="w-5 h-5 text-gray-400 flex-shrink-0" />
-                ) : (
-                  <ChevronDown className="w-5 h-5 text-gray-400 flex-shrink-0" />
-                )}
-              </button>
-              <div
-                className={`faq-answer snippet-answer px-6 pb-5 text-sm text-gray-500 leading-relaxed ${
-                  open === i ? "" : "hidden"
-                }`}
-              >
-                {faq.a}
-              </div>
+        <div className="space-y-8">
+          <div className="bg-white rounded-2xl p-6 shadow-sm">
+            <h3 className="font-bold text-gray-900 mb-3">What are Allied Health Sciences?</h3>
+            <p className="snippet-answer voice-answer text-sm text-gray-600 leading-relaxed">
+              Allied Health Sciences are healthcare professions that support doctors and nurses in diagnosing, treating, and preventing diseases. These include specialisations like cardiac technology, radiology, dialysis technology, respiratory therapy, and emergency care. Near Coimbatore, JKKN College of Allied Health Sciences offers 9 BSc programmes with clinical training at a 500+ bed teaching hospital — ~105 km via NH-544.
+            </p>
+          </div>
+
+          <div className="bg-white rounded-2xl p-6 shadow-sm">
+            <h3 className="font-bold text-gray-900 mb-3">Top Allied Health Science Courses Available Near Coimbatore</h3>
+            <ul className="snippet-answer text-sm text-gray-600 space-y-2">
+              <li className="flex items-start gap-2"><span className="text-[#006837] mt-1">•</span>B.Sc Cardiac Technology — ECG, echocardiography, cardiac catheterisation</li>
+              <li className="flex items-start gap-2"><span className="text-[#006837] mt-1">•</span>B.Sc Radiology &amp; Imaging Technology — X-ray, CT, MRI, ultrasound</li>
+              <li className="flex items-start gap-2"><span className="text-[#006837] mt-1">•</span>B.Sc Dialysis Technology — haemodialysis, peritoneal dialysis, renal care</li>
+              <li className="flex items-start gap-2"><span className="text-[#006837] mt-1">•</span>B.Sc Operation Theatre &amp; Anaesthesia Technology — surgical support, anaesthesia monitoring</li>
+              <li className="flex items-start gap-2"><span className="text-[#006837] mt-1">•</span>B.Sc Respiratory Therapy — ventilator management, pulmonary rehabilitation</li>
+              <li className="flex items-start gap-2"><span className="text-[#006837] mt-1">•</span>B.Sc Physician Assistant — clinical diagnosis, patient management</li>
+              <li className="flex items-start gap-2"><span className="text-[#006837] mt-1">•</span>B.Sc Critical Care Technology — ICU monitoring, life support systems</li>
+              <li className="flex items-start gap-2"><span className="text-[#006837] mt-1">•</span>B.Sc Medical Record Science — health informatics, hospital data management</li>
+              <li className="flex items-start gap-2"><span className="text-[#006837] mt-1">•</span>B.Sc Accident &amp; Emergency Care Technology — trauma care, emergency response</li>
+            </ul>
+          </div>
+
+          <div className="bg-white rounded-2xl p-6 shadow-sm">
+            <h3 className="font-bold text-gray-900 mb-3">How to Choose the Best AHS College in Coimbatore Region</h3>
+            <div className="snippet-answer voice-answer text-sm text-gray-600 leading-relaxed space-y-2">
+              <p>Coimbatore has 14+ allied health science colleges. When choosing, consider university affiliation (The Tamil Nadu Dr. M.G.R. Medical University is the gold standard), NAAC accreditation, attached teaching hospital quality, placement track record, fee structure, and clinical training hours.</p>
+              <p>JKKN College of Allied Health Sciences — ~105 km from Coimbatore on NH-544 — stands out with NAAC accreditation, a 500+ bed hospital on campus, 85%+ placement rate, international placement opportunities (NHS UK, Cleveland Clinic Abu Dhabi), and competitive fees with scholarship options.</p>
             </div>
-          ))}
+          </div>
         </div>
       </div>
     </section>
@@ -848,7 +857,6 @@ function ExploreCitiesSection() {
 
         <a
           href="/"
-          onClick={() => sessionStorage.setItem("scrollToSection", "programs")}
           className="inline-block px-10 py-4 bg-[#7cb983] text-white font-bold rounded-full text-sm hover:bg-[#6ba872] transition-colors"
         >
           View All Programmes

@@ -1,11 +1,8 @@
-"use client";
-
-import { useState } from "react";
+import { CityFAQAccordion } from "@/components/ui/CityFAQAccordion";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
-import { siteConfig } from "@/lib/site-config";
-import { MapPin, ChevronDown, ChevronUp, GraduationCap, Phone, TrendingUp, Building2, GitBranch, Target, Globe, Bus, Activity, Microscope, HeartPulse, Droplet, ShieldCheck, Wind, Stethoscope, Heart, FileText, Ambulance, Map, Train, Plane, Home, BookOpen, Trophy, Wifi, CheckCircle } from "lucide-react";
+import { MapPin, GraduationCap, Phone, TrendingUp, Building2, GitBranch, Target, Globe, Bus, Activity, Microscope, HeartPulse, Droplet, ShieldCheck, Wind, Stethoscope, Heart, FileText, Ambulance, Map, Train, Plane, Home, BookOpen, Trophy, Wifi, CheckCircle } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -32,7 +29,68 @@ export default function ErodePage() {
         <HowToReachSection />
         <FacilitiesSection />
         <CampusGallerySection />
-        <FAQSection />
+        <SnippetBaitSection />
+        <CityFAQAccordion
+          cityName="Erode"
+          faqs={[
+            {
+              q: "What is the best allied health sciences college near Erode?",
+              a: "JKKN College of Allied Health Sciences, located just ~22 km from Erode on NH-544, is widely regarded as one of the top allied health sciences colleges accessible from Erode. Approved by NAAC and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers excellent programmes with strong placement support.",
+            },
+            {
+              q: "How far is JKKN AHS from Erode?",
+              a: "JKKN AHS is approximately ~22 km from Erode city centre, which takes about 35-40 minutes by road via NH-544 — direct highway connectivity. Regular bus services are available from Erode.",
+            },
+            {
+              q: "What is Allied Health Sciences?",
+              a: "Allied Health Sciences includes healthcare professions that support doctors and nurses in diagnosing, treating, and rehabilitating patients. At JKKN College of Allied Health Sciences, you can study physiotherapy, medical lab technology, radiology, cardiac technology, and more.",
+            },
+            {
+              q: "Is BPT a good career option?",
+              a: "Yes, BPT (Bachelor of Physiotherapy) is an excellent career choice. Physiotherapists are in high demand in hospitals, sports clinics, rehabilitation centres, and private practice. Graduates can also pursue international careers in Gulf countries, UK, and Australia.",
+            },
+            {
+              q: "How is AHS different from nursing?",
+              a: "While nursing focuses on patient care and bedside support, Allied Health Sciences covers specialised diagnostic and therapeutic roles like physiotherapy, lab testing, radiology imaging, and cardiac monitoring. Both are valuable healthcare careers, but AHS offers more specialisation options.",
+            },
+            {
+              q: "Does JKKN AHS provide hostel for Erode students?",
+              a: "Yes, JKKN AHS provides separate hostel facilities for boys and girls. Students from Erode can also opt for daily commute as the campus is just 35-40 minutes away. College transport services are available.",
+            },
+            {
+              q: "How can I apply for admission at JKKN AHS?",
+              a: "You can apply online through the official website at https://ahs.jkkn.ac.in/ or visit the campus directly. Admissions for 2026-27 are currently open. Contact the admission office for guidance.",
+            },
+            {
+              q: "What are the fees for BSc allied health science in Tamil Nadu?",
+              a: "BSc Allied Health Science fees in Tamil Nadu typically range from ₹50,000 to ₹2,00,000 per year depending on the college and course. At JKKN College of Allied Health Sciences, fees are competitively priced with scholarship options available for meritorious students. Contact the admission office at +91 9345855001 for the latest fee structure.",
+            },
+            {
+              q: "What is the salary after BSc allied health science?",
+              a: "BSc Allied Health Science graduates can expect starting salaries of ₹2.5–4.5 LPA in India, with experienced professionals earning ₹6–12 LPA. International opportunities in Gulf countries, UK, and Australia offer ₹8–25 LPA. JKKN AHS graduates benefit from an 85%+ placement rate with 60+ recruiting partners.",
+            },
+            {
+              q: "How many allied health science colleges are there near Erode?",
+              a: "Erode district has a limited number of allied health science colleges. JKKN College of Allied Health Sciences, located just ~22 km from Erode on NH-544, stands out with 9 BSc programmes, NAAC approval, and an 85%+ placement rate — making it one of the top choices for Erode students.",
+            },
+            {
+              q: "What are the eligibility requirements for allied health science courses?",
+              a: "To pursue BSc Allied Health Sciences at JKKN AHS, candidates must have passed 12th standard (HSC/CBSE/ISC) with Physics, Chemistry, and Biology with a minimum aggregate of 50% (40% for reserved categories). Admission is based on merit and counselling. JKKN is affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai.",
+            },
+            {
+              q: "Are there healthcare career opportunities in Erode's textile industry?",
+              a: "Yes, Erode's thriving textile and turmeric industries have created demand for occupational health professionals, industrial physiotherapists, and emergency care technicians. JKKN AHS graduates are well-positioned for roles in occupational health centres at textile mills, industrial clinics, and corporate wellness programmes across the Erode industrial belt.",
+            },
+            {
+              q: "Can Erode students commute daily to JKKN AHS?",
+              a: "Absolutely. At just ~22 km via NH-544, many Erode students commute daily. The journey takes only 35-40 minutes by bus or bike. JKKN also provides dedicated college transport services with multiple pickup points in Erode city. Hostel facilities are available for those who prefer to stay on campus.",
+            },
+            {
+              q: "Why choose JKKN AHS near Erode over colleges in Coimbatore?",
+              a: "JKKN AHS offers comparable programme quality to Coimbatore colleges but with key advantages: closer proximity (~22 km vs 105 km from Erode), lower cost of living, personalised attention with smaller batch sizes, direct clinical exposure at the 500+ bed JKKN Hospital from Year 1, and strong local industry connections for placements. The NH-544 location also means easy access to opportunities in both Erode and Coimbatore.",
+            },
+          ]}
+        />
         <ExploreCitiesSection />
       </main>
       <Footer />
@@ -92,7 +150,7 @@ function HeroSection() {
           {[
             { value: "92%+", label: "PLACEMENTS" },
             { value: "12", label: "LPA HIGHEST" },
-            { value: "35km", label: "FROM ERODE" },
+            { value: "~22km", label: "FROM ERODE" },
             { value: "9", label: "PROGRAMMES" },
           ].map((stat) => (
             <div
@@ -250,6 +308,13 @@ function WhyChooseSection() {
             );
           })}
         </div>
+        <p className="text-center text-sm text-gray-500 mt-8">
+          Students from nearby cities also choose JKKN AHS:{" "}
+          <a href="/salem" className="text-[#006837] hover:underline font-medium">Salem (~58 km)</a>,{" "}
+          <a href="/namakkal" className="text-[#006837] hover:underline font-medium">Namakkal</a>,{" "}
+          <a href="/tiruppur" className="text-[#006837] hover:underline font-medium">Tiruppur (~67 km)</a>, and{" "}
+          <a href="/coimbatore" className="text-[#006837] hover:underline font-medium">Coimbatore (~105 km)</a>.
+        </p>
       </div>
     </section>
   );
@@ -706,102 +771,47 @@ function CompetitiveAdvantageSection() {
 }
 
 /* ──────────────────────────────────────────
-   FAQ SECTION
+   SNIPPET BAIT SECTION
 ────────────────────────────────────────── */
-function FAQSection() {
-  const faqs = [
-    {
-      q: "What is the best allied health sciences college near Erode?",
-      a: "JKKN College of Allied Health Sciences, located just ~22 km from Erode on NH-544, is widely regarded as one of the top allied health sciences colleges accessible from Erode. Approved by NAAC and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers excellent programmes with strong placement support.",
-    },
-    {
-      q: "How far is JKKN AHS from Erode?",
-      a: "JKKN AHS is approximately ~22 km from Erode city centre, which takes about 35-40 minutes by road via NH-544 — direct highway connectivity. Regular bus services are available from Erode.",
-    },
-    {
-      q: "What is Allied Health Sciences?",
-      a: "Allied Health Sciences includes healthcare professions that support doctors and nurses in diagnosing, treating, and rehabilitating patients. At JKKN College of Allied Health Sciences, you can study physiotherapy, medical lab technology, radiology, cardiac technology, and more.",
-    },
-    {
-      q: "Is BPT a good career option?",
-      a: "Yes, BPT (Bachelor of Physiotherapy) is an excellent career choice. Physiotherapists are in high demand in hospitals, sports clinics, rehabilitation centres, and private practice. Graduates can also pursue international careers in Gulf countries, UK, and Australia.",
-    },
-    {
-      q: "How is AHS different from nursing?",
-      a: "While nursing focuses on patient care and bedside support, Allied Health Sciences covers specialised diagnostic and therapeutic roles like physiotherapy, lab testing, radiology imaging, and cardiac monitoring. Both are valuable healthcare careers, but AHS offers more specialisation options.",
-    },
-    {
-      q: "Does JKKN AHS provide hostel for Erode students?",
-      a: "Yes, JKKN AHS provides separate hostel facilities for boys and girls. Students from Erode can also opt for daily commute as the campus is just 35-40 minutes away. College transport services are available.",
-    },
-    {
-      q: "How can I apply for admission at JKKN AHS?",
-      a: "You can apply online through the official website at https://ahs.jkkn.ac.in/ or visit the campus directly. Admissions for 2026-27 are currently open. Contact the admission office for guidance.",
-    },
-    {
-      q: "What are the fees for BSc allied health science in Tamil Nadu?",
-      a: "BSc Allied Health Science fees in Tamil Nadu typically range from ₹50,000 to ₹2,00,000 per year depending on the college and course. At JKKN College of Allied Health Sciences, fees are competitively priced with scholarship options available for meritorious students. Contact the admission office at +91 9345855001 for the latest fee structure.",
-    },
-    {
-      q: "What is the salary after BSc allied health science?",
-      a: "BSc Allied Health Science graduates can expect starting salaries of ₹2.5–4.5 LPA in India, with experienced professionals earning ₹6–12 LPA. International opportunities in Gulf countries, UK, and Australia offer ₹8–25 LPA. JKKN AHS graduates benefit from an 85%+ placement rate with 60+ recruiting partners.",
-    },
-    {
-      q: "How many allied health science colleges are there near Erode?",
-      a: "Erode district has a limited number of allied health science colleges. JKKN College of Allied Health Sciences, located just ~22 km from Erode on NH-544, stands out with 9 BSc programmes, NAAC approval, and an 85%+ placement rate — making it one of the top choices for Erode students.",
-    },
-    {
-      q: "What are the eligibility requirements for allied health science courses?",
-      a: "To pursue BSc Allied Health Sciences at JKKN AHS, candidates must have passed 12th standard (HSC/CBSE/ISC) with Physics, Chemistry, and Biology with a minimum aggregate of 50% (40% for reserved categories). Admission is based on merit and counselling. JKKN is affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai.",
-    },
-  ];
-
-  const [open, setOpen] = useState<number | null>(0);
-
+function SnippetBaitSection() {
   return (
-    <section className="bg-white py-14 px-4">
-      <div className="max-w-3xl mx-auto text-center">
-        <h2 className="text-2xl sm:text-3xl font-black text-gray-900 mb-3">
-          Frequently Asked Questions
+    <section className="bg-[#FBFBEE] py-14 px-4">
+      <div className="max-w-3xl mx-auto">
+        <h2 className="text-2xl sm:text-3xl font-black text-gray-900 mb-3 text-center">
+          Allied Health Sciences in Erode — Quick Guide
         </h2>
-        <p className="text-gray-500 text-sm mb-3">
-          Allied Health Sciences College near Erode — Your Questions Answered
-        </p>
         <div className="w-12 h-1 bg-[#7cb983] rounded mx-auto mb-10"></div>
 
-        <div className="text-left flex flex-col gap-3">
-          {faqs.map((faq, i) => (
-            <div
-              key={i}
-              className={`rounded-2xl border transition-colors ${
-                open === i
-                  ? "border-[#7cb983]"
-                  : "border-gray-200"
-              } bg-white`}
-            >
-              <button
-                className="w-full flex items-center justify-between px-6 py-5 text-left"
-                onClick={() => setOpen(open === i ? null : i)}
-                aria-expanded={open === i}
-              >
-                <span className="font-semibold text-gray-900 text-sm pr-4">
-                  {faq.q}
-                </span>
-                {open === i ? (
-                  <ChevronUp className="w-5 h-5 text-gray-400 flex-shrink-0" />
-                ) : (
-                  <ChevronDown className="w-5 h-5 text-gray-400 flex-shrink-0" />
-                )}
-              </button>
-              <div
-                className={`faq-answer snippet-answer px-6 pb-5 text-sm text-gray-500 leading-relaxed ${
-                  open === i ? "" : "hidden"
-                }`}
-              >
-                {faq.a}
-              </div>
+        <div className="space-y-8">
+          <div className="bg-white rounded-2xl p-6 shadow-sm">
+            <h3 className="font-bold text-gray-900 mb-3">What are Allied Health Sciences?</h3>
+            <p className="snippet-answer voice-answer text-sm text-gray-600 leading-relaxed">
+              Allied Health Sciences are healthcare professions that support doctors and nurses in diagnosing, treating, and preventing diseases. These include specialisations like cardiac technology, radiology, dialysis technology, respiratory therapy, and emergency care. In Erode, JKKN College of Allied Health Sciences offers 9 BSc programmes with clinical training at a 500+ bed teaching hospital.
+            </p>
+          </div>
+
+          <div className="bg-white rounded-2xl p-6 shadow-sm">
+            <h3 className="font-bold text-gray-900 mb-3">Top Allied Health Science Courses Available Near Erode</h3>
+            <ul className="snippet-answer text-sm text-gray-600 space-y-2">
+              <li className="flex items-start gap-2"><span className="text-[#006837] mt-1">•</span>B.Sc Cardiac Technology — ECG, echocardiography, cardiac catheterisation</li>
+              <li className="flex items-start gap-2"><span className="text-[#006837] mt-1">•</span>B.Sc Radiology &amp; Imaging Technology — X-ray, CT, MRI, ultrasound</li>
+              <li className="flex items-start gap-2"><span className="text-[#006837] mt-1">•</span>B.Sc Dialysis Technology — haemodialysis, peritoneal dialysis, renal care</li>
+              <li className="flex items-start gap-2"><span className="text-[#006837] mt-1">•</span>B.Sc Operation Theatre &amp; Anaesthesia Technology — surgical support, anaesthesia monitoring</li>
+              <li className="flex items-start gap-2"><span className="text-[#006837] mt-1">•</span>B.Sc Respiratory Therapy — ventilator management, pulmonary rehabilitation</li>
+              <li className="flex items-start gap-2"><span className="text-[#006837] mt-1">•</span>B.Sc Physician Assistant — clinical diagnosis, patient management</li>
+              <li className="flex items-start gap-2"><span className="text-[#006837] mt-1">•</span>B.Sc Critical Care Technology — ICU monitoring, life support systems</li>
+              <li className="flex items-start gap-2"><span className="text-[#006837] mt-1">•</span>B.Sc Medical Record Science — health informatics, hospital data management</li>
+              <li className="flex items-start gap-2"><span className="text-[#006837] mt-1">•</span>B.Sc Accident &amp; Emergency Care Technology — trauma care, emergency response</li>
+            </ul>
+          </div>
+
+          <div className="bg-white rounded-2xl p-6 shadow-sm">
+            <h3 className="font-bold text-gray-900 mb-3">How to Choose the Best AHS College Near Erode</h3>
+            <div className="snippet-answer voice-answer text-sm text-gray-600 leading-relaxed space-y-2">
+              <p>When choosing an allied health science college near Erode, consider these factors: university affiliation (The Tamil Nadu Dr. M.G.R. Medical University is the gold standard), NAAC accreditation status, clinical training infrastructure (look for attached teaching hospitals), placement track record (85%+ is excellent), faculty experience, and proximity to your home for easy commuting.</p>
+              <p>JKKN College of Allied Health Sciences checks all these boxes — NAAC accredited, university-affiliated, 500+ bed hospital for clinical training, 85%+ placement rate, and just ~22 km from Erode on NH-544.</p>
             </div>
-          ))}
+          </div>
         </div>
       </div>
     </section>
@@ -848,7 +858,6 @@ function ExploreCitiesSection() {
 
         <a
           href="/"
-          onClick={() => sessionStorage.setItem("scrollToSection", "programs")}
           className="inline-block px-10 py-4 bg-[#7cb983] text-white font-bold rounded-full text-sm hover:bg-[#6ba872] transition-colors"
         >
           View All Programmes

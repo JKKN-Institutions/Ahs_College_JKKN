@@ -143,6 +143,30 @@ const faqSchema = {
         text: "To pursue BSc Allied Health Sciences at JKKN AHS, candidates must have passed 12th standard (HSC/CBSE/ISC) with Physics, Chemistry, and Biology with a minimum aggregate of 50% (40% for reserved categories). Admission is based on merit and counselling. JKKN is affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai.",
       },
     },
+    {
+      "@type": "Question",
+      name: "Are there healthcare career opportunities in Erode's textile industry?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes, Erode's thriving textile and turmeric industries have created demand for occupational health professionals, industrial physiotherapists, and emergency care technicians. JKKN AHS graduates are well-positioned for roles in occupational health centres at textile mills, industrial clinics, and corporate wellness programmes across the Erode industrial belt.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Can Erode students commute daily to JKKN AHS?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Absolutely. At just ~22 km via NH-544, many Erode students commute daily. The journey takes only 35-40 minutes by bus or bike. JKKN also provides dedicated college transport services with multiple pickup points in Erode city. Hostel facilities are available for those who prefer to stay on campus.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Why choose JKKN AHS near Erode over colleges in Coimbatore?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "JKKN AHS offers comparable programme quality to Coimbatore colleges but with key advantages: closer proximity (~22 km vs 105 km from Erode), lower cost of living, personalised attention with smaller batch sizes, direct clinical exposure at the 500+ bed JKKN Hospital from Year 1, and strong local industry connections for placements. The NH-544 location also means easy access to opportunities in both Erode and Coimbatore.",
+      },
+    },
   ],
 };
 
@@ -202,6 +226,149 @@ const educationalOrgSchema = {
   ],
 };
 
+const courseListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Allied Health Science Courses at JKKN AHS",
+  description: "9 BSc Allied Health Science programmes offered at JKKN College of Allied Health Sciences, accessible from Erode",
+  numberOfItems: 9,
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      item: {
+        "@type": "Course",
+        name: "B.Sc Cardiac Technology",
+        description: "Specialised programme in cardiovascular diagnostics — ECG, echocardiography, cardiac catheterisation, and pacemaker technology.",
+        provider: { "@type": "CollegeOrUniversity", "@id": "https://ahs.jkkn.ac.in/#organization", name: "JKKN College of Allied Health Sciences" },
+        url: "https://ahs.jkkn.ac.in/cardiac-technology",
+        timeRequired: "P4Y",
+        educationalCredentialAwarded: "B.Sc Cardiac Technology",
+      },
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      item: {
+        "@type": "Course",
+        name: "B.Sc Dialysis Technology",
+        description: "Programme covering haemodialysis, peritoneal dialysis, and renal care with hands-on clinical training.",
+        provider: { "@type": "CollegeOrUniversity", "@id": "https://ahs.jkkn.ac.in/#organization", name: "JKKN College of Allied Health Sciences" },
+        url: "https://ahs.jkkn.ac.in/dialysis-technology",
+        timeRequired: "P3Y",
+        educationalCredentialAwarded: "B.Sc Dialysis Technology",
+      },
+    },
+    {
+      "@type": "ListItem",
+      position: 3,
+      item: {
+        "@type": "Course",
+        name: "B.Sc Radiology & Imaging Technology",
+        description: "Training in X-ray, CT scan, MRI, and ultrasound imaging with clinical rotations at JKKN Hospital.",
+        provider: { "@type": "CollegeOrUniversity", "@id": "https://ahs.jkkn.ac.in/#organization", name: "JKKN College of Allied Health Sciences" },
+        url: "https://ahs.jkkn.ac.in/radiology-imaging-technology",
+        timeRequired: "P3Y",
+        educationalCredentialAwarded: "B.Sc Radiology & Imaging Technology",
+      },
+    },
+    {
+      "@type": "ListItem",
+      position: 4,
+      item: {
+        "@type": "Course",
+        name: "B.Sc Operation Theatre & Anaesthesia Technology",
+        description: "Programme in surgical suite management, anaesthesia equipment handling, and patient monitoring during surgery.",
+        provider: { "@type": "CollegeOrUniversity", "@id": "https://ahs.jkkn.ac.in/#organization", name: "JKKN College of Allied Health Sciences" },
+        url: "https://ahs.jkkn.ac.in/operation-theatre-anaesthesia",
+        timeRequired: "P3Y",
+        educationalCredentialAwarded: "B.Sc OT & Anaesthesia Technology",
+      },
+    },
+    {
+      "@type": "ListItem",
+      position: 5,
+      item: {
+        "@type": "Course",
+        name: "B.Sc Respiratory Therapy",
+        description: "Specialisation in ventilator management, pulmonary function testing, and respiratory rehabilitation.",
+        provider: { "@type": "CollegeOrUniversity", "@id": "https://ahs.jkkn.ac.in/#organization", name: "JKKN College of Allied Health Sciences" },
+        url: "https://ahs.jkkn.ac.in/respiratory-therapy",
+        timeRequired: "P3Y",
+        educationalCredentialAwarded: "B.Sc Respiratory Therapy",
+      },
+    },
+    {
+      "@type": "ListItem",
+      position: 6,
+      item: {
+        "@type": "Course",
+        name: "B.Sc Physician Assistant",
+        description: "Training in clinical diagnosis, patient assessment, and medical management under physician supervision.",
+        provider: { "@type": "CollegeOrUniversity", "@id": "https://ahs.jkkn.ac.in/#organization", name: "JKKN College of Allied Health Sciences" },
+        url: "https://ahs.jkkn.ac.in/physician-assistant",
+        timeRequired: "P3Y",
+        educationalCredentialAwarded: "B.Sc Physician Assistant",
+      },
+    },
+    {
+      "@type": "ListItem",
+      position: 7,
+      item: {
+        "@type": "Course",
+        name: "B.Sc Critical Care Technology",
+        description: "Programme covering ICU monitoring, life support systems, and critical patient management.",
+        provider: { "@type": "CollegeOrUniversity", "@id": "https://ahs.jkkn.ac.in/#organization", name: "JKKN College of Allied Health Sciences" },
+        url: "https://ahs.jkkn.ac.in/critical-care-technology",
+        timeRequired: "P3Y",
+        educationalCredentialAwarded: "B.Sc Critical Care Technology",
+      },
+    },
+    {
+      "@type": "ListItem",
+      position: 8,
+      item: {
+        "@type": "Course",
+        name: "B.Sc Medical Record Science",
+        description: "Programme in health informatics, medical coding, hospital data management, and health information systems.",
+        provider: { "@type": "CollegeOrUniversity", "@id": "https://ahs.jkkn.ac.in/#organization", name: "JKKN College of Allied Health Sciences" },
+        url: "https://ahs.jkkn.ac.in/medical-record-science",
+        timeRequired: "P3Y",
+        educationalCredentialAwarded: "B.Sc Medical Record Science",
+      },
+    },
+    {
+      "@type": "ListItem",
+      position: 9,
+      item: {
+        "@type": "Course",
+        name: "B.Sc Accident & Emergency Care Technology",
+        description: "Training in trauma care, emergency response, triage, and pre-hospital emergency medical services.",
+        provider: { "@type": "CollegeOrUniversity", "@id": "https://ahs.jkkn.ac.in/#organization", name: "JKKN College of Allied Health Sciences" },
+        url: "https://ahs.jkkn.ac.in/accident-emergency-care",
+        timeRequired: "P3Y",
+        educationalCredentialAwarded: "B.Sc Accident & Emergency Care Technology",
+      },
+    },
+  ],
+};
+
+const howToSchema = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  name: "How to Apply for Allied Health Science Admission at JKKN AHS",
+  description: "Step-by-step admission process for BSc Allied Health Sciences at JKKN College of Allied Health Sciences, near Erode.",
+  totalTime: "P14D",
+  step: [
+    { "@type": "HowToStep", position: 1, name: "Check Eligibility", text: "Ensure you have passed 12th standard (HSC/CBSE/ISC) with Physics, Chemistry, and Biology with minimum 50% aggregate (40% for reserved categories)." },
+    { "@type": "HowToStep", position: 2, name: "Apply Online", text: "Visit https://admission.jkkn.ac.in/ and fill out the online application form with your personal and academic details." },
+    { "@type": "HowToStep", position: 3, name: "Submit Documents", text: "Upload or submit 12th mark sheet, community certificate, Aadhaar card, passport-size photos, and transfer certificate." },
+    { "@type": "HowToStep", position: 4, name: "Attend Counselling", text: "Attend the admission counselling session at JKKN campus or online. Select your preferred BSc programme from 9 available options." },
+    { "@type": "HowToStep", position: 5, name: "Pay Fees & Confirm", text: "Complete fee payment to confirm your admission. Scholarship options are available for meritorious students." },
+    { "@type": "HowToStep", position: 6, name: "Join Campus", text: "Report to JKKN AHS campus at Komarapalayam on the designated date. Hostel and transport facilities available." },
+  ],
+};
+
 const speakableSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
@@ -209,7 +376,7 @@ const speakableSchema = {
   url: "https://ahs.jkkn.ac.in/erode",
   speakable: {
     "@type": "SpeakableSpecification",
-    cssSelector: [".faq-answer", ".snippet-answer", ".voice-answer", "h1", "h2"],
+    cssSelector: ["h1", "h2", ".snippet-answer", ".voice-answer", "[data-speakable]"],
   },
 };
 
@@ -231,6 +398,14 @@ export default function ErodeLayout({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(educationalOrgSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(courseListSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
       />
       <script
         type="application/ld+json"

@@ -1,11 +1,9 @@
-"use client";
-
-import { useState } from "react";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
+import { CityFAQAccordion } from "@/components/ui/CityFAQAccordion";
 import { siteConfig } from "@/lib/site-config";
-import { MapPin, ChevronDown, ChevronUp, GraduationCap, Phone, TrendingUp, Building2, GitBranch, Target, Globe, Bus, Activity, Microscope, HeartPulse, Droplet, ShieldCheck, Wind, Stethoscope, Heart, FileText, Ambulance, Map, Train, Plane, Home, BookOpen, Trophy, Wifi, CheckCircle } from "lucide-react";
+import { MapPin, GraduationCap, Phone, TrendingUp, Building2, GitBranch, Target, Globe, Bus, Activity, Microscope, HeartPulse, Droplet, ShieldCheck, Wind, Stethoscope, Heart, FileText, Ambulance, Map, Train, Plane, Home, BookOpen, Trophy, Wifi, CheckCircle } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -32,7 +30,65 @@ export default function SalemPage() {
         <HowToReachSection />
         <FacilitiesSection />
         <CampusGallerySection />
-        <FAQSection />
+        <SnippetBaitSection />
+        <CityFAQAccordion cityName="Salem" faqs={[
+          {
+            q: "What is the best allied health sciences college near Salem?",
+            a: "JKKN College of Allied Health Sciences, located just ~58 km from Salem on NH-544, is widely regarded as one of the top allied health sciences colleges accessible from Salem. Approved by NAAC and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers excellent programmes with strong placement support.",
+          },
+          {
+            q: "How far is JKKN AHS from Salem?",
+            a: "JKKN AHS is approximately ~58 km from Salem city centre, which takes about 1 hour by road via NH-544 (Salem-Coimbatore Highway) — direct route. Regular bus services are available from Salem.",
+          },
+          {
+            q: "What is Allied Health Sciences?",
+            a: "Allied Health Sciences includes healthcare professions that support doctors and nurses in diagnosing, treating, and rehabilitating patients. At JKKN College of Allied Health Sciences, you can study physiotherapy, medical lab technology, radiology, cardiac technology, and more.",
+          },
+          {
+            q: "Is BPT a good career option?",
+            a: "Yes, BPT (Bachelor of Physiotherapy) is an excellent career choice. Physiotherapists are in high demand in hospitals, sports clinics, rehabilitation centres, and private practice. Graduates can also pursue international careers in Gulf countries, UK, and Australia.",
+          },
+          {
+            q: "How is AHS different from nursing?",
+            a: "While nursing focuses on patient care and bedside support, Allied Health Sciences covers specialised diagnostic and therapeutic roles like physiotherapy, lab testing, radiology imaging, and cardiac monitoring. Both are valuable healthcare careers, but AHS offers more specialisation options.",
+          },
+          {
+            q: "Does JKKN AHS provide hostel for Salem students?",
+            a: "Yes, JKKN AHS provides separate hostel facilities for boys and girls. Students from Salem can also opt for daily commute as the campus is just 50-60 minutes away. College transport services are available.",
+          },
+          {
+            q: "How can I apply for admission at JKKN AHS?",
+            a: "You can apply online through the official website at https://ahs.jkkn.ac.in/ or visit the campus directly. Admissions for 2026-27 are currently open. Contact the admission office for guidance.",
+          },
+          {
+            q: "What are the fees for BSc allied health science in Tamil Nadu?",
+            a: "BSc Allied Health Science fees in Tamil Nadu typically range from ₹50,000 to ₹2,00,000 per year depending on the college and course. At JKKN College of Allied Health Sciences, fees are competitively priced with scholarship options available for meritorious students. Contact the admission office at +91 9345855001 for the latest fee structure.",
+          },
+          {
+            q: "What is the salary after BSc allied health science?",
+            a: "BSc Allied Health Science graduates can expect starting salaries of ₹2.5–4.5 LPA in India, with experienced professionals earning ₹6–12 LPA. International opportunities in Gulf countries, UK, and Australia offer ₹8–25 LPA. JKKN AHS graduates benefit from an 85%+ placement rate with 60+ recruiting partners.",
+          },
+          {
+            q: "How many allied health science colleges are there near Salem?",
+            a: "Salem has multiple allied health science colleges including government and private institutions. JKKN College of Allied Health Sciences, located ~58 km from Salem on NH-544, offers a competitive alternative with 9 BSc programmes, NAAC approval, affordable fees, and strong placement support.",
+          },
+          {
+            q: "What are the eligibility requirements for allied health science courses?",
+            a: "To pursue BSc Allied Health Sciences at JKKN AHS, candidates must have passed 12th standard (HSC/CBSE/ISC) with Physics, Chemistry, and Biology with a minimum aggregate of 50% (40% for reserved categories). Admission is based on merit and counselling. JKKN is affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai.",
+          },
+          {
+            q: "Are there healthcare job opportunities in Salem's steel and manufacturing sector?",
+            a: "Yes, Salem's steel plants, SAIL Salem Steel Plant, and manufacturing industries employ occupational health officers, industrial physiotherapists, and emergency medical technicians. JKKN AHS graduates with specialisations in critical care, accident & emergency care, and physician assistant programmes are well-suited for industrial healthcare roles in Salem.",
+          },
+          {
+            q: "Does JKKN AHS provide clinical training at Salem government hospitals?",
+            a: "JKKN AHS primarily provides clinical training at its own 500+ bed multi-specialty teaching hospital on campus. Additionally, students gain exposure through partnerships with various healthcare facilities in the region. The Salem Government Mohan Kumaramangalam Medical College Hospital is one of the major government hospitals students can access for observational learning.",
+          },
+          {
+            q: "Is JKKN AHS near Salem a better value than colleges in Chennai?",
+            a: "JKKN AHS offers excellent value compared to Chennai colleges: significantly lower tuition and living costs, the same Tamil Nadu Dr. M.G.R. Medical University affiliation, 500+ bed hospital for clinical training, 85%+ placement rate with both domestic and international opportunities, and a safer, focused campus environment. Students save considerably while receiving comparable education quality.",
+          },
+        ]} />
         <ExploreCitiesSection />
       </main>
       <Footer />
@@ -249,6 +305,14 @@ function WhyChooseSection() {
             );
           })}
         </div>
+
+        <p className="text-center text-sm text-gray-500 mt-8">
+          Students from nearby cities also choose JKKN AHS:{" "}
+          <a href="/erode" className="text-[#006837] hover:underline font-medium">Erode (~22 km)</a>,{" "}
+          <a href="/namakkal" className="text-[#006837] hover:underline font-medium">Namakkal</a>,{" "}
+          <a href="/tiruppur" className="text-[#006837] hover:underline font-medium">Tiruppur (~67 km)</a>, and{" "}
+          <a href="/coimbatore" className="text-[#006837] hover:underline font-medium">Coimbatore (~105 km)</a>.
+        </p>
       </div>
     </section>
   );
@@ -705,100 +769,47 @@ function CompetitiveAdvantageSection() {
 }
 
 /* ──────────────────────────────────────────
-   FAQ SECTION
+   SNIPPET BAIT SECTION
 ────────────────────────────────────────── */
-function FAQSection() {
-  const faqs = [
-    {
-      q: "What is the best allied health sciences college near Salem?",
-      a: "JKKN College of Allied Health Sciences, located just ~58 km from Salem on NH-544, is widely regarded as one of the top allied health sciences colleges accessible from Salem. Approved by NAAC and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers excellent programmes with strong placement support.",
-    },
-    {
-      q: "How far is JKKN AHS from Salem?",
-      a: "JKKN AHS is approximately ~58 km from Salem city centre, which takes about 1 hour by road via NH-544 (Salem-Coimbatore Highway) — direct route. Regular bus services are available from Salem.",
-    },
-    {
-      q: "What is Allied Health Sciences?",
-      a: "Allied Health Sciences includes healthcare professions that support doctors and nurses in diagnosing, treating, and rehabilitating patients. At JKKN College of Allied Health Sciences, you can study physiotherapy, medical lab technology, radiology, cardiac technology, and more.",
-    },
-    {
-      q: "Is BPT a good career option?",
-      a: "Yes, BPT (Bachelor of Physiotherapy) is an excellent career choice. Physiotherapists are in high demand in hospitals, sports clinics, rehabilitation centres, and private practice. Graduates can also pursue international careers in Gulf countries, UK, and Australia.",
-    },
-    {
-      q: "How is AHS different from nursing?",
-      a: "While nursing focuses on patient care and bedside support, Allied Health Sciences covers specialised diagnostic and therapeutic roles like physiotherapy, lab testing, radiology imaging, and cardiac monitoring. Both are valuable healthcare careers, but AHS offers more specialisation options.",
-    },
-    {
-      q: "Does JKKN AHS provide hostel for Salem students?",
-      a: "Yes, JKKN AHS provides separate hostel facilities for boys and girls. Students from Salem can also opt for daily commute as the campus is just 50-60 minutes away. College transport services are available.",
-    },
-    {
-      q: "How can I apply for admission at JKKN AHS?",
-      a: "You can apply online through the official website at https://ahs.jkkn.ac.in/ or visit the campus directly. Admissions for 2026-27 are currently open. Contact the admission office for guidance.",
-    },
-    {
-      q: "What are the fees for BSc allied health science in Tamil Nadu?",
-      a: "BSc Allied Health Science fees in Tamil Nadu typically range from ₹50,000 to ₹2,00,000 per year depending on the college and course. At JKKN College of Allied Health Sciences, fees are competitively priced with scholarship options available for meritorious students. Contact the admission office at +91 9345855001 for the latest fee structure.",
-    },
-    {
-      q: "What is the salary after BSc allied health science?",
-      a: "BSc Allied Health Science graduates can expect starting salaries of ₹2.5–4.5 LPA in India, with experienced professionals earning ₹6–12 LPA. International opportunities in Gulf countries, UK, and Australia offer ₹8–25 LPA. JKKN AHS graduates benefit from an 85%+ placement rate with 60+ recruiting partners.",
-    },
-    {
-      q: "How many allied health science colleges are there near Salem?",
-      a: "Salem has multiple allied health science colleges including government and private institutions. JKKN College of Allied Health Sciences, located ~58 km from Salem on NH-544, offers a competitive alternative with 9 BSc programmes, NAAC approval, affordable fees, and strong placement support.",
-    },
-    {
-      q: "What are the eligibility requirements for allied health science courses?",
-      a: "To pursue BSc Allied Health Sciences at JKKN AHS, candidates must have passed 12th standard (HSC/CBSE/ISC) with Physics, Chemistry, and Biology with a minimum aggregate of 50% (40% for reserved categories). Admission is based on merit and counselling. JKKN is affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai.",
-    },
-  ];
-
-  const [open, setOpen] = useState<number | null>(0);
-
+function SnippetBaitSection() {
   return (
-    <section className="bg-white py-14 px-4">
-      <div className="max-w-3xl mx-auto text-center">
-        <h2 className="text-2xl sm:text-3xl font-black text-gray-900 mb-3">
-          Frequently Asked Questions
+    <section className="bg-[#FBFBEE] py-14 px-4">
+      <div className="max-w-3xl mx-auto">
+        <h2 className="text-2xl sm:text-3xl font-black text-gray-900 mb-3 text-center">
+          Allied Health Sciences in Salem — Quick Guide
         </h2>
-        <p className="text-gray-500 text-sm mb-3">
-          Allied Health Sciences College in Salem — Your Questions Answered
-        </p>
         <div className="w-12 h-1 bg-[#7cb983] rounded mx-auto mb-10"></div>
 
-        <div className="text-left flex flex-col gap-3">
-          {faqs.map((faq, i) => (
-            <div
-              key={i}
-              className={`rounded-2xl border transition-colors ${
-                open === i ? "border-[#7cb983]" : "border-gray-200"
-              } bg-white`}
-            >
-              <button
-                className="w-full flex items-center justify-between px-6 py-5 text-left"
-                onClick={() => setOpen(open === i ? null : i)}
-                aria-expanded={open === i}
-              >
-                <span className="font-semibold text-gray-900 text-sm pr-4">
-                  {faq.q}
-                </span>
-                {open === i ? (
-                  <ChevronUp className="w-5 h-5 text-gray-400 flex-shrink-0" />
-                ) : (
-                  <ChevronDown className="w-5 h-5 text-gray-400 flex-shrink-0" />
-                )}
-              </button>
-              <div
-                className={`faq-answer snippet-answer px-6 pb-5 text-sm text-gray-500 leading-relaxed ${
-                  open === i ? "" : "hidden"
-                }`}
-              >
-                {faq.a}
-              </div>
+        <div className="space-y-8">
+          <div className="bg-white rounded-2xl p-6 shadow-sm">
+            <h3 className="font-bold text-gray-900 mb-3">What are Allied Health Sciences?</h3>
+            <p className="snippet-answer voice-answer text-sm text-gray-600 leading-relaxed">
+              Allied Health Sciences are healthcare professions that support doctors and nurses in diagnosing, treating, and preventing diseases. These include specialisations like cardiac technology, radiology, dialysis technology, respiratory therapy, and emergency care. Near Salem, JKKN College of Allied Health Sciences offers 9 BSc programmes with clinical training at a 500+ bed teaching hospital — just ~58 km via NH-544.
+            </p>
+          </div>
+
+          <div className="bg-white rounded-2xl p-6 shadow-sm">
+            <h3 className="font-bold text-gray-900 mb-3">Top Allied Health Science Courses Available Near Salem</h3>
+            <ul className="snippet-answer text-sm text-gray-600 space-y-2">
+              <li className="flex items-start gap-2"><span className="text-[#006837] mt-1">•</span>B.Sc Cardiac Technology — ECG, echocardiography, cardiac catheterisation</li>
+              <li className="flex items-start gap-2"><span className="text-[#006837] mt-1">•</span>B.Sc Radiology &amp; Imaging Technology — X-ray, CT, MRI, ultrasound</li>
+              <li className="flex items-start gap-2"><span className="text-[#006837] mt-1">•</span>B.Sc Dialysis Technology — haemodialysis, peritoneal dialysis, renal care</li>
+              <li className="flex items-start gap-2"><span className="text-[#006837] mt-1">•</span>B.Sc Operation Theatre &amp; Anaesthesia Technology — surgical support, anaesthesia monitoring</li>
+              <li className="flex items-start gap-2"><span className="text-[#006837] mt-1">•</span>B.Sc Respiratory Therapy — ventilator management, pulmonary rehabilitation</li>
+              <li className="flex items-start gap-2"><span className="text-[#006837] mt-1">•</span>B.Sc Physician Assistant — clinical diagnosis, patient management</li>
+              <li className="flex items-start gap-2"><span className="text-[#006837] mt-1">•</span>B.Sc Critical Care Technology — ICU monitoring, life support systems</li>
+              <li className="flex items-start gap-2"><span className="text-[#006837] mt-1">•</span>B.Sc Medical Record Science — health informatics, hospital data management</li>
+              <li className="flex items-start gap-2"><span className="text-[#006837] mt-1">•</span>B.Sc Accident &amp; Emergency Care Technology — trauma care, emergency response</li>
+            </ul>
+          </div>
+
+          <div className="bg-white rounded-2xl p-6 shadow-sm">
+            <h3 className="font-bold text-gray-900 mb-3">How to Choose the Best AHS College Near Salem</h3>
+            <div className="snippet-answer voice-answer text-sm text-gray-600 leading-relaxed space-y-2">
+              <p>When choosing an allied health science college near Salem, consider university affiliation (The Tamil Nadu Dr. M.G.R. Medical University is the gold standard), NAAC accreditation, clinical training infrastructure, placement track record, and accessibility via NH-544 highway.</p>
+              <p>JKKN College of Allied Health Sciences — located ~58 km from Salem on NH-544 — is NAAC accredited, university-affiliated, has a 500+ bed hospital for clinical training, and maintains an 85%+ placement rate with 60+ recruiting partners.</p>
             </div>
-          ))}
+          </div>
         </div>
       </div>
     </section>
@@ -845,7 +856,6 @@ function ExploreCitiesSection() {
 
         <a
           href="/"
-          onClick={() => sessionStorage.setItem("scrollToSection", "programs")}
           className="inline-block px-10 py-4 bg-[#7cb983] text-white font-bold rounded-full text-sm hover:bg-[#6ba872] transition-colors"
         >
           View All Programmes
