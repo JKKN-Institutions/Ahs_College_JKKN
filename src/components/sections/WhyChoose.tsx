@@ -9,28 +9,27 @@ import { BRAND_LEGACY } from '@/lib/constants';
 const reasons = [
     {
         title: BRAND_LEGACY.FULL_TEXT,
-        description: "Part of JKKN Educational Institutions with over 70 years of transforming lives through accessible, progressive education. Building healthcare excellence since 1954.",
+        description: "Part of JKKN Educational Institutions with over 70 years of transforming lives through accessible, progressive education since 1954. Our campus on NH-544, Komarapalayam, spans a green environment near Erode and Salem — giving Learners a focused academic setting backed by decades of institutional credibility.",
         icon: <Trophy className="w-10 h-10" />,
     },
     {
         title: "Advanced Laboratories",
-        description: "Laboratories including Anatomy, Physiology, Biochemistry, Microbiology, Pathology, Hematology.",
+        description: "10+ specialized labs including Anatomy, Physiology, Biochemistry, Microbiology, Pathology, Hematology, Cardiac Catheterization Simulator, and Diagnostic Imaging Center with CT and X-ray simulators. Equipment matches hospital-grade standards so Learners transition seamlessly into clinical roles.",
         icon: <Microscope className="w-10 h-10" />,
     },
     {
         title: "Hospital Partnerships",
-        description: "Clinical training at partner hospitals including Senthil Multi-Speciality, Lotus, Erode Medical Center and Olirum Erode Foundation for real-world exposure.",
+        description: "Clinical rotations at partner hospitals including Senthil Multi-Speciality, Lotus, Erode Medical Center, and Olirum Erode Foundation. Learners complete 2,000+ hours of hands-on patient care at a 500+ bed multi-specialty teaching hospital, gaining real-world exposure from Year 1.",
         icon: <Building2 className="w-10 h-10" />,
     },
     {
         title: "95% Placement Rate",
-        description: "Placement with 100+ recruiters. Our alumni work at top hospitals, diagnostic chains, and healthcare organizations globally.",
+        description: "100+ recruiters including Apollo, MIOT, Fortis, Kauvery, SRL, Thyrocare, and Dr. Lal PathLabs. Salary packages range from ₹3.2 to ₹7.5 LPA with international opportunities in the UK (NHS), UAE, Saudi Arabia, and Australia through our dedicated placement cell.",
         icon: <Briefcase className="w-10 h-10" />,
     },
-
     {
         title: "Clinical Training Excellence",
-        description: "Allied Health Sciences professionals bridge doctors and patients by providing vital diagnostic and therapeutic care, rapid emergency response, early patient support, and smart use of medical technology — trained at 50+ partner hospitals.",
+        description: "Allied Health Sciences professionals bridge doctors and patients by providing vital diagnostic and therapeutic care, rapid emergency response, and smart use of medical technology. Trained across 50+ partner hospitals, our graduates are equipped for ICU, OT, radiology, cardiac labs, and emergency departments.",
         icon: <Briefcase className="w-10 h-10" />,
     }
 ];
@@ -66,6 +65,12 @@ export function WhyChoose() {
                             <h3 className="text-lg sm:text-xl md:text-2xl font-black text-gray-900 mb-3 sm:mb-4 leading-tight">{reason.title}</h3>
                             <p className="text-gray-600 leading-relaxed text-xs sm:text-sm">
                                 {reason.description}
+                                {reason.title === "Advanced Laboratories" && (
+                                    <> <Link href="/lab" className="text-[#0b6d41] font-semibold hover:underline">Explore our labs</Link>.</>
+                                )}
+                                {reason.title === "95% Placement Rate" && (
+                                    <> <Link href="/placements" className="text-[#0b6d41] font-semibold hover:underline">View placement details</Link>.</>
+                                )}
                             </p>
                         </motion.div>
                     ))}

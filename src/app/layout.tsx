@@ -9,18 +9,25 @@ const poppins = Poppins({
   variable: "--font-poppins",
 });
 
+const LAST_UPDATED = "2026-03-28";
+
 export const metadata = {
   icons: { icon: "/ahs-logo.svg" },
   ...createPageMetadata({
-    title: "Best Allied Health Science Colleges in Tamilnadu | JKKN",
-    description: "JKKN is among the best allied health science colleges in Tamilnadu. Explore BSc allied health science courses with clinical training. Admissions 2026-27!",
+    title: "Best Allied Health Sciences College in Tamil Nadu | JKKN",
+    description: "JKKN College of Allied Health Sciences — 9 B.Sc programs, 95% placement, 500+ bed hospital training. NAAC A+ accredited. Tamil Nadu. Admissions 2026-27!",
     path: "/",
     keywords: [
-      "best allied health science colleges in tamilnadu",
-      "allied health science courses in tamilnadu",
-      "bsc allied health science colleges in tamilnadu",
-      "top 10 allied health science colleges in tamilnadu",
-      "bsc allied health science courses in tamilnadu",
+      "best allied health sciences college in tamil nadu",
+      "allied health sciences courses in tamil nadu",
+      "bsc allied health sciences colleges in tamil nadu",
+      "top allied health sciences college tamil nadu",
+      "bsc allied health sciences courses in tamilnadu",
+      "allied health sciences college near erode",
+      "allied health sciences college near salem",
+      "bsc cardiac technology college tamil nadu",
+      "bsc radiology college tamil nadu",
+      "allied health sciences admission 2026",
     ],
   }),
 };
@@ -36,7 +43,7 @@ const websiteSchema = {
     "name": "JKKN College of Allied Health Sciences"
   },
   "inLanguage": "en",
-  "dateModified": "2026-03-18",
+  "dateModified": LAST_UPDATED,
   "potentialAction": {
     "@type": "ReadAction",
     "target": "https://ahs.jkkn.ac.in/"
@@ -154,17 +161,17 @@ const collegeSchema = {
     "ratingValue": "4.5",
     "bestRating": "5",
     "worstRating": "1",
-    "ratingCount": "150",
+    "ratingCount": "150", // [NEEDS VERIFICATION] — verify against GBP listing
     "url": "https://maps.app.goo.gl/JJ5dKGY4NAHReFpj7"
   },
-  "dateModified": "2026-03-18"
+  "dateModified": LAST_UPDATED
 };
 
 // ItemList schema for program discoverability by AI engines
 const programListSchema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  "name": "B.Sc Allied Health Science Programs at JKKN",
+  "name": "B.Sc Allied Health Sciences Programs at JKKN",
   "description": "9 specialized undergraduate allied health science programs offered by JKKN College of Allied Health Sciences, Komarapalayam, Tamil Nadu.",
   "numberOfItems": 9,
   "itemListElement": [

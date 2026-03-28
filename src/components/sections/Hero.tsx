@@ -9,7 +9,7 @@ import { siteConfig } from '@/lib/site-config';
 
 export function Hero() {
     const stats = [
-        { label: 'Specialized Programs', value: '8+' },
+        { label: 'Specialized Programs', value: '9' },
         { label: 'Placement Rate', value: '95%' },
         { label: 'Hospital Partners', value: '50+' },
         { label: 'Active Learners', value: '250+' },
@@ -43,8 +43,8 @@ export function Hero() {
                             Best Allied Health Sciences College in Tamil Nadu — <span className="text-[#ffde59]">Shape Your Healthcare Career</span> at JKKN
                         </h1>
 
-                        <p className="text-sm sm:text-base text-white/90 mb-4 sm:mb-6 max-w-2xl leading-relaxed">
-                            Join JKKN College of Allied Health Sciences and become a vital part of modern healthcare. 8+ specialized B.Sc. programs, hospital training partnerships, and 95% placement success.
+                        <p className="voice-answer text-sm sm:text-base text-white/90 mb-4 sm:mb-6 max-w-2xl leading-relaxed">
+                            Join JKKN College of Allied Health Sciences and become a vital part of modern healthcare. 9 specialized B.Sc. programs, hospital training partnerships, and 95% placement success.
                         </p>
 
                         <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">

@@ -4,6 +4,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Hero } from "@/components/sections/Hero";
 import { AboutSection } from "@/components/sections/AboutSection";
 import { Programs } from "@/components/sections/Programs";
+import { SnippetBlock } from "@/components/sections/SnippetBlock";
 import { ScrollToSection } from "@/components/ScrollToSection";
 
 // Lazy-load below-fold sections
@@ -27,9 +28,7 @@ const Testimonials = dynamic(() => import("@/components/sections/Testimonials").
   loading: () => <div className="h-96 bg-gray-50 animate-pulse" />
 });
 
-const FAQ = dynamic(() => import("@/components/sections/FAQ").then(m => ({ default: m.FAQ })), {
-  loading: () => <div className="h-96 bg-gray-50 animate-pulse" />
-});
+import { FAQ } from "@/components/sections/FAQ";
 
 const HomeEvents = dynamic(() => import("@/components/sections/HomeEvents").then(m => ({ default: m.HomeEvents })), {
   loading: () => null
@@ -166,6 +165,46 @@ const faqSchema = {
         "@type": "Answer",
         "text": "JKKN stands apart with its 70+ Year Legacy of educational excellence, state-of-the-art laboratories matching hospital standards, partnerships with 50+ leading hospitals for clinical training, experienced Learning Facilitators with industry expertise, 95%+ placement rate with top healthcare organizations, scholarship programs for deserving Learners, and comprehensive support from admissions through career placement."
       }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does B.Sc Allied Health Sciences cost in Tamil Nadu?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "B.Sc Allied Health Sciences fees at JKKN range from 75,000 to 1,25,000 rupees per year covering tuition, laboratory access, and hospital training. Merit-based scholarships cover up to 50% of fees."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is NEET required for B.Sc Allied Health Sciences admission?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, NEET is not mandatory for B.Sc Allied Health Sciences admission. Admission at JKKN is based on 10+2 marks in Physics, Chemistry, and Biology with minimum 50% aggregate. Selection is merit-based."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the salary after B.Sc Allied Health Sciences in India?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "B.Sc Allied Health Sciences graduates earn 2.5 to 7.5 LPA in India. At JKKN, the average package is 3.2 LPA with top packages reaching 7.5 LPA. International placements offer higher packages."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which is better — B.Sc Nursing or B.Sc Allied Health Sciences?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Both are excellent healthcare careers. B.Sc Nursing focuses on patient care while Allied Health Sciences specializes in diagnostic technology and therapeutic procedures with more specialization options."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the job opportunities after Allied Health Sciences?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Graduates work as Cardiac Technologists, Radiographers, Dialysis Technicians, Respiratory Therapists, Physician Assistants, and Emergency Care Technologists at hospitals, diagnostic chains, and research labs."
+      }
     }
   ]
 };
@@ -182,7 +221,7 @@ const reviewSchema = {
       "reviewBody": "The practical training at JKKN prepared me thoroughly for my role at Apollo. The Learning Facilitators' real-world experience made all the difference in understanding complex procedures.",
       "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
       "datePublished": "2022-06-15",
-      "itemReviewed": { "@type": "EducationalOrganization", "name": "JKKN College of Allied Health Sciences" }
+      "itemReviewed": { "@id": "https://ahs.jkkn.ac.in/#organization" }
     },
     {
       "@type": "Review",
@@ -190,7 +229,7 @@ const reviewSchema = {
       "reviewBody": "JKKN's CCT program and clinical exposure helped me start my own eye care practice within 2 years of graduation. The foundation was exceptional.",
       "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
       "datePublished": "2021-06-15",
-      "itemReviewed": { "@type": "EducationalOrganization", "name": "JKKN College of Allied Health Sciences" }
+      "itemReviewed": { "@id": "https://ahs.jkkn.ac.in/#organization" }
     },
     {
       "@type": "Review",
@@ -198,7 +237,7 @@ const reviewSchema = {
       "reviewBody": "From state-of-the-art cardiac simulation labs to hospital internship at MIOT, JKKN gave me everything I needed to become a confident cardiac technologist.",
       "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
       "datePublished": "2023-06-15",
-      "itemReviewed": { "@type": "EducationalOrganization", "name": "JKKN College of Allied Health Sciences" }
+      "itemReviewed": { "@id": "https://ahs.jkkn.ac.in/#organization" }
     },
     {
       "@type": "Review",
@@ -206,7 +245,7 @@ const reviewSchema = {
       "reviewBody": "JKKN's radiology program gave me hands-on training with CT, MRI, and X-ray equipment from day one. Within months of graduating, I was placed at Fortis Healthcare, Chennai. The clinical rotations across partner hospitals made the transition seamless.",
       "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
       "datePublished": "2023-09-10",
-      "itemReviewed": { "@type": "EducationalOrganization", "name": "JKKN College of Allied Health Sciences" }
+      "itemReviewed": { "@id": "https://ahs.jkkn.ac.in/#organization" }
     },
     {
       "@type": "Review",
@@ -214,7 +253,7 @@ const reviewSchema = {
       "reviewBody": "As a parent, choosing the right college was crucial. JKKN's campus safety, hostel facilities, and 95% placement record convinced us. My daughter is now in her final year of Dialysis Technology and already has an internship offer from Kauvery Hospital.",
       "reviewRating": { "@type": "Rating", "ratingValue": "4", "bestRating": "5" },
       "datePublished": "2024-02-20",
-      "itemReviewed": { "@type": "EducationalOrganization", "name": "JKKN College of Allied Health Sciences" }
+      "itemReviewed": { "@id": "https://ahs.jkkn.ac.in/#organization" }
     },
     {
       "@type": "Review",
@@ -222,7 +261,7 @@ const reviewSchema = {
       "reviewBody": "JKKN prepared me for an international healthcare career. After completing my Respiratory Therapy degree, I secured a position with the NHS in the United Kingdom. The clinical training standards at JKKN matched international protocols.",
       "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
       "datePublished": "2022-11-15",
-      "itemReviewed": { "@type": "EducationalOrganization", "name": "JKKN College of Allied Health Sciences" }
+      "itemReviewed": { "@id": "https://ahs.jkkn.ac.in/#organization" }
     }
   ]
 };
@@ -230,14 +269,14 @@ const reviewSchema = {
 const speakableSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "name": "JKKN College of Allied Health Sciences — Best Allied Health Science College in Tamil Nadu",
+  "name": "JKKN College of Allied Health Sciences — Best Allied Health Sciences College in Tamil Nadu",
   "url": "https://ahs.jkkn.ac.in/",
   "speakable": {
     "@type": "SpeakableSpecification",
     "cssSelector": [".faq-answer", ".snippet-answer", ".voice-answer", "h1", "h2"]
   },
   "datePublished": "2024-01-01",
-  "dateModified": "2026-03-18"
+  "dateModified": "2026-03-28"
 };
 
 const courses = [
@@ -296,6 +335,7 @@ export default function Home() {
       <main>
         <Hero />
         <AboutSection />
+        <SnippetBlock />
         <Programs />
         <WhyChoose />
         <CareerPaths />

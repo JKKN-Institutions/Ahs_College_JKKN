@@ -11,7 +11,9 @@ export function AboutSection() {
     const points = [
         { text: "University-affiliated programs with clinical internship" },
         { text: "Hospital partnerships with Senthil Multispeciality, Lotus, Erode Medical Center and Olirum Erode Foundation" },
-        { text: "Industry-experienced Learning Facilitators" }
+        { text: "Industry-experienced Learning Facilitators" },
+        { text: "NAAC A+ Accredited with 70+ year legacy" },
+        { text: "500+ bed multi-specialty teaching hospital for clinical training" }
     ];
 
     return (
@@ -34,8 +36,12 @@ export function AboutSection() {
                             JKKN College of Allied Health Sciences, part of JKKN Educational Institutions celebrating #JKKN100 (Centennial Year of Our Founder), is dedicated to producing skilled Allied Health professionals who form the backbone of modern healthcare delivery. Our Learners are trained not just in technical skills but in compassionate patient care.
                         </p>
 
-                        <p className="text-gray-700 text-sm sm:text-base mb-6 sm:mb-8 leading-relaxed">
+                        <p className="text-gray-700 text-sm sm:text-base mb-4 sm:mb-6 leading-relaxed">
                             Affiliated with The Tamil Nadu Dr. M.G.R. Medical University, we offer comprehensive programs in <Link href="/critical-care-technology" className="text-[#0b6d41] font-semibold hover:underline">Critical Care Technology</Link>, <Link href="/physician-assistant" className="text-[#0b6d41] font-semibold hover:underline">Physician Assistant</Link>, <Link href="/cardiac-technology" className="text-[#0b6d41] font-semibold hover:underline">Cardiac Technology</Link>, <Link href="/radiology-imaging-technology" className="text-[#0b6d41] font-semibold hover:underline">Radiology</Link>, and more. Our Learning Facilitators (Senior Learners) bring decades of clinical and academic experience to every Learning Studio.
+                        </p>
+
+                        <p className="text-gray-700 text-sm sm:text-base mb-6 sm:mb-8 leading-relaxed">
+                            Located on NH-544 (Salem-Coimbatore Highway) in Komarapalayam, just 22 km from <Link href="/erode" className="text-[#0b6d41] font-semibold hover:underline">Erode</Link> and 58 km from <Link href="/salem" className="text-[#0b6d41] font-semibold hover:underline">Salem</Link>, our <Link href="/NAAC" className="text-[#0b6d41] font-semibold hover:underline">NAAC A+ accredited</Link> campus features <Link href="/lab" className="text-[#0b6d41] font-semibold hover:underline">advanced laboratories</Link>, a 500+ bed teaching hospital, <Link href="/hostel" className="text-[#0b6d41] font-semibold hover:underline">hostel facilities</Link>, and a dedicated placement cell delivering a 95% placement rate across 100+ recruiting partners.
                         </p>
 
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-6 sm:mb-8">

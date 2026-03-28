@@ -46,6 +46,26 @@ const faqs: { question: string; answer: ReactNode }[] = [
     {
         question: "What makes JKKN different from other Allied Health Sciences colleges?",
         answer: <>JKKN stands apart with its {BRAND_LEGACY.FULL_TEXT} of educational excellence, state-of-the-art <Link href="/lab" className="text-[#0b6d41] font-semibold hover:underline">laboratories</Link> matching hospital standards, partnerships with 50+ leading hospitals for clinical training, experienced Learning Facilitators with industry expertise, 95%+ <Link href="/placements" className="text-[#0b6d41] font-semibold hover:underline">placement rate</Link> with top healthcare organizations, scholarship programs for deserving Learners, and comprehensive support from <Link href="/admission" className="text-[#0b6d41] font-semibold hover:underline">admissions</Link> through career placement.</>
+    },
+    {
+        question: "How much does B.Sc Allied Health Sciences cost in Tamil Nadu?",
+        answer: <>B.Sc Allied Health Sciences fees in Tamil Nadu typically range from ₹50,000 to ₹2,00,000 per year depending on the college and program. At JKKN, annual fees range from ₹75,000 to ₹1,25,000 covering tuition, <Link href="/lab" className="text-[#0b6d41] font-semibold hover:underline">laboratory access</Link>, and hospital training. Merit-based scholarships cover up to 50% of fees. The 4-year program (3 years academics + 1 year internship) offers strong return on investment with a 95% placement rate and starting salaries of ₹3.2 LPA.</>
+    },
+    {
+        question: "Is NEET required for B.Sc Allied Health Sciences admission?",
+        answer: <>No, NEET is not mandatory for B.Sc Allied Health Sciences admission in Tamil Nadu. Admission at JKKN is based on 10+2 marks in Physics, Chemistry, and Biology (PCB) with a minimum 50% aggregate (40% for SC/ST, 45% for OBC). Candidates aged 17-25 years can apply directly through the <Link href="https://admission.jkkn.ac.in/" className="text-[#0b6d41] font-semibold hover:underline" target="_blank" rel="noopener noreferrer">JKKN admissions portal</Link>. Selection is merit-based through counseling — no entrance exam required.</>
+    },
+    {
+        question: "What is the salary after B.Sc Allied Health Sciences in India?",
+        answer: <>B.Sc Allied Health Sciences graduates in India earn ₹2.5 to ₹7.5 LPA depending on specialization and location. At JKKN, the average package is ₹3.2 LPA with top packages reaching ₹7.5 LPA. Specializations like <Link href="/cardiac-technology" className="text-[#0b6d41] font-semibold hover:underline">Cardiac Technology</Link> and <Link href="/radiology-imaging-technology" className="text-[#0b6d41] font-semibold hover:underline">Radiology</Link> command higher salaries. International placements in the UK, UAE, and Saudi Arabia offer significantly higher packages. With experience, senior technologists earn ₹8-15 LPA in corporate hospital chains.</>
+    },
+    {
+        question: "Which is better — B.Sc Nursing or B.Sc Allied Health Sciences?",
+        answer: <>Both are excellent healthcare careers with distinct paths. B.Sc Nursing focuses on patient care and bedside management, while B.Sc Allied Health Sciences specializes in diagnostic technology, therapeutic procedures, and healthcare informatics. Allied Health graduates work as technologists in <Link href="/radiology-imaging-technology" className="text-[#0b6d41] font-semibold hover:underline">radiology</Link>, <Link href="/cardiac-technology" className="text-[#0b6d41] font-semibold hover:underline">cardiac labs</Link>, <Link href="/critical-care-technology" className="text-[#0b6d41] font-semibold hover:underline">ICUs</Link>, and <Link href="/operation-theatre-anaesthesia" className="text-[#0b6d41] font-semibold hover:underline">operation theatres</Link>. Allied Health Sciences offers more specialization options (9 programs at JKKN) and growing demand driven by expansion of diagnostic centers and hospitals across India.</>
+    },
+    {
+        question: "What are the job opportunities after Allied Health Sciences?",
+        answer: <>Allied Health Sciences graduates have diverse career opportunities across hospitals, diagnostic chains, research labs, pharmaceutical companies, and government health services. Key roles include Cardiac Technologist, Radiographer, Dialysis Technician, <Link href="/respiratory-therapy" className="text-[#0b6d41] font-semibold hover:underline">Respiratory Therapist</Link>, <Link href="/physician-assistant" className="text-[#0b6d41] font-semibold hover:underline">Physician Assistant</Link>, <Link href="/medical-record-science" className="text-[#0b6d41] font-semibold hover:underline">Medical Records Officer</Link>, and <Link href="/accident-emergency-care" className="text-[#0b6d41] font-semibold hover:underline">Emergency Care Technologist</Link>. JKKN&apos;s 100+ recruiting partners include Apollo, MIOT, Fortis, Kauvery, and international employers in the UK and Middle East.</>
     }
 ];
 
@@ -91,7 +111,7 @@ export function FAQ() {
                                         exit={{ height: 0, opacity: 0 }}
                                         transition={{ duration: 0.3 }}
                                     >
-                                        <div className="px-4 sm:px-6 pb-4 sm:pb-6 pt-2 text-gray-600 text-sm leading-relaxed">
+                                        <div className="faq-answer px-4 sm:px-6 pb-4 sm:pb-6 pt-2 text-gray-600 text-sm leading-relaxed">
                                             {faq.answer}
                                         </div>
                                     </motion.div>
