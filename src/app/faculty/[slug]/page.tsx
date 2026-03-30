@@ -151,7 +151,7 @@ export default async function FacultyProfilePage({
 
               <div className="flex-1">
                 <p className="text-[#FFC107] text-xs font-semibold tracking-widest uppercase mb-1">
-                  JKKN DENTAL COLLEGE &amp; HOSPITAL
+                JKKN COLLEGE OF ALLIED HEALTH SCIENCES
                 </p>
                 <h1 className="text-3xl sm:text-4xl font-bold text-white">{m.name}</h1>
                 <p className="text-green-200 mt-1">
