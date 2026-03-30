@@ -13,7 +13,7 @@ const faqs: { question: string; answer: ReactNode }[] = [
     },
     {
         question: "What is the eligibility for B.Sc. Allied Health Sciences admission at JKKN?",
-        answer: <>Eligibility requires completion of 10+2 with Physics, Chemistry, and Biology (PCB) with minimum 50% marks (40% for SC/ST, 45% for OBC). Age should be 17-25 years as on 31st December of the admission year. NEET is not mandatory. Both Indian nationals and NRI candidates are eligible. Admission is through merit-based selection and counseling. <Link href="/admission" className="text-[#0b6d41] font-semibold hover:underline">View full admission details</Link>.</>
+        answer: <>Eligibility requires completion of 10+2 with Physics, Chemistry, and Biology (PCB) with minimum 50% marks (40% for SC/ST, 45% for OBC). Age should be 17-25 years as on 31st December of the admission year. NEET is not mandatory. Both Indian nationals and NRI candidates are eligible. Admission is through merit-based selection and counseling. <Link href="/admissions" className="text-[#0b6d41] font-semibold hover:underline">View full admission details</Link>.</>
     },
     {
         question: "Which university is JKKN Allied Health Sciences College affiliated with?",
@@ -45,7 +45,7 @@ const faqs: { question: string; answer: ReactNode }[] = [
     },
     {
         question: "What makes JKKN different from other Allied Health Sciences colleges?",
-        answer: <>JKKN stands apart with its {BRAND_LEGACY.FULL_TEXT} of educational excellence, state-of-the-art <Link href="/lab" className="text-[#0b6d41] font-semibold hover:underline">laboratories</Link> matching hospital standards, partnerships with 50+ leading hospitals for clinical training, experienced Learning Facilitators with industry expertise, 95%+ <Link href="/placements" className="text-[#0b6d41] font-semibold hover:underline">placement rate</Link> with top healthcare organizations, scholarship programs for deserving Learners, and comprehensive support from <Link href="/admission" className="text-[#0b6d41] font-semibold hover:underline">admissions</Link> through career placement.</>
+        answer: <>JKKN stands apart with its {BRAND_LEGACY.FULL_TEXT} of educational excellence, state-of-the-art <Link href="/lab" className="text-[#0b6d41] font-semibold hover:underline">laboratories</Link> matching hospital standards, partnerships with 50+ leading hospitals for clinical training, experienced Learning Facilitators with industry expertise, 95%+ <Link href="/placements" className="text-[#0b6d41] font-semibold hover:underline">placement rate</Link> with top healthcare organizations, scholarship programs for deserving Learners, and comprehensive support from <Link href="/admissions" className="text-[#0b6d41] font-semibold hover:underline">admissions</Link> through career placement.</>
     },
     {
         question: "How much does B.Sc Allied Health Sciences cost in Tamil Nadu?",

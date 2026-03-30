@@ -20,7 +20,7 @@ import {
 export default function AdmissionPage() {
     const breadcrumbSchema = generateBreadcrumbSchema([
         { name: "Home", url: "https://ahs.jkkn.ac.in/" },
-        { name: "Admission", url: "https://ahs.jkkn.ac.in/admission" }
+        { name: "Admission", url: "https://ahs.jkkn.ac.in/admissions" }
     ]);
 
     return (

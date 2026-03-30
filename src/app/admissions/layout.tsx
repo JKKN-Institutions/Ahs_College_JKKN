@@ -3,7 +3,7 @@ import { createPageMetadata } from "@/lib/metadata";
 export const metadata = createPageMetadata({
   title: "Admission 2026-27 | JKKN Allied Health Sciences College Tamil Nadu",
   description: "Apply for BSc Allied Health Sciences admission 2026-27 at JKKN College, Tamil Nadu. 9 programs, 75K-1.25L fees, 95% placement, NAAC A+. Apply now!",
-  path: "/admission",
+  path: "/admissions",
   keywords: [
     "allied health science admission 2026",
     "bsc allied health science admission tamilnadu",
@@ -26,7 +26,7 @@ const breadcrumbSchema = {
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "JKKN Institutions", "item": "https://jkkn.ac.in/" },
     { "@type": "ListItem", "position": 2, "name": "Allied Health Sciences", "item": "https://ahs.jkkn.ac.in/" },
-    { "@type": "ListItem", "position": 3, "name": "Admission 2026-27", "item": "https://ahs.jkkn.ac.in/admission" }
+    { "@type": "ListItem", "position": 3, "name": "Admission 2026-27", "item": "https://ahs.jkkn.ac.in/admissions" }
   ]
 };
 
@@ -47,14 +47,14 @@ const howToSchema = {
       "position": 1,
       "name": "Check Eligibility",
       "text": "Verify you have completed Plus Two with Physics, Chemistry, and Biology with minimum 50 percent marks. SC/ST candidates need 40 percent and OBC candidates need 45 percent.",
-      "url": "https://ahs.jkkn.ac.in/admission#eligibility"
+      "url": "https://ahs.jkkn.ac.in/admissions#eligibility"
     },
     {
       "@type": "HowToStep",
       "position": 2,
       "name": "Choose Your Program",
       "text": "Select from 9 BSc Allied Health Sciences programs including Cardiac Technology, Dialysis Technology, Radiology, Operation Theatre, Respiratory Therapy, Physician Assistant, Critical Care, Medical Record Science, and Accident Emergency Care.",
-      "url": "https://ahs.jkkn.ac.in/admission#programs"
+      "url": "https://ahs.jkkn.ac.in/admissions#programs"
     },
     {
       "@type": "HowToStep",
@@ -68,21 +68,21 @@ const howToSchema = {
       "position": 4,
       "name": "Upload Documents",
       "text": "Upload scanned copies of 10th and 12th marksheets, transfer certificate, community certificate, passport photos, and Aadhaar card.",
-      "url": "https://ahs.jkkn.ac.in/admission#documents"
+      "url": "https://ahs.jkkn.ac.in/admissions#documents"
     },
     {
       "@type": "HowToStep",
       "position": 5,
       "name": "Attend Counseling",
       "text": "Attend the admission counseling session where original documents are verified and seat is allotted based on merit.",
-      "url": "https://ahs.jkkn.ac.in/admission#process"
+      "url": "https://ahs.jkkn.ac.in/admissions#process"
     },
     {
       "@type": "HowToStep",
       "position": 6,
       "name": "Complete Fee Payment",
       "text": "Pay the admission fee ranging from 75000 to 125000 rupees per year depending on the program. Installment options and scholarship assistance are available.",
-      "url": "https://ahs.jkkn.ac.in/admission#programs"
+      "url": "https://ahs.jkkn.ac.in/admissions#programs"
     }
   ]
 };
@@ -179,7 +179,7 @@ const speakableSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
   "name": "Admission 2026-27 | JKKN Allied Health Sciences College Tamil Nadu",
-  "url": "https://ahs.jkkn.ac.in/admission",
+  "url": "https://ahs.jkkn.ac.in/admissions",
   "speakable": {
     "@type": "SpeakableSpecification",
     "cssSelector": [".faq-answer", "h1", "h2"]

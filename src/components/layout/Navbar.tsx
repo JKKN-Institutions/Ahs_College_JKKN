@@ -83,6 +83,7 @@ const navLinks: NavLink[] = [
             { name: 'Academic Calendar', href: '/academic-calendar' }
         ]
     },
+    { name: 'ADMISSION', href: '/admissions' },
     { name: 'BLOG', href: '/blog' },
     { name: 'CONTACT', href: '/contact' },
 ];
