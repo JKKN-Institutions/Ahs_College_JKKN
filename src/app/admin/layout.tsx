@@ -8,6 +8,7 @@ export default async function AdminLayout({ children }: { children: React.ReactN
   const supabase = await createClient();
   let user = null;
   let isSuperAdmin = false;
+  let userRole = '';
   let colleges: { id: string; name: string }[] = [];
   let currentCollegeId = process.env.NEXT_PUBLIC_COLLEGE_ID!;
 
@@ -23,8 +24,9 @@ export default async function AdminLayout({ children }: { children: React.ReactN
         .eq('id', user.id)
         .single();
 
-      isSuperAdmin = profile?.role === 'super_admin';
-      const canSwitchCollege = isSuperAdmin || profile?.role === 'seo';
+      userRole = profile?.role ?? '';
+      isSuperAdmin = userRole === 'super_admin';
+      const canSwitchCollege = isSuperAdmin || userRole === 'seo';
 
       if (canSwitchCollege) {
         const { data } = await supabase
@@ -49,6 +51,7 @@ export default async function AdminLayout({ children }: { children: React.ReactN
           <AdminSidebar
             userEmail={user.email ?? ''}
             isSuperAdmin={isSuperAdmin}
+            userRole={userRole}
             colleges={colleges}
             currentCollegeId={currentCollegeId}
             canSwitchCollege={isSuperAdmin || colleges.length > 0}

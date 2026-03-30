@@ -27,21 +27,25 @@ export default function AdminLogin() {
         return;
       }
 
-      // Check if the user belongs to this college
-      const { data: profile } = await supabase
-        .from('staff_profiles')
-        .select('college_id')
-        .eq('id', authData.user.id)
-        .single();
+      // SEO user has access to all college portals — skip college check
+      if (authData.user.email !== 'ramesh.s@jkkn.ac.in') {
+        // Check if the user belongs to this college
+        const { data: profile } = await supabase
+          .from('staff_profiles')
+          .select('college_id')
+          .eq('id', authData.user.id)
+          .single();
 
-      const siteCollegeId = process.env.NEXT_PUBLIC_COLLEGE_ID;
-      if (!profile || profile.college_id !== siteCollegeId) {
-        await supabase.auth.signOut();
-        setError('Access denied. You are not authorized to access this college portal.');
-        return;
+        const siteCollegeId = process.env.NEXT_PUBLIC_COLLEGE_ID;
+        if (!profile || profile.college_id !== siteCollegeId) {
+          await supabase.auth.signOut();
+          setError('Access denied. You are not authorized to access this college portal.');
+          return;
+        }
       }
 
       router.push('/admin/dashboard');
+      router.refresh();
     } catch {
       setError('Network error — please check your connection and try again.');
     } finally {

@@ -11,6 +11,7 @@ export default async function BlogPage() {
   // Fetch admin-created posts from Supabase
   const supabase = await createClient();
   const collegeId = process.env.NEXT_PUBLIC_COLLEGE_ID!;
+  const collegeName = process.env.NEXT_PUBLIC_COLLEGE_NAME ?? 'JKKN College of Allied Health Sciences';
   const { data: campusPosts, error: postsError } = await supabase
     .from('blogs')
     .select('id, title, slug, excerpt, author_name, category, cover_image_url, published_at, created_at, read_time')
@@ -26,17 +27,23 @@ export default async function BlogPage() {
   return (
     <div className="min-h-screen bg-[#FBFBEE]">
       <Header />
+
+      {/* ── Hero Banner ── */}
+      <section className="bg-[#0b6d41] py-16 px-4 text-center">
+        <p className="text-[#ffde59] text-xs sm:text-sm font-semibold tracking-widest uppercase mb-3">
+          {collegeName}
+        </p>
+        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+          Our Blog
+        </h1>
+        <p className="text-white/80 text-base sm:text-lg max-w-xl mx-auto">
+          Latest articles, insights and updates on allied health sciences, campus life, and careers.
+        </p>
+      </section>
+
       {/* ── Campus News (Admin Posts) Section — shown only when posts exist ── */}
       <section className="bg-[#FBFBEE] border-b border-gray-100 px-4 sm:px-6 lg:px-8 py-10">
         <div className="max-w-7xl mx-auto">
-          <div className="mb-10">
-            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#002309]">
-              Latest Articles
-            </h1>
-            <p className="text-gray-500 text-sm mt-1.5">
-              Expert insights on allied health sciences and healthcare careers
-            </p>
-          </div>
 
       {hasCampusPosts && (
         <>

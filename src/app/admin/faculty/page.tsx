@@ -6,7 +6,24 @@ import DeleteFacultyButton from './DeleteFacultyButton';
 
 export default async function AdminFaculty() {
   const supabase = await createClient();
-  const collegeId = await getAdminCollegeId();
+
+  // Resolve college_id the same way the layout does:
+  // only super_admin and seo can switch colleges (cookie override).
+  // All other roles always use the site's own college.
+  const { data: { session } } = await supabase.auth.getSession();
+  let collegeId = process.env.NEXT_PUBLIC_COLLEGE_ID!;
+  if (session?.user) {
+    const { data: profile } = await supabase
+      .from('staff_profiles')
+      .select('role')
+      .eq('id', session.user.id)
+      .single();
+    const canSwitch = profile?.role === 'super_admin' || profile?.role === 'seo';
+    if (canSwitch) {
+      collegeId = await getAdminCollegeId();
+    }
+  }
+
   const { data: members } = await supabase
     .from('faculty')
     .select('id, name, designation, department, qualification, experience_years, photo_url, email, display_order, is_active')
@@ -15,7 +32,7 @@ export default async function AdminFaculty() {
     .order('name', { ascending: true });
 
   return (
-    <div className="p-6 lg:p-8 max-w-6xl">
+    <div className="p-4 sm:p-6 lg:p-8 max-w-6xl">
       {/* Header */}
       <div className="flex items-center justify-between mb-6">
         <div>
