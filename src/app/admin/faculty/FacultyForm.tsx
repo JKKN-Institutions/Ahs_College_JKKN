@@ -370,35 +370,6 @@ export default function FacultyForm({ member }: FacultyFormProps) {
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
 
-    const newErrors: Record<string, string> = {};
-    if (!name.trim()) newErrors.name = 'Name is required.';
-    if (!photoPreview && !photoFile) newErrors.photo = 'Photo is required.';
-    if (!designation.trim()) newErrors.designation = 'Designation is required.';
-    if (!department.trim()) newErrors.department = 'Department is required.';
-    if (!qualification.trim()) newErrors.qualification = 'Qualification is required.';
-    if (!email.trim()) newErrors.email = 'Email is required.';
-    if (!summary.trim()) newErrors.summary = 'Professional Summary is required.';
-    if (academicQualifications.length === 0) newErrors.academicQualifications = 'At least one Academic Qualification is required.';
-    if (areasOfSpecialisation.length === 0) newErrors.areasOfSpecialisation = 'At least one Area of Specialisation is required.';
-    if (experienceEntries.length === 0) newErrors.experienceEntries = 'At least one Experience Entry is required.';
-    if (researchFocus.length === 0) newErrors.researchFocus = 'At least one Research Focus Area is required.';
-    if (publications.length === 0) newErrors.publications = 'At least one Selected Publication is required.';
-    if (!googleScholarUrl.trim()) newErrors.googleScholarUrl = 'Google Scholar URL is required.';
-
-    if (Object.keys(newErrors).length > 0) {
-      setErrors(newErrors);
-      toast.error('Please fill in all required fields.');
-      // Switch to the tab of the first error
-      const tab0Fields = ['name', 'photo', 'designation', 'department', 'qualification', 'email'];
-      const tab1Fields = ['summary', 'academicQualifications', 'areasOfSpecialisation'];
-      const tab2Fields = ['experienceEntries'];
-      if (tab0Fields.some((f) => newErrors[f])) setActiveTab(0);
-      else if (tab1Fields.some((f) => newErrors[f])) setActiveTab(1);
-      else if (tab2Fields.some((f) => newErrors[f])) setActiveTab(2);
-      else setActiveTab(3);
-      return;
-    }
-
     setSaving(true);
 
     const memberId = isEdit ? member!.id : crypto.randomUUID();
@@ -508,7 +479,7 @@ export default function FacultyForm({ member }: FacultyFormProps) {
               )}
             </div>
             <div className="text-sm text-gray-500 pt-2">
-              <p className="font-medium text-gray-700 mb-1">Upload faculty photo *</p>
+              <p className="font-medium text-gray-700 mb-1">Upload faculty photo</p>
               <p>Click the box to select an image.</p>
               <p className="text-xs text-gray-400 mt-1">
                 JPG, PNG up to 5MB. Square photos work best.
@@ -528,13 +499,12 @@ export default function FacultyForm({ member }: FacultyFormProps) {
         {/* Full Name */}
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1.5">
-            Full Name *
+            Full Name
           </label>
           <input
             type="text"
             value={name}
             onChange={(e) => { setName(e.target.value); clearError('name'); }}
-            required
             placeholder="Dr. Firstname Lastname"
             className={errors.name ? IE : I}
           />
@@ -545,7 +515,7 @@ export default function FacultyForm({ member }: FacultyFormProps) {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1.5">
-              Designation *
+              Designation
             </label>
             <select
               value={designation}
@@ -562,7 +532,7 @@ export default function FacultyForm({ member }: FacultyFormProps) {
           </div>
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1.5">
-              Department *
+              Department
             </label>
             <input
               type="text"
@@ -579,7 +549,7 @@ export default function FacultyForm({ member }: FacultyFormProps) {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1.5">
-              Qualification *
+              Qualification
             </label>
             <input
               type="text"
@@ -667,7 +637,7 @@ export default function FacultyForm({ member }: FacultyFormProps) {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1.5">
-              Email *
+              Email
             </label>
             <input
               type="email"
@@ -742,7 +712,7 @@ export default function FacultyForm({ member }: FacultyFormProps) {
         {/* Professional Summary */}
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1.5">
-            Professional Summary *
+            Professional Summary
           </label>
           <textarea
             value={summary}
@@ -757,7 +727,7 @@ export default function FacultyForm({ member }: FacultyFormProps) {
         {/* Academic Qualifications */}
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-2">
-            Academic Qualifications *
+            Academic Qualifications
           </label>
           <div className="space-y-2">
             {academicQualifications.map((q, i) => (
@@ -842,7 +812,7 @@ export default function FacultyForm({ member }: FacultyFormProps) {
         {/* Areas of Specialisation */}
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1.5">
-            Areas of Specialisation *
+            Areas of Specialisation
           </label>
           <div className={errors.areasOfSpecialisation ? 'rounded-lg ring-1 ring-red-500' : ''}>
             <TagInputField
@@ -870,7 +840,7 @@ export default function FacultyForm({ member }: FacultyFormProps) {
       <>
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1">
-            Experience Entries *
+            Experience Entries
           </label>
           <p className="text-xs text-gray-400 mb-3">
             Add teaching and clinical experience. These appear as a timeline on the
@@ -1024,7 +994,7 @@ export default function FacultyForm({ member }: FacultyFormProps) {
         {/* Research Focus */}
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1.5">
-            Research Focus Areas *
+            Research Focus Areas
           </label>
           <div className={errors.researchFocus ? 'rounded-lg ring-1 ring-red-500' : ''}>
             <TagInputField
@@ -1045,7 +1015,7 @@ export default function FacultyForm({ member }: FacultyFormProps) {
         {/* Publications */}
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-2">
-            Selected Publications *
+            Selected Publications
           </label>
           <div className="space-y-2">
             {publications.map((pub, i) => (
@@ -1259,7 +1229,7 @@ export default function FacultyForm({ member }: FacultyFormProps) {
           </label>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
             <div>
-              <label className="text-xs text-gray-500 mb-1 block">Google Scholar *</label>
+              <label className="text-xs text-gray-500 mb-1 block">Google Scholar</label>
               <input
                 type="url"
                 value={googleScholarUrl}

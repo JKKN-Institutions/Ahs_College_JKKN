@@ -8,6 +8,7 @@ import TextAlign from '@tiptap/extension-text-align';
 import Link from '@tiptap/extension-link';
 import Image from '@tiptap/extension-image';
 import Placeholder from '@tiptap/extension-placeholder';
+import { Table, TableRow, TableCell, TableHeader } from '@tiptap/extension-table';
 import { useEffect, useRef, useCallback } from 'react';
 
 interface RichTextEditorProps {
@@ -67,6 +68,10 @@ export default function RichTextEditor({
       Link.configure({ openOnClick: false, HTMLAttributes: { class: 'text-blue-600 underline' } }),
       Image.configure({ inline: false, HTMLAttributes: { class: 'max-w-full rounded-lg my-3' } }),
       Placeholder.configure({ placeholder }),
+      Table.configure({ resizable: false }),
+      TableRow,
+      TableCell,
+      TableHeader,
     ],
     immediatelyRender: false,
     content: value,
@@ -266,9 +271,17 @@ if (!editor) return null;
         </ToolbarBtn>
       </div>
 
+      {/* Table styles scoped to editor */}
+      <style>{`
+        .tiptap-editor-wrap table { border-collapse: collapse; width: 100%; margin: 8px 0; }
+        .tiptap-editor-wrap th, .tiptap-editor-wrap td { border: 1px solid #d1d5db; padding: 6px 10px; text-align: left; vertical-align: top; }
+        .tiptap-editor-wrap th { background: #f3f4f6; font-weight: 600; }
+        .tiptap-editor-wrap tr:nth-child(even) td { background: #f9fafb; }
+      `}</style>
+
       {/* Editor area */}
       <div
-        className="bg-[#fafaf5] cursor-text overflow-y-auto max-h-[480px]"
+        className="tiptap-editor-wrap bg-[#fafaf5] cursor-text overflow-y-auto max-h-[480px]"
         onClick={() => editor.commands.focus()}
       >
         <EditorContent editor={editor} />

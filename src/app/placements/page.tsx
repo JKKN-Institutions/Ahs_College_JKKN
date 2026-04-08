@@ -157,7 +157,7 @@ export default function PlacementsPage() {
         <div className="min-h-screen flex flex-col bg-[#fbfbee]">
             <Navbar />
 
-            <main className="flex-grow pt-16">
+            <main className="flex-grow">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <Breadcrumb items={[
                         { label: 'Home', href: '/' },
