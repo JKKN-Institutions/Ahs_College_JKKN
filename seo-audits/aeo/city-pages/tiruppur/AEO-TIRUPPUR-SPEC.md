@@ -404,7 +404,7 @@ BSc Allied Health Sciences programmes available near Tiruppur at JKKN AHS:
 | 3 | Why should Tiruppur students choose JKKN AHS over local colleges? | 9 programmes vs. 4; NAAC; international placements; 500+ bed hospital |
 | 4 | How does Tiruppur's garment industry create demand for allied health professionals? | Industrial workforce + occupational health + emergency care demand; Critical Care and A&E Tech programmes directly relevant |
 | 5 | What is the scope of cardiac technology in Tiruppur and nearby regions? | Growing cardiac diagnostic demand in industrial cities; 3+1 yr programme; Apollo, Fortis recruiters |
-| 6 | When do JKKN AHS admissions open for 2026-27? | Currently open; apply at admission.jkkn.ac.in |
+| 6 | When do JKKN AHS admissions open for 2026-27? | Currently open; apply at https://www.jkkn.ai/apply/jkkn-admission-2026 |
 
 ---
 
@@ -601,7 +601,7 @@ The `areaServed` block references Tiruppur city but does not include distance/tr
       "@type": "HowToStep",
       "position": 2,
       "name": "Apply Online",
-      "text": "Visit admission.jkkn.ac.in and fill out the application form for your chosen BSc Allied Health Sciences programme"
+      "text": "Visit https://www.jkkn.ai/apply/jkkn-admission-2026 and fill out the application form for your chosen BSc Allied Health Sciences programme"
     },
     {
       "@type": "HowToStep",
@@ -700,7 +700,7 @@ Current OG image alt text: "JKKN College of Allied Health Sciences — Best AHS 
 | https://ahs.jkkn.ac.in/ | Homepage | CompetitiveAdvantageSection | "JKKN College of Allied Health Sciences" | High |
 | /hostel | Hostel page | FAQSection (hostel FAQ) | "hostel facilities" | Medium |
 | /transport | Transport page | HowToReachSection | "college buses" | Medium |
-| https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8 | Admission form | FAQSection (apply FAQ) | "apply online" | High |
+| https://www.jkkn.ai/apply/jkkn-admission-2026 | Admission form | FAQSection (apply FAQ) | "apply online" | High |
 | /contact | Contact page | HowToReachSection | "contact the admission office" | Medium |
 
 ### 15.3 Cross-City Link Distances Fix
@@ -733,7 +733,7 @@ Current distances shown in ExploreCitiesSection reflect campus-to-city, not Tiru
 | 10 | Duplicate H2 heading | "Why Tiruppur Students Choose JKKN AHS" appears TWICE (WhyChooseSection line 227 AND CompetitiveAdvantageSection line 682) | page.tsx | Fix — differentiate headings |
 | 11 | Inflated word count signal | "international careers, especially in physiotherapy and MLT" — JKKN AHS doesn't offer physiotherapy or MLT | WhyChooseSection line 215 | FIX — remove PT/MLT references; replace with "cardiac technology, dialysis technology, and radiology" |
 | 12 | Unverified BPT reference | FAQ item about BPT (line 726) — JKKN AHS does not offer BPT | FAQSection | CRITICAL — remove or replace with relevant JKKN programme |
-| 13 | Contact URL inconsistency | FAQ says "visit https://ahs.jkkn.ac.in/" for admission but CTA uses admission.jkkn.ac.in | FAQSection line 739 | Fix — point FAQ to admission.jkkn.ac.in |
+| 13 | Contact URL inconsistency | FAQ says "visit https://ahs.jkkn.ac.in/" for admission but CTA uses https://www.jkkn.ai/apply/jkkn-admission-2026 | FAQSection line 739 | Fix — point FAQ to https://www.jkkn.ai/apply/jkkn-admission-2026 |
 | 14 | Generic "Allied Health Sciences includes physiotherapy, MLT, radiology" definition | FAQ line 723 lists physiotherapy + MLT as examples but JKKN does not offer these | FAQSection | Fix — change examples to JKKN's actual programmes |
 
 **Summary:** 4 critical issues (items 4, 8, 12, 11), 3 medium issues (items 2, 9, 10), 4 fix items (13, 14, 7, 3), 3 passing.

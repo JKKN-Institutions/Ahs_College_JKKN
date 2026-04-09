@@ -370,7 +370,7 @@
     },
     {
       q: "When do JKKN AHS admissions open for 2026-27?",
-      a: "JKKN AHS admissions for 2026-27 are currently open. Applications can be submitted online at admission.jkkn.ac.in or by visiting the JKKN AHS campus at Natarajapuram, NH-544, Komarapalayam, Namakkal. For Tiruppur students, the campus is approximately 67 km away via NH-544. Contact the admissions office at +91 9345855001 or email info@jkkn.ac.in for guidance on eligible programmes and the counselling process.",
+      a: "JKKN AHS admissions for 2026-27 are currently open. Applications can be submitted online at https://www.jkkn.ai/apply/jkkn-admission-2026 or by visiting the JKKN AHS campus at Natarajapuram, NH-544, Komarapalayam, Namakkal. For Tiruppur students, the campus is approximately 67 km away via NH-544. Contact the admissions office at +91 9345855001 or email info@jkkn.ac.in for guidance on eligible programmes and the counselling process.",
     },
 ```
 
@@ -443,7 +443,7 @@
       name: "When do JKKN AHS admissions open for 2026-27?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "JKKN AHS admissions for 2026-27 are currently open. Apply online at admission.jkkn.ac.in. For Tiruppur students, the campus is approximately 67 km away via NH-544. Contact the admissions office at +91 9345855001 for guidance.",
+        text: "JKKN AHS admissions for 2026-27 are currently open. Apply online at https://www.jkkn.ai/apply/jkkn-admission-2026. For Tiruppur students, the campus is approximately 67 km away via NH-544. Contact the admissions office at +91 9345855001 for guidance.",
       },
     },
 ```
@@ -561,7 +561,7 @@
 
 **Replace with:**
 ```tsx
-      a: "You can apply online at admission.jkkn.ac.in or visit the JKKN AHS campus at Natarajapuram, NH-544, Komarapalayam, Namakkal — approximately 67 km from Tiruppur via NH-544. Admissions for 2026-27 are currently open. Contact the admission office at +91 9345855001 for guidance.",
+      a: "You can apply online at https://www.jkkn.ai/apply/jkkn-admission-2026 or visit the JKKN AHS campus at Natarajapuram, NH-544, Komarapalayam, Namakkal — approximately 67 km from Tiruppur via NH-544. Admissions for 2026-27 are currently open. Contact the admission office at +91 9345855001 for guidance.",
 ```
 
 ---
@@ -906,7 +906,7 @@ const howToSchema = {
       "@type": "HowToStep",
       "position": 2,
       "name": "Apply Online",
-      "text": "Visit admission.jkkn.ac.in and fill out the application form. Select your preferred BSc Allied Health Sciences programme. Admissions for 2026-27 are currently open."
+      "text": "Visit https://www.jkkn.ai/apply/jkkn-admission-2026 and fill out the application form. Select your preferred BSc Allied Health Sciences programme. Admissions for 2026-27 are currently open."
     },
     {
       "@type": "HowToStep",

@@ -366,7 +366,7 @@ const howToSchema = {
   "step": [
     { "@type": "HowToStep", "position": 1, "name": "Check Eligibility", "text": "Ensure you have completed 10+2 with Physics, Chemistry, and Biology with minimum 50% aggregate (40% for reserved categories)." },
     { "@type": "HowToStep", "position": 2, "name": "Choose Your Programme", "text": "Select from 9 BSc Allied Health Science specialisations at JKKN AHS based on your career interest in cardiac, radiology, dialysis, OT, respiratory, physician assistant, critical care, medical records, or emergency care." },
-    { "@type": "HowToStep", "position": 3, "name": "Apply Online", "text": "Visit https://ahs.jkkn.ac.in/ or admission.jkkn.ac.in to submit your application. Admissions for 2026-27 are currently open. Contact: +91 9345855001." },
+    { "@type": "HowToStep", "position": 3, "name": "Apply Online", "text": "Visit https://ahs.jkkn.ac.in/ or https://www.jkkn.ai/apply/jkkn-admission-2026 to submit your application. Admissions for 2026-27 are currently open. Contact: +91 9345855001." },
     { "@type": "HowToStep", "position": 4, "name": "Attend University Counselling", "text": "Participate in Tamil Nadu Dr. MGR Medical University counselling conducted at the state level. Bring original 10+2 mark sheet and relevant documents." },
     { "@type": "HowToStep", "position": 5, "name": "Travel to JKKN Campus", "text": "JKKN campus is ~58 km from Salem via NH-544 (Salem-Coimbatore Highway). TNSTC buses from Salem New Bus Stand reach Komarapalayam in approximately 1 hour, running every 15-20 minutes." }
   ]

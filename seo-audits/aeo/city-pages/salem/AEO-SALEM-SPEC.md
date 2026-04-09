@@ -328,7 +328,7 @@ These sites rank for informational queries due to high domain authority and stru
 <ol class="snippet-answer list-decimal pl-5 text-sm text-gray-700 space-y-2">
   <li><strong>Check Eligibility</strong> — 10+2 with Physics, Chemistry, Biology. Minimum 50% aggregate (40% reserved categories)</li>
   <li><strong>Choose Your Programme</strong> — Select from 9 BSc Allied Health Science specialisations at JKKN AHS</li>
-  <li><strong>Apply Online</strong> — Visit https://ahs.jkkn.ac.in/ or admission.jkkn.ac.in to submit your application for 2026-27</li>
+  <li><strong>Apply Online</strong> — Visit https://ahs.jkkn.ac.in/ or https://www.jkkn.ai/apply/jkkn-admission-2026 to submit your application for 2026-27</li>
   <li><strong>Counselling</strong> — Attend counselling conducted by Tamil Nadu Dr. MGR Medical University, Chennai</li>
   <li><strong>Travel to Campus</strong> — JKKN campus is ~58 km from Salem via NH-544. Take a bus from Salem New Bus Stand to Komarapalayam (every 15–20 minutes)</li>
 </ol>
@@ -623,7 +623,7 @@ Add this schema block after the existing `speakableSchema` in `layout.tsx` (afte
       "@type": "HowToStep",
       "position": 3,
       "name": "Apply Online",
-      "text": "Visit https://ahs.jkkn.ac.in/ or admission.jkkn.ac.in to submit your application for 2026-27 admissions."
+      "text": "Visit https://ahs.jkkn.ac.in/ or https://www.jkkn.ai/apply/jkkn-admission-2026 to submit your application for 2026-27 admissions."
     },
     {
       "@type": "HowToStep",
@@ -700,7 +700,7 @@ Description (155 chars):
 |-----------|------------|--------|-----------|
 | "JKKN AHS Erode page — ~22 km from JKKN campus" | /erode/ | HowToReachSection or ExploreCitiesSection | Regional cross-city SEO |
 | "Explore programmes at JKKN College of Allied Health Sciences" | / (homepage, scroll to programs) | CompetitiveAdvantageSection | Funnel to program selection |
-| "Admission process for 2026-27" | https://admission.jkkn.ac.in/ | FAQSection Q7 + Hero | Conversion-focused link |
+| "Admission process for 2026-27" | https://www.jkkn.ai/apply/jkkn-admission-2026 | FAQSection Q7 + Hero | Conversion-focused link |
 | "View our placement record" | /placements | FAQ Q9 (salary answer) | Evidence link for salary claims |
 | "Contact the admission office" | tel:+919345855001 | FAQ Q8 (fees answer) | Direct conversion |
 

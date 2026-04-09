@@ -303,7 +303,7 @@ function EligibilitySection() {
 function AdmissionProcessSection() {
     const steps = [
         { step: 1, title: "Check Eligibility", desc: "Verify your +2 marks and subject requirements", icon: <ClipboardList className="w-5 h-5" /> },
-        { step: 2, title: "Apply Online", desc: "Complete the application form at admission.jkkn.ac.in", icon: <FileText className="w-5 h-5" /> },
+        { step: 2, title: "Apply Online", desc: "Complete the application form at https://www.jkkn.ai/apply/jkkn-admission-2026", icon: <FileText className="w-5 h-5" /> },
         { step: 3, title: "Upload Documents", desc: "Submit scanned copies of all required documents", icon: <Upload className="w-5 h-5" /> },
         { step: 4, title: "Verification", desc: "Original documents verified by admission office", icon: <UserCheck className="w-5 h-5" /> },
         { step: 5, title: "Counseling", desc: "Attend merit-based counseling and seat allotment", icon: <Users className="w-5 h-5" /> },
@@ -628,7 +628,7 @@ function FAQSection() {
         },
         {
             q: "How do I apply for JKKN AHS admission 2026-27?",
-            a: "You can apply online at admission.jkkn.ac.in or visit the campus at Komarapalayam, Namakkal, Tamil Nadu 638183. For admission enquiries, call 93458 55001 or email alliedhealth@jkkn.ac.in."
+            a: "You can apply online at https://www.jkkn.ai/apply/jkkn-admission-2026 or visit the campus at Komarapalayam, Namakkal, Tamil Nadu 638183. For admission enquiries, call 93458 55001 or email alliedhealth@jkkn.ac.in."
         },
     ];
 

@@ -881,7 +881,7 @@ Add as a 5th JSON-LD block in `layout.tsx` after the existing 4 blocks:
       "@type": "HowToStep",
       "position": 2,
       "name": "Apply Online",
-      "text": "Visit https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8 and complete the online application form."
+      "text": "Visit https://www.jkkn.ai/apply/jkkn-admission-2026 and complete the online application form."
     },
     {
       "@type": "HowToStep",
@@ -997,7 +997,7 @@ Update layout.tsx FAQ schema entries with correct distance data:
 | /salem | "Salem" | ExploreCitiesSection | 835 |
 | /tiruppur | "Tiruppur" | ExploreCitiesSection | 835 |
 | /coimbatore | "Coimbatore" | ExploreCitiesSection | 835 |
-| https://admission.jkkn.ac.in/ | "Apply Now — 2026-27" | HeroSection | 113 |
+| https://www.jkkn.ai/apply/jkkn-admission-2026 | "Apply Now — 2026-27" | HeroSection | 113 |
 
 ### 15.2 New Internal Links to Add
 

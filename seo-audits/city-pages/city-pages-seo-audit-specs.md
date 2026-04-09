@@ -337,7 +337,7 @@ Composite Score = Sum of all Weighted Scores
 | D8.7 | Scholarship Information | Available scholarships for city students | 100: detailed; 50: mentioned; 0: missing | Missing — no scholarship information | **0** |
 | D8.8 | Alumni Success Stories | Named alumni from the target city | 100: 3+ real stories; 50: 1-2; 0: placeholders | Placeholders only — `[Student Name]`, `[Course]`, `[Year]` | **0** |
 | D8.9 | Accreditation Details | NAAC grade, affiliation details | 100: detailed with grade; 70: mentioned; 50: vague | AffiliationBar mentions "NAAC" and "Tamil Nadu Dr. M.G.R. Medical University" — but no grade specified | **50** |
-| D8.10 | Contact/Enquiry Form | On-page lead capture form | 100: embedded form; 70: sticky CTA; 50: link to form | External link to `admission.jkkn.ac.in` — no embedded form or sticky CTA | **40** |
+| D8.10 | Contact/Enquiry Form | On-page lead capture form | 100: embedded form; 70: sticky CTA; 50: link to form | External link to `https://www.jkkn.ai/apply/jkkn-admission-2026` — no embedded form or sticky CTA | **40** |
 
 ### D8 Dimension Score
 

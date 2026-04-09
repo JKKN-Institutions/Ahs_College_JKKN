@@ -704,7 +704,7 @@ JKKN Allied Health Sciences — Namakkal's top AHS college, 5-10 km on NH-544. 9
 
 | Link Text | Destination | Where to Add | Priority |
 |-----------|-------------|-------------|---------|
-| "Apply for admission 2026-27" | https://admission.jkkn.ac.in/ | Below ProgrammesSection | P1 |
+| "Apply for admission 2026-27" | https://www.jkkn.ai/apply/jkkn-admission-2026 | Below ProgrammesSection | P1 |
 | "View all facilities" | /classroom, /library, /lab | FacilitiesSection | P2 |
 | "Contact admissions office" | /contact | FAQSection (below apply FAQ) | P1 |
 | "JKKN AHS homepage" | / | CompetitiveAdvantage (institutional trust section) | P2 |

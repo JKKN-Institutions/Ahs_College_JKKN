@@ -62,7 +62,7 @@ const courseSchema = {
     "priceCurrency": "INR",
     "price": "75000",
     "priceValidUntil": "2027-07-31",
-    "url": "https://admission.jkkn.ac.in/",
+    "url": "https://www.jkkn.ai/apply/jkkn-admission-2026",
     "availability": "https://schema.org/InStock",
     "validFrom": "2026-03-01"
   },
@@ -70,7 +70,7 @@ const courseSchema = {
     "@type": "ApplyAction",
     "target": {
       "@type": "EntryPoint",
-      "urlTemplate": "https://admission.jkkn.ac.in/",
+      "urlTemplate": "https://www.jkkn.ai/apply/jkkn-admission-2026",
       "actionPlatform": "http://schema.org/DesktopWebPlatform"
     },
     "name": "Apply for B.Sc Physician Assistant"

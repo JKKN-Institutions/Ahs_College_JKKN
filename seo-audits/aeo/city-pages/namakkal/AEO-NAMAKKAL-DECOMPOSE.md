@@ -110,7 +110,7 @@ function FAQSection() {
     },
     {
       q: "How can I apply for admission at JKKN AHS?",
-      a: "Apply online at https://admission.jkkn.ac.in/ or visit the campus directly. Admissions for 2026-27 are currently open. Call +91 9345855001 for guidance from the admissions team.",
+      a: "Apply online at https://www.jkkn.ai/apply/jkkn-admission-2026 or visit the campus directly. Admissions for 2026-27 are currently open. Call +91 9345855001 for guidance from the admissions team.",
     },
     {
       q: "What are the fees for BSc allied health science in Tamil Nadu?",
@@ -822,7 +822,7 @@ After the `<div className="w-12 h-1 bg-[#7cb983]...">` divider and before the gr
 },
 {
   q: "What is the admission process for allied health science 2026?",
-  a: "Admissions for 2026-27 are currently open. Step 1: Apply online at admission.jkkn.ac.in or visit the campus. Step 2: Submit 10+2 marksheets with PCB subjects (min. 50%). Step 3: Merit-based counselling via Tamil Nadu government process. Step 4: Fee payment and joining. Call +91 9345855001 for step-by-step guidance.",
+  a: "Admissions for 2026-27 are currently open. Step 1: Apply online at https://www.jkkn.ai/apply/jkkn-admission-2026 or visit the campus. Step 2: Submit 10+2 marksheets with PCB subjects (min. 50%). Step 3: Merit-based counselling via Tamil Nadu government process. Step 4: Fee payment and joining. Call +91 9345855001 for step-by-step guidance.",
 },
 ```
 
@@ -850,7 +850,7 @@ After the `<div className="w-12 h-1 bg-[#7cb983]...">` divider and before the gr
   name: "What is the admission process for allied health science 2026?",
   acceptedAnswer: {
     "@type": "Answer",
-    text: "Apply online at admission.jkkn.ac.in. Submit 10+2 marksheets with PCB subjects (min. 50%). Admission is merit-based via Tamil Nadu government counselling. Call +91 9345855001 for guidance.",
+    text: "Apply online at https://www.jkkn.ai/apply/jkkn-admission-2026. Submit 10+2 marksheets with PCB subjects (min. 50%). Admission is merit-based via Tamil Nadu government counselling. Call +91 9345855001 for guidance.",
   },
 },
 ```

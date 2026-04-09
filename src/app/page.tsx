@@ -63,7 +63,7 @@ const howToSchema = {
       "position": 1,
       "name": "Submit Online Application",
       "text": "Visit the JKKN admissions portal and fill out the online application form with your personal details, academic qualifications, and preferred B.Sc Allied Health Sciences program. Upload required documents including 10+2 mark sheet, transfer certificate, and passport-size photographs.",
-      "url": "https://admission.jkkn.ac.in/"
+      "url": "https://www.jkkn.ai/apply/jkkn-admission-2026"
     },
     {
       "@type": "HowToStep",
@@ -77,7 +77,7 @@ const howToSchema = {
       "position": 3,
       "name": "Complete Fee Payment and Enrollment",
       "text": "After successful document verification, complete the fee payment through the admissions portal or at the campus office. Receive your admission confirmation letter and begin your journey towards a career in Allied Health Sciences at JKKN.",
-      "url": "https://admission.jkkn.ac.in/"
+      "url": "https://www.jkkn.ai/apply/jkkn-admission-2026"
     }
   ]
 };

@@ -165,7 +165,7 @@ const faqs = [
   },
   {
     q: "How can I apply for admission at JKKN AHS?",
-    a: "You can apply online at https://admission.jkkn.ac.in/ or visit the campus directly. Admissions for 2026-27 are currently open. Contact the admission office at +91 9345855001 for guidance.",
+    a: "You can apply online at https://www.jkkn.ai/apply/jkkn-admission-2026 or visit the campus directly. Admissions for 2026-27 are currently open. Contact the admission office at +91 9345855001 for guidance.",
   },
   {
     q: "What are the fees for BSc allied health science in Tamil Nadu?",
@@ -845,7 +845,7 @@ const howToSchema = {
       "@type": "HowToStep",
       "position": 2,
       "name": "Apply Online",
-      "text": "Visit https://admission.jkkn.ac.in/ and complete the online application form for your chosen BSc Allied Health Science programme."
+      "text": "Visit https://www.jkkn.ai/apply/jkkn-admission-2026 and complete the online application form for your chosen BSc Allied Health Science programme."
     },
     {
       "@type": "HowToStep",
@@ -1349,12 +1349,12 @@ New:
 
 Current:
 ```tsx
-    a: "You can apply online at https://admission.jkkn.ac.in/ or visit the campus directly. Admissions for 2026-27 are currently open. Contact the admission office at +91 9345855001 for guidance.",
+    a: "You can apply online at https://www.jkkn.ai/apply/jkkn-admission-2026 or visit the campus directly. Admissions for 2026-27 are currently open. Contact the admission office at +91 9345855001 for guidance.",
 ```
 
 New (keep same text but note: since this is in a client component, use `<a>` tag for the contact link):
 ```tsx
-    a: "You can apply online at https://admission.jkkn.ac.in/ or visit the campus directly. Admissions for 2026-27 are currently open. Contact the admission office at +91 9345855001 or visit our contact page for guidance.",
+    a: "You can apply online at https://www.jkkn.ai/apply/jkkn-admission-2026 or visit the campus directly. Admissions for 2026-27 are currently open. Contact the admission office at +91 9345855001 or visit our contact page for guidance.",
 ```
 
 The "contact page" reference encourages users to click through, but since FAQ answers are plain strings in the current implementation, the actual link addition would require changing `a` (answer) from a string to JSX — which is a larger refactor. Flag this as a future enhancement.

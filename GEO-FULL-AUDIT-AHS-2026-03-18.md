@@ -1286,7 +1286,7 @@ Recommended approach:
 - Website: https://ahs.jkkn.ac.in/
 - Phone: +91 9345855001
 - Email: alliedhealth@jkkn.ac.in
-- Admission Portal: https://admission.jkkn.ac.in/
+- Admission Portal: https://www.jkkn.ai/apply/jkkn-admission-2026
 - Placement Portal: https://placements.jkkn.ac.in/
 
 ## Programs Offered (9 B.Sc Programs — 4 Years Each)
