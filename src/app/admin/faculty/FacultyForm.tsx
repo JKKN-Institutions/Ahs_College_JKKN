@@ -1682,30 +1682,6 @@ export default function FacultyForm({ member }: FacultyFormProps) {
           <button
             type="button"
             onClick={() => {
-              const tabErrors: Record<string, string> = {};
-              if (activeTab === 0) {
-                if (!name.trim()) tabErrors.name = 'Name is required.';
-                if (!photoPreview && !photoFile) tabErrors.photo = 'Photo is required.';
-                if (!designation.trim()) tabErrors.designation = 'Designation is required.';
-                if (!department.trim()) tabErrors.department = 'Department is required.';
-                if (!qualification.trim()) tabErrors.qualification = 'Qualification is required.';
-                if (!email.trim()) tabErrors.email = 'Email is required.';
-              } else if (activeTab === 1) {
-                if (!summary.trim()) tabErrors.summary = 'Professional Summary is required.';
-                if (academicQualifications.length === 0) tabErrors.academicQualifications = 'At least one Academic Qualification is required.';
-                if (areasOfSpecialisation.length === 0) tabErrors.areasOfSpecialisation = 'At least one Area of Specialisation is required.';
-              } else if (activeTab === 2) {
-                if (experienceEntries.length === 0) tabErrors.experienceEntries = 'At least one Experience Entry is required.';
-              } else if (activeTab === 3) {
-                if (researchFocus.length === 0) tabErrors.researchFocus = 'At least one Research Focus Area is required.';
-                if (publications.length === 0) tabErrors.publications = 'At least one Selected Publication is required.';
-                if (!googleScholarUrl.trim()) tabErrors.googleScholarUrl = 'Google Scholar URL is required.';
-              }
-              if (Object.keys(tabErrors).length > 0) {
-                setErrors((prev) => ({ ...prev, ...tabErrors }));
-                toast.error('Please fill in all required fields.');
-                return;
-              }
               setActiveTab(activeTab + 1);
             }}
             className="flex items-center gap-2 bg-[#006837] text-white text-sm font-semibold px-6 py-2.5 rounded-xl hover:bg-[#005a2e] transition"

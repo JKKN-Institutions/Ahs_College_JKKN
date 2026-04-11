@@ -481,23 +481,23 @@ function ImportantDatesSection() {
 function ScholarshipsSection() {
     const scholarships = [
         {
-            title: "Government Scholarships",
-            desc: "State and central government scholarships for BC, MBC, SC, and ST category students. Covers partial to full tuition fees based on family income and category.",
-            highlights: ["BC/MBC fee waiver", "SC/ST full scholarship", "Post-Matric Scholarship Scheme"],
+            title: "Trust Scholarship (Merit Based)",
+            desc: "Available for BC/MBC/DNC/BCM category AHS students based on academic merit. Applicable across all Allied Health Sciences branches.",
+            highlights: ["₹5,000 – ₹10,000 per year", "Merit Quota & General Quota", "All AHS branches eligible"],
             color: "border-[#0b6d41]",
             icon: <Building2 className="w-6 h-6" />
         },
         {
-            title: "JKKN Merit Scholarships",
-            desc: "Institution-level scholarships for academically outstanding students. Awarded based on +2 marks and performance in entrance counseling.",
-            highlights: ["Top scorer awards", "Academic excellence grants", "Sports achievement awards"],
+            title: "Naan Mudhalvan Scholarship",
+            desc: "For all community students who studied in Tamil Medium Government or Government-Aided Schools from Class 6 to 12. Available for both Boys and Girls.",
+            highlights: ["₹1,000 per month", "Boys & Girls eligible", "Tamil Medium Govt / Govt Aided School (Class 6–12)"],
             color: "border-[#ffde59]",
             icon: <Award className="w-6 h-6" />
         },
         {
-            title: "Fee Concessions & Support",
-            desc: "Flexible payment options and financial support to ensure no deserving student misses out on quality education due to financial constraints.",
-            highlights: ["Installment payment facility", "Education loan assistance", "Sibling fee concession"],
+            title: "Financial Support",
+            desc: "Flexible payment options and education loan assistance to ensure no deserving student is denied quality healthcare education.",
+            highlights: ["Installment payment facility", "Education loan assistance", "Contact admissions for details"],
             color: "border-[#085231]",
             icon: <Heart className="w-6 h-6" />
         },
@@ -616,7 +616,7 @@ function FAQSection() {
         },
         {
             q: "Are scholarships available for AHS students?",
-            a: "Yes, JKKN facilitates government scholarships for BC, MBC, SC, and ST students. Additionally, JKKN offers merit-based scholarships for academic toppers, installment payment options, and education loan assistance."
+            a: "Yes, the following scholarships are available for AHS students: (1) Trust Scholarship (Merit Based) — ₹5,000–₹10,000/year for BC/MBC/DNC/BCM category students. (2) Naan Mudhalvan Scholarship — ₹1,000/month for students who studied in Tamil Medium Government or Government-Aided Schools (Class 6–12). Installment payment options and education loan assistance are also available."
         },
         {
             q: "What is the placement record at JKKN AHS?",

@@ -76,7 +76,7 @@ export default function VisionMission() {
 
             <Navbar />
 
-            <main className="flex-grow pt-4 md:pt-20 lg:pt-32 pb-20">
+            <main className="flex-grow pt-4 md:pt-20 lg:pt-20 pb-20">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <Breadcrumb items={[
                         { label: 'Home', href: '/' },

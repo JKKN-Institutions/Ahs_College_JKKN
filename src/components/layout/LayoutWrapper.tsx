@@ -2,6 +2,7 @@
 
 import { BottomNavbar } from "@/components/BottomNav";
 import { MobileHeader } from "@/components/layout/MobileHeader";
+import { ScrollToTop } from "@/components/ScrollToTop";
 import { usePathname } from "next/navigation";
 
 export function LayoutWrapper({ children }: { children: React.ReactNode }) {
@@ -23,6 +24,9 @@ export function LayoutWrapper({ children }: { children: React.ReactNode }) {
 
       {/* Mobile bottom navigation */}
       <BottomNavbar />
+
+      {/* Scroll to top button */}
+      <ScrollToTop />
     </>
   );
 }

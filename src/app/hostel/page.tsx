@@ -140,7 +140,7 @@ export default function Hostel() {
                             { q: "What amenities are included in the JKKN hostel?", a: "JKKN hostels include furnished rooms, attached bathrooms, high-speed WiFi, study areas, gymnasium, and recreational facilities for students." },
                             { q: "Is the JKKN hostel located within the campus?", a: "Yes, both boys and girls hostels are situated within the JKKN campus at Natarajapuram, Komarapalayam, ensuring convenient access to classes." },
                             { q: "What food facilities are available for hostel students at JKKN?", a: "JKKN hostels have an in-campus mess providing nutritious vegetarian and non-vegetarian meals three times daily with snacks." },
-                            { q: "What is the hostel fee at JKKN College?", a: "Hostel fees vary by room type. Contact JKKN admissions at 9345855001 for current hostel fee details and room availability." },
+                            { q: "What is the hostel fee at JKKN College?", a: "Hostel fees for Allied Health Sciences (AHS) students: Girls — Classic Mess ₹65,000/yr, Premium Mess ₹80,000/yr, AC Room ₹30,000/yr. Boys — Classic Mess ₹65,000/yr, Premium Mess ₹80,000/yr (AC Room not available for boys). Separate hostel facilities for Boys and Girls with 24/7 security, mess, laundry, gym, sports, WiFi, hospital & 24/7 ambulance support, and study areas." },
                         ].map((faq, i) => (
                             <div key={i} className="border border-gray-200 rounded-2xl overflow-hidden bg-white">
                                 <h3 className="m-0 text-base">
