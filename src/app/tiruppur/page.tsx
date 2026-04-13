@@ -856,7 +856,7 @@ function ExploreCitiesSection() {
         </div>
 
         <a
-          href="/"
+          href="/#programs"
           className="inline-block px-10 py-4 bg-[#7cb983] text-white font-bold rounded-full text-sm hover:bg-[#6ba872] transition-colors"
         >
           View All Programmes

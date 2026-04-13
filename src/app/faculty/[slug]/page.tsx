@@ -29,12 +29,24 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const supabase = await createClient();
-  const { data } = await supabase
+  const collegeIdMeta = process.env.NEXT_PUBLIC_COLLEGE_ID;
+
+  let { data } = await supabase
     .from('faculty')
     .select('name, designation, department')
-    .or(`slug.eq.${slug},id.eq.${slug}`)
-    .eq('college_id', process.env.NEXT_PUBLIC_COLLEGE_ID)
-    .single();
+    .eq('slug', slug)
+    .eq('college_id', collegeIdMeta)
+    .maybeSingle();
+
+  if (!data) {
+    const { data: byId } = await supabase
+      .from('faculty')
+      .select('name, designation, department')
+      .eq('id', slug)
+      .eq('college_id', collegeIdMeta)
+      .maybeSingle();
+    data = byId;
+  }
 
   if (!data) return { title: 'Faculty | JKKN Dental College & Hospital' };
 
@@ -61,9 +73,7 @@ export default async function FacultyProfilePage({
   const supabase = await createClient();
   const collegeId = process.env.NEXT_PUBLIC_COLLEGE_ID;
 
-  const { data: m } = await supabase
-    .from('faculty')
-    .select(`
+  const selectFields = `
       id, name, designation, department, qualification, experience_years,
       photo_url, email, slug,
       summary, research_papers_count, phd_scholars_count, awards_won_count,
@@ -72,11 +82,26 @@ export default async function FacultyProfilePage({
       badges, academic_qualifications, areas_of_specialisation,
       experience, research_focus, publications, funded_research,
       certifications, awards, memberships, phd_scholars, faqs
-    `)
-    .or(`slug.eq.${slug},id.eq.${slug}`)
+    `;
+
+  let { data: m } = await supabase
+    .from('faculty')
+    .select(selectFields)
+    .eq('slug', slug)
     .eq('college_id', collegeId)
     .eq('is_active', true)
-    .single();
+    .maybeSingle();
+
+  if (!m) {
+    const { data: byId } = await supabase
+      .from('faculty')
+      .select(selectFields)
+      .eq('id', slug)
+      .eq('college_id', collegeId)
+      .eq('is_active', true)
+      .maybeSingle();
+    m = byId;
+  }
 
   if (!m) notFound();
 
