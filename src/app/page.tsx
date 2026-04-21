@@ -115,7 +115,7 @@ const faqSchema = {
       "name": "What is the fee structure for B.Sc. Allied Health Sciences programs?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "B.Sc. Allied Health Sciences fees at JKKN range from ₹75,000 to ₹1,25,000 per year depending on the program. This includes tuition, laboratory fees, and hospital training components. Scholarships are available for meritorious and economically disadvantaged Learners covering up to 50% of fees. Payment can be made in installments."
+        "text": "Government Quota (GQ) fees are as per government norms. Management Quota (MQ) annual fees at JKKN range from Rs 60,000 (Medical Record Science) to Rs 1,70,000 (Cardiac and Operation Theatre Technology) per year. This includes tuition, laboratory fees, and hospital training components. Scholarships are available for meritorious and economically disadvantaged Learners covering up to 50 percent of fees. Payment can be made in installments."
       }
     },
     {
@@ -171,7 +171,7 @@ const faqSchema = {
       "name": "How much does B.Sc Allied Health Sciences cost in Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "B.Sc Allied Health Sciences fees at JKKN range from 75,000 to 1,25,000 rupees per year covering tuition, laboratory access, and hospital training. Merit-based scholarships cover up to 50% of fees."
+        "text": "Government Quota (GQ) fees are as per government norms. Management Quota (MQ) fees at JKKN range from 60,000 to 1,70,000 rupees per year covering tuition, laboratory access, and hospital training. Merit-based scholarships cover up to 50 percent of fees."
       }
     },
     {
@@ -280,15 +280,15 @@ const speakableSchema = {
 };
 
 const courses = [
-  { name: "B.Sc Cardiac Technology", slug: "cardiac-technology", description: "Specialized undergraduate program in cardiovascular diagnostics covering ECG interpretation, echocardiography, cardiac catheterization, and pacemaker technology with hands-on clinical training at partner hospitals.", occupation: "Cardiac Technologist" },
-  { name: "B.Sc Radiology & Imaging Technology", slug: "radiology-imaging-technology", description: "Comprehensive program training students in diagnostic imaging including X-ray, CT scan, MRI, ultrasound, and interventional radiology with clinical rotations at multi-specialty hospitals.", occupation: "Radiographer / Imaging Technologist" },
-  { name: "B.Sc Dialysis Technology", slug: "dialysis-technology", description: "Focused program on renal care and dialysis procedures including hemodialysis, peritoneal dialysis, and continuous renal replacement therapy with practical training at nephrology centers.", occupation: "Dialysis Technician" },
-  { name: "B.Sc Operation Theatre & Anaesthesia Technology", slug: "operation-theatre-anaesthesia", description: "Program covering surgical assistance, anaesthesia administration, OT management, sterilization protocols, and post-operative care with extensive operating theatre clinical training.", occupation: "OT & Anaesthesia Technologist" },
-  { name: "B.Sc Respiratory Therapy", slug: "respiratory-therapy", description: "Specialized training in respiratory care including ventilator management, pulmonary function testing, oxygen therapy, and cardiopulmonary rehabilitation at ICU and respiratory care units.", occupation: "Respiratory Therapist" },
-  { name: "B.Sc Physician Assistant", slug: "physician-assistant", description: "Comprehensive clinical training program preparing graduates to assist physicians in patient examination, diagnosis, treatment planning, and emergency care across medical specialties.", occupation: "Physician Assistant" },
-  { name: "B.Sc Critical Care Technology", slug: "critical-care-technology", description: "Advanced program focused on intensive care unit management, multi-organ monitoring, life support systems, and critical patient care with clinical training at ICU facilities.", occupation: "Critical Care Technologist" },
-  { name: "B.Sc Medical Record Science", slug: "medical-record-science", description: "Program in health information management covering medical coding, hospital records administration, health informatics, and data analytics for healthcare facilities.", occupation: "Medical Records Officer" },
-  { name: "B.Sc Accident & Emergency Care Technology", slug: "accident-emergency-care", description: "Training in emergency medicine, trauma management, triage protocols, first response techniques, and pre-hospital care with clinical exposure at emergency departments.", occupation: "Emergency Care Technologist" },
+  { name: "B.Sc Cardiac Technology", slug: "cardiac-technology", description: "Specialized undergraduate program in cardiovascular diagnostics covering ECG interpretation, echocardiography, cardiac catheterization, and pacemaker technology with hands-on clinical training at partner hospitals.", occupation: "Cardiac Technologist", price: "170000" },
+  { name: "B.Sc Radiology & Imaging Technology", slug: "radiology-imaging-technology", description: "Comprehensive program training students in diagnostic imaging including X-ray, CT scan, MRI, ultrasound, and interventional radiology with clinical rotations at multi-specialty hospitals.", occupation: "Radiographer / Imaging Technologist", price: "130000" },
+  { name: "B.Sc Dialysis Technology", slug: "dialysis-technology", description: "Focused program on renal care and dialysis procedures including hemodialysis, peritoneal dialysis, and continuous renal replacement therapy with practical training at nephrology centers.", occupation: "Dialysis Technician", price: "110000" },
+  { name: "B.Sc Operation Theatre & Anaesthesia Technology", slug: "operation-theatre-anaesthesia", description: "Program covering surgical assistance, anaesthesia administration, OT management, sterilization protocols, and post-operative care with extensive operating theatre clinical training.", occupation: "OT & Anaesthesia Technologist", price: "170000" },
+  { name: "B.Sc Respiratory Therapy", slug: "respiratory-therapy", description: "Specialized training in respiratory care including ventilator management, pulmonary function testing, oxygen therapy, and cardiopulmonary rehabilitation at ICU and respiratory care units.", occupation: "Respiratory Therapist", price: "110000" },
+  { name: "B.Sc Physician Assistant", slug: "physician-assistant", description: "Comprehensive clinical training program preparing graduates to assist physicians in patient examination, diagnosis, treatment planning, and emergency care across medical specialties.", occupation: "Physician Assistant", price: "130000" },
+  { name: "B.Sc Critical Care Technology", slug: "critical-care-technology", description: "Advanced program focused on intensive care unit management, multi-organ monitoring, life support systems, and critical patient care with clinical training at ICU facilities.", occupation: "Critical Care Technologist", price: "110000" },
+  { name: "B.Sc Medical Record Science", slug: "medical-record-science", description: "Program in health information management covering medical coding, hospital records administration, health informatics, and data analytics for healthcare facilities.", occupation: "Medical Records Officer", price: "60000" },
+  { name: "B.Sc Accident & Emergency Care Technology", slug: "accident-emergency-care", description: "Training in emergency medicine, trauma management, triage protocols, first response techniques, and pre-hospital care with clinical exposure at emergency departments.", occupation: "Emergency Care Technologist", price: "110000" },
 ];
 
 const courseGraphSchema = {
@@ -303,7 +303,7 @@ const courseGraphSchema = {
     "educationalCredentialAwarded": c.name,
     "occupationalCredentialAwarded": c.occupation,
     "hasCourseInstance": { "@type": "CourseInstance", "courseMode": "In-Person", "startDate": "2026-08-01" },
-    "offers": { "@type": "Offer", "category": "Tuition", "price": "75000", "priceCurrency": "INR", "priceValidUntil": "2027-03-31", "availability": "https://schema.org/InStock" }
+    "offers": { "@type": "Offer", "category": "Tuition", "price": c.price, "priceCurrency": "INR", "priceValidUntil": "2027-03-31", "availability": "https://schema.org/InStock" }
   }))
 };
 

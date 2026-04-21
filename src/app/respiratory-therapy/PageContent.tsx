@@ -37,7 +37,7 @@ const courseSchema = {
     "offers": {
         "@type": "Offer",
         "category": "Tuition",
-        "price": "75000",
+        "price": "110000",
         "priceCurrency": "INR",
         "priceValidUntil": "2027-03-31",
         "availability": "https://schema.org/InStock"

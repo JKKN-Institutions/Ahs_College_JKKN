@@ -60,7 +60,7 @@ const courseSchema = {
     "@type": "Offer",
     "category": "Tuition Fees",
     "priceCurrency": "INR",
-    "price": "75000",
+    "price": "130000",
     "priceValidUntil": "2027-07-31",
     "url": "https://www.jkkn.ai/apply/jkkn-admission-2026",
     "availability": "https://schema.org/InStock",

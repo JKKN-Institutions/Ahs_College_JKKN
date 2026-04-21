@@ -96,7 +96,7 @@ function HighlightsSection() {
     const highlights = [
         { value: "9", label: "Programs", icon: <GraduationCap className="w-5 h-5" /> },
         { value: "95%", label: "Placement", icon: <TrendingUp className="w-5 h-5" /> },
-        { value: "₹75K-1.25L", label: "Annual Fees", icon: <IndianRupee className="w-5 h-5" /> },
+        { value: "₹60K-1.7L", label: "Annual Fees (MQ)", icon: <IndianRupee className="w-5 h-5" /> },
         { value: "NAAC A+", label: "Accredited", icon: <Award className="w-5 h-5" /> },
         { value: "500+", label: "Bed Hospital", icon: <Hospital className="w-5 h-5" /> },
         { value: "3+1 Yr", label: "Duration", icon: <Clock className="w-5 h-5" /> },
@@ -130,15 +130,15 @@ function HighlightsSection() {
 // 3. Programs & Fees Section
 function ProgramsFeesSection() {
     const programs = [
-        { name: "B.Sc Cardiac Technology", duration: "3+1 Years", fee: "₹75,000", seats: "7", href: "/cardiac-technology" },
-        { name: "B.Sc Dialysis Technology", duration: "3+1 Years", fee: "₹75,000", seats: "5", href: "/dialysis-technology" },
-        { name: "B.Sc Radiology & Imaging Technology", duration: "3+1 Years", fee: "₹1,00,000", seats: "5", href: "/radiology-imaging-technology" },
-        { name: "B.Sc Operation Theatre & Anaesthesia", duration: "3+1 Years", fee: "₹75,000", seats: "10", href: "/operation-theatre-anaesthesia" },
-        { name: "B.Sc Respiratory Therapy", duration: "3+1 Years", fee: "₹1,00,000", seats: "10", href: "/respiratory-therapy" },
-        { name: "B.Sc Physician Assistant", duration: "3+1 Years", fee: "₹1,00,000", seats: "10", href: "/physician-assistant" },
-        { name: "B.Sc Critical Care Technology", duration: "3+1 Years", fee: "₹1,00,000", seats: "10", href: "/critical-care-technology" },
-        { name: "B.Sc Medical Record Science", duration: "3+1 Years", fee: "₹75,000", seats: "15", href: "/medical-record-science" },
-        { name: "B.Sc Accident & Emergency Care", duration: "3+1 Years", fee: "₹1,25,000", seats: "10", href: "/accident-emergency-care" },
+        { name: "B.Sc Cardiac Technology", duration: "3+1 Years", fee: "₹1,70,000", seats: "7", href: "/cardiac-technology" },
+        { name: "B.Sc Dialysis Technology", duration: "3+1 Years", fee: "₹1,10,000", seats: "5", href: "/dialysis-technology" },
+        { name: "B.Sc Radiology & Imaging Technology", duration: "3+1 Years", fee: "₹1,30,000", seats: "5", href: "/radiology-imaging-technology" },
+        { name: "B.Sc Operation Theatre & Anaesthesia", duration: "3+1 Years", fee: "₹1,70,000", seats: "10", href: "/operation-theatre-anaesthesia" },
+        { name: "B.Sc Respiratory Therapy", duration: "3+1 Years", fee: "₹1,10,000", seats: "10", href: "/respiratory-therapy" },
+        { name: "B.Sc Physician Assistant", duration: "3+1 Years", fee: "₹1,30,000", seats: "10", href: "/physician-assistant" },
+        { name: "B.Sc Critical Care Technology", duration: "3+1 Years", fee: "₹1,10,000", seats: "10", href: "/critical-care-technology" },
+        { name: "B.Sc Medical Record Science", duration: "3+1 Years", fee: "₹60,000", seats: "15", href: "/medical-record-science" },
+        { name: "B.Sc Accident & Emergency Care", duration: "3+1 Years", fee: "₹1,10,000", seats: "10", href: "/accident-emergency-care" },
     ];
 
     return (
@@ -600,7 +600,7 @@ function FAQSection() {
         },
         {
             q: "What is the fee range for BSc AHS programs?",
-            a: "Annual fees range from ₹75,000 to ₹1,25,000 depending on the specialization. Fee payment can be made in installments. Government scholarships and JKKN merit scholarships are available to reduce the financial burden."
+            a: "Government Quota (GQ) fees are as per Govt norms. Management Quota (MQ) annual fees range from ₹60,000 (Medical Record Science) to ₹1,70,000 (Cardiac & Operation Theatre Technology) depending on the specialization. Fee payment can be made in installments. Government scholarships and JKKN merit scholarships are available to reduce the financial burden."
         },
         {
             q: "How many programs does JKKN AHS College offer?",

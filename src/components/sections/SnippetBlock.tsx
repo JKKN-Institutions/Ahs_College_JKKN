@@ -37,7 +37,7 @@ export function SnippetBlock() {
             <li><strong>500+ Bed Teaching Hospital</strong> — Hands-on clinical training from Year 1 at a multi-specialty hospital with 2,000+ training hours.</li>
             <li><strong>95% Placement Rate</strong> — 100+ recruiters including Apollo, MIOT, Fortis, and Kauvery; highest package 7.5 LPA.</li>
             <li><strong>International Opportunities</strong> — Alumni placed in the UK (NHS), UAE, Saudi Arabia, and Australia.</li>
-            <li><strong>Affordable Fees with Scholarships</strong> — Annual fees from ₹75,000 to ₹1,25,000 with merit-based scholarships up to 50%.</li>
+            <li><strong>Affordable Fees with Scholarships</strong> — GQ fees as per Govt norms; MQ annual fees from ₹60,000 to ₹1,70,000 with merit-based scholarships available.</li>
             <li><strong>Complete Campus Facilities</strong> — <Link href="/hostel" className="text-[#0b6d41] font-semibold hover:underline">Hostel</Link>, <Link href="/lab" className="text-[#0b6d41] font-semibold hover:underline">advanced labs</Link>, <Link href="/library" className="text-[#0b6d41] font-semibold hover:underline">digital library</Link>, <Link href="/transport" className="text-[#0b6d41] font-semibold hover:underline">transport</Link>, and Wi-Fi on a green campus along NH-544.</li>
           </ul>
         </div>

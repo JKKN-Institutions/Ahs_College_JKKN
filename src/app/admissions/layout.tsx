@@ -2,7 +2,7 @@ import { createPageMetadata } from "@/lib/metadata";
 
 export const metadata = createPageMetadata({
   title: "Admission 2026-27 | JKKN Allied Health Sciences College Tamil Nadu",
-  description: "Apply for BSc Allied Health Sciences admission 2026-27 at JKKN College, Tamil Nadu. 9 programs, 75K-1.25L fees, 95% placement, NAAC A+. Apply now!",
+  description: "Apply for BSc Allied Health Sciences admission 2026-27 at JKKN College, Tamil Nadu. 9 programs, GQ as per Govt norms, MQ 60K-1.7L, 95% placement, NAAC A+. Apply now!",
   path: "/admissions",
   keywords: [
     "allied health science admission 2026",
@@ -39,7 +39,7 @@ const howToSchema = {
   "estimatedCost": {
     "@type": "MonetaryAmount",
     "currency": "INR",
-    "value": "75000"
+    "value": "60000"
   },
   "step": [
     {
@@ -81,7 +81,7 @@ const howToSchema = {
       "@type": "HowToStep",
       "position": 6,
       "name": "Complete Fee Payment",
-      "text": "Pay the admission fee ranging from 75000 to 125000 rupees per year depending on the program. Installment options and scholarship assistance are available.",
+      "text": "Government Quota (GQ) fees are as per government norms. Management Quota (MQ) annual fees range from 60000 to 170000 rupees per year depending on the program. Installment options and scholarship assistance are available.",
       "url": "https://ahs.jkkn.ac.in/admissions#programs"
     }
   ]
@@ -113,7 +113,7 @@ const faqSchema = {
       "name": "What is the fee structure for BSc Allied Health Sciences programs at JKKN?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Annual fees for BSc Allied Health Sciences programs at JKKN range from 75000 to 125000 rupees depending on the specialization. Fee payment can be made in installments. Government scholarships for BC, MBC, SC, and ST students are facilitated through the college."
+        "text": "Government Quota (GQ) fees are as per government norms. Management Quota (MQ) annual fees for BSc Allied Health Sciences programs at JKKN range from 60000 to 170000 rupees depending on the specialization. Fee payment can be made in installments. Government scholarships for BC, MBC, SC, and ST students are facilitated through the college."
       }
     },
     {
