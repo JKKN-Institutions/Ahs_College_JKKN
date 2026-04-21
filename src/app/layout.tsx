@@ -2,6 +2,11 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import { LayoutWrapper } from "@/components/layout/LayoutWrapper";
 import { createPageMetadata } from "@/lib/metadata";
+import {
+  MetaPixelNoscript,
+  MetaPixelRouteTracker,
+  MetaPixelScript,
+} from "@/components/analytics/MetaPixel";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -231,6 +236,9 @@ export default function RootLayout({
         {/* Google Tag Manager */}
         <script dangerouslySetInnerHTML={{ __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-W5JJJVHB');` }} />
         {/* End Google Tag Manager */}
+        {/* Meta Pixel */}
+        <MetaPixelScript />
+        {/* End Meta Pixel */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
@@ -259,6 +267,10 @@ export default function RootLayout({
           />
         </noscript>
         {/* End Google Tag Manager (noscript) */}
+        {/* Meta Pixel (noscript) */}
+        <MetaPixelNoscript />
+        {/* End Meta Pixel (noscript) */}
+        <MetaPixelRouteTracker />
         <LayoutWrapper>
           {children}
         </LayoutWrapper>
