@@ -1,6 +1,13 @@
 import { MetaPixelRouteTracker } from "./MetaPixelRouteTracker";
 
-const PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID;
+const COLLEGE_PIXEL_DEFAULTS: Record<string, string> = {
+  ahs: "954381562384573",
+};
+
+const COLLEGE_ID = process.env.NEXT_PUBLIC_COLLEGE_ID;
+const PIXEL_ID =
+  process.env.NEXT_PUBLIC_META_PIXEL_ID ||
+  (COLLEGE_ID ? COLLEGE_PIXEL_DEFAULTS[COLLEGE_ID] : undefined);
 
 export function MetaPixelScript() {
   if (!PIXEL_ID) return null;

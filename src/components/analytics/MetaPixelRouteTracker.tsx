@@ -14,7 +14,6 @@ function Tracker() {
   const searchParams = useSearchParams();
 
   useEffect(() => {
-    if (!process.env.NEXT_PUBLIC_META_PIXEL_ID) return;
     if (typeof window.fbq === "function") {
       window.fbq("track", "PageView");
     }
