@@ -168,6 +168,8 @@ Required in `.env.local`:
 | `NEXT_PUBLIC_ADMISSION_FORM_URL` | Admission form link |
 | `NEXT_PUBLIC_SITE_DOMAIN` | Canonical domain |
 | `NEXT_PUBLIC_LOGO_PATH` | Logo path relative to /public |
+| `NEXT_PUBLIC_META_PIXEL_ID` | Meta (Facebook) Pixel ID for ad tracking (optional) |
+| `NEXT_PUBLIC_GA4_MEASUREMENT_ID` | GA4 Measurement ID (`G-XXXXXXXXXX`) — falls back to per-college default in `GoogleAnalytics.tsx` |
 
 ## Coding Conventions
 
@@ -247,6 +249,8 @@ npm run lint    # ESLint check
 - Admin panel testing requires Supabase auth session
 
 ## Analytics
-- **GA4 + Google Tag Manager:** `GTM-W5JJJVHB`
+- **Google Tag Manager:** `GTM-W5JJJVHB` (shared container; injected in `src/app/layout.tsx`)
+- **Google Analytics 4 (direct):** `G-JN8HFZC3RG` (AHS property `372244475`) — injected via `src/components/analytics/GoogleAnalytics.tsx`. SPA pageviews handled in `GoogleAnalyticsRouteTracker.tsx` (App Router doesn't fire native page loads on client navigation). Driven by `NEXT_PUBLIC_GA4_MEASUREMENT_ID` env var with per-college fallback map.
+- **Meta Pixel:** `src/components/analytics/MetaPixel.tsx` — same pattern as GA4 (env var + per-college fallback map)
 - **Google Search Console:** Integrated
 - **Canonical domain:** `https://ahs.jkkn.ac.in`
