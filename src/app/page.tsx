@@ -6,6 +6,7 @@ import { AboutSection } from "@/components/sections/AboutSection";
 import { Programs } from "@/components/sections/Programs";
 import { SnippetBlock } from "@/components/sections/SnippetBlock";
 import { ScrollToSection } from "@/components/ScrollToSection";
+import { AdmissionPopup } from "@/components/AdmissionPopup";
 
 // Lazy-load below-fold sections
 const WhyChoose = dynamic(() => import("@/components/sections/WhyChoose").then(m => ({ default: m.WhyChoose })), {
@@ -326,6 +327,7 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }}
       />
+      <AdmissionPopup />
       <ScrollToSection />
       <script
         type="application/ld+json"
