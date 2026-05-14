@@ -45,7 +45,7 @@ export const siteConfig = {
 
   /** Contact */
   phone: process.env.NEXT_PUBLIC_COLLEGE_PHONE ?? '+919345855001',
-  email: process.env.NEXT_PUBLIC_COLLEGE_EMAIL ?? 'alliedhealth@jkkn.ac.in',
+  email: process.env.NEXT_PUBLIC_COLLEGE_EMAIL ?? 'ahsincharge@jkkn.ac.in',
   address:
     process.env.NEXT_PUBLIC_COLLEGE_ADDRESS ??
     'JKKN College of Allied Health Sciences, NH-544 (Salem to Coimbatore Highway), Komarapalayam, Namakkal (DT), Tamil Nadu. 638183.',

@@ -73,6 +73,36 @@ export function getMobileNavLinks(pathname: string): MenuGroup[] {
           label: 'Vision & Mission',
           icon: Target,
           active: pathname === '/vision-mission'
+        },
+        {
+          href: '/erode',
+          label: 'Erode',
+          icon: MapPin,
+          active: pathname === '/erode'
+        },
+        {
+          href: '/salem',
+          label: 'Salem',
+          icon: MapPin,
+          active: pathname === '/salem'
+        },
+        {
+          href: '/tiruppur',
+          label: 'Tirupur',
+          icon: MapPin,
+          active: pathname === '/tiruppur'
+        },
+        {
+          href: '/namakkal',
+          label: 'Namakkal',
+          icon: MapPin,
+          active: pathname === '/namakkal'
+        },
+        {
+          href: '/coimbatore',
+          label: 'Coimbatore',
+          icon: MapPin,
+          active: pathname === '/coimbatore'
         }
       ]
     },
@@ -196,6 +226,17 @@ export function getMobileNavLinks(pathname: string): MenuGroup[] {
       ]
     },
     {
+      groupLabel: 'NIRF',
+      menus: [
+        {
+          href: '/pdfs/nirf-report.pdf',
+          label: 'NIRF',
+          icon: FileText,
+          active: false
+        }
+      ]
+    },
+    {
       groupLabel: 'Others',
       mainHref: '/others',
       menus: [
@@ -220,37 +261,13 @@ export function getMobileNavLinks(pathname: string): MenuGroup[] {
       ]
     },
     {
-      groupLabel: 'Nearby Cities',
+      groupLabel: 'Admission',
       menus: [
         {
-          href: '/erode',
-          label: 'Erode',
-          icon: MapPin,
-          active: pathname === '/erode'
-        },
-        {
-          href: '/namakkal',
-          label: 'Namakkal',
-          icon: MapPin,
-          active: pathname === '/namakkal'
-        },
-        {
-          href: '/salem',
-          label: 'Salem',
-          icon: MapPin,
-          active: pathname === '/salem'
-        },
-        {
-          href: '/tiruppur',
-          label: 'Tiruppur',
-          icon: MapPin,
-          active: pathname === '/tiruppur'
-        },
-        {
-          href: '/coimbatore',
-          label: 'Coimbatore',
-          icon: MapPin,
-          active: pathname === '/coimbatore'
+          href: '/admissions',
+          label: 'Admission',
+          icon: FileText,
+          active: pathname === '/admissions'
         }
       ]
     },

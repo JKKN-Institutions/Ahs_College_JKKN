@@ -69,7 +69,7 @@ const collegeSchema = {
   "description": "JKKN College of Allied Health Sciences offers 9 specialized B.Sc Allied Health programs with 2,000+ clinical training hours, 95% placement rate, and training at a 500+ bed multi-specialty teaching hospital. Affiliated to Tamil Nadu Dr. MGR Medical University. NAAC A+ Accredited. Located on NH-544, Komarapalayam, Namakkal, Tamil Nadu.",
   "foundingDate": "2019",
   "telephone": "+919345855001",
-  "email": "alliedhealth@jkkn.ac.in",
+  "email": "ahsincharge@jkkn.ac.in",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "NH-544 (Salem to Coimbatore National Highway), Natarajapuram",
@@ -105,7 +105,7 @@ const collegeSchema = {
     "@type": "ContactPoint",
     "telephone": "+919345855001",
     "contactType": "admissions",
-    "email": "alliedhealth@jkkn.ac.in",
+    "email": "ahsincharge@jkkn.ac.in",
     "areaServed": "IN",
     "availableLanguage": ["English", "Tamil"],
     "hoursAvailable": {
@@ -203,7 +203,7 @@ const localBusinessSchema = {
   "name": "JKKN College of Allied Health Sciences",
   "image": "https://ahs.jkkn.ac.in/allied-health-science-hero.png",
   "telephone": "+919345855001",
-  "email": "alliedhealth@jkkn.ac.in",
+  "email": "ahsincharge@jkkn.ac.in",
   "url": "https://ahs.jkkn.ac.in/",
   "address": {
     "@type": "PostalAddress",

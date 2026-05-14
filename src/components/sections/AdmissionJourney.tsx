@@ -108,7 +108,7 @@ export function AdmissionJourney() {
                         Call: 91-93458 55001
                     </a>
                     <a
-                        href="mailto:alliedhealth@jkkn.ac.in"
+                        href="mailto:ahsincharge@jkkn.ac.in"
                         className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-white text-[#0b6d41] rounded-full font-bold text-sm border-2 border-[#0b6d41] hover:bg-[#0b6d41] hover:text-white transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-2"
                     >
                         <Mail className="w-4 h-4 sm:w-5 sm:h-5" />

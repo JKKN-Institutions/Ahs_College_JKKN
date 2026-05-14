@@ -34,7 +34,7 @@ const contactSchema = {
   "image": "https://ahs.jkkn.ac.in/allied-health-science-hero.png",
   "url": "https://ahs.jkkn.ac.in/",
   "telephone": "+919345855001",
-  "email": "alliedhealth@jkkn.ac.in",
+  "email": "ahsincharge@jkkn.ac.in",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "NH-544 (Salem to Coimbatore National Highway), Natarajapuram",
@@ -67,7 +67,7 @@ const contactSchema = {
     },
     {
       "@type": "ContactPoint",
-      "email": "alliedhealth@jkkn.ac.in",
+      "email": "ahsincharge@jkkn.ac.in",
       "contactType": "customer service",
       "areaServed": "IN",
       "availableLanguage": ["English", "Tamil"]
@@ -101,7 +101,7 @@ const contactSchema = {
       "@type": "CommunicateAction",
       "target": {
         "@type": "EntryPoint",
-        "urlTemplate": "mailto:alliedhealth@jkkn.ac.in"
+        "urlTemplate": "mailto:ahsincharge@jkkn.ac.in"
       },
       "name": "Email JKKN Allied Health Sciences"
     }

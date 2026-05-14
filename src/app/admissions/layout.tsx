@@ -169,7 +169,7 @@ const faqSchema = {
       "name": "How can I apply for JKKN Allied Health Sciences admission 2026-27?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "You can apply online at https://www.jkkn.ai/apply/jkkn-admission-2026 or visit the campus at Komarapalayam, Namakkal, Tamil Nadu. For admission enquiries, call 93458 55001 or email alliedhealth@jkkn.ac.in. Applications are open for the 2026-27 academic year."
+        "text": "You can apply online at https://www.jkkn.ai/apply/jkkn-admission-2026 or visit the campus at Komarapalayam, Namakkal, Tamil Nadu. For admission enquiries, call 93458 55001 or email ahsincharge@jkkn.ac.in. Applications are open for the 2026-27 academic year."
       }
     }
   ]

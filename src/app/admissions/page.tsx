@@ -628,7 +628,7 @@ function FAQSection() {
         },
         {
             q: "How do I apply for JKKN AHS admission 2026-27?",
-            a: "You can apply online at https://www.jkkn.ai/apply/jkkn-admission-2026 or visit the campus at Komarapalayam, Namakkal, Tamil Nadu 638183. For admission enquiries, call 93458 55001 or email alliedhealth@jkkn.ac.in."
+            a: "You can apply online at https://www.jkkn.ai/apply/jkkn-admission-2026 or visit the campus at Komarapalayam, Namakkal, Tamil Nadu 638183. For admission enquiries, call 93458 55001 or email ahsincharge@jkkn.ac.in."
         },
     ];
 
