@@ -42,7 +42,6 @@ export default function CourseAdmissionPageContent({ course, otherCourses }: Pro
                         items={[
                             { label: "Home", href: "/" },
                             { label: "Admission", href: "/admissions" },
-                            { label: "Course-Wise Admission", href: "/admissions/courses" },
                             { label: course.shortName },
                         ]}
                     />
@@ -590,8 +589,8 @@ function OtherCoursesSection({ otherCourses }: { otherCourses: AdmissionCourse[]
                 </div>
 
                 <div className="mt-8 text-center">
-                    <Link href="/admissions/courses" className="inline-flex items-center gap-2 text-sm font-bold text-[#0b6d41] hover:underline">
-                        ← Back to Course-Wise Admission Hub
+                    <Link href="/admissions" className="inline-flex items-center gap-2 text-sm font-bold text-[#0b6d41] hover:underline">
+                        ← Back to Admission Page
                     </Link>
                 </div>
             </div>

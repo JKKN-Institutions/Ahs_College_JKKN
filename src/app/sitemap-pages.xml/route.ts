@@ -26,9 +26,6 @@ const pages = [
   // Admission page
   { loc: 'https://ahs.jkkn.ac.in/admissions', changefreq: 'monthly', priority: '0.9', lastmod: '2026-03-24' },
 
-  // Course-wise admission hub
-  { loc: 'https://ahs.jkkn.ac.in/admissions/courses', changefreq: 'monthly', priority: '0.9', lastmod: '2026-05-16' },
-
   // Per-course admission pages
   { loc: 'https://ahs.jkkn.ac.in/admissions/cardiac-technology', changefreq: 'monthly', priority: '0.9', lastmod: '2026-05-16' },
   { loc: 'https://ahs.jkkn.ac.in/admissions/dialysis-technology', changefreq: 'monthly', priority: '0.9', lastmod: '2026-05-16' },

@@ -49,8 +49,7 @@ export default async function CourseAdmissionPage(
             { "@type": "ListItem", position: 1, name: "JKKN Institutions", item: "https://jkkn.ac.in/" },
             { "@type": "ListItem", position: 2, name: "Allied Health Sciences", item: "https://ahs.jkkn.ac.in/" },
             { "@type": "ListItem", position: 3, name: "Admission 2026-27", item: "https://ahs.jkkn.ac.in/admissions" },
-            { "@type": "ListItem", position: 4, name: "Course-Wise Admission", item: "https://ahs.jkkn.ac.in/admissions/courses" },
-            { "@type": "ListItem", position: 5, name: course.name, item: url },
+            { "@type": "ListItem", position: 4, name: course.name, item: url },
         ],
     };
 

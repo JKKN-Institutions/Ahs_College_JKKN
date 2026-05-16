@@ -150,9 +150,6 @@ function ProgramsFeesSection() {
                     <p className="text-gray-600 mt-3 max-w-2xl mx-auto text-sm sm:text-base">
                         All programs are affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai
                     </p>
-                    <Link href="/admissions/courses" className="inline-flex items-center gap-1.5 mt-4 text-sm font-bold text-[#0b6d41] hover:underline">
-                        See course-wise admission details <ChevronRight className="w-4 h-4" />
-                    </Link>
                 </div>
 
                 {/* Desktop Table */}
