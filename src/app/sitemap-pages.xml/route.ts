@@ -26,6 +26,20 @@ const pages = [
   // Admission page
   { loc: 'https://ahs.jkkn.ac.in/admissions', changefreq: 'monthly', priority: '0.9', lastmod: '2026-03-24' },
 
+  // Course-wise admission hub
+  { loc: 'https://ahs.jkkn.ac.in/admissions/courses', changefreq: 'monthly', priority: '0.9', lastmod: '2026-05-16' },
+
+  // Per-course admission pages
+  { loc: 'https://ahs.jkkn.ac.in/admissions/cardiac-technology', changefreq: 'monthly', priority: '0.9', lastmod: '2026-05-16' },
+  { loc: 'https://ahs.jkkn.ac.in/admissions/dialysis-technology', changefreq: 'monthly', priority: '0.9', lastmod: '2026-05-16' },
+  { loc: 'https://ahs.jkkn.ac.in/admissions/radiology-imaging-technology', changefreq: 'monthly', priority: '0.9', lastmod: '2026-05-16' },
+  { loc: 'https://ahs.jkkn.ac.in/admissions/operation-theatre-anaesthesia', changefreq: 'monthly', priority: '0.9', lastmod: '2026-05-16' },
+  { loc: 'https://ahs.jkkn.ac.in/admissions/respiratory-therapy', changefreq: 'monthly', priority: '0.9', lastmod: '2026-05-16' },
+  { loc: 'https://ahs.jkkn.ac.in/admissions/physician-assistant', changefreq: 'monthly', priority: '0.9', lastmod: '2026-05-16' },
+  { loc: 'https://ahs.jkkn.ac.in/admissions/critical-care-technology', changefreq: 'monthly', priority: '0.9', lastmod: '2026-05-16' },
+  { loc: 'https://ahs.jkkn.ac.in/admissions/medical-record-science', changefreq: 'monthly', priority: '0.9', lastmod: '2026-05-16' },
+  { loc: 'https://ahs.jkkn.ac.in/admissions/accident-emergency-care', changefreq: 'monthly', priority: '0.9', lastmod: '2026-05-16' },
+
   // Placements page
   { loc: 'https://ahs.jkkn.ac.in/placements', changefreq: 'monthly', priority: '0.9', lastmod: '2026-03-26' },
 
