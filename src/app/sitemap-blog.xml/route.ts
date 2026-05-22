@@ -1,8 +1,13 @@
 import { NextResponse } from 'next/server';
 import { createClient } from '@supabase/supabase-js';
 
+const domain = (process.env.NEXT_PUBLIC_SITE_DOMAIN ?? 'ahs.jkkn.ac.in')
+  .replace(/^https?:\/\//, '')
+  .replace(/\/$/, '');
+const baseUrl = `https://${domain}`;
+
 const staticPosts = [
-  { loc: 'https://ahs.jkkn.ac.in/blog/top-10-career-options-after-bed-2026', changefreq: 'monthly', priority: '0.6' },
+  { loc: `${baseUrl}/blog/top-10-career-options-after-bed-2026`, changefreq: 'monthly', priority: '0.6' },
 ];
 
 export async function GET() {
@@ -31,8 +36,8 @@ export async function GET() {
           post.category?.toLowerCase() === 'campus' ||
           post.category?.toLowerCase() === 'campus news';
         const path = isCampus
-          ? `https://ahs.jkkn.ac.in/blog/campus/${post.slug}`
-          : `https://ahs.jkkn.ac.in/blog/${post.slug}`;
+          ? `${baseUrl}/blog/campus/${post.slug}`
+          : `${baseUrl}/blog/${post.slug}`;
         const postLastmod = (post.updated_at ?? post.published_at ?? post.created_at ?? lastmod)
           .split('T')[0];
         return {
@@ -43,8 +48,8 @@ export async function GET() {
         };
       });
     }
-  } catch {
-    // If Supabase fetch fails, fall back to static entries only
+  } catch (err) {
+    console.error('[sitemap-blog] supabase fetch failed:', err);
   }
 
   // Merge static + dynamic, deduplicate by loc

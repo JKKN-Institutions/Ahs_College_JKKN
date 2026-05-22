@@ -1,76 +1,119 @@
 import { NextResponse } from 'next/server';
+import { getAllCourseSlugs } from '@/lib/admission-courses';
+import { getAllCourseBlogSlugs } from '@/lib/course-blog-posts';
 
-const pages = [
-  // Homepage
-  { loc: 'https://ahs.jkkn.ac.in', changefreq: 'daily', priority: '1.0', lastmod: '2026-03-19' },
+const domain = (process.env.NEXT_PUBLIC_SITE_DOMAIN ?? 'ahs.jkkn.ac.in')
+  .replace(/^https?:\/\//, '')
+  .replace(/\/$/, '');
+const baseUrl = `https://${domain}`;
 
-  // 9 Course/Department pages
-  { loc: 'https://ahs.jkkn.ac.in/cardiac-technology', changefreq: 'monthly', priority: '0.9', lastmod: '2026-03-18' },
-  { loc: 'https://ahs.jkkn.ac.in/physician-assistant', changefreq: 'monthly', priority: '0.9', lastmod: '2026-03-18' },
-  { loc: 'https://ahs.jkkn.ac.in/dialysis-technology', changefreq: 'monthly', priority: '0.9', lastmod: '2026-03-18' },
-  { loc: 'https://ahs.jkkn.ac.in/respiratory-therapy', changefreq: 'monthly', priority: '0.9', lastmod: '2026-03-18' },
-  { loc: 'https://ahs.jkkn.ac.in/radiology-imaging-technology', changefreq: 'monthly', priority: '0.9', lastmod: '2026-03-18' },
-  { loc: 'https://ahs.jkkn.ac.in/medical-record-science', changefreq: 'monthly', priority: '0.9', lastmod: '2026-03-18' },
-  { loc: 'https://ahs.jkkn.ac.in/accident-emergency-care', changefreq: 'monthly', priority: '0.9', lastmod: '2026-03-18' },
-  { loc: 'https://ahs.jkkn.ac.in/operation-theatre-anaesthesia', changefreq: 'monthly', priority: '0.9', lastmod: '2026-03-18' },
-  { loc: 'https://ahs.jkkn.ac.in/critical-care-technology', changefreq: 'monthly', priority: '0.9', lastmod: '2026-03-18' },
-  { loc: 'https://ahs.jkkn.ac.in/departments', changefreq: 'monthly', priority: '0.8', lastmod: '2026-03-18' },
+type Entry = { loc: string; changefreq: string; priority: string; lastmod: string };
 
-  // City landing pages
-  { loc: 'https://ahs.jkkn.ac.in/erode', changefreq: 'monthly', priority: '0.8', lastmod: '2026-03-24' },
-  { loc: 'https://ahs.jkkn.ac.in/namakkal', changefreq: 'monthly', priority: '0.8', lastmod: '2026-03-24' },
-  { loc: 'https://ahs.jkkn.ac.in/salem', changefreq: 'monthly', priority: '0.8', lastmod: '2026-03-24' },
-  { loc: 'https://ahs.jkkn.ac.in/tiruppur', changefreq: 'monthly', priority: '0.8', lastmod: '2026-03-24' },
-  { loc: 'https://ahs.jkkn.ac.in/coimbatore', changefreq: 'monthly', priority: '0.8', lastmod: '2026-03-24' },
+function buildPages(lastmod: string): Entry[] {
+  const courseSlugs = [
+    'cardiac-technology',
+    'physician-assistant',
+    'dialysis-technology',
+    'respiratory-therapy',
+    'radiology-imaging-technology',
+    'medical-record-science',
+    'accident-emergency-care',
+    'operation-theatre-anaesthesia',
+    'critical-care-technology',
+  ];
 
-  // Admission page
-  { loc: 'https://ahs.jkkn.ac.in/admissions', changefreq: 'monthly', priority: '0.9', lastmod: '2026-03-24' },
+  const citySlugs = ['erode', 'namakkal', 'salem', 'tiruppur', 'coimbatore'];
 
-  // Per-course admission pages
-  { loc: 'https://ahs.jkkn.ac.in/admissions/cardiac-technology', changefreq: 'monthly', priority: '0.9', lastmod: '2026-05-16' },
-  { loc: 'https://ahs.jkkn.ac.in/admissions/dialysis-technology', changefreq: 'monthly', priority: '0.9', lastmod: '2026-05-16' },
-  { loc: 'https://ahs.jkkn.ac.in/admissions/radiology-imaging-technology', changefreq: 'monthly', priority: '0.9', lastmod: '2026-05-16' },
-  { loc: 'https://ahs.jkkn.ac.in/admissions/operation-theatre-anaesthesia', changefreq: 'monthly', priority: '0.9', lastmod: '2026-05-16' },
-  { loc: 'https://ahs.jkkn.ac.in/admissions/respiratory-therapy', changefreq: 'monthly', priority: '0.9', lastmod: '2026-05-16' },
-  { loc: 'https://ahs.jkkn.ac.in/admissions/physician-assistant', changefreq: 'monthly', priority: '0.9', lastmod: '2026-05-16' },
-  { loc: 'https://ahs.jkkn.ac.in/admissions/critical-care-technology', changefreq: 'monthly', priority: '0.9', lastmod: '2026-05-16' },
-  { loc: 'https://ahs.jkkn.ac.in/admissions/medical-record-science', changefreq: 'monthly', priority: '0.9', lastmod: '2026-05-16' },
-  { loc: 'https://ahs.jkkn.ac.in/admissions/accident-emergency-care', changefreq: 'monthly', priority: '0.9', lastmod: '2026-05-16' },
+  const facilitySlugs = [
+    'hostel',
+    'classroom',
+    'library',
+    'lab',
+    'transport',
+    'food-court',
+    'ambulance-service',
+    'bank-post-office',
+    'wifi',
+  ];
 
-  // Placements page
-  { loc: 'https://ahs.jkkn.ac.in/placements', changefreq: 'monthly', priority: '0.9', lastmod: '2026-03-26' },
+  return [
+    // Homepage
+    { loc: `${baseUrl}/`, changefreq: 'daily', priority: '1.0', lastmod },
 
-  // Institutional pages
-  { loc: 'https://ahs.jkkn.ac.in/our-management', changefreq: 'monthly', priority: '0.8', lastmod: '2026-02-15' },
-  { loc: 'https://ahs.jkkn.ac.in/our-trust', changefreq: 'monthly', priority: '0.8', lastmod: '2026-02-15' },
-  { loc: 'https://ahs.jkkn.ac.in/our-institutions', changefreq: 'monthly', priority: '0.8', lastmod: '2026-02-15' },
-  { loc: 'https://ahs.jkkn.ac.in/vision-mission', changefreq: 'monthly', priority: '0.8', lastmod: '2026-03-15' },
-  { loc: 'https://ahs.jkkn.ac.in/principals-message', changefreq: 'monthly', priority: '0.7', lastmod: '2026-02-15' },
-  { loc: 'https://ahs.jkkn.ac.in/NAAC', changefreq: 'monthly', priority: '0.8', lastmod: '2026-02-15' },
-  { loc: 'https://ahs.jkkn.ac.in/academic-calendar', changefreq: 'monthly', priority: '0.7', lastmod: '2026-02-15' },
+    // 9 root department/course pages
+    ...courseSlugs.map((s) => ({
+      loc: `${baseUrl}/${s}`,
+      changefreq: 'monthly',
+      priority: '0.9',
+      lastmod,
+    })),
 
-  // Facility pages
-  { loc: 'https://ahs.jkkn.ac.in/hostel', changefreq: 'monthly', priority: '0.7', lastmod: '2026-03-15' },
-  { loc: 'https://ahs.jkkn.ac.in/classroom', changefreq: 'monthly', priority: '0.6', lastmod: '2026-03-15' },
-  { loc: 'https://ahs.jkkn.ac.in/library', changefreq: 'monthly', priority: '0.6', lastmod: '2026-03-15' },
-  { loc: 'https://ahs.jkkn.ac.in/lab', changefreq: 'monthly', priority: '0.6', lastmod: '2026-03-15' },
-  { loc: 'https://ahs.jkkn.ac.in/transport', changefreq: 'monthly', priority: '0.6', lastmod: '2026-03-15' },
-  { loc: 'https://ahs.jkkn.ac.in/food-court', changefreq: 'monthly', priority: '0.6', lastmod: '2026-03-15' },
-  { loc: 'https://ahs.jkkn.ac.in/ambulance-service', changefreq: 'monthly', priority: '0.6', lastmod: '2026-03-15' },
-  { loc: 'https://ahs.jkkn.ac.in/bank-post-office', changefreq: 'monthly', priority: '0.5', lastmod: '2026-03-15' },
-  { loc: 'https://ahs.jkkn.ac.in/wifi', changefreq: 'monthly', priority: '0.5', lastmod: '2026-03-15' },
+    // Departments hub
+    { loc: `${baseUrl}/departments`, changefreq: 'monthly', priority: '0.8', lastmod },
 
-  // Events
-  { loc: 'https://ahs.jkkn.ac.in/events', changefreq: 'weekly', priority: '0.7', lastmod: '2026-03-19' },
+    // City landing pages
+    ...citySlugs.map((s) => ({
+      loc: `${baseUrl}/${s}`,
+      changefreq: 'monthly',
+      priority: '0.8',
+      lastmod,
+    })),
 
-  // Info pages
-  { loc: 'https://ahs.jkkn.ac.in/contact', changefreq: 'monthly', priority: '0.8', lastmod: '2026-03-15' },
-  { loc: 'https://ahs.jkkn.ac.in/gallery', changefreq: 'monthly', priority: '0.6', lastmod: '2026-02-15' },
-  { loc: 'https://ahs.jkkn.ac.in/blog', changefreq: 'weekly', priority: '0.7', lastmod: '2026-03-19' },
-  { loc: 'https://ahs.jkkn.ac.in/privacy-policy', changefreq: 'yearly', priority: '0.3', lastmod: '2026-01-15' },
-];
+    // Admission hub + per-course admission pages (single source of truth)
+    { loc: `${baseUrl}/admissions`, changefreq: 'monthly', priority: '0.9', lastmod },
+    ...getAllCourseSlugs().map((slug) => ({
+      loc: `${baseUrl}/admissions/${slug}`,
+      changefreq: 'monthly',
+      priority: '0.9',
+      lastmod,
+    })),
+
+    // High-value pages (previously missing)
+    { loc: `${baseUrl}/fee-structure`, changefreq: 'monthly', priority: '0.9', lastmod },
+    { loc: `${baseUrl}/scholarships`, changefreq: 'monthly', priority: '0.9', lastmod },
+    { loc: `${baseUrl}/faculty`, changefreq: 'monthly', priority: '0.8', lastmod },
+    { loc: `${baseUrl}/faq`, changefreq: 'monthly', priority: '0.7', lastmod },
+    { loc: `${baseUrl}/testimonials`, changefreq: 'monthly', priority: '0.7', lastmod },
+    { loc: `${baseUrl}/placements`, changefreq: 'monthly', priority: '0.9', lastmod },
+
+    // Institutional pages
+    { loc: `${baseUrl}/our-management`, changefreq: 'monthly', priority: '0.8', lastmod },
+    { loc: `${baseUrl}/our-trust`, changefreq: 'monthly', priority: '0.8', lastmod },
+    { loc: `${baseUrl}/our-institutions`, changefreq: 'monthly', priority: '0.8', lastmod },
+    { loc: `${baseUrl}/vision-mission`, changefreq: 'monthly', priority: '0.8', lastmod },
+    { loc: `${baseUrl}/principals-message`, changefreq: 'monthly', priority: '0.7', lastmod },
+    { loc: `${baseUrl}/NAAC`, changefreq: 'monthly', priority: '0.8', lastmod },
+    { loc: `${baseUrl}/academic-calendar`, changefreq: 'monthly', priority: '0.7', lastmod },
+
+    // Facility pages
+    ...facilitySlugs.map((s) => ({
+      loc: `${baseUrl}/${s}`,
+      changefreq: 'monthly',
+      priority: '0.6',
+      lastmod,
+    })),
+
+    // Info pages
+    { loc: `${baseUrl}/contact`, changefreq: 'monthly', priority: '0.8', lastmod },
+    { loc: `${baseUrl}/gallery`, changefreq: 'monthly', priority: '0.6', lastmod },
+    { loc: `${baseUrl}/blog`, changefreq: 'weekly', priority: '0.7', lastmod },
+    { loc: `${baseUrl}/privacy-policy`, changefreq: 'yearly', priority: '0.3', lastmod },
+
+    // Course-wise pillar blog hub + per-course posts (single source of truth)
+    { loc: `${baseUrl}/course-blog`, changefreq: 'weekly', priority: '0.8', lastmod },
+    ...getAllCourseBlogSlugs().map((slug) => ({
+      loc: `${baseUrl}/course-blog/${slug}`,
+      changefreq: 'monthly',
+      priority: '0.7',
+      lastmod,
+    })),
+  ];
+}
 
 export function GET() {
+  const lastmod = new Date().toISOString().split('T')[0];
+  const pages = buildPages(lastmod);
+
   const urls = pages
     .map(
       (page) => `  <url>
