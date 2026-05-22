@@ -41,6 +41,20 @@ export async function GET() {
     console.error('[sitemap-events] supabase fetch failed:', err);
   }
 
+  // Sitemap spec requires at least one <url> per <urlset>. When no events
+  // are published yet, emit the homepage as a placeholder so the sitemap
+  // remains valid in Google Search Console.
+  if (events.length === 0) {
+    events = [
+      {
+        loc: `${baseUrl}/`,
+        lastmod: fallbackLastmod,
+        changefreq: 'daily',
+        priority: '1.0',
+      },
+    ];
+  }
+
   const urls = events
     .map(
       (e) => `  <url>
