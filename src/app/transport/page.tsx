@@ -27,7 +27,7 @@ export default function Transport() {
                     ]} />
                     {/* Page Title */}
                     <div className="mb-8">
-                        <h1 className="text-4xl md:text-5xl font-bold text-[#0b6d41] mb-8">
+                        <h1 className="text-3xl md:text-4xl font-bold text-[#0b6d41] mb-8">
                             Transport Facilities at JKKN College of Allied Health Sciences
                         </h1>
                     </div>

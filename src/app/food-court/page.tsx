@@ -32,7 +32,7 @@ export default function FoodCourt() {
                 <section className="relative py-20 bg-[#0b6d41] overflow-hidden">
                     <div className="absolute inset-0">
                         <Image
-                            src="/food court/allied health science food court.png"
+                            src="/food court/foodcourt-1.webp"
                             alt="Food Court Background"
                             fill
                             className="object-cover opacity-20"
@@ -48,7 +48,7 @@ export default function FoodCourt() {
                             <span className="inline-block py-1 px-3 rounded-full bg-[#ffde59] text-[#0b6d41] text-xs font-bold uppercase tracking-wider mb-4">
                                 Campus Life
                             </span>
-                            <h1 className="text-4xl md:text-6xl font-black text-white tracking-tight">
+                            <h1 className="text-3xl md:text-5xl font-bold text-white tracking-tight">
                                 Food Court at JKKN College of Allied Health Sciences
                             </h1>
                             <p className="mt-4 text-white/90 text-lg max-w-2xl mx-auto font-medium">
@@ -161,9 +161,9 @@ export default function FoodCourt() {
 
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                             {[
-                                { src: '/food court/allied health science food court.png', alt: 'Food Court Main Area', title: 'Spacious Dining Area' },
-                                { src: '/food court/allied health science food court1.png', alt: 'Food Court Seating', title: 'Comfortable Seating' },
-                                { src: '/food court/allied health science food court22.png', alt: 'Food Court Ambiance', title: 'Modern Ambiance' }
+                                { src: '/food court/foodcourt-1.webp', alt: 'Food Court Main Area', title: 'Spacious Dining Area' },
+                                { src: '/food court/foodcourt-2.webp', alt: 'Food Court Seating', title: 'Comfortable Seating' },
+                                { src: '/food court/foodcourt-3.webp', alt: 'Food Court Ambiance', title: 'Modern Ambiance' }
                             ].map((image, index) => (
                                 <motion.div
                                     key={index}

@@ -27,14 +27,14 @@ export default function AmbulanceService() {
                     ]} />
                     {/* Header Section */}
                     <div className="mb-12 md:mb-16">
-                        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-[#0b6d41] tracking-tight">
+                        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#0b6d41] tracking-tight">
                             Ambulance Service at JKKN College Campus
                         </h1>
                     </div>
 
                     {/* Ambulance Image */}
-                    <div className="mb-12 md:mb-16">
-                        <div className="relative w-full aspect-[16/9] md:aspect-[21/9] rounded-2xl overflow-hidden shadow-xl">
+                    <div className="mb-12 md:mb-16 flex justify-center">
+                        <div className="relative w-full max-w-lg aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
                             <Image
                                 src="/ambulance.webp"
                                 alt="JKKN Ambulance Service"

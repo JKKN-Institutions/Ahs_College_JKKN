@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react';
+import Image from 'next/image';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { Breadcrumb } from '@/components/Breadcrumb';
@@ -25,10 +26,23 @@ export default function BankPostOffice() {
                         { label: 'Bank & Post Office' }
                     ]} />
                     {/* Header Section */}
-                    <div className="mb-12 md:mb-16">
-                        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-[#0b6d41] tracking-tight">
+                    <div className="mb-8 md:mb-10">
+                        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#0b6d41] tracking-tight">
                             Bank and Post Office at JKKN College Campus
                         </h1>
+                    </div>
+
+                    {/* Image Gallery */}
+                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-12 md:mb-16">
+                        <div className="relative w-full h-56 sm:h-52 md:h-60 rounded-2xl overflow-hidden">
+                            <Image src="/bank_postoffice-1.webp" alt="Bank at JKKN Campus" fill className="object-cover" />
+                        </div>
+                        <div className="relative w-full h-56 sm:h-52 md:h-60 rounded-2xl overflow-hidden">
+                            <Image src="/bank_postoffice-2.webp" alt="Post Office at JKKN Campus" fill className="object-cover" />
+                        </div>
+                        <div className="relative w-full h-56 sm:h-52 md:h-60 rounded-2xl overflow-hidden">
+                            <Image src="/bank_postoffice-3.webp" alt="Bank and Post Office Facilities" fill className="object-cover" />
+                        </div>
                     </div>
 
                     {/* Content Section */}

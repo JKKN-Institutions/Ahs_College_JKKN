@@ -27,7 +27,7 @@ export default function WiFiPage() {
                     ]} />
                     {/* Page Title */}
                     <div className="mb-8 sm:mb-10">
-                        <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-[#0b6d41] tracking-tight">
+                        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#0b6d41] tracking-tight">
                             WiFi and Internet Facilities at JKKN College
                         </h1>
                     </div>

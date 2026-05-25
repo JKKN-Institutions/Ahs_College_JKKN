@@ -41,7 +41,7 @@ export default function Library() {
                         <motion.h1
                             initial={{ opacity: 0, scale: 0.9 }}
                             animate={{ opacity: 1, scale: 1 }}
-                            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-[#0b6d41] mb-3 sm:mb-4 uppercase tracking-tight break-words"
+                            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#0b6d41] mb-3 sm:mb-4 uppercase tracking-tight break-words"
                         >
                             Library at JKKN College of Allied Health Sciences
                         </motion.h1>
@@ -64,7 +64,7 @@ export default function Library() {
                             className="relative w-full aspect-[4/3] overflow-hidden rounded-2xl sm:rounded-3xl shadow-lg"
                         >
                             <Image
-                                src="/library/library-1.png"
+                                src="/library/library-1.jpg"
                                 alt="Allied Health Science Library with wooden desks and study areas"
                                 fill
                                 className="object-cover"
@@ -79,7 +79,7 @@ export default function Library() {
                             className="relative w-full aspect-[4/3] overflow-hidden rounded-2xl sm:rounded-3xl shadow-lg"
                         >
                             <Image
-                                src="/library/library-1.webp"
+                                src="/library/library-2.jpg"
                                 alt="Students studying with books in the library"
                                 fill
                                 className="object-cover"
@@ -93,7 +93,7 @@ export default function Library() {
                             className="relative w-full aspect-[4/3] overflow-hidden rounded-2xl sm:rounded-3xl shadow-lg"
                         >
                             <Image
-                                src="/library/library-3.png"
+                                src="/library/library-3.jpg"
                                 alt="Student reading in the library"
                                 fill
                                 className="object-cover"

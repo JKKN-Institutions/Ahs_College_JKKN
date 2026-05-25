@@ -11,14 +11,14 @@ import { generateBreadcrumbSchema } from '@/lib/breadcrumb-schema';
 
 interface HostelSection {
     title: string;
-    image: string;
+    images: string[];
     paragraphs: string[];
 }
 
 const hostelSections: HostelSection[] = [
     {
         title: "BOYS HOSTEL",
-        image: "/images/boys-hostel.png",
+        images: ["/boys-hostel-1.jpg", "/boys-hostel-2.jpg", "/boys-hostel-3.jpg"],
         paragraphs: [
             "Our hostel, situated within the campus, offers a hassle-free commute to classes, making it an excellent option for students. Equipped with essential amenities, the well-maintained hostel provides spacious, well-ventilated single and shared rooms for residents to enjoy a comfortable living experience.",
             "At JKKN, we value academics and provide an environment that promotes concentration and learning. Our hostel fosters a peaceful and quiet atmosphere, free from distractions, while our high-speed internet connectivity facilitates easy access to online resources, aiding academic assignments.",
@@ -28,7 +28,7 @@ const hostelSections: HostelSection[] = [
     },
     {
         title: "GIRLS HOSTEL",
-        image: "/images/girls-hostel.png",
+        images: ["/girls-hostel-1.jpg", "/girls-hostel-2.jpg", "/girls-hostel-3.jpg"],
         paragraphs: [
             "Our female students can enjoy a unique and modern living experience at our girls' hostel, which is equipped with all the necessary facilities for a comfortable and enjoyable stay. Each room is spacious, well-ventilated, and furnished with comfortable beds, study tables, and ample storage space. Privacy is ensured, as every room comes with its own bathroom.",
             "To ensure our students' safety, we have round-the-clock security, CCTV surveillance, and access control systems. We also have a strict no-visitor policy and require valid identification for anyone entering the premises.",
@@ -59,7 +59,7 @@ export default function Hostel() {
                         { label: 'Hostel' }
                     ]} />
                     {/* Page Title */}
-                    <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#0b6d41] mb-12 tracking-tight">
+                    <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0b6d41] mb-12 tracking-tight">
                         Hostel Facilities at JKKN College of Allied Health Sciences
                     </h1>
 
@@ -96,22 +96,24 @@ export default function Hostel() {
                                             transition={{ duration: 0.3 }}
                                         >
                                             <div className="px-6 pb-8 pt-2">
-                                                <div className="flex flex-col lg:flex-row gap-8">
-                                                    {/* Image */}
-                                                    <div className="lg:w-1/3 flex-shrink-0">
-                                                        <div className="relative w-full h-64 sm:h-72 lg:h-56 rounded-lg overflow-hidden">
+                                                {/* Image Grid */}
+                                                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+                                                    {section.images.map((src, i) => (
+                                                        <div key={i} className="relative w-full h-52 rounded-lg overflow-hidden">
                                                             <Image
-                                                                src={section.image}
-                                                                alt={section.title}
+                                                                src={src}
+                                                                alt={`${section.title} ${i + 1}`}
                                                                 fill
                                                                 className="object-cover"
-                                                                sizes="(max-width: 1024px) 100vw, 33vw"
+                                                                sizes="(max-width: 640px) 100vw, 33vw"
                                                             />
                                                         </div>
-                                                    </div>
+                                                    ))}
+                                                </div>
 
+                                                <div className="flex flex-col gap-8">
                                                     {/* Text Content */}
-                                                    <div className="lg:w-2/3 space-y-4">
+                                                    <div className="space-y-4">
                                                         {section.paragraphs.map((paragraph, pIndex) => (
                                                             <p
                                                                 key={pIndex}

@@ -26,7 +26,7 @@ export default function ClassRoom() {
                         { label: 'Classrooms' }
                     ]} />
                     {/* Page Title */}
-                    <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#0b6d41] mb-12 tracking-tight">
+                    <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0b6d41] mb-12 tracking-tight">
                         Classroom Facilities at JKKN College of Allied Health Sciences
                     </h1>
 
@@ -38,23 +38,32 @@ export default function ClassRoom() {
                         </p>
 
                         {/* Image Gallery */}
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
-                            <div className="relative w-full h-64 sm:h-80 md:h-96 rounded-lg overflow-hidden shadow-lg">
+                        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 my-8">
+                            <div className="relative w-full h-56 rounded-lg overflow-hidden shadow-lg">
                                 <Image
-                                    src="/classroom/digital-class-room-1.webp"
-                                    alt="Digital Classroom with Projector"
+                                    src="/classroom/class_room-1.webp"
+                                    alt="Classroom at JKKN College"
                                     fill
                                     className="object-cover"
-                                    sizes="(max-width: 768px) 100vw, 50vw"
+                                    sizes="(max-width: 640px) 100vw, 33vw"
                                 />
                             </div>
-                            <div className="relative w-full h-64 sm:h-80 md:h-96 rounded-lg overflow-hidden shadow-lg">
+                            <div className="relative w-full h-56 rounded-lg overflow-hidden shadow-lg">
                                 <Image
-                                    src="/classroom/digital-class-room-3.webp"
-                                    alt="Interactive Classroom Session"
+                                    src="/classroom/class_room-2.webp"
+                                    alt="Classroom at JKKN College"
                                     fill
                                     className="object-cover"
-                                    sizes="(max-width: 768px) 100vw, 50vw"
+                                    sizes="(max-width: 640px) 100vw, 33vw"
+                                />
+                            </div>
+                            <div className="relative w-full h-56 rounded-lg overflow-hidden shadow-lg">
+                                <Image
+                                    src="/classroom/class_room-3.webp"
+                                    alt="Classroom at JKKN College"
+                                    fill
+                                    className="object-cover"
+                                    sizes="(max-width: 640px) 100vw, 33vw"
                                 />
                             </div>
                         </div>
