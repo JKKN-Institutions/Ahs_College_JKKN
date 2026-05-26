@@ -48,16 +48,16 @@ export async function generateMetadata({
     data = byId;
   }
 
-  if (!data) return { title: 'Faculty | JKKN Dental College & Hospital' };
+  if (!data) return { title: 'Faculty | JKKN College of Allied Health Sciences' };
 
-  const title = `${data.name} — ${data.designation} | JKKN Dental College & Hospital`;
-  const description = `Learn about ${data.name}, ${data.designation}${data.department ? ` in the ${data.department}` : ''} at JKKN Dental College & Hospital, Komarapalayam.`;
+  const title = `${data.name} — ${data.designation} | JKKN College of Allied Health Sciences`;
+  const description = `Learn about ${data.name}, ${data.designation}${data.department ? ` in the ${data.department}` : ''} at JKKN College of Allied Health Sciences, Komarapalayam.`;
 
   return {
     title,
     description,
     alternates: { canonical: `/faculty/${slug}/` },
-    openGraph: { title, description, url: `https://dental.jkkn.ac.in/faculty/${slug}/`, siteName: 'JKKN Dental College & Hospital', type: 'website', locale: 'en_IN' },
+    openGraph: { title, description, url: `https://ahs.jkkn.ac.in/faculty/${slug}/`, siteName: 'JKKN College of Allied Health Sciences', type: 'website', locale: 'en_IN' },
     twitter: { card: 'summary_large_image', title, description },
   };
 }
@@ -90,6 +90,7 @@ export default async function FacultyProfilePage({
     .eq('slug', slug)
     .eq('college_id', collegeId)
     .eq('is_active', true)
+    .eq('status', 'published')
     .maybeSingle();
 
   if (!m) {
@@ -99,6 +100,7 @@ export default async function FacultyProfilePage({
       .eq('id', slug)
       .eq('college_id', collegeId)
       .eq('is_active', true)
+      .eq('status', 'published')
       .maybeSingle();
     m = byId;
   }
@@ -143,9 +145,9 @@ export default async function FacultyProfilePage({
   }, 0);
 
   // ── Shared styles
-  const sectionCard = 'bg-white rounded-2xl border border-gray-100 shadow-sm p-6 mb-4';
-  const sectionTitle = 'text-xl font-bold text-gray-900 flex items-center gap-3 mb-4';
-  const iconBox = 'w-10 h-10 rounded-xl flex items-center justify-center text-lg flex-shrink-0';
+  const sectionCard = 'bg-white rounded-2xl border border-gray-100 shadow-sm p-4 sm:p-6 mb-4';
+  const sectionTitle = 'text-lg sm:text-xl font-bold text-gray-900 flex items-center gap-2 sm:gap-3 mb-4';
+  const iconBox = 'w-8 h-8 sm:w-10 sm:h-10 rounded-xl flex items-center justify-center text-base sm:text-lg flex-shrink-0';
   const tableHead = 'text-xs font-semibold text-[#1B5E20] uppercase tracking-wide';
   const chip = 'px-3 py-1.5 rounded-full border border-gray-200 text-sm text-gray-700';
 
@@ -164,7 +166,7 @@ export default async function FacultyProfilePage({
               Back to Faculty
             </Link>
 
-            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6">
               {/* Photo / Initials */}
               <div className="w-28 h-28 rounded-full border-4 border-[#FFC107] overflow-hidden bg-white flex items-center justify-center flex-shrink-0">
                 {m.photo_url ? (
@@ -207,25 +209,25 @@ export default async function FacultyProfilePage({
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
               {m.experience_years > 0 && (
                 <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 text-center">
-                  <p className="text-3xl font-bold text-[#1B5E20]">{m.experience_years}+</p>
+                  <p className="text-2xl sm:text-3xl font-bold text-[#1B5E20]">{m.experience_years}+</p>
                   <p className="text-sm text-gray-500 mt-1">Years Experience</p>
                 </div>
               )}
               {m.research_papers_count > 0 && (
                 <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 text-center">
-                  <p className="text-3xl font-bold text-[#1B5E20]">{m.research_papers_count}</p>
+                  <p className="text-2xl sm:text-3xl font-bold text-[#1B5E20]">{m.research_papers_count}</p>
                   <p className="text-sm text-gray-500 mt-1">Research Papers</p>
                 </div>
               )}
               {m.phd_scholars_count > 0 && (
                 <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 text-center">
-                  <p className="text-3xl font-bold text-[#1B5E20]">{m.phd_scholars_count}</p>
+                  <p className="text-2xl sm:text-3xl font-bold text-[#1B5E20]">{m.phd_scholars_count}</p>
                   <p className="text-sm text-gray-500 mt-1">PhD Scholars</p>
                 </div>
               )}
               {m.awards_won_count > 0 && (
                 <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 text-center">
-                  <p className="text-3xl font-bold text-[#1B5E20]">{m.awards_won_count}</p>
+                  <p className="text-2xl sm:text-3xl font-bold text-[#1B5E20]">{m.awards_won_count}</p>
                   <p className="text-sm text-gray-500 mt-1">Awards Won</p>
                 </div>
               )}
@@ -256,7 +258,8 @@ export default async function FacultyProfilePage({
                 <span className={`${iconBox} bg-yellow-50`}>🎓</span>
                 Academic Qualifications
               </h2>
-              <table className="w-full text-sm">
+              <div className="overflow-x-auto -mx-4 px-4 sm:mx-0 sm:px-0">
+              <table className="w-full text-sm min-w-[480px] sm:min-w-0">
                 <thead>
                   <tr className="border-b border-gray-100">
                     <th className={`${tableHead} text-left py-2 pr-4`}>Degree</th>
@@ -276,6 +279,7 @@ export default async function FacultyProfilePage({
                   ))}
                 </tbody>
               </table>
+              </div>
             </div>
           )}
 
@@ -423,7 +427,8 @@ export default async function FacultyProfilePage({
                     <span className="w-4 h-px bg-[#1B5E20] inline-block" />
                     FUNDED RESEARCH
                   </p>
-                  <table className="w-full text-sm">
+                  <div className="overflow-x-auto -mx-4 px-4 sm:mx-0 sm:px-0">
+                  <table className="w-full text-sm min-w-[560px] sm:min-w-0">
                     <thead>
                       <tr className="border-b border-gray-100">
                         <th className={`${tableHead} text-left py-2 pr-4`}>Project</th>
@@ -453,6 +458,7 @@ export default async function FacultyProfilePage({
                       ))}
                     </tbody>
                   </table>
+                  </div>
                 </div>
               )}
 
@@ -516,7 +522,8 @@ export default async function FacultyProfilePage({
                 <span className={`${iconBox} bg-yellow-50`}>🏆</span>
                 Awards &amp; Recognitions
               </h2>
-              <table className="w-full text-sm">
+              <div className="overflow-x-auto -mx-4 px-4 sm:mx-0 sm:px-0">
+              <table className="w-full text-sm min-w-[400px] sm:min-w-0">
                 <thead>
                   <tr className="border-b border-gray-100">
                     <th className={`${tableHead} text-left py-2 pr-4`}>Award</th>
@@ -534,6 +541,7 @@ export default async function FacultyProfilePage({
                   ))}
                 </tbody>
               </table>
+              </div>
             </div>
           )}
 
@@ -544,7 +552,8 @@ export default async function FacultyProfilePage({
                 <span className={`${iconBox} bg-purple-50`}>👥</span>
                 Professional Memberships
               </h2>
-              <table className="w-full text-sm">
+              <div className="overflow-x-auto -mx-4 px-4 sm:mx-0 sm:px-0">
+              <table className="w-full text-sm min-w-[400px] sm:min-w-0">
                 <thead>
                   <tr className="border-b border-gray-100">
                     <th className={`${tableHead} text-left py-2 pr-4`}>Organisation</th>
@@ -562,6 +571,7 @@ export default async function FacultyProfilePage({
                   ))}
                 </tbody>
               </table>
+              </div>
             </div>
           )}
 
@@ -583,7 +593,8 @@ export default async function FacultyProfilePage({
                     <span className="w-4 h-px bg-[#1B5E20] inline-block" />
                     PHD SCHOLARS
                   </p>
-                  <table className="w-full text-sm">
+                  <div className="overflow-x-auto -mx-4 px-4 sm:mx-0 sm:px-0">
+                  <table className="w-full text-sm min-w-[420px] sm:min-w-0">
                     <thead>
                       <tr className="border-b border-gray-100">
                         <th className={`${tableHead} text-left py-2 pr-4`}>Scholar</th>
@@ -609,6 +620,7 @@ export default async function FacultyProfilePage({
                       ))}
                     </tbody>
                   </table>
+                  </div>
                 </div>
               )}
 
@@ -621,13 +633,13 @@ export default async function FacultyProfilePage({
                   <div className="grid grid-cols-2 gap-4">
                     {m.pg_dissertations_guided > 0 && (
                       <div className="bg-gray-50 rounded-xl p-4 text-center">
-                        <p className="text-3xl font-bold text-[#1B5E20]">{m.pg_dissertations_guided}</p>
+                        <p className="text-2xl sm:text-3xl font-bold text-[#1B5E20]">{m.pg_dissertations_guided}</p>
                         <p className="text-sm text-gray-500 mt-1">PG Dissertations Guided</p>
                       </div>
                     )}
                     {m.ug_projects_guided > 0 && (
                       <div className="bg-gray-50 rounded-xl p-4 text-center">
-                        <p className="text-3xl font-bold text-[#1B5E20]">{m.ug_projects_guided}</p>
+                        <p className="text-2xl sm:text-3xl font-bold text-[#1B5E20]">{m.ug_projects_guided}</p>
                         <p className="text-sm text-gray-500 mt-1">UG Projects Guided</p>
                       </div>
                     )}

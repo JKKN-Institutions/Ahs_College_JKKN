@@ -241,6 +241,12 @@ export function getMobileNavLinks(pathname: string): MenuGroup[] {
       mainHref: '/others',
       menus: [
         {
+          href: '/faculty',
+          label: 'Faculty',
+          icon: Users,
+          active: pathname === '/faculty' || pathname.startsWith('/faculty/')
+        },
+        {
           href: '/NAAC',
           label: 'NAAC',
           icon: Award,

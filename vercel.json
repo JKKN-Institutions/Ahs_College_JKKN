@@ -1,0 +1,8 @@
+{
+  "crons": [
+    {
+      "path": "/api/cron/sync-faculty-from-api",
+      "schedule": "*/15 * * * *"
+    }
+  ]
+}

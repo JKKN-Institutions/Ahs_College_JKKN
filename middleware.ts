@@ -68,7 +68,45 @@ function clearAuthCookies(response: NextResponse) {
   }
 }
 
-export function middleware(request: NextRequest) {
+async function resolveFacultySlugRedirect(
+  request: NextRequest
+): Promise<NextResponse | null> {
+  const match = request.nextUrl.pathname.match(/^\/faculty\/([^/]+)\/?$/);
+  if (!match) return null;
+
+  const slug = match[1];
+  const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
+  const key = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+  if (!url || !key) return null;
+
+  try {
+    const res = await fetch(
+      `${url}/rest/v1/faculty_slug_history?old_slug=eq.${encodeURIComponent(slug)}&select=new_slug&limit=1`,
+      {
+        headers: { apikey: key, Authorization: `Bearer ${key}` },
+        next: { revalidate: 300 },
+      }
+    );
+    if (!res.ok) return null;
+
+    const rows: { new_slug: string }[] = await res.json();
+    if (!rows.length) return null;
+
+    const dest = request.nextUrl.clone();
+    dest.pathname = `/faculty/${rows[0].new_slug}`;
+    return NextResponse.redirect(dest, 301);
+  } catch {
+    return null;
+  }
+}
+
+export async function middleware(request: NextRequest) {
+  // Faculty slug redirects (301 for SEO link equity)
+  if (request.nextUrl.pathname.startsWith('/faculty/')) {
+    const redirect = await resolveFacultySlugRedirect(request);
+    if (redirect) return redirect;
+  }
+
   const isAdminRoute = request.nextUrl.pathname.startsWith('/admin');
   const isLoginPage = request.nextUrl.pathname === '/admin/login';
 
@@ -94,5 +132,5 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ['/admin/:path*'],
+  matcher: ['/admin/:path*', '/faculty/:path*'],
 };
