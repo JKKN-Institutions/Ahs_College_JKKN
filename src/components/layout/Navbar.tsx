@@ -81,7 +81,8 @@ const navLinks: NavLink[] = [
             { name: 'Faculty', href: '/faculty' },
             { name: 'NAAC', href: '/NAAC' },
             { name: 'Privacy Policy', href: '/privacy-policy' },
-            { name: 'Academic Calendar', href: '/academic-calendar' }
+            { name: 'Academic Calendar', href: '/academic-calendar' },
+            { name: 'Careers', href: '/careers' }
         ]
     },
     { name: 'ADMISSION', href: '/admissions' },

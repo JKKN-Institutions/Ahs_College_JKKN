@@ -10,7 +10,8 @@ import {
   MessageSquare,
   Award,
   School,
-  MapPin
+  MapPin,
+  Briefcase
 } from 'lucide-react';
 import { LucideIcon } from 'lucide-react';
 
@@ -263,6 +264,12 @@ export function getMobileNavLinks(pathname: string): MenuGroup[] {
           label: 'Academic Calendar',
           icon: FileText,
           active: pathname === '/academic-calendar'
+        },
+        {
+          href: '/careers',
+          label: 'Careers',
+          icon: Briefcase,
+          active: pathname === '/careers'
         }
       ]
     },
