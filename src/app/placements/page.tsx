@@ -93,8 +93,8 @@ const placementFaqs = [
         answer: "The JKKN placement process is a structured 6-step program: (1) Registration in Semester 5, (2) Resume building and skills workshop, (3) Hospital tie-up drives where partner hospitals visit campus, (4) Shortlisting and interviews, (5) Offer letter distribution, and (6) Joining and onboarding support. The dedicated placement cell manages the entire process."
     },
     {
-        question: "Do students get placed before graduation?",
-        answer: "Yes, many JKKN AHS students receive placement offers before completing their final year. Campus recruitment drives begin in Semester 5 (third year), and a significant number of students secure offers 3-6 months before graduation. Some students also receive pre-placement offers from hospitals where they complete their clinical internships."
+        question: "Do learners get placed before graduation?",
+        answer: "Yes, many JKKN AHS learners receive placement offers before completing their final year. Campus recruitment drives begin in Semester 5 (third year), and a significant number of learners secure offers 3-6 months before graduation. Some learners also receive pre-placement offers from hospitals where they complete their clinical internships."
     },
     {
         question: "What job roles are available after B.Sc. AHS?",
@@ -102,7 +102,7 @@ const placementFaqs = [
     },
     {
         question: "Is placement guaranteed at JKKN AHS?",
-        answer: "While JKKN does not offer a formal placement guarantee, the college maintains a consistent 95% placement rate across all Allied Health Sciences programs. The dedicated placement cell works year-round to bring recruitment opportunities, conduct training programs, and ensure every eligible student receives placement support. Students who actively participate in the placement process have an excellent track record of securing positions."
+        answer: "While JKKN does not offer a formal placement guarantee, the college maintains a consistent 95% placement rate across all Allied Health Sciences programs. The dedicated placement cell works year-round to bring recruitment opportunities, conduct training programs, and ensure every eligible learner receives placement support. Learners who actively participate in the placement process have an excellent track record of securing positions."
     },
     {
         question: "What is the salary of a Cardiac Technologist in Tamil Nadu?",
@@ -142,12 +142,12 @@ const internationalDestinations = [
 ];
 
 const processSteps = [
-    { step: 1, title: "Registration", desc: "Students register with the placement cell in Semester 5 (third year). Profile creation, career interest mapping, and goal setting.", icon: <ClipboardList className="w-5 h-5" /> },
+    { step: 1, title: "Registration", desc: "Learners register with the placement cell in Semester 5 (third year). Profile creation, career interest mapping, and goal setting.", icon: <ClipboardList className="w-5 h-5" /> },
     { step: 2, title: "Resume & Skills Workshop", desc: "Professional resume building, interview skills training, communication workshops, and hospital etiquette sessions.", icon: <FileText className="w-5 h-5" /> },
     { step: 3, title: "Hospital Tie-up Drives", desc: "100+ partner hospitals visit campus for recruitment drives. Group discussions, aptitude tests, and technical assessments.", icon: <Hospital className="w-5 h-5" /> },
     { step: 4, title: "Shortlisting & Interviews", desc: "Hospitals shortlist candidates based on academic performance, skills assessment, and clinical training records.", icon: <UserCheck className="w-5 h-5" /> },
-    { step: 5, title: "Offer Letter", desc: "Selected students receive official offer letters with salary details, role description, and joining date.", icon: <Briefcase className="w-5 h-5" /> },
-    { step: 6, title: "Joining & Onboarding", desc: "Placement cell supports students through joining formalities, relocation assistance, and initial onboarding.", icon: <HandshakeIcon className="w-5 h-5" /> }
+    { step: 5, title: "Offer Letter", desc: "Selected learners receive official offer letters with salary details, role description, and joining date.", icon: <Briefcase className="w-5 h-5" /> },
+    { step: 6, title: "Joining & Onboarding", desc: "Placement cell supports learners through joining formalities, relocation assistance, and initial onboarding.", icon: <HandshakeIcon className="w-5 h-5" /> }
 ];
 
 // ─── PAGE COMPONENT ──────────────────────────────────────────────────────────
@@ -298,7 +298,7 @@ function WhyStandOutSection() {
     const differentiators = [
         {
             title: "Dedicated Placement Cell",
-            desc: "Full-time placement officers work year-round to bring recruitment opportunities, conduct mock interviews, and ensure every student is job-ready before graduation.",
+            desc: "Full-time placement officers work year-round to bring recruitment opportunities, conduct mock interviews, and ensure every learner is job-ready before graduation.",
             icon: <Users className="w-7 h-7" />
         },
         {
@@ -308,7 +308,7 @@ function WhyStandOutSection() {
         },
         {
             title: "Industry-Ready Training",
-            desc: "International protocols taught from Year 1. Students are trained on real hospital equipment, conduct clinical rotations, and complete mandatory internships at partner hospitals.",
+            desc: "International protocols taught from Year 1. Learners are trained on real hospital equipment, conduct clinical rotations, and complete mandatory internships at partner hospitals.",
             icon: <Stethoscope className="w-7 h-7" />
         },
         {
@@ -366,7 +366,7 @@ function ProcessTimelineSection() {
                         Our Placement Process — Step by Step
                     </h2>
                     <p className="text-gray-600 max-w-3xl mx-auto text-sm sm:text-base">
-                        A structured, transparent process that prepares students from registration to their first day at work.
+                        A structured, transparent process that prepares learners from registration to their first day at work.
                     </p>
                 </div>
 

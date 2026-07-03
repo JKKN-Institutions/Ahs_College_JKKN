@@ -137,7 +137,7 @@ export default function RadiologyContent() {
 
       <h2 id="skills">Skills, AI Literacy &amp; Certifications</h2>
       <p>
-        AI is rewriting radiology, but in a way most students misunderstand. AI reads
+        AI is rewriting radiology, but in a way most learners misunderstand. AI reads
         the image — but acquiring the right image, with correct positioning, contrast
         timing, and motion artifact control, is purely human. Technologists who learn
         to <strong>quality-check AI output</strong> (Qure.ai reports, Annalise, 5C
@@ -214,8 +214,8 @@ export default function RadiologyContent() {
         </li>
         <li>
           Strong campus infrastructure —{" "}
-          <Link href="/lab">imaging labs</Link>,{" "}
-          <Link href="/library">e-resource library</Link>,{" "}
+          <Link href="/lab">imaging learning labs</Link>,{" "}
+          <Link href="/library">e-resource learning commons</Link>,{" "}
           <Link href="/hostel">hostel</Link>, and{" "}
           <Link href="/transport">transport</Link>
         </li>
@@ -223,7 +223,7 @@ export default function RadiologyContent() {
       <p>
         See the full{" "}
         <Link href="/radiology-imaging-technology">
-          B.Sc Radiology &amp; Imaging Technology curriculum
+          B.Sc Radiology &amp; Imaging Technology learning framework
         </Link>{" "}
         or visit{" "}
         <Link href="/admissions/radiology-imaging-technology">admissions for 2026-27</Link>{" "}

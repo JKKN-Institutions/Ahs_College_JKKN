@@ -17,7 +17,7 @@ const courseSchema = {
   "@type": "Course",
   "dateModified": "2026-03-19",
   "name": "B.Sc Dialysis Technology",
-  "description": "Specialized program that prepares students to become skilled dialysis technologists, mastering hemodialysis procedures, peritoneal dialysis techniques, water treatment systems, and advanced kidney patient care management.",
+  "description": "Specialized program that prepares learners to become skilled dialysis technologists, mastering hemodialysis procedures, peritoneal dialysis techniques, water treatment systems, and advanced kidney patient care management.",
   "url": "https://ahs.jkkn.ac.in/dialysis-technology",
   "provider": {
     "@type": "CollegeOrUniversity",

@@ -282,7 +282,7 @@ export default function TypographyDemo() {
             {[
               {
                 icon: "👨‍🏫",
-                title: "Expert Faculty",
+                title: "Expert Senior Learners",
                 description: "Learn from industry professionals with years of clinical and academic experience",
               },
               {

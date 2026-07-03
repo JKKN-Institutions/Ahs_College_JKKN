@@ -71,7 +71,7 @@ export default function PrincipalsMessage() {
                             {/* Message Paragraphs */}
                             <div className="space-y-6 text-gray-700">
                                 <p className="text-sm sm:text-base leading-relaxed text-justify">
-                                    <span className="font-bold">Greetings to all students, parents, faculty, and stakeholders,</span>
+                                    <span className="font-bold">Greetings to all learners, learning partners, senior learners, and stakeholders,</span>
                                 </p>
 
                                 <p className="text-sm sm:text-base leading-relaxed text-justify">
@@ -83,11 +83,11 @@ export default function PrincipalsMessage() {
                                 </p>
 
                                 <p className="text-sm sm:text-base leading-relaxed text-justify">
-                                    At JKKN Dental College and Hospital, we believe in providing a holistic education that balances academic rigour with real-world application. By integrating cutting-edge technology, advanced clinical training, and innovative teaching methodologies, we equip our students to meet a curriculum rooted in design thinking, we prepare our students to address the evolving needs of the dental profession with creativity, empathy, and a solutions-oriented mindset.
+                                    At JKKN Dental College and Hospital, we believe in providing a holistic education that balances academic rigour with real-world application. By integrating cutting-edge technology, advanced clinical training, and innovative teaching methodologies, we equip our learners to meet a learning framework rooted in design thinking, we prepare our learners to address the evolving needs of the dental profession with creativity, empathy, and a solutions-oriented mindset.
                                 </p>
 
                                 <p className="text-sm sm:text-base leading-relaxed text-justify">
-                                    Our institution fosters an environment that encourages research, innovation, and entrepreneurship. We believe in nurturing curiosity, critical thinking, and leadership qualities to empower our students to excel and contribute meaningfully to dentistry, and lead transformative changes in oral healthcare.
+                                    Our institution fosters an environment that encourages research, innovation, and entrepreneurship. We believe in nurturing curiosity, critical thinking, and leadership qualities to empower our learners to excel and contribute meaningfully to dentistry, and lead transformative changes in oral healthcare.
                                 </p>
 
                                 <p className="text-sm sm:text-base leading-relaxed text-justify">
@@ -95,11 +95,11 @@ export default function PrincipalsMessage() {
                                 </p>
 
                                 <p className="text-sm sm:text-base leading-relaxed text-justify">
-                                    As an institution, we are dedicated to creating leaders who inspire and excel. With our facilities, a team of expert faculty, and a culture of continuous learning, we strive to build a future where education drives progress, healthcare is a right for all, and innovation becomes a way of life.
+                                    As an institution, we are dedicated to creating leaders who inspire and excel. With our facilities, a team of expert senior learners, and a culture of continuous learning, we strive to build a future where education drives progress, healthcare is a right for all, and innovation becomes a way of life.
                                 </p>
 
                                 <p className="text-sm sm:text-base leading-relaxed text-justify">
-                                    I extend my heartfelt gratitude to our students, faculty, parents, and stakeholders for their trust and unwavering support on our journey. Together, let us continue to transform education and healthcare, upholding the legacy of JKKN as a hub of excellence and a catalyst for societal impact.
+                                    I extend my heartfelt gratitude to our learners, senior learners, learning partners, and stakeholders for their trust and unwavering support on our journey. Together, let us continue to transform education and healthcare, upholding the legacy of JKKN as a hub of excellence and a catalyst for societal impact.
                                 </p>
 
                                 <div className="mt-8 pt-6">

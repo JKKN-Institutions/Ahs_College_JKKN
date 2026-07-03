@@ -53,8 +53,8 @@ export default function SalemPage() {
             a: "While nursing focuses on patient care and bedside support, Allied Health Sciences covers specialised diagnostic and therapeutic roles like physiotherapy, lab testing, radiology imaging, and cardiac monitoring. Both are valuable healthcare careers, but AHS offers more specialisation options.",
           },
           {
-            q: "Does JKKN AHS provide hostel for Salem students?",
-            a: "Yes, JKKN AHS provides separate hostel facilities for boys and girls. Students from Salem can also opt for daily commute as the campus is just 50-60 minutes away. College transport services are available.",
+            q: "Does JKKN AHS provide hostel for Salem learners?",
+            a: "Yes, JKKN AHS provides separate hostel facilities for boys and girls. Learners from Salem can also opt for daily commute as the campus is just 50-60 minutes away. College transport services are available.",
           },
           {
             q: "How can I apply for admission at JKKN AHS?",
@@ -62,7 +62,7 @@ export default function SalemPage() {
           },
           {
             q: "What are the fees for BSc allied health science in Tamil Nadu?",
-            a: "BSc Allied Health Science fees in Tamil Nadu typically range from ₹50,000 to ₹2,00,000 per year depending on the college and course. At JKKN College of Allied Health Sciences, fees are competitively priced with scholarship options available for meritorious students. Contact the admission office at +91 9345855001 for the latest fee structure.",
+            a: "BSc Allied Health Science fees in Tamil Nadu typically range from ₹50,000 to ₹2,00,000 per year depending on the college and course. At JKKN College of Allied Health Sciences, fees are competitively priced with scholarship options available for meritorious learners. Contact the admission office at +91 9345855001 for the latest fee structure.",
           },
           {
             q: "What is the salary after BSc allied health science?",
@@ -82,11 +82,11 @@ export default function SalemPage() {
           },
           {
             q: "Does JKKN AHS provide clinical training at Salem government hospitals?",
-            a: "JKKN AHS primarily provides clinical training at its own 500+ bed multi-specialty teaching hospital on campus. Additionally, students gain exposure through partnerships with various healthcare facilities in the region. The Salem Government Mohan Kumaramangalam Medical College Hospital is one of the major government hospitals students can access for observational learning.",
+            a: "JKKN AHS primarily provides clinical training at its own 500+ bed multi-specialty teaching hospital on campus. Additionally, learners gain exposure through partnerships with various healthcare facilities in the region. The Salem Government Mohan Kumaramangalam Medical College Hospital is one of the major government hospitals learners can access for observational learning.",
           },
           {
             q: "Is JKKN AHS near Salem a better value than colleges in Chennai?",
-            a: "JKKN AHS offers excellent value compared to Chennai colleges: significantly lower tuition and living costs, the same Tamil Nadu Dr. M.G.R. Medical University affiliation, 500+ bed hospital for clinical training, 85%+ placement rate with both domestic and international opportunities, and a safer, focused campus environment. Students save considerably while receiving comparable education quality.",
+            a: "JKKN AHS offers excellent value compared to Chennai colleges: significantly lower tuition and living costs, the same Tamil Nadu Dr. M.G.R. Medical University affiliation, 500+ bed hospital for clinical training, 85%+ placement rate with both domestic and international opportunities, and a safer, focused campus environment. Learners save considerably while receiving comparable education quality.",
           },
         ]} />
         <ExploreCitiesSection />
@@ -262,7 +262,7 @@ function WhyChooseSection() {
     {
       icon: Target,
       title: "Accessible Admission",
-      desc: "Less competitive admission than MBBS/BDS — accessible for more students",
+      desc: "Less competitive admission than MBBS/BDS — accessible for more learners",
     },
     {
       icon: Globe,
@@ -280,12 +280,12 @@ function WhyChooseSection() {
     <section className="bg-white py-14 px-4">
       <div className="max-w-5xl mx-auto text-center">
         <h2 className="text-2xl sm:text-3xl font-black text-gray-900 mb-4">
-          Why Salem Students Choose JKKN AHS
+          Why Salem Learners Choose JKKN AHS
         </h2>
         <p className="text-gray-500 max-w-2xl mx-auto mb-3 text-sm sm:text-base leading-relaxed">
           Salem is one of the largest cities in central Tamil Nadu with excellent
           connectivity to JKKN via NH-544. The journey takes under 1 hour, making daily
-          commute a practical option. Students from Salem get access to quality
+          commute a practical option. Learners from Salem get access to quality
           professional education without the high costs of metro city colleges.
         </p>
         <div className="w-12 h-1 bg-[#7cb983] rounded mx-auto mb-10"></div>
@@ -307,7 +307,7 @@ function WhyChooseSection() {
         </div>
 
         <p className="text-center text-sm text-gray-500 mt-8">
-          Students from nearby cities also choose JKKN AHS:{" "}
+          Learners from nearby cities also choose JKKN AHS:{" "}
           <a href="/erode" className="text-[#006837] hover:underline font-medium">Erode (~22 km)</a>,{" "}
           <a href="/namakkal" className="text-[#006837] hover:underline font-medium">Namakkal</a>,{" "}
           <a href="/tiruppur" className="text-[#006837] hover:underline font-medium">Tiruppur (~67 km)</a>, and{" "}
@@ -489,7 +489,7 @@ function PlacementHighlights() {
           Placement Highlights
         </h2>
         <p className="text-gray-500 text-sm mb-3">
-          92%+ placement rate — our students work at India&apos;s and the world&apos;s top hospitals
+          92%+ placement rate — our learners work at India&apos;s and the world&apos;s top hospitals
         </p>
         <div className="w-12 h-1 bg-[#7cb983] rounded mx-auto mb-10"></div>
 
@@ -617,13 +617,13 @@ function FacilitiesSection() {
   const facilities = [
     {
       icon: Microscope,
-      title: "Modern Labs",
-      desc: "State-of-the-art laboratories and smart classrooms",
+      title: "Modern Learning Labs",
+      desc: "State-of-the-art learning labs and smart learning studios",
     },
     {
       icon: BookOpen,
-      title: "Digital Library",
-      desc: "Well-stocked library with digital access and journals",
+      title: "Digital Learning Commons",
+      desc: "Well-stocked learning commons with digital access and journals",
     },
     {
       icon: Home,
@@ -693,7 +693,7 @@ function CampusGallerySection() {
     { src: "/images/boys-hostel.png", alt: "Boys hostel at JKKN AHS — allied health science college near Salem" },
     { src: "/images/girls-hostel.png", alt: "Girls hostel at JKKN AHS — allied health science college near Salem" },
     { src: "/allied health science main image6.png", alt: "Campus life at JKKN College of Allied Health Sciences near Salem" },
-    { src: "/allied health science main image7.png", alt: "Students at JKKN Allied Health Sciences campus near Salem" },
+    { src: "/allied health science main image7.png", alt: "Learners at JKKN Allied Health Sciences campus near Salem" },
     { src: "/allied health science main image8.png", alt: "JKKN AHS facilities and campus infrastructure near Salem" },
   ];
 
@@ -731,7 +731,7 @@ function CampusGallerySection() {
 ────────────────────────────────────────── */
 function CompetitiveAdvantageSection() {
   const advantages = [
-    { title: "Competitive Fees with Scholarship Support", desc: "JKKN offers quality allied health education at competitive pricing compared to deemed universities in Salem. Merit-based scholarships available for deserving students." },
+    { title: "Competitive Fees with Scholarship Support", desc: "JKKN offers quality allied health education at competitive pricing compared to deemed universities in Salem. Merit-based scholarships available for deserving learners." },
     { title: "9 Specialized BSc Programmes", desc: "Choose from Cardiac Technology, Dialysis, Radiology, OT & Anaesthesia, Respiratory Therapy, Physician Assistant, Critical Care, Medical Records, and Emergency Care." },
     { title: "Direct NH-544 Access — 50–60 Minutes from Salem", desc: "Straight highway connectivity via Salem–Coimbatore Highway. Regular bus services from Salem bus stand make the commute convenient." },
     { title: "International Placement Track Record", desc: "JKKN graduates work at NHS UK, Cleveland Clinic Abu Dhabi, and hospitals across Singapore and Gulf countries. 85%+ placement rate with 60+ recruiters." },
@@ -742,7 +742,7 @@ function CompetitiveAdvantageSection() {
     <section className="bg-white py-14 px-4">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-2xl sm:text-3xl font-black text-gray-900 mb-3 text-center">
-          Why Salem Students Choose JKKN AHS
+          Why Salem Learners Choose JKKN AHS
         </h2>
         <p className="voice-answer text-gray-500 text-sm mb-3 text-center">
           A strong alternative with competitive fees and proven placements

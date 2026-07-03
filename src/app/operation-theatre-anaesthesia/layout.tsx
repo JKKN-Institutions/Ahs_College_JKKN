@@ -17,7 +17,7 @@ const courseSchema = {
   "@type": "Course",
   "dateModified": "2026-03-19",
   "name": "B.Sc Operation Theatre and Anaesthesia Technology",
-  "description": "Comprehensive program that prepares students to become skilled OT and anaesthesia technologists with expertise in surgical assistance, anaesthesia support, patient monitoring, sterilization, and perioperative care management.",
+  "description": "Comprehensive program that prepares learners to become skilled OT and anaesthesia technologists with expertise in surgical assistance, anaesthesia support, patient monitoring, sterilization, and perioperative care management.",
   "url": "https://ahs.jkkn.ac.in/operation-theatre-anaesthesia",
   "provider": {
     "@type": "CollegeOrUniversity",
@@ -107,7 +107,7 @@ const faqSchema = {
       "name": "What is Bachelor of Science Operation Theatre and Anaesthesia Technology at JKKN College Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It is a four-year undergraduate degree at JKKN College Tamil Nadu training students in surgical assistance, anaesthesia support, patient monitoring, sterilization, and perioperative care management."
+        "text": "It is a four-year undergraduate degree at JKKN College Tamil Nadu training learners in surgical assistance, anaesthesia support, patient monitoring, sterilization, and perioperative care management."
       }
     },
     {

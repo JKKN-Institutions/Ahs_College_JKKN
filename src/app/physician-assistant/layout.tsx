@@ -18,7 +18,7 @@ const courseSchema = {
   "@type": "Course",
   "dateModified": "2026-03-19",
   "name": "B.Sc Physician Assistant",
-  "description": "Comprehensive program that prepares students to become skilled clinical professionals with expertise in patient assessment, diagnostic support, and therapeutic procedures across medical specialties. Graduates work alongside physicians in clinical settings.",
+  "description": "Comprehensive program that prepares learners to become skilled clinical professionals with expertise in patient assessment, diagnostic support, and therapeutic procedures across medical specialties. Graduates work alongside physicians in clinical settings.",
   "url": "https://ahs.jkkn.ac.in/physician-assistant",
   "provider": {
     "@type": "CollegeOrUniversity",
@@ -108,7 +108,7 @@ const faqSchema = {
       "name": "What is the Bachelor of Science Physician Assistant course at JKKN College Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The Bachelor of Science Physician Assistant course at JKKN College Tamil Nadu is a three-year degree plus one-year internship that trains students to assist physicians in clinical diagnosis, treatment, and patient care."
+        "text": "The Bachelor of Science Physician Assistant course at JKKN College Tamil Nadu is a three-year degree plus one-year internship that trains learners to assist physicians in clinical diagnosis, treatment, and patient care."
       }
     },
     {

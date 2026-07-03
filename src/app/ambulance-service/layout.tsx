@@ -3,7 +3,7 @@ import { createPageMetadata } from "@/lib/metadata";
 export const metadata = createPageMetadata({
   title: "Ambulance Service — JKKN College of Allied Health Sciences",
   description:
-    "24/7 ambulance service available at JKKN campus, Komarapalayam. Emergency medical transport for students, staff, and hospital patients.",
+    "24/7 ambulance service available at JKKN campus, Komarapalayam. Emergency medical transport for learners, team members, and hospital patients.",
   path: "/ambulance-service",
   keywords: [
     "JKKN campus ambulance service",
@@ -42,7 +42,7 @@ const facilitySchema = {
   "@context": "https://schema.org",
   "@type": "Place",
   "name": "Ambulance Service — JKKN College of Allied Health Sciences",
-  "description": "24/7 ambulance service available at JKKN campus, Komarapalayam. Emergency medical transport for students, staff, and hospital patients.",
+  "description": "24/7 ambulance service available at JKKN campus, Komarapalayam. Emergency medical transport for learners, team members, and hospital patients.",
   "url": "https://ahs.jkkn.ac.in/ambulance-service",
   "containedInPlace": {
     "@type": "CollegeOrUniversity",
@@ -65,7 +65,7 @@ const faqSchema = {
   "dateModified": "2026-03-19",
   "mainEntity": [
     { "@type": "Question", "name": "Does JKKN College have an ambulance service on campus?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. JKKN College campus has a dedicated ambulance service managed by certified emergency medical technicians, ready to respond to all medical emergencies." } },
-    { "@type": "Question", "name": "Is the JKKN ambulance service available 24 hours?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. The JKKN ambulance service operates around the clock, providing 24-hour emergency medical transportation and response for students, staff, and the campus community." } },
+    { "@type": "Question", "name": "Is the JKKN ambulance service available 24 hours?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. The JKKN ambulance service operates around the clock, providing 24-hour emergency medical transportation and response for learners, team members, and the campus community." } },
     { "@type": "Question", "name": "What medical emergencies does the JKKN ambulance handle?", "acceptedAnswer": { "@type": "Answer", "text": "The JKKN ambulance handles all medical emergencies including accidents, sudden illness, cardiac events, and any situation requiring urgent medical transportation to a hospital." } },
     { "@type": "Question", "name": "Is there a first aid centre at JKKN College?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. JKKN College has a first aid centre on campus that provides immediate medical attention before patients are transported via ambulance if required." } },
     { "@type": "Question", "name": "How quickly can the JKKN ambulance respond to emergencies?", "acceptedAnswer": { "@type": "Answer", "text": "The JKKN ambulance is stationed on campus for rapid response. Being on-site, it can reach any point on campus within minutes of an emergency call." } }

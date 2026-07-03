@@ -85,10 +85,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      "name": "Do students get placed before graduation?",
+      "name": "Do learners get placed before graduation?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, many JKKN AHS students receive placement offers before completing their final year. Campus recruitment drives begin in Semester 5 and a significant number of students secure offers 3-6 months before graduation."
+        "text": "Yes, many JKKN AHS learners receive placement offers before completing their final year. Campus recruitment drives begin in Semester 5 and a significant number of learners secure offers 3-6 months before graduation."
       }
     },
     {
@@ -104,7 +104,7 @@ const faqSchema = {
       "name": "Is placement guaranteed at JKKN AHS?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "While JKKN does not offer a formal placement guarantee, the college maintains a consistent 95 percent placement rate across all Allied Health Sciences programs. The dedicated placement cell works year-round to ensure every eligible student receives placement support."
+        "text": "While JKKN does not offer a formal placement guarantee, the college maintains a consistent 95 percent placement rate across all Allied Health Sciences programs. The dedicated placement cell works year-round to ensure every eligible learner receives placement support."
       }
     },
     {
@@ -141,12 +141,12 @@ const howToSchema = {
   "description": "Step-by-step placement process at JKKN College of Allied Health Sciences, from registration to joining.",
   "totalTime": "PT6M",
   "step": [
-    { "@type": "HowToStep", "position": 1, "name": "Registration", "text": "Students register with the placement cell in Semester 5. Profile creation, career interest mapping, and goal setting." },
+    { "@type": "HowToStep", "position": 1, "name": "Registration", "text": "Learners register with the placement cell in Semester 5. Profile creation, career interest mapping, and goal setting." },
     { "@type": "HowToStep", "position": 2, "name": "Resume & Skills Workshop", "text": "Professional resume building, interview skills training, communication workshops, and hospital etiquette sessions." },
     { "@type": "HowToStep", "position": 3, "name": "Hospital Tie-up Drives", "text": "100+ partner hospitals visit campus for recruitment drives. Group discussions, aptitude tests, and technical assessments." },
     { "@type": "HowToStep", "position": 4, "name": "Shortlisting & Interviews", "text": "Hospitals shortlist candidates based on academic performance, skills assessment, and clinical training records." },
-    { "@type": "HowToStep", "position": 5, "name": "Offer Letter", "text": "Selected students receive official offer letters with salary details, role description, and joining date." },
-    { "@type": "HowToStep", "position": 6, "name": "Joining & Onboarding", "text": "Placement cell supports students through joining formalities, relocation assistance, and initial onboarding." }
+    { "@type": "HowToStep", "position": 5, "name": "Offer Letter", "text": "Selected learners receive official offer letters with salary details, role description, and joining date." },
+    { "@type": "HowToStep", "position": 6, "name": "Joining & Onboarding", "text": "Placement cell supports learners through joining formalities, relocation assistance, and initial onboarding." }
   ]
 };
 

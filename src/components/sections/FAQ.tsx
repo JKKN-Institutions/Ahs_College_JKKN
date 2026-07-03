@@ -21,7 +21,7 @@ const faqs: { question: string; answer: ReactNode }[] = [
     },
     {
         question: "What is the fee structure for B.Sc. Allied Health Sciences programs?",
-        answer: <>Government Quota (GQ) fees are as per Govt norms. Management Quota (MQ) annual fees at JKKN range from ₹60,000 (Medical Record Science) to ₹1,70,000 (Cardiac & Operation Theatre Technology) per year. This includes tuition, <Link href="/lab" className="text-[#0b6d41] font-semibold hover:underline">laboratory</Link> fees, and hospital training components. Scholarships are available for meritorious and economically disadvantaged Learners. Payment can be made in installments.</>
+        answer: <>Government Quota (GQ) fees are as per Govt norms. Management Quota (MQ) annual fees at JKKN range from ₹60,000 (Medical Record Science) to ₹1,70,000 (Cardiac & Operation Theatre Technology) per year. This includes tuition, <Link href="/lab" className="text-[#0b6d41] font-semibold hover:underline">learning lab</Link> fees, and hospital training components. Scholarships are available for meritorious and economically disadvantaged Learners. Payment can be made in installments.</>
     },
     {
         question: "What is the placement record and average salary after B.Sc. AHS?",
@@ -32,8 +32,8 @@ const faqs: { question: string; answer: ReactNode }[] = [
         answer: "Yes, all Allied Health Sciences programs include mandatory hospital internship of 6-12 months. JKKN has partnerships with 50+ hospitals including Apollo, MIOT International, Fortis, Manipal, Columbia Asia, and Narayana Health. Learners gain hands-on clinical experience working with real patients under expert supervision."
     },
     {
-        question: "What laboratory facilities are available at JKKN AHS College?",
-        answer: <>JKKN features state-of-the-art <Link href="/lab" className="text-[#0b6d41] font-semibold hover:underline">laboratories</Link> including Clinical Biochemistry Lab with automated analyzers, Microbiology & Pathology Lab, Hematology Lab, Cardiac Catheterization Simulator, Diagnostic Imaging Center with X-ray and CT simulators, Optometry Clinic with slit lamps and OCT, Dialysis Training Unit, and <Link href="/library" className="text-[#0b6d41] font-semibold hover:underline">Digital Library</Link> with 10,000+ medical books.</>
+        question: "What learning lab facilities are available at JKKN AHS College?",
+        answer: <>JKKN features state-of-the-art <Link href="/lab" className="text-[#0b6d41] font-semibold hover:underline">learning labs</Link> including Clinical Biochemistry Lab with automated analyzers, Microbiology & Pathology Lab, Hematology Lab, Cardiac Catheterization Simulator, Diagnostic Imaging Center with X-ray and CT simulators, Optometry Clinic with slit lamps and OCT, Dialysis Training Unit, and <Link href="/library" className="text-[#0b6d41] font-semibold hover:underline">Digital Learning Commons</Link> with 10,000+ medical books.</>
     },
     {
         question: "Are hostel facilities available for AHS Learners?",
@@ -45,11 +45,11 @@ const faqs: { question: string; answer: ReactNode }[] = [
     },
     {
         question: "What makes JKKN different from other Allied Health Sciences colleges?",
-        answer: <>JKKN stands apart with its {BRAND_LEGACY.FULL_TEXT} of educational excellence, state-of-the-art <Link href="/lab" className="text-[#0b6d41] font-semibold hover:underline">laboratories</Link> matching hospital standards, partnerships with 50+ leading hospitals for clinical training, experienced Learning Facilitators with industry expertise, 95%+ <Link href="/placements" className="text-[#0b6d41] font-semibold hover:underline">placement rate</Link> with top healthcare organizations, scholarship programs for deserving Learners, and comprehensive support from <Link href="/admissions" className="text-[#0b6d41] font-semibold hover:underline">admissions</Link> through career placement.</>
+        answer: <>JKKN stands apart with its {BRAND_LEGACY.FULL_TEXT} of educational excellence, state-of-the-art <Link href="/lab" className="text-[#0b6d41] font-semibold hover:underline">learning labs</Link> matching hospital standards, partnerships with 50+ leading hospitals for clinical training, experienced Learning Facilitators with industry expertise, 95%+ <Link href="/placements" className="text-[#0b6d41] font-semibold hover:underline">placement rate</Link> with top healthcare organizations, scholarship programs for deserving Learners, and comprehensive support from <Link href="/admissions" className="text-[#0b6d41] font-semibold hover:underline">admissions</Link> through career placement.</>
     },
     {
         question: "How much does B.Sc Allied Health Sciences cost in Tamil Nadu?",
-        answer: <>B.Sc Allied Health Sciences fees in Tamil Nadu typically range from ₹50,000 to ₹2,00,000 per year depending on the college and program. At JKKN, Government Quota (GQ) fees are as per Govt norms. Management Quota (MQ) annual fees range from ₹60,000 to ₹1,70,000 covering tuition, <Link href="/lab" className="text-[#0b6d41] font-semibold hover:underline">laboratory access</Link>, and hospital training. Merit-based scholarships cover up to 50% of fees. The 4-year program (3 years academics + 1 year internship) offers strong return on investment with a 95% placement rate and starting salaries of ₹3.2 LPA.</>
+        answer: <>B.Sc Allied Health Sciences fees in Tamil Nadu typically range from ₹50,000 to ₹2,00,000 per year depending on the college and program. At JKKN, Government Quota (GQ) fees are as per Govt norms. Management Quota (MQ) annual fees range from ₹60,000 to ₹1,70,000 covering tuition, <Link href="/lab" className="text-[#0b6d41] font-semibold hover:underline">learning lab access</Link>, and hospital training. Merit-based scholarships cover up to 50% of fees. The 4-year program (3 years academics + 1 year internship) offers strong return on investment with a 95% placement rate and starting salaries of ₹3.2 LPA.</>
     },
     {
         question: "Is NEET required for B.Sc Allied Health Sciences admission?",

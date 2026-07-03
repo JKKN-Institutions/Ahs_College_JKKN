@@ -105,7 +105,7 @@ const faqSchema = {
       "name": "Is NEET required for BSc Allied Health Sciences admission in Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No, NEET is not required for BSc Allied Health Sciences admission at JKKN College. Admission is based on Plus Two marks and merit-based counseling. This makes Allied Health Sciences an excellent alternative for students who did not appear for or qualify NEET."
+        "text": "No, NEET is not required for BSc Allied Health Sciences admission at JKKN College. Admission is based on Plus Two marks and merit-based counseling. This makes Allied Health Sciences an excellent alternative for learners who did not appear for or qualify NEET."
       }
     },
     {
@@ -113,7 +113,7 @@ const faqSchema = {
       "name": "What is the fee structure for BSc Allied Health Sciences programs at JKKN?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Government Quota (GQ) fees are as per government norms. Management Quota (MQ) annual fees for BSc Allied Health Sciences programs at JKKN range from 60000 to 170000 rupees depending on the specialization. Fee payment can be made in installments. Government scholarships for BC, MBC, SC, and ST students are facilitated through the college."
+        "text": "Government Quota (GQ) fees are as per government norms. Management Quota (MQ) annual fees for BSc Allied Health Sciences programs at JKKN range from 60000 to 170000 rupees depending on the specialization. Fee payment can be made in installments. Government scholarships for BC, MBC, SC, and ST Learners are facilitated through the college."
       }
     },
     {
@@ -142,10 +142,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      "name": "Are scholarships available for Allied Health Sciences students at JKKN?",
+      "name": "Are scholarships available for Allied Health Sciences Learners at JKKN?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, JKKN facilitates government scholarships for BC, MBC, SC, and ST category students. Additionally, JKKN offers merit-based scholarships for academic toppers and fee concessions including installment payment options and education loan assistance."
+        "text": "Yes, JKKN facilitates government scholarships for BC, MBC, SC, and ST category Learners. Additionally, JKKN offers merit-based scholarships for academic toppers and fee concessions including installment payment options and education loan assistance."
       }
     },
     {
@@ -158,10 +158,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      "name": "Can NRI students apply for Allied Health Sciences at JKKN College?",
+      "name": "Can NRI learners apply for Allied Health Sciences at JKKN College?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, NRI candidates are eligible for admission to BSc Allied Health Sciences programs at JKKN College. NRI students should have completed equivalent qualification with Physics, Chemistry, and Biology. Additional documents like passport copy and NRI certificate may be required."
+        "text": "Yes, NRI candidates are eligible for admission to BSc Allied Health Sciences programs at JKKN College. NRI learners should have completed equivalent qualification with Physics, Chemistry, and Biology. Additional documents like passport copy and NRI certificate may be required."
       }
     },
     {

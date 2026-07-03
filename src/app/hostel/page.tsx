@@ -20,20 +20,20 @@ const hostelSections: HostelSection[] = [
         title: "BOYS HOSTEL",
         images: ["/boys-hostel-1.jpg", "/boys-hostel-2.jpg", "/boys-hostel-3.jpg"],
         paragraphs: [
-            "Our hostel, situated within the campus, offers a hassle-free commute to classes, making it an excellent option for students. Equipped with essential amenities, the well-maintained hostel provides spacious, well-ventilated single and shared rooms for residents to enjoy a comfortable living experience.",
+            "Our hostel, situated within the campus, offers a hassle-free commute to classes, making it an excellent option for learners. Equipped with essential amenities, the well-maintained hostel provides spacious, well-ventilated single and shared rooms for residents to enjoy a comfortable living experience.",
             "At JKKN, we value academics and provide an environment that promotes concentration and learning. Our hostel fosters a peaceful and quiet atmosphere, free from distractions, while our high-speed internet connectivity facilitates easy access to online resources, aiding academic assignments.",
-            "Beyond just a place to reside, our hostel cultivates a community where residents can create long-lasting friendships and memories. With a helpful staff on hand, any concerns or issues are promptly addressed.",
-            "For students seeking a safe and comfortable living experience during their academic journey, JKKN Educational Institutions' Boys Hostel is the perfect option. Our state-of-the-art facilities and amenities guarantee a memorablestay for our residents"
+            "Beyond just a place to reside, our hostel cultivates a community where residents can create long-lasting friendships and memories. With helpful team members on hand, any concerns or issues are promptly addressed.",
+            "For learners seeking a safe and comfortable living experience during their academic journey, JKKN Educational Institutions' Boys Hostel is the perfect option. Our state-of-the-art facilities and amenities guarantee a memorablestay for our residents"
         ]
     },
     {
         title: "GIRLS HOSTEL",
         images: ["/girls-hostel-1.jpg", "/girls-hostel-2.jpg", "/girls-hostel-3.jpg"],
         paragraphs: [
-            "Our female students can enjoy a unique and modern living experience at our girls' hostel, which is equipped with all the necessary facilities for a comfortable and enjoyable stay. Each room is spacious, well-ventilated, and furnished with comfortable beds, study tables, and ample storage space. Privacy is ensured, as every room comes with its own bathroom.",
-            "To ensure our students' safety, we have round-the-clock security, CCTV surveillance, and access control systems. We also have a strict no-visitor policy and require valid identification for anyone entering the premises.",
-            "At JKKN Educational Institutions, we understand the importance of a balanced lifestyle and encourage our students to engage in physical activity. Our hostel offers a dedicated gymnasium, yoga room, and sports complex to help our students stay active and healthy.",
-            "If you're a female student looking for a safe and enjoyable living experience, our girls' hostel is the perfect choice. Join our growing community of students and experience the best hostel facilities available."
+            "Our female learners can enjoy a unique and modern living experience at our girls' hostel, which is equipped with all the necessary facilities for a comfortable and enjoyable stay. Each room is spacious, well-ventilated, and furnished with comfortable beds, study tables, and ample storage space. Privacy is ensured, as every room comes with its own bathroom.",
+            "To ensure our learners' safety, we have round-the-clock security, CCTV surveillance, and access control systems. We also have a strict no-visitor policy and require valid identification for anyone entering the premises.",
+            "At JKKN Educational Institutions, we understand the importance of a balanced lifestyle and encourage our learners to engage in physical activity. Our hostel offers a dedicated gymnasium, yoga room, and sports complex to help our learners stay active and healthy.",
+            "If you're a female learner looking for a safe and enjoyable living experience, our girls' hostel is the perfect choice. Join our growing community of learners and experience the best hostel facilities available."
         ]
     }
 ];
@@ -139,10 +139,10 @@ export default function Hostel() {
                     <div className="space-y-4">
                         {[
                             { q: "Is hostel accommodation available for both boys and girls at JKKN?", a: "Yes, JKKN provides separate hostel facilities for boys and girls within the campus with round-the-clock security and CCTV surveillance." },
-                            { q: "What amenities are included in the JKKN hostel?", a: "JKKN hostels include furnished rooms, attached bathrooms, high-speed WiFi, study areas, gymnasium, and recreational facilities for students." },
+                            { q: "What amenities are included in the JKKN hostel?", a: "JKKN hostels include furnished rooms, attached bathrooms, high-speed WiFi, study areas, gymnasium, and recreational facilities for learners." },
                             { q: "Is the JKKN hostel located within the campus?", a: "Yes, both boys and girls hostels are situated within the JKKN campus at Natarajapuram, Komarapalayam, ensuring convenient access to classes." },
-                            { q: "What food facilities are available for hostel students at JKKN?", a: "JKKN hostels have an in-campus mess providing nutritious vegetarian and non-vegetarian meals three times daily with snacks." },
-                            { q: "What is the hostel fee at JKKN College?", a: "Hostel fees for Allied Health Sciences (AHS) students: Girls — Classic Mess ₹65,000/yr, Premium Mess ₹80,000/yr, AC Room ₹30,000/yr. Boys — Classic Mess ₹65,000/yr, Premium Mess ₹80,000/yr (AC Room not available for boys). Separate hostel facilities for Boys and Girls with 24/7 security, mess, laundry, gym, sports, WiFi, hospital & 24/7 ambulance support, and study areas." },
+                            { q: "What food facilities are available for hostel learners at JKKN?", a: "JKKN hostels have an in-campus mess providing nutritious vegetarian and non-vegetarian meals three times daily with snacks." },
+                            { q: "What is the hostel fee at JKKN College?", a: "Hostel fees for Allied Health Sciences (AHS) learners: Girls — Classic Mess ₹65,000/yr, Premium Mess ₹80,000/yr, AC Room ₹30,000/yr. Boys — Classic Mess ₹65,000/yr, Premium Mess ₹80,000/yr (AC Room not available for boys). Separate hostel facilities for Boys and Girls with 24/7 security, mess, laundry, gym, sports, WiFi, hospital & 24/7 ambulance support, and study areas." },
                         ].map((faq, i) => (
                             <div key={i} className="border border-gray-200 rounded-2xl overflow-hidden bg-white">
                                 <h3 className="m-0 text-base">

@@ -65,7 +65,7 @@ export default function BankPostOffice() {
                                     The bank offers a range of services, including account opening, cash deposits and withdrawals, fund transfers, and more.
                                 </li>
                                 <li className="text-gray-700 text-base sm:text-lg leading-relaxed list-disc">
-                                    You can also avail of special offers and discounts exclusively for JKKN students and staff.
+                                    You can also avail of special offers and discounts exclusively for JKKN learners and team members.
                                 </li>
                                 <li className="text-gray-700 text-base sm:text-lg leading-relaxed list-disc">
                                     With our banking facility, you can save time and effort, and focus on your studies and work without worrying about your financial transactions.
@@ -103,15 +103,15 @@ export default function BankPostOffice() {
                         {[
                             {
                                 q: "Is there a bank inside the JKKN College campus?",
-                                a: "Yes. JKKN College campus has a fully functional bank branch inside campus, allowing students and staff to manage all their banking needs conveniently."
+                                a: "Yes. JKKN College campus has a fully functional bank branch inside campus, allowing learners and team members to manage all their banking needs conveniently."
                             },
                             {
                                 q: "Which bank branch is available at JKKN campus?",
-                                a: "JKKN campus has a branch of a popular nationalised bank offering services like account opening, deposits, withdrawals, and fund transfers for students and staff."
+                                a: "JKKN campus has a branch of a popular nationalised bank offering services like account opening, deposits, withdrawals, and fund transfers for learners and team members."
                             },
                             {
-                                q: "Can students open bank accounts at the JKKN campus bank?",
-                                a: "Yes. Students can open bank accounts directly at the JKKN campus branch. Special offers and discounts are available exclusively for JKKN students and staff."
+                                q: "Can learners open bank accounts at the JKKN campus bank?",
+                                a: "Yes. Learners can open bank accounts directly at the JKKN campus branch. Special offers and discounts are available exclusively for JKKN learners and team members."
                             },
                             {
                                 q: "Is there a post office at JKKN College campus?",
@@ -119,7 +119,7 @@ export default function BankPostOffice() {
                             },
                             {
                                 q: "Are ATM facilities available at JKKN campus?",
-                                a: "Yes. ATM facilities are available on the JKKN campus, giving students and staff easy access to cash and basic banking transactions at any time."
+                                a: "Yes. ATM facilities are available on the JKKN campus, giving learners and team members easy access to cash and basic banking transactions at any time."
                             }
                         ].map((faq, i) => (
                             <div key={i} className="border border-gray-200 rounded-2xl overflow-hidden bg-white">

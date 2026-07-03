@@ -54,8 +54,8 @@ export default function ErodePage() {
               a: "While nursing focuses on patient care and bedside support, Allied Health Sciences covers specialised diagnostic and therapeutic roles like physiotherapy, lab testing, radiology imaging, and cardiac monitoring. Both are valuable healthcare careers, but AHS offers more specialisation options.",
             },
             {
-              q: "Does JKKN AHS provide hostel for Erode students?",
-              a: "Yes, JKKN AHS provides separate hostel facilities for boys and girls. Students from Erode can also opt for daily commute as the campus is just 35-40 minutes away. College transport services are available.",
+              q: "Does JKKN AHS provide hostel for Erode learners?",
+              a: "Yes, JKKN AHS provides separate hostel facilities for boys and girls. Learners from Erode can also opt for daily commute as the campus is just 35-40 minutes away. College transport services are available.",
             },
             {
               q: "How can I apply for admission at JKKN AHS?",
@@ -63,7 +63,7 @@ export default function ErodePage() {
             },
             {
               q: "What are the fees for BSc allied health science in Tamil Nadu?",
-              a: "BSc Allied Health Science fees in Tamil Nadu typically range from ₹50,000 to ₹2,00,000 per year depending on the college and course. At JKKN College of Allied Health Sciences, fees are competitively priced with scholarship options available for meritorious students. Contact the admission office at +91 9345855001 for the latest fee structure.",
+              a: "BSc Allied Health Science fees in Tamil Nadu typically range from ₹50,000 to ₹2,00,000 per year depending on the college and course. At JKKN College of Allied Health Sciences, fees are competitively priced with scholarship options available for meritorious learners. Contact the admission office at +91 9345855001 for the latest fee structure.",
             },
             {
               q: "What is the salary after BSc allied health science?",
@@ -71,7 +71,7 @@ export default function ErodePage() {
             },
             {
               q: "How many allied health science colleges are there near Erode?",
-              a: "Erode district has a limited number of allied health science colleges. JKKN College of Allied Health Sciences, located just ~22 km from Erode on NH-544, stands out with 9 BSc programmes, NAAC approval, and an 85%+ placement rate — making it one of the top choices for Erode students.",
+              a: "Erode district has a limited number of allied health science colleges. JKKN College of Allied Health Sciences, located just ~22 km from Erode on NH-544, stands out with 9 BSc programmes, NAAC approval, and an 85%+ placement rate — making it one of the top choices for Erode learners.",
             },
             {
               q: "What are the eligibility requirements for allied health science courses?",
@@ -82,8 +82,8 @@ export default function ErodePage() {
               a: "Yes, Erode's thriving textile and turmeric industries have created demand for occupational health professionals, industrial physiotherapists, and emergency care technicians. JKKN AHS graduates are well-positioned for roles in occupational health centres at textile mills, industrial clinics, and corporate wellness programmes across the Erode industrial belt.",
             },
             {
-              q: "Can Erode students commute daily to JKKN AHS?",
-              a: "Absolutely. At just ~22 km via NH-544, many Erode students commute daily. The journey takes only 35-40 minutes by bus or bike. JKKN also provides dedicated college transport services with multiple pickup points in Erode city. Hostel facilities are available for those who prefer to stay on campus.",
+              q: "Can Erode learners commute daily to JKKN AHS?",
+              a: "Absolutely. At just ~22 km via NH-544, many Erode learners commute daily. The journey takes only 35-40 minutes by bus or bike. JKKN also provides dedicated college transport services with multiple pickup points in Erode city. Hostel facilities are available for those who prefer to stay on campus.",
             },
             {
               q: "Why choose JKKN AHS near Erode over colleges in Coimbatore?",
@@ -265,7 +265,7 @@ function WhyChooseSection() {
     {
       icon: Target,
       title: "Accessible Admission",
-      desc: "Less competitive admission than MBBS/BDS — accessible for more students",
+      desc: "Less competitive admission than MBBS/BDS — accessible for more learners",
     },
     {
       icon: Globe,
@@ -283,7 +283,7 @@ function WhyChooseSection() {
     <section className="bg-white py-14 px-4">
       <div className="max-w-5xl mx-auto text-center">
         <h2 className="text-2xl sm:text-3xl font-black text-gray-900 mb-4">
-          Why Erode Students Choose JKKN AHS
+          Why Erode Learners Choose JKKN AHS
         </h2>
         <p className="text-gray-500 max-w-2xl mx-auto mb-3 text-sm sm:text-base leading-relaxed">
           Erode&apos;s strong industrial base means families value quality education with
@@ -309,7 +309,7 @@ function WhyChooseSection() {
           })}
         </div>
         <p className="text-center text-sm text-gray-500 mt-8">
-          Students from nearby cities also choose JKKN AHS:{" "}
+          Learners from nearby cities also choose JKKN AHS:{" "}
           <a href="/salem" className="text-[#006837] hover:underline font-medium">Salem (~58 km)</a>,{" "}
           <a href="/namakkal" className="text-[#006837] hover:underline font-medium">Namakkal</a>,{" "}
           <a href="/tiruppur" className="text-[#006837] hover:underline font-medium">Tiruppur (~67 km)</a>, and{" "}
@@ -491,7 +491,7 @@ function PlacementHighlights() {
           Placement Highlights
         </h2>
         <p className="text-gray-500 text-sm mb-3">
-          92%+ placement rate — our students work at India&apos;s and the world&apos;s top hospitals
+          92%+ placement rate — our learners work at India&apos;s and the world&apos;s top hospitals
         </p>
         <div className="w-12 h-1 bg-[#7cb983] rounded mx-auto mb-10"></div>
 
@@ -619,13 +619,13 @@ function FacilitiesSection() {
   const facilities = [
     {
       icon: Microscope,
-      title: "Modern Labs",
-      desc: "State-of-the-art laboratories and smart classrooms",
+      title: "Modern Learning Labs",
+      desc: "State-of-the-art learning labs and smart learning studios",
     },
     {
       icon: BookOpen,
-      title: "Digital Library",
-      desc: "Well-stocked library with digital access and journals",
+      title: "Digital Learning Commons",
+      desc: "Well-stocked learning commons with digital access and journals",
     },
     {
       icon: Home,
@@ -695,7 +695,7 @@ function CampusGallerySection() {
     { src: "/images/boys-hostel.png", alt: "Boys hostel at JKKN AHS — allied health science college near Erode" },
     { src: "/images/girls-hostel.png", alt: "Girls hostel at JKKN AHS — allied health science college near Erode" },
     { src: "/allied health science main image6.png", alt: "Campus life at JKKN College of Allied Health Sciences near Erode" },
-    { src: "/allied health science main image7.png", alt: "Students at JKKN Allied Health Sciences campus near Erode" },
+    { src: "/allied health science main image7.png", alt: "Learners at JKKN Allied Health Sciences campus near Erode" },
     { src: "/allied health science main image8.png", alt: "JKKN AHS facilities and campus infrastructure near Erode" },
   ];
 
@@ -735,7 +735,7 @@ function CompetitiveAdvantageSection() {
   const advantages = [
     { title: "9 Specialized BSc Programmes", desc: "Choose from Cardiac Technology, Dialysis, Radiology, OT & Anaesthesia, Respiratory Therapy, Physician Assistant, Critical Care, Medical Records, and Emergency Care — more options than most colleges near Erode." },
     { title: "85%+ Placement Rate with 60+ Recruiters", desc: "Our graduates work at TCS, Apollo Hospitals, Sun Pharma, NHS UK, and Cleveland Clinic Abu Dhabi. Both domestic and international career paths available." },
-    { title: "Just 30–40 Minutes from Erode", desc: "Located on NH-544 (Salem–Coimbatore Highway) with direct bus connectivity. Easy commute or hostel stay — both options available for Erode students." },
+    { title: "Just 30–40 Minutes from Erode", desc: "Located on NH-544 (Salem–Coimbatore Highway) with direct bus connectivity. Easy commute or hostel stay — both options available for Erode learners." },
     { title: "500+ Bed Teaching Hospital on Campus", desc: "Clinical training from Year 1 at our multi-specialty teaching hospital. Hands-on experience that textbooks alone cannot provide." },
     { title: "NAAC Approved & University Affiliated", desc: "Approved by NAAC and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai — your degree is recognized nationwide and internationally." },
   ];
@@ -744,10 +744,10 @@ function CompetitiveAdvantageSection() {
     <section className="bg-white py-14 px-4">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-2xl sm:text-3xl font-black text-gray-900 mb-3 text-center">
-          Why Erode Students Choose JKKN AHS
+          Why Erode Learners Choose JKKN AHS
         </h2>
         <p className="voice-answer text-gray-500 text-sm mb-3 text-center">
-          Discover why students from Erode prefer JKKN for allied health sciences
+          Discover why learners from Erode prefer JKKN for allied health sciences
         </p>
         <div className="w-12 h-1 bg-[#7cb983] rounded mx-auto mb-10"></div>
 
@@ -808,7 +808,7 @@ function SnippetBaitSection() {
           <div className="bg-white rounded-2xl p-6 shadow-sm">
             <h3 className="font-bold text-gray-900 mb-3">How to Choose the Best AHS College Near Erode</h3>
             <div className="snippet-answer voice-answer text-sm text-gray-600 leading-relaxed space-y-2">
-              <p>When choosing an allied health science college near Erode, consider these factors: university affiliation (The Tamil Nadu Dr. M.G.R. Medical University is the gold standard), NAAC accreditation status, clinical training infrastructure (look for attached teaching hospitals), placement track record (85%+ is excellent), faculty experience, and proximity to your home for easy commuting.</p>
+              <p>When choosing an allied health science college near Erode, consider these factors: university affiliation (The Tamil Nadu Dr. M.G.R. Medical University is the gold standard), NAAC accreditation status, clinical training infrastructure (look for attached teaching hospitals), placement track record (85%+ is excellent), senior learner experience, and proximity to your home for easy commuting.</p>
               <p>JKKN College of Allied Health Sciences checks all these boxes — NAAC accredited, university-affiliated, 500+ bed hospital for clinical training, 85%+ placement rate, and just ~22 km from Erode on NH-544.</p>
             </div>
           </div>

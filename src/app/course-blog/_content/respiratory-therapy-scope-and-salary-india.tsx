@@ -203,22 +203,22 @@ export default function RespiratoryTherapyContent() {
           Maquet, Mindray) — the same brands used in 90% of Indian ICUs
         </li>
         <li>
-          Faculty includes practicing intensivists and pulmonologists
+          Senior learners include practicing intensivists and pulmonologists
         </li>
         <li>
-          Strong NBRC exam preparation track for US-aspiring students
+          Strong NBRC exam preparation track for US-aspiring learners
         </li>
         <li>
           Excellent campus —{" "}
-          <Link href="/lab">advanced labs</Link>,{" "}
-          <Link href="/library">e-library</Link>,{" "}
+          <Link href="/lab">advanced learning labs</Link>,{" "}
+          <Link href="/library">digital learning commons</Link>,{" "}
           <Link href="/hostel">on-campus hostel</Link>,{" "}
           <Link href="/transport">transport</Link>
         </li>
       </ul>
       <p>
         See the full{" "}
-        <Link href="/respiratory-therapy">B.Sc Respiratory Therapy curriculum</Link>{" "}
+        <Link href="/respiratory-therapy">B.Sc Respiratory Therapy learning framework</Link>{" "}
         or visit{" "}
         <Link href="/admissions/respiratory-therapy">admissions for 2026-27</Link>.
       </p>

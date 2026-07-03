@@ -48,7 +48,7 @@ export async function generateMetadata({
     data = byId;
   }
 
-  if (!data) return { title: 'Faculty | JKKN College of Allied Health Sciences' };
+  if (!data) return { title: 'Senior Learners | JKKN College of Allied Health Sciences' };
 
   const title = `${data.name} — ${data.designation} | JKKN College of Allied Health Sciences`;
   const description = `Learn about ${data.name}, ${data.designation}${data.department ? ` in the ${data.department}` : ''} at JKKN College of Allied Health Sciences, Komarapalayam.`;
@@ -163,7 +163,7 @@ export default async function FacultyProfilePage({
               className="inline-flex items-center gap-1.5 text-green-300 hover:text-white text-sm mb-6 transition"
             >
               <ArrowLeft className="w-4 h-4" />
-              Back to Faculty
+              Back to Senior Learners
             </Link>
 
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6">
@@ -580,7 +580,7 @@ export default async function FacultyProfilePage({
             <div className={sectionCard}>
               <h2 className={sectionTitle}>
                 <span className={`${iconBox} bg-indigo-50`}>🎓</span>
-                Student Mentoring &amp; Guidance
+                Learner Mentoring &amp; Guidance
               </h2>
 
               {m.mentoring_description && (

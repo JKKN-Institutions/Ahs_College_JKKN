@@ -53,8 +53,8 @@ export default function TiruppurPage() {
             a: "While nursing focuses on patient care and bedside support, Allied Health Sciences covers specialised diagnostic and therapeutic roles like physiotherapy, lab testing, radiology imaging, and cardiac monitoring. Both are valuable healthcare careers, but AHS offers more specialisation options.",
           },
           {
-            q: "Does JKKN AHS provide hostel for Tiruppur students?",
-            a: "Yes, JKKN AHS provides separate hostel facilities for boys and girls. Students from Tiruppur can also opt for daily commute as the campus is just about 1.5 hours away. College transport services are available.",
+            q: "Does JKKN AHS provide hostel for Tiruppur learners?",
+            a: "Yes, JKKN AHS provides separate hostel facilities for boys and girls. Learners from Tiruppur can also opt for daily commute as the campus is just about 1.5 hours away. College transport services are available.",
           },
           {
             q: "How can I apply for admission at JKKN AHS?",
@@ -62,7 +62,7 @@ export default function TiruppurPage() {
           },
           {
             q: "What are the fees for BSc allied health science in Tamil Nadu?",
-            a: "BSc Allied Health Science fees in Tamil Nadu typically range from ₹50,000 to ₹2,00,000 per year depending on the college and course. At JKKN College of Allied Health Sciences, fees are competitively priced with scholarship options available for meritorious students. Contact the admission office at +91 9345855001 for the latest fee structure.",
+            a: "BSc Allied Health Science fees in Tamil Nadu typically range from ₹50,000 to ₹2,00,000 per year depending on the college and course. At JKKN College of Allied Health Sciences, fees are competitively priced with scholarship options available for meritorious learners. Contact the admission office at +91 9345855001 for the latest fee structure.",
           },
           {
             q: "What is the salary after BSc allied health science?",
@@ -81,12 +81,12 @@ export default function TiruppurPage() {
             a: "Tiruppur's massive garment and textile export industry employs over 6 lakh workers, creating strong demand for occupational health specialists, industrial physiotherapists, and emergency care professionals. JKKN AHS graduates find opportunities in factory health centres, ESI hospitals, and corporate wellness programmes serving the garment industry workforce.",
           },
           {
-            q: "Can Tiruppur students visit home on weekends while studying at JKKN AHS?",
-            a: "Yes, at ~67 km via NH-544 through Erode, Tiruppur students can easily visit home on weekends. The journey takes about 1.5 hours by bus. Regular TNSTC and private bus services run between Tiruppur and Komarapalayam throughout the day. Many students also use two-wheelers for the commute.",
+            q: "Can Tiruppur learners visit home on weekends while studying at JKKN AHS?",
+            a: "Yes, at ~67 km via NH-544 through Erode, Tiruppur learners can easily visit home on weekends. The journey takes about 1.5 hours by bus. Regular TNSTC and private bus services run between Tiruppur and Komarapalayam throughout the day. Many learners also use two-wheelers for the commute.",
           },
           {
-            q: "What is hostel life like at JKKN AHS for Tiruppur students?",
-            a: "JKKN AHS offers separate hostel facilities for boys and girls with 24/7 security, Wi-Fi, mess facilities with home-style South Indian food, recreation rooms, and study halls. Tiruppur students form a significant community on campus. The hostel fee is affordable compared to city hostels, and the campus provides a safe, focused environment for studies.",
+            q: "What is hostel life like at JKKN AHS for Tiruppur learners?",
+            a: "JKKN AHS offers separate hostel facilities for boys and girls with 24/7 security, Wi-Fi, mess facilities with home-style South Indian food, recreation rooms, and learning commons. Tiruppur learners form a significant community on campus. The hostel fee is affordable compared to city hostels, and the campus provides a safe, focused environment for studies.",
           },
         ]} />
         <ExploreCitiesSection />
@@ -137,7 +137,7 @@ function HeroSection() {
 
         {/* Description */}
         <p className="text-white/85 text-base sm:text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
-          Tiruppur students — world-class education without the big-city hassle.
+          Tiruppur learners — world-class education without the big-city hassle.
           JKKN College of Allied Health Sciences offers top-tier allied health
           sciences programmes with 92%+ placement support — no need to go to
           Coimbatore — quality education is closer than you think.
@@ -263,7 +263,7 @@ function WhyChooseSection() {
     {
       icon: Target,
       title: "Accessible Admission",
-      desc: "Less competitive admission than MBBS/BDS — accessible for more students",
+      desc: "Less competitive admission than MBBS/BDS — accessible for more learners",
     },
     {
       icon: Globe,
@@ -281,10 +281,10 @@ function WhyChooseSection() {
     <section className="bg-white py-14 px-4">
       <div className="max-w-5xl mx-auto text-center">
         <h2 className="text-2xl sm:text-3xl font-black text-gray-900 mb-4">
-          Why Tiruppur Students Choose JKKN AHS
+          Why Tiruppur Learners Choose JKKN AHS
         </h2>
         <p className="text-gray-500 max-w-2xl mx-auto mb-3 text-sm sm:text-base leading-relaxed">
-          Tiruppur students no longer need to travel all the way to Coimbatore or
+          Tiruppur learners no longer need to travel all the way to Coimbatore or
           Chennai for quality professional education. JKKN offers an excellent alternative
           with comfortable hostel facilities, strong placements, and a peaceful campus
           environment ideal for focused learning.
@@ -308,7 +308,7 @@ function WhyChooseSection() {
         </div>
 
         <p className="text-center text-sm text-gray-500 mt-8">
-          Students from nearby cities also choose JKKN AHS:{" "}
+          Learners from nearby cities also choose JKKN AHS:{" "}
           <a href="/erode" className="text-[#006837] hover:underline font-medium">Erode (~22 km)</a>,{" "}
           <a href="/salem" className="text-[#006837] hover:underline font-medium">Salem (~58 km)</a>,{" "}
           <a href="/namakkal" className="text-[#006837] hover:underline font-medium">Namakkal</a>, and{" "}
@@ -490,7 +490,7 @@ function PlacementHighlights() {
           Placement Highlights
         </h2>
         <p className="text-gray-500 text-sm mb-3">
-          92%+ placement rate — our students work at India&apos;s and the world&apos;s top hospitals
+          92%+ placement rate — our learners work at India&apos;s and the world&apos;s top hospitals
         </p>
         <div className="w-12 h-1 bg-[#7cb983] rounded mx-auto mb-10"></div>
 
@@ -618,13 +618,13 @@ function FacilitiesSection() {
   const facilities = [
     {
       icon: Microscope,
-      title: "Modern Labs",
-      desc: "State-of-the-art laboratories and smart classrooms",
+      title: "Modern Learning Labs",
+      desc: "State-of-the-art learning labs and smart learning studios",
     },
     {
       icon: BookOpen,
-      title: "Digital Library",
-      desc: "Well-stocked library with digital access and journals",
+      title: "Digital Learning Commons",
+      desc: "Well-stocked learning commons with digital access and journals",
     },
     {
       icon: Home,
@@ -694,7 +694,7 @@ function CampusGallerySection() {
     { src: "/images/boys-hostel.png", alt: "Boys hostel at JKKN AHS — allied health science college near Tiruppur" },
     { src: "/images/girls-hostel.png", alt: "Girls hostel at JKKN AHS — allied health science college near Tiruppur" },
     { src: "/allied health science main image6.png", alt: "Campus life at JKKN College of Allied Health Sciences near Tiruppur" },
-    { src: "/allied health science main image7.png", alt: "Students at JKKN Allied Health Sciences campus near Tiruppur" },
+    { src: "/allied health science main image7.png", alt: "Learners at JKKN Allied Health Sciences campus near Tiruppur" },
     { src: "/allied health science main image8.png", alt: "JKKN AHS facilities and campus infrastructure near Tiruppur" },
   ];
 
@@ -735,15 +735,15 @@ function CompetitiveAdvantageSection() {
     { title: "Wider Course Selection Than Local Options", desc: "With 9 BSc programmes covering cardiac, dialysis, radiology, respiratory, critical care, and more — JKKN offers more specialization options than most colleges accessible from Tiruppur." },
     { title: "85%+ Placement Rate — Proven Results", desc: "Our graduates secure positions with top hospitals, diagnostic centres, and international healthcare organizations. 60+ recruiting partners including TCS, Apollo, and NHS UK." },
     { title: "NAAC Approved — Trusted Credential", desc: "NAAC approval and affiliation to The Tamil Nadu Dr. M.G.R. Medical University, Chennai ensures your degree is recognized across India and abroad." },
-    { title: "500+ Bed Teaching Hospital on Campus", desc: "Hands-on clinical training from Year 1 at our multi-specialty teaching hospital. Real patients, real experience — not just classroom theory." },
-    { title: "Well-Connected via NH-544", desc: "Located on the Salem–Coimbatore Highway, JKKN is easily accessible from Tiruppur via Erode. Hostel and transport services available for outstation students." },
+    { title: "500+ Bed Teaching Hospital on Campus", desc: "Hands-on clinical training from Year 1 at our multi-specialty teaching hospital. Real patients, real experience — not just learning studio theory." },
+    { title: "Well-Connected via NH-544", desc: "Located on the Salem–Coimbatore Highway, JKKN is easily accessible from Tiruppur via Erode. Hostel and transport services available for outstation learners." },
   ];
 
   return (
     <section className="bg-white py-14 px-4">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-2xl sm:text-3xl font-black text-gray-900 mb-3 text-center">
-          Why Tiruppur Students Choose JKKN AHS
+          Why Tiruppur Learners Choose JKKN AHS
         </h2>
         <p className="voice-answer text-gray-500 text-sm mb-3 text-center">
           More courses, better placements, and trusted credentials
@@ -807,7 +807,7 @@ function SnippetBaitSection() {
           <div className="bg-white rounded-2xl p-6 shadow-sm">
             <h3 className="font-bold text-gray-900 mb-3">How to Choose the Best AHS College Near Tiruppur</h3>
             <div className="snippet-answer voice-answer text-sm text-gray-600 leading-relaxed space-y-2">
-              <p>When choosing an allied health science college near Tiruppur, consider university affiliation (The Tamil Nadu Dr. M.G.R. Medical University is the gold standard), NAAC accreditation, clinical training infrastructure, placement track record, and campus facilities including hostel for outstation students.</p>
+              <p>When choosing an allied health science college near Tiruppur, consider university affiliation (The Tamil Nadu Dr. M.G.R. Medical University is the gold standard), NAAC accreditation, clinical training infrastructure, placement track record, and campus facilities including hostel for outstation learners.</p>
               <p>JKKN College of Allied Health Sciences — located ~67 km from Tiruppur via NH-544 — is NAAC accredited, university-affiliated, has a 500+ bed hospital for clinical training, and maintains an 85%+ placement rate with 60+ recruiting partners including international opportunities.</p>
             </div>
           </div>

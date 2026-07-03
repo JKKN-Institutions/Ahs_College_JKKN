@@ -14,13 +14,13 @@ const managementTeam = [
         name: "SMT. N. SENDAMARAAI",
         role: "CHAIRPERSON",
         image: "/chairperson.jpg",
-        quote: "As the Chairperson of JKKN Institutions, I am honoured to shoulder this immense responsibility, and I take great pride in our exceptional progress. We have earned the status of the most prestigious colleges in the region. 'Leadership and Excellence' is not merely our motto but the foundation of our values, a testament to our state-of-the-art infrastructure, distinguished faculty, and unwavering commitment to quality education."
+        quote: "As the Chairperson of JKKN Institutions, I am honoured to shoulder this immense responsibility, and I take great pride in our exceptional progress. We have earned the status of the most prestigious colleges in the region. 'Leadership and Excellence' is not merely our motto but the foundation of our values, a testament to our state-of-the-art infrastructure, distinguished senior learners, and unwavering commitment to quality education."
     },
     {
         name: "SHRI. S. OMMSHARRAVANA",
         role: "DIRECTOR",
         image: "/director.jpg",
-        quote: "I extend my heartiest congratulations to the college for its formations and focused dedication in shaping future engineers of distinction. At JKKN, we are committed to innovative education methodologies that enable quality learning, foster independent thinking and facilitate the development of well-rounded personalities. Our mission empowers students to contribute their best to society and the nation."
+        quote: "I extend my heartiest congratulations to the college for its formations and focused dedication in shaping future engineers of distinction. At JKKN, we are committed to innovative education methodologies that enable quality learning, foster independent thinking and facilitate the development of well-rounded personalities. Our mission empowers learners to contribute their best to society and the nation."
     }
 ];
 

@@ -231,7 +231,7 @@ export default function EmergencyCareContent() {
         <li>
           On-campus{" "}
           <Link href="/ambulance-service">ambulance service</Link>,{" "}
-          <Link href="/lab">simulation labs</Link>,{" "}
+          <Link href="/lab">simulation learning labs</Link>,{" "}
           <Link href="/hostel">on-campus hostel</Link>,{" "}
           <Link href="/transport">transport</Link>
         </li>
@@ -239,7 +239,7 @@ export default function EmergencyCareContent() {
       <p>
         Read the full{" "}
         <Link href="/accident-emergency-care">
-          B.Sc Accident &amp; Emergency Care Technology curriculum
+          B.Sc Accident &amp; Emergency Care Technology learning framework
         </Link>{" "}
         or visit{" "}
         <Link href="/admissions/accident-emergency-care">admissions for 2026-27</Link>.

@@ -20,7 +20,7 @@ const courseSchema = {
   "@type": "Course",
   "dateModified": "2026-03-19",
   "name": "B.Sc Accident and Emergency Care Technology",
-  "description": "Comprehensive program that prepares students to become skilled emergency care technologists, mastering trauma management, emergency response, critical care, advanced life support, disaster management, and pre-hospital emergency care.",
+  "description": "Comprehensive program that prepares learners to become skilled emergency care technologists, mastering trauma management, emergency response, critical care, advanced life support, disaster management, and pre-hospital emergency care.",
   "url": "https://ahs.jkkn.ac.in/accident-emergency-care",
   "provider": {
     "@type": "CollegeOrUniversity",
@@ -118,7 +118,7 @@ const faqSchema = {
       "name": "What is the eligibility to join Bachelor of Science Accident and Emergency Care Technology at JKKN College Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Candidates need 10+2 with Physics, Chemistry, and Biology, minimum 50% marks. Scheduled Caste and Scheduled Tribe students need 40%, Other Backward Classes students need 45%. Minimum age is 17 years. A medical fitness certificate is required."
+        "text": "Candidates need 10+2 with Physics, Chemistry, and Biology, minimum 50% marks. Scheduled Caste and Scheduled Tribe learners need 40%, Other Backward Classes learners need 45%. Minimum age is 17 years. A medical fitness certificate is required."
       }
     },
     {
@@ -142,7 +142,7 @@ const faqSchema = {
       "name": "What certifications are provided in Bachelor of Science Accident and Emergency Care Technology at JKKN College Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Students receive Basic Life Support and Advanced Cardiac Life Support certifications. The program also covers Advanced Trauma Life Support and Pediatric Advanced Life Support, making graduates highly qualified for emergency care positions."
+        "text": "Learners receive Basic Life Support and Advanced Cardiac Life Support certifications. The program also covers Advanced Trauma Life Support and Pediatric Advanced Life Support, making graduates highly qualified for emergency care positions."
       }
     },
     {

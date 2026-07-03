@@ -9,7 +9,7 @@ export const metadata = createPageMetadata({
     "JKKN college hostel",
     "boys hostel Komarapalayam",
     "girls hostel allied health sciences",
-    "student accommodation JKKN Tamil Nadu",
+    "learner accommodation JKKN Tamil Nadu",
     "hostel facilities Namakkal college",
     "JKKN AHS hostel with mess",
     "college hostel near Salem Erode",
@@ -65,9 +65,9 @@ const faqSchema = {
   "dateModified": "2026-03-19",
   "mainEntity": [
     { "@type": "Question", "name": "Is hostel accommodation available for both boys and girls at JKKN?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, JKKN provides separate hostel facilities for boys and girls within the campus with round-the-clock security and CCTV surveillance." } },
-    { "@type": "Question", "name": "What amenities are included in the JKKN hostel?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN hostels include furnished rooms, attached bathrooms, high-speed WiFi, study areas, gymnasium, and recreational facilities for students." } },
+    { "@type": "Question", "name": "What amenities are included in the JKKN hostel?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN hostels include furnished rooms, attached bathrooms, high-speed WiFi, study areas, gymnasium, and recreational facilities for learners." } },
     { "@type": "Question", "name": "Is the JKKN hostel located within the campus?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, both boys and girls hostels are situated within the JKKN campus at Natarajapuram, Komarapalayam, ensuring convenient access to classes." } },
-    { "@type": "Question", "name": "What food facilities are available for hostel students at JKKN?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN hostels have an in-campus mess providing nutritious vegetarian and non-vegetarian meals three times daily with snacks." } },
+    { "@type": "Question", "name": "What food facilities are available for hostel learners at JKKN?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN hostels have an in-campus mess providing nutritious vegetarian and non-vegetarian meals three times daily with snacks." } },
     { "@type": "Question", "name": "What is the hostel fee at JKKN College?", "acceptedAnswer": { "@type": "Answer", "text": "Hostel fees vary by room type. Contact JKKN admissions at 9345855001 for current hostel fee details and room availability." } }
   ]
 };

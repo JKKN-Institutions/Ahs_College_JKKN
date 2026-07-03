@@ -13,8 +13,8 @@ const reasons = [
         icon: <Trophy className="w-10 h-10" />,
     },
     {
-        title: "Advanced Laboratories",
-        description: "10+ specialized labs including Anatomy, Physiology, Biochemistry, Microbiology, Pathology, Hematology, Cardiac Catheterization Simulator, and Diagnostic Imaging Center with CT and X-ray simulators. Equipment matches hospital-grade standards so Learners transition seamlessly into clinical roles.",
+        title: "Advanced Learning Labs",
+        description: "10+ specialized learning labs including Anatomy, Physiology, Biochemistry, Microbiology, Pathology, Hematology, Cardiac Catheterization Simulator, and Diagnostic Imaging Center with CT and X-ray simulators. Equipment matches hospital-grade standards so Learners transition seamlessly into clinical roles.",
         icon: <Microscope className="w-10 h-10" />,
     },
     {
@@ -45,7 +45,7 @@ export function WhyChoose() {
                         Why Choose JKKN College<br className="hidden sm:block" />of Allied Health Sciences?
                     </h2>
                     <p className="text-gray-700 text-sm sm:text-base md:text-lg max-w-3xl mx-auto px-4">
-                        Experience world-class healthcare education backed by {BRAND_LEGACY.YEARS} of JKKN&apos;s commitment to excellence. Explore our <Link href="/lab" className="text-[#0b6d41] font-semibold hover:underline">advanced laboratories</Link> and <Link href="/#careers" className="text-[#0b6d41] font-semibold hover:underline">career opportunities</Link>.
+                        Experience world-class healthcare education backed by {BRAND_LEGACY.YEARS} of JKKN&apos;s commitment to excellence. Explore our <Link href="/lab" className="text-[#0b6d41] font-semibold hover:underline">advanced learning labs</Link> and <Link href="/#careers" className="text-[#0b6d41] font-semibold hover:underline">career opportunities</Link>.
                     </p>
                 </div>
 
@@ -65,8 +65,8 @@ export function WhyChoose() {
                             <h3 className="text-lg sm:text-xl md:text-2xl font-black text-gray-900 mb-3 sm:mb-4 leading-tight">{reason.title}</h3>
                             <p className="text-gray-600 leading-relaxed text-xs sm:text-sm">
                                 {reason.description}
-                                {reason.title === "Advanced Laboratories" && (
-                                    <> <Link href="/lab" className="text-[#0b6d41] font-semibold hover:underline">Explore our labs</Link>.</>
+                                {reason.title === "Advanced Learning Labs" && (
+                                    <> <Link href="/lab" className="text-[#0b6d41] font-semibold hover:underline">Explore our learning labs</Link>.</>
                                 )}
                                 {reason.title === "95% Placement Rate" && (
                                     <> <Link href="/placements" className="text-[#0b6d41] font-semibold hover:underline">View placement details</Link>.</>

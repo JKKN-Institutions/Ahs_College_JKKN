@@ -129,7 +129,7 @@ export default function DepartmentsPage() {
                   9 specialized B.Sc programs
                 </span>{" "}
                 designed to build skilled healthcare professionals with hands-on
-                clinical training, modern labs, and strong hospital tie-ups.
+                clinical training, modern learning labs, and strong hospital tie-ups.
               </p>
             </motion.div>
 

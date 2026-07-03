@@ -27,7 +27,7 @@ export function CTASection() {
                             Ready to Join the Best Allied Health Sciences College in <span className="text-[#ffde59]">Tamil Nadu?</span>
                         </h2>
                         <p className="text-gray-600 text-sm sm:text-base md:text-lg mb-8 sm:mb-10 md:mb-12 max-w-2xl mx-auto px-4">
-                            Join thousands of students who are shaping the future of healthcare. Explore <Link href="/cardiac-technology" className="text-[#0b6d41] font-semibold hover:underline">9 specialized B.Sc programs</Link>, train at a <Link href="/lab" className="text-[#0b6d41] font-semibold hover:underline">500+ bed teaching hospital</Link>, and benefit from our <Link href="/placements" className="text-[#0b6d41] font-semibold hover:underline">95% placement rate</Link>. Admissions for 2026-27 are now open.
+                            Join thousands of learners who are shaping the future of healthcare. Explore <Link href="/cardiac-technology" className="text-[#0b6d41] font-semibold hover:underline">9 specialized B.Sc programs</Link>, train at a <Link href="/lab" className="text-[#0b6d41] font-semibold hover:underline">500+ bed teaching hospital</Link>, and benefit from our <Link href="/placements" className="text-[#0b6d41] font-semibold hover:underline">95% placement rate</Link>. Admissions for 2026-27 are now open.
                         </p>
 
                         <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-3 sm:gap-4 md:gap-6">

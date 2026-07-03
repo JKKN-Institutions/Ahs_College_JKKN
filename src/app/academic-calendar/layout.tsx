@@ -18,7 +18,7 @@ export const metadata = createPageMetadata({
 const eventSchema = {
   "@context": "https://schema.org",
   "@type": "Event",
-  "name": "JKKN College of Allied Health Sciences — Academic Year 2026-27",
+  "name": "JKKN College of Allied Health Sciences — Learning Year 2026-27",
   "description": "Academic calendar for the 2026-27 session at JKKN College of Allied Health Sciences, Komarapalayam, Tamil Nadu — semester dates, exams, holidays, and key academic events.",
   "startDate": "2026-08-01",
   "endDate": "2027-05-31",

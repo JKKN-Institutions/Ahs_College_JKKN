@@ -240,7 +240,7 @@ export function FormExample() {
 export function GridLayoutExample() {
   const features = [
     {
-      title: "Expert Faculty",
+      title: "Expert Senior Learners",
       description: "Learn from industry professionals with years of experience",
     },
     {

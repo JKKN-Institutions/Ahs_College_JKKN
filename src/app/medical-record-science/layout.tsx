@@ -118,7 +118,7 @@ const faqSchema = {
       "name": "What is the eligibility to join Bachelor of Science Medical Record Science at JKKN College Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Candidates need 10+2 with Physics, Chemistry, and Biology or Mathematics, minimum 50% marks. Scheduled Caste and Scheduled Tribe students need 40%, Other Backward Classes students need 45%. Minimum age is 17 years."
+        "text": "Candidates need 10+2 with Physics, Chemistry, and Biology or Mathematics, minimum 50% marks. Scheduled Caste and Scheduled Tribe learners need 40%, Other Backward Classes learners need 45%. Minimum age is 17 years."
       }
     },
     {
@@ -142,7 +142,7 @@ const faqSchema = {
       "name": "Is medical coding using International Classification of Diseases taught in Bachelor of Science Medical Record Science at JKKN College Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, International Classification of Diseases coding and Electronic Medical Records are core components. Students learn disease classification, procedural coding, and hands-on practice with real medical records and coding software."
+        "text": "Yes, International Classification of Diseases coding and Electronic Medical Records are core components. Learners learn disease classification, procedural coding, and hands-on practice with real medical records and coding software."
       }
     },
     {

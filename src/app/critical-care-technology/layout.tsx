@@ -20,7 +20,7 @@ const courseSchema = {
   "@type": "Course",
   "dateModified": "2026-03-19",
   "name": "B.Sc Critical Care Technology",
-  "description": "Comprehensive program that prepares students to become skilled critical care technologists, mastering ICU management, ventilator support, hemodynamic monitoring, and advanced life support systems for critically ill patients.",
+  "description": "Comprehensive program that prepares learners to become skilled critical care technologists, mastering ICU management, ventilator support, hemodynamic monitoring, and advanced life support systems for critically ill patients.",
   "url": "https://ahs.jkkn.ac.in/critical-care-technology",
   "provider": {
     "@type": "CollegeOrUniversity",
@@ -110,7 +110,7 @@ const faqSchema = {
       "name": "What is the Bachelor of Science Critical Care Technology course at JKKN College Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The Bachelor of Science Critical Care Technology course at JKKN College Tamil Nadu is a four-year program training students in Intensive Care Unit management, ventilator support, hemodynamic monitoring, and emergency care."
+        "text": "The Bachelor of Science Critical Care Technology course at JKKN College Tamil Nadu is a four-year program training learners in Intensive Care Unit management, ventilator support, hemodynamic monitoring, and emergency care."
       }
     },
     {

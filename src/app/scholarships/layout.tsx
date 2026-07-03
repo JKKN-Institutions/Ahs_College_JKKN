@@ -2,7 +2,7 @@ import { createPageMetadata } from "@/lib/metadata";
 
 export const metadata = createPageMetadata({
   title: "Scholarships 2026-27 | JKKN College of Allied Health Sciences",
-  description: "Scholarships available for BSc Allied Health Sciences students at JKKN College — Trust Scholarship and Naan Mudhalvan Scholarship details for 2026-27.",
+  description: "Scholarships available for BSc Allied Health Sciences learners at JKKN College — Trust Scholarship and Naan Mudhalvan Scholarship details for 2026-27.",
   path: "/scholarships",
   keywords: [
     "JKKN AHS scholarship 2026",

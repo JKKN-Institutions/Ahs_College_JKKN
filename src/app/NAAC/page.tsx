@@ -40,7 +40,7 @@ export default function NAACPage() {
           <h2 className="text-3xl font-extrabold text-[#003f13] mb-6">Introduction</h2>
           <div className="text-gray-700 leading-relaxed text-justify space-y-4">
             <p>
-              India has one of the largest and diverse education systems in the world. Privatization, widespread expansion, increased autonomy and introduction of Programmes in new and emerging areas have improved access to higher education. At the same time, it has also led to widespread concern on the quality and relevance of the higher education. To address these concerns, the National Policy on Education (NPE, 1986) and the Programme of Action (PoA, 1992) spelt out strategic plans for the policies, advocated the establishment of an independent National accreditation agency. Consequently, the National Assessment and Accreditation Council (NAAC) was established in 1994 as an autonomous institution of the University Grants Commission (UGC) with its Head Quarter in Bengaluru. The mandate of NAAC as reflected in its vision statement is in making quality assurance an integral part of the functioning of Higher Education Institutions (HEIs). The NAAC functions through its General Council (GC) and Executive Committee (EC) comprising educational administrators, policy makers and senior academicians from a cross-section of Indian higher education system. The Chairperson of the UGC is the President of the GC of the NAAC, the Chairperson of the EC is an eminent academician nominated by the President of GC (NAAC). The Director is the academic and administrative head of NAAC and is the member-secretary of both the GC and the EC. In addition to the statutory bodies that steer its policies and core staff to support its activities NAAC is advised by the advisory and consultative committees constituted from time to time.
+              India has one of the largest and diverse education systems in the world. Privatization, widespread expansion, increased autonomy and introduction of Programmes in new and emerging areas have improved access to higher education. At the same time, it has also led to widespread concern on the quality and relevance of the higher education. To address these concerns, the National Policy on Education (NPE, 1986) and the Programme of Action (PoA, 1992) spelt out strategic plans for the policies, advocated the establishment of an independent National accreditation agency. Consequently, the National Assessment and Accreditation Council (NAAC) was established in 1994 as an autonomous institution of the University Grants Commission (UGC) with its Head Quarter in Bengaluru. The mandate of NAAC as reflected in its vision statement is in making quality assurance an integral part of the functioning of Higher Education Institutions (HEIs). The NAAC functions through its General Council (GC) and Executive Committee (EC) comprising educational administrators, policy makers and senior academicians from a cross-section of Indian higher education system. The Chairperson of the UGC is the President of the GC of the NAAC, the Chairperson of the EC is an eminent academician nominated by the President of GC (NAAC). The Director is the academic and administrative head of NAAC and is the member-secretary of both the GC and the EC. In addition to the statutory bodies that steer its policies and core team members to support its activities NAAC is advised by the advisory and consultative committees constituted from time to time.
             </p>
           </div>
         </>
@@ -79,27 +79,27 @@ export default function NAACPage() {
               Most of the HEIs have a remarkable capacity to adapt to changes and at the same time, pursue the goals and objectives that they have set forth for themselves. Contributing to national development has always been an implicit goal of Indian HEIs. The role of HEIs is significant in human resource development and capacity building of individuals, to cater to the needs of the economy, society and the country as a whole, thereby, contributing to the development of the Nation. Serving the cause of social justice, ensuring equity and increasing access to higher education are a few ways by which HEIs can contribute to the national development. It is therefore appropriate that the Assessment and Accreditation (A&amp;A) process of NAAC looks into the ways HEIs have been responding to and contributing towards national development.
             </p>
 
-            <h4 className="text-lg font-bold text-gray-800 mt-4">(ii) Fostering Global Competencies among Students:</h4>
+            <h4 className="text-lg font-bold text-gray-800 mt-4">(ii) Fostering Global Competencies among Learners:</h4>
             <p>
-              The spiraling developments at the global level also warrant that the NAAC includes in its scope of assessment skill development of students, on par with their counterparts elsewhere in the world. With liberalization and globalization of economic activities, the need to develop skilled human resources of a high caliber is imperative. Consequently, the demand for internationally acceptable standards in higher education is evident. Therefore, the accreditation process of NAAC needs to examine the role of HEIs in preparing the students to achieve core competencies, to face the global challenges successfully. This requires that the HEIs be innovative, creative and entrepreneurial in their approach. Towards achieving this, HEIs may establish collaborations with industries, network with the neighborhood agencies/bodies and foster a closer relationship between the "world of competent-learning" and the "world of skilled work".
+              The spiraling developments at the global level also warrant that the NAAC includes in its scope of assessment skill development of learners, on par with their counterparts elsewhere in the world. With liberalization and globalization of economic activities, the need to develop skilled human resources of a high caliber is imperative. Consequently, the demand for internationally acceptable standards in higher education is evident. Therefore, the accreditation process of NAAC needs to examine the role of HEIs in preparing the learners to achieve core competencies, to face the global challenges successfully. This requires that the HEIs be innovative, creative and entrepreneurial in their approach. Towards achieving this, HEIs may establish collaborations with industries, network with the neighborhood agencies/bodies and foster a closer relationship between the "world of competent-learning" and the "world of skilled work".
             </p>
 
-            <h4 className="text-lg font-bold text-gray-800 mt-4">(iii) Inculcating a Value System among Students:</h4>
+            <h4 className="text-lg font-bold text-gray-800 mt-4">(iii) Inculcating a Value System among Learners:</h4>
             <p>
-              Although skill development is crucial to the success of students in the job market, skills are of less value in the absence of appropriate value systems. The HEIs have to shoulder the responsibility of inculcating desirable value systems among students. In a country like India, with cultural pluralities and diversities, it is essential that students imbibe the appropriate values commensurate with social, cultural, economic and environmental realities, at the local, national and universal levels. Whatever be the pluralities and diversities that exist in the country, there is a persisting concern for inculcating the core universal values like truth and righteousness apart from other values emphasized in the various policy documents of the country. The seeds of values such as cooperation and mutual understanding during the early stages of education have to be reiterated and re-emphasized at the higher education also through appropriate learning experiences and opportunities. The NAAC assessment therefore examines how these essential and desirable values are being inculcated in the students, by the HEIs.
+              Although skill development is crucial to the success of learners in the job market, skills are of less value in the absence of appropriate value systems. The HEIs have to shoulder the responsibility of inculcating desirable value systems among learners. In a country like India, with cultural pluralities and diversities, it is essential that learners imbibe the appropriate values commensurate with social, cultural, economic and environmental realities, at the local, national and universal levels. Whatever be the pluralities and diversities that exist in the country, there is a persisting concern for inculcating the core universal values like truth and righteousness apart from other values emphasized in the various policy documents of the country. The seeds of values such as cooperation and mutual understanding during the early stages of education have to be reiterated and re-emphasized at the higher education also through appropriate learning experiences and opportunities. The NAAC assessment therefore examines how these essential and desirable values are being inculcated in the learners, by the HEIs.
             </p>
 
             <h4 className="text-lg font-bold text-gray-800 mt-4">(iv) Promoting the Use of Technology:</h4>
             <p>
-              Most of the significant developments that one can observe today can be attributed to the impact of Science and Technology. While the advantages of using modern tools and technological innovations in the day-to-day-life are well recognized, the corresponding changes in the use of new technologies, for teaching learning and governance of HEIs, leaves much to be desired. Technological advancement and innovations in educational transactions have to be undertaken by all HEIs, to make a visible impact on academic development as well as administration. At a time when our educational institutions are expected to perform as good as their global partners, significant technological innovations have to be adopted. Traditional methods of delivering higher education have become less motivating to a large number of students. To keep pace with the developments in other spheres of human endeavor, HEIs have to enrich the learning experiences of their students by providing them with state-of-the-art educational technologies. The campus community must be adequately prepared to make use of Information and Communication Technology (ICT) optimally. Conscious effort is also needed to invest in hardware and to orient the faculty suitably.
+              Most of the significant developments that one can observe today can be attributed to the impact of Science and Technology. While the advantages of using modern tools and technological innovations in the day-to-day-life are well recognized, the corresponding changes in the use of new technologies, for teaching learning and governance of HEIs, leaves much to be desired. Technological advancement and innovations in educational transactions have to be undertaken by all HEIs, to make a visible impact on academic development as well as administration. At a time when our educational institutions are expected to perform as good as their global partners, significant technological innovations have to be adopted. Traditional methods of delivering higher education have become less motivating to a large number of learners. To keep pace with the developments in other spheres of human endeavor, HEIs have to enrich the learning experiences of their learners by providing them with state-of-the-art educational technologies. The campus community must be adequately prepared to make use of Information and Communication Technology (ICT) optimally. Conscious effort is also needed to invest in hardware and to orient the senior learners suitably.
             </p>
             <p>
-              In addition to using technology as a learning resource, managing the activities of the institution in a technology-enabled way will ensure effective institutional functioning. For example, documentation and data management in the HEIs are areas where the process of assessment by NAAC has made a significant impact. Moving towards electronic data management and having institutional website to provide ready and relevant information to stakeholders are desirable steps in this direction. In other words, effective use of ICT in HEIs will be able to provide ICT literacy to the campus community, using ICT for resource sharing and networking, as well as adopting ICT-enabled administrative processes. Therefore, NAAC accreditation would look at how the HEIs have put in place their electronic data management systems and electronic resources and their access to internal and external stakeholders particularly the student community.
+              In addition to using technology as a learning resource, managing the activities of the institution in a technology-enabled way will ensure effective institutional functioning. For example, documentation and data management in the HEIs are areas where the process of assessment by NAAC has made a significant impact. Moving towards electronic data management and having institutional website to provide ready and relevant information to stakeholders are desirable steps in this direction. In other words, effective use of ICT in HEIs will be able to provide ICT literacy to the campus community, using ICT for resource sharing and networking, as well as adopting ICT-enabled administrative processes. Therefore, NAAC accreditation would look at how the HEIs have put in place their electronic data management systems and electronic resources and their access to internal and external stakeholders particularly the learner community.
             </p>
 
             <h4 className="text-lg font-bold text-gray-800 mt-4">(v) Quest for Excellence:</h4>
             <p>
-              Contributing to nation-building and skills development of students, HEIs should demonstrate a drive to develop themselves into centres of excellence. Excellence in all that they will contribute to the overall development of the system of higher education of the country as a whole. This 'Quest for Excellence' could start with the assessment or even earlier, by the establishment of the Steering Committee for the preparation of the Self – Study Report (SSR) of an institution. Another step in this direction could be the identification of the strengths and weaknesses in the teaching and learning processes as carried out by the institution.
+              Contributing to nation-building and skills development of learners, HEIs should demonstrate a drive to develop themselves into centres of excellence. Excellence in all that they will contribute to the overall development of the system of higher education of the country as a whole. This 'Quest for Excellence' could start with the assessment or even earlier, by the establishment of the Steering Committee for the preparation of the Self – Study Report (SSR) of an institution. Another step in this direction could be the identification of the strengths and weaknesses in the teaching and learning processes as carried out by the institution.
             </p>
             <p>
               The five core values as outlined above form the foundation for assessment of institutions that volunteer for accreditation by NAAC. The HEIs may also add their own core values to these in conformity with the goals and mission.
@@ -134,7 +134,7 @@ export default function NAACPage() {
               <li>introducing System Generated Scores (SGS) with a combination of online evaluation of Quantitative metrics and peer judgement of Qualitative metrics.</li>
               <li>introducing the element of third-party validation of data</li>
               <li>providing appropriate differences in the metrics, weightages, and benchmarks to universities, autonomous colleges, and affiliated/constituent colleges</li>
-              <li>revising several metrics to bring in enhanced participation of students and alumni in the assessment process</li>
+              <li>revising several metrics to bring in enhanced participation of learners and alumni in the assessment process</li>
             </ul>
             <p>
               The Revised Assessment and Accreditation Framework were launched in July 2017. It represents an explicit Paradigm Shift making it ICT enabled, objective, transparent, scalable, and robust. After launching the same, several modifications and updates have been carried. Recently, an update of the manual is in line with the NEP-2020 recommendations.
@@ -147,7 +147,7 @@ export default function NAACPage() {
               The NAAC continues with its focus on the quality culture of the institution in terms of Quality Initiatives, Quality Sustenance, and Quality Enhancement, as reflected in its vision, organization, operations, and the processes. Experience has reiterated that these can be ascertained either by on-site observations and/or through the facts and figures about the various aspects of institutional functioning. The Revised Manual places greater confidence in the latter as reflective of internal institutional processes.
             </p>
             <p>
-              In line with NAAC's conviction that quality concerns are institutional, Quality Assessment (QA) can better be done through self-evaluation. The self-evaluation process and the subsequent preparation of the Self Study Report (SSR) to be submitted to NAAC involves the participation of all the stakeholders – management, faculty members, administrative staff, students, parents, employers, community, and alumni. While the participation of internal stakeholders i.e. management, staff, and students provide credibility and ownership to the activity and could lead to newer initiatives, interaction with external stakeholders facilitates the development process of the institution and their educational services. Overall, the QA is expected to serve as a catalyst for institutional self-improvement, promote innovation, and strengthen the urge to excel.
+              In line with NAAC's conviction that quality concerns are institutional, Quality Assessment (QA) can better be done through self-evaluation. The self-evaluation process and the subsequent preparation of the Self Study Report (SSR) to be submitted to NAAC involves the participation of all the stakeholders – management, senior learner members, administrative team members, learners, parents, employers, community, and alumni. While the participation of internal stakeholders i.e. management, team members, and learners provide credibility and ownership to the activity and could lead to newer initiatives, interaction with external stakeholders facilitates the development process of the institution and their educational services. Overall, the QA is expected to serve as a catalyst for institutional self-improvement, promote innovation, and strengthen the urge to excel.
             </p>
             <p>
               It is attempted to enlarge the digital coverage of the entire process of A&amp;A. This, it is believed, will not only accelerate the process but also bring in greater objectivity into the process. The possible differentiation required concerning HEIs going for subsequent cycles of A&amp;A, appropriate scope has been provided in the process. This will allow the HEIs to appropriately represent the developments they have attempted after the previous A&amp;A cycle.
@@ -171,7 +171,7 @@ export default function NAACPage() {
               <li><strong>Teaching-Learning and Evaluation</strong></li>
               <li><strong>Research, Innovations, and Extension</strong></li>
               <li><strong>Infrastructure and Learning Resources</strong></li>
-              <li><strong>Student Support and Progression</strong></li>
+              <li><strong>Learner Support and Progression</strong></li>
               <li><strong>Governance, Leadership, and Management</strong></li>
               <li><strong>Institutional Values and Best Practices</strong></li>
             </ul>
@@ -202,7 +202,7 @@ export default function NAACPage() {
                   <tbody>
                     <tr>
                       <td className="border border-gray-300 px-4 py-3">1.1.1<br />QlM</td>
-                      <td className="border border-gray-300 px-4 py-3">The Institution ensures effective curriculum planning and delivery through a well-planned and documented process including Academic calendar and conduct of continuous internal Assessment.</td>
+                      <td className="border border-gray-300 px-4 py-3">The Institution ensures effective learning framework planning and delivery through a well-planned and documented process including Academic calendar and conduct of continuous internal Assessment.</td>
                     </tr>
                   </tbody>
                 </table>
@@ -222,11 +222,11 @@ export default function NAACPage() {
                   <tbody>
                     <tr>
                       <td className="border border-gray-300 px-4 py-3">1.2.1 QnM</td>
-                      <td className="border border-gray-300 px-4 py-3">Number of Add on /Certificate/Value added programs offered and online MOOC programs like SWAYAM, NPTEL etc. where the students of the institution have benefitted during the last five years)</td>
+                      <td className="border border-gray-300 px-4 py-3">Number of Add on /Certificate/Value added programs offered and online MOOC programs like SWAYAM, NPTEL etc. where the learners of the institution have benefitted during the last five years)</td>
                     </tr>
                     <tr>
                       <td className="border border-gray-300 px-4 py-3">1.2.2 QnM</td>
-                      <td className="border border-gray-300 px-4 py-3">Percentage of students enrolled in Certificate/ Add-on/Value added programs and also completed online MOOC programs like SWAYAM, NPTEL etc.as against the total number of students during the last five years</td>
+                      <td className="border border-gray-300 px-4 py-3">Percentage of learners enrolled in Certificate/ Add-on/Value added programs and also completed online MOOC programs like SWAYAM, NPTEL etc.as against the total number of learners during the last five years</td>
                     </tr>
                   </tbody>
                 </table>
@@ -234,7 +234,7 @@ export default function NAACPage() {
             </div>
 
             <div>
-              <h3 className="text-xl font-bold text-gray-800 mb-4">1.3 – Curriculum Enrichment</h3>
+              <h3 className="text-xl font-bold text-gray-800 mb-4">1.3 – Learning Framework Enrichment</h3>
               <div className="overflow-x-auto">
                 <table className="w-full border-collapse border border-gray-300">
                   <thead>
@@ -246,11 +246,11 @@ export default function NAACPage() {
                   <tbody>
                     <tr>
                       <td className="border border-gray-300 px-4 py-3">1.3.1 QlM</td>
-                      <td className="border border-gray-300 px-4 py-3">Institution integrates crosscutting issues relevant to Professional Ethics, Gender, Human Values, Environment and Sustainability in transacting the Curriculum.</td>
+                      <td className="border border-gray-300 px-4 py-3">Institution integrates crosscutting issues relevant to Professional Ethics, Gender, Human Values, Environment and Sustainability in transacting the Learning Framework.</td>
                     </tr>
                     <tr>
                       <td className="border border-gray-300 px-4 py-3">1.3.2 QnM</td>
-                      <td className="border border-gray-300 px-4 py-3">Percentage of students undertaking project work/field work/internships (Data for the latest completed academic year)</td>
+                      <td className="border border-gray-300 px-4 py-3">Percentage of learners undertaking project work/field work/internships (Data for the latest completed academic year)</td>
                     </tr>
                   </tbody>
                 </table>
@@ -270,7 +270,7 @@ export default function NAACPage() {
                   <tbody>
                     <tr>
                       <td className="border border-gray-300 px-4 py-3">1.4.1 QnM</td>
-                      <td className="border border-gray-300 px-4 py-3">Institution obtains feedback on the academic performance and ambience of the institution from various stakeholders, such as Students, Teachers, Employers, Alumni etc. and action taken report on the feedback is made available on institutional website</td>
+                      <td className="border border-gray-300 px-4 py-3">Institution obtains feedback on the academic performance and ambience of the institution from various stakeholders, such as Learners, Senior Learners, Employers, Alumni etc. and action taken report on the feedback is made available on institutional website</td>
                     </tr>
                   </tbody>
                 </table>
@@ -288,7 +288,7 @@ export default function NAACPage() {
           <h2 className="text-3xl font-extrabold text-[#003f13] mb-6">Teaching Learning and Evaluation</h2>
           <div className="text-gray-700 leading-relaxed space-y-6">
             <div>
-              <h3 className="text-xl font-bold text-gray-800 mb-4">2.1 – Student Enrolment and Profile</h3>
+              <h3 className="text-xl font-bold text-gray-800 mb-4">2.1 – Learner Enrolment and Profile</h3>
               <div className="overflow-x-auto">
                 <table className="w-full border-collapse border border-gray-300">
                   <thead>
@@ -312,7 +312,7 @@ export default function NAACPage() {
             </div>
 
             <div>
-              <h3 className="text-xl font-bold text-gray-800 mb-4">2.2 – Student Teacher Ratio</h3>
+              <h3 className="text-xl font-bold text-gray-800 mb-4">2.2 – Learner Senior Learner Ratio</h3>
               <div className="overflow-x-auto">
                 <table className="w-full border-collapse border border-gray-300">
                   <thead>
@@ -324,7 +324,7 @@ export default function NAACPage() {
                   <tbody>
                     <tr>
                       <td className="border border-gray-300 px-4 py-3">2.2.1 QnM</td>
-                      <td className="border border-gray-300 px-4 py-3">Student – Full time Teacher Ratio (Data for the latest completed academic year)</td>
+                      <td className="border border-gray-300 px-4 py-3">Learner – Full time Senior Learner Ratio (Data for the latest completed academic year)</td>
                     </tr>
                   </tbody>
                 </table>
@@ -344,7 +344,7 @@ export default function NAACPage() {
                   <tbody>
                     <tr>
                       <td className="border border-gray-300 px-4 py-3">2.3.1 QlM</td>
-                      <td className="border border-gray-300 px-4 py-3">Student centric methods, such as experiential learning, participative learning, and problem-solving methodologies are used for enhancing learning experiences using ICT tools</td>
+                      <td className="border border-gray-300 px-4 py-3">Learner centric methods, such as experiential learning, participative learning, and problem-solving methodologies are used for enhancing learning experiences using ICT tools</td>
                     </tr>
                   </tbody>
                 </table>
@@ -352,7 +352,7 @@ export default function NAACPage() {
             </div>
 
             <div>
-              <h3 className="text-xl font-bold text-gray-800 mb-4">2.4 – Teacher Profile and Quality</h3>
+              <h3 className="text-xl font-bold text-gray-800 mb-4">2.4 – Senior Learner Profile and Quality</h3>
               <div className="overflow-x-auto">
                 <table className="w-full border-collapse border border-gray-300">
                   <thead>
@@ -364,11 +364,11 @@ export default function NAACPage() {
                   <tbody>
                     <tr>
                       <td className="border border-gray-300 px-4 py-3">2.4.1 QnM</td>
-                      <td className="border border-gray-300 px-4 py-3">Percentage of full-time teachers against sanctioned posts during the last five years</td>
+                      <td className="border border-gray-300 px-4 py-3">Percentage of full-time senior learners against sanctioned posts during the last five years</td>
                     </tr>
                     <tr>
                       <td className="border border-gray-300 px-4 py-3">2.4.2 QnM</td>
-                      <td className="border border-gray-300 px-4 py-3">Percentage of full-time teachers with NET/SET/SLET/ Ph. D./D.Sc./D.Litt. during the last five years (consider only the highest degree for count)</td>
+                      <td className="border border-gray-300 px-4 py-3">Percentage of full-time senior learners with NET/SET/SLET/ Ph. D./D.Sc./D.Litt. during the last five years (consider only the highest degree for count)</td>
                     </tr>
                   </tbody>
                 </table>
@@ -396,7 +396,7 @@ export default function NAACPage() {
             </div>
 
             <div>
-              <h3 className="text-xl font-bold text-gray-800 mb-4">2.6 – Student Performance and Learning Outcome</h3>
+              <h3 className="text-xl font-bold text-gray-800 mb-4">2.6 – Learner Performance and Learning Outcome</h3>
               <div className="overflow-x-auto">
                 <table className="w-full border-collapse border border-gray-300">
                   <thead>
@@ -416,7 +416,7 @@ export default function NAACPage() {
                     </tr>
                     <tr>
                       <td className="border border-gray-300 px-4 py-3">2.6.3 QnM</td>
-                      <td className="border border-gray-300 px-4 py-3">Pass percentage of Students during the last five years</td>
+                      <td className="border border-gray-300 px-4 py-3">Pass percentage of Learners during the last five years</td>
                     </tr>
                   </tbody>
                 </table>
@@ -424,7 +424,7 @@ export default function NAACPage() {
             </div>
 
             <div>
-              <h3 className="text-xl font-bold text-gray-800 mb-4">2.7 – Student Satisfaction Survey</h3>
+              <h3 className="text-xl font-bold text-gray-800 mb-4">2.7 – Learner Satisfaction Survey</h3>
               <div className="overflow-x-auto">
                 <table className="w-full border-collapse border border-gray-300">
                   <thead>
@@ -436,7 +436,7 @@ export default function NAACPage() {
                   <tbody>
                     <tr>
                       <td className="border border-gray-300 px-4 py-3">2.7.1 QnM</td>
-                      <td className="border border-gray-300 px-4 py-3">Online student satisfaction survey regarding the teaching-learning process. (Online survey to be conducted)</td>
+                      <td className="border border-gray-300 px-4 py-3">Online learner satisfaction survey regarding the teaching-learning process. (Online survey to be conducted)</td>
                     </tr>
                   </tbody>
                 </table>
@@ -506,7 +506,7 @@ export default function NAACPage() {
                   <tbody>
                     <tr>
                       <td className="border border-gray-300 px-4 py-3">3.3.1 QnM</td>
-                      <td className="border border-gray-300 px-4 py-3">Number of research papers published per teacher in the Journals notified on UGC care list during the last five years</td>
+                      <td className="border border-gray-300 px-4 py-3">Number of research papers published per senior learner in the Journals notified on UGC care list during the last five years</td>
                     </tr>
                   </tbody>
                 </table>
@@ -526,7 +526,7 @@ export default function NAACPage() {
                   <tbody>
                     <tr>
                       <td className="border border-gray-300 px-4 py-3">3.4.1 QlM</td>
-                      <td className="border border-gray-300 px-4 py-3">Extension activities are carried out in the neighborhood community, sensitizing students to social issues, for their holistic development, and impact thereof during the last five years.</td>
+                      <td className="border border-gray-300 px-4 py-3">Extension activities are carried out in the neighborhood community, sensitizing learners to social issues, for their holistic development, and impact thereof during the last five years.</td>
                     </tr>
                   </tbody>
                 </table>
@@ -546,7 +546,7 @@ export default function NAACPage() {
                   <tbody>
                     <tr>
                       <td className="border border-gray-300 px-4 py-3">3.5.1 QnM</td>
-                      <td className="border border-gray-300 px-4 py-3">The number of MoUs, collaborations/linkages for Faculty exchange, Student exchange, Internship, Field project, On-the-job training, research and other academic activities during the last five years</td>
+                      <td className="border border-gray-300 px-4 py-3">The number of MoUs, collaborations/linkages for Senior Learner exchange, Learner exchange, Internship, Field project, On-the-job training, research and other academic activities during the last five years</td>
                     </tr>
                   </tbody>
                 </table>
@@ -576,7 +576,7 @@ export default function NAACPage() {
                   <tbody>
                     <tr>
                       <td className="border border-gray-300 px-4 py-3">4.1.1 QlM</td>
-                      <td className="border border-gray-300 px-4 py-3">Availability of adequate infrastructure and physical facilities viz., classrooms, laboratories, ICT infrastructure, facilities for cultural and sports activities, gymnasium, yoga centre etc. in the institution</td>
+                      <td className="border border-gray-300 px-4 py-3">Availability of adequate infrastructure and physical facilities viz., learning studios, learning labs, ICT infrastructure, facilities for cultural and sports activities, gymnasium, yoga centre etc. in the institution</td>
                     </tr>
                   </tbody>
                 </table>
@@ -584,7 +584,7 @@ export default function NAACPage() {
             </div>
 
             <div>
-              <h3 className="text-xl font-bold text-gray-800 mb-4">4.2 – Library as a learning Resource</h3>
+              <h3 className="text-xl font-bold text-gray-800 mb-4">4.2 – Learning Commons as a learning Resource</h3>
               <div className="overflow-x-auto">
                 <table className="w-full border-collapse border border-gray-300">
                   <thead>
@@ -596,7 +596,7 @@ export default function NAACPage() {
                   <tbody>
                     <tr>
                       <td className="border border-gray-300 px-4 py-3">4.2.1 QlM</td>
-                      <td className="border border-gray-300 px-4 py-3">Library automation using Integrated Library Management System (ILMS), subscription to e-resources including provision of links to OER repositories, amount spent on purchase of books, journals and usage of library</td>
+                      <td className="border border-gray-300 px-4 py-3">Learning Commons automation using Integrated Library Management System (ILMS), subscription to e-resources including provision of links to OER repositories, amount spent on purchase of books, journals and usage of learning commons</td>
                     </tr>
                   </tbody>
                 </table>
@@ -651,10 +651,10 @@ export default function NAACPage() {
       title: 'Criterion V',
       content: (
         <>
-          <h2 className="text-3xl font-extrabold text-[#003f13] mb-6">Student Support and Progression</h2>
+          <h2 className="text-3xl font-extrabold text-[#003f13] mb-6">Learner Support and Progression</h2>
           <div className="text-gray-700 leading-relaxed space-y-6">
             <div>
-              <h3 className="text-xl font-bold text-gray-800 mb-4">5.1 Student Support</h3>
+              <h3 className="text-xl font-bold text-gray-800 mb-4">5.1 Learner Support</h3>
               <div className="overflow-x-auto">
                 <table className="w-full border-collapse border border-gray-300">
                   <thead>
@@ -666,7 +666,7 @@ export default function NAACPage() {
                   <tbody>
                     <tr>
                       <td className="border border-gray-300 px-4 py-3">5.1.1<br />QnM</td>
-                      <td className="border border-gray-300 px-4 py-3">Percentage of students benefited by scholarships and freeships provided by the Government and Non-Government agencies and philanthropists during last five years</td>
+                      <td className="border border-gray-300 px-4 py-3">Percentage of learners benefited by scholarships and freeships provided by the Government and Non-Government agencies and philanthropists during last five years</td>
                     </tr>
                     <tr>
                       <td className="border border-gray-300 px-4 py-3">5.1.2<br />QnM</td>
@@ -674,11 +674,11 @@ export default function NAACPage() {
                     </tr>
                     <tr>
                       <td className="border border-gray-300 px-4 py-3">5.1.3<br />QnM</td>
-                      <td className="border border-gray-300 px-4 py-3">Percentage of students benefitted by guidance for competitive examinations and career counseling offered by the Institution during the last five years</td>
+                      <td className="border border-gray-300 px-4 py-3">Percentage of learners benefitted by guidance for competitive examinations and career counseling offered by the Institution during the last five years</td>
                     </tr>
                     <tr>
                       <td className="border border-gray-300 px-4 py-3">5.1.4<br />QnM</td>
-                      <td className="border border-gray-300 px-4 py-3">The Institution has a transparent mechanism for timely redressal of student grievances including sexual harassment and ragging cases<br />1. Implementation of guidelines of statutory/regulatory bodies<br />2. Organisation wide awareness and undertakings on policies with zero tolerance<br />3. Mechanisms for submission of online/offline students' grievances<br />4. Timely redressal of the grievances through appropriate committees</td>
+                      <td className="border border-gray-300 px-4 py-3">The Institution has a transparent mechanism for timely redressal of learner grievances including sexual harassment and ragging cases<br />1. Implementation of guidelines of statutory/regulatory bodies<br />2. Organisation wide awareness and undertakings on policies with zero tolerance<br />3. Mechanisms for submission of online/offline learners' grievances<br />4. Timely redressal of the grievances through appropriate committees</td>
                     </tr>
                   </tbody>
                 </table>
@@ -686,7 +686,7 @@ export default function NAACPage() {
             </div>
 
             <div>
-              <h3 className="text-xl font-bold text-gray-800 mb-4">5.2 Student Progression</h3>
+              <h3 className="text-xl font-bold text-gray-800 mb-4">5.2 Learner Progression</h3>
               <div className="overflow-x-auto">
                 <table className="w-full border-collapse border border-gray-300">
                   <thead>
@@ -698,11 +698,11 @@ export default function NAACPage() {
                   <tbody>
                     <tr>
                       <td className="border border-gray-300 px-4 py-3">5.2.1<br />QnM</td>
-                      <td className="border border-gray-300 px-4 py-3">Percentage of placement of outgoing students and students progressing to higher education during the last five years</td>
+                      <td className="border border-gray-300 px-4 py-3">Percentage of placement of outgoing learners and learners progressing to higher education during the last five years</td>
                     </tr>
                     <tr>
                       <td className="border border-gray-300 px-4 py-3">5.2.2<br />QnM</td>
-                      <td className="border border-gray-300 px-4 py-3">Percentage of students qualifying in state/national/ international level examinations during the last five years (eg: JAM/CLAT/GATE/ GMAT/ CAT/ GRE/ TOEFL/ Civil Services/State government examinations)</td>
+                      <td className="border border-gray-300 px-4 py-3">Percentage of learners qualifying in state/national/ international level examinations during the last five years (eg: JAM/CLAT/GATE/ GMAT/ CAT/ GRE/ TOEFL/ Civil Services/State government examinations)</td>
                     </tr>
                   </tbody>
                 </table>
@@ -710,7 +710,7 @@ export default function NAACPage() {
             </div>
 
             <div>
-              <h3 className="text-xl font-bold text-gray-800 mb-4">5.3 Student Participation and Activities</h3>
+              <h3 className="text-xl font-bold text-gray-800 mb-4">5.3 Learner Participation and Activities</h3>
               <div className="overflow-x-auto">
                 <table className="w-full border-collapse border border-gray-300">
                   <thead>
@@ -726,7 +726,7 @@ export default function NAACPage() {
                     </tr>
                     <tr>
                       <td className="border border-gray-300 px-4 py-3">5.3.2<br />QnM</td>
-                      <td className="border border-gray-300 px-4 py-3">Average number of sports and cultural programs in which students of the Institution participated during last five years (organised by the institution/other institutions)</td>
+                      <td className="border border-gray-300 px-4 py-3">Average number of sports and cultural programs in which learners of the Institution participated during last five years (organised by the institution/other institutions)</td>
                     </tr>
                   </tbody>
                 </table>
@@ -800,7 +800,7 @@ export default function NAACPage() {
                     </tr>
                     <tr>
                       <td className="border border-gray-300 px-4 py-3">6.2.2 QnM</td>
-                      <td className="border border-gray-300 px-4 py-3">Implementation of e-governance in areas of operation<br />1. Administration<br />2. Finance and Accounts<br />3. Student Admission and Support<br />4. Examination</td>
+                      <td className="border border-gray-300 px-4 py-3">Implementation of e-governance in areas of operation<br />1. Administration<br />2. Finance and Accounts<br />3. Learner Admission and Support<br />4. Examination</td>
                     </tr>
                   </tbody>
                 </table>
@@ -808,7 +808,7 @@ export default function NAACPage() {
             </div>
 
             <div>
-              <h3 className="text-xl font-bold text-gray-800 mb-4">6.3 Faculty Empowerment Strategies</h3>
+              <h3 className="text-xl font-bold text-gray-800 mb-4">6.3 Senior Learner Empowerment Strategies</h3>
               <div className="overflow-x-auto">
                 <table className="w-full border-collapse border border-gray-300">
                   <thead>
@@ -820,15 +820,15 @@ export default function NAACPage() {
                   <tbody>
                     <tr>
                       <td className="border border-gray-300 px-4 py-3">6.3.1<br />QlM</td>
-                      <td className="border border-gray-300 px-4 py-3">The institution has effective welfare measures and Performance Appraisal System for teaching and non-teaching staff</td>
+                      <td className="border border-gray-300 px-4 py-3">The institution has effective welfare measures and Performance Appraisal System for teaching and non-teaching team members</td>
                     </tr>
                     <tr>
                       <td className="border border-gray-300 px-4 py-3">6.3.2<br />QnM</td>
-                      <td className="border border-gray-300 px-4 py-3">Percentage of teachers provided with financial support to attend conferences/workshops and towards membership fee of professional bodies during the last five years</td>
+                      <td className="border border-gray-300 px-4 py-3">Percentage of senior learners provided with financial support to attend conferences/workshops and towards membership fee of professional bodies during the last five years</td>
                     </tr>
                     <tr>
                       <td className="border border-gray-300 px-4 py-3">6.3.3<br />QnM</td>
-                      <td className="border border-gray-300 px-4 py-3">Percentage of teaching and non-teaching staff participating in Faculty development Programmes (FDP), professional development /administrative training programs during the last five years</td>
+                      <td className="border border-gray-300 px-4 py-3">Percentage of teaching and non-teaching team members participating in Senior Learner development Programmes (FDP), professional development /administrative training programs during the last five years</td>
                     </tr>
                   </tbody>
                 </table>
@@ -902,7 +902,7 @@ export default function NAACPage() {
                   <tbody>
                     <tr>
                       <td className="border border-gray-300 px-4 py-3">7.1.1 QlM</td>
-                      <td className="border border-gray-300 px-4 py-3">The institution has effective welfare measures and Performance Appraisal System for teaching and non-teaching staff</td>
+                      <td className="border border-gray-300 px-4 py-3">The institution has effective welfare measures and Performance Appraisal System for teaching and non-teaching team members</td>
                     </tr>
                     <tr>
                       <td className="border border-gray-300 px-4 py-3">7.1.2 QnM</td>
@@ -914,7 +914,7 @@ export default function NAACPage() {
                     </tr>
                     <tr>
                       <td className="border border-gray-300 px-4 py-3">7.1.4 QlM</td>
-                      <td className="border border-gray-300 px-4 py-3">Describe the Institutional efforts/initiatives in providing an inclusive environment i.e., tolerance and harmony towards cultural, regional, linguistic, communal socioeconomic diversity and Sensitization of students and employees to the constitutional obligations: values, rights, duties and responsibilities of citizens (Within 500 words)</td>
+                      <td className="border border-gray-300 px-4 py-3">Describe the Institutional efforts/initiatives in providing an inclusive environment i.e., tolerance and harmony towards cultural, regional, linguistic, communal socioeconomic diversity and Sensitization of learners and employees to the constitutional obligations: values, rights, duties and responsibilities of citizens (Within 500 words)</td>
                     </tr>
                   </tbody>
                 </table>

@@ -7,14 +7,14 @@ import { UserCircle2 } from 'lucide-react';
 export const dynamic = 'force-dynamic';
 
 export const metadata: Metadata = {
-  title: 'Faculty | JKKN College of Allied Health Sciences',
+  title: 'Senior Learners | JKKN College of Allied Health Sciences',
   description:
-    'Meet the experienced faculty of JKKN College of Allied Health Sciences, Komarapalayam. Qualified professors and specialists across 9 allied health programmes.',
+    'Meet the experienced senior learners of JKKN College of Allied Health Sciences, Komarapalayam. Qualified senior learners and specialists across 9 allied health programmes.',
   alternates: { canonical: '/faculty/' },
   openGraph: {
-    title: 'Faculty | JKKN College of Allied Health Sciences',
+    title: 'Senior Learners | JKKN College of Allied Health Sciences',
     description:
-      'Meet the experienced faculty of JKKN College of Allied Health Sciences, Komarapalayam.',
+      'Meet the experienced senior learners of JKKN College of Allied Health Sciences, Komarapalayam.',
     url: 'https://ahs.jkkn.ac.in/faculty/',
     siteName: 'JKKN College of Allied Health Sciences',
     type: 'website',
@@ -22,9 +22,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Faculty | JKKN College of Allied Health Sciences',
+    title: 'Senior Learners | JKKN College of Allied Health Sciences',
     description:
-      'Meet the experienced faculty of JKKN College of Allied Health Sciences, Komarapalayam.',
+      'Meet the experienced senior learners of JKKN College of Allied Health Sciences, Komarapalayam.',
   },
 };
 
@@ -53,7 +53,7 @@ export default async function FacultyPage() {
             <p className="text-[#FFC107] text-xs font-semibold tracking-widest uppercase mb-2">
             JKKN COLLEGE OF ALLIED HEALTH SCIENCES
             </p>
-            <h1 className="text-3xl sm:text-4xl font-bold text-white">Our Faculty</h1>
+            <h1 className="text-3xl sm:text-4xl font-bold text-white">Our Senior Learners</h1>
             <p className="text-green-200 mt-3 text-sm sm:text-base max-w-xl mx-auto">
               Experienced specialists guiding the next generation of healthcare professionals.
             </p>
@@ -128,7 +128,7 @@ export default async function FacultyPage() {
               <div className="w-16 h-16 bg-gray-100 rounded-2xl flex items-center justify-center mb-4">
                 <UserCircle2 className="w-8 h-8 text-gray-300" />
               </div>
-              <p className="text-gray-500 font-medium">No faculty members found.</p>
+              <p className="text-gray-500 font-medium">No senior learners found.</p>
             </div>
           )}
         </section>

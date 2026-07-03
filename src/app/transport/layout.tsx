@@ -3,11 +3,11 @@ import { createPageMetadata } from "@/lib/metadata";
 export const metadata = createPageMetadata({
   title: "Transport Facilities — JKKN College of Allied Health Sciences",
   description:
-    "JKKN provides college bus transport covering Salem, Erode, Namakkal, Tiruchengode, and surrounding areas for student commute.",
+    "JKKN provides college bus transport covering Salem, Erode, Namakkal, Tiruchengode, and surrounding areas for learner commute.",
   path: "/transport",
   keywords: [
     "JKKN college bus transport",
-    "student transport Komarapalayam",
+    "learner transport Komarapalayam",
     "college bus Salem Erode Namakkal",
     "JKKN AHS transport facility",
     "college bus service Tamil Nadu",
@@ -42,7 +42,7 @@ const facilitySchema = {
   "@context": "https://schema.org",
   "@type": "Place",
   "name": "Transport — JKKN College of Allied Health Sciences",
-  "description": "JKKN provides college bus transport covering Salem, Erode, Namakkal, Tiruchengode, and surrounding areas for student commute.",
+  "description": "JKKN provides college bus transport covering Salem, Erode, Namakkal, Tiruchengode, and surrounding areas for learner commute.",
   "url": "https://ahs.jkkn.ac.in/transport",
   "containedInPlace": {
     "@type": "CollegeOrUniversity",
@@ -64,10 +64,10 @@ const faqSchema = {
   "@type": "FAQPage",
   "dateModified": "2026-03-19",
   "mainEntity": [
-    { "@type": "Question", "name": "Does JKKN College provide bus transport for students?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, JKKN College of Allied Health Sciences provides a well-maintained bus fleet for students and faculty from nearby towns and cities." } },
-    { "@type": "Question", "name": "What areas does the JKKN college bus service cover?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN buses cover Salem, Erode, Namakkal, Tiruchengode, Komarapalayam, and surrounding areas, ensuring broad accessibility for students." } },
+    { "@type": "Question", "name": "Does JKKN College provide bus transport for learners?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, JKKN College of Allied Health Sciences provides a well-maintained bus fleet for learners and senior learners from nearby towns and cities." } },
+    { "@type": "Question", "name": "What areas does the JKKN college bus service cover?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN buses cover Salem, Erode, Namakkal, Tiruchengode, Komarapalayam, and surrounding areas, ensuring broad accessibility for learners." } },
     { "@type": "Question", "name": "What is the transport fee at JKKN College?", "acceptedAnswer": { "@type": "Answer", "text": "Transport fees vary by distance and route. Contact JKKN admissions at 9345855001 for current bus fee details and route schedules." } },
-    { "@type": "Question", "name": "Are there separate buses for boys and girls at JKKN?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN transport is mixed but ensures safety with CCTV cameras on buses and female attendants available to assist girl students." } },
+    { "@type": "Question", "name": "Are there separate buses for boys and girls at JKKN?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN transport is mixed but ensures safety with CCTV cameras on buses and female attendants available to assist girl learners." } },
     { "@type": "Question", "name": "What is the bus timing for JKKN College?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN buses operate on a strict schedule aligned with college hours. Contact the transport office at 9345855001 for exact timings." } }
   ]
 };

@@ -3,7 +3,7 @@ import { createPageMetadata } from "@/lib/metadata";
 export const metadata = createPageMetadata({
   title: "Photo Gallery — JKKN College of Allied Health Sciences",
   description:
-    "Browse photos of JKKN College of Allied Health Sciences campus — classrooms, labs, hostel, library, and student life at Komarapalayam, Tamil Nadu.",
+    "Browse photos of JKKN College of Allied Health Sciences campus — learning studios, learning labs, hostel, learning commons, and learner life at Komarapalayam, Tamil Nadu.",
   path: "/gallery",
   keywords: [
     "JKKN campus gallery photos",
@@ -11,7 +11,7 @@ export const metadata = createPageMetadata({
     "JKKN College photo gallery Tamil Nadu",
     "JKKN AHS campus life pictures",
     "allied health sciences college facilities photos",
-    "JKKN student life campus Namakkal",
+    "JKKN learner life campus Namakkal",
   ],
 });
 
@@ -40,7 +40,7 @@ const imageGallerySchema = {
   "@context": "https://schema.org",
   "@type": "ImageGallery",
   "name": "JKKN College of Allied Health Sciences — Campus Photo Gallery",
-  "description": "Photos of JKKN College of Allied Health Sciences campus including classrooms, labs, hostel, library, and student life at Komarapalayam, Tamil Nadu.",
+  "description": "Photos of JKKN College of Allied Health Sciences campus including learning studios, learning labs, hostel, learning commons, and learner life at Komarapalayam, Tamil Nadu.",
   "url": "https://ahs.jkkn.ac.in/gallery",
   "publisher": {
     "@type": "CollegeOrUniversity",

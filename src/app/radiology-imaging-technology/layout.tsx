@@ -18,7 +18,7 @@ const courseSchema = {
   "@type": "Course",
   "dateModified": "2026-03-19",
   "name": "B.Sc Radiography Imaging Technology",
-  "description": "Comprehensive program that prepares students to become skilled radiography technologists, mastering X-ray, CT scan, MRI, ultrasound, mammography, and advanced radiological procedures for accurate disease diagnosis and treatment planning.",
+  "description": "Comprehensive program that prepares learners to become skilled radiography technologists, mastering X-ray, CT scan, MRI, ultrasound, mammography, and advanced radiological procedures for accurate disease diagnosis and treatment planning.",
   "url": "https://ahs.jkkn.ac.in/radiology-imaging-technology",
   "provider": {
     "@type": "CollegeOrUniversity",
@@ -109,7 +109,7 @@ const faqSchema = {
       "name": "What is Bachelor of Science Radiography Imaging Technology at JKKN College of Allied Health Sciences in Komarapalayam?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Bachelor of Science Radiography Imaging Technology is a three-year plus one-year internship undergraduate program training students in X-ray, Computed Tomography, Magnetic Resonance Imaging, and ultrasound diagnostic imaging."
+        "text": "Bachelor of Science Radiography Imaging Technology is a three-year plus one-year internship undergraduate program training learners in X-ray, Computed Tomography, Magnetic Resonance Imaging, and ultrasound diagnostic imaging."
       }
     },
     {
@@ -162,7 +162,7 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      "name": "Is radiation exposure a concern for Radiography Imaging Technology students at JKKN Allied Health Sciences in Tamil Nadu?",
+      "name": "Is radiation exposure a concern for Radiography Imaging Technology learners at JKKN Allied Health Sciences in Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "No. Strict safety protocols, protective equipment, and As Low As Reasonably Achievable radiation principles keep exposure minimal. Technologists receive thorough radiation safety training before clinical practice."

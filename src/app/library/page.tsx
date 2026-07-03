@@ -14,7 +14,7 @@ export default function Library() {
     const breadcrumbSchema = generateBreadcrumbSchema([
         { name: "Home", url: "https://ahs.jkkn.ac.in/" },
         { name: "Facilities", url: "https://ahs.jkkn.ac.in/#facilities" },
-        { name: "Library", url: "https://ahs.jkkn.ac.in/library" }
+        { name: "Learning Commons", url: "https://ahs.jkkn.ac.in/library" }
     ]);
 
     return (
@@ -26,7 +26,7 @@ export default function Library() {
                 <div className="max-w-7xl mx-auto px-4">
                     <Breadcrumb items={[
                         { label: 'Home', href: '/' },
-                        { label: 'Library' }
+                        { label: 'Learning Commons' }
                     ]} />
                     {/* Header Section */}
                     <div className="text-center mb-12 sm:mb-14 md:mb-16 relative px-4">
@@ -43,7 +43,7 @@ export default function Library() {
                             animate={{ opacity: 1, scale: 1 }}
                             className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#0b6d41] mb-3 sm:mb-4 uppercase tracking-tight break-words"
                         >
-                            Library at JKKN College of Allied Health Sciences
+                            Learning Commons at JKKN College of Allied Health Sciences
                         </motion.h1>
                         <motion.p
                             initial={{ opacity: 0 }}
@@ -65,7 +65,7 @@ export default function Library() {
                         >
                             <Image
                                 src="/library/library-1.jpg"
-                                alt="Allied Health Science Library with wooden desks and study areas"
+                                alt="Allied Health Science Learning Commons with wooden desks and study areas"
                                 fill
                                 className="object-cover"
                                 unoptimized
@@ -80,7 +80,7 @@ export default function Library() {
                         >
                             <Image
                                 src="/library/library-2.jpg"
-                                alt="Students studying with books in the library"
+                                alt="Learners studying with books in the learning commons"
                                 fill
                                 className="object-cover"
                                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
@@ -94,7 +94,7 @@ export default function Library() {
                         >
                             <Image
                                 src="/library/library-3.jpg"
-                                alt="Student reading in the library"
+                                alt="Learner reading in the learning commons"
                                 fill
                                 className="object-cover"
                                 unoptimized
@@ -118,11 +118,11 @@ export default function Library() {
                             {/* Introduction */}
                             <div className="prose prose-lg max-w-none">
                                 <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed text-justify break-words">
-                                    The Allied Health Science library is more than just a place for books—it's the heart of our academic community. We bridge the gap between classic healthcare principles and the latest industry breakthroughs. Our collection offers everything from essential textbooks and peer-reviewed research to digital tools designed to support every health science specialty.   Empowering the next generation of healthcare professionals. Our library combines foundational learning with the latest digital research tools to support your journey across all health science disciplines.
+                                    The Allied Health Science learning commons is more than just a place for books—it's the heart of our academic community. We bridge the gap between classic healthcare principles and the latest industry breakthroughs. Our collection offers everything from essential textbooks and peer-reviewed research to digital tools designed to support every health science specialty.   Empowering the next generation of healthcare professionals. Our learning commons combines foundational learning with the latest digital research tools to support your journey across all health science disciplines.
                                 </p>
                             </div>
 
-                            <h2 className="text-2xl sm:text-3xl font-bold text-[#0b6d41] mb-4">Library Features and Resources</h2>
+                            <h2 className="text-2xl sm:text-3xl font-bold text-[#0b6d41] mb-4">Learning Commons Features and Resources</h2>
 
                             {/* Feature Cards Grid */}
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5 md:gap-6 mt-8 sm:mt-10 md:mt-12">
@@ -135,7 +135,7 @@ export default function Library() {
                                 <FeatureCard
                                     icon={<Globe className="w-8 h-8" />}
                                     title="Digitization—The Forward March"
-                                    description="In heeding our Mission to enable exponential opportunities through bioconvergence, the library offers a salient arsenal of digital resources. Stay abreast of contemporary methodologies and healthcare paradigms through our online diaspora of e-journals, e-books, and multimedia vignettes."
+                                    description="In heeding our Mission to enable exponential opportunities through bioconvergence, the learning commons offers a salient arsenal of digital resources. Stay abreast of contemporary methodologies and healthcare paradigms through our online diaspora of e-journals, e-books, and multimedia vignettes."
                                 />
 
                                 <FeatureCard
@@ -153,7 +153,7 @@ export default function Library() {
                                 <FeatureCard
                                     icon={<Sparkles className="w-8 h-8" />}
                                     title="A Commune of Inquisitive Minds"
-                                    description="In alignment with our commitment to Teamwork, the library instigates community. Peer-to-peer learning modules, group debates, and case-study forums animate the space, transcending it from a repository to a living laboratory of thought."
+                                    description="In alignment with our commitment to Teamwork, the learning commons instigates community. Peer-to-peer learning modules, group debates, and case-study forums animate the space, transcending it from a repository to a living laboratory of thought."
                                 />
 
                                 <FeatureCard
@@ -178,10 +178,10 @@ export default function Library() {
                                         <div className="flex-1 min-w-0">
                                             <h3 className="text-xl sm:text-xl md:text-2xl font-black text-[#0b6d41] mb-3 sm:mb-3.5 md:mb-4 break-words">Membership as Covenant</h3>
                                             <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed text-justify mb-3 sm:mb-3.5 md:mb-4 break-words">
-                                                To indulge in an unbridled quest for health science acumen, consider library membership. This bond unfurls an array of exclusive provisions: special access rights, preferential borrowing conditions, and front-row seats in our scholastic activities.
+                                                To indulge in an unbridled quest for health science acumen, consider learning commons membership. This bond unfurls an array of exclusive provisions: special access rights, preferential borrowing conditions, and front-row seats in our scholastic activities.
                                             </p>
                                             <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed text-justify font-medium break-words">
-                                                So, at the Allied Health Science Library, the invitation is not just to read but to immerse, to question, and to synthesize. Come, be part of a dynamic knowledge ecology that celebrates the endless curiosity and pioneering spirit that define the realm of Allied Health Sciences.
+                                                So, at the Allied Health Science Learning Commons, the invitation is not just to read but to immerse, to question, and to synthesize. Come, be part of a dynamic knowledge ecology that celebrates the endless curiosity and pioneering spirit that define the realm of Allied Health Sciences.
                                             </p>
                                         </div>
                                     </div>
@@ -191,7 +191,7 @@ export default function Library() {
                     </motion.div>
 
                     {/* Stats Section */}
-                    <h2 className="text-2xl sm:text-3xl font-bold text-[#0b6d41] mb-6 text-center">Library at a Glance</h2>
+                    <h2 className="text-2xl sm:text-3xl font-bold text-[#0b6d41] mb-6 text-center">Learning Commons at a Glance</h2>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 md:gap-6 max-w-6xl mx-auto">
                         <StatsCard
                             icon={<BookOpen className="w-8 h-8 text-[#0b6d41]" />}
@@ -216,14 +216,14 @@ export default function Library() {
                     </div>
                     {/* FAQ Section */}
                     <div className="max-w-6xl mx-auto mt-16">
-                        <h2 className="text-2xl sm:text-3xl font-bold text-[#0b6d41] mb-8">Frequently Asked Questions About JKKN Library</h2>
+                        <h2 className="text-2xl sm:text-3xl font-bold text-[#0b6d41] mb-8">Frequently Asked Questions About JKKN Learning Commons</h2>
                         <div className="space-y-4">
                             {[
-                                { q: "What are the library timings at JKKN College?", a: "The JKKN library is open from 8 AM to 8 PM on weekdays and 9 AM to 5 PM on Saturdays for all enrolled students." },
-                                { q: "Does the JKKN library have digital resources and e-journals?", a: "Yes, the library provides access to e-journals, e-books, online databases, and multimedia resources for all health science disciplines." },
-                                { q: "How many books are available in the JKKN library?", a: "The JKKN library has over 5000 books, journals, and reference materials covering all allied health science specializations." },
-                                { q: "Can students borrow books from the JKKN library?", a: "Yes, enrolled students can borrow up to three books at a time with a valid library membership card for two weeks." },
-                                { q: "Is there a separate reading room in the JKKN library?", a: "Yes, the library has dedicated reading rooms, quiet study zones, and group discussion areas for different learning needs." },
+                                { q: "What are the learning commons timings at JKKN College?", a: "The JKKN learning commons is open from 8 AM to 8 PM on weekdays and 9 AM to 5 PM on Saturdays for all enrolled learners." },
+                                { q: "Does the JKKN learning commons have digital resources and e-journals?", a: "Yes, the learning commons provides access to e-journals, e-books, online databases, and multimedia resources for all health science disciplines." },
+                                { q: "How many books are available in the JKKN learning commons?", a: "The JKKN learning commons has over 5000 books, journals, and reference materials covering all allied health science specializations." },
+                                { q: "Can learners borrow books from the JKKN learning commons?", a: "Yes, enrolled learners can borrow up to three books at a time with a valid learning commons membership card for two weeks." },
+                                { q: "Is there a separate reading room in the JKKN learning commons?", a: "Yes, the learning commons has dedicated reading rooms, quiet study zones, and group discussion areas for different learning needs." },
                             ].map((faq, i) => (
                                 <div key={i} className="border border-gray-200 rounded-2xl overflow-hidden bg-white">
                                     <h3 className="m-0 text-base">

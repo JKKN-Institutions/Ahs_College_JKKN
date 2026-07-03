@@ -19,7 +19,7 @@ export default function DeleteFacultyButton({ id }: { id: string }) {
     if (error) {
       toast.error('Delete failed: ' + error.message);
     } else {
-      toast.success('Faculty member removed.');
+      toast.success('Senior learner removed.');
       router.refresh();
     }
     setConfirm(false);
@@ -38,8 +38,8 @@ export default function DeleteFacultyButton({ id }: { id: string }) {
       {confirm && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50">
           <div className="bg-white rounded-2xl shadow-xl p-6 w-80 flex flex-col gap-4">
-            <h2 className="text-base font-semibold text-gray-800">Delete Faculty Member?</h2>
-            <p className="text-sm text-gray-500">This action cannot be undone. Are you sure you want to remove this faculty member?</p>
+            <h2 className="text-base font-semibold text-gray-800">Delete Senior Learner?</h2>
+            <p className="text-sm text-gray-500">This action cannot be undone. Are you sure you want to remove this senior learner?</p>
             <div className="flex justify-end gap-2">
               <button
                 onClick={() => setConfirm(false)}

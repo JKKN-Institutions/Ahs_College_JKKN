@@ -205,7 +205,7 @@ export default function CriticalCareContent() {
           monitors used in 90% of Indian ICUs
         </li>
         <li>
-          Faculty includes practicing intensivists and senior critical care nurses
+          Senior learners include practicing intensivists and senior critical care nurses
         </li>
         <li>
           Strong placement record across Apollo, Fortis, KMCH, MIOT, Manipal critical
@@ -213,15 +213,15 @@ export default function CriticalCareContent() {
         </li>
         <li>
           Excellent campus infrastructure —{" "}
-          <Link href="/lab">simulation labs</Link>,{" "}
-          <Link href="/library">e-library</Link>,{" "}
+          <Link href="/lab">simulation learning labs</Link>,{" "}
+          <Link href="/library">digital learning commons</Link>,{" "}
           <Link href="/hostel">on-campus hostel</Link>
         </li>
       </ul>
       <p>
         Read the full{" "}
         <Link href="/critical-care-technology">
-          B.Sc Critical Care Technology curriculum
+          B.Sc Critical Care Technology learning framework
         </Link>{" "}
         or visit{" "}
         <Link href="/admissions/critical-care-technology">admissions for 2026-27</Link>.

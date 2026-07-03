@@ -97,10 +97,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "Does JKKN AHS provide hostel for Salem students?",
+      name: "Does JKKN AHS provide hostel for Salem learners?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes, JKKN AHS provides separate hostel facilities for boys and girls. Students from Salem can also opt for daily commute as the campus is just 50-60 minutes away. College transport services are available.",
+        text: "Yes, JKKN AHS provides separate hostel facilities for boys and girls. Learners from Salem can also opt for daily commute as the campus is just 50-60 minutes away. College transport services are available.",
       },
     },
     {
@@ -116,7 +116,7 @@ const faqSchema = {
       name: "What are the fees for BSc allied health science in Tamil Nadu?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "BSc Allied Health Science fees in Tamil Nadu typically range from ₹50,000 to ₹2,00,000 per year depending on the college and course. At JKKN College of Allied Health Sciences, fees are competitively priced with scholarship options available for meritorious students. Contact the admission office at +91 9345855001 for the latest fee structure.",
+        text: "BSc Allied Health Science fees in Tamil Nadu typically range from ₹50,000 to ₹2,00,000 per year depending on the college and course. At JKKN College of Allied Health Sciences, fees are competitively priced with scholarship options available for meritorious learners. Contact the admission office at +91 9345855001 for the latest fee structure.",
       },
     },
     {
@@ -156,7 +156,7 @@ const faqSchema = {
       name: "Does JKKN AHS provide clinical training at Salem government hospitals?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "JKKN AHS primarily provides clinical training at its own 500+ bed multi-specialty teaching hospital on campus. Additionally, students gain exposure through partnerships with various healthcare facilities in the region. The Salem Government Mohan Kumaramangalam Medical College Hospital is one of the major government hospitals students can access for observational learning.",
+        text: "JKKN AHS primarily provides clinical training at its own 500+ bed multi-specialty teaching hospital on campus. Additionally, learners gain exposure through partnerships with various healthcare facilities in the region. The Salem Government Mohan Kumaramangalam Medical College Hospital is one of the major government hospitals learners can access for observational learning.",
       },
     },
     {
@@ -164,7 +164,7 @@ const faqSchema = {
       name: "Is JKKN AHS near Salem a better value than colleges in Chennai?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "JKKN AHS offers excellent value compared to Chennai colleges: significantly lower tuition and living costs, the same Tamil Nadu Dr. M.G.R. Medical University affiliation, 500+ bed hospital for clinical training, 85%+ placement rate with both domestic and international opportunities, and a safer, focused campus environment. Students save considerably while receiving comparable education quality.",
+        text: "JKKN AHS offers excellent value compared to Chennai colleges: significantly lower tuition and living costs, the same Tamil Nadu Dr. M.G.R. Medical University affiliation, 500+ bed hospital for clinical training, 85%+ placement rate with both domestic and international opportunities, and a safer, focused campus environment. Learners save considerably while receiving comparable education quality.",
       },
     },
   ],
@@ -256,7 +256,7 @@ const howToSchema = {
     { "@type": "HowToStep", position: 2, name: "Apply Online", text: "Visit https://www.jkkn.ai/apply/jkkn-admission-2026 and fill out the online application form with your personal and academic details." },
     { "@type": "HowToStep", position: 3, name: "Submit Documents", text: "Upload or submit 12th mark sheet, community certificate, Aadhaar card, passport-size photos, and transfer certificate." },
     { "@type": "HowToStep", position: 4, name: "Attend Counselling", text: "Attend the admission counselling session at JKKN campus or online. Select your preferred BSc programme from 9 available options." },
-    { "@type": "HowToStep", position: 5, name: "Pay Fees & Confirm", text: "Complete fee payment to confirm your admission. Scholarship options are available for meritorious students." },
+    { "@type": "HowToStep", position: 5, name: "Pay Fees & Confirm", text: "Complete fee payment to confirm your admission. Scholarship options are available for meritorious learners." },
     { "@type": "HowToStep", position: 6, name: "Join Campus", text: "Report to JKKN AHS campus at Komarapalayam on the designated date. Hostel and transport facilities available." },
   ],
 };

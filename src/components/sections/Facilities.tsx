@@ -21,7 +21,7 @@ const facilities = [
         href: "/lab"
     },
     {
-        title: "Digital Library",
+        title: "Digital Learning Commons",
         description: "10,000+ medical books, e-journals, and online databases with 24/7 access. Subscriptions to PubMed, Elsevier, and national medical archives ensure Learners stay current with the latest research and clinical guidelines.",
         icon: <BookOpen className="w-6 h-6 sm:w-8 sm:h-8" />,
         iconBg: "bg-[#0b6d41]",

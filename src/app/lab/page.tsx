@@ -11,7 +11,7 @@ export default function Labs() {
     const breadcrumbSchema = generateBreadcrumbSchema([
         { name: "Home", url: "https://ahs.jkkn.ac.in/" },
         { name: "Facilities", url: "https://ahs.jkkn.ac.in/#facilities" },
-        { name: "Laboratories", url: "https://ahs.jkkn.ac.in/lab" }
+        { name: "Learning Labs", url: "https://ahs.jkkn.ac.in/lab" }
     ]);
 
     return (
@@ -23,11 +23,11 @@ export default function Labs() {
                 <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
                     <Breadcrumb items={[
                         { label: 'Home', href: '/' },
-                        { label: 'Laboratories' }
+                        { label: 'Learning Labs' }
                     ]} />
                     {/* Header Section */}
                     <h1 className="text-3xl md:text-4xl font-bold text-[#0b6d41] mb-8">
-                        Laboratory Facilities at JKKN College of Allied Health Sciences
+                        Learning Lab Facilities at JKKN College of Allied Health Sciences
                     </h1>
 
                     {/* Lab Images Gallery */}
@@ -35,7 +35,7 @@ export default function Labs() {
                         <div className="relative h-64 md:h-72 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
                             <Image
                                 src="/lab/allied health science lab1.png"
-                                alt="Allied Health Science Lab 1"
+                                alt="Allied Health Science Learning Lab 1"
                                 fill
                                 className="object-cover"
                                 sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
@@ -44,7 +44,7 @@ export default function Labs() {
                         <div className="relative h-64 md:h-72 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
                             <Image
                                 src="/lab/allied health science lab2.png"
-                                alt="Allied Health Science Lab 2"
+                                alt="Allied Health Science Learning Lab 2"
                                 fill
                                 className="object-cover"
                                 sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
@@ -53,7 +53,7 @@ export default function Labs() {
                         <div className="relative h-64 md:h-72 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
                             <Image
                                 src="/lab/allied health science lab3.png"
-                                alt="Allied Health Science Lab 3"
+                                alt="Allied Health Science Learning Lab 3"
                                 fill
                                 className="object-cover"
                                 sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
@@ -64,71 +64,71 @@ export default function Labs() {
                     {/* Content Section */}
                     <div className="space-y-6 text-gray-700 text-base leading-relaxed max-w-full">
                         <p className="text-justify">
-                            The JKKN Allied Health Science Lab is a cutting-edge facility designed to support practical learning and skill development for students pursuing various disciplines in allied health sciences. Here is an overview of what you can expect to find and experience in this state-of-the-art lab:
+                            The JKKN Allied Health Science Learning Lab is a cutting-edge facility designed to support practical learning and skill development for learners pursuing various disciplines in allied health sciences. Here is an overview of what you can expect to find and experience in this state-of-the-art learning lab:
                         </p>
 
                         <p className="text-justify">
-                            <strong>Advanced Equipment:</strong> The lab is equipped with advanced and specialized equipment tailored to the needs of allied health science programs. These tools and machines enable students to gain hands-on experience and practical skills that are essential in their respective fields.
+                            <strong>Advanced Equipment:</strong> The learning lab is equipped with advanced and specialized equipment tailored to the needs of allied health science programs. These tools and machines enable learners to gain hands-on experience and practical skills that are essential in their respective fields.
                         </p>
 
                         <p className="text-justify">
-                            <strong>Discipline-Specific Labs:</strong> Depending on the specific allied health science program you are enrolled in, you may have access to discipline-specific labs. These labs cater to areas like medical technology, radiology, respiratory therapy, physical therapy, and more. Each lab is equipped with equipment and resources relevant to the discipline.
+                            <strong>Discipline-Specific Learning Labs:</strong> Depending on the specific allied health science program you are enrolled in, you may have access to discipline-specific learning labs. These learning labs cater to areas like medical technology, radiology, respiratory therapy, physical therapy, and more. Each learning lab is equipped with equipment and resources relevant to the discipline.
                         </p>
 
                         <p className="text-justify">
-                            <strong>Practical Skill Development:</strong> In the lab, you will have the opportunity to develop practical skills that are directly applicable to your chosen field. Whether it's conducting diagnostic tests, using medical imaging equipment, or performing therapeutic procedures, the lab provides a safe and controlled environment for hands-on learning.
+                            <strong>Practical Skill Development:</strong> In the learning lab, you will have the opportunity to develop practical skills that are directly applicable to your chosen field. Whether it's conducting diagnostic tests, using medical imaging equipment, or performing therapeutic procedures, the learning lab provides a safe and controlled environment for hands-on learning.
                         </p>
 
                         <p className="text-justify">
-                            <strong>Simulated Patient Encounters:</strong> Some allied health science programs may incorporate simulated patient encounters into their curriculum. These simulations allow students to practice patient interaction, clinical assessments, and treatment procedures in a controlled setting.
+                            <strong>Simulated Patient Encounters:</strong> Some allied health science programs may incorporate simulated patient encounters into their learning framework. These simulations allow learners to practice patient interaction, clinical assessments, and treatment procedures in a controlled setting.
                         </p>
 
                         <p className="text-justify">
-                            <strong>Interdisciplinary Learning:</strong> The lab encourages interdisciplinary learning and collaboration. Students from different allied health science programs may interact and collaborate on projects or scenarios that mimic real-world healthcare environments. This fosters teamwork and prepares students for integrated healthcare practice.
+                            <strong>Interdisciplinary Learning:</strong> The learning lab encourages interdisciplinary learning and collaboration. Learners from different allied health science programs may interact and collaborate on projects or scenarios that mimic real-world healthcare environments. This fosters teamwork and prepares learners for integrated healthcare practice.
                         </p>
 
                         <p className="text-justify">
-                            <strong>Safety Protocols:</strong> Safety is a top priority in the lab. Students are trained in proper safety procedures and infection control measures, ensuring a safe and hygienic environment for both learning and patient care.
+                            <strong>Safety Protocols:</strong> Safety is a top priority in the learning lab. Learners are trained in proper safety procedures and infection control measures, ensuring a safe and hygienic environment for both learning and patient care.
                         </p>
 
                         <p className="text-justify">
-                            <strong>Research Opportunities:</strong> Depending on your program and academic level, you may have the chance to engage in research projects within the lab. This provides opportunities to contribute to advancements in allied health sciences and gain research experience.
+                            <strong>Research Opportunities:</strong> Depending on your program and academic level, you may have the chance to engage in research projects within the learning lab. This provides opportunities to contribute to advancements in allied health sciences and gain research experience.
                         </p>
 
                         <p className="text-justify">
-                            <strong>Expert Guidance:</strong> Lab instructors and faculty members with expertise in allied health sciences are available to provide guidance, supervision, and mentorship. They help students navigate the practical aspects of their education and offer insights into the latest developments in their respective fields.
+                            <strong>Expert Guidance:</strong> Learning lab senior learners with expertise in allied health sciences are available to provide guidance, supervision, and mentorship. They help learners navigate the practical aspects of their education and offer insights into the latest developments in their respective fields.
                         </p>
 
                         <p className="text-justify">
-                            Overall, the JKKN Allied Health Science Lab is a hub of practical learning and skill development for students pursuing careers in various allied health disciplines. It provides the tools, resources, and support necessary to excel in these fields and make meaningful contributions to healthcare.
+                            Overall, the JKKN Allied Health Science Learning Lab is a hub of practical learning and skill development for learners pursuing careers in various allied health disciplines. It provides the tools, resources, and support necessary to excel in these fields and make meaningful contributions to healthcare.
                         </p>
                     </div>
                 </div>
 
                 {/* FAQ Section */}
                 <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-                    <h2 className="text-2xl sm:text-3xl font-bold text-[#0b6d41] mb-8">Frequently Asked Questions — Lab Facilities</h2>
+                    <h2 className="text-2xl sm:text-3xl font-bold text-[#0b6d41] mb-8">Frequently Asked Questions — Learning Lab Facilities</h2>
                     <div className="space-y-4">
                         {[
                             {
-                                q: "What lab facilities are available at JKKN College of Allied Health Sciences?",
-                                a: "JKKN College of Allied Health Sciences has discipline-specific labs for medical technology, radiology, respiratory therapy, and more, all equipped with advanced medical equipment."
+                                q: "What learning lab facilities are available at JKKN College of Allied Health Sciences?",
+                                a: "JKKN College of Allied Health Sciences has discipline-specific learning labs for medical technology, radiology, respiratory therapy, and more, all equipped with advanced medical equipment."
                             },
                             {
-                                q: "Are JKKN labs equipped with modern medical equipment?",
-                                a: "Yes. JKKN labs are equipped with advanced, specialised medical equipment tailored to each allied health science programme, ensuring students gain hands-on clinical experience."
+                                q: "Are JKKN learning labs equipped with modern medical equipment?",
+                                a: "Yes. JKKN learning labs are equipped with advanced, specialised medical equipment tailored to each allied health science programme, ensuring learners gain hands-on clinical experience."
                             },
                             {
-                                q: "How many hours of practical training do students get in JKKN labs?",
-                                a: "JKKN allied health science students receive extensive lab hours as per university curriculum guidelines, providing sufficient hands-on practice for clinical skill development."
+                                q: "How many hours of practical training do learners get in JKKN learning labs?",
+                                a: "JKKN allied health science learners receive extensive learning lab hours as per university curriculum guidelines, providing sufficient hands-on practice for clinical skill development."
                             },
                             {
-                                q: "Do JKKN labs have simulation equipment for clinical training?",
-                                a: "Yes. JKKN labs incorporate simulated patient encounters and clinical procedure setups, allowing students to practise safely before working with real patients."
+                                q: "Do JKKN learning labs have simulation equipment for clinical training?",
+                                a: "Yes. JKKN learning labs incorporate simulated patient encounters and clinical procedure setups, allowing learners to practise safely before working with real patients."
                             },
                             {
-                                q: "Are lab sessions included in the allied health sciences curriculum at JKKN?",
-                                a: "Yes. Lab sessions are a core part of the JKKN allied health sciences curriculum, ensuring every student completes required practical hours alongside theory classes."
+                                q: "Are learning lab sessions included in the allied health sciences learning framework at JKKN?",
+                                a: "Yes. Learning lab sessions are a core part of the JKKN allied health sciences learning framework, ensuring every learner completes required practical hours alongside theory classes."
                             }
                         ].map((faq, i) => (
                             <div key={i} className="border border-gray-200 rounded-2xl overflow-hidden bg-white">

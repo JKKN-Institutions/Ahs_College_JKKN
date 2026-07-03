@@ -41,7 +41,7 @@ export function AboutSection() {
                         </p>
 
                         <p className="text-gray-700 text-sm sm:text-base mb-6 sm:mb-8 leading-relaxed">
-                            Located on NH-544 (Salem-Coimbatore Highway) in Komarapalayam, just 22 km from <Link href="/erode" className="text-[#0b6d41] font-semibold hover:underline">Erode</Link> and 58 km from <Link href="/salem" className="text-[#0b6d41] font-semibold hover:underline">Salem</Link>, our <Link href="/NAAC" className="text-[#0b6d41] font-semibold hover:underline">NAAC A+ accredited</Link> campus features <Link href="/lab" className="text-[#0b6d41] font-semibold hover:underline">advanced laboratories</Link>, a 500+ bed teaching hospital, <Link href="/hostel" className="text-[#0b6d41] font-semibold hover:underline">hostel facilities</Link>, and a dedicated placement cell delivering a 95% placement rate across 100+ recruiting partners.
+                            Located on NH-544 (Salem-Coimbatore Highway) in Komarapalayam, just 22 km from <Link href="/erode" className="text-[#0b6d41] font-semibold hover:underline">Erode</Link> and 58 km from <Link href="/salem" className="text-[#0b6d41] font-semibold hover:underline">Salem</Link>, our <Link href="/NAAC" className="text-[#0b6d41] font-semibold hover:underline">NAAC A+ accredited</Link> campus features <Link href="/lab" className="text-[#0b6d41] font-semibold hover:underline">advanced learning labs</Link>, a 500+ bed teaching hospital, <Link href="/hostel" className="text-[#0b6d41] font-semibold hover:underline">hostel facilities</Link>, and a dedicated placement cell delivering a 95% placement rate across 100+ recruiting partners.
                         </p>
 
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-6 sm:mb-8">
@@ -67,7 +67,7 @@ export function AboutSection() {
                             <div className="aspect-[4/3] bg-gray-200 relative">
                                 <Image
                                     src="/allied-health-science-about.png"
-                                    alt="JKKN Allied Health Sciences College Laboratory"
+                                    alt="JKKN Allied Health Sciences College Learning Lab"
                                     fill
                                     placeholder="blur"
                                     blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiMwYjZkNDEiLz48L3N2Zz4="

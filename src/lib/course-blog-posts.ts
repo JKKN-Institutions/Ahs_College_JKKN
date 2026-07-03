@@ -322,7 +322,7 @@ export const courseBlogPosts: CourseBlogPost[] = [
     excerpt:
       "Indian hospitals are quietly hiring 6,000+ physician assistants every year. The role is growing because hospitals can't find enough specialist doctors — and PAs fill a critical gap.",
     heroImage: "/allied-health-science-hero.png",
-    heroImageAlt: "Physician assistant student in clinical training at JKKN College",
+    heroImageAlt: "Physician assistant learner in clinical training at JKKN College",
     courseSlug: "physician-assistant",
     courseName: "B.Sc Physician Assistant",
     category: "Career Guide",
@@ -436,7 +436,7 @@ export const courseBlogPosts: CourseBlogPost[] = [
     excerpt:
       "Medical coding is now a ₹4,000 crore industry in India, with US hospitals outsourcing ICD-10 work to Indian coders. BSc Medical Record Science is the entry ticket.",
     heroImage: "/medical-record-science-hero.png",
-    heroImageAlt: "Medical record science student working on HIM digitization at JKKN College",
+    heroImageAlt: "Medical record science learner working on HIM digitization at JKKN College",
     courseSlug: "medical-record-science",
     courseName: "B.Sc Medical Record Science",
     category: "Career Guide",

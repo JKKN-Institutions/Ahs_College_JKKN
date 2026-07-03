@@ -31,14 +31,14 @@ const navLinks: NavLink[] = [
             { name: "Principal's Message", href: '/principals-message' },
             { name: 'Vision & Mission', href: '/vision-mission' },
             {
-                name: 'Why Students Choose JKKN?',
+                name: 'Why Learners Choose JKKN?',
                 href: '#',
                 submenu: [
-                    { name: 'Why Erode Students?', href: '/erode' },
-                    { name: 'Why Salem Students?', href: '/salem' },
-                    { name: 'Why Tirupur Students?', href: '/tiruppur' },
-                    { name: 'Why Namakkal Students?', href: '/namakkal' },
-                    { name: 'Why Coimbatore Students?', href: '/coimbatore' },
+                    { name: 'Why Erode Learners?', href: '/erode' },
+                    { name: 'Why Salem Learners?', href: '/salem' },
+                    { name: 'Why Tirupur Learners?', href: '/tiruppur' },
+                    { name: 'Why Namakkal Learners?', href: '/namakkal' },
+                    { name: 'Why Coimbatore Learners?', href: '/coimbatore' },
                 ]
             }
         ]
@@ -62,9 +62,9 @@ const navLinks: NavLink[] = [
         name: 'FACILITIES',
         href: '/facilities',
         submenu: [
-            { name: 'Class Room', href: '/classroom' },
-            { name: 'Library', href: '/library' },
-            { name: 'Lab', href: '/lab' },
+            { name: 'Learning Studio', href: '/classroom' },
+            { name: 'Learning Commons', href: '/library' },
+            { name: 'Learning Lab', href: '/lab' },
             { name: 'Food Court', href: '/food-court' },
             { name: 'Hostel', href: '/hostel' },
             { name: 'Ambulance Service', href: '/ambulance-service' },
@@ -78,7 +78,7 @@ const navLinks: NavLink[] = [
         name: 'OTHERS',
         href: '/others',
         submenu: [
-            { name: 'Faculty', href: '/faculty' },
+            { name: 'Senior Learners', href: '/faculty' },
             { name: 'NAAC', href: '/NAAC' },
             { name: 'Privacy Policy', href: '/privacy-policy' },
             { name: 'Academic Calendar', href: '/academic-calendar' },

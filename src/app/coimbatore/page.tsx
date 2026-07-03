@@ -53,8 +53,8 @@ export default function CoimbatorePage() {
             a: "While nursing focuses on patient care and bedside support, Allied Health Sciences covers specialised diagnostic and therapeutic roles like physiotherapy, lab testing, radiology imaging, and cardiac monitoring. Both are valuable healthcare careers, but AHS offers more specialisation options.",
           },
           {
-            q: "Does JKKN AHS provide hostel for Coimbatore students?",
-            a: "Yes, JKKN AHS provides separate hostel facilities for boys and girls. Students from Coimbatore can also opt for daily commute as the campus is just 2-2.5 hours away. College transport services are available.",
+            q: "Does JKKN AHS provide hostel for Coimbatore learners?",
+            a: "Yes, JKKN AHS provides separate hostel facilities for boys and girls. Learners from Coimbatore can also opt for daily commute as the campus is just 2-2.5 hours away. College transport services are available.",
           },
           {
             q: "How can I apply for admission at JKKN AHS?",
@@ -62,7 +62,7 @@ export default function CoimbatorePage() {
           },
           {
             q: "What are the fees for BSc allied health science in Tamil Nadu?",
-            a: "BSc Allied Health Science fees in Tamil Nadu typically range from ₹50,000 to ₹2,00,000 per year depending on the college and course. At JKKN College of Allied Health Sciences, fees are competitively priced with scholarship options available for meritorious students. Contact the admission office at +91 9345855001 for the latest fee structure.",
+            a: "BSc Allied Health Science fees in Tamil Nadu typically range from ₹50,000 to ₹2,00,000 per year depending on the college and course. At JKKN College of Allied Health Sciences, fees are competitively priced with scholarship options available for meritorious learners. Contact the admission office at +91 9345855001 for the latest fee structure.",
           },
           {
             q: "What is the salary after BSc allied health science?",
@@ -85,8 +85,8 @@ export default function CoimbatorePage() {
             a: "Coimbatore is Tamil Nadu's second-largest medical hub with 40+ multi-specialty hospitals including KMCH, PSG Hospital, Ganga Hospital, and Sri Ramakrishna Hospital. JKKN AHS graduates benefit from this ecosystem through placement partnerships, clinical exposure visits, guest lectures from Coimbatore specialists, and a ready job market just 2 hours from campus. Many JKKN alumni work across Coimbatore's healthcare sector.",
           },
           {
-            q: "Does proximity to Coimbatore International Airport benefit JKKN AHS students?",
-            a: "Yes, Coimbatore International Airport (CJB) — just ~80 km from campus — is a significant advantage for international placements. JKKN AHS has placed students at NHS UK, Cleveland Clinic Abu Dhabi, and hospitals in Singapore and Saudi Arabia. The airport connection makes international career transitions smooth, with direct flights to major cities and Gulf destinations.",
+            q: "Does proximity to Coimbatore International Airport benefit JKKN AHS learners?",
+            a: "Yes, Coimbatore International Airport (CJB) — just ~80 km from campus — is a significant advantage for international placements. JKKN AHS has placed learners at NHS UK, Cleveland Clinic Abu Dhabi, and hospitals in Singapore and Saudi Arabia. The airport connection makes international career transitions smooth, with direct flights to major cities and Gulf destinations.",
           },
         ]} />
         <ExploreCitiesSection />
@@ -263,7 +263,7 @@ function WhyChooseSection() {
     {
       icon: Target,
       title: "Accessible Admission",
-      desc: "Less competitive admission than MBBS/BDS — accessible for more students",
+      desc: "Less competitive admission than MBBS/BDS — accessible for more learners",
     },
     {
       icon: Globe,
@@ -281,7 +281,7 @@ function WhyChooseSection() {
     <section className="bg-white py-14 px-4">
       <div className="max-w-5xl mx-auto text-center">
         <h2 className="text-2xl sm:text-3xl font-black text-gray-900 mb-4">
-          Why Coimbatore Students Choose JKKN AHS
+          Why Coimbatore Learners Choose JKKN AHS
         </h2>
         <p className="text-gray-500 max-w-2xl mx-auto mb-3 text-sm sm:text-base leading-relaxed">
           While Coimbatore has many colleges, JKKN offers a distinct advantage: world-class
@@ -308,7 +308,7 @@ function WhyChooseSection() {
         </div>
 
         <p className="text-center text-sm text-gray-500 mt-8">
-          Students from nearby cities also choose JKKN AHS:{" "}
+          Learners from nearby cities also choose JKKN AHS:{" "}
           <a href="/erode" className="text-[#006837] hover:underline font-medium">Erode (~22 km)</a>,{" "}
           <a href="/salem" className="text-[#006837] hover:underline font-medium">Salem (~58 km)</a>,{" "}
           <a href="/tiruppur" className="text-[#006837] hover:underline font-medium">Tiruppur (~67 km)</a>, and{" "}
@@ -490,7 +490,7 @@ function PlacementHighlights() {
           Placement Highlights
         </h2>
         <p className="text-gray-500 text-sm mb-3">
-          92%+ placement rate — our students work at India&apos;s and the world&apos;s top hospitals
+          92%+ placement rate — our learners work at India&apos;s and the world&apos;s top hospitals
         </p>
         <div className="w-12 h-1 bg-[#7cb983] rounded mx-auto mb-10"></div>
 
@@ -618,13 +618,13 @@ function FacilitiesSection() {
   const facilities = [
     {
       icon: Microscope,
-      title: "Modern Labs",
-      desc: "State-of-the-art laboratories and smart classrooms",
+      title: "Modern Learning Labs",
+      desc: "State-of-the-art learning labs and smart learning studios",
     },
     {
       icon: BookOpen,
-      title: "Digital Library",
-      desc: "Well-stocked library with digital access and journals",
+      title: "Digital Learning Commons",
+      desc: "Well-stocked learning commons with digital access and journals",
     },
     {
       icon: Home,
@@ -694,7 +694,7 @@ function CampusGallerySection() {
     { src: "/images/boys-hostel.png", alt: "Boys hostel at JKKN AHS — allied health science college near Coimbatore" },
     { src: "/images/girls-hostel.png", alt: "Girls hostel at JKKN AHS — allied health science college near Coimbatore" },
     { src: "/allied health science main image6.png", alt: "Campus life at JKKN College of Allied Health Sciences near Coimbatore" },
-    { src: "/allied health science main image7.png", alt: "Students at JKKN Allied Health Sciences campus near Coimbatore" },
+    { src: "/allied health science main image7.png", alt: "Learners at JKKN Allied Health Sciences campus near Coimbatore" },
     { src: "/allied health science main image8.png", alt: "JKKN AHS facilities and campus infrastructure near Coimbatore" },
   ];
 
@@ -735,15 +735,15 @@ function CompetitiveAdvantageSection() {
     { title: "Competitive Fees vs Coimbatore Premium", desc: "Get quality allied health education at significantly lower costs compared to Coimbatore-based colleges. Lower cost of living in Komarapalayam means your total education expense is much more affordable." },
     { title: "Equal or Better Placement Outcomes", desc: "85%+ placement rate with 60+ recruiters including international opportunities. JKKN graduates work at NHS UK, Cleveland Clinic Abu Dhabi, Apollo, TCS, and more." },
     { title: "9 Specialized BSc Programmes", desc: "Cardiac Technology, Dialysis, Radiology, OT & Anaesthesia, Respiratory Therapy, Physician Assistant, Critical Care, Medical Records, and Emergency Care — comprehensive options under one roof." },
-    { title: "Own Teaching Hospital — Clinical Exposure from Day 1", desc: "500+ bed multi-specialty teaching hospital on campus. Students get hands-on clinical training from Year 1, a significant advantage for healthcare career readiness." },
-    { title: "Scholarships for Meritorious Students", desc: "Merit-based scholarships available for deserving students. Combined with competitive fees and lower living costs, JKKN offers excellent return on educational investment." },
+    { title: "Own Teaching Hospital — Clinical Exposure from Day 1", desc: "500+ bed multi-specialty teaching hospital on campus. Learners get hands-on clinical training from Year 1, a significant advantage for healthcare career readiness." },
+    { title: "Scholarships for Meritorious Learners", desc: "Merit-based scholarships available for deserving learners. Combined with competitive fees and lower living costs, JKKN offers excellent return on educational investment." },
   ];
 
   return (
     <section className="bg-white py-14 px-4">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-2xl sm:text-3xl font-black text-gray-900 mb-3 text-center">
-          Why Coimbatore Students Choose JKKN AHS
+          Why Coimbatore Learners Choose JKKN AHS
         </h2>
         <p className="voice-answer text-gray-500 text-sm mb-3 text-center">
           Quality education with better value and strong career outcomes

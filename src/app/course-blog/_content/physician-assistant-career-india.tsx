@@ -5,7 +5,7 @@ export default function PhysicianAssistantContent() {
     <>
       <p>
         Physician Assistant (PA) is one of the most misunderstood careers in India.
-        Most students think it is "just a nursing alternative." It is not. PAs are
+        Most learners think it is "just a nursing alternative." It is not. PAs are
         clinical extenders — trained to take histories, perform examinations, assist in
         procedures, write prescriptions under supervision, and counsel patients. India's
         corporate hospital chains are quietly hiring{" "}
@@ -213,15 +213,15 @@ export default function PhysicianAssistantContent() {
         </li>
         <li>
           Excellent infrastructure —{" "}
-          <Link href="/lab">simulation labs</Link>,{" "}
-          <Link href="/library">e-library</Link>,{" "}
+          <Link href="/lab">simulation learning labs</Link>,{" "}
+          <Link href="/library">digital learning commons</Link>,{" "}
           <Link href="/hostel">on-campus hostel</Link>,{" "}
           <Link href="/transport">transport</Link>
         </li>
       </ul>
       <p>
         Read the full{" "}
-        <Link href="/physician-assistant">B.Sc Physician Assistant curriculum</Link> or
+        <Link href="/physician-assistant">B.Sc Physician Assistant learning framework</Link> or
         visit{" "}
         <Link href="/admissions/physician-assistant">admissions for 2026-27</Link>{" "}
         for eligibility, fee structure, and seat availability.

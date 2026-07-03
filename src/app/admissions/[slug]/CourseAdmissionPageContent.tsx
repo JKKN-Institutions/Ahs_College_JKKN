@@ -272,7 +272,7 @@ function BestForCallout({ course }: { course: AdmissionCourse }) {
                 </div>
                 <div className="mt-5 text-center">
                     <Link href={course.coursePageHref} className="inline-flex items-center gap-2 text-sm font-bold text-[#0b6d41] hover:underline">
-                        <GraduationCap className="w-4 h-4" /> View full course page (curriculum, syllabus, faculty) →
+                        <GraduationCap className="w-4 h-4" /> View full course page (learning framework, learning pathway, senior learners) →
                     </Link>
                 </div>
             </div>
@@ -398,8 +398,8 @@ function SyllabusSection({ course }: { course: AdmissionCourse }) {
         <section className="py-12 md:py-16 bg-white">
             <div className="max-w-6xl mx-auto px-4">
                 <div className="text-center mb-10">
-                    <span className="text-[#0b6d41] font-bold tracking-widest uppercase text-xs mb-2 p-1 bg-[#0b6d41]/10 rounded inline-block">4-Year Curriculum</span>
-                    <h2 className="text-2xl md:text-3xl font-black text-[#0b6d41] mt-2">Syllabus & Curriculum Overview</h2>
+                    <span className="text-[#0b6d41] font-bold tracking-widest uppercase text-xs mb-2 p-1 bg-[#0b6d41]/10 rounded inline-block">4-Year Learning Framework</span>
+                    <h2 className="text-2xl md:text-3xl font-black text-[#0b6d41] mt-2">Learning Pathway & Learning Framework Overview</h2>
                     <p className="text-sm text-gray-600 mt-2 max-w-2xl mx-auto">Year-by-year breakdown of topics covered — 3 years academic + 1 year mandatory clinical internship.</p>
                 </div>
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">

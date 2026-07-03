@@ -151,7 +151,7 @@ export default function CourseBlogLayout({ post, children }: Props) {
               Ready to start your {post.courseName} journey?
             </h2>
             <p className="text-white/90 mb-6 leading-relaxed max-w-2xl">
-              JKKN College of Allied Health Sciences offers state-of-the-art labs,
+              JKKN College of Allied Health Sciences offers state-of-the-art learning labs,
               clinical training in partner hospitals, and 92% placement support.
               Admissions for 2026-27 are now open.
             </p>
@@ -291,12 +291,12 @@ export default function CourseBlogLayout({ post, children }: Props) {
               </li>
               <li>
                 <Link href="/lab" className="text-gray-700 hover:text-[#0b6d41] flex items-center gap-1.5">
-                  → Laboratory facilities
+                  → Learning lab facilities
                 </Link>
               </li>
               <li>
                 <Link href="/library" className="text-gray-700 hover:text-[#0b6d41] flex items-center gap-1.5">
-                  → Library
+                  → Learning Commons
                 </Link>
               </li>
               <li>

@@ -96,7 +96,7 @@ export default async function AdminCollegesPage() {
                   { label: 'Blogs', value: blogs },
                   { label: 'Events', value: events },
                   { label: 'Notices', value: notices },
-                  { label: 'Faculty', value: faculty },
+                  { label: 'Senior Learners', value: faculty },
                 ].map(({ label, value }) => (
                   <div key={label} className="bg-gray-50 rounded-xl py-2">
                     <p className="text-base font-bold text-gray-800">{value}</p>

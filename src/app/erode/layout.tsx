@@ -97,10 +97,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "Does JKKN AHS provide hostel for Erode students?",
+      name: "Does JKKN AHS provide hostel for Erode learners?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes, JKKN AHS provides separate hostel facilities for boys and girls. Students from Erode can also opt for daily commute as the campus is just 35-40 minutes away. College transport services are available.",
+        text: "Yes, JKKN AHS provides separate hostel facilities for boys and girls. Learners from Erode can also opt for daily commute as the campus is just 35-40 minutes away. College transport services are available.",
       },
     },
     {
@@ -116,7 +116,7 @@ const faqSchema = {
       name: "What are the fees for BSc allied health science in Tamil Nadu?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "BSc Allied Health Science fees in Tamil Nadu typically range from ₹50,000 to ₹2,00,000 per year depending on the college and course. At JKKN College of Allied Health Sciences, fees are competitively priced with scholarship options available for meritorious students. Contact the admission office at +91 9345855001 for the latest fee structure.",
+        text: "BSc Allied Health Science fees in Tamil Nadu typically range from ₹50,000 to ₹2,00,000 per year depending on the college and course. At JKKN College of Allied Health Sciences, fees are competitively priced with scholarship options available for meritorious learners. Contact the admission office at +91 9345855001 for the latest fee structure.",
       },
     },
     {
@@ -132,7 +132,7 @@ const faqSchema = {
       name: "How many allied health science colleges are there near Erode?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Erode district has a limited number of allied health science colleges. JKKN College of Allied Health Sciences, located just ~22 km from Erode on NH-544, stands out with 9 BSc programmes, NAAC approval, and an 85%+ placement rate — making it one of the top choices for Erode students.",
+        text: "Erode district has a limited number of allied health science colleges. JKKN College of Allied Health Sciences, located just ~22 km from Erode on NH-544, stands out with 9 BSc programmes, NAAC approval, and an 85%+ placement rate — making it one of the top choices for Erode learners.",
       },
     },
     {
@@ -153,10 +153,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "Can Erode students commute daily to JKKN AHS?",
+      name: "Can Erode learners commute daily to JKKN AHS?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Absolutely. At just ~22 km via NH-544, many Erode students commute daily. The journey takes only 35-40 minutes by bus or bike. JKKN also provides dedicated college transport services with multiple pickup points in Erode city. Hostel facilities are available for those who prefer to stay on campus.",
+        text: "Absolutely. At just ~22 km via NH-544, many Erode learners commute daily. The journey takes only 35-40 minutes by bus or bike. JKKN also provides dedicated college transport services with multiple pickup points in Erode city. Hostel facilities are available for those who prefer to stay on campus.",
       },
     },
     {
@@ -364,7 +364,7 @@ const howToSchema = {
     { "@type": "HowToStep", position: 2, name: "Apply Online", text: "Visit https://www.jkkn.ai/apply/jkkn-admission-2026 and fill out the online application form with your personal and academic details." },
     { "@type": "HowToStep", position: 3, name: "Submit Documents", text: "Upload or submit 12th mark sheet, community certificate, Aadhaar card, passport-size photos, and transfer certificate." },
     { "@type": "HowToStep", position: 4, name: "Attend Counselling", text: "Attend the admission counselling session at JKKN campus or online. Select your preferred BSc programme from 9 available options." },
-    { "@type": "HowToStep", position: 5, name: "Pay Fees & Confirm", text: "Complete fee payment to confirm your admission. Scholarship options are available for meritorious students." },
+    { "@type": "HowToStep", position: 5, name: "Pay Fees & Confirm", text: "Complete fee payment to confirm your admission. Scholarship options are available for meritorious learners." },
     { "@type": "HowToStep", position: 6, name: "Join Campus", text: "Report to JKKN AHS campus at Komarapalayam on the designated date. Hostel and transport facilities available." },
   ],
 };

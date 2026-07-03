@@ -49,7 +49,7 @@ export default function AmbulanceService() {
                     {/* Content Section */}
                     <div className="max-w-5xl space-y-6">
                         <p className="text-gray-700 text-base sm:text-lg leading-relaxed text-justify">
-                            JKKN Educational Institutions, we are dedicated to delivering excellent education to our students, staff, and community. In line with our pledge to the community, we take pride in presenting our exceptional ambulance services, available round-the-clock for emergency responses and medical transportation.
+                            JKKN Educational Institutions, we are dedicated to delivering excellent education to our learners, team members, and community. In line with our pledge to the community, we take pride in presenting our exceptional ambulance services, available round-the-clock for emergency responses and medical transportation.
                         </p>
 
                         <p className="text-gray-700 text-base sm:text-lg leading-relaxed text-justify">
@@ -69,7 +69,7 @@ export default function AmbulanceService() {
                             },
                             {
                                 q: "Is the JKKN ambulance service available 24 hours?",
-                                a: "Yes. The JKKN ambulance service operates around the clock, providing 24-hour emergency medical transportation and response for students, staff, and the campus community."
+                                a: "Yes. The JKKN ambulance service operates around the clock, providing 24-hour emergency medical transportation and response for learners, team members, and the campus community."
                             },
                             {
                                 q: "What medical emergencies does the JKKN ambulance handle?",

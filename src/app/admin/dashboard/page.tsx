@@ -76,7 +76,7 @@ export default async function AdminDashboard() {
       href: '/admin/notices',
     },
     {
-      label: 'Faculty',
+      label: 'Senior Learners',
       total: facultyCount ?? 0,
       sub: 'active members',
       icon: Users,
@@ -161,7 +161,7 @@ export default async function AdminDashboard() {
             className="flex items-center gap-2 bg-rose-500 text-white text-sm font-medium px-4 py-2.5 rounded-xl hover:bg-rose-600 transition"
           >
             <Plus className="w-4 h-4" />
-            Add Faculty
+            Add Senior Learner
           </Link>
         </div>
       </div>

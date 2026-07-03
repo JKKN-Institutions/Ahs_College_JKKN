@@ -19,7 +19,7 @@ const scholarships = [
     amount: "₹5,000 – ₹10,000",
     period: "per year",
     highlights: [
-      "For BC / MBC / DNC / BCM category students",
+      "For BC / MBC / DNC / BCM category learners",
       "Applicable under both MQ & GQ",
       "All Allied Health Sciences branches eligible",
       "Awarded based on academic merit",
@@ -37,7 +37,7 @@ const scholarships = [
     amount: "₹1,000",
     period: "per month",
     highlights: [
-      "Open to all community students",
+      "Open to all community learners",
       "Must have studied in Tamil Medium",
       "Govt or Govt Aided School (Class 6–12)",
       "Available for both Boys & Girls",
@@ -74,13 +74,13 @@ export default function ScholarshipsPage() {
             >
               <div className="inline-flex items-center gap-2 bg-white/10 text-white text-sm font-medium px-4 py-1.5 rounded-full mb-4">
                 <Award className="w-4 h-4" />
-                Academic Year 2026-27
+                Learning Year 2026-27
               </div>
               <h1 className="text-3xl md:text-4xl font-bold text-white mb-3">
                 Scholarships
               </h1>
               <p className="text-white/80 text-base md:text-lg max-w-2xl mx-auto">
-                Financial support available for BSc Allied Health Sciences students at JKKN College of Allied Health Sciences.
+                Financial support available for BSc Allied Health Sciences learners at JKKN College of Allied Health Sciences.
               </p>
             </motion.div>
           </div>

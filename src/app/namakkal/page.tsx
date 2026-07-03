@@ -53,8 +53,8 @@ export default function NamakkalPage() {
             a: "While nursing focuses on patient care and bedside support, Allied Health Sciences covers specialised diagnostic and therapeutic roles like physiotherapy, lab testing, radiology imaging, and cardiac monitoring. Both are valuable healthcare careers, but AHS offers more specialisation options.",
           },
           {
-            q: "Does JKKN AHS provide hostel for Namakkal students?",
-            a: "Yes, JKKN AHS provides separate hostel facilities for boys and girls. Students from Namakkal can also opt for daily commute as the campus is just 15-20 minutes away. College transport services are available.",
+            q: "Does JKKN AHS provide hostel for Namakkal learners?",
+            a: "Yes, JKKN AHS provides separate hostel facilities for boys and girls. Learners from Namakkal can also opt for daily commute as the campus is just 15-20 minutes away. College transport services are available.",
           },
           {
             q: "How can I apply for admission at JKKN AHS?",
@@ -62,7 +62,7 @@ export default function NamakkalPage() {
           },
           {
             q: "What are the fees for BSc allied health science in Tamil Nadu?",
-            a: "BSc Allied Health Science fees in Tamil Nadu typically range from ₹50,000 to ₹2,00,000 per year depending on the college and course. At JKKN College of Allied Health Sciences, Government Quota (GQ) fees are as per Govt norms. Management Quota (MQ) annual fees range from ₹60,000 (Medical Record Science) to ₹1,70,000 (Cardiac & Operation Theatre Technology). Scholarship options are available for meritorious students. Contact the admission office at +91 9345855001 for details.",
+            a: "BSc Allied Health Science fees in Tamil Nadu typically range from ₹50,000 to ₹2,00,000 per year depending on the college and course. At JKKN College of Allied Health Sciences, Government Quota (GQ) fees are as per Govt norms. Management Quota (MQ) annual fees range from ₹60,000 (Medical Record Science) to ₹1,70,000 (Cardiac & Operation Theatre Technology). Scholarship options are available for meritorious learners. Contact the admission office at +91 9345855001 for details.",
           },
           {
             q: "What is the salary after BSc allied health science?",
@@ -70,7 +70,7 @@ export default function NamakkalPage() {
           },
           {
             q: "How many allied health science colleges are there in Namakkal?",
-            a: "Namakkal district has several allied health science colleges. JKKN College of Allied Health Sciences, located in Komarapalayam (Namakkal district), offers 9 BSc programmes with NAAC approval and an 85%+ placement rate — making it the preferred choice for Namakkal district students.",
+            a: "Namakkal district has several allied health science colleges. JKKN College of Allied Health Sciences, located in Komarapalayam (Namakkal district), offers 9 BSc programmes with NAAC approval and an 85%+ placement rate — making it the preferred choice for Namakkal district learners.",
           },
           {
             q: "What are the eligibility requirements for allied health science courses?",
@@ -82,11 +82,11 @@ export default function NamakkalPage() {
           },
           {
             q: "How well connected is JKKN AHS campus by public transport?",
-            a: "JKKN AHS campus at Komarapalayam is excellently connected by public transport. It sits directly on NH-544 (Salem-Coimbatore Highway) with frequent TNSTC government buses and private services. Tiruchengode bus stand is ~15 km away with regular local buses. Students from Erode, Salem, Namakkal town, and surrounding areas have multiple daily bus options. The campus also provides its own transport services.",
+            a: "JKKN AHS campus at Komarapalayam is excellently connected by public transport. It sits directly on NH-544 (Salem-Coimbatore Highway) with frequent TNSTC government buses and private services. Tiruchengode bus stand is ~15 km away with regular local buses. Learners from Erode, Salem, Namakkal town, and surrounding areas have multiple daily bus options. The campus also provides its own transport services.",
           },
           {
-            q: "Do Namakkal district students get any special benefits at JKKN AHS?",
-            a: "While JKKN AHS welcomes students from all districts equally, Namakkal district students benefit from proximity advantages: easy daily commute from nearby towns, lower transportation costs, ability to stay at home and save on hostel fees, strong local community support, and the option to do clinical rotations closer to home. The college also participates in government scholarship programmes available to all eligible Tamil Nadu students.",
+            q: "Do Namakkal district learners get any special benefits at JKKN AHS?",
+            a: "While JKKN AHS welcomes learners from all districts equally, Namakkal district learners benefit from proximity advantages: easy daily commute from nearby towns, lower transportation costs, ability to stay at home and save on hostel fees, strong local community support, and the option to do clinical rotations closer to home. The college also participates in government scholarship programmes available to all eligible Tamil Nadu learners.",
           },
         ]} />
         <ExploreCitiesSection />
@@ -262,7 +262,7 @@ function WhyChooseSection() {
     {
       icon: Target,
       title: "Accessible Admission",
-      desc: "Less competitive admission than MBBS/BDS — accessible for more students",
+      desc: "Less competitive admission than MBBS/BDS — accessible for more learners",
     },
     {
       icon: Globe,
@@ -280,12 +280,12 @@ function WhyChooseSection() {
     <section className="bg-white py-14 px-4">
       <div className="max-w-5xl mx-auto text-center">
         <h2 className="text-2xl sm:text-3xl font-black text-gray-900 mb-4">
-          Why Namakkal Students Choose JKKN AHS
+          Why Namakkal Learners Choose JKKN AHS
         </h2>
         <p className="text-gray-500 max-w-2xl mx-auto mb-3 text-sm sm:text-base leading-relaxed">
-          Being in the home district of JKKN, Namakkal students enjoy the closest
+          Being in the home district of JKKN, Namakkal learners enjoy the closest
           proximity to the campus. There is no need for hostel accommodation — daily
-          commute is easy and convenient. Students can stay at home and still access
+          commute is easy and convenient. Learners can stay at home and still access
           world-class education.
         </p>
         <div className="w-12 h-1 bg-[#7cb983] rounded mx-auto mb-10"></div>
@@ -307,7 +307,7 @@ function WhyChooseSection() {
         </div>
 
         <p className="text-center text-sm text-gray-500 mt-8">
-          Students from nearby cities also choose JKKN AHS:{" "}
+          Learners from nearby cities also choose JKKN AHS:{" "}
           <a href="/erode" className="text-[#006837] hover:underline font-medium">Erode (~22 km)</a>,{" "}
           <a href="/salem" className="text-[#006837] hover:underline font-medium">Salem (~58 km)</a>,{" "}
           <a href="/tiruppur" className="text-[#006837] hover:underline font-medium">Tiruppur (~67 km)</a>, and{" "}
@@ -489,7 +489,7 @@ function PlacementHighlights() {
           Placement Highlights
         </h2>
         <p className="text-gray-500 text-sm mb-3">
-          92%+ placement rate — our students work at India&apos;s and the world&apos;s top hospitals
+          92%+ placement rate — our learners work at India&apos;s and the world&apos;s top hospitals
         </p>
         <div className="w-12 h-1 bg-[#7cb983] rounded mx-auto mb-10"></div>
 
@@ -617,13 +617,13 @@ function FacilitiesSection() {
   const facilities = [
     {
       icon: Microscope,
-      title: "Modern Labs",
-      desc: "State-of-the-art laboratories and smart classrooms",
+      title: "Modern Learning Labs",
+      desc: "State-of-the-art learning labs and smart learning studios",
     },
     {
       icon: BookOpen,
-      title: "Digital Library",
-      desc: "Well-stocked library with digital access and journals",
+      title: "Digital Learning Commons",
+      desc: "Well-stocked learning commons with digital access and journals",
     },
     {
       icon: Home,
@@ -693,7 +693,7 @@ function CampusGallerySection() {
     { src: "/images/boys-hostel.png", alt: "Boys hostel at JKKN AHS — allied health science college in Namakkal" },
     { src: "/images/girls-hostel.png", alt: "Girls hostel at JKKN AHS — allied health science college in Namakkal" },
     { src: "/allied health science main image6.png", alt: "Campus life at JKKN College of Allied Health Sciences in Namakkal" },
-    { src: "/allied health science main image7.png", alt: "Students at JKKN Allied Health Sciences campus in Namakkal" },
+    { src: "/allied health science main image7.png", alt: "Learners at JKKN Allied Health Sciences campus in Namakkal" },
     { src: "/allied health science main image8.png", alt: "JKKN AHS facilities and campus infrastructure in Namakkal" },
   ];
 
@@ -735,14 +735,14 @@ function CompetitiveAdvantageSection() {
     { title: "9 BSc Programmes — Widest Selection in the District", desc: "From Cardiac Technology to Emergency Care, JKKN offers the most diverse range of allied health programmes in Namakkal district." },
     { title: "85%+ Placement with International Opportunities", desc: "Our graduates secure positions in top hospitals across India, Gulf countries, UK (NHS), and Australia. 60+ recruiting partners ensure strong career outcomes." },
     { title: "74+ Years of Institutional Legacy", desc: "Founded in 1952, JKKN Institutions brings over seven decades of educational excellence. A trusted name for Namakkal families." },
-    { title: "Complete Campus Ecosystem", desc: "500+ bed teaching hospital, separate hostels for boys and girls, transport services, library, labs, food court, and Wi-Fi — everything under one roof." },
+    { title: "Complete Campus Ecosystem", desc: "500+ bed teaching hospital, separate hostels for boys and girls, transport services, learning commons, learning labs, food court, and Wi-Fi — everything under one roof." },
   ];
 
   return (
     <section className="bg-white py-14 px-4">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-2xl sm:text-3xl font-black text-gray-900 mb-3 text-center">
-          Why Namakkal Students Choose JKKN AHS
+          Why Namakkal Learners Choose JKKN AHS
         </h2>
         <p className="voice-answer text-gray-500 text-sm mb-3 text-center">
           Namakkal&apos;s closest and most trusted allied health sciences campus

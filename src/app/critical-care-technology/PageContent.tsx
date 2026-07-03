@@ -103,11 +103,11 @@ export default function CriticalCareTechnology() {
                 {/* Internal Cross-Links */}
                 <section className="py-12 px-4 md:px-8 lg:px-16 bg-white/50">
                   <div className="max-w-6xl mx-auto">
-                    <h2 className="text-xl font-semibold text-[#0b6d41] mb-6">Campus Facilities for Students</h2>
+                    <h2 className="text-xl font-semibold text-[#0b6d41] mb-6">Campus Facilities for Learners</h2>
                     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
-                      <a href="/lab" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors text-center">Laboratories</a>
-                      <a href="/library" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors text-center">Library</a>
-                      <a href="/classroom" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors text-center">Classrooms</a>
+                      <a href="/lab" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors text-center">Learning Labs</a>
+                      <a href="/library" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors text-center">Learning Commons</a>
+                      <a href="/classroom" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors text-center">Learning Studios</a>
                       <a href="/hostel" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors text-center">Hostel</a>
                       <a href="/transport" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors text-center">Transport</a>
                       <a href="/food-court" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors text-center">Food Court</a>
@@ -159,12 +159,12 @@ export default function CriticalCareTechnology() {
                 <h2 className="text-xl sm:text-2xl font-bold text-[#002309] mb-6">Campus Facilities</h2>
                 <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
                   {[
-                    { name: 'Library', href: '/library' },
-                    { name: 'Laboratories', href: '/lab' },
+                    { name: 'Learning Commons', href: '/library' },
+                    { name: 'Learning Labs', href: '/lab' },
                     { name: 'Hostel', href: '/hostel' },
                     { name: 'Transport', href: '/transport' },
                     { name: 'Food Court', href: '/food-court' },
-                    { name: 'Classrooms', href: '/classroom' },
+                    { name: 'Learning Studios', href: '/classroom' },
                     { name: 'Wi-Fi Campus', href: '/wifi' },
                     { name: 'Ambulance', href: '/ambulance-service' },
                     { name: 'Bank & Post Office', href: '/bank-post-office' },
@@ -212,7 +212,7 @@ function HeroSection() {
                             }}
                             className="px-8 py-3.5 bg-white text-[#0b6d41] border border-[#0b6d41]/20 rounded-full font-bold shadow-lg hover:bg-gray-50 transition-all"
                         >
-                            View Curriculum
+                            View Learning Framework
                         </button>
                     </div>
                 </div>
@@ -283,7 +283,7 @@ function AboutSection() {
                             B.Sc Critical Care Technology is a specialized undergraduate program designed to train healthcare professionals in the management and operation of intensive care units (ICUs), emergency care, and life support systems. This program combines comprehensive theoretical knowledge with extensive clinical training, preparing Learners to work alongside intensivists, anesthesiologists, and critical care specialists.
                         </p>
                         <p>
-                            The curriculum covers critical care medicine fundamentals, ventilator management, hemodynamic monitoring, renal replacement therapy, point-of-care testing, advanced cardiac life support (ACLS), and trauma care protocols. Learners gain expertise in operating sophisticated life-saving equipment.
+                            The learning framework covers critical care medicine fundamentals, ventilator management, hemodynamic monitoring, renal replacement therapy, point-of-care testing, advanced cardiac life support (ACLS), and trauma care protocols. Learners gain expertise in operating sophisticated life-saving equipment.
                         </p>
                         <p>
                             With the increasing demand for intensive care services globally, skilled critical care technologists are essential in hospitals, trauma centers, and emergency care facilities. Our program ensures graduates are well-equipped with cutting-edge critical care competencies.
@@ -435,9 +435,9 @@ function SyllabusSection() {
         <section id="academic-curriculum" className="py-24 bg-white">
             <div className="max-w-7xl mx-auto px-4">
                 <div className="text-center mb-12">
-                    <span className="text-[#0b6d41] font-bold tracking-widest uppercase text-xs mb-2">Academic Curriculum</span>
-                    <h2 className="text-3xl font-black text-[#0b6d41]">Program Structure & Syllabus</h2>
-                    <p className="text-gray-500 mt-2">Comprehensive curriculum with strong foundation in critical care sciences and extensive practical training</p>
+                    <span className="text-[#0b6d41] font-bold tracking-widest uppercase text-xs mb-2">Academic Learning Framework</span>
+                    <h2 className="text-3xl font-black text-[#0b6d41]">Program Structure & Learning Pathway</h2>
+                    <p className="text-gray-500 mt-2">Comprehensive learning framework with strong foundation in critical care sciences and extensive practical training</p>
                 </div>
 
                 <div className="mb-12 overflow-x-auto px-4 md:px-0">

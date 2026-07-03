@@ -210,12 +210,12 @@ export default function DialysisTechnologyContent() {
           Strong placement support and on-campus{" "}
           <Link href="/hostel">hostel</Link>,{" "}
           <Link href="/transport">transport</Link>, and{" "}
-          <Link href="/lab">advanced labs</Link>
+          <Link href="/lab">advanced learning labs</Link>
         </li>
       </ul>
       <p>
         Read the full{" "}
-        <Link href="/dialysis-technology">B.Sc Renal Dialysis Technology curriculum</Link>{" "}
+        <Link href="/dialysis-technology">B.Sc Renal Dialysis Technology learning framework</Link>{" "}
         or visit{" "}
         <Link href="/admissions/dialysis-technology">admissions for 2026-27</Link>{" "}
         for eligibility, fees, and the application process.

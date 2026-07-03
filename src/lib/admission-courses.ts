@@ -75,7 +75,7 @@ export const admissionCourses: AdmissionCourse[] = [
         avgPackage: "₹4 – 6 LPA",
         salaryRange: "Entry: ₹2.5 – 4 LPA · Senior (5+ yrs): ₹6 – 12 LPA · International (Gulf/UK): ₹15 – 30 LPA",
         description: "Train as a Cardiac Care Technologist — operate ECG, Echo, TMT, Cath Lab equipment and assist cardiologists in diagnostics and interventional procedures.",
-        longDescription: "B.Sc Cardiac Technology at JKKN College is a 4-year program (3 years academic + 1 year clinical internship) that trains students to become certified Cardiac Care Technologists. Students learn to operate ECG machines, perform Echocardiography (TTE, TEE, Stress Echo), conduct Treadmill Tests (TMT), and assist cardiologists in the Cath Lab during angiograms, angioplasties, pacemaker implantations, and electrophysiology studies. The curriculum is affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai. Clinical training happens at JKKN's 500+ bed multi-specialty hospital with rotations across Cardiology OPD, CTVS, ICCU, and Cath Lab.",
+        longDescription: "B.Sc Cardiac Technology at JKKN College is a 4-year program (3 years academic + 1 year clinical internship) that trains learners to become certified Cardiac Care Technologists. Learners learn to operate ECG machines, perform Echocardiography (TTE, TEE, Stress Echo), conduct Treadmill Tests (TMT), and assist cardiologists in the Cath Lab during angiograms, angioplasties, pacemaker implantations, and electrophysiology studies. The curriculum is affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai. Clinical training happens at JKKN's 500+ bed multi-specialty hospital with rotations across Cardiology OPD, CTVS, ICCU, and Cath Lab.",
         careerScope: "Cardiac Technology is one of the highest-paying allied health specialisations in India. With cardiovascular disease being the leading cause of mortality globally, demand for cardiac technologists is growing at 14–18% CAGR in India and 20–25% globally. Top hospitals — Apollo, Fortis, MIOT, Madras Medical Mission, Narayana Health, Manipal, and Kauvery — actively recruit fresh BSc Cardiac graduates. International opportunities are excellent: UK (NHS), UAE (Cleveland Clinic Abu Dhabi, NMC, Aster), Saudi Arabia (King Faisal Specialist Hospital), and Singapore. Senior cardiac technologists with 5+ years of experience earn ₹6–12 LPA in India and ₹15–30 LPA abroad. Specialised pathways include Cath Lab Specialist, EP Lab Specialist, Pediatric Cardiac Tech, and Perfusion Technology.",
         eligibility: [
             "+2 with Physics, Chemistry, Biology (PCB)",
@@ -91,7 +91,7 @@ export const admissionCourses: AdmissionCourse[] = [
         ],
         roles: ["Cardiac Care Technologist", "Cath Lab Technologist", "Echo Technician", "TMT Technician", "EP Lab Specialist", "ICCU Technician", "Pacemaker Technologist", "Perfusionist (with further study)"],
         recruiters: ["Apollo Hospitals", "Fortis Healthcare", "MIOT International", "Madras Medical Mission", "Kauvery Hospital", "Narayana Health", "Manipal Hospitals", "NHS UK", "Cleveland Clinic Abu Dhabi", "King Faisal Specialist Hospital (Saudi)"],
-        bestFor: "Students aiming for the highest salary potential, interventional cardiology exposure, and strong international placement scope.",
+        bestFor: "Learners aiming for the highest salary potential, interventional cardiology exposure, and strong international placement scope.",
         internship: "1 year paid internship at JKKN's 500+ bed multi-speciality hospital — rotations across Cardiology OPD, CTVS, ICCU, Cath Lab, and Echo Lab.",
         iconKey: "heart-pulse",
         seoTitle: "BSc Cardiac Technology Admission 2026-27 in Tamil Nadu | JKKN College",
@@ -183,7 +183,7 @@ export const admissionCourses: AdmissionCourse[] = [
         avgPackage: "₹2.8 – 4.2 LPA",
         salaryRange: "Entry: ₹2 – 3 LPA · Senior (5+ yrs): ₹4.5 – 7 LPA · International: ₹12 – 25 LPA",
         description: "Become a Renal Dialysis Technologist — operate haemodialysis machines, perform CRRT/SLED procedures, and manage chronic kidney disease patients.",
-        longDescription: "B.Sc Dialysis Technology at JKKN College is a 4-year program (3 + 1) preparing students to become certified Renal Dialysis Technologists. Students master haemodialysis machine operation, CRRT (Continuous Renal Replacement Therapy), SLED (Sustained Low-Efficiency Dialysis), peritoneal dialysis, vascular access management, water treatment systems, and dialyser reprocessing. Curriculum is affiliated to TN Dr. MGR Medical University with clinical postings in Nephrology, ICU, and renal transplant units at JKKN's teaching hospital.",
+        longDescription: "B.Sc Dialysis Technology at JKKN College is a 4-year program (3 + 1) preparing learners to become certified Renal Dialysis Technologists. Learners master haemodialysis machine operation, CRRT (Continuous Renal Replacement Therapy), SLED (Sustained Low-Efficiency Dialysis), peritoneal dialysis, vascular access management, water treatment systems, and dialyser reprocessing. Curriculum is affiliated to TN Dr. MGR Medical University with clinical postings in Nephrology, ICU, and renal transplant units at JKKN's teaching hospital.",
         careerScope: "India has 2.2 lakh+ new end-stage kidney disease patients each year and only 12,000 trained dialysis technicians — creating massive demand. Career growth is rapid: starting at ₹2-3 LPA in private dialysis chains (NephroPlus, DaVita, Apollo Dialysis) and reaching ₹4.5-7 LPA within 5 years as a unit in-charge. Gulf countries (UAE, Saudi Arabia, Kuwait) actively hire Indian dialysis technologists at ₹12-25 LPA. Further specialisations include CRRT specialist, renal transplant coordinator, dialysis unit manager, and dialysis trainer/educator. Government 'Pradhan Mantri National Dialysis Programme' (PMNDP) has expanded dialysis centres to all districts — boosting Tier-2 and Tier-3 city jobs.",
         eligibility: [
             "+2 with Physics, Chemistry, Biology (PCB)",
@@ -199,7 +199,7 @@ export const admissionCourses: AdmissionCourse[] = [
         ],
         roles: ["Dialysis Technologist", "Nephrology Technician", "CRRT Specialist", "Renal Transplant Technician", "Dialysis Unit In-charge", "Vascular Access Coordinator", "Water Treatment Specialist"],
         recruiters: ["Apollo Dialysis", "NephroPlus", "DaVita Care India", "Fortis Renal", "MIOT Nephrology", "Aster DM Healthcare (Gulf)", "NMC Healthcare UAE", "PMNDP Centres (Govt)"],
-        bestFor: "Students wanting a stable, recession-proof healthcare career with strong demand in Tier-2/3 cities and Gulf countries.",
+        bestFor: "Learners wanting a stable, recession-proof healthcare career with strong demand in Tier-2/3 cities and Gulf countries.",
         internship: "1 year clinical internship in Nephrology, Dialysis Units, ICU-CRRT, and partnered renal centres at JKKN hospital.",
         iconKey: "activity",
         seoTitle: "BSc Dialysis Technology Admission 2026-27 in Tamil Nadu | JKKN College",
@@ -274,7 +274,7 @@ export const admissionCourses: AdmissionCourse[] = [
         avgPackage: "₹3.5 – 5 LPA",
         salaryRange: "Entry: ₹2.5 – 3.5 LPA · Senior (5+ yrs): ₹6 – 10 LPA · International: ₹18 – 35 LPA",
         description: "Operate X-ray, CT, MRI, USG, Mammography, and Interventional Radiology equipment. Excellent international placement scope.",
-        longDescription: "B.Sc Radiology & Imaging Technology at JKKN College is a 4-year program (3 + 1) training students to operate the full spectrum of medical imaging equipment: digital X-ray, Computed Tomography (CT), Magnetic Resonance Imaging (MRI), Ultrasonography (USG), Mammography, Fluoroscopy, Bone Densitometry (DEXA), and Interventional Radiology (IR). The curriculum covers radiation physics, anatomy, patient positioning, contrast administration, image post-processing, PACS administration, and radiation safety. Affiliated to TN Dr. MGR Medical University; internship at JKKN's hospital with rotations across all imaging modalities.",
+        longDescription: "B.Sc Radiology & Imaging Technology at JKKN College is a 4-year program (3 + 1) training learners to operate the full spectrum of medical imaging equipment: digital X-ray, Computed Tomography (CT), Magnetic Resonance Imaging (MRI), Ultrasonography (USG), Mammography, Fluoroscopy, Bone Densitometry (DEXA), and Interventional Radiology (IR). The learning framework covers radiation physics, anatomy, patient positioning, contrast administration, image post-processing, PACS administration, and radiation safety. Affiliated to TN Dr. MGR Medical University; internship at JKKN's hospital with rotations across all imaging modalities.",
         careerScope: "Radiology & Imaging Technology has one of the strongest international job markets among allied health careers. UK (NHS — chronic radiographer shortage), Australia (AHPRA-registered radiographers earn AUD 80k–120k), Canada (CAMRT certified roles), and Gulf countries actively hire Indian radiographers at ₹18–35 LPA. In India, demand is growing 15% annually with new MRI/CT installations across Tier-2 cities, diagnostic chains (Aarthi Scans, Medall, Vijaya Diagnostics), and corporate hospitals. Specialised pathways include CT/MRI specialist, Interventional Radiology tech, Mammography specialist, Sonographer, and PACS Administrator. With OECD radiographer-to-population ratios still 3-5× higher than India, the domestic shortage will persist for the next decade.",
         eligibility: [
             "+2 with Physics, Chemistry, Biology (PCB)",
@@ -290,7 +290,7 @@ export const admissionCourses: AdmissionCourse[] = [
         ],
         roles: ["Radiology Technologist", "CT Technologist", "MRI Technologist", "Interventional Radiology Tech", "Mammography Specialist", "Sonographer", "PACS Administrator", "Cath Lab Imaging Tech"],
         recruiters: ["Apollo Imaging", "Fortis Imaging", "Medall Diagnostics", "Aarthi Scans", "Vijaya Diagnostic", "NHS UK", "Bumrungrad Thailand", "Cleveland Clinic Abu Dhabi", "NMC Healthcare UAE"],
-        bestFor: "Students aiming for international careers (UK/Australia/Canada/Gulf) with the highest earning potential among AHS courses.",
+        bestFor: "Learners aiming for international careers (UK/Australia/Canada/Gulf) with the highest earning potential among AHS courses.",
         internship: "1 year internship rotation across CT, MRI, Ultrasound, X-ray, Cath Lab, and Interventional Radiology at JKKN's 500+ bed hospital.",
         iconKey: "scan-line",
         seoTitle: "BSc Radiology & Imaging Technology Admission 2026-27 Tamil Nadu | JKKN",
@@ -309,8 +309,8 @@ export const admissionCourses: AdmissionCourse[] = [
         whyChoose: [
             { title: "Strongest International Scope", desc: "UK NHS, Australia AHPRA, Canada CAMRT, and Gulf hospitals all face chronic radiographer shortages. JKKN grads earn ₹18-35 LPA abroad within 2-3 years." },
             { title: "Full-Spectrum Modality Training", desc: "Hands-on exposure to digital X-ray, CT, MRI, USG, Mammography, Fluoroscopy, DEXA, and Interventional Radiology — not just X-ray." },
-            { title: "JKKN Hospital Imaging Department", desc: "500+ bed hospital fully equipped with all imaging modalities — students rotate across every machine during the 1-year internship." },
-            { title: "PACS & DICOM Training", desc: "Curriculum includes PACS administration and DICOM workflow — opens hybrid clinical+IT roles in teleradiology and healthcare AI." },
+            { title: "JKKN Hospital Imaging Department", desc: "500+ bed hospital fully equipped with all imaging modalities — learners rotate across every machine during the 1-year internship." },
+            { title: "PACS & DICOM Training", desc: "Learning framework includes PACS administration and DICOM workflow — opens hybrid clinical+IT roles in teleradiology and healthcare AI." },
             { title: "Highest AHS Earning Ceiling", desc: "Senior radiographers in UK earn GBP 50-70k (₹50-70 LPA); US radiographers earn USD 75-95k (₹62-78 LPA) — among the highest of any allied health career globally." }
         ],
         syllabus: [
@@ -348,7 +348,7 @@ export const admissionCourses: AdmissionCourse[] = [
             { q: "Is BSc Radiology a good career for going abroad?", a: "Excellent — radiography has the strongest international scope of any AHS career. UK (NHS), Australia (AHPRA), Canada (CAMRT), and Gulf countries face chronic radiographer shortages. JKKN graduates earn ₹18-35 LPA abroad. UK NHS sponsors visas for qualified radiographers. Average time from BSc to overseas job is 2-3 years." },
             { q: "What is the fee for BSc Radiology at JKKN?", a: "Management Quota (MQ) annual fee is ₹1,30,000 — total ₹5,20,000 for the 4-year course. Government Quota (GQ) is as per Tamil Nadu Govt norms. Scholarships, installments, and education loan support available." },
             { q: "How many seats are available for BSc Radiology at JKKN?", a: "5 Management Quota (MQ) seats + additional Government Quota (GQ) seats filled through Tamil Nadu Govt counselling. Among the most competitive AHS courses — apply early." },
-            { q: "Is there exposure to MRI and CT during the course?", a: "Yes — JKKN's 500+ bed hospital has a fully-equipped Radiology Department with digital X-ray, CT scan, MRI, USG, Mammography, and Cath Lab. Students rotate across all modalities during the 1-year internship and get hands-on patient positioning, scan protocols, and image processing experience." },
+            { q: "Is there exposure to MRI and CT during the course?", a: "Yes — JKKN's 500+ bed hospital has a fully-equipped Radiology Department with digital X-ray, CT scan, MRI, USG, Mammography, and Cath Lab. Learners rotate across all modalities during the 1-year internship and get hands-on patient positioning, scan protocols, and image processing experience." },
             { q: "Can I specialise in CT or MRI after BSc Radiology?", a: "Yes — after BSc you can pursue PG Diploma in CT/MRI, MSc Medical Imaging Technology, certifications like IAEA Radiation Safety, ARRT (US), or vendor-specific training (Siemens, GE, Philips). Many specialists earn 30-50% more than generalist radiographers." }
         ]
     },
@@ -366,7 +366,7 @@ export const admissionCourses: AdmissionCourse[] = [
         avgPackage: "₹3.5 – 5 LPA",
         salaryRange: "Entry: ₹2.5 – 4 LPA · Senior (5+ yrs): ₹5 – 9 LPA · International: ₹15 – 28 LPA",
         description: "Assist anaesthesiologists and surgeons, manage OT equipment, monitor vitals during surgery, handle peri-operative care across all specialities.",
-        longDescription: "B.Sc Operation Theatre & Anaesthesia Technology (OT & Anaesthesia Tech) at JKKN College is a 4-year program (3 + 1) training students to function as Operation Theatre Technologists and Anaesthesia Technicians. The course covers OT setup and sterilisation, surgical instrument identification and handling, anaesthesia machine operation, patient monitoring (ECG, BP, SpO2, EtCO2, ABG), airway management, drug administration, peri-operative care, and CSSD (Central Sterile Services Department) operations. Affiliated to TN Dr. MGR Medical University. Internship rotations cover General Surgery, Orthopaedics, Neurosurgery, Cardiac Surgery, OB-GYN, Paediatric Surgery, and Day-Care OTs.",
+        longDescription: "B.Sc Operation Theatre & Anaesthesia Technology (OT & Anaesthesia Tech) at JKKN College is a 4-year program (3 + 1) training learners to function as Operation Theatre Technologists and Anaesthesia Technicians. The course covers OT setup and sterilisation, surgical instrument identification and handling, anaesthesia machine operation, patient monitoring (ECG, BP, SpO2, EtCO2, ABG), airway management, drug administration, peri-operative care, and CSSD (Central Sterile Services Department) operations. Affiliated to TN Dr. MGR Medical University. Internship rotations cover General Surgery, Orthopaedics, Neurosurgery, Cardiac Surgery, OB-GYN, Paediatric Surgery, and Day-Care OTs.",
         careerScope: "Every hospital with a surgical facility needs OT technologists and anaesthesia technicians — making it one of the most universally employable AHS careers. India performs 5 crore+ surgeries annually with 50,000+ OT technologist openings. Top recruiters: Apollo, Fortis, MIOT, Manipal, Kauvery, Aster, and corporate hospital chains pay ₹2.5–4 LPA at entry, ₹5–9 LPA by year 5. Gulf countries hire Indian OT techs at ₹15–28 LPA — Aster DM, Mediclinic, NMC, and Saudi Government hospitals are active recruiters. Senior pathways include OT In-charge, CSSD Manager, Surgical Robotics Specialist, Cardiac Anaesthesia Tech, and Transplant OT coordinator. With increasing day-care and minimally-invasive surgeries, demand is structurally growing.",
         eligibility: [
             "+2 with Physics, Chemistry, Biology (PCB)",
@@ -382,7 +382,7 @@ export const admissionCourses: AdmissionCourse[] = [
         ],
         roles: ["OT Technologist", "Anaesthesia Technician", "Surgical Technologist", "Peri-Operative Coordinator", "OT In-charge", "CSSD In-charge", "Robotic Surgery Tech", "Transplant OT Coordinator"],
         recruiters: ["Apollo Hospitals", "Fortis Healthcare", "MIOT International", "Manipal Hospitals", "Kauvery Hospital", "Narayana Health", "Aster DM (UAE/Saudi)", "Mediclinic Middle East", "NMC Healthcare"],
-        bestFor: "Students who enjoy fast-paced surgical environments and want broad multi-speciality OT exposure with reliable placement.",
+        bestFor: "Learners who enjoy fast-paced surgical environments and want broad multi-speciality OT exposure with reliable placement.",
         internship: "1 year rotation across General Surgery, Ortho, Neuro, Cardiac, OB-GYN, Paediatric, and Day-Care OTs at JKKN hospital.",
         iconKey: "scissors",
         seoTitle: "BSc Operation Theatre & Anaesthesia Admission 2026-27 Tamil Nadu | JKKN",
@@ -440,7 +440,7 @@ export const admissionCourses: AdmissionCourse[] = [
             { q: "Is BSc OT & Anaesthesia a good career?", a: "Yes — universal employability since every hospital with surgical capability needs OT and anaesthesia techs. India has 50,000+ open positions. Career progression: ₹2.5-4 LPA at entry → ₹5-9 LPA in 5 years → OT In-charge / CSSD Manager in 8-10 years. Gulf packages range ₹15-28 LPA." },
             { q: "What is the fee for BSc OT & Anaesthesia at JKKN?", a: "Management Quota (MQ) annual fee is ₹1,70,000 — total ₹6,80,000 for 4 years. Government Quota (GQ) is as per Tamil Nadu Govt norms. Installments, scholarships, and education loan assistance are available." },
             { q: "How many seats for BSc OT & Anaesthesia at JKKN?", a: "10 Management Quota (MQ) seats — among the larger intakes among AHS courses at JKKN. Additional Government Quota (GQ) seats are filled via Tamil Nadu Govt counselling." },
-            { q: "Will I get hands-on training in OT during the course?", a: "Yes — extensive hands-on training. 1-year mandatory internship at JKKN's 500+ bed hospital includes rotations across General Surgery, Ortho, Neuro, Cardiac, OB-GYN, Paediatric, and Day-Care OTs. Students assist with 200+ procedures during the internship." },
+            { q: "Will I get hands-on training in OT during the course?", a: "Yes — extensive hands-on training. 1-year mandatory internship at JKKN's 500+ bed hospital includes rotations across General Surgery, Ortho, Neuro, Cardiac, OB-GYN, Paediatric, and Day-Care OTs. Learners assist with 200+ procedures during the internship." },
             { q: "Can OT & Anaesthesia graduates work in cardiac surgery?", a: "Yes — with 2-3 years of general OT experience, technologists can specialise in Cardiac Anaesthesia, CTVS OT, or Transplant OT. These specialist roles pay 30-50% more than general OT positions. Many JKKN alumni currently work in cardiac OTs at Apollo and Madras Medical Mission." }
         ]
     },
@@ -458,7 +458,7 @@ export const admissionCourses: AdmissionCourse[] = [
         avgPackage: "₹3 – 4.5 LPA",
         salaryRange: "Entry: ₹2.4 – 3.5 LPA · Senior (5+ yrs): ₹5 – 8 LPA · International: ₹14 – 26 LPA",
         description: "Manage ventilators, ABG analysis, pulmonary rehabilitation, oxygen therapy, and critical care of patients with respiratory failure.",
-        longDescription: "B.Sc Respiratory Therapy at JKKN College is a 4-year program (3 + 1) producing certified Respiratory Therapists trained to manage patients with acute and chronic respiratory disorders. The curriculum covers mechanical ventilation, non-invasive ventilation (BiPAP, CPAP, HFNC), arterial blood gas (ABG) analysis, pulmonary function testing, oxygen therapy, airway management, pulmonary rehabilitation, sleep medicine (PSG), and ECMO support. Affiliated to TN Dr. MGR Medical University. Clinical training across MICU, SICU, NICU, PICU, Pulmonology OPD, and Sleep Lab at JKKN's hospital.",
+        longDescription: "B.Sc Respiratory Therapy at JKKN College is a 4-year program (3 + 1) producing certified Respiratory Therapists trained to manage patients with acute and chronic respiratory disorders. The learning framework covers mechanical ventilation, non-invasive ventilation (BiPAP, CPAP, HFNC), arterial blood gas (ABG) analysis, pulmonary function testing, oxygen therapy, airway management, pulmonary rehabilitation, sleep medicine (PSG), and ECMO support. Affiliated to TN Dr. MGR Medical University. Clinical training across MICU, SICU, NICU, PICU, Pulmonology OPD, and Sleep Lab at JKKN's hospital.",
         careerScope: "Respiratory Therapy demand exploded post-COVID and continues to grow at 18-22% CAGR globally. India has only ~5,000 qualified respiratory therapists for a population of 1.4 billion — a structural shortage. US-trained RTs earn USD 70,000–90,000; UK, Canada, and Australia have active immigration pathways for Indian BSc RTs. Top Indian recruiters: Apollo, Fortis, MIOT, Christian Medical College, AIIMS, and corporate ICU chains pay ₹2.4–3.5 LPA entry, ₹5–8 LPA after 5 years. Gulf countries (UAE, Saudi, Kuwait) hire Indian RTs at ₹14–26 LPA. Specialisations include ECMO Specialist, Neonatal RT, Pulmonary Rehab Specialist, Sleep Technologist, and Home Ventilation Coordinator.",
         eligibility: [
             "+2 with Physics, Chemistry, Biology (PCB)",
@@ -474,7 +474,7 @@ export const admissionCourses: AdmissionCourse[] = [
         ],
         roles: ["Respiratory Therapist", "Ventilator Specialist", "ECMO Specialist", "Pulmonary Rehab Therapist", "Sleep Lab Technician", "Neonatal RT", "ICU Respiratory Care Lead", "Home Ventilation Coordinator"],
         recruiters: ["Apollo Critical Care", "Fortis ICU", "MIOT Pulmonology", "CMC Vellore", "AIIMS", "Manipal", "NHS UK", "Saudi German Hospital", "Cleveland Clinic UAE"],
-        bestFor: "Students drawn to critical care, ICU work, and post-COVID high-demand respiratory medicine — with strong abroad migration pathways.",
+        bestFor: "Learners drawn to critical care, ICU work, and post-COVID high-demand respiratory medicine — with strong abroad migration pathways.",
         internship: "1 year ICU + Pulmonology rotation at JKKN — adult MICU, SICU, neonatal NICU, paediatric PICU, and Sleep Lab postings.",
         iconKey: "wind",
         seoTitle: "BSc Respiratory Therapy Admission 2026-27 in Tamil Nadu | JKKN College",
@@ -551,7 +551,7 @@ export const admissionCourses: AdmissionCourse[] = [
         avgPackage: "₹3 – 4.5 LPA",
         salaryRange: "Entry: ₹2.4 – 3.5 LPA · Senior (5+ yrs): ₹5 – 9 LPA · International (US/UK): ₹40 – 80 LPA (post bridge)",
         description: "Work alongside doctors in OPD/IPD/Emergency — perform history taking, basic procedures, patient counselling, and clinical documentation.",
-        longDescription: "B.Sc Physician Assistant at JKKN College is a 4-year program (3 + 1) preparing students as Clinical Physician Assistants who work directly under physicians' supervision. The course covers clinical history-taking, physical examination, basic diagnostic procedures (suturing, IV cannulation, ABG sampling, lumbar puncture assistance), patient counselling, clinical documentation, EMR systems, and OPD/IPD/Emergency workflows. Affiliated to TN Dr. MGR Medical University. Internship rotations cover General Medicine, Cardiology, Neurology, Oncology, OB-GYN, Paediatrics, and Emergency Medicine at JKKN's 500+ bed teaching hospital.",
+        longDescription: "B.Sc Physician Assistant at JKKN College is a 4-year program (3 + 1) preparing learners as Clinical Physician Assistants who work directly under physicians' supervision. The course covers clinical history-taking, physical examination, basic diagnostic procedures (suturing, IV cannulation, ABG sampling, lumbar puncture assistance), patient counselling, clinical documentation, EMR systems, and OPD/IPD/Emergency workflows. Affiliated to TN Dr. MGR Medical University. Internship rotations cover General Medicine, Cardiology, Neurology, Oncology, OB-GYN, Paediatrics, and Emergency Medicine at JKKN's 500+ bed teaching hospital.",
         careerScope: "Physician Assistant is uniquely positioned as a bridge career between nursing and medicine. In India, demand is growing in corporate hospitals (Apollo, Fortis, Manipal, Aster) for OPD-based clinical assistants — entry packages ₹2.4–3.5 LPA, senior PAs ₹5–9 LPA. The biggest opportunity is international migration: US Physician Assistants earn USD 100,000–130,000 (₹80L–₹1Cr+); UK Physician Associates earn GBP 45,000–65,000. The pathway requires a 2-3 year US PA bridge program or UK PA registration. JKKN BSc PA forms an excellent foundation. Specialisations include Cardiology PA, Oncology PA, Emergency PA, and Surgical First Assistant.",
         eligibility: [
             "+2 with Physics, Chemistry, Biology (PCB)",
@@ -567,7 +567,7 @@ export const admissionCourses: AdmissionCourse[] = [
         ],
         roles: ["Physician Assistant", "Clinical Assistant", "Cardiology PA", "Oncology PA", "Emergency PA", "Surgical First Assistant", "Medical Officer Assistant", "Health Coach"],
         recruiters: ["Apollo Hospitals", "Fortis Healthcare", "Manipal Hospitals", "Aster Medcity", "Narayana Health", "Kauvery Hospital", "Pathway to US PA / UK Physician Associate"],
-        bestFor: "Students who want a doctor-adjacent clinical role and a bridge to international PA careers earning ₹40-80 LPA.",
+        bestFor: "Learners who want a doctor-adjacent clinical role and a bridge to international PA careers earning ₹40-80 LPA.",
         internship: "1 year rotation across General Medicine, Cardiology, Neurology, Oncology, OB-GYN, Paediatrics, and Emergency at JKKN hospital.",
         iconKey: "user-check",
         seoTitle: "BSc Physician Assistant Admission 2026-27 in Tamil Nadu | JKKN College",
@@ -625,7 +625,7 @@ export const admissionCourses: AdmissionCourse[] = [
             { q: "What is the fee for BSc Physician Assistant at JKKN?", a: "Management Quota (MQ) annual fee is ₹1,30,000 — total ₹5,20,000 for 4 years. Government Quota (GQ) as per TN Govt norms. Installments and scholarships available." },
             { q: "How many seats for BSc Physician Assistant at JKKN?", a: "10 Management Quota (MQ) seats + GQ seats via Tamil Nadu counselling. One of the more competitive intakes due to international PA pathway appeal." },
             { q: "Can I become a US Physician Assistant after BSc PA from India?", a: "Yes, with additional steps. The US requires a Master's-level accredited PA program (typically 2-3 years post-bachelor). Indian BSc PA is a strong foundation but you'll need to complete the US PA program + PANCE certification. US PAs earn USD 100-130k. Alternative: UK Physician Associate registration (1-year bridge)." },
-            { q: "Will I get hands-on patient interaction during the course?", a: "Yes — extensive patient interaction from Year 2. 1-year mandatory clinical internship at JKKN's 500+ bed hospital covers Medicine, Cardiology, Neurology, Oncology, OB-GYN, Paediatrics, and Emergency. Students complete 2,000+ patient encounters during the program." }
+            { q: "Will I get hands-on patient interaction during the course?", a: "Yes — extensive patient interaction from Year 2. 1-year mandatory clinical internship at JKKN's 500+ bed hospital covers Medicine, Cardiology, Neurology, Oncology, OB-GYN, Paediatrics, and Emergency. Learners complete 2,000+ patient encounters during the program." }
         ]
     },
     {
@@ -642,7 +642,7 @@ export const admissionCourses: AdmissionCourse[] = [
         avgPackage: "₹3 – 4.5 LPA",
         salaryRange: "Entry: ₹2.4 – 3.5 LPA · Senior (5+ yrs): ₹5 – 8 LPA · International: ₹14 – 26 LPA",
         description: "Manage MICU/SICU/CCU/NICU equipment, ventilators, monitors, and assist intensivists in life-saving interventions.",
-        longDescription: "B.Sc Critical Care Technology at JKKN College is a 4-year program (3 + 1) training students as Critical Care Technologists who form the backbone of every Intensive Care Unit (MICU, SICU, CCU, NICU, PICU). The curriculum covers ICU equipment (ventilators, monitors, infusion pumps, dialysis machines, ECMO), haemodynamic monitoring, ABG analysis, advanced airway management, drug calculations, sepsis protocols, ACLS/BLS, organ donation, and end-of-life care. Affiliated to TN Dr. MGR Medical University. Internship rotates across all ICU types at JKKN's 500+ bed multi-speciality hospital.",
+        longDescription: "B.Sc Critical Care Technology at JKKN College is a 4-year program (3 + 1) training learners as Critical Care Technologists who form the backbone of every Intensive Care Unit (MICU, SICU, CCU, NICU, PICU). The learning framework covers ICU equipment (ventilators, monitors, infusion pumps, dialysis machines, ECMO), haemodynamic monitoring, ABG analysis, advanced airway management, drug calculations, sepsis protocols, ACLS/BLS, organ donation, and end-of-life care. Affiliated to TN Dr. MGR Medical University. Internship rotates across all ICU types at JKKN's 500+ bed multi-speciality hospital.",
         careerScope: "ICU demand has structurally grown post-COVID — India added 2 lakh+ ICU beds during 2020-2024 with massive ongoing shortage of trained critical care professionals. Top Indian recruiters: Apollo Critical Care, Fortis, MIOT, Manipal, Kauvery, Narayana — pay ₹2.4–3.5 LPA entry, ₹5–8 LPA after 5 years as senior CCT or ICU In-charge. Gulf countries (UAE, Saudi, Qatar) hire Indian CCTs at ₹14–26 LPA. Specialisations include ECMO Specialist, NICU/PICU Specialist, CRRT Specialist, Cardiac ICU Tech, and ICU Manager. The structural shortage means high job security across the next decade.",
         eligibility: [
             "+2 with Physics, Chemistry, Biology (PCB)",
@@ -658,7 +658,7 @@ export const admissionCourses: AdmissionCourse[] = [
         ],
         roles: ["Critical Care Technologist", "ICU Technician", "ECMO Specialist", "NICU/PICU Specialist", "CRRT Specialist", "Code Blue Team Member", "ICU In-charge", "Cardiac ICU Tech"],
         recruiters: ["Apollo Critical Care", "Fortis ICU", "MIOT", "Manipal Hospitals", "Kauvery Hospital", "Narayana Health", "Mediclinic Middle East", "Saudi German Hospital", "Aster Gulf"],
-        bestFor: "Students passionate about intensive care, ECMO, and life-support technology — high-pressure but extremely rewarding clinical work.",
+        bestFor: "Learners passionate about intensive care, ECMO, and life-support technology — high-pressure but extremely rewarding clinical work.",
         internship: "1 year rotation across MICU, SICU, CCU, NICU, PICU, and ECMO unit at JKKN's 500+ bed multi-speciality hospital.",
         iconKey: "siren",
         seoTitle: "BSc Critical Care Technology Admission 2026-27 Tamil Nadu | JKKN",
@@ -677,7 +677,7 @@ export const admissionCourses: AdmissionCourse[] = [
         whyChoose: [
             { title: "Post-COVID ICU Expansion", desc: "India added 2 lakh+ ICU beds during 2020-2024. Massive shortage of trained critical care professionals — placement is rapid and broad." },
             { title: "Multi-ICU Rotations", desc: "Internship covers MICU, SICU, CCU, NICU, PICU, and ECMO unit at JKKN's 500+ bed hospital. Wider clinical exposure than most AHS programs." },
-            { title: "ECMO Specialist Pathway", desc: "JKKN's MICU has ECMO capability — students get hands-on exposure. Post-graduation ELSO certification opens ₹6-12 LPA India / ₹25-40 LPA Gulf ECMO Specialist roles." },
+            { title: "ECMO Specialist Pathway", desc: "JKKN's MICU has ECMO capability — learners get hands-on exposure. Post-graduation ELSO certification opens ₹6-12 LPA India / ₹25-40 LPA Gulf ECMO Specialist roles." },
             { title: "24/7 Job Security", desc: "ICUs operate 24/7 with high staffing ratios — recession-proof career with high shift premiums and overtime pay." },
             { title: "Speciality Tracks", desc: "Pathways into NICU Specialist (neonatal), PICU Specialist (paediatric), CRRT Specialist (ICU dialysis), and Cardiac ICU Tech — each opens niche, well-paid careers." }
         ],
@@ -734,7 +734,7 @@ export const admissionCourses: AdmissionCourse[] = [
         avgPackage: "₹2.5 – 4 LPA",
         salaryRange: "Entry: ₹2 – 3 LPA · Senior (5+ yrs): ₹4.5 – 8 LPA · International (US Medical Coding): ₹8 – 18 LPA",
         description: "Handle medical records, ICD-10 / CPT coding, hospital data analytics, HIM systems, and insurance/TPA processing.",
-        longDescription: "B.Sc Medical Record Science at JKKN College is a 4-year program (3 + 1) producing Health Information Managers, Medical Coders, and Hospital Data Analysts. The curriculum covers Health Information Management (HIM), ICD-10-CM/PCS and CPT-4 medical coding, EMR/EHR systems, hospital data analytics, healthcare quality (NABH/JCI), insurance and TPA processing, medical transcription, and healthcare law/ethics. Affiliated to TN Dr. MGR Medical University. Internship rotates across Medical Records Department, Quality Cell, Insurance/TPA desk, and Health Analytics at JKKN hospital.",
+        longDescription: "B.Sc Medical Record Science at JKKN College is a 4-year program (3 + 1) producing Health Information Managers, Medical Coders, and Hospital Data Analysts. The learning framework covers Health Information Management (HIM), ICD-10-CM/PCS and CPT-4 medical coding, EMR/EHR systems, hospital data analytics, healthcare quality (NABH/JCI), insurance and TPA processing, medical transcription, and healthcare law/ethics. Affiliated to TN Dr. MGR Medical University. Internship rotates across Medical Records Department, Quality Cell, Insurance/TPA desk, and Health Analytics at JKKN hospital.",
         careerScope: "Medical Record Science offers the most diverse career pathways at the lowest fee (₹60K/yr). The US medical coding industry — outsourced largely to India — employs 1.5 lakh+ Indian medical coders. Companies like Optum, Cognizant Healthcare, Omega Healthcare, AGS Health, and IKS Health hire BSc MRS grads at ₹2.5–4 LPA entry; certified CPC/CCS coders earn ₹5–8 LPA in 3-4 years; senior auditors earn ₹10–18 LPA. Hospital HIM roles pay ₹2–3 LPA entry; HIM Managers earn ₹6–10 LPA. Insurance/TPA companies (Star Health, ICICI Lombard, Bajaj Allianz) hire BSc MRS grads at ₹3–5 LPA. This is the best AHS course for an office-based, work-from-home-friendly, recession-proof career.",
         eligibility: [
             "+2 with Physics, Chemistry, Biology (PCB)",
@@ -750,7 +750,7 @@ export const admissionCourses: AdmissionCourse[] = [
         ],
         roles: ["Medical Record Officer", "Medical Coder (ICD-10/CPT)", "HIM Specialist", "Insurance / TPA Coordinator", "Hospital Data Analyst", "EMR Administrator", "Healthcare Quality Officer", "Medical Auditor"],
         recruiters: ["Apollo Health Information", "Fortis HIM", "Optum (UHG)", "Cognizant Healthcare", "Omega Healthcare", "AGS Health", "IKS Health", "Star Health Insurance", "ICICI Lombard"],
-        bestFor: "Students who want the lowest fee (₹60K/yr), office-based work, work-from-home roles, and entry into healthcare IT / US medical coding.",
+        bestFor: "Learners who want the lowest fee (₹60K/yr), office-based work, work-from-home roles, and entry into healthcare IT / US medical coding.",
         internship: "1 year rotation in Medical Records, HIM, Insurance/TPA, Healthcare Quality, and Health Analytics departments.",
         iconKey: "file-text",
         seoTitle: "BSc Medical Record Science Admission 2026-27 Tamil Nadu | JKKN College",
@@ -805,7 +805,7 @@ export const admissionCourses: AdmissionCourse[] = [
         ],
         faqs: [
             { q: "What is BSc Medical Record Science about?", a: "BSc Medical Record Science covers Health Information Management (HIM), ICD-10/CPT medical coding, EMR/EHR systems, hospital data analytics, insurance and TPA processing, healthcare quality (NABH/JCI), and medical transcription. It's the gateway to office-based, work-from-home-friendly healthcare careers." },
-            { q: "Why is BSc Medical Record Science fee so low at JKKN?", a: "₹60,000/year (₹2.4L total) is the lowest among AHS courses because the program doesn't require expensive clinical equipment (no ventilators, cath labs, dialysis machines). It's classroom + computer lab focused — making it the most affordable AHS pathway with strong career outcomes." },
+            { q: "Why is BSc Medical Record Science fee so low at JKKN?", a: "₹60,000/year (₹2.4L total) is the lowest among AHS courses because the program doesn't require expensive clinical equipment (no ventilators, cath labs, dialysis machines). It's learning studio + digital learning lab focused — making it the most affordable AHS pathway with strong career outcomes." },
             { q: "Can I work from home after BSc Medical Record Science?", a: "Yes — medical coding (ICD-10/CPT) for US healthcare is the largest work-from-home healthcare job in India. Companies like Optum, Cognizant Healthcare, Omega Healthcare, and AGS Health hire BSc MRS grads for remote coding roles. Salaries: ₹2.5-4 LPA entry, ₹5-8 LPA after certifications (CPC/CCS)." },
             { q: "How many seats for BSc Medical Record Science at JKKN?", a: "15 Management Quota (MQ) seats — the largest MQ intake among AHS courses at JKKN. Additional Government Quota (GQ) seats via Tamil Nadu counselling." },
             { q: "Is BSc Medical Record Science a good career?", a: "Yes — diverse pathways: US medical coding (₹2.5-18 LPA), hospital HIM (₹2-10 LPA), insurance/TPA (₹3-8 LPA), healthcare analytics (₹4-12 LPA). Lowest fee + highest seat count + recession-proof office work + work-from-home options = high ROI. India's medical coding industry employs 1.5 lakh+ professionals." },
@@ -826,7 +826,7 @@ export const admissionCourses: AdmissionCourse[] = [
         avgPackage: "₹3 – 4.5 LPA",
         salaryRange: "Entry: ₹2.4 – 3.5 LPA · Senior (5+ yrs): ₹5 – 8 LPA · International: ₹14 – 24 LPA",
         description: "Handle trauma resuscitation, ACLS/BLS, pre-hospital ambulance care, disaster response, and ER triage.",
-        longDescription: "B.Sc Accident & Emergency Care Technology at JKKN College is a 4-year program (3 + 1) training Emergency Medical Care Technologists who form the frontline of every hospital's Emergency Department. The curriculum covers Advanced Cardiac Life Support (ACLS), Basic Life Support (BLS), Advanced Trauma Life Support (ATLS), pre-hospital ambulance care, disaster management, ER triage protocols, polytrauma resuscitation, toxicology, mass casualty incident response, and emergency surgical assistance. Affiliated to TN Dr. MGR Medical University. Internship at JKKN's Emergency Department, Trauma Bay, Ambulance Service, and Disaster Management cell.",
+        longDescription: "B.Sc Accident & Emergency Care Technology at JKKN College is a 4-year program (3 + 1) training Emergency Medical Care Technologists who form the frontline of every hospital's Emergency Department. The learning framework covers Advanced Cardiac Life Support (ACLS), Basic Life Support (BLS), Advanced Trauma Life Support (ATLS), pre-hospital ambulance care, disaster management, ER triage protocols, polytrauma resuscitation, toxicology, mass casualty incident response, and emergency surgical assistance. Affiliated to TN Dr. MGR Medical University. Internship at JKKN's Emergency Department, Trauma Bay, Ambulance Service, and Disaster Management cell.",
         careerScope: "India's organised Emergency Medicine sector is growing 20% annually — fuelled by trauma centres (NABH-accredited Level 1/2 trauma units), 108 EMRI ambulance services, corporate hospital ERs, and disaster response networks. Top recruiters: Apollo Emergency, Fortis ER, MIOT Trauma, GVK EMRI (108 Services), Ziqitza Healthcare. Entry: ₹2.4–3.5 LPA, senior ER techs ₹5–8 LPA, Gulf packages ₹14–24 LPA. Specialisations: Trauma Care Specialist, Ambulance Paramedic, Disaster Response Specialist, Flight Paramedic (helicopter EMS), 108/EMRI Officer, ER Triage Lead. Career stability is high since emergency services are recession-proof and 24/7 staffed.",
         eligibility: [
             "+2 with Physics, Chemistry, Biology (PCB)",
@@ -842,7 +842,7 @@ export const admissionCourses: AdmissionCourse[] = [
         ],
         roles: ["Emergency Care Technologist", "Trauma Care Specialist", "Ambulance Paramedic", "ER Triage Officer", "Disaster Response Specialist", "108/EMRI Officer", "Flight Paramedic", "ER In-charge"],
         recruiters: ["Apollo Emergency", "Fortis ER", "MIOT Trauma", "GVK EMRI (108 Services)", "Ziqitza Healthcare", "Mediclinic Middle East", "Saudi Red Crescent", "Aster DM Healthcare"],
-        bestFor: "Students who thrive in fast-paced, high-stakes trauma and emergency medicine — drawn to saving lives in critical moments.",
+        bestFor: "Learners who thrive in fast-paced, high-stakes trauma and emergency medicine — drawn to saving lives in critical moments.",
         internship: "1 year rotation in ER, Trauma Bay, Ambulance Service, Disaster Management cell, and Toxicology unit at JKKN hospital.",
         iconKey: "siren",
         seoTitle: "BSc Accident & Emergency Care Admission 2026-27 Tamil Nadu | JKKN",
@@ -862,7 +862,7 @@ export const admissionCourses: AdmissionCourse[] = [
             { title: "20% Annual Sector Growth", desc: "India's organised emergency medicine sector is growing 20% YoY — fuelled by trauma centres, 108 EMRI, and corporate ERs. Job creation is strong and sustained." },
             { title: "Frontline Patient Impact", desc: "Emergency Care Techs save lives in critical moments — high responsibility, high respect, high purpose career path." },
             { title: "Multi-Setting Career", desc: "ER, Trauma Bay, Ambulance Service (108), Disaster Response, Flight Paramedic (helicopter EMS) — switch settings throughout your career." },
-            { title: "ACLS / ATLS / PALS Certified Curriculum", desc: "Course includes Advanced Cardiac Life Support, Advanced Trauma Life Support, and Paediatric ALS — credentials employers explicitly require." },
+            { title: "ACLS / ATLS / PALS Certified Learning Framework", desc: "Course includes Advanced Cardiac Life Support, Advanced Trauma Life Support, and Paediatric ALS — credentials employers explicitly require." },
             { title: "Gulf Demand for Trauma Techs", desc: "Saudi Red Crescent, Mediclinic, Hamad Medical Qatar actively hire Indian Emergency Care Techs at ₹14-24 LPA after 2-3 years experience." }
         ],
         syllabus: [
@@ -901,7 +901,7 @@ export const admissionCourses: AdmissionCourse[] = [
             { q: "What is the fee for BSc Accident & Emergency Care at JKKN?", a: "Management Quota (MQ) annual fee is ₹1,10,000 — total ₹4,40,000 for 4 years. Government Quota (GQ) as per Tamil Nadu Govt norms. Installments and scholarships available." },
             { q: "How many seats for BSc Accident & Emergency Care at JKKN?", a: "10 Management Quota (MQ) seats + additional Government Quota (GQ) seats via Tamil Nadu Govt counselling." },
             { q: "Will I learn to drive an ambulance during the course?", a: "Ambulance driving requires a separate commercial license, not part of BSc. However, you'll get extensive training on pre-hospital ambulance care, equipment operation (defibrillator, ventilator, suction), patient stabilisation in transit, and coordination with the receiving ER. JKKN partners with 108 EMRI for ambulance rotations." },
-            { q: "Is BSc Emergency Care stressful?", a: "Yes — emergency medicine is one of the most stressful clinical environments (trauma, deaths, mass casualties, long shifts). It's also one of the most rewarding because you directly save lives in critical moments. JKKN's curriculum includes resilience training, peer support, and gradual exposure scaling during the internship." }
+            { q: "Is BSc Emergency Care stressful?", a: "Yes — emergency medicine is one of the most stressful clinical environments (trauma, deaths, mass casualties, long shifts). It's also one of the most rewarding because you directly save lives in critical moments. JKKN's learning framework includes resilience training, peer support, and gradual exposure scaling during the internship." }
         ]
     }
 ];

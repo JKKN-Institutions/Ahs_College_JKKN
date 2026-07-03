@@ -97,10 +97,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "Does JKKN AHS provide hostel for Coimbatore students?",
+      name: "Does JKKN AHS provide hostel for Coimbatore learners?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes, JKKN AHS provides separate hostel facilities for boys and girls. Students from Coimbatore can also opt for daily commute as the campus is just 2-2.5 hours away. College transport services are available.",
+        text: "Yes, JKKN AHS provides separate hostel facilities for boys and girls. Learners from Coimbatore can also opt for daily commute as the campus is just 2-2.5 hours away. College transport services are available.",
       },
     },
     {
@@ -116,7 +116,7 @@ const faqSchema = {
       name: "What are the fees for BSc allied health science in Tamil Nadu?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "BSc Allied Health Science fees in Tamil Nadu typically range from ₹50,000 to ₹2,00,000 per year depending on the college and course. At JKKN College of Allied Health Sciences, fees are competitively priced with scholarship options available for meritorious students. Contact the admission office at +91 9345855001 for the latest fee structure.",
+        text: "BSc Allied Health Science fees in Tamil Nadu typically range from ₹50,000 to ₹2,00,000 per year depending on the college and course. At JKKN College of Allied Health Sciences, fees are competitively priced with scholarship options available for meritorious learners. Contact the admission office at +91 9345855001 for the latest fee structure.",
       },
     },
     {
@@ -161,10 +161,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "Does proximity to Coimbatore International Airport benefit JKKN AHS students?",
+      name: "Does proximity to Coimbatore International Airport benefit JKKN AHS learners?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes, Coimbatore International Airport (CJB) — just ~80 km from campus — is a significant advantage for international placements. JKKN AHS has placed students at NHS UK, Cleveland Clinic Abu Dhabi, and hospitals in Singapore and Saudi Arabia. The airport connection makes international career transitions smooth, with direct flights to major cities and Gulf destinations.",
+        text: "Yes, Coimbatore International Airport (CJB) — just ~80 km from campus — is a significant advantage for international placements. JKKN AHS has placed learners at NHS UK, Cleveland Clinic Abu Dhabi, and hospitals in Singapore and Saudi Arabia. The airport connection makes international career transitions smooth, with direct flights to major cities and Gulf destinations.",
       },
     },
   ],
@@ -256,7 +256,7 @@ const howToSchema = {
     { "@type": "HowToStep", position: 2, name: "Apply Online", text: "Visit https://www.jkkn.ai/apply/jkkn-admission-2026 and fill out the online application form with your personal and academic details." },
     { "@type": "HowToStep", position: 3, name: "Submit Documents", text: "Upload or submit 12th mark sheet, community certificate, Aadhaar card, passport-size photos, and transfer certificate." },
     { "@type": "HowToStep", position: 4, name: "Attend Counselling", text: "Attend the admission counselling session at JKKN campus or online. Select your preferred BSc programme from 9 available options." },
-    { "@type": "HowToStep", position: 5, name: "Pay Fees & Confirm", text: "Complete fee payment to confirm your admission. Scholarship options are available for meritorious students." },
+    { "@type": "HowToStep", position: 5, name: "Pay Fees & Confirm", text: "Complete fee payment to confirm your admission. Scholarship options are available for meritorious learners." },
     { "@type": "HowToStep", position: 6, name: "Join Campus", text: "Report to JKKN AHS campus at Komarapalayam on the designated date. Hostel and transport facilities available." },
   ],
 };

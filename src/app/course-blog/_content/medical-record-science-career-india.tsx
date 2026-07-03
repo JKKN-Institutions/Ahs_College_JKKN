@@ -5,7 +5,7 @@ export default function MedicalRecordContent() {
     <>
       <p>
         Medical record science is the most underrated career in allied health. While
-        students chase glamorous clinical roles, the people quietly earning ₹6–10 LPA
+        learners chase glamorous clinical roles, the people quietly earning ₹6–10 LPA
         in fully remote jobs — without ever wearing scrubs — are{" "}
         <strong>medical coders</strong> and <strong>HIM (Health Information
         Management) executives</strong>. The Indian medical coding industry is now a{" "}
@@ -179,12 +179,12 @@ export default function MedicalRecordContent() {
       </ol>
       <p>
         Most graduates pursue CPC certification within 6 months of graduation. Many JKKN
-        students target it during their final semester for immediate placement.
+        learners target it during their final semester for immediate placement.
       </p>
 
       <h2 id="global">Remote US Medical Coding Careers</h2>
       <p>
-        This is the career most students don't know exists. Indian medical coders working
+        This is the career most learners don't know exists. Indian medical coders working
         for US hospitals from home, earning the same salary as a junior software engineer
         — without commuting or shift dependency.
       </p>
@@ -218,7 +218,7 @@ export default function MedicalRecordContent() {
           Affiliated with The Tamil Nadu Dr. M.G.R. Medical University, Chennai
         </li>
         <li>
-          Curriculum includes ICD-10, CPT, HCPCS coding fundamentals — preparing you for
+          Learning framework includes ICD-10, CPT, HCPCS coding fundamentals — preparing you for
           CPC certification within months of graduation
         </li>
         <li>
@@ -234,7 +234,7 @@ export default function MedicalRecordContent() {
         </li>
         <li>
           Excellent campus infrastructure —{" "}
-          <Link href="/library">e-library</Link>,{" "}
+          <Link href="/library">digital learning commons</Link>,{" "}
           <Link href="/wifi">campus-wide WiFi</Link>,{" "}
           <Link href="/hostel">on-campus hostel</Link>,{" "}
           <Link href="/transport">transport</Link>
@@ -242,7 +242,7 @@ export default function MedicalRecordContent() {
       </ul>
       <p>
         See the full{" "}
-        <Link href="/medical-record-science">B.Sc Medical Record Science curriculum</Link>{" "}
+        <Link href="/medical-record-science">B.Sc Medical Record Science learning framework</Link>{" "}
         or visit{" "}
         <Link href="/admissions/medical-record-science">admissions for 2026-27</Link>{" "}
         for eligibility, fee structure, and seat availability.

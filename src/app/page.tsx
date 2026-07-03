@@ -116,7 +116,7 @@ const faqSchema = {
       "name": "What is the fee structure for B.Sc. Allied Health Sciences programs?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Government Quota (GQ) fees are as per government norms. Management Quota (MQ) annual fees at JKKN range from Rs 60,000 (Medical Record Science) to Rs 1,70,000 (Cardiac and Operation Theatre Technology) per year. This includes tuition, laboratory fees, and hospital training components. Scholarships are available for meritorious and economically disadvantaged Learners covering up to 50 percent of fees. Payment can be made in installments."
+        "text": "Government Quota (GQ) fees are as per government norms. Management Quota (MQ) annual fees at JKKN range from Rs 60,000 (Medical Record Science) to Rs 1,70,000 (Cardiac and Operation Theatre Technology) per year. This includes tuition, learning lab fees, and hospital training components. Scholarships are available for meritorious and economically disadvantaged Learners covering up to 50 percent of fees. Payment can be made in installments."
       }
     },
     {
@@ -137,10 +137,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      "name": "What laboratory facilities are available at JKKN AHS College?",
+      "name": "What learning lab facilities are available at JKKN AHS College?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "JKKN features state-of-the-art laboratories including Clinical Biochemistry Lab with automated analyzers, Microbiology & Pathology Lab, Hematology Lab, Cardiac Catheterization Simulator, Diagnostic Imaging Center with X-ray and CT simulators, Optometry Clinic with slit lamps and OCT, Dialysis Training Unit, and Digital Library with 10,000+ medical books."
+        "text": "JKKN features state-of-the-art learning labs including Clinical Biochemistry Lab with automated analyzers, Microbiology & Pathology Lab, Hematology Lab, Cardiac Catheterization Simulator, Diagnostic Imaging Center with X-ray and CT simulators, Optometry Clinic with slit lamps and OCT, Dialysis Training Unit, and Digital Learning Commons with 10,000+ medical books."
       }
     },
     {
@@ -164,7 +164,7 @@ const faqSchema = {
       "name": "What makes JKKN different from other Allied Health Sciences colleges?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "JKKN stands apart with its 70+ Year Legacy of educational excellence, state-of-the-art laboratories matching hospital standards, partnerships with 50+ leading hospitals for clinical training, experienced Learning Facilitators with industry expertise, 95%+ placement rate with top healthcare organizations, scholarship programs for deserving Learners, and comprehensive support from admissions through career placement."
+        "text": "JKKN stands apart with its 70+ Year Legacy of educational excellence, state-of-the-art learning labs matching hospital standards, partnerships with 50+ leading hospitals for clinical training, experienced Learning Facilitators with industry expertise, 95%+ placement rate with top healthcare organizations, scholarship programs for deserving Learners, and comprehensive support from admissions through career placement."
       }
     },
     {
@@ -172,7 +172,7 @@ const faqSchema = {
       "name": "How much does B.Sc Allied Health Sciences cost in Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Government Quota (GQ) fees are as per government norms. Management Quota (MQ) fees at JKKN range from 60,000 to 1,70,000 rupees per year covering tuition, laboratory access, and hospital training. Merit-based scholarships cover up to 50 percent of fees."
+        "text": "Government Quota (GQ) fees are as per government norms. Management Quota (MQ) fees at JKKN range from 60,000 to 1,70,000 rupees per year covering tuition, learning lab access, and hospital training. Merit-based scholarships cover up to 50 percent of fees."
       }
     },
     {
@@ -235,7 +235,7 @@ const reviewSchema = {
     {
       "@type": "Review",
       "author": { "@type": "Person", "name": "Anitha Mohan" },
-      "reviewBody": "From state-of-the-art cardiac simulation labs to hospital internship at MIOT, JKKN gave me everything I needed to become a confident cardiac technologist.",
+      "reviewBody": "From state-of-the-art cardiac simulation learning labs to hospital internship at MIOT, JKKN gave me everything I needed to become a confident cardiac technologist.",
       "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
       "datePublished": "2023-06-15",
       "itemReviewed": { "@id": "https://ahs.jkkn.ac.in/#organization" }
@@ -282,7 +282,7 @@ const speakableSchema = {
 
 const courses = [
   { name: "B.Sc Cardiac Technology", slug: "cardiac-technology", description: "Specialized undergraduate program in cardiovascular diagnostics covering ECG interpretation, echocardiography, cardiac catheterization, and pacemaker technology with hands-on clinical training at partner hospitals.", occupation: "Cardiac Technologist", price: "170000" },
-  { name: "B.Sc Radiology & Imaging Technology", slug: "radiology-imaging-technology", description: "Comprehensive program training students in diagnostic imaging including X-ray, CT scan, MRI, ultrasound, and interventional radiology with clinical rotations at multi-specialty hospitals.", occupation: "Radiographer / Imaging Technologist", price: "130000" },
+  { name: "B.Sc Radiology & Imaging Technology", slug: "radiology-imaging-technology", description: "Comprehensive program training learners in diagnostic imaging including X-ray, CT scan, MRI, ultrasound, and interventional radiology with clinical rotations at multi-specialty hospitals.", occupation: "Radiographer / Imaging Technologist", price: "130000" },
   { name: "B.Sc Dialysis Technology", slug: "dialysis-technology", description: "Focused program on renal care and dialysis procedures including hemodialysis, peritoneal dialysis, and continuous renal replacement therapy with practical training at nephrology centers.", occupation: "Dialysis Technician", price: "110000" },
   { name: "B.Sc Operation Theatre & Anaesthesia Technology", slug: "operation-theatre-anaesthesia", description: "Program covering surgical assistance, anaesthesia administration, OT management, sterilization protocols, and post-operative care with extensive operating theatre clinical training.", occupation: "OT & Anaesthesia Technologist", price: "170000" },
   { name: "B.Sc Respiratory Therapy", slug: "respiratory-therapy", description: "Specialized training in respiratory care including ventilator management, pulmonary function testing, oxygen therapy, and cardiopulmonary rehabilitation at ICU and respiratory care units.", occupation: "Respiratory Therapist", price: "110000" },

@@ -172,19 +172,19 @@ export function getMobileNavLinks(pathname: string): MenuGroup[] {
       menus: [
         {
           href: '/classroom',
-          label: 'Class Room',
+          label: 'Learning Studio',
           icon: Building2,
           active: pathname === '/classroom'
         },
         {
           href: '/library',
-          label: 'Library',
+          label: 'Learning Commons',
           icon: Building2,
           active: pathname === '/library'
         },
         {
           href: '/lab',
-          label: 'Lab',
+          label: 'Learning Lab',
           icon: Building2,
           active: pathname === '/lab'
         },
@@ -243,7 +243,7 @@ export function getMobileNavLinks(pathname: string): MenuGroup[] {
       menus: [
         {
           href: '/faculty',
-          label: 'Faculty',
+          label: 'Senior Learners',
           icon: Users,
           active: pathname === '/faculty' || pathname.startsWith('/faculty/')
         },

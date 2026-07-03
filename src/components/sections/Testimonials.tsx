@@ -40,10 +40,10 @@ const testimonials = [
     },
     {
         name: "Mr. Senthil Kumar",
-        role: "Parent of B.Sc. Dialysis Technology 2024 Learner",
+        role: "Family Partner of B.Sc. Dialysis Technology 2024 Learner",
         programLink: "/dialysis-technology",
         initials: "SK",
-        content: "As a parent, choosing the right college was crucial. JKKN's campus safety, hostel facilities, and 95% placement record convinced us. My daughter is now in her final year of Dialysis Technology and already has an internship offer from Kauvery Hospital. The faculty genuinely cares about every Learner's success. [SAMPLE]",
+        content: "As a family partner, choosing the right college was crucial. JKKN's campus safety, hostel facilities, and 95% placement record convinced us. My daughter is now in her final year of Dialysis Technology and already has an internship offer from Kauvery Hospital. The Learning Facilitators genuinely care about every Learner's success. [SAMPLE]",
         bgColor: "bg-[#085231]"
     },
     {

@@ -31,7 +31,7 @@ const topNavLinks = [
   { href: '/admin/events', label: 'Events', icon: CalendarDays },
   { href: '/admin/gallery', label: 'Gallery', icon: ImageIcon },
   { href: '/admin/notices', label: 'Notices', icon: Bell },
-  { href: '/admin/faculty', label: 'Faculty', icon: Users },
+  { href: '/admin/faculty', label: 'Senior Learners', icon: Users },
 ];
 
 const blogSubLinksFixed = [

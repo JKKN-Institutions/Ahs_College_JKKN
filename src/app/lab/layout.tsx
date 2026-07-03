@@ -1,20 +1,20 @@
 import { createPageMetadata } from "@/lib/metadata";
 
 export const metadata = createPageMetadata({
-  title: "Laboratories — JKKN College of Allied Health Sciences",
+  title: "Learning Labs — JKKN College of Allied Health Sciences",
   description:
-    "State-of-the-art labs at JKKN AHS — fully equipped for cardiac, dialysis, radiology, respiratory, and emergency care practical training.",
+    "State-of-the-art learning labs at JKKN AHS — fully equipped for cardiac, dialysis, radiology, respiratory, and emergency care practical training.",
   path: "/lab",
   keywords: [
-    "JKKN college laboratory facilities",
+    "JKKN college learning lab facilities",
     "clinical lab allied health sciences",
     "medical lab practical training Komarapalayam",
-    "simulation lab health science college Tamil Nadu",
-    "JKKN AHS lab equipment",
+    "simulation learning lab health science college Tamil Nadu",
+    "JKKN AHS learning lab equipment",
     "radiology lab Namakkal",
     "cardiac technology lab JKKN",
   ],
-  ogImage: { url: "https://ahs.jkkn.ac.in/lab/allied health science lab1.png", width: 1200, height: 630, alt: "Laboratory Facilities at JKKN College" },
+  ogImage: { url: "https://ahs.jkkn.ac.in/lab/allied health science lab1.png", width: 1200, height: 630, alt: "Learning Lab Facilities at JKKN College" },
 });
 
 const breadcrumbSchema = {
@@ -23,14 +23,14 @@ const breadcrumbSchema = {
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "JKKN Institutions", "item": "https://jkkn.ac.in/" },
     { "@type": "ListItem", "position": 2, "name": "Allied Health Sciences", "item": "https://ahs.jkkn.ac.in/" },
-    { "@type": "ListItem", "position": 3, "name": "Laboratory", "item": "https://ahs.jkkn.ac.in/lab" }
+    { "@type": "ListItem", "position": 3, "name": "Learning Lab", "item": "https://ahs.jkkn.ac.in/lab" }
   ]
 };
 
 const speakableSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "name": "Laboratories — JKKN College of Allied Health Sciences",
+  "name": "Learning Labs — JKKN College of Allied Health Sciences",
   "url": "https://ahs.jkkn.ac.in/lab",
   "speakable": {
     "@type": "SpeakableSpecification",
@@ -41,8 +41,8 @@ const speakableSchema = {
 const facilitySchema = {
   "@context": "https://schema.org",
   "@type": "Place",
-  "name": "Laboratory — JKKN College of Allied Health Sciences",
-  "description": "State-of-the-art labs at JKKN AHS — fully equipped for cardiac, dialysis, radiology, respiratory, and emergency care practical training.",
+  "name": "Learning Lab — JKKN College of Allied Health Sciences",
+  "description": "State-of-the-art learning labs at JKKN AHS — fully equipped for cardiac, dialysis, radiology, respiratory, and emergency care practical training.",
   "url": "https://ahs.jkkn.ac.in/lab",
   "containedInPlace": {
     "@type": "CollegeOrUniversity",
@@ -64,11 +64,11 @@ const faqSchema = {
   "@type": "FAQPage",
   "dateModified": "2026-03-19",
   "mainEntity": [
-    { "@type": "Question", "name": "What lab facilities are available at JKKN College of Allied Health Sciences?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN College of Allied Health Sciences has discipline-specific labs for medical technology, radiology, respiratory therapy, and more, all equipped with advanced medical equipment." } },
-    { "@type": "Question", "name": "Are JKKN labs equipped with modern medical equipment?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. JKKN labs are equipped with advanced, specialised medical equipment tailored to each allied health science programme, ensuring students gain hands-on clinical experience." } },
-    { "@type": "Question", "name": "How many hours of practical training do students get in JKKN labs?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN allied health science students receive extensive lab hours as per university curriculum guidelines, providing sufficient hands-on practice for clinical skill development." } },
-    { "@type": "Question", "name": "Do JKKN labs have simulation equipment for clinical training?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. JKKN labs incorporate simulated patient encounters and clinical procedure setups, allowing students to practise safely before working with real patients." } },
-    { "@type": "Question", "name": "Are lab sessions included in the allied health sciences curriculum at JKKN?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Lab sessions are a core part of the JKKN allied health sciences curriculum, ensuring every student completes required practical hours alongside theory classes." } }
+    { "@type": "Question", "name": "What learning lab facilities are available at JKKN College of Allied Health Sciences?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN College of Allied Health Sciences has discipline-specific learning labs for medical technology, radiology, respiratory therapy, and more, all equipped with advanced medical equipment." } },
+    { "@type": "Question", "name": "Are JKKN learning labs equipped with modern medical equipment?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. JKKN learning labs are equipped with advanced, specialised medical equipment tailored to each allied health science programme, ensuring learners gain hands-on clinical experience." } },
+    { "@type": "Question", "name": "How many hours of practical training do learners get in JKKN learning labs?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN allied health science learners receive extensive learning lab hours as per university curriculum guidelines, providing sufficient hands-on practice for clinical skill development." } },
+    { "@type": "Question", "name": "Do JKKN learning labs have simulation equipment for clinical training?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. JKKN learning labs incorporate simulated patient encounters and clinical procedure setups, allowing learners to practise safely before working with real patients." } },
+    { "@type": "Question", "name": "Are learning lab sessions included in the allied health sciences curriculum at JKKN?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Learning lab sessions are a core part of the JKKN allied health sciences learning framework, ensuring every learner completes required practical hours alongside theory classes." } }
   ]
 };
 

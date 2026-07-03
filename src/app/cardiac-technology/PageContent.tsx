@@ -103,11 +103,11 @@ export default function CardiacTechnology() {
                 {/* Internal Cross-Links */}
                 <section className="py-12 px-4 md:px-8 lg:px-16 bg-white/50">
                   <div className="max-w-6xl mx-auto">
-                    <h2 className="text-xl font-semibold text-[#0b6d41] mb-6">Campus Facilities for Students</h2>
+                    <h2 className="text-xl font-semibold text-[#0b6d41] mb-6">Campus Facilities for Learners</h2>
                     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
-                      <Link href="/lab" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors text-center">Laboratories</Link>
-                      <Link href="/library" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors text-center">Library</Link>
-                      <Link href="/classroom" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors text-center">Classrooms</Link>
+                      <Link href="/lab" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors text-center">Learning Labs</Link>
+                      <Link href="/library" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors text-center">Learning Commons</Link>
+                      <Link href="/classroom" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors text-center">Learning Studios</Link>
                       <Link href="/hostel" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors text-center">Hostel</Link>
                       <Link href="/transport" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors text-center">Transport</Link>
                       <Link href="/food-court" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors text-center">Food Court</Link>
@@ -159,12 +159,12 @@ export default function CardiacTechnology() {
                 <h2 className="text-xl sm:text-2xl font-bold text-[#002309] mb-6">Campus Facilities</h2>
                 <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
                   {[
-                    { name: 'Library', href: '/library' },
-                    { name: 'Laboratories', href: '/lab' },
+                    { name: 'Learning Commons', href: '/library' },
+                    { name: 'Learning Labs', href: '/lab' },
                     { name: 'Hostel', href: '/hostel' },
                     { name: 'Transport', href: '/transport' },
                     { name: 'Food Court', href: '/food-court' },
-                    { name: 'Classrooms', href: '/classroom' },
+                    { name: 'Learning Studios', href: '/classroom' },
                     { name: 'Wi-Fi Campus', href: '/wifi' },
                     { name: 'Ambulance', href: '/ambulance-service' },
                     { name: 'Bank & Post Office', href: '/bank-post-office' },
@@ -212,7 +212,7 @@ function HeroSection() {
                             }}
                             className="px-8 py-3.5 bg-white text-[#0b6d41] border border-[#0b6d41]/20 rounded-full font-bold shadow-lg hover:bg-gray-50 transition-all"
                         >
-                            View Curriculum
+                            View Learning Framework
                         </button>
                     </div>
                 </div>
@@ -283,7 +283,7 @@ function AboutSection() {
                             B.Sc Cardiac Technology is a specialized undergraduate program designed to train healthcare professionals in the diagnosis, monitoring, and treatment support for patients with cardiovascular diseases. This program combines theoretical knowledge with extensive practical training, preparing graduates to work alongside cardiologists and cardiac surgeons.
                         </p>
                         <p>
-                            The curriculum covers performing cardiovascular anatomy and physiology, pharmacology, ECG, echocardiography, cardiac catheterization procedures, pacemaker technology, and intensive cardiac monitoring.
+                            The learning framework covers performing cardiovascular anatomy and physiology, pharmacology, ECG, echocardiography, cardiac catheterization procedures, pacemaker technology, and intensive cardiac monitoring.
                         </p>
                         <p>
                             As cardiovascular diseases remain a leading cause of mortality worldwide, the demand for skilled cardiac technologists continues to grow. Our program ensures graduates are well-equipped with the latest diagnostic techniques.
@@ -444,9 +444,9 @@ function SyllabusSection() {
         <section id="academic-curriculum" className="py-24 bg-white">
             <div className="max-w-7xl mx-auto px-4">
                 <div className="text-center mb-12">
-                    <span className="text-[#0b6d41] font-bold tracking-widest uppercase text-xs mb-2">Academic Curriculum</span>
-                    <h2 className="text-3xl font-black text-[#0b6d41]">Program Structure & Syllabus</h2>
-                    <p className="text-gray-900 mt-2">Comprehensive curriculum designed to ensure mastery in cardiac systems</p>
+                    <span className="text-[#0b6d41] font-bold tracking-widest uppercase text-xs mb-2">Academic Learning Framework</span>
+                    <h2 className="text-3xl font-black text-[#0b6d41]">Program Structure & Learning Pathway</h2>
+                    <p className="text-gray-900 mt-2">Comprehensive learning framework designed to ensure mastery in cardiac systems</p>
                 </div>
 
                 <div className="mb-12 overflow-x-auto px-4 md:px-0">
@@ -545,7 +545,7 @@ function FacilitiesSection() {
 
                 <div className="grid md:grid-cols-4 gap-6">
                     {[
-                        { title: "ECG Lab", color: "bg-[#0b6d41]", text: "text-white", desc: "RPM Scholarship. Modern monitoring machines for student learning." },
+                        { title: "ECG Lab", color: "bg-[#0b6d41]", text: "text-white", desc: "RPM Scholarship. Modern monitoring machines for learner learning." },
                         { title: "Echo Suite", color: "bg-[#ffde59]", text: "text-[#0b6d41]", desc: "Echo Suits. Latest portable and console echo units with partner hospitals." },
                         { title: "Cath Lab ", color: "bg-[#163a4a]", text: "text-white", desc: "Cath Lab. Simulation based training for procedures with partner hospitals." },
                         { title: "Library", color: "bg-white", text: "text-[#0b6d41] border border-[#0b6d41]/10", desc: "Digital Library. Vast collection of medical references." },
@@ -598,7 +598,7 @@ function FAQSection() {
     const [openIndex, setOpenIndex] = useState<number | null>(0);
     const faqs = [
         { q: "What is B.Sc Cardiac Technology?", a: "B.Sc Cardiac Technology is an allied health science course that deals with the diagnosis and treatment of heart-related problems using advanced medical equipment." },
-        { q: "What is the eligibility criteria?", a: "Students must have passed 10+2 with Physics, Chemistry, and Biology/Maths with a minimum of 50% aggregate marks." },
+        { q: "What is the eligibility criteria?", a: "Learners must have passed 10+2 with Physics, Chemistry, and Biology/Maths with a minimum of 50% aggregate marks." },
         { q: "What is the scope of Cardiac Technology?", a: "Scope is vast, including roles in hospitals, cath labs, cardiac rehabilitation centers, and medical device companies." },
         { q: "What are the career opportunities?", a: "Graduates can work as Cardiovascular Technologists, Echo Technicians, Cath Lab Technicians, and Application Specialists." },
         { q: "Can I pursue higher education after this course?", a: "Yes, you can pursue M.Sc in Cardiac Technology or other varied specializations in public health or hospital administration." },

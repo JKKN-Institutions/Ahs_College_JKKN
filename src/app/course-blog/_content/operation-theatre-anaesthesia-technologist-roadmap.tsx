@@ -197,7 +197,7 @@ export default function OperationTheatreContent() {
           Affiliated with The Tamil Nadu Dr. M.G.R. Medical University, Chennai
         </li>
         <li>
-          Combined OT + Anaesthesia curriculum — you graduate dual-skilled, which is
+          Combined OT + Anaesthesia learning framework — you graduate dual-skilled, which is
           what corporate hospitals actually want
         </li>
         <li>
@@ -214,8 +214,8 @@ export default function OperationTheatreContent() {
         </li>
         <li>
           Excellent campus infrastructure —{" "}
-          <Link href="/lab">simulation labs</Link>,{" "}
-          <Link href="/library">library</Link>,{" "}
+          <Link href="/lab">simulation learning labs</Link>,{" "}
+          <Link href="/library">learning commons</Link>,{" "}
           <Link href="/hostel">on-campus hostel</Link>
         </li>
       </ul>

@@ -153,7 +153,7 @@ export default function OurTrust() {
                         <StatsCard
                             icon={<Users className="w-8 h-8 text-[#0b6d41]" />}
                             value="5,000+"
-                            label="Current Students"
+                            label="Current Learners"
                         />
                     </div>
                 </div>

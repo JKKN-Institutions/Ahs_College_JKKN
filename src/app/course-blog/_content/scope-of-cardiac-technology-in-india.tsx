@@ -54,7 +54,7 @@ export default function CardiacTechnologyContent() {
 
       <h2 id="career-paths">Career Paths & Specializations</h2>
       <p>
-        Your B.Sc opens far more than the "ECG technician" role most students assume.
+        Your B.Sc opens far more than the "ECG technician" role most learners assume.
         Within 5 years of graduation, you can specialize across several lucrative
         verticals:
       </p>
@@ -206,14 +206,14 @@ export default function CardiacTechnologyContent() {
           graduates
         </li>
         <li>
-          Access to <Link href="/lab">advanced simulation labs</Link>,{" "}
-          <Link href="/library">medical library</Link>, and{" "}
+          Access to <Link href="/lab">advanced simulation learning labs</Link>,{" "}
+          <Link href="/library">medical learning commons</Link>, and{" "}
           <Link href="/hostel">on-campus hostel</Link>
         </li>
       </ul>
       <p>
         Explore the full{" "}
-        <Link href="/cardiac-technology">B.Sc Cardiac Care Technology curriculum</Link>{" "}
+        <Link href="/cardiac-technology">B.Sc Cardiac Care Technology learning framework</Link>{" "}
         or jump to <Link href="/admissions/cardiac-technology">admissions for 2026-27</Link>{" "}
         with eligibility, fee structure, and seat availability.
       </p>

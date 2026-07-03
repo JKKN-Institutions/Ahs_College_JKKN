@@ -9,28 +9,28 @@ export const revalidate = 60;
 const hardcodedAlbums = [
   {
     id: 'hc-lab',
-    name: 'Labs',
+    name: 'Learning Labs',
     images: [
-      { url: '/lab/allied health science lab1.png', caption: 'Allied Health Science Lab 1' },
-      { url: '/lab/allied health science lab2.png', caption: 'Allied Health Science Lab 2' },
-      { url: '/lab/allied health science lab3.png', caption: 'Allied Health Science Lab 3' },
+      { url: '/lab/allied health science lab1.png', caption: 'Allied Health Science Learning Lab 1' },
+      { url: '/lab/allied health science lab2.png', caption: 'Allied Health Science Learning Lab 2' },
+      { url: '/lab/allied health science lab3.png', caption: 'Allied Health Science Learning Lab 3' },
     ],
   },
   {
     id: 'hc-classroom',
-    name: 'Classrooms',
+    name: 'Learning Studios',
     images: [
-      { url: '/classroom/digital-class-room-1.webp', caption: 'Digital Classroom 1' },
-      { url: '/classroom/digital-class-room-3.webp', caption: 'Digital Classroom 2' },
+      { url: '/classroom/digital-class-room-1.webp', caption: 'Digital Learning Studio 1' },
+      { url: '/classroom/digital-class-room-3.webp', caption: 'Digital Learning Studio 2' },
     ],
   },
   {
     id: 'hc-library',
-    name: 'Library',
+    name: 'Learning Commons',
     images: [
-      { url: '/library/library-1.png', caption: 'Library' },
-      { url: '/library/library-1.webp', caption: 'Library Reading Area' },
-      { url: '/library/library-3.png', caption: 'Library Collection' },
+      { url: '/library/library-1.png', caption: 'Learning Commons' },
+      { url: '/library/library-1.webp', caption: 'Learning Commons Reading Area' },
+      { url: '/library/library-3.png', caption: 'Learning Commons Collection' },
     ],
   },
   {

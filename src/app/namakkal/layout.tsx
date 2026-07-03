@@ -97,10 +97,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "Does JKKN AHS provide hostel for Namakkal students?",
+      name: "Does JKKN AHS provide hostel for Namakkal learners?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes, JKKN AHS provides separate hostel facilities for boys and girls. Students from Namakkal can also opt for daily commute as the campus is just 15-20 minutes away. College transport services are available.",
+        text: "Yes, JKKN AHS provides separate hostel facilities for boys and girls. Learners from Namakkal can also opt for daily commute as the campus is just 15-20 minutes away. College transport services are available.",
       },
     },
     {
@@ -116,7 +116,7 @@ const faqSchema = {
       name: "What are the fees for BSc allied health science in Tamil Nadu?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "BSc Allied Health Science fees in Tamil Nadu typically range from ₹50,000 to ₹2,00,000 per year depending on the college and course. At JKKN College of Allied Health Sciences, fees are competitively priced with scholarship options available for meritorious students. Contact the admission office at +91 9345855001 for the latest fee structure.",
+        text: "BSc Allied Health Science fees in Tamil Nadu typically range from ₹50,000 to ₹2,00,000 per year depending on the college and course. At JKKN College of Allied Health Sciences, fees are competitively priced with scholarship options available for meritorious learners. Contact the admission office at +91 9345855001 for the latest fee structure.",
       },
     },
     {
@@ -132,7 +132,7 @@ const faqSchema = {
       name: "How many allied health science colleges are there in Namakkal?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Namakkal district has several allied health science colleges. JKKN College of Allied Health Sciences, located in Komarapalayam (Namakkal district), offers 9 BSc programmes with NAAC approval and an 85%+ placement rate — making it the preferred choice for Namakkal district students.",
+        text: "Namakkal district has several allied health science colleges. JKKN College of Allied Health Sciences, located in Komarapalayam (Namakkal district), offers 9 BSc programmes with NAAC approval and an 85%+ placement rate — making it the preferred choice for Namakkal district learners.",
       },
     },
     {
@@ -156,15 +156,15 @@ const faqSchema = {
       name: "How well connected is JKKN AHS campus by public transport?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "JKKN AHS campus at Komarapalayam is excellently connected by public transport. It sits directly on NH-544 (Salem-Coimbatore Highway) with frequent TNSTC government buses and private services. Tiruchengode bus stand is ~15 km away with regular local buses. Students from Erode, Salem, Namakkal town, and surrounding areas have multiple daily bus options. The campus also provides its own transport services.",
+        text: "JKKN AHS campus at Komarapalayam is excellently connected by public transport. It sits directly on NH-544 (Salem-Coimbatore Highway) with frequent TNSTC government buses and private services. Tiruchengode bus stand is ~15 km away with regular local buses. Learners from Erode, Salem, Namakkal town, and surrounding areas have multiple daily bus options. The campus also provides its own transport services.",
       },
     },
     {
       "@type": "Question",
-      name: "Do Namakkal district students get any special benefits at JKKN AHS?",
+      name: "Do Namakkal district learners get any special benefits at JKKN AHS?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "While JKKN AHS welcomes students from all districts equally, Namakkal district students benefit from proximity advantages: easy daily commute from nearby towns, lower transportation costs, ability to stay at home and save on hostel fees, strong local community support, and the option to do clinical rotations closer to home. The college also participates in government scholarship programmes available to all eligible Tamil Nadu students.",
+        text: "While JKKN AHS welcomes learners from all districts equally, Namakkal district learners benefit from proximity advantages: easy daily commute from nearby towns, lower transportation costs, ability to stay at home and save on hostel fees, strong local community support, and the option to do clinical rotations closer to home. The college also participates in government scholarship programmes available to all eligible Tamil Nadu learners.",
       },
     },
   ],
@@ -256,7 +256,7 @@ const howToSchema = {
     { "@type": "HowToStep", position: 2, name: "Apply Online", text: "Visit https://www.jkkn.ai/apply/jkkn-admission-2026 and fill out the online application form with your personal and academic details." },
     { "@type": "HowToStep", position: 3, name: "Submit Documents", text: "Upload or submit 12th mark sheet, community certificate, Aadhaar card, passport-size photos, and transfer certificate." },
     { "@type": "HowToStep", position: 4, name: "Attend Counselling", text: "Attend the admission counselling session at JKKN campus or online. Select your preferred BSc programme from 9 available options." },
-    { "@type": "HowToStep", position: 5, name: "Pay Fees & Confirm", text: "Complete fee payment to confirm your admission. Scholarship options are available for meritorious students." },
+    { "@type": "HowToStep", position: 5, name: "Pay Fees & Confirm", text: "Complete fee payment to confirm your admission. Scholarship options are available for meritorious learners." },
     { "@type": "HowToStep", position: 6, name: "Join Campus", text: "Report to JKKN AHS campus at Komarapalayam on the designated date. Hostel and transport facilities available." },
   ],
 };

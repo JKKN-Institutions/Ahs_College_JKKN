@@ -20,7 +20,7 @@ import {
 const tocItems = [
   { id: 'overview', label: 'Allied Health Sciences Overview' },
   { id: 'eligibility', label: 'Eligibility Criteria' },
-  { id: 'curriculum', label: 'Course Curriculum' },
+  { id: 'curriculum', label: 'Course Learning Framework' },
   { id: 'clinical-training', label: 'Clinical Training & Exposure' },
   { id: 'fee-structure', label: 'Fee Structure' },
   { id: 'career-scope', label: 'Career Scope & Placements' },
@@ -37,7 +37,7 @@ const faqs = [
   },
   {
     q: 'Is hostel facility available at JKKN College of Allied Health Sciences?',
-    a: 'Yes, JKKN provides separate hostel facilities for boys and girls within the campus at Natarajapuram, Komarapalayam. The campus includes mess, library, Wi-Fi, and recreational facilities.',
+    a: 'Yes, JKKN provides separate hostel facilities for boys and girls within the campus at Natarajapuram, Komarapalayam. The campus includes mess, learning commons, Wi-Fi, and recreational facilities.',
   },
   {
     q: 'What are the placement opportunities after BSc Allied Health Sciences?',
@@ -77,9 +77,9 @@ const relatedArticles = [
   {
     category: 'Campus Life',
     readTime: '7 min',
-    title: 'A Day in the Life of an Allied Health Sciences Student at JKKN',
+    title: 'A Day in the Life of an Allied Health Sciences Learner at JKKN',
     description:
-      'Follow a typical day of a BSc student at JKKN AHS — from clinical lab sessions and hospital rotations to library study and campus activities...',
+      'Follow a typical day of a BSc learner at JKKN AHS — from clinical lab sessions and hospital rotations to learning commons study and campus activities...',
     date: 'Mar 1, 2026',
     Icon: ClipboardList,
     gradient: 'from-[#7cb983] via-[#6ba872] to-[#006837]',
@@ -392,10 +392,10 @@ export default function BlogDetailPage() {
             {/* ── Section 3: Curriculum ── */}
             <section id="curriculum" className="mb-12 scroll-mt-20">
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
-                B.Ed Course Curriculum — Semester-Wise Breakdown
+                B.Ed Course Learning Framework — Semester-Wise Breakdown
               </h2>
               <p className="text-gray-600 leading-relaxed mb-5">
-                The B.Ed curriculum is structured across four semesters spanning two academic years.
+                The B.Ed learning framework is structured across four semesters spanning two academic years.
                 The program combines theoretical foundations of education with extensive practical
                 classroom training.
               </p>
@@ -436,7 +436,7 @@ export default function BlogDetailPage() {
                         'Sem 4',
                         'Optional Courses, Reading & Reflecting on Texts, School Internship (continued), Dissertation / Project Work',
                       ],
-                      ['Internship', '16 Weeks', 'Practice teaching in government and private schools under faculty supervision'],
+                      ['Internship', '16 Weeks', 'Practice teaching in government and private schools under senior learner supervision'],
                     ].map(([year, sem, subjects], i) => (
                       <tr key={i} className="border-b border-gray-100 last:border-0">
                         <td className="px-4 py-3 text-gray-700 font-medium">{year}</td>
@@ -449,10 +449,10 @@ export default function BlogDetailPage() {
               </div>
               <div className="bg-[#FBFBEE] border-l-4 border-[#006837] rounded-r-xl p-4">
                 <p className="text-sm text-gray-700">
-                  At <strong>JKKN College of Education</strong>, students complete their
+                  At <strong>JKKN College of Education</strong>, learners complete their
                   school internship at partner schools across Komarapalayam, Namakkal, and
                   Erode, gaining <strong>real classroom experience</strong> with structured
-                  mentoring from experienced faculty.
+                  mentoring from experienced senior learners.
                 </p>
               </div>
             </section>
@@ -679,12 +679,12 @@ export default function BlogDetailPage() {
                   {
                     num: 2,
                     title: 'Extensive School Internship',
-                    desc: 'Students complete 16 weeks of practice teaching at partner government and private schools across Komarapalayam, Namakkal, and Erode districts. Real classroom exposure under expert mentorship prepares graduates for confident teaching from day one.',
+                    desc: 'Learners complete 16 weeks of practice teaching at partner government and private schools across Komarapalayam, Namakkal, and Erode districts. Real classroom exposure under expert mentorship prepares graduates for confident teaching from day one.',
                   },
                   {
                     num: 3,
-                    title: 'Experienced Faculty',
-                    desc: 'Our faculty includes experienced teacher-educators with postgraduate and doctoral qualifications in Education, Psychology, and their respective subject specializations. Regular workshops, seminars, and guest lectures enrich student learning.',
+                    title: 'Experienced Senior Learners',
+                    desc: 'Our senior learners include experienced teacher-educators with postgraduate and doctoral qualifications in Education, Psychology, and their respective subject specializations. Regular workshops, seminars, and guest lectures enrich learner learning.',
                   },
                   {
                     num: 4,
@@ -694,7 +694,7 @@ export default function BlogDetailPage() {
                   {
                     num: 5,
                     title: 'Strategic Location & Residential Campus',
-                    desc: 'Situated on NH-544 (Salem-Coimbatore Highway) at Natarajapuram, Komarapalayam, easily accessible from Salem (45 km), Erode (30 km), Namakkal (20 km), and Tiruchengode (15 km). The residential campus includes hostel, library, and sports facilities.',
+                    desc: 'Situated on NH-544 (Salem-Coimbatore Highway) at Natarajapuram, Komarapalayam, easily accessible from Salem (45 km), Erode (30 km), Namakkal (20 km), and Tiruchengode (15 km). The residential campus includes hostel, learning commons, and sports facilities.',
                   },
                 ].map(({ num, title, desc }) => (
                   <div key={num} className="flex gap-4">
@@ -748,7 +748,7 @@ export default function BlogDetailPage() {
                   ],
                   [
                     'Begin your B.Ed program',
-                    'in September 2026. Orientation week includes campus tour, faculty introduction, academic briefing, and micro-teaching workshop.',
+                    'in September 2026. Orientation week includes campus tour, senior learner introduction, academic briefing, and micro-teaching workshop.',
                   ],
                 ].map(([bold, rest], i) => (
                   <div key={i} className="flex gap-4">
@@ -810,7 +810,7 @@ export default function BlogDetailPage() {
                   <p className="text-gray-500 text-sm leading-relaxed mb-2">
                     The content team at JKKN College of Education creates evidence-based
                     educational content about teacher education, career guidance, and academic
-                    pathways. Our faculty includes experienced teacher-educators and researchers
+                    pathways. Our senior learners include experienced teacher-educators and researchers
                     affiliated to Tamil Nadu Teachers Education University (TNTEU).
                   </p>
                   <button className="text-[#006837] font-semibold text-sm hover:underline">

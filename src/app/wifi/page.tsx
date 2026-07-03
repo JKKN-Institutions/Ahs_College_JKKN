@@ -85,7 +85,7 @@ export default function WiFiPage() {
                         <div>
                             <h2 className="text-lg sm:text-xl font-bold text-gray-900 mb-3">All-encompassing Coverage:</h2>
                             <p className="text-gray-700 text-sm sm:text-base leading-relaxed text-justify">
-                                Our strategically placed routers ensure WiFi coverage in lecture halls, libraries, labs, common areas, and even outdoor spaces.
+                                Our strategically placed routers ensure WiFi coverage in learning auditoriums, learning commons, learning labs, common areas, and even outdoor spaces.
                             </p>
                         </div>
 
@@ -141,23 +141,23 @@ export default function WiFiPage() {
                         {[
                             {
                                 q: "Is free WiFi available on the JKKN campus?",
-                                a: "Yes. JKKN campus offers free WiFi access to all students and staff across classrooms, labs, libraries, common areas, and outdoor spaces."
+                                a: "Yes. JKKN campus offers free WiFi access to all learners and team members across learning studios, learning labs, learning commons, common areas, and outdoor spaces."
                             },
                             {
                                 q: "What is the internet speed at JKKN College campus?",
                                 a: "JKKN campus provides high-speed internet that supports video streaming, large file downloads, video conferencing, and simultaneous access by multiple users."
                             },
                             {
-                                q: "Can students access WiFi in hostel rooms at JKKN?",
-                                a: "Yes. WiFi connectivity extends to the JKKN hostel, allowing students to access the internet from their rooms for both academic and personal use."
+                                q: "Can learners access WiFi in hostel rooms at JKKN?",
+                                a: "Yes. WiFi connectivity extends to the JKKN hostel, allowing learners to access the internet from their rooms for both academic and personal use."
                             },
                             {
-                                q: "Is WiFi available in classrooms and labs at JKKN?",
-                                a: "Yes. WiFi is available in all classrooms, labs, and lecture halls at JKKN, supporting digital learning tools and online academic resources."
+                                q: "Is WiFi available in learning studios and learning labs at JKKN?",
+                                a: "Yes. WiFi is available in all learning studios, learning labs, and learning auditoriums at JKKN, supporting digital learning tools and online academic resources."
                             },
                             {
-                                q: "How do students connect to the JKKN campus WiFi network?",
-                                a: "Students connect to the JKKN campus WiFi using credentials provided during admission. The network is secured with multi-layered security protocols."
+                                q: "How do learners connect to the JKKN campus WiFi network?",
+                                a: "Learners connect to the JKKN campus WiFi using credentials provided during admission. The network is secured with multi-layered security protocols."
                             }
                         ].map((faq, i) => (
                             <div key={i} className="border border-gray-200 rounded-2xl overflow-hidden bg-white">

@@ -3,7 +3,7 @@ import { createPageMetadata } from "@/lib/metadata";
 export const metadata = createPageMetadata({
   title: "Wi-Fi Campus — JKKN College of Allied Health Sciences",
   description:
-    "JKKN offers campus-wide high-speed Wi-Fi connectivity for students to access digital resources, e-journals, and online learning platforms.",
+    "JKKN offers campus-wide high-speed Wi-Fi connectivity for learners to access digital resources, e-journals, and online learning platforms.",
   path: "/wifi",
   keywords: [
     "JKKN campus WiFi",
@@ -42,7 +42,7 @@ const facilitySchema = {
   "@context": "https://schema.org",
   "@type": "Place",
   "name": "Wi-Fi — JKKN College of Allied Health Sciences",
-  "description": "JKKN offers campus-wide high-speed Wi-Fi connectivity for students to access digital resources, e-journals, and online learning platforms.",
+  "description": "JKKN offers campus-wide high-speed Wi-Fi connectivity for learners to access digital resources, e-journals, and online learning platforms.",
   "url": "https://ahs.jkkn.ac.in/wifi",
   "containedInPlace": {
     "@type": "CollegeOrUniversity",
@@ -64,11 +64,11 @@ const faqSchema = {
   "@type": "FAQPage",
   "dateModified": "2026-03-19",
   "mainEntity": [
-    { "@type": "Question", "name": "Is free WiFi available on the JKKN campus?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. JKKN campus offers free WiFi access to all students and staff across classrooms, labs, libraries, common areas, and outdoor spaces." } },
+    { "@type": "Question", "name": "Is free WiFi available on the JKKN campus?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. JKKN campus offers free WiFi access to all learners and team members across learning studios, learning labs, learning commons, common areas, and outdoor spaces." } },
     { "@type": "Question", "name": "What is the internet speed at JKKN College campus?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN campus provides high-speed internet that supports video streaming, large file downloads, video conferencing, and simultaneous access by multiple users." } },
-    { "@type": "Question", "name": "Can students access WiFi in hostel rooms at JKKN?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. WiFi connectivity extends to the JKKN hostel, allowing students to access the internet from their rooms for both academic and personal use." } },
-    { "@type": "Question", "name": "Is WiFi available in classrooms and labs at JKKN?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. WiFi is available in all classrooms, labs, and lecture halls at JKKN, supporting digital learning tools and online academic resources." } },
-    { "@type": "Question", "name": "How do students connect to the JKKN campus WiFi network?", "acceptedAnswer": { "@type": "Answer", "text": "Students connect to the JKKN campus WiFi using credentials provided during admission. The network is secured with multi-layered security protocols." } }
+    { "@type": "Question", "name": "Can learners access WiFi in hostel rooms at JKKN?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. WiFi connectivity extends to the JKKN hostel, allowing learners to access the internet from their rooms for both academic and personal use." } },
+    { "@type": "Question", "name": "Is WiFi available in learning studios and learning labs at JKKN?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. WiFi is available in all learning studios, learning labs, and learning auditoriums at JKKN, supporting digital learning tools and online academic resources." } },
+    { "@type": "Question", "name": "How do learners connect to the JKKN campus WiFi network?", "acceptedAnswer": { "@type": "Answer", "text": "Learners connect to the JKKN campus WiFi using credentials provided during admission. The network is secured with multi-layered security protocols." } }
   ]
 };
 

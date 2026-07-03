@@ -81,7 +81,7 @@ export default function FoodCourt() {
                                         We understand that <span className="text-[#0b6d41] font-bold">success isn't limited to academic achievements</span>, but also encompasses the quality of life on campus. That’s why we’re proud to offer a cutting-edge cafeteria that not only satisfies your taste buds, but also keeps you energized throughout the day.
                                     </p>
                                     <p className="mb-6">
-                                        Our cafeteria is more than just a place to grab a quick meal. It’s a <span className="bg-[#ffde59]/30 px-1 rounded text-[#0b6d41] font-semibold">social hub</span> where students can gather, relax, catch up with friends, and rejuvenate before resuming their studies. With cozy seating and a welcoming atmosphere, it’s the ideal spot to take a break and replenish your energy.
+                                        Our cafeteria is more than just a place to grab a quick meal. It’s a <span className="bg-[#ffde59]/30 px-1 rounded text-[#0b6d41] font-semibold">social hub</span> where learners can gather, relax, catch up with friends, and rejuvenate before resuming their studies. With cozy seating and a welcoming atmosphere, it’s the ideal spot to take a break and replenish your energy.
                                     </p>
                                     <p className="mb-6">
                                         In terms of food options, you won’t be disappointed with our diverse selection. Our menu caters to a variety of dietary needs and preferences, ranging from fresh salads and sandwiches to hearty hot meals and snacks. We’re confident that you’ll find something scrumptious and fulfilling, regardless of your tastes.
@@ -244,7 +244,7 @@ export default function FoodCourt() {
                             { q: "Does JKKN College have a food court on campus?", a: "Yes, JKKN College of Allied Health Sciences has a modern food court on campus offering diverse, hygienic, and affordable meals daily." },
                             { q: "Is vegetarian food available at the JKKN food court?", a: "Yes, the JKKN food court serves a wide variety of fresh vegetarian meals, snacks, and beverages to cater to all dietary preferences." },
                             { q: "What are the food court timings at JKKN College?", a: "The JKKN food court operates throughout college hours, from morning to evening, serving breakfast, lunch, and evening snacks daily." },
-                            { q: "Are meals included in the hostel fee at JKKN?", a: "Yes, hostel students receive three nutritious meals daily through the campus mess as part of their hostel accommodation package." },
+                            { q: "Are meals included in the hostel fee at JKKN?", a: "Yes, hostel learners receive three nutritious meals daily through the campus mess as part of their hostel accommodation package." },
                             { q: "Is the JKKN food court hygienic and clean?", a: "Yes, the JKKN food court maintains strict hygiene standards with regular inspections, fresh ingredients, and eco-friendly food-grade packaging." },
                         ].map((faq, i) => (
                             <div key={i} className="border border-gray-200 rounded-2xl overflow-hidden bg-white">

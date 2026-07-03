@@ -3,14 +3,14 @@ import { createPageMetadata } from "@/lib/metadata";
 export const metadata = createPageMetadata({
   title: "Bank & Post Office — JKKN Allied Health Sciences",
   description:
-    "On-campus banking and postal services at JKKN, Komarapalayam — ATM, bank branch, and post office for student convenience.",
+    "On-campus banking and postal services at JKKN, Komarapalayam — ATM, bank branch, and post office for learner convenience.",
   path: "/bank-post-office",
   keywords: [
     "JKKN campus bank branch",
     "on-campus ATM Komarapalayam",
     "college post office Tamil Nadu",
     "JKKN AHS banking facility",
-    "student bank account Namakkal college",
+    "learner bank account Namakkal college",
     "campus postal service JKKN",
     "bank and post office allied health college",
   ],
@@ -41,7 +41,7 @@ const facilitySchema = {
   "@context": "https://schema.org",
   "@type": "Place",
   "name": "Bank & Post Office — JKKN College of Allied Health Sciences",
-  "description": "On-campus banking and postal services at JKKN, Komarapalayam — ATM, bank branch, and post office for student convenience.",
+  "description": "On-campus banking and postal services at JKKN, Komarapalayam — ATM, bank branch, and post office for learner convenience.",
   "url": "https://ahs.jkkn.ac.in/bank-post-office",
   "containedInPlace": {
     "@type": "CollegeOrUniversity",
@@ -63,11 +63,11 @@ const faqSchema = {
   "@type": "FAQPage",
   "dateModified": "2026-03-19",
   "mainEntity": [
-    { "@type": "Question", "name": "Is there a bank inside the JKKN College campus?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. JKKN College campus has a fully functional bank branch inside campus, allowing students and staff to manage all their banking needs conveniently." } },
-    { "@type": "Question", "name": "Which bank branch is available at JKKN campus?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN campus has a branch of a popular nationalised bank offering services like account opening, deposits, withdrawals, and fund transfers for students and staff." } },
-    { "@type": "Question", "name": "Can students open bank accounts at the JKKN campus bank?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Students can open bank accounts directly at the JKKN campus branch. Special offers and discounts are available exclusively for JKKN students and staff." } },
+    { "@type": "Question", "name": "Is there a bank inside the JKKN College campus?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. JKKN College campus has a fully functional bank branch inside campus, allowing learners and team members to manage all their banking needs conveniently." } },
+    { "@type": "Question", "name": "Which bank branch is available at JKKN campus?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN campus has a branch of a popular nationalised bank offering services like account opening, deposits, withdrawals, and fund transfers for learners and team members." } },
+    { "@type": "Question", "name": "Can learners open bank accounts at the JKKN campus bank?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Learners can open bank accounts directly at the JKKN campus branch. Special offers and discounts are available exclusively for JKKN learners and team members." } },
     { "@type": "Question", "name": "Is there a post office at JKKN College campus?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. JKKN campus has a dedicated post office offering domestic and international mail, speed post, registered post, parcel delivery, and postal savings schemes." } },
-    { "@type": "Question", "name": "Are ATM facilities available at JKKN campus?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. ATM facilities are available on the JKKN campus, giving students and staff easy access to cash and basic banking transactions at any time." } }
+    { "@type": "Question", "name": "Are ATM facilities available at JKKN campus?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. ATM facilities are available on the JKKN campus, giving learners and team members easy access to cash and basic banking transactions at any time." } }
   ]
 };
 

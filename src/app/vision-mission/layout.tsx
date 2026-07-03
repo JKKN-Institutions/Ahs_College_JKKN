@@ -3,7 +3,7 @@ import { createPageMetadata } from "@/lib/metadata";
 export const metadata = createPageMetadata({
   title: "Vision & Mission — JKKN College of Allied Health Sciences",
   description:
-    "Discover the vision and mission of JKKN College of Allied Health Sciences — excellence in healthcare education, clinical training, and student success.",
+    "Discover the vision and mission of JKKN College of Allied Health Sciences — excellence in healthcare education, clinical training, and learner success.",
   path: "/vision-mission",
   keywords: [
     "JKKN vision mission allied health",
@@ -20,7 +20,7 @@ const aboutPageSchema = {
   "@type": "AboutPage",
   "name": "Vision & Mission — JKKN College of Allied Health Sciences",
   "url": "https://ahs.jkkn.ac.in/vision-mission",
-  "description": "The vision and mission of JKKN College of Allied Health Sciences — committed to excellence in allied health education, clinical training, and student success in Komarapalayam, Tamil Nadu.",
+  "description": "The vision and mission of JKKN College of Allied Health Sciences — committed to excellence in allied health education, clinical training, and learner success in Komarapalayam, Tamil Nadu.",
   "mainEntity": {
     "@type": "CollegeOrUniversity",
     "name": "JKKN College of Allied Health Sciences",

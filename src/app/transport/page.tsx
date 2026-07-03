@@ -37,7 +37,7 @@ export default function Transport() {
                         {/* Introduction */}
                         <div className="mb-8">
                             <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-                                Transportation is a crucial component of any educational institution, providing students and faculty members with a convenient means of getting to campus and enhancing the overall learning experience. JKKN Educational Institutions recognize the significance of transportation and have made significant efforts to improve their transport facilities. Below are some of the exceptional features of the transport service at JKKN Educational Institutions.
+                                Transportation is a crucial component of any educational institution, providing learners and senior learners with a convenient means of getting to campus and enhancing the overall learning experience. JKKN Educational Institutions recognize the significance of transportation and have made significant efforts to improve their transport facilities. Below are some of the exceptional features of the transport service at JKKN Educational Institutions.
                             </p>
                         </div>
 
@@ -111,7 +111,7 @@ export default function Transport() {
                                 Timely Services:
                             </h2>
                             <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-                                The transport service at JKKN Educational Institutions operates on a strict schedule, ensuring that the buses arrive and depart from the campus promptly. This allows students and faculty members to plan their day accordingly, without worrying about delays or missed buses.
+                                The transport service at JKKN Educational Institutions operates on a strict schedule, ensuring that the buses arrive and depart from the campus promptly. This allows learners and senior learners to plan their day accordingly, without worrying about delays or missed buses.
                             </p>
                         </div>
 
@@ -121,14 +121,14 @@ export default function Transport() {
                                 Accessibility:
                             </h2>
                             <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-                                The transport service at JKKN Educational Institutions is available to all students, regardless of their physical abilities. The buses come equipped with wheelchair ramps and other accessibility features to facilitate easy movement for students with disabilities.
+                                The transport service at JKKN Educational Institutions is available to all learners, regardless of their physical abilities. The buses come equipped with wheelchair ramps and other accessibility features to facilitate easy movement for learners with disabilities.
                             </p>
                         </div>
 
                         {/* Conclusion */}
                         <div className="mb-6">
                             <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-                                In summary, JKKN Educational Institutions' transportation service provides safe, reliable, and affordable transportation to all its students and faculty members. The institution has taken significant strides to ensure that the transportation service is accessible, secure, and comfortable for everyone.
+                                In summary, JKKN Educational Institutions' transportation service provides safe, reliable, and affordable transportation to all its learners and senior learners. The institution has taken significant strides to ensure that the transportation service is accessible, secure, and comfortable for everyone.
                             </p>
                         </div>
                     </div>
@@ -139,10 +139,10 @@ export default function Transport() {
                     <h2 className="text-2xl sm:text-3xl font-bold text-[#0b6d41] mb-8">Frequently Asked Questions About JKKN Transport</h2>
                     <div className="space-y-4">
                         {[
-                            { q: "Does JKKN College provide bus transport for students?", a: "Yes, JKKN College of Allied Health Sciences provides a well-maintained bus fleet for students and faculty from nearby towns and cities." },
-                            { q: "What areas does the JKKN college bus service cover?", a: "JKKN buses cover Salem, Erode, Namakkal, Tiruchengode, Komarapalayam, and surrounding areas, ensuring broad accessibility for students." },
+                            { q: "Does JKKN College provide bus transport for learners?", a: "Yes, JKKN College of Allied Health Sciences provides a well-maintained bus fleet for learners and senior learners from nearby towns and cities." },
+                            { q: "What areas does the JKKN college bus service cover?", a: "JKKN buses cover Salem, Erode, Namakkal, Tiruchengode, Komarapalayam, and surrounding areas, ensuring broad accessibility for learners." },
                             { q: "What is the transport fee at JKKN College?", a: "Transport fees vary by distance and route. Contact JKKN admissions at 9345855001 for current bus fee details and route schedules." },
-                            { q: "Are there separate buses for boys and girls at JKKN?", a: "JKKN transport is mixed but ensures safety with CCTV cameras on buses and female attendants available to assist girl students." },
+                            { q: "Are there separate buses for boys and girls at JKKN?", a: "JKKN transport is mixed but ensures safety with CCTV cameras on buses and female attendants available to assist girl learners." },
                             { q: "What is the bus timing for JKKN College?", a: "JKKN buses operate on a strict schedule aligned with college hours. Contact the transport office at 9345855001 for exact timings." },
                         ].map((faq, i) => (
                             <div key={i} className="border border-gray-200 rounded-2xl overflow-hidden bg-white">

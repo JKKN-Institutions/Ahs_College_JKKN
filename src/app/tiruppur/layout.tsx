@@ -97,10 +97,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "Does JKKN AHS provide hostel for Tiruppur students?",
+      name: "Does JKKN AHS provide hostel for Tiruppur learners?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes, JKKN AHS provides separate hostel facilities for boys and girls. Students from Tiruppur can also opt for daily commute as the campus is just about 1.5 hours away. College transport services are available.",
+        text: "Yes, JKKN AHS provides separate hostel facilities for boys and girls. Learners from Tiruppur can also opt for daily commute as the campus is just about 1.5 hours away. College transport services are available.",
       },
     },
     {
@@ -116,7 +116,7 @@ const faqSchema = {
       name: "What are the fees for BSc allied health science in Tamil Nadu?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "BSc Allied Health Science fees in Tamil Nadu typically range from ₹50,000 to ₹2,00,000 per year depending on the college and course. At JKKN College of Allied Health Sciences, fees are competitively priced with scholarship options available for meritorious students. Contact the admission office at +91 9345855001 for the latest fee structure.",
+        text: "BSc Allied Health Science fees in Tamil Nadu typically range from ₹50,000 to ₹2,00,000 per year depending on the college and course. At JKKN College of Allied Health Sciences, fees are competitively priced with scholarship options available for meritorious learners. Contact the admission office at +91 9345855001 for the latest fee structure.",
       },
     },
     {
@@ -153,18 +153,18 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "Can Tiruppur students visit home on weekends while studying at JKKN AHS?",
+      name: "Can Tiruppur learners visit home on weekends while studying at JKKN AHS?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes, at ~67 km via NH-544 through Erode, Tiruppur students can easily visit home on weekends. The journey takes about 1.5 hours by bus. Regular TNSTC and private bus services run between Tiruppur and Komarapalayam throughout the day. Many students also use two-wheelers for the commute.",
+        text: "Yes, at ~67 km via NH-544 through Erode, Tiruppur learners can easily visit home on weekends. The journey takes about 1.5 hours by bus. Regular TNSTC and private bus services run between Tiruppur and Komarapalayam throughout the day. Many learners also use two-wheelers for the commute.",
       },
     },
     {
       "@type": "Question",
-      name: "What is hostel life like at JKKN AHS for Tiruppur students?",
+      name: "What is hostel life like at JKKN AHS for Tiruppur learners?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "JKKN AHS offers separate hostel facilities for boys and girls with 24/7 security, Wi-Fi, mess facilities with home-style South Indian food, recreation rooms, and study halls. Tiruppur students form a significant community on campus. The hostel fee is affordable compared to city hostels, and the campus provides a safe, focused environment for studies.",
+        text: "JKKN AHS offers separate hostel facilities for boys and girls with 24/7 security, Wi-Fi, mess facilities with home-style South Indian food, recreation rooms, and learning commons. Tiruppur learners form a significant community on campus. The hostel fee is affordable compared to city hostels, and the campus provides a safe, focused environment for studies.",
       },
     },
   ],
@@ -256,7 +256,7 @@ const howToSchema = {
     { "@type": "HowToStep", position: 2, name: "Apply Online", text: "Visit https://www.jkkn.ai/apply/jkkn-admission-2026 and fill out the online application form with your personal and academic details." },
     { "@type": "HowToStep", position: 3, name: "Submit Documents", text: "Upload or submit 12th mark sheet, community certificate, Aadhaar card, passport-size photos, and transfer certificate." },
     { "@type": "HowToStep", position: 4, name: "Attend Counselling", text: "Attend the admission counselling session at JKKN campus or online. Select your preferred BSc programme from 9 available options." },
-    { "@type": "HowToStep", position: 5, name: "Pay Fees & Confirm", text: "Complete fee payment to confirm your admission. Scholarship options are available for meritorious students." },
+    { "@type": "HowToStep", position: 5, name: "Pay Fees & Confirm", text: "Complete fee payment to confirm your admission. Scholarship options are available for meritorious learners." },
     { "@type": "HowToStep", position: 6, name: "Join Campus", text: "Report to JKKN AHS campus at Komarapalayam on the designated date. Hostel and transport facilities available." },
   ],
 };

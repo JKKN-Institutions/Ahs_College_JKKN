@@ -8,7 +8,7 @@ export const metadata = createPageMetadata({
   keywords: [
     "privacy policy JKKN",
     "JKKN College data protection",
-    "student privacy allied health sciences",
+    "learner privacy allied health sciences",
     "JKKN website privacy",
     "data protection policy Komarapalayam college",
     "personal information policy JKKN",

@@ -108,7 +108,7 @@ const faqSchema = {
       "name": "What is Bachelor of Science Respiratory Therapy and what does it involve at JKKN College Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Bachelor of Science Respiratory Therapy at JKKN College Tamil Nadu is a four-year program training students in pulmonary diagnostics, mechanical ventilation, airway management, and cardiopulmonary rehabilitation."
+        "text": "Bachelor of Science Respiratory Therapy at JKKN College Tamil Nadu is a four-year program training learners in pulmonary diagnostics, mechanical ventilation, airway management, and cardiopulmonary rehabilitation."
       }
     },
     {
@@ -145,7 +145,7 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      "name": "What is the difference between Respiratory Therapy and Pulmonology for students at JKKN College Tamil Nadu?",
+      "name": "What is the difference between Respiratory Therapy and Pulmonology for learners at JKKN College Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Pulmonology requires an MBBS degree to independently diagnose lung diseases. Respiratory Therapy trains allied health professionals to manage ventilators and administer treatments under physician supervision."

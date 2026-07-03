@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Allied Health Sciences Admission 2026: Courses, Eligibility & Careers | JKKN AHS Blog",
   description:
-    "Complete guide to allied health sciences admission 2026 in Tamil Nadu — eligibility criteria, course curriculum, clinical training, fee structure, career scope, and admission process at JKKN College.",
+    "Complete guide to allied health sciences admission 2026 in Tamil Nadu — eligibility criteria, course learning framework, clinical training, fee structure, career scope, and admission process at JKKN College.",
   alternates: {
     canonical: "https://ahs.jkkn.ac.in/blog/allied-health-sciences-admission-2026",
   },
