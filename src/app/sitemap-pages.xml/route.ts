@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import { getAllCourseSlugs } from '@/lib/admission-courses';
 import { getAllCourseBlogSlugs } from '@/lib/course-blog-posts';
+import { getAllCitySlugs } from '@/lib/city-pages';
 
 const domain = (process.env.NEXT_PUBLIC_SITE_DOMAIN ?? 'ahs.jkkn.ac.in')
   .replace(/^https?:\/\//, '')
@@ -22,7 +23,8 @@ function buildPages(lastmod: string): Entry[] {
     'critical-care-technology',
   ];
 
-  const citySlugs = ['erode', 'namakkal', 'salem', 'tiruppur', 'coimbatore'];
+  // Legacy hardcoded city pages + library-driven city pages (src/lib/city-pages.ts)
+  const citySlugs = ['erode', 'namakkal', 'salem', 'tiruppur', 'coimbatore', ...getAllCitySlugs()];
 
   const facilitySlugs = [
     'hostel',
