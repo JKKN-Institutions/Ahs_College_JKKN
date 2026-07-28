@@ -24,6 +24,7 @@ import {
   Clock,
   Globe,
   Eye,
+  Save,
 } from 'lucide-react';
 
 const RichTextEditor = dynamic(() => import('./RichTextEditor'), {
@@ -78,6 +79,20 @@ const STATUS_OPTIONS = [
   { value: 'scheduled', label: 'Scheduled' },
   { value: 'archived', label: 'Archived' },
 ];
+
+const PRIMARY_LABELS: Record<string, string> = {
+  draft: 'Save as Draft',
+  published: 'Publish Post',
+  scheduled: 'Schedule Post',
+  archived: 'Save as Archived',
+};
+
+const SUCCESS_MESSAGES: Record<string, string> = {
+  draft: 'Draft saved!',
+  published: 'Post published!',
+  scheduled: 'Post scheduled!',
+  archived: 'Post archived!',
+};
 
 // ─── Sub-components ─────────────────────────────────────────────────────────
 
@@ -299,7 +314,7 @@ export default function NewPostForm({ userEmail, userName, userAvatar, categorie
     toast.success(`Estimated read time: ${mins} min`);
   }
 
-  async function handleSubmit(publish: boolean) {
+  async function handleSubmit(forceDraft = false) {
     if (!title.trim()) return toast.error('Title is required.');
     if (!slug.trim()) return toast.error('Slug is required.');
 
@@ -307,7 +322,9 @@ export default function NewPostForm({ userEmail, userName, userAvatar, categorie
     const coverUrl = await uploadCoverImage();
     if (coverImageFile && !coverUrl) { setSaving(false); return; }
 
-    const status = publish ? 'published' : postStatus === 'published' ? 'draft' : postStatus;
+    // Status comes from the Publish dropdown — only the explicit "Save as Draft"
+    // action overrides it.
+    const status = forceDraft ? 'draft' : postStatus;
 
     const payload = {
       college_id: collegeId,
@@ -341,7 +358,7 @@ export default function NewPostForm({ userEmail, userName, userAvatar, categorie
     if (error) {
       toast.error('Failed to save: ' + error.message);
     } else {
-      toast.success(status === 'published' ? 'Post published!' : 'Draft saved!');
+      toast.success(SUCCESS_MESSAGES[status] ?? 'Post saved!');
       router.push('/admin/blogs');
       router.refresh();
     }
@@ -564,23 +581,26 @@ export default function NewPostForm({ userEmail, userName, userAvatar, categorie
               <div className="flex gap-2 pt-1">
                 <button
                   type="button"
-                  onClick={() => handleSubmit(true)}
+                  onClick={() => handleSubmit()}
                   disabled={saving}
                   className="flex-1 flex items-center justify-center gap-2 bg-[#006837] text-white text-sm font-semibold py-2.5 rounded-xl hover:bg-[#005a2e] transition disabled:opacity-50"
                 >
                   {saving && <Loader2 className="w-4 h-4 animate-spin" />}
                   <FileText className="w-3.5 h-3.5" />
-                  Create Post
+                  {PRIMARY_LABELS[postStatus] ?? 'Save Post'}
                 </button>
-                <button
-                  type="button"
-                  onClick={() => handleSubmit(false)}
-                  disabled={saving}
-                  className="flex items-center justify-center gap-1.5 border border-gray-200 text-sm font-medium text-gray-600 px-3 py-2.5 rounded-xl hover:bg-gray-50 transition disabled:opacity-50"
-                >
-                  <Eye className="w-3.5 h-3.5" />
-                  Save
-                </button>
+                {postStatus !== 'draft' && (
+                  <button
+                    type="button"
+                    onClick={() => handleSubmit(true)}
+                    disabled={saving}
+                    className="flex items-center justify-center gap-1.5 border border-gray-200 text-sm font-medium text-gray-600 px-3 py-2.5 rounded-xl hover:bg-gray-50 transition disabled:opacity-50"
+                    title="Save as draft instead"
+                  >
+                    <Save className="w-3.5 h-3.5" />
+                    Draft
+                  </button>
+                )}
               </div>
             </div>
           </div>

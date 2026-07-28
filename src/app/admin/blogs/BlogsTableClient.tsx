@@ -354,6 +354,15 @@ export default function BlogsTableClient({ blogs, categories }: Props) {
                                   View Live
                                 </Link>
                               )}
+                              <Link
+                                href={`/blog/preview/${blog.id}`}
+                                target="_blank"
+                                className="flex items-center gap-2.5 px-3 py-2 text-sm text-gray-700 hover:bg-gray-50"
+                                onClick={() => setOpenMenu(null)}
+                              >
+                                <Eye className="w-3.5 h-3.5" />
+                                Preview
+                              </Link>
                               <hr className="my-1 border-gray-100" />
                               <button
                                 onClick={() => { setOpenMenu(null); setPendingDeleteId(blog.id); }}

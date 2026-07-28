@@ -23,6 +23,7 @@ import {
   Clock,
   Globe,
   Eye,
+  Save,
 } from 'lucide-react';
 
 const RichTextEditor = dynamic(() => import('../new/RichTextEditor'), {
@@ -106,6 +107,20 @@ const STATUS_OPTIONS = [
   { value: 'scheduled', label: 'Scheduled' },
   { value: 'archived', label: 'Archived' },
 ];
+
+const PRIMARY_LABELS: Record<string, string> = {
+  draft: 'Save as Draft',
+  published: 'Publish Post',
+  scheduled: 'Schedule Post',
+  archived: 'Save as Archived',
+};
+
+const SUCCESS_MESSAGES: Record<string, string> = {
+  draft: 'Draft saved!',
+  published: 'Post published!',
+  scheduled: 'Post scheduled!',
+  archived: 'Post archived!',
+};
 
 // ─── Sub-components ─────────────────────────────────────────────────────────
 
@@ -313,14 +328,16 @@ export default function EditPostForm({ blog, userEmail, userName, userAvatar, ca
     toast.success(`Estimated read time: ${mins} min`);
   }
 
-  async function handleSubmit(publish: boolean) {
+  async function handleSubmit(forceDraft = false) {
     if (!title.trim()) return toast.error('Title is required.');
     if (!slug.trim()) return toast.error('Slug is required.');
 
     setSaving(true);
     const coverUrl = await uploadCoverImage();
 
-    const status = publish ? 'published' : postStatus;
+    // Status comes from the Publish dropdown — only the explicit "Draft"
+    // action overrides it.
+    const status = forceDraft ? 'draft' : postStatus;
 
     const payload: Record<string, unknown> = {
       title: title.trim(),
@@ -351,7 +368,7 @@ export default function EditPostForm({ blog, userEmail, userName, userAvatar, ca
     if (error) {
       toast.error('Failed to update: ' + error.message);
     } else {
-      toast.success(status === 'published' ? 'Post published!' : 'Post updated!');
+      toast.success(SUCCESS_MESSAGES[status] ?? 'Post updated!');
       router.push('/admin/blogs');
       router.refresh();
     }
@@ -574,24 +591,37 @@ export default function EditPostForm({ blog, userEmail, userName, userAvatar, ca
               <div className="flex gap-2 pt-1">
                 <button
                   type="button"
-                  onClick={() => handleSubmit(true)}
+                  onClick={() => handleSubmit()}
                   disabled={saving}
                   className="flex-1 flex items-center justify-center gap-2 bg-[#006837] text-white text-sm font-semibold py-2.5 rounded-xl hover:bg-[#005a2e] transition disabled:opacity-50"
                 >
                   {saving && <Loader2 className="w-4 h-4 animate-spin" />}
                   <FileText className="w-3.5 h-3.5" />
-                  Update Post
+                  {PRIMARY_LABELS[postStatus] ?? 'Update Post'}
                 </button>
-                <button
-                  type="button"
-                  onClick={() => handleSubmit(false)}
-                  disabled={saving}
-                  className="flex items-center justify-center gap-1.5 border border-gray-200 text-sm font-medium text-gray-600 px-3 py-2.5 rounded-xl hover:bg-gray-50 transition disabled:opacity-50"
-                >
-                  <Eye className="w-3.5 h-3.5" />
-                  Save
-                </button>
+                {postStatus !== 'draft' && (
+                  <button
+                    type="button"
+                    onClick={() => handleSubmit(true)}
+                    disabled={saving}
+                    className="flex items-center justify-center gap-1.5 border border-gray-200 text-sm font-medium text-gray-600 px-3 py-2.5 rounded-xl hover:bg-gray-50 transition disabled:opacity-50"
+                    title="Save as draft instead"
+                  >
+                    <Save className="w-3.5 h-3.5" />
+                    Draft
+                  </button>
+                )}
               </div>
+
+              <a
+                href={`/blog/preview/${blog.id}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 w-full border border-gray-200 text-sm font-medium text-gray-600 py-2.5 rounded-xl hover:bg-gray-50 transition"
+              >
+                <Eye className="w-3.5 h-3.5" />
+                Preview
+              </a>
             </div>
           </div>
 
