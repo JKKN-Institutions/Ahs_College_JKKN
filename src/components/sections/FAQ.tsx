@@ -75,7 +75,7 @@ export function FAQ() {
     return (
         <section id="faq" className="py-12 sm:py-16 md:py-24 bg-[#fbfbee] overflow-hidden">
             <div className="max-w-4xl mx-auto px-4 sm:px-6">
-                <div className="text-center mb-6 sm:mb-8 md:mb-16">
+                <div className="text-center mb-10 sm:mb-12 md:mb-16">
                     <span className="text-[#0b6d41] font-bold tracking-wider uppercase text-xs sm:text-sm mb-4 block">FAQs</span>
                     <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#0b6d41] leading-tight mb-4 sm:mb-6">
                         Frequently Asked Questions

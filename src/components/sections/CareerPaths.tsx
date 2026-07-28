@@ -48,7 +48,7 @@ export function CareerPaths() {
     return (
         <section id="careers" className="py-12 sm:py-16 md:py-24 bg-[#fbfbee] overflow-hidden relative">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
-                <div className="text-center mb-6 sm:mb-8 md:mb-16">
+                <div className="text-center mb-10 sm:mb-12 md:mb-16">
                     <span className="text-[#0b6d41] font-bold tracking-wider uppercase text-xs sm:text-sm mb-4 block">CAREER OPPORTUNITIES</span>
                     <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#0b6d41] leading-tight mb-4 sm:mb-6">
                         Where Will Allied Health Sciences<br className="hidden sm:block" />Take You?
@@ -78,8 +78,8 @@ export function CareerPaths() {
                 </div>
 
                 {/* Placements Section */}
-                <div id="placements" className="mt-12 sm:mt-16 md:mt-24 bg-gradient-to-br from-gray-50 to-white rounded-2xl sm:rounded-3xl md:rounded-[3rem] p-6 sm:p-8 md:p-12 lg:p-16">
-                    <div className="text-center mb-6 sm:mb-8 md:mb-12">
+                <div id="placements" className="mt-12 sm:mt-16 md:mt-20 bg-gradient-to-br from-gray-50 to-white rounded-2xl sm:rounded-3xl md:rounded-[3rem] p-6 sm:p-8 md:p-12 lg:p-16">
+                    <div className="text-center mb-8 sm:mb-10 md:mb-12">
                         <span className="text-gray-900 font-bold tracking-wider uppercase text-xs sm:text-sm mb-4 block">PLACEMENTS</span>
                         <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#0b6d41] leading-tight mb-4 sm:mb-6">
                             Career Success of Our Learners

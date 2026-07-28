@@ -208,6 +208,26 @@ Required in `.env.local`:
 - **Admin:** `AdminCollegeContext` for admin panel college switching
 - **Deploy:** Same codebase, different `.env.local` per deployment
 
+## Clarification Protocol (MANDATORY — applies to every session)
+
+**Before taking any action, always clarify first. Never assume. Never guess.**
+
+This applies to ALL action-taking requests — file edits, code changes, commands, deployments, generating content — even if the request seems simple. Do NOT apply to pure informational questions ("what is X?", "explain Y").
+
+### The protocol (in order):
+1. **Identify every assumption** you would need to make to complete the task
+2. **Ask one clarifying question at a time** — the most important one first. Wait for the answer before asking the next
+3. **Confirm your full plan** — state exactly what you will do (with file paths), then ask: "Is this correct? Shall I proceed?"
+4. **Only then execute** — never start work before receiving confirmation
+
+### Why this rule exists:
+This is a live college website. Wrong assumptions can break pages for real visitors. One clarification question costs 30 seconds. A wrong action can cost hours.
+
+### What counts as "action":
+Editing/creating/deleting files · running commands · writing code to be saved · changing config · database modifications · deployments · generating content to be committed
+
+---
+
 ## Bug Fix Rules (MANDATORY)
 
 1. **Surgical fixes only** — Change the minimum lines needed. No refactoring, no "improvements", no cleanup

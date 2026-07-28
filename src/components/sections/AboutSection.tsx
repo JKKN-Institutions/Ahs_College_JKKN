@@ -19,7 +19,7 @@ export function AboutSection() {
     return (
         <section id="about" className="py-12 sm:py-16 md:py-24 bg-[#fbfbee] relative overflow-hidden">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
-                <div className="flex flex-col lg:flex-row gap-8 md:gap-12 lg:gap-16 items-center">
+                <div className="flex flex-col lg:flex-row gap-8 md:gap-12 lg:gap-16 items-start">
                     <motion.div
                         initial={{ opacity: 0, x: -50 }}
                         whileInView={{ opacity: 1, x: 0 }}
@@ -40,11 +40,45 @@ export function AboutSection() {
                             Affiliated with The Tamil Nadu Dr. M.G.R. Medical University, we offer comprehensive programs in <Link href="/critical-care-technology" className="text-[#0b6d41] font-semibold hover:underline">Critical Care Technology</Link>, <Link href="/physician-assistant" className="text-[#0b6d41] font-semibold hover:underline">Physician Assistant</Link>, <Link href="/cardiac-technology" className="text-[#0b6d41] font-semibold hover:underline">Cardiac Technology</Link>, <Link href="/radiology-imaging-technology" className="text-[#0b6d41] font-semibold hover:underline">Radiology</Link>, and more. Our Learning Facilitators (Senior Learners) bring decades of clinical and academic experience to every Learning Studio.
                         </p>
 
-                        <p className="text-gray-700 text-sm sm:text-base mb-6 sm:mb-8 leading-relaxed">
+                        <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
                             Located on NH-544 (Salem-Coimbatore Highway) in Komarapalayam, just 22 km from <Link href="/erode" className="text-[#0b6d41] font-semibold hover:underline">Erode</Link> and 58 km from <Link href="/salem" className="text-[#0b6d41] font-semibold hover:underline">Salem</Link>, our <Link href="/NAAC" className="text-[#0b6d41] font-semibold hover:underline">NAAC A+ accredited</Link> campus features <Link href="/lab" className="text-[#0b6d41] font-semibold hover:underline">advanced learning labs</Link>, a 500+ bed teaching hospital, <Link href="/hostel" className="text-[#0b6d41] font-semibold hover:underline">hostel facilities</Link>, and a dedicated placement cell delivering a 95% placement rate across 100+ recruiting partners.
                         </p>
+                    </motion.div>
 
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-6 sm:mb-8">
+                    <motion.div
+                        initial={{ opacity: 0, x: 50 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                        className="lg:w-1/2 mt-8 lg:mt-0 w-full"
+                    >
+                        <div className="relative mb-10 sm:mb-12">
+                            <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl">
+                                <div className="aspect-[4/3] bg-gray-200 relative">
+                                    <Image
+                                        src="/allied-health-science-about.png"
+                                        alt="JKKN Allied Health Sciences College Laboratory"
+                                        fill
+                                        placeholder="blur"
+                                        blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiMwYjZkNDEiLz48L3N2Zz4="
+                                        sizes="(max-width: 768px) 100vw, 50vw"
+                                        className="object-cover"
+                                    />
+                                </div>
+                            </div>
+
+                            {/* Legacy Badge */}
+                            <motion.div
+                                animate={{ y: [0, -10, 0] }}
+                                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                                className="absolute -bottom-4 -right-4 sm:-bottom-6 sm:-right-6 bg-[#0b6d41] rounded-2xl sm:rounded-3xl shadow-2xl p-4 sm:p-6 md:p-8 text-center"
+                            >
+                                <div className="text-4xl sm:text-5xl md:text-6xl font-black text-white mb-0.5 sm:mb-1">{BRAND_LEGACY.YEARS}</div>
+                                <div className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-white">Year Legacy</div>
+                            </motion.div>
+                        </div>
+
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mt-4 sm:mt-6">
                             {points.map((point, index) => (
                                 <div key={index} className="flex items-start gap-2 sm:gap-3">
                                     <div className="mt-1 bg-[#0b6d41] rounded-full p-1 flex-shrink-0">
@@ -54,38 +88,6 @@ export function AboutSection() {
                                 </div>
                             ))}
                         </div>
-                    </motion.div>
-
-                    <motion.div
-                        initial={{ opacity: 0, x: 50 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.6 }}
-                        className="lg:w-1/2 relative mt-8 lg:mt-0 w-full"
-                    >
-                        <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl">
-                            <div className="aspect-[4/3] bg-gray-200 relative">
-                                <Image
-                                    src="/allied-health-science-about.png"
-                                    alt="JKKN Allied Health Sciences College Learning Lab"
-                                    fill
-                                    placeholder="blur"
-                                    blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiMwYjZkNDEiLz48L3N2Zz4="
-                                    sizes="(max-width: 768px) 100vw, 50vw"
-                                    className="object-cover"
-                                />
-                            </div>
-                        </div>
-
-                        {/* Legacy Badge */}
-                        <motion.div
-                            animate={{ y: [0, -10, 0] }}
-                            transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                            className="absolute -bottom-4 -right-4 sm:-bottom-6 sm:-right-6 bg-[#0b6d41] rounded-2xl sm:rounded-3xl shadow-2xl p-4 sm:p-6 md:p-8 text-center"
-                        >
-                            <div className="text-4xl sm:text-5xl md:text-6xl font-black text-white mb-0.5 sm:mb-1">{BRAND_LEGACY.YEARS}</div>
-                            <div className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-white">Year Legacy</div>
-                        </motion.div>
                     </motion.div>
                 </div>
             </div>
