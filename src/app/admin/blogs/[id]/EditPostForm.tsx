@@ -24,6 +24,7 @@ import {
   Globe,
   Eye,
   Save,
+  Link2,
 } from 'lucide-react';
 
 const RichTextEditor = dynamic(() => import('../new/RichTextEditor'), {
@@ -69,6 +70,7 @@ interface BlogData {
   seo_description: string | null;
   og_image_url: string | null;
   canonical_url: string | null;
+  preview_token?: string | null;
 }
 
 interface Props {
@@ -326,6 +328,17 @@ export default function EditPostForm({ blog, userEmail, userName, userAvatar, ca
     const mins = estimateReadTime(content);
     setReadTimeMinutes(mins);
     toast.success(`Estimated read time: ${mins} min`);
+  }
+
+  async function handleCopyShareLink() {
+    const url = `${window.location.origin}/blog/preview/${blog.id}?token=${blog.preview_token}`;
+    try {
+      await navigator.clipboard.writeText(url);
+      toast.success('Share link copied — anyone with it can view this post.');
+    } catch {
+      // Clipboard API needs a secure context; show the link so it can be copied manually.
+      toast.error(url, { duration: 10000 });
+    }
   }
 
   async function handleSubmit(forceDraft = false) {
@@ -613,15 +626,28 @@ export default function EditPostForm({ blog, userEmail, userName, userAvatar, ca
                 )}
               </div>
 
-              <a
-                href={`/blog/preview/${blog.id}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 w-full border border-gray-200 text-sm font-medium text-gray-600 py-2.5 rounded-xl hover:bg-gray-50 transition"
-              >
-                <Eye className="w-3.5 h-3.5" />
-                Preview
-              </a>
+              <div className="flex gap-2">
+                <a
+                  href={`/blog/preview/${blog.id}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 flex items-center justify-center gap-2 border border-gray-200 text-sm font-medium text-gray-600 py-2.5 rounded-xl hover:bg-gray-50 transition"
+                >
+                  <Eye className="w-3.5 h-3.5" />
+                  Preview
+                </a>
+                {blog.preview_token && (
+                  <button
+                    type="button"
+                    onClick={handleCopyShareLink}
+                    className="flex items-center justify-center gap-1.5 border border-gray-200 text-sm font-medium text-gray-600 px-3 py-2.5 rounded-xl hover:bg-gray-50 transition"
+                    title="Copy a link anyone can open without logging in"
+                  >
+                    <Link2 className="w-3.5 h-3.5" />
+                    Share
+                  </button>
+                )}
+              </div>
             </div>
           </div>
 

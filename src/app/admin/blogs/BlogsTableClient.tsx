@@ -16,6 +16,7 @@ import {
   Pencil,
   Trash2,
   ExternalLink,
+  Link2,
   Loader2,
 } from 'lucide-react';
 import ConfirmModal from '../ConfirmModal';
@@ -31,6 +32,7 @@ interface Blog {
   published_at: string | null;
   view_count: number | null;
   read_time: string | null;
+  preview_token?: string | null;
 }
 
 interface Category {
@@ -106,6 +108,17 @@ export default function BlogsTableClient({ blogs, categories }: Props) {
       return matchSearch && matchStatus && matchCategory;
     });
   }, [blogs, search, statusFilter, categoryFilter]);
+
+  async function copyShareLink(blog: Blog) {
+    const url = `${window.location.origin}/blog/preview/${blog.id}?token=${blog.preview_token}`;
+    try {
+      await navigator.clipboard.writeText(url);
+      toast.success('Share link copied — anyone with it can view this post.');
+    } catch {
+      // Clipboard API needs a secure context; show the link so it can be copied manually.
+      toast.error(url, { duration: 10000 });
+    }
+  }
 
   async function doDelete() {
     if (!pendingDeleteId) return;
@@ -363,6 +376,15 @@ export default function BlogsTableClient({ blogs, categories }: Props) {
                                 <Eye className="w-3.5 h-3.5" />
                                 Preview
                               </Link>
+                              {blog.preview_token && (
+                                <button
+                                  onClick={() => { setOpenMenu(null); copyShareLink(blog); }}
+                                  className="w-full flex items-center gap-2.5 px-3 py-2 text-sm text-gray-700 hover:bg-gray-50"
+                                >
+                                  <Link2 className="w-3.5 h-3.5" />
+                                  Copy share link
+                                </button>
+                              )}
                               <hr className="my-1 border-gray-100" />
                               <button
                                 onClick={() => { setOpenMenu(null); setPendingDeleteId(blog.id); }}

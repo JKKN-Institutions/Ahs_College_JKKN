@@ -8,10 +8,13 @@ export default async function AdminBlogsPage() {
   const supabase = await createClient();
 
   const collegeId = await getAdminCollegeId();
-  const [{ data: blogs }, { data: categories }] = await Promise.all([
+  const BASE_COLUMNS =
+    'id, title, slug, category, author_name, is_published, created_at, published_at, view_count, read_time';
+
+  const [blogsResult, { data: categories }] = await Promise.all([
     supabase
       .from('blogs')
-      .select('id, title, slug, category, author_name, is_published, created_at, published_at, view_count, read_time')
+      .select(`${BASE_COLUMNS}, preview_token`)
       .eq('college_id', collegeId)
       .order('created_at', { ascending: false }),
     supabase
@@ -21,6 +24,18 @@ export default async function AdminBlogsPage() {
       .eq('is_active', true)
       .order('name'),
   ]);
+
+  // preview_token is added by a migration run in the Supabase dashboard — until
+  // that lands the column is missing, so fall back to the base columns.
+  let blogs = blogsResult.data;
+  if (blogsResult.error) {
+    const { data } = await supabase
+      .from('blogs')
+      .select(BASE_COLUMNS)
+      .eq('college_id', collegeId)
+      .order('created_at', { ascending: false });
+    blogs = (data ?? []).map((b) => ({ ...b, preview_token: null }));
+  }
 
   return (
     <div className="p-6 lg:p-8">

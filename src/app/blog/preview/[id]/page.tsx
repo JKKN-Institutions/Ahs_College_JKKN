@@ -59,27 +59,63 @@ function calcReadMeta(content: string): { words: number; readTime: number } {
   return { words, readTime: Math.max(1, Math.ceil(words / 200)) };
 }
 
+const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+
+interface PreviewPost {
+  id: string;
+  title: string;
+  slug: string;
+  category: string | null;
+  author_name: string | null;
+  cover_image_url: string | null;
+  excerpt: string | null;
+  published_at: string | null;
+  created_at: string;
+  tags: string | null;
+  read_time: string | null;
+  content: string | null;
+  sections: unknown | null;
+  college_id: string;
+  is_published: boolean | null;
+  post_status: string | null;
+}
+
 export default async function BlogPreviewPage({
   params,
+  searchParams,
 }: {
   params: Promise<{ id: string }>;
+  searchParams: Promise<{ token?: string }>;
 }) {
   const { id } = await params;
+  const { token } = await searchParams;
   const supabase = await createClient();
 
-  // Only a logged-in admin may preview unpublished content.
-  const { data: { session } } = await supabase.auth.getSession();
-  if (!session) notFound();
+  let post: PreviewPost | null = null;
+  let viaShareLink = false;
 
-  const collegeId = await getAdminCollegeId();
+  // Path 1 — anyone holding the secret share link. The RPC is SECURITY DEFINER
+  // and only returns the row when the token matches, so no login is needed.
+  if (token && UUID_RE.test(token) && UUID_RE.test(id)) {
+    const { data } = await supabase.rpc('get_preview_blog', { p_id: id, p_token: token });
+    post = ((Array.isArray(data) ? data[0] : data) ?? null) as PreviewPost | null;
+    viaShareLink = !!post;
+  }
 
-  // No is_published filter — that is the whole point of the preview.
-  const { data: post } = await supabase
-    .from('blogs')
-    .select('*')
-    .eq('id', id)
-    .eq('college_id', collegeId)
-    .single();
+  // Path 2 — logged-in staff of this college (no token needed). RLS decides.
+  if (!post) {
+    const { data: { session } } = await supabase.auth.getSession();
+    if (!session) notFound();
+
+    const collegeId = await getAdminCollegeId();
+    const { data } = await supabase
+      .from('blogs')
+      .select('*')
+      .eq('id', id)
+      .eq('college_id', collegeId)
+      .single();
+    post = data as PreviewPost | null;
+  }
 
   if (!post) notFound();
 
@@ -87,7 +123,7 @@ export default async function BlogPreviewPage({
     supabase
       .from('blogs')
       .select('id, title, slug, category, excerpt, cover_image_url, published_at, created_at')
-      .eq('college_id', collegeId)
+      .eq('college_id', post.college_id)
       .eq('is_published', true)
       .eq('category', post.category ?? 'General')
       .neq('id', post.id)
@@ -124,26 +160,29 @@ export default async function BlogPreviewPage({
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Preview banner — admin only, not part of the live page */}
+      {/* Preview banner — never part of the live page */}
       <div className="sticky top-0 z-[60] bg-amber-400 text-amber-950">
         <div className="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between gap-3 flex-wrap">
           <span className="flex items-center gap-2 text-sm font-semibold">
             <EyeOff className="w-4 h-4 flex-shrink-0" />
-            Preview mode — status:{' '}
+            {viaShareLink ? 'Shared preview' : 'Preview mode'} — status:{' '}
             <span className="uppercase tracking-wide">{status}</span>
             {status !== 'published' && (
               <span className="font-normal hidden sm:inline">
-                · idhu public-ku theriyaadhu
+                · not visible to the public
               </span>
             )}
           </span>
-          <Link
-            href={`/admin/blogs/${post.id}`}
-            className="flex items-center gap-1.5 text-xs font-semibold bg-amber-950 text-amber-50 px-3 py-1.5 rounded-lg hover:bg-amber-900 transition"
-          >
-            <Pencil className="w-3.5 h-3.5" />
-            Back to editor
-          </Link>
+          {/* Share-link visitors are not staff — no admin link for them. */}
+          {!viaShareLink && (
+            <Link
+              href={`/admin/blogs/${post.id}`}
+              className="flex items-center gap-1.5 text-xs font-semibold bg-amber-950 text-amber-50 px-3 py-1.5 rounded-lg hover:bg-amber-900 transition"
+            >
+              <Pencil className="w-3.5 h-3.5" />
+              Back to editor
+            </Link>
+          )}
         </div>
       </div>
 
