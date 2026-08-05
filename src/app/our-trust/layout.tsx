@@ -46,8 +46,7 @@ const organizationSchema = {
     "https://www.facebook.com/jkknallied",
     "https://www.instagram.com/jkknallied/",
     "https://www.linkedin.com/company/jkknallied/",
-    "https://www.youtube.com/playlist?list=PL6QsTq-__HhsWGzdJbTOuadFqdXlcawUE",
-    "https://en.wikipedia.org/wiki/J._K._K._Nattraja_Educational_Institutions"
+    "https://www.youtube.com/playlist?list=PL6QsTq-__HhsWGzdJbTOuadFqdXlcawUE"
   ]
 };
 

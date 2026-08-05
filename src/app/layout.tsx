@@ -91,7 +91,6 @@ const collegeSchema = {
     "https://maps.app.goo.gl/JJ5dKGY4NAHReFpj7",
     "https://www.tnmgrmu.ac.in/",
     "https://jkkn.ac.in/",
-    "https://en.wikipedia.org/wiki/J._K._K._Nattraja_Educational_Institutions",
     "https://www.wikidata.org/wiki/Q55090877",
     "https://x.com/jkkninstitution",
     "https://wa.me/919345855001"
