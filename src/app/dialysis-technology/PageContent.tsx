@@ -219,7 +219,7 @@ function HeroSection() {
                 <div className="md:w-1/2 w-full">
                     <div className="relative rounded-3xl overflow-hidden aspect-video shadow-2xl border-4 border-white group">
                         <Image
-                            src="/dialysis-technology-hero.png"
+                            src="/dialysis-technology-hero.webp"
                             alt="Dialysis Technology Lab"
                             fill
                             priority

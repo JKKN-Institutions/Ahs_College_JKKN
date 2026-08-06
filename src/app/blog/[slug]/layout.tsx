@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     siteName: "JKKN College of Allied Health Sciences",
     images: [
       {
-        url: "https://ahs.jkkn.ac.in/allied-health-science-hero.png",
+        url: "https://ahs.jkkn.ac.in/allied-health-science-hero.webp",
         width: 1200,
         height: 630,
         alt: "Allied Health Sciences Admission 2026 — JKKN College",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     title: "Allied Health Sciences Admission 2026: Courses, Eligibility & Careers",
     description:
       "Complete guide to allied health sciences admission 2026 — eligibility, courses, fees, placements at JKKN College Tamil Nadu.",
-    images: ["https://ahs.jkkn.ac.in/allied-health-science-hero.png"],
+    images: ["https://ahs.jkkn.ac.in/allied-health-science-hero.webp"],
   },
 };
 

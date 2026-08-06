@@ -34,7 +34,7 @@ export default function PrincipalsMessage() {
                             <div className="relative">
                                 <div className="rounded-lg overflow-hidden shadow-xl">
                                     <Image
-                                        src="/principal.png"
+                                        src="/principal.webp"
                                         alt="Dr. Dhanasekar Balakrishnan"
                                         width={400}
                                         height={500}

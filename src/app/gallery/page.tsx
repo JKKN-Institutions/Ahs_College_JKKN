@@ -11,9 +11,9 @@ const hardcodedAlbums = [
     id: 'hc-lab',
     name: 'Learning Labs',
     images: [
-      { url: '/lab/allied health science lab1.png', caption: 'Allied Health Science Learning Lab 1' },
-      { url: '/lab/allied health science lab2.png', caption: 'Allied Health Science Learning Lab 2' },
-      { url: '/lab/allied health science lab3.png', caption: 'Allied Health Science Learning Lab 3' },
+      { url: '/lab/allied health science lab1.webp', caption: 'Allied Health Science Learning Lab 1' },
+      { url: '/lab/allied health science lab2.webp', caption: 'Allied Health Science Learning Lab 2' },
+      { url: '/lab/allied health science lab3.webp', caption: 'Allied Health Science Learning Lab 3' },
     ],
   },
   {
@@ -46,8 +46,8 @@ const hardcodedAlbums = [
     id: 'hc-hostel',
     name: 'Hostel',
     images: [
-      { url: '/images/boys-hostel.png', caption: 'Boys Hostel' },
-      { url: '/images/girls-hostel.png', caption: 'Girls Hostel' },
+      { url: '/images/boys-hostel.webp', caption: 'Boys Hostel' },
+      { url: '/images/girls-hostel.webp', caption: 'Girls Hostel' },
     ],
   },
 ];

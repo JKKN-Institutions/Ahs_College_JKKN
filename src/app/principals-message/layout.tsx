@@ -36,7 +36,7 @@ const personSchema = {
     "name": "JKKN College of Allied Health Sciences",
     "url": "https://ahs.jkkn.ac.in/"
   },
-  "image": "https://ahs.jkkn.ac.in/principal.png",
+  "image": "https://ahs.jkkn.ac.in/principal.webp",
   "description": "Principal of JKKN College of Allied Health Sciences and JKKN Dental College and Hospital, Komarapalayam, Tamil Nadu. Holds BDS, MDS, FDS RCS (England), MDTFEd (Edinburgh), MFDS RCPS (Glasgow), and MFDS RCS (Edinburgh).",
   "url": "https://ahs.jkkn.ac.in/principals-message"
 };

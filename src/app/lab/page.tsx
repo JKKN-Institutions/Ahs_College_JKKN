@@ -34,7 +34,7 @@ export default function Labs() {
                     <div className="mb-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         <div className="relative h-64 md:h-72 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
                             <Image
-                                src="/lab/allied health science lab1.png"
+                                src="/lab/allied health science lab1.webp"
                                 alt="Allied Health Science Learning Lab 1"
                                 fill
                                 className="object-cover"
@@ -43,7 +43,7 @@ export default function Labs() {
                         </div>
                         <div className="relative h-64 md:h-72 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
                             <Image
-                                src="/lab/allied health science lab2.png"
+                                src="/lab/allied health science lab2.webp"
                                 alt="Allied Health Science Learning Lab 2"
                                 fill
                                 className="object-cover"
@@ -52,7 +52,7 @@ export default function Labs() {
                         </div>
                         <div className="relative h-64 md:h-72 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
                             <Image
-                                src="/lab/allied health science lab3.png"
+                                src="/lab/allied health science lab3.webp"
                                 alt="Allied Health Science Learning Lab 3"
                                 fill
                                 className="object-cover"

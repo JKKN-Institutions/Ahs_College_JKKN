@@ -88,7 +88,7 @@ export function Hero() {
                         <div className="relative z-10 rounded-2xl sm:rounded-3xl overflow-hidden shadow-[0_20px_40px_-12px_rgba(11,109,65,0.2)] border-4 sm:border-[6px] border-white/50 backdrop-blur-md max-w-sm lg:max-w-md mx-auto lg:mx-0">
                             <div className="aspect-[5/4] lg:aspect-[4/3] bg-gray-100 relative">
                                 <Image
-                                    src="/allied-health-science-hero.png"
+                                    src="/allied-health-science-hero.webp"
                                     alt="Allied Health Sciences — JKKN College of Allied Health Sciences, Komarapalayam"
                                     fill
                                     priority

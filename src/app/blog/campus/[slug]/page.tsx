@@ -40,7 +40,7 @@ export async function generateMetadata({
   const title = `${post.title} | JKKN AHS Campus Blog`;
   const description = post.excerpt ?? 'Read the latest campus news and updates from JKKN College of Allied Health Sciences.';
   const url = `https://ahs.jkkn.ac.in/blog/campus/${slug}`;
-  const imageUrl = post.cover_image_url ?? 'https://ahs.jkkn.ac.in/allied-health-science-hero.png';
+  const imageUrl = post.cover_image_url ?? 'https://ahs.jkkn.ac.in/allied-health-science-hero.webp';
 
   return {
     title,

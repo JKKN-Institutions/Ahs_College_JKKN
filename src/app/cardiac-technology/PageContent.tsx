@@ -219,7 +219,7 @@ function HeroSection() {
                 <div className="md:w-1/2 w-full">
                     <div className="relative rounded-3xl overflow-hidden aspect-video shadow-2xl border-4 border-white group">
                         <Image
-                            src="/cardiac-technology-hero.png"
+                            src="/cardiac-technology-hero.webp"
                             alt="Cardiac Technology Lab"
                             fill
                             priority

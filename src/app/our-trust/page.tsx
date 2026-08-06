@@ -120,7 +120,7 @@ export default function OurTrust() {
                                 <div className="shrink-0">
                                     <div className="w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 rounded-full border-8 border-[#fbfbee] shadow-2xl overflow-hidden bg-white relative">
                                         <Image
-                                            src="/jkkn-100-logo.png"
+                                            src="/jkkn-100-logo.webp"
                                             alt="JKKN 100 Years - Century of Transforming Lives"
                                             width={320}
                                             height={320}

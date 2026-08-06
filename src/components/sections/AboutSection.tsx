@@ -56,7 +56,7 @@ export function AboutSection() {
                             <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl">
                                 <div className="aspect-[4/3] bg-gray-200 relative">
                                     <Image
-                                        src="/allied-health-science-about.png"
+                                        src="/allied-health-science-about.webp"
                                         alt="JKKN Allied Health Sciences College Laboratory"
                                         fill
                                         placeholder="blur"

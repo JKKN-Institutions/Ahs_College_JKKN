@@ -17,7 +17,7 @@ export const metadata = createPageMetadata({
     "b sc cardiac perfusion technology colleges in tamilnadu",
     "cardiac perfusion technology course in tamilnadu"
   ],
-  ogImage: { url: "https://ahs.jkkn.ac.in/cardiac-technology-hero.png", width: 1200, height: 630, alt: "BSc Cardiac Technology at JKKN College" },
+  ogImage: { url: "https://ahs.jkkn.ac.in/cardiac-technology-hero.webp", width: 1200, height: 630, alt: "BSc Cardiac Technology at JKKN College" },
 });
 
 const courseSchema = {

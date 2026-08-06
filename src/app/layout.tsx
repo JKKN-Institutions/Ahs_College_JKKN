@@ -99,7 +99,7 @@ const collegeSchema = {
     "@type": "ImageObject",
     "url": "https://ahs.jkkn.ac.in/ahs-logo.svg"
   },
-  "image": "https://ahs.jkkn.ac.in/allied-health-science-hero.png",
+  "image": "https://ahs.jkkn.ac.in/allied-health-science-hero.webp",
   "contactPoint": {
     "@type": "ContactPoint",
     "telephone": "+919345855001",
@@ -200,7 +200,7 @@ const localBusinessSchema = {
   "@type": "LocalBusiness",
   "@id": "https://ahs.jkkn.ac.in/#localbusiness",
   "name": "JKKN College of Allied Health Sciences",
-  "image": "https://ahs.jkkn.ac.in/allied-health-science-hero.png",
+  "image": "https://ahs.jkkn.ac.in/allied-health-science-hero.webp",
   "telephone": "+919345855001",
   "email": "ahsincharge@jkkn.ac.in",
   "url": "https://ahs.jkkn.ac.in/",

@@ -204,7 +204,7 @@ export default function BlogDetailPage() {
       "@type": "WebPage",
       "@id": `https://ahs.jkkn.ac.in/blog/${slug}`
     },
-    "image": "https://ahs.jkkn.ac.in/allied-health-science-hero.png",
+    "image": "https://ahs.jkkn.ac.in/allied-health-science-hero.webp",
     "articleSection": "Allied Health Sciences",
     "inLanguage": "en",
     "keywords": "allied health sciences, BSc courses Tamil Nadu, JKKN AHS, healthcare careers, medical technology courses"

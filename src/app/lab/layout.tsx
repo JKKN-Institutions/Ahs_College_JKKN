@@ -14,7 +14,7 @@ export const metadata = createPageMetadata({
     "radiology lab Namakkal",
     "cardiac technology lab JKKN",
   ],
-  ogImage: { url: "https://ahs.jkkn.ac.in/lab/allied health science lab1.png", width: 1200, height: 630, alt: "Learning Lab Facilities at JKKN College" },
+  ogImage: { url: "https://ahs.jkkn.ac.in/lab/allied health science lab1.webp", width: 1200, height: 630, alt: "Learning Lab Facilities at JKKN College" },
 });
 
 const breadcrumbSchema = {

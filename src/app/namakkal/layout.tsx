@@ -18,7 +18,7 @@ export const metadata = createPageMetadata({
     "allied health science near namakkal",
   ],
   ogImage: {
-    url: "https://ahs.jkkn.ac.in/allied-health-science-hero.png",
+    url: "https://ahs.jkkn.ac.in/allied-health-science-hero.webp",
     width: 1200,
     height: 630,
     alt: "JKKN College of Allied Health Sciences — Best AHS College in Namakkal",
@@ -178,7 +178,7 @@ const educationalOrgSchema = {
   alternateName: "JKKN AHS",
   url: "https://ahs.jkkn.ac.in/",
   logo: "https://ahs.jkkn.ac.in/ahs-logo.svg",
-  image: "https://ahs.jkkn.ac.in/allied-health-science-hero.png",
+  image: "https://ahs.jkkn.ac.in/allied-health-science-hero.webp",
   foundingDate: "1952",
   address: {
     "@type": "PostalAddress",

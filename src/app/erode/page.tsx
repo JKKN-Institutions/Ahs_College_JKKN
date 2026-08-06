@@ -692,11 +692,11 @@ function FacilitiesSection() {
 function CampusGallerySection() {
   const images = [
     { src: "/images/institution.avif", alt: "JKKN College of Allied Health Sciences campus building near Erode" },
-    { src: "/images/boys-hostel.png", alt: "Boys hostel at JKKN AHS — allied health science college near Erode" },
-    { src: "/images/girls-hostel.png", alt: "Girls hostel at JKKN AHS — allied health science college near Erode" },
-    { src: "/allied health science main image6.png", alt: "Campus life at JKKN College of Allied Health Sciences near Erode" },
-    { src: "/allied health science main image7.png", alt: "Learners at JKKN Allied Health Sciences campus near Erode" },
-    { src: "/allied health science main image8.png", alt: "JKKN AHS facilities and campus infrastructure near Erode" },
+    { src: "/images/boys-hostel.webp", alt: "Boys hostel at JKKN AHS — allied health science college near Erode" },
+    { src: "/images/girls-hostel.webp", alt: "Girls hostel at JKKN AHS — allied health science college near Erode" },
+    { src: "/allied health science main image6.webp", alt: "Campus life at JKKN College of Allied Health Sciences near Erode" },
+    { src: "/allied health science main image7.webp", alt: "Learners at JKKN Allied Health Sciences campus near Erode" },
+    { src: "/allied health science main image8.webp", alt: "JKKN AHS facilities and campus infrastructure near Erode" },
   ];
 
   return (

@@ -64,7 +64,7 @@ export default function Library() {
                             className="relative w-full aspect-[4/3] overflow-hidden rounded-2xl sm:rounded-3xl shadow-lg"
                         >
                             <Image
-                                src="/library/library-1.jpg"
+                                src="/library/library-1.webp"
                                 alt="Allied Health Science Learning Commons with wooden desks and study areas"
                                 fill
                                 className="object-cover"
@@ -79,7 +79,7 @@ export default function Library() {
                             className="relative w-full aspect-[4/3] overflow-hidden rounded-2xl sm:rounded-3xl shadow-lg"
                         >
                             <Image
-                                src="/library/library-2.jpg"
+                                src="/library/library-2.webp"
                                 alt="Learners studying with books in the learning commons"
                                 fill
                                 className="object-cover"
@@ -93,7 +93,7 @@ export default function Library() {
                             className="relative w-full aspect-[4/3] overflow-hidden rounded-2xl sm:rounded-3xl shadow-lg"
                         >
                             <Image
-                                src="/library/library-3.jpg"
+                                src="/library/library-3.webp"
                                 alt="Learner reading in the learning commons"
                                 fill
                                 className="object-cover"

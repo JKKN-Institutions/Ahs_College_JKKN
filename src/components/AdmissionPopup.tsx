@@ -32,7 +32,7 @@ export function AdmissionPopup() {
           rel="noopener noreferrer"
         >
           <Image
-            src="/ahs-pop-up-poster.jpg"
+            src="/ahs-pop-up-poster.webp"
             alt="JKKN Allied Health Sciences Admissions Open 2026-27"
             width={600}
             height={600}

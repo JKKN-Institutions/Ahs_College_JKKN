@@ -35,7 +35,7 @@ export const courseBlogPosts: CourseBlogPost[] = [
       "Complete guide to the scope of BSc Cardiac Care Technology in India — career paths, salary, top hospitals, day in the life, and global opportunities for cardiac technologists.",
     excerpt:
       "India faces a cardiac care crisis with 4.77 crore CVD patients. Here's why cardiac technologists are in record demand — and what your career, salary, and growth path look like.",
-    heroImage: "/cardiac-technology-hero.png",
+    heroImage: "/cardiac-technology-hero.webp",
     heroImageAlt: "Cardiac technologist operating cath lab equipment at JKKN College of Allied Health Sciences",
     courseSlug: "cardiac-technology",
     courseName: "B.Sc Cardiac Care Technology",
@@ -93,7 +93,7 @@ export const courseBlogPosts: CourseBlogPost[] = [
       "India's dialysis demand is exploding with 2.2 lakh new ESRD cases yearly. Discover dialysis technologist career paths, salary, skills, and global jobs.",
     excerpt:
       "Over 2.2 lakh Indians develop end-stage kidney disease every year, but only 30% receive dialysis. The math makes dialysis technology one of the safest healthcare careers of this decade.",
-    heroImage: "/dialysis-technology-hero.png",
+    heroImage: "/dialysis-technology-hero.webp",
     heroImageAlt: "Dialysis technologist operating hemodialysis machine at JKKN College",
     courseSlug: "dialysis-technology",
     courseName: "B.Sc Renal Dialysis Technology",
@@ -150,7 +150,7 @@ export const courseBlogPosts: CourseBlogPost[] = [
       "Complete career guide for BSc Radiology & Imaging Technology in India. Explore MRI, CT, PET careers, AI in radiology, salary ranges, and global opportunities.",
     excerpt:
       "India will need 65,000 additional radiology technologists by 2030. AI isn't replacing them — it's multiplying their productivity. Here's what your career, salary, and skills should look like.",
-    heroImage: "/radiology-technology-hero.png",
+    heroImage: "/radiology-technology-hero.webp",
     heroImageAlt: "Radiology technologist preparing patient for MRI scan at JKKN College",
     courseSlug: "radiology-imaging-technology",
     courseName: "B.Sc Radiology & Imaging Technology",
@@ -207,7 +207,7 @@ export const courseBlogPosts: CourseBlogPost[] = [
       "Complete career roadmap for BSc Operation Theatre & Anaesthesia Technology in India. Salary, day-in-life, specializations, and global opportunities.",
     excerpt:
       "India performs 25 million surgeries every year and is short of 80,000 OT technologists. Here's what the career, daily work, salary, and growth path look like.",
-    heroImage: "/allied-health-science-hero.png",
+    heroImage: "/allied-health-science-hero.webp",
     heroImageAlt: "Operation theatre technologist preparing surgical instruments at JKKN College",
     courseSlug: "operation-theatre-anaesthesia",
     courseName: "B.Sc Operation Theatre & Anaesthesia Technology",
@@ -264,7 +264,7 @@ export const courseBlogPosts: CourseBlogPost[] = [
       "Post-COVID demand for respiratory therapists has tripled. Explore the career scope, salary, specializations, and US/Canada licensure paths for BSc Respiratory Therapy.",
     excerpt:
       "Post-COVID, India added 1.5 lakh new ICU ventilator beds. The country has fewer than 8,000 trained respiratory therapists. The math makes this one of the most undersupplied healthcare careers.",
-    heroImage: "/images/departments/respiratory-therapy-hero.png",
+    heroImage: "/images/departments/respiratory-therapy-hero.webp",
     heroImageAlt: "Respiratory therapist setting up mechanical ventilator at JKKN College",
     courseSlug: "respiratory-therapy",
     courseName: "B.Sc Respiratory Therapy",
@@ -321,7 +321,7 @@ export const courseBlogPosts: CourseBlogPost[] = [
       "Is BSc Physician Assistant a good career in India? Explore real scope, salary, day-in-life, hospital adoption, and how PA compares to nursing and MBBS.",
     excerpt:
       "Indian hospitals are quietly hiring 6,000+ physician assistants every year. The role is growing because hospitals can't find enough specialist doctors — and PAs fill a critical gap.",
-    heroImage: "/allied-health-science-hero.png",
+    heroImage: "/allied-health-science-hero.webp",
     heroImageAlt: "Physician assistant learner in clinical training at JKKN College",
     courseSlug: "physician-assistant",
     courseName: "B.Sc Physician Assistant",
@@ -378,7 +378,7 @@ export const courseBlogPosts: CourseBlogPost[] = [
       "India added 1.5 lakh ICU beds post-COVID but lacks trained critical care technologists. Explore career, salary, specializations, and certifications.",
     excerpt:
       "Every 100 ICU beds need 8–10 trained critical care technologists. India has fewer than 10,000 of them for 95,000+ ICU beds. The gap defines opportunity.",
-    heroImage: "/critical-care-technology-hero.png",
+    heroImage: "/critical-care-technology-hero.webp",
     heroImageAlt: "Critical care technologist managing ICU monitors at JKKN College",
     courseSlug: "critical-care-technology",
     courseName: "B.Sc Critical Care Technology",
@@ -435,7 +435,7 @@ export const courseBlogPosts: CourseBlogPost[] = [
       "Medical record science offers HIM, ICD-10 coding, and remote US medical coding careers. Explore scope, salary, certifications, and global opportunities.",
     excerpt:
       "Medical coding is now a ₹4,000 crore industry in India, with US hospitals outsourcing ICD-10 work to Indian coders. BSc Medical Record Science is the entry ticket.",
-    heroImage: "/medical-record-science-hero.png",
+    heroImage: "/medical-record-science-hero.webp",
     heroImageAlt: "Medical record science learner working on HIM digitization at JKKN College",
     courseSlug: "medical-record-science",
     courseName: "B.Sc Medical Record Science",
@@ -493,7 +493,7 @@ export const courseBlogPosts: CourseBlogPost[] = [
       "India's trauma care and ambulance services are expanding fast. Discover career scope, salary, EMT certifications, and global opportunities for BSc Accident & Emergency Care.",
     excerpt:
       "India has 4.5 lakh road accident victims a year but fewer than 15,000 trained emergency care technologists. The Modi government's trauma care expansion is creating thousands of new roles.",
-    heroImage: "/accident-emergency-care-hero.png",
+    heroImage: "/accident-emergency-care-hero.webp",
     heroImageAlt: "Emergency care technologist responding to trauma case at JKKN College",
     courseSlug: "accident-emergency-care",
     courseName: "B.Sc Accident & Emergency Care Technology",

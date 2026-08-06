@@ -739,7 +739,7 @@ export function buildCityMetadata(city: CityPage): Metadata {
       ...city.extraKeywords,
     ],
     ogImage: {
-      url: `${SITE_URL}/allied-health-science-hero.png`,
+      url: `${SITE_URL}/allied-health-science-hero.webp`,
       width: 1200,
       height: 630,
       alt: `JKKN College of Allied Health Sciences — Best AHS College Near ${cityName}`,
@@ -847,7 +847,7 @@ export function buildCitySchemas(city: CityPage): object[] {
     alternateName: "JKKN AHS",
     url: `${SITE_URL}/`,
     logo: `${SITE_URL}/ahs-logo.svg`,
-    image: `${SITE_URL}/allied-health-science-hero.png`,
+    image: `${SITE_URL}/allied-health-science-hero.webp`,
     foundingDate: "1952",
     address: {
       "@type": "PostalAddress",

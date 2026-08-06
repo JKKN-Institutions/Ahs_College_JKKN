@@ -714,11 +714,11 @@ function FacilitiesSection({ city }: { city: CityPage }) {
 function CampusGallerySection({ city }: { city: CityPage }) {
   const images = [
     { src: "/images/institution.avif", alt: `JKKN College of Allied Health Sciences campus building near ${city.cityName}` },
-    { src: "/images/boys-hostel.png", alt: `Boys hostel at JKKN AHS — allied health science college near ${city.cityName}` },
-    { src: "/images/girls-hostel.png", alt: `Girls hostel at JKKN AHS — allied health science college near ${city.cityName}` },
-    { src: "/allied health science main image6.png", alt: `Campus life at JKKN College of Allied Health Sciences near ${city.cityName}` },
-    { src: "/allied health science main image7.png", alt: `Students at JKKN Allied Health Sciences campus near ${city.cityName}` },
-    { src: "/allied health science main image8.png", alt: `JKKN AHS facilities and campus infrastructure near ${city.cityName}` },
+    { src: "/images/boys-hostel.webp", alt: `Boys hostel at JKKN AHS — allied health science college near ${city.cityName}` },
+    { src: "/images/girls-hostel.webp", alt: `Girls hostel at JKKN AHS — allied health science college near ${city.cityName}` },
+    { src: "/allied health science main image6.webp", alt: `Campus life at JKKN College of Allied Health Sciences near ${city.cityName}` },
+    { src: "/allied health science main image7.webp", alt: `Students at JKKN Allied Health Sciences campus near ${city.cityName}` },
+    { src: "/allied health science main image8.webp", alt: `JKKN AHS facilities and campus infrastructure near ${city.cityName}` },
   ];
 
   return (

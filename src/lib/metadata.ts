@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 const SITE_URL = "https://ahs.jkkn.ac.in";
 const SITE_NAME = "JKKN College of Allied Health Sciences";
 const DEFAULT_OG_IMAGE = {
-  url: `${SITE_URL}/allied-health-science-hero.png`,
+  url: `${SITE_URL}/allied-health-science-hero.webp`,
   width: 1200,
   height: 630,
   alt: "JKKN College of Allied Health Sciences — Best AHS College in Tamil Nadu",

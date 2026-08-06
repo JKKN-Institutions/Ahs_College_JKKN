@@ -14,7 +14,7 @@ export const metadata = createPageMetadata({
     "JKKN AHS hostel with mess",
     "college hostel near Salem Erode",
   ],
-  ogImage: { url: "https://ahs.jkkn.ac.in/images/boys-hostel.png", width: 1200, height: 630, alt: "Hostel Facilities at JKKN College" },
+  ogImage: { url: "https://ahs.jkkn.ac.in/images/boys-hostel.webp", width: 1200, height: 630, alt: "Hostel Facilities at JKKN College" },
 });
 
 const breadcrumbSchema = {

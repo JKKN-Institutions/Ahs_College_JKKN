@@ -13,7 +13,7 @@ const managementTeam = [
     {
         name: "SMT. N. SENDAMARAAI",
         role: "CHAIRPERSON",
-        image: "/chairperson.jpg",
+        image: "/chairperson.webp",
         quote: "As the Chairperson of JKKN Institutions, I am honoured to shoulder this immense responsibility, and I take great pride in our exceptional progress. We have earned the status of the most prestigious colleges in the region. 'Leadership and Excellence' is not merely our motto but the foundation of our values, a testament to our state-of-the-art infrastructure, distinguished senior learners, and unwavering commitment to quality education."
     },
     {
