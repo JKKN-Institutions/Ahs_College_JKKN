@@ -361,7 +361,7 @@ export const cityPages: CityPage[] = [
       { name: "Erode", distance: "~55 km", href: "/erode" },
     ],
     metaDescription:
-      "JKKN AHS — ~55 km from Mettur via Bhavani. 9 BSc allied health programmes, NAAC accredited, 85%+ placements, hostel + 500+ bed hospital. Admissions open 2026-27.",
+      "JKKN AHS is about 55 km from Mettur via Bhavani. NAAC A+ accredited, nine B.Sc allied health programmes, hostel and teaching hospital.",
     extraKeywords: [
       "allied health science colleges near mettur",
       "paramedical colleges near mettur",

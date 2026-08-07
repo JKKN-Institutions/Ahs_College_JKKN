@@ -30,9 +30,9 @@ export const courseBlogPosts: CourseBlogPost[] = [
   {
     slug: "scope-of-cardiac-technology-in-india",
     title: "Scope of Cardiac Care Technology in India: Career, Salary & Future (2026)",
-    metaTitle: "Scope of Cardiac Care Technology in India 2026 — Salary, Career & Jobs",
+    metaTitle: "Cardiac Care Technology in India 2026: Scope & Careers",
     metaDescription:
-      "Complete guide to the scope of BSc Cardiac Care Technology in India — career paths, salary, top hospitals, day in the life, and global opportunities for cardiac technologists.",
+      "Where a B.Sc Cardiac Care Technology degree leads — cath-lab and hospital roles, the skills employers ask for, and how to enter the field.",
     excerpt:
       "India faces a cardiac care crisis with 4.77 crore CVD patients. Here's why cardiac technologists are in record demand — and what your career, salary, and growth path look like.",
     heroImage: "/cardiac-technology-hero.webp",
@@ -145,9 +145,9 @@ export const courseBlogPosts: CourseBlogPost[] = [
   {
     slug: "radiology-imaging-technology-career-guide",
     title: "Radiology & Imaging Technology Career Guide India 2026 — Salary, Scope & Future",
-    metaTitle: "Radiology & Imaging Technology Career Guide India 2026 — Jobs, Salary, Scope",
+    metaTitle: "Radiology & Imaging Technology Careers in India 2026",
     metaDescription:
-      "Complete career guide for BSc Radiology & Imaging Technology in India. Explore MRI, CT, PET careers, AI in radiology, salary ranges, and global opportunities.",
+      "Where a B.Sc in Radiology & Imaging Technology leads — MRI, CT and PET roles, the skills hospitals hire for, and routes abroad.",
     excerpt:
       "India will need 65,000 additional radiology technologists by 2030. AI isn't replacing them — it's multiplying their productivity. Here's what your career, salary, and skills should look like.",
     heroImage: "/radiology-technology-hero.webp",

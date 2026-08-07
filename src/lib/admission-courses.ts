@@ -293,8 +293,8 @@ export const admissionCourses: AdmissionCourse[] = [
         bestFor: "Learners aiming for international careers (UK/Australia/Canada/Gulf) with the highest earning potential among AHS courses.",
         internship: "1 year internship rotation across CT, MRI, Ultrasound, X-ray, Cath Lab, and Interventional Radiology at JKKN's 500+ bed hospital.",
         iconKey: "scan-line",
-        seoTitle: "BSc Radiology & Imaging Technology Admission 2026-27 Tamil Nadu | JKKN",
-        seoDescription: "Apply for BSc Radiology & Imaging Technology admission at JKKN College. ₹1.3L/yr MQ, 5 seats, 4-yr course, ₹3.5-5 LPA avg, strong UK/Gulf placement scope.",
+        seoTitle: "B.Sc Radiography Imaging Technology Admission | JKKN AHS",
+        seoDescription: "Four-year B.Sc Radiography Imaging Technology at JKKN AHS, NAAC A+ accredited. Five seats. Eligibility, fees and how to apply for 2026-27.",
         seoKeywords: [
             "bsc radiology imaging technology admission tamilnadu",
             "bsc radiology admission 2026 tamilnadu",
