@@ -16,34 +16,12 @@ import {
 import { Breadcrumb } from '@/components/Breadcrumb';
 import { generateBreadcrumbSchema } from '@/lib/breadcrumb-schema';
 
-const courseSchema = {
-    "@context": "https://schema.org",
-    "@type": "Course",
-    "name": "B.Sc Radiology & Imaging Technology",
-    "description": "Comprehensive program training learners in diagnostic imaging including X-ray, CT scan, MRI, ultrasound, and interventional radiology with clinical rotations at multi-specialty hospitals.",
-    "provider": {
-        "@type": "CollegeOrUniversity",
-        "@id": "https://ahs.jkkn.ac.in/#organization",
-        "name": "JKKN College of Allied Health Sciences"
-    },
-    "url": "https://ahs.jkkn.ac.in/radiology-imaging-technology",
-    "timeRequired": "P4Y",
-    "educationalCredentialAwarded": "B.Sc Radiology & Imaging Technology",
-    "occupationalCredentialAwarded": "Radiographer / Imaging Technologist",
-    "hasCourseInstance": {
-        "@type": "CourseInstance",
-        "courseMode": "In-Person",
-        "startDate": "2026-08-01"
-    },
-    "offers": {
-        "@type": "Offer",
-        "category": "Tuition",
-        "price": "130000",
-        "priceCurrency": "INR",
-        "priceValidUntil": "2027-03-31",
-        "availability": "https://schema.org/InStock"
-    }
-};
+// DEP-12, 2026-08-07: the Course block that sat here is gone. layout.tsx already emits
+// one for this page, and the two disagreed on the programme name - this one said
+// "B.Sc Radiology & Imaging Technology" while the layout and the page h1 say
+// "B.Sc Radiography Imaging Technology". Two Course entities for one page, under two
+// names, is worse than one. The layout copy is also strictly richer (17 properties to
+// 11), and its one missing property was carried across rather than dropped.
 
 const breadcrumbSchema = generateBreadcrumbSchema([
     { name: "Home", url: "https://ahs.jkkn.ac.in/" },
@@ -54,10 +32,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 export default function RadiologyImagingTechnology() {
     return (
         <div className="min-h-screen flex flex-col bg-[#fbfbee]">
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }}
-            />
+
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}

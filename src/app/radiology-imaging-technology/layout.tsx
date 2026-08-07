@@ -28,6 +28,7 @@ const courseSchema = {
   },
   "educationalLevel": "Undergraduate",
   "educationalCredentialAwarded": "Bachelor of Science (B.Sc)",
+  "occupationalCredentialAwarded": "Radiographer / Imaging Technologist",
   "timeRequired": "P4Y",
   "inLanguage": "en",
   "coursePrerequisites": "10+2 or equivalent with Physics, Chemistry, and Biology/Mathematics. Minimum 50% aggregate (40% for SC/ST, 45% for OBC). Age 17+ years.",
