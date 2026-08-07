@@ -66,7 +66,7 @@ All programs: 3 years academic + 1 year clinical internship (2000+ hours)
 - Duration: 4 years (3 years academic + 1 year internship)
 - Mode: Full-time, on-campus, English medium
 - Admission process: Online application → Document verification → Counseling → Enrollment
-- Fee range: INR 75,000 to INR 1,25,000 per year (varies by program)
+- Fee range (Management Quota): INR 60,000 (Medical Record Science) to INR 1,70,000 (Cardiac Technology, Operation Theatre & Anaesthesia) per year; GQ as per Govt norms
 - Scholarships: Up to 50% fee waiver available for eligible students
 - Admission portal: https://www.jkkn.ai/apply/jkkn-admission-2026
 
@@ -153,7 +153,6 @@ J. K. K. Nattraja Educational Institutions (founded 1952) operates 10 institutio
 - Admission portal: https://www.jkkn.ai/apply/jkkn-admission-2026
 - Placement portal: https://placements.jkkn.ac.in/
 - Alumni portal: https://alumni.jkkn.ac.in/
-- Wikidata: https://www.wikidata.org/wiki/Q55090877
 - Google Maps: https://maps.app.goo.gl/JJ5dKGY4NAHReFpj7
 - University: https://www.tnmgrmu.ac.in/
 - Parent site: https://jkkn.ac.in/
@@ -185,11 +184,10 @@ Q: Does JKKN AHS provide clinical training?
 A: Yes, all programs include 2000+ hours of clinical training during the 1-year internship at the on-campus 500+ bed multi-specialty hospital and partner hospitals.
 
 Q: What is the fee structure at JKKN AHS?
-A: Annual tuition ranges from INR 75,000 to INR 1,25,000 depending on the program. Scholarships up to 50% fee waiver are available for eligible students.
+A: Management Quota annual tuition ranges from INR 60,000 for Medical Record Science to INR 1,70,000 for Cardiac Technology and Operation Theatre & Anaesthesia. Government Quota fees are as per Tamil Nadu government norms. Exam fees are INR 5,000-10,000 per year. Scholarships up to 50% fee waiver are available for eligible students.
 
 ## Structured Data References
 
 - Schema.org type: CollegeOrUniversity
-- Wikidata parent entity: Q55090877
 - Google Business Profile: Claimed and verified
 - Sitemaps: https://ahs.jkkn.ac.in/sitemap.xml
