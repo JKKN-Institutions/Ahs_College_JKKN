@@ -11,6 +11,7 @@ import {
   GAScript,
   GARouteTracker,
 } from "@/components/analytics/GoogleAnalytics";
+import { ConversionTracking } from "@/components/analytics/ConversionTracking";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -278,6 +279,7 @@ export default function RootLayout({
         {/* End Meta Pixel (noscript) */}
         <MetaPixelRouteTracker />
         <GARouteTracker />
+        <ConversionTracking />
         <LayoutWrapper>
           {children}
         </LayoutWrapper>
