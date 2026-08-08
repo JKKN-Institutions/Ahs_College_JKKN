@@ -1,9 +1,25 @@
 import { createPageMetadata } from "@/lib/metadata";
 
+// DEP-15, 2026-08-08. This page and /admissions/cardiac-technology were measured competing for
+// the same searches, so this one now canonicalises to that one. Measured over the 28 days to
+// 2026-08-03 (runs/2026-08-07/dep15-pairs.json): 90 shared queries, 66 genuinely contested,
+// 3,770 contested impressions. The admissions page wins on every axis - 9,023 impressions to
+// this page's 6,194, 113 clicks to 36, and a better average position on every one of the top
+// contested queries (bsc cardiac technology 7.3 vs 7.8, bsc cardiology 6.5 vs 8.3, cardiac
+// technology 9.2 vs 11.4). It also carries 14,222 words to this page's 2,083.
+//
+// canonical ONLY. No 301, and this page stays in the sitemap and keeps its internal links.
+// That is deliberate: a canonical reverts in one deploy and a 301 does not, and pair 1 of this
+// programme is a 60,388-impression page. This is the SMALLEST of the 12 pairs worth fixing and
+// was chosen to go first precisely so that being wrong is cheap.
+//
+// A canonical is a hint, not an instruction, and these two pages differ by 7x in length, so
+// Google may decline it. Read GSC 2-3 weeks out before touching any other pair.
 export const metadata = createPageMetadata({
   title: "BSc Cardiac Technology Colleges in Tamilnadu | JKKN",
   description: "Looking for BSc cardiac technology colleges in Tamilnadu? JKKN offers cardiac care technology courses with clinical training & scholarships. Apply 2026-27!",
   path: "/cardiac-technology",
+  canonicalPath: "/admissions/cardiac-technology",
   keywords: [
     "bsc cardiac technology colleges in tamilnadu",
     "cardiac technology college in tamilnadu",
