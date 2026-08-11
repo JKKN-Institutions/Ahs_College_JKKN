@@ -36,6 +36,24 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      // ── Course-mismatch removal 2026-08-11 (DEP-45) ───────────────────────
+      // AHS runs nine courses, read live off this site 2026-08-11: Cardiac Technology,
+      // Critical Care, Dialysis, Radiology & Imaging, OT & Anaesthesia, Respiratory Therapy,
+      // Physician Assistant, Medical Record Science, Accident & Emergency Care. Medical Lab
+      // Technology is NOT among them, and there is no MLT course page on the site.
+      // The slug carried ~131 GSC impressions over 180 days at position 5.7, so it is
+      // redirected to the chooser for the courses AHS does offer, not dropped.
+      // Target verified HTTP 200 on 2026-08-11.
+      //
+      // ORDER MATTERS ON THIS SITE AND ONLY ON THIS SITE. /blog/campus/<invalid-slug> returns
+      // 200 here, not 404 - re-measured 2026-08-11, the last of the six still doing it. So
+      // deleting the CMS post does NOT make the URL visibly go away, and deletion cannot be
+      // verified by expecting a 404. This redirect must be LIVE BEFORE the post is deleted:
+      // it fires at the edge, ahead of the page render, and is the thing that actually proves
+      // the URL is gone.
+      { source: '/blog/campus/medical-lab-technician-course-what-it-is', destination: '/blog/campus/which-allied-health-science-course-to-choose-after-12th', permanent: true },
+      { source: '/blog/campus/medical-lab-technician-course-what-it-is/', destination: '/blog/campus/which-allied-health-science-course-to-choose-after-12th', permanent: true },
+
       {
         source: '/principal-message',
         destination: '/principals-message',
