@@ -97,7 +97,7 @@ export default function CourseBlogIndexPage() {
             </p>
             <div className="flex flex-wrap justify-center gap-3">
               <a
-                href="https://www.jkkn.ai/apply/jkkn-admission-2026"
+                href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=ahs.jkkn.ac.in&utm_medium=organic&utm_campaign=course-blog"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-[#0b6d41] hover:bg-[#085231] text-white font-semibold px-6 py-3 rounded-lg transition"
