@@ -6,6 +6,7 @@ import { siteConfig } from '@/lib/site-config';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import Image from 'next/image';
+import AhsEnquiryForm from "@/components/lead/AhsEnquiryForm";
 import { Breadcrumb } from '@/components/Breadcrumb';
 import { generateBreadcrumbSchema } from '@/lib/breadcrumb-schema';
 
@@ -132,8 +133,13 @@ export default function ContactPage() {
                                     Start Your Journey Today
                                 </h3>
                                 <p className="text-gray-600 mb-6">
-                                    Fill out our online admission form to begin your application process. Our team will guide you through every step.
+                                    Leave your details and our admission team will contact you within 24 hours.
                                 </p>
+
+                                {/* DEP-34 - enquiry form. Posts to the CRM from the server. */}
+                                <div className="bg-gradient-to-br from-[#0b6d41] to-[#12a15f] rounded-xl p-6 sm:p-8 mb-6 text-left">
+                                    <AhsEnquiryForm sourcePage="contact" />
+                                </div>
 
                                 <a href={siteConfig.admissionFormUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-8 py-3 bg-[#0b6d41] text-white rounded-full font-semibold transition-all hover:bg-[#085231] hover:shadow-lg mx-auto">
                                     Apply Now

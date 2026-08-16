@@ -15,6 +15,8 @@ import {
     Scissors, Wind, UserCheck, Siren, FileText, BookOpen, GraduationCap,
     Wrench, Zap, Globe, Star
 } from "lucide-react";
+import AhsEnquiryForm from "@/components/lead/AhsEnquiryForm";
+import { DEFAULT_PROGRAMME_BY_PAGE } from "@/lib/ahs-programmes";
 
 const iconMap: Record<string, React.ReactNode> = {
     "heart-pulse": <HeartPulse className="w-6 h-6" />,
@@ -64,6 +66,16 @@ export default function CourseAdmissionPageContent({ course, otherCourses }: Pro
                 <CTASection course={course} />
                 <OtherCoursesSection otherCourses={otherCourses} />
             </main>
+            {/* DEP-34 - enquiry form. Posts to the CRM from the server; a browser cannot POST there */}
+            {/* directly - the endpoint sends no Access-Control-Allow-Origin header. */}
+            <section className="bg-gradient-to-br from-[#0b6d41] to-[#12a15f] py-16">
+                <div className="max-w-3xl mx-auto px-4">
+                    <h2 className="text-white text-2xl md:text-3xl font-black text-center mb-2">Get a Call Back</h2>
+                    <p className="text-white/80 text-center text-sm mb-8">Leave your details and our admission team will contact you within 24 hours.</p>
+                    <AhsEnquiryForm sourcePage={`admissions-${course.slug}`} defaultProgrammeId={DEFAULT_PROGRAMME_BY_PAGE[course.slug]} />
+                </div>
+            </section>
+
             <Footer />
         </div>
     );
