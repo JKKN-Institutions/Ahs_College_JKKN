@@ -1,8 +1,8 @@
 import { createPageMetadata } from "@/lib/metadata";
 
 export const metadata = createPageMetadata({
-  title: "BSc Critical Care Technology College in Tamilnadu | JKKN",
-  description: "Looking for a BSc critical care technology college in Tamilnadu? JKKN offers hands-on ICU training, NAAC accreditation & placement support. Apply 2026-27!",
+  title: "BSc Critical Care Technology Course Details | JKKN",
+  description: "BSc Critical Care Technology course details at JKKN, Tamil Nadu — eligibility, duration, syllabus, fees and ICU training. NAAC A+. Apply 2026-27.",
   path: "/critical-care-technology",
   keywords: [
     "bsc critical care technology college in tamilnadu",
@@ -82,7 +82,7 @@ const courseSchema = {
 const speakableSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "name": "BSc Critical Care Technology College in Tamilnadu | JKKN",
+  "name": "BSc Critical Care Technology Course Details | JKKN",
   "url": "https://ahs.jkkn.ac.in/critical-care-technology",
   "speakable": {
     "@type": "SpeakableSpecification",

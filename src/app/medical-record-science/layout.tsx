@@ -1,8 +1,8 @@
 import { createPageMetadata } from "@/lib/metadata";
 
 export const metadata = createPageMetadata({
-  title: "BSc Medical Record Science Colleges in Tamilnadu | JKKN",
-  description: "Looking for BSc medical record science colleges in Tamilnadu? JKKN offers clinical training, NAAC accreditation & placement support. Apply for 2026-27!",
+  title: "BSc Medical Record Science Course Details | JKKN",
+  description: "BSc Medical Record Science course details at JKKN, Tamil Nadu — eligibility, duration, syllabus, fees and clinical training. NAAC A+. Apply 2026-27.",
   path: "/medical-record-science",
   keywords: [
     "bsc medical record science colleges in tamilnadu",
@@ -82,7 +82,7 @@ const courseSchema = {
 const speakableSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "name": "BSc Medical Record Science Colleges in Tamilnadu | JKKN",
+  "name": "BSc Medical Record Science Course Details | JKKN",
   "url": "https://ahs.jkkn.ac.in/medical-record-science",
   "speakable": {
     "@type": "SpeakableSpecification",

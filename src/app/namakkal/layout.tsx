@@ -3,7 +3,7 @@ import { createPageMetadata } from "@/lib/metadata";
 export const metadata = createPageMetadata({
   title: "Allied Health Science College Namakkal | JKKN AHS",
   description:
-    "JKKN AHS — in Namakkal district on NH-544, Komarapalayam. 9 BSc allied health programmes, NAAC accredited, 85%+ placements, 500+ bed hospital. Admissions 2026-27.",
+    "JKKN AHS — in Namakkal district on NH-544, Komarapalayam. 9 BSc allied health programmes, NAAC accredited, 95% placement, 500+ bed hospital. Admissions 2026-27.",
   path: "/namakkal",
   keywords: [
     "allied health science college namakkal",

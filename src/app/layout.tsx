@@ -24,8 +24,8 @@ const LAST_UPDATED = "2026-03-28";
 export const metadata = {
   icons: { icon: "/ahs-logo.svg" },
   ...createPageMetadata({
-    title: "Best Allied Health Sciences College in Tamil Nadu | JKKN",
-    description: "JKKN College of Allied Health Sciences — 9 B.Sc programs, 95% placement, 500+ bed hospital training. NAAC A+ accredited. Tamil Nadu. Admissions 2026-27!",
+    title: "JKKN College of Allied Health Sciences, Tamil Nadu",
+    description: "JKKN College of Allied Health Sciences, Komarapalayam — NAAC A+ accredited. 9 B.Sc programmes, 500+ bed hospital training, fees, 95% placement. Apply 2026-27.",
     path: "/",
     keywords: [
       "best allied health sciences college in tamil nadu",

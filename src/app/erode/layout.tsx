@@ -3,7 +3,7 @@ import { createPageMetadata } from "@/lib/metadata";
 export const metadata = createPageMetadata({
   title: "Allied Health Science Colleges in Erode | JKKN AHS",
   description:
-    "JKKN AHS — ~22 km from Erode on NH-544. 9 BSc allied health programmes, NAAC accredited, 85%+ placements, 500+ bed hospital. Admissions open 2026-27.",
+    "JKKN AHS — ~22 km from Erode on NH-544. 9 BSc allied health programmes, NAAC accredited, 95% placement, 500+ bed hospital. Admissions open 2026-27.",
   path: "/erode",
   keywords: [
     "allied health science colleges in erode",

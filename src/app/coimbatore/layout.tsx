@@ -3,7 +3,7 @@ import { createPageMetadata } from "@/lib/metadata";
 export const metadata = createPageMetadata({
   title: "Allied Health Sciences Colleges in Coimbatore | JKKN AHS",
   description:
-    "JKKN AHS — ~105 km from Coimbatore on NH-544. 9 BSc allied health programmes, NAAC accredited, 85%+ placements, 500+ bed hospital. Admissions open 2026-27.",
+    "JKKN AHS — ~105 km from Coimbatore on NH-544. 9 BSc allied health programmes, NAAC accredited, 95% placement, 500+ bed hospital. Admissions open 2026-27.",
   path: "/coimbatore",
   keywords: [
     "allied health sciences colleges in coimbatore",
