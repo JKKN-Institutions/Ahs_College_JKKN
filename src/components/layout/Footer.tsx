@@ -43,6 +43,43 @@ export function Footer() {
         }
     ];
 
+    // A-02, 2026-08-25. This site has 18 city pages. FIVE of them - Erode, Namakkal, Salem,
+    // Tiruppur, Coimbatore - are linked from the 9 course pages, and those five carry 6,259 of
+    // the 6,695 all-device city impressions and 90 of the 94 clicks (GSC, 28 days to
+    // 2026-08-22). The other THIRTEEN had ZERO inbound internal links anywhere in this repo,
+    // and six of the thirteen have zero impressions and read "Discovered - currently not
+    // indexed" in Search Console. Not one of the five linked pages is at zero.
+    //
+    // That is an association, NOT a proof: the four big linked pages are also the four nearest
+    // cities, and Tiruppur is linked yet reads only 86 impressions while orphaned Bhavani reads
+    // 147. Linking cannot create demand. What it can do is stop a page being invisible to the
+    // rest of the site, which is what these thirteen were.
+    //
+    // The city NAME is the link text on purpose - each page targets "Allied Health Science
+    // Colleges in <City>", so the heading carries that phrase and the anchor stays readable.
+    // NO distances here: the "(30-40 km)" figures on the course pages are pre-existing and were
+    // not measured by me, so none are repeated or invented for the other thirteen.
+    const cityPages = [
+        { slug: 'erode', name: 'Erode' },
+        { slug: 'namakkal', name: 'Namakkal' },
+        { slug: 'salem', name: 'Salem' },
+        { slug: 'tiruppur', name: 'Tiruppur' },
+        { slug: 'coimbatore', name: 'Coimbatore' },
+        { slug: 'tiruchengode', name: 'Tiruchengode' },
+        { slug: 'sankagiri', name: 'Sankagiri' },
+        { slug: 'bhavani', name: 'Bhavani' },
+        { slug: 'karur', name: 'Karur' },
+        { slug: 'rasipuram', name: 'Rasipuram' },
+        { slug: 'attur', name: 'Attur' },
+        { slug: 'mettur', name: 'Mettur' },
+        { slug: 'gobichettipalayam', name: 'Gobichettipalayam' },
+        { slug: 'trichy', name: 'Trichy' },
+        { slug: 'dharmapuri', name: 'Dharmapuri' },
+        { slug: 'krishnagiri', name: 'Krishnagiri' },
+        { slug: 'vellore', name: 'Vellore' },
+        { slug: 'madurai', name: 'Madurai' },
+    ];
+
 
     return (
         <footer className="bg-[#0b6d41] pt-8 sm:pt-12 md:pt-16 pb-6 sm:pb-8 text-white">
@@ -132,6 +169,30 @@ export function Footer() {
                             </div>
                         </div>
                     </div>
+                </div>
+
+                {/* Cities we serve - A-02. Site-wide, so every page links all 18 city pages.
+                    Thirteen of them had no inbound internal link anywhere before this. */}
+                <div className="pt-6 sm:pt-8 border-t border-white/20 mb-6 sm:mb-8">
+                    <h3 className="text-base sm:text-lg md:text-xl font-black mb-3 sm:mb-4 uppercase">
+                        Allied Health Science Colleges across Tamil Nadu
+                    </h3>
+                    <p className="text-white/80 text-xs sm:text-sm mb-4">
+                        Students join JKKN College of Allied Health Sciences from across the state.
+                        Choose your city for local admission details.
+                    </p>
+                    <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-x-4 gap-y-2">
+                        {cityPages.map((city) => (
+                            <li key={city.slug}>
+                                <a
+                                    href={`/${city.slug}`}
+                                    className="text-white hover:text-[#ffde59] transition-colors text-xs sm:text-sm leading-relaxed"
+                                >
+                                    {city.name}
+                                </a>
+                            </li>
+                        ))}
+                    </ul>
                 </div>
 
                 {/* Bottom Copyright */}
