@@ -6,6 +6,7 @@ import { siteConfig } from "@/lib/site-config";
 import { MapPin, GraduationCap, Phone, TrendingUp, Building2, GitBranch, Target, Globe, Bus, Activity, Microscope, HeartPulse, Droplet, ShieldCheck, Wind, Stethoscope, Heart, FileText, Ambulance, Map, Train, Plane, Home, BookOpen, Trophy, Wifi, CheckCircle } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import AhsEnquiryForm from "@/components/lead/AhsEnquiryForm";
 
 export default function SalemPage() {
   return (
@@ -90,6 +91,25 @@ export default function SalemPage() {
           },
         ]} />
         <ExploreCitiesSection />
+        {/* B-06 - enquiry form. MEASURED 2026-08-27: this page had ZERO <form> elements and the
+            only conversion path was an outbound link to jkkn.ai. Over 90 days the four big city
+            pages took 327 GSC clicks and produced 9 apply_click events - 2.70 percent of
+            sessions against the site own 3.48 percent. Same component as the course pages
+            (DEP-34); it posts to the CRM from the server because the endpoint sends no
+            Access-Control-Allow-Origin header. No defaultProgrammeId on purpose - a city page
+            is not one programme. */}
+        <section className="bg-gradient-to-br from-[#0b6d41] to-[#12a15f] py-16">
+          <div className="max-w-3xl mx-auto px-4">
+            <h2 className="text-white text-2xl md:text-3xl font-black text-center mb-2">
+              Admissions 2026 &mdash; Get a Call Back
+            </h2>
+            <p className="text-white/80 text-center text-sm mb-8">
+              Students from Salem join JKKN College of Allied Health Sciences every year. Leave
+              your details and our admission team will contact you within 24 hours.
+            </p>
+            <AhsEnquiryForm sourcePage="city-salem" />
+          </div>
+        </section>
       </main>
       <Footer />
     </>
