@@ -533,6 +533,23 @@ function CareerSection() {
                     ))}
                 </div>
             </div>
+            {/* A-07, 2026-08-27. MEASURED: Google crawled this article once on 2026-06-01 and
+                reports ZERO referring urls for it, and the course page it belongs to linked to it
+                zero times. Rewriting was measured out - the nine articles are already 82-90
+                percent unique and the most unique of them is one Google declined. The link is
+                the lever. Anchored here because the article is about careers and salary. */}
+            <div className="max-w-4xl mx-auto px-4 mt-14 text-center">
+              <p className="text-gray-900">
+                Want the full salary range, job roles and 2026 career outlook?{" "}
+                <Link
+                  href="/course-blog/operation-theatre-anaesthesia-technologist-roadmap"
+                  className="font-bold text-[#0b6d41] underline underline-offset-4 hover:text-[#12a15f] transition-colors"
+                >
+                  Read our B.Sc Operation Theatre & Anaesthesia Technology career guide
+                </Link>
+                .
+              </p>
+            </div>
         </section>
     );
 }
