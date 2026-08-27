@@ -240,6 +240,14 @@ export default function RootLayout({
         {/* Google Tag Manager */}
         <script dangerouslySetInnerHTML={{ __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-W5JJJVHB');` }} />
         {/* End Google Tag Manager */}
+        {/* Microsoft Clarity - B-06, 2026-08-27. Project vemha068xm, verified against
+            clarity.ms with a control before it was written here: a valid id returns HTTP 200 and
+            707 bytes of loader JS, every invalid id returns 204 and an empty body. Until this
+            went in, no JKKN site in the fleet carried the tag - all eight Clarity projects
+            existed and none of them had ever received a session, which is why B-06 could not
+            answer the rage-click and dead-click half of its own brief. */}
+        <script dangerouslySetInnerHTML={{ __html: `(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window, document, "clarity", "script", "vemha068xm");` }} />
+        {/* End Microsoft Clarity */}
         {/* Google Analytics 4 */}
         <GAScript />
         {/* End Google Analytics 4 */}
