@@ -601,6 +601,25 @@ function AdmissionProcessSection() {
                     </div>
                 ))}
             </div>
+            {/* A-04, 2026-08-27. The one thing A-04 actually needed. The admissions page linked
+                here already; this page linked back ZERO times, measured on the live HTML. Anchor
+                text names what B-07 measured the admissions page to OWN - fees, eligibility and
+                how to apply - rather than a bare "click here", so the link says the same thing
+                the ranking data does. Titles and canonicals were deliberately NOT touched: the
+                titles already match each page's measured job, and the canonical is A-01's call,
+                re-read at B-11 on 2026-09-05. */}
+            <div className="max-w-6xl mx-auto px-4 mt-14 text-center">
+                <p className="text-gray-900">
+                    Looking for exact fees, eligibility and 2026-27 application dates?{" "}
+                    <Link
+                        href="/admissions/cardiac-technology"
+                        className="font-bold text-[#0b6d41] underline underline-offset-4 hover:text-[#12a15f] transition-colors"
+                    >
+                        See the full B.Sc Cardiac Technology admission details
+                    </Link>
+                    .
+                </p>
+            </div>
         </section>
     );
 }
