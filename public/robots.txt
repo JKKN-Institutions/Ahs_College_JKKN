@@ -173,6 +173,11 @@ Disallow: /phpmyadmin/        # phpMyAdmin (if exposed)
 
 User-agent: Googlebot
 Allow: /
+# /_next/static/ carries the JS, CSS and fonts; /_next/image is the optimizer.
+# Google resolves by LONGEST match, so these two beat the /_next/ Disallow below
+# and only the build paths stay closed. Same pattern as dental, cas and nursing.
+Allow: /_next/static/
+Allow: /_next/image
 Disallow: /_next/
 Disallow: /api/
 Disallow: /admin/
@@ -211,6 +216,9 @@ Disallow: /api/
 
 User-agent: Bingbot
 Allow: /
+# Same carve-out as the Googlebot group above - Bing renders pages too.
+Allow: /_next/static/
+Allow: /_next/image
 Disallow: /_next/
 Disallow: /api/
 Disallow: /admin/
