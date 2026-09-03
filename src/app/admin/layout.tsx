@@ -4,6 +4,25 @@ import AdminSidebar from './AdminSidebar';
 import ToastProvider from './ToastProvider';
 import { AdminCollegeProvider } from './AdminCollegeContext';
 
+import type { Metadata } from 'next';
+
+// The CMS admin panel must never be indexed, by ANY crawler.
+// robots.txt blocks /admin/ for `User-agent: *` and Googlebot, but a bot that
+// declares its own group never reads the * group - measured 2026-09-02, 61 of 87
+// groups in public/robots.txt were Allow-only, so GPTBot, ClaudeBot, PerplexityBot
+// and CCBot were all free to crawl /admin/login, which served `index, follow`.
+// This metadata is user-agent independent and covers every crawler, including any
+// added to robots.txt after today. It is inherited by /admin/login (no metadata of
+// its own) and by every nested admin route.
+export const metadata: Metadata = {
+  robots: {
+    index: false,
+    follow: false,
+    nocache: true,
+    googleBot: { index: false, follow: false },
+  },
+};
+
 export default async function AdminLayout({ children }: { children: React.ReactNode }) {
   const supabase = await createClient();
   let user = null;

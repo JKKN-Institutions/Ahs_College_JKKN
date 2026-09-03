@@ -117,6 +117,18 @@ const nextConfig: NextConfig = {
       { source: '/enhancing-clinical-preparedness-insights-from-the-hospital-professional-lecture/', destination: '/blog', permanent: true },
       { source: '/kumarapalayam-bypass-marathon', destination: '/blog', permanent: true },
       { source: '/kumarapalayam-bypass-marathon/', destination: '/blog', permanent: true },
+      // -- Generic path aliases 2026-09-02 -------------------------------------
+      // /courses, /programs and /fees have NEVER existed on this site: all three
+      // measured HTTP 404 on 2026-09-02, and GSC reports /courses and /fees as
+      // "URL is unknown to Google", so no traffic is being lost today. These are
+      // insurance for typed URLs and any future external link, not a fix for a
+      // measured loss. Targets verified HTTP 200 on 2026-09-02.
+      { source: '/courses', destination: '/departments', permanent: true },
+      { source: '/courses/', destination: '/departments', permanent: true },
+      { source: '/programs', destination: '/departments', permanent: true },
+      { source: '/programs/', destination: '/departments', permanent: true },
+      { source: '/fees', destination: '/fee-structure', permanent: true },
+      { source: '/fees/', destination: '/fee-structure', permanent: true },
     ];
   },
 };
