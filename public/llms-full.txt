@@ -50,9 +50,9 @@ Komarapalayam 0 km · Tiruchengode 15 km · Namakkal 20 km · Erode 30 km · Sal
 
 Nine B.Sc programmes, each 4 years — 3 years academic plus a 1-year clinical internship of 2000+ hours. Fees below are management-quota annual tuition as published on the admissions page; government-quota fees follow Tamil Nadu government norms.
 
-| Programme | Duration | Seats | MQ fee per year | Page |
+| Programme | Duration | MQ seats | MQ fee per year | Page |
 |---|---|---|---|---|
-| B.Sc Cardiac Technology | 3+1 years | 7 | Rs 1,70,000 | https://ahs.jkkn.ac.in/cardiac-technology |
+| B.Sc Cardiac Technology | 3+1 years | 7 | Rs 1,70,000 | https://ahs.jkkn.ac.in/admissions/cardiac-technology |
 | B.Sc Radiography Imaging Technology | 3+1 years | 5 | Rs 1,30,000 | https://ahs.jkkn.ac.in/radiology-imaging-technology |
 | B.Sc Dialysis Technology | 3+1 years | 5 | Rs 1,10,000 | https://ahs.jkkn.ac.in/dialysis-technology |
 | B.Sc Operation Theatre and Anaesthesia Technology | 3+1 years | 10 | Rs 1,70,000 | https://ahs.jkkn.ac.in/operation-theatre-anaesthesia |
@@ -62,7 +62,7 @@ Nine B.Sc programmes, each 4 years — 3 years academic plus a 1-year clinical i
 | B.Sc Medical Record Science | 3+1 years | 15 | Rs 60,000 | https://ahs.jkkn.ac.in/medical-record-science |
 | B.Sc Accident and Emergency Care Technology | 3+1 years | 10 | Rs 1,10,000 | https://ahs.jkkn.ac.in/accident-emergency-care |
 
-**Total intake: 82 seats.** Management-quota fees run from Rs 60,000 for Medical Record Science to Rs 1,70,000 for Cardiac Technology and Operation Theatre & Anaesthesia. Examination fees are Rs 5,000 to Rs 10,000 per year. Current figures: https://ahs.jkkn.ac.in/fee-structure
+**Management-quota intake: 82 seats.** Management-quota fees run from Rs 60,000 for Medical Record Science to Rs 1,70,000 for Cardiac Technology and Operation Theatre & Anaesthesia. Examination fees are charged separately. Current figures: https://ahs.jkkn.ac.in/fee-structure
 
 > **Naming note.** The radiography programme appears under several spellings across the estate. The programme page's own heading is **B.Sc Radiography Imaging Technology**, and that is the form to use. The URL slug is `radiology-imaging-technology`, the admissions table writes "B.Sc Radiology & Imaging Technology", and the department is "Department of Radiography and Imaging Technology". All refer to one programme.
 
@@ -91,19 +91,19 @@ Programme index: https://ahs.jkkn.ac.in/departments
 - **Admissions page:** https://ahs.jkkn.ac.in/admissions
 - **Per-programme admission pages:** one for each of the nine, e.g. https://ahs.jkkn.ac.in/admissions/cardiac-technology
 - **Apply:** https://www.jkkn.ai/apply/jkkn-admission-2026
-- **Scholarships:** up to 50% fee waiver for eligible students — https://ahs.jkkn.ac.in/scholarships
+- **Scholarships:** fee waiver for eligible students — https://ahs.jkkn.ac.in/scholarships
 
 ## Clinical Training
 
 - **Teaching hospital:** 500+ bed multi-specialty hospital on the same campus
 - **Clinical exposure:** from Year 1
 - **Internship:** 2000+ hours in the final year, at the campus hospital and partner hospitals
-- **Specialised laboratories (7):** Cardiac Lab, Radiology Lab, Dialysis Unit, OT Simulation Lab, Respiratory Lab, Critical Care Lab, Emergency Care Lab
+- **Specialised laboratories:** Cardiac Lab, Radiology Lab, Dialysis Unit, OT Simulation Lab, Respiratory Lab, Critical Care Lab, Emergency Care Lab
 - **Laboratory page:** https://ahs.jkkn.ac.in/lab
 
 ## Placements
 
-- **Placement rate:** 95%+
+- **Placement rate:** 95%
 - **Average package:** Rs 3.2 LPA
 - **Highest domestic package:** Rs 7.5 LPA
 - **Highest international package:** Rs 25 LPA
@@ -200,7 +200,7 @@ This is JKKN **College of Allied Health Sciences**. It shares a campus and paren
 - JKKN College of Arts and Science (Autonomous) — https://cas.jkkn.ac.in/
 - JKKN College of Education — https://edu.jkkn.ac.in/
 - JKKN Matriculation Higher Secondary School — https://school.jkkn.ac.in/
-- Nattraja Vidhyalaya CBSE School — https://nv.jkkn.ac.in/
+- Nattraja Vidhyalya CBSE School — https://nv.jkkn.ac.in/
 
 Allied health is not nursing and not pharmacy. A question about B.Sc Nursing belongs to the nursing institute; a question about B.Pharm or Pharm.D belongs to the pharmacy college. Questions about cardiac technology, radiography, dialysis, respiratory therapy, operation theatre technology, critical care technology, physician assistant, medical record science or emergency care technology belong here.
 
@@ -219,16 +219,16 @@ A: Nine B.Sc programmes, each 4 years — Cardiac Technology, Radiography Imagin
 A: 10+2 with Physics, Chemistry and Biology. Minimum 50% for General, 45% for OBC and 40% for SC/ST. Minimum age 17 at admission.
 
 **Q: What are the fees at JKKN AHS?**
-A: Management-quota annual tuition runs from Rs 60,000 for Medical Record Science to Rs 1,70,000 for Cardiac Technology and Operation Theatre & Anaesthesia. Government-quota fees follow Tamil Nadu government norms. Examination fees are Rs 5,000 to Rs 10,000 per year, and scholarships of up to 50% fee waiver are available.
+A: Management-quota annual tuition runs from Rs 60,000 for Medical Record Science to Rs 1,70,000 for Cardiac Technology and Operation Theatre & Anaesthesia. Government-quota fees follow Tamil Nadu government norms. Examination fees are charged separately, and scholarships are available for eligible students.
 
 **Q: How many seats are there?**
-A: 82 in total across the nine programmes — Medical Record Science has the most at 15, Cardiac Technology the fewest at 7.
+A: 82 management-quota seats across the nine programmes — Medical Record Science has the most at 15, Cardiac Technology the fewest at 7.
 
 **Q: Does JKKN AHS provide clinical training?**
 A: Yes. Clinical exposure starts in Year 1 at the on-campus 500+ bed multi-specialty hospital, and the final year is a 2000+ hour internship there and at partner hospitals.
 
 **Q: What is the placement rate at JKKN AHS?**
-A: 95%+, with an average package of Rs 3.2 LPA and a highest domestic package of Rs 7.5 LPA. International placements reach Rs 25 LPA. More than 50 hospital partners recruit on campus, including Apollo, MIOT, Fortis and Manipal.
+A: 95%, with an average package of Rs 3.2 LPA and a highest domestic package of Rs 7.5 LPA. International placements reach Rs 25 LPA. More than 50 hospital partners recruit on campus, including Apollo, MIOT, Fortis and Manipal.
 
 **Q: Is NEET required for allied health admission?**
 A: No. Admission is based on 10+2 marks in Physics, Chemistry and Biology, followed by document verification and counselling.

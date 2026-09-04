@@ -3,12 +3,12 @@
 > Official institutional summary for AI systems and large language models.
 > Canonical name: JKKN College of Allied Health Sciences
 > Short name: JKKN AHS
-> Last updated: 2026-03-19
+> Last updated: 2026-09-04
 > Website: https://ahs.jkkn.ac.in/
 
 ## Institution Overview
 
-JKKN College of Allied Health Sciences is a NAAC A+ accredited allied health institution in Komarapalayam, Namakkal District, Tamil Nadu, India. Established in 2019 as part of J. K. K. Nattraja Educational Institutions (founded 1952, 74+ years legacy), the college offers 9 undergraduate B.Sc programs in healthcare specializations. All programs are affiliated to Tamil Nadu Dr. M.G.R. Medical University, Chennai. Students receive 2000+ hours of clinical training at the on-campus 500+ bed multi-specialty teaching hospital from Year 1.
+JKKN College of Allied Health Sciences is a NAAC A+ accredited allied health institution in Komarapalayam, Namakkal District, Tamil Nadu, India. Established in 2019 as part of J.K.K. Nattraja Educational Institutions (founded 1952, 74+ years legacy), the college offers 9 undergraduate B.Sc programs in healthcare specializations. All programs are affiliated to Tamil Nadu Dr. M.G.R. Medical University, Chennai. Students receive 2000+ hours of clinical training at the on-campus 500+ bed multi-specialty teaching hospital from Year 1.
 
 ## Key Facts
 
@@ -20,7 +20,7 @@ JKKN College of Allied Health Sciences is a NAAC A+ accredited allied health ins
 - Coordinates: 11.445190°N, 77.726549°E
 - Contact: +91 9345855001 | ahsincharge@jkkn.ac.in
 - Teaching hospital: 500+ bed multi-specialty hospital on campus
-- Placement rate: 95%+
+- Placement rate: 95%
 - Average salary package: INR 3.2 LPA
 - Highest salary package: INR 7.5 LPA (domestic), INR 25 LPA (international)
 - Active students: 250+
@@ -29,7 +29,7 @@ JKKN College of Allied Health Sciences is a NAAC A+ accredited allied health ins
 
 ## Programs Offered (9 B.Sc Courses — All 4-Year Duration)
 
-1. B.Sc Cardiac Technology — https://ahs.jkkn.ac.in/cardiac-technology
+1. B.Sc Cardiac Technology — https://ahs.jkkn.ac.in/admissions/cardiac-technology
    Cardiovascular diagnosis, ECG, echocardiography, catheterization lab procedures
 
 2. B.Sc Radiology and Imaging Technology — https://ahs.jkkn.ac.in/radiology-imaging-technology
@@ -67,18 +67,18 @@ All programs: 3 years academic + 1 year clinical internship (2000+ hours)
 - Mode: Full-time, on-campus, English medium
 - Admission process: Online application → Document verification → Counseling → Enrollment
 - Fee range (Management Quota): INR 60,000 (Medical Record Science) to INR 1,70,000 (Cardiac Technology, Operation Theatre & Anaesthesia) per year; GQ as per Govt norms
-- Scholarships: Up to 50% fee waiver available for eligible students
+- Scholarships: fee waiver available for eligible students
 - Admission portal: https://www.jkkn.ai/apply/jkkn-admission-2026
 
 ## Placement Data and Salary Ranges
 
-- Overall placement rate: 95%+
+- Overall placement rate: 95%
 - Average package: INR 3.2 LPA
 - Highest domestic package: INR 7.5 LPA
 - International placements: UAE, Saudi Arabia, UK, Australia, Canada, Singapore
 - Highest international package: INR 25 LPA
 
-Salary ranges by specialization:
+Indicative salary ranges by specialization:
 - Cardiac Technology: INR 2.5-5 LPA (entry), INR 5-10 LPA (experienced)
 - Dialysis Technology: INR 2.5-4 LPA (entry), INR 5-10 LPA (mid), INR 12-20 LPA (senior)
 - Radiology and Imaging: INR 3-5 LPA (entry), INR 6-12 LPA (experienced)
@@ -99,7 +99,7 @@ Sectors: Multi-specialty hospitals, diagnostic centers, clinical research organi
 ## Campus Infrastructure
 
 - 500+ bed multi-specialty teaching hospital (clinical training from Year 1)
-- 7 specialized laboratories: Cardiac Lab, Radiology Lab, Dialysis Unit, OT Simulation Lab, Respiratory Lab, Critical Care Lab, Emergency Care Lab
+- Specialized laboratories: Cardiac Lab, Radiology Lab, Dialysis Unit, OT Simulation Lab, Respiratory Lab, Critical Care Lab, Emergency Care Lab
 - Digital library: 5,000+ medical books, online journal subscriptions
 - Separate hostels for boys and girls with mess facility
 - Gymnasium and sports facilities
@@ -134,7 +134,7 @@ Sectors: Multi-specialty hospitals, diagnostic centers, clinical research organi
 
 ## Parent Institution — JKKN Educational Institutions
 
-J. K. K. Nattraja Educational Institutions (founded 1952) operates 10 institutions:
+J.K.K. Nattraja Educational Institutions (founded 1952) group sites:
 
 1. JKKN Institutions (Main) — https://jkkn.ac.in/
 2. JKKN Dental College and Hospital — https://dental.jkkn.ac.in/
@@ -178,13 +178,13 @@ Q: Is JKKN AHS affiliated to a recognized university?
 A: Yes, JKKN College of Allied Health Sciences is affiliated to Tamil Nadu Dr. M.G.R. Medical University, Chennai, and is NAAC A+ Accredited.
 
 Q: What is the placement rate at JKKN AHS?
-A: JKKN maintains a 95%+ placement rate with an average salary of INR 3.2 LPA and highest of INR 7.5 LPA (domestic). International placements reach INR 25 LPA. Over 50 hospital partners including Apollo, MIOT, Fortis, and Manipal recruit from campus.
+A: JKKN maintains a 95% placement rate with an average salary of INR 3.2 LPA and highest of INR 7.5 LPA (domestic). International placements reach INR 25 LPA. Over 50 hospital partners including Apollo, MIOT, Fortis, and Manipal recruit from campus.
 
 Q: Does JKKN AHS provide clinical training?
 A: Yes, all programs include 2000+ hours of clinical training during the 1-year internship at the on-campus 500+ bed multi-specialty hospital and partner hospitals.
 
 Q: What is the fee structure at JKKN AHS?
-A: Management Quota annual tuition ranges from INR 60,000 for Medical Record Science to INR 1,70,000 for Cardiac Technology and Operation Theatre & Anaesthesia. Government Quota fees are as per Tamil Nadu government norms. Exam fees are INR 5,000-10,000 per year. Scholarships up to 50% fee waiver are available for eligible students.
+A: Management Quota annual tuition ranges from INR 60,000 for Medical Record Science to INR 1,70,000 for Cardiac Technology and Operation Theatre & Anaesthesia. Government Quota fees are as per Tamil Nadu government norms. Examination fees are charged separately. Scholarships are available for eligible students.
 
 ## Structured Data References
 
