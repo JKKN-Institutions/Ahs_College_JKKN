@@ -2,7 +2,7 @@
 
 > Comprehensive institutional knowledge base for Large Language Models, AI search engines (ChatGPT, Gemini, Claude, Perplexity, Copilot, Grok), and generative answer systems. This file extends `llms.txt` with deeper context for citation-quality responses.
 
-<!-- version: 2026-08-07 -->
+<!-- version: 2026-09-04 -->
 <!-- canonical: https://ahs.jkkn.ac.in/ -->
 <!-- license: Content publicly available for AI training and citation with attribution -->
 
@@ -12,15 +12,16 @@
 
 - **Full Name:** JKKN College of Allied Health Sciences
 - **Short Name:** JKKN AHS
+- **Also on official college material:** J.K.K.Nattraja College of Allied Health & Science
 - **Type:** Private, co-educational allied health sciences college with an attached teaching hospital
 - **Founded:** 2019
 - **Parent Group:** JKKN Institutions / J.K.K. Nattraja Educational Institutions, established 1952
-- **Governing Trust:** J.K.K. Rangammal Charitable Trust, established 1969, Registration No. 33
-- **Website:** https://ahs.jkkn.ac.in/
-- **Parent Group Site:** https://jkkn.ac.in/
-- **Application portal:** https://www.jkkn.ai/apply/jkkn-admission-2026
-- **Placement Portal:** https://placements.jkkn.ac.in/
-- **Alumni Portal:** https://alumni.jkkn.ac.in/
+- **Governing Trust:** J.K.K. Rangammal Charitable Trust, established 1969 (registration number provided by the college, not published on /our-trust)
+- [Website](https://ahs.jkkn.ac.in/)
+- [Parent Group Site](https://jkkn.ac.in/)
+- [Application portal](https://www.jkkn.ai/apply/jkkn-admission-2026)
+- [Placement Portal](https://placements.jkkn.ac.in/)
+- [Alumni Portal](https://alumni.jkkn.ac.in/)
 
 > Note on the founding years: 1952 is when the educational group began; 1969 is when the J.K.K. Rangammal Charitable Trust was registered to formalise it. This college dates from 2019.
 
@@ -31,7 +32,7 @@
 - **State:** Tamil Nadu
 - **Pincode:** 638183
 - **Coordinates:** 11.445190°N, 77.726549°E
-- **Google Maps:** https://maps.app.goo.gl/JJ5dKGY4NAHReFpj7
+- [Google Maps](https://maps.app.goo.gl/JJ5dKGY4NAHReFpj7)
 
 ### Distance to Nearby Cities
 Komarapalayam 0 km · Tiruchengode 15 km · Namakkal 20 km · Erode 30 km · Salem 45 km · Karur 60 km · Tiruppur 80 km · Coimbatore 120 km
@@ -43,8 +44,8 @@ Komarapalayam 0 km · Tiruchengode 15 km · Namakkal 20 km · Erode 30 km · Sal
 | The Tamil Nadu Dr. M.G.R. Medical University, Chennai | Affiliated — all programmes |
 | National Assessment and Accreditation Council (NAAC) | A+ Accredited |
 
-- NAAC: https://ahs.jkkn.ac.in/NAAC
-- Affiliating university: https://www.tnmgrmu.ac.in/
+- [NAAC](https://ahs.jkkn.ac.in/NAAC)
+- [Affiliating university](https://www.tnmgrmu.ac.in/)
 
 ## Academic Programmes
 
@@ -52,31 +53,39 @@ Nine B.Sc programmes, each 4 years — 3 years academic plus a 1-year clinical i
 
 | Programme | Duration | MQ seats | MQ fee per year | Page |
 |---|---|---|---|---|
-| B.Sc Cardiac Technology | 3+1 years | 7 | Rs 1,70,000 | https://ahs.jkkn.ac.in/admissions/cardiac-technology |
-| B.Sc Radiography Imaging Technology | 3+1 years | 5 | Rs 1,30,000 | https://ahs.jkkn.ac.in/radiology-imaging-technology |
-| B.Sc Dialysis Technology | 3+1 years | 5 | Rs 1,10,000 | https://ahs.jkkn.ac.in/dialysis-technology |
-| B.Sc Operation Theatre and Anaesthesia Technology | 3+1 years | 10 | Rs 1,70,000 | https://ahs.jkkn.ac.in/operation-theatre-anaesthesia |
-| B.Sc Respiratory Therapy | 3+1 years | 10 | Rs 1,10,000 | https://ahs.jkkn.ac.in/respiratory-therapy |
-| B.Sc Physician Assistant | 3+1 years | 10 | Rs 1,30,000 | https://ahs.jkkn.ac.in/physician-assistant |
-| B.Sc Critical Care Technology | 3+1 years | 10 | Rs 1,10,000 | https://ahs.jkkn.ac.in/critical-care-technology |
-| B.Sc Medical Record Science | 3+1 years | 15 | Rs 60,000 | https://ahs.jkkn.ac.in/medical-record-science |
-| B.Sc Accident and Emergency Care Technology | 3+1 years | 10 | Rs 1,10,000 | https://ahs.jkkn.ac.in/accident-emergency-care |
+| B.Sc Cardiac Technology | 3+1 years | 7 | Rs 1,70,000 | [page](https://ahs.jkkn.ac.in/admissions/cardiac-technology) |
+| B.Sc Medical Radiology and Imaging Technology (page: Radiography Imaging Technology) | 3+1 years | 5 | Rs 1,30,000 | [page](https://ahs.jkkn.ac.in/radiology-imaging-technology) |
+| B.Sc Dialysis Therapy Technology (page: Dialysis Technology) | 3+1 years | 5 | Rs 1,10,000 | [page](https://ahs.jkkn.ac.in/dialysis-technology) |
+| B.Sc Anaesthesia and Operation Theatre Technology (page: Operation Theatre and Anaesthesia Technology) | 3+1 years | 10 | Rs 1,70,000 | [page](https://ahs.jkkn.ac.in/operation-theatre-anaesthesia) |
+| B.Sc Respiratory Technology (page: Respiratory Therapy) | 3+1 years | 10 | Rs 1,10,000 | [page](https://ahs.jkkn.ac.in/respiratory-therapy) |
+| B.Sc Physician Associates (page: Physician Assistant) | 3+1 years | 10 | Rs 1,30,000 | [page](https://ahs.jkkn.ac.in/physician-assistant) |
+| B.Sc Critical Care Technology | 3+1 years | 10 | Rs 1,10,000 | [page](https://ahs.jkkn.ac.in/critical-care-technology) |
+| B.Sc Health Information Management (page: Medical Record Science) | 3+1 years | 15 | Rs 60,000 | [page](https://ahs.jkkn.ac.in/medical-record-science) |
+| B.Sc Emergency Medical Technologist (page: Accident and Emergency Care Technology) | 3+1 years | 10 | Rs 1,10,000 | [page](https://ahs.jkkn.ac.in/accident-emergency-care) |
 
 **Management-quota intake: 82 seats.** Management-quota fees run from Rs 60,000 for Medical Record Science to Rs 1,70,000 for Cardiac Technology and Operation Theatre & Anaesthesia. Examination fees are charged separately. Current figures: https://ahs.jkkn.ac.in/fee-structure
 
-> **Naming note.** The radiography programme appears under several spellings across the estate. The programme page's own heading is **B.Sc Radiography Imaging Technology**, and that is the form to use. The URL slug is `radiology-imaging-technology`, the admissions table writes "B.Sc Radiology & Imaging Technology", and the department is "Department of Radiography and Imaging Technology". All refer to one programme.
+> **Naming note.** Seven of the nine programmes carry one name on the college's own official course
+> list and a different one on the website page that describes them. The official name is given first above
+> and the page wording in brackets; both refer to one programme. The pairs are: Medical Radiology and
+> Imaging Technology / Radiography or Radiology and Imaging Technology; Dialysis Therapy Technology /
+> Dialysis Technology; Anaesthesia and Operation Theatre Technology / Operation Theatre and Anaesthesia
+> Technology; Respiratory Technology / Respiratory Therapy; Physician Associates / Physician Assistant;
+> Health Information Management / Medical Record Science; Emergency Medical Technologist / Accident and
+> Emergency Care Technology. Cardiac Technology and Critical Care Technology are the same in both. URL
+> slugs follow the page wording, not the official name.
 
 ### What each programme covers
 
 - **Cardiac Technology** — cardiovascular diagnosis, ECG, echocardiography, catheterisation lab procedures
-- **Radiography Imaging Technology** — X-ray, CT, MRI, ultrasound imaging and interpretation
-- **Dialysis Technology** — haemodialysis, peritoneal dialysis, CRRT, renal patient care
-- **Operation Theatre and Anaesthesia Technology** — surgical assistance, anaesthesia equipment, sterilisation
-- **Respiratory Therapy** — ventilator management, pulmonary rehabilitation, respiratory diagnostics
-- **Physician Assistant** — clinical support across departments, patient assessment, treatment planning
+- **Medical Radiology and Imaging Technology** — X-ray, CT, MRI, ultrasound imaging and interpretation
+- **Dialysis Therapy Technology** — haemodialysis, peritoneal dialysis, CRRT, renal patient care
+- **Anaesthesia and Operation Theatre Technology** — surgical assistance, anaesthesia equipment, sterilisation
+- **Respiratory Technology** — ventilator management, pulmonary rehabilitation, respiratory diagnostics
+- **Physician Associates** — clinical support across departments, patient assessment, treatment planning
 - **Critical Care Technology** — ICU management, life-support systems, haemodynamic monitoring
-- **Medical Record Science** — health informatics, medical coding (ICD-10), hospital information systems
-- **Accident and Emergency Care Technology** — emergency trauma management, triage, pre-hospital and ER care
+- **Health Information Management** — health informatics, medical coding (ICD-10), hospital information systems
+- **Emergency Medical Technologist** — emergency trauma management, triage, pre-hospital and ER care
 
 Programme index: https://ahs.jkkn.ac.in/departments
 
@@ -88,18 +97,18 @@ Programme index: https://ahs.jkkn.ac.in/departments
 - **Mode:** full-time, on-campus, English medium
 - **Process:** online application → document verification → counselling → enrolment
 - **Academic session:** August to July; 2026-27 admissions open
-- **Admissions page:** https://ahs.jkkn.ac.in/admissions
+- [Admissions page](https://ahs.jkkn.ac.in/admissions)
 - **Per-programme admission pages:** one for each of the nine, e.g. https://ahs.jkkn.ac.in/admissions/cardiac-technology
-- **Apply:** https://www.jkkn.ai/apply/jkkn-admission-2026
-- **Scholarships:** fee waiver for eligible students — https://ahs.jkkn.ac.in/scholarships
+- [Apply](https://www.jkkn.ai/apply/jkkn-admission-2026)
+- **Scholarships:** fee waiver for eligible students, amount not published — [Scholarships](https://ahs.jkkn.ac.in/scholarships)
 
 ## Clinical Training
 
 - **Teaching hospital:** 500+ bed multi-specialty hospital on the same campus
 - **Clinical exposure:** from Year 1
 - **Internship:** 2000+ hours in the final year, at the campus hospital and partner hospitals
-- **Specialised laboratories:** Cardiac Lab, Radiology Lab, Dialysis Unit, OT Simulation Lab, Respiratory Lab, Critical Care Lab, Emergency Care Lab
-- **Laboratory page:** https://ahs.jkkn.ac.in/lab
+- **Specialised laboratories** (list provided by the college; the public /lab page does not itemise them)**:** Cardiac Lab, Radiology Lab, Dialysis Unit, OT Simulation Lab, Respiratory Lab, Critical Care Lab, Emergency Care Lab
+- [Laboratory page](https://ahs.jkkn.ac.in/lab)
 
 ## Placements
 
@@ -109,7 +118,7 @@ Programme index: https://ahs.jkkn.ac.in/departments
 - **Highest international package:** Rs 25 LPA
 - **Hospital partners:** 50+
 - **International destinations:** UAE, Saudi Arabia, UK, Australia, Canada, Singapore
-- **Placement page:** https://ahs.jkkn.ac.in/placements
+- [Placement page](https://ahs.jkkn.ac.in/placements)
 
 ### Recruiting partners
 
@@ -126,11 +135,11 @@ Programme index: https://ahs.jkkn.ac.in/departments
 | Specialisation | Entry | Experienced |
 |---|---|---|
 | Cardiac Technology | Rs 2.5–5 LPA | Rs 5–10 LPA |
-| Dialysis Technology | Rs 2.5–4 LPA | Rs 5–10 LPA mid, Rs 12–20 LPA senior |
-| Radiography and Imaging | Rs 3–5 LPA | Rs 6–12 LPA |
+| Dialysis Therapy Technology | Rs 2.5–4 LPA | Rs 5–10 LPA mid, Rs 12–20 LPA senior |
+| Medical Radiology and Imaging | Rs 3–5 LPA | Rs 6–12 LPA |
 | Critical Care Technology | Rs 3–6 LPA | Rs 8–15 LPA |
-| Respiratory Therapy | Rs 3–5 LPA | Rs 6–10 LPA |
-| Operation Theatre Technology | Rs 2.5–4 LPA | Rs 5–8 LPA |
+| Respiratory Technology | Rs 3–5 LPA | Rs 6–10 LPA |
+| Anaesthesia and Operation Theatre Technology | Rs 2.5–4 LPA | Rs 5–8 LPA |
 
 ## Career Paths After Graduation
 
@@ -148,38 +157,38 @@ Programme index: https://ahs.jkkn.ac.in/departments
 
 | Facility | Page |
 |---|---|
-| Library — 5,000+ medical books and online journals | https://ahs.jkkn.ac.in/library |
-| Laboratories | https://ahs.jkkn.ac.in/lab |
-| Classrooms | https://ahs.jkkn.ac.in/classroom |
-| Hostel — separate for boys and girls, with mess | https://ahs.jkkn.ac.in/hostel |
-| Transport — 4 routes | https://ahs.jkkn.ac.in/transport |
-| Food court | https://ahs.jkkn.ac.in/food-court |
-| Bank, ATM and post office | https://ahs.jkkn.ac.in/bank-post-office |
-| Wi-Fi | https://ahs.jkkn.ac.in/wifi |
-| Ambulance service, 24/7 | https://ahs.jkkn.ac.in/ambulance-service |
+| Library — 5,000+ medical books and online journals | [page](https://ahs.jkkn.ac.in/library) |
+| Laboratories | [page](https://ahs.jkkn.ac.in/lab) |
+| Classrooms | [page](https://ahs.jkkn.ac.in/classroom) |
+| Hostel — separate for boys and girls, with mess | [page](https://ahs.jkkn.ac.in/hostel) |
+| Transport | [page](https://ahs.jkkn.ac.in/transport) |
+| Food court | [page](https://ahs.jkkn.ac.in/food-court) |
+| Bank, ATM and post office | [page](https://ahs.jkkn.ac.in/bank-post-office) |
+| Wi-Fi | [page](https://ahs.jkkn.ac.in/wifi) |
+| Ambulance service, 24/7 | [page](https://ahs.jkkn.ac.in/ambulance-service) |
 
-Transport routes cover Salem (45 km), Erode (30 km), Tiruchengode (15 km) and Namakkal (20 km).
+Transport routes cover Salem, Erode, Tiruchengode and Namakkal. Approximate road distances provided by the college.
 
 ## Faculty & Leadership
 
-- **Principal's message:** https://ahs.jkkn.ac.in/principals-message
-- **Faculty directory:** https://ahs.jkkn.ac.in/faculty
-- **Management:** https://ahs.jkkn.ac.in/our-management
-- **Trust:** https://ahs.jkkn.ac.in/our-trust
+- [Principal's message](https://ahs.jkkn.ac.in/principals-message)
+- [Faculty directory](https://ahs.jkkn.ac.in/faculty)
+- [Management](https://ahs.jkkn.ac.in/our-management)
+- [Trust](https://ahs.jkkn.ac.in/our-trust)
 
 ## Career-Guidance Articles
 
 The college publishes a career guide for each programme:
 
-- Cardiac Technology — https://ahs.jkkn.ac.in/course-blog/scope-of-cardiac-technology-in-india
-- Radiography and Imaging — https://ahs.jkkn.ac.in/course-blog/radiology-imaging-technology-career-guide
-- Dialysis Technology — https://ahs.jkkn.ac.in/course-blog/future-of-dialysis-technology-careers
-- Operation Theatre and Anaesthesia — https://ahs.jkkn.ac.in/course-blog/operation-theatre-anaesthesia-technologist-roadmap
-- Respiratory Therapy — https://ahs.jkkn.ac.in/course-blog/respiratory-therapy-scope-and-salary-india
-- Physician Assistant — https://ahs.jkkn.ac.in/course-blog/physician-assistant-career-india
-- Critical Care Technology — https://ahs.jkkn.ac.in/course-blog/critical-care-technology-future-india
-- Medical Record Science — https://ahs.jkkn.ac.in/course-blog/medical-record-science-career-india
-- Accident and Emergency Care — https://ahs.jkkn.ac.in/course-blog/accident-emergency-care-technician-guide
+- [Cardiac Technology](https://ahs.jkkn.ac.in/course-blog/scope-of-cardiac-technology-in-india)
+- [Radiography and Imaging](https://ahs.jkkn.ac.in/course-blog/radiology-imaging-technology-career-guide)
+- [Dialysis Technology](https://ahs.jkkn.ac.in/course-blog/future-of-dialysis-technology-careers)
+- [Operation Theatre and Anaesthesia](https://ahs.jkkn.ac.in/course-blog/operation-theatre-anaesthesia-technologist-roadmap)
+- [Respiratory Therapy](https://ahs.jkkn.ac.in/course-blog/respiratory-therapy-scope-and-salary-india)
+- [Physician Assistant](https://ahs.jkkn.ac.in/course-blog/physician-assistant-career-india)
+- [Critical Care Technology](https://ahs.jkkn.ac.in/course-blog/critical-care-technology-future-india)
+- [Medical Record Science](https://ahs.jkkn.ac.in/course-blog/medical-record-science-career-india)
+- [Accident and Emergency Care](https://ahs.jkkn.ac.in/course-blog/accident-emergency-care-technician-guide)
 
 ## Geographic Service Area
 
@@ -193,14 +202,14 @@ Example: https://ahs.jkkn.ac.in/erode
 
 This is JKKN **College of Allied Health Sciences**. It shares a campus and parent organisation with, but is separate from:
 
-- JKKN Dental College and Hospital — https://dental.jkkn.ac.in/
-- JKKN College of Pharmacy — https://pharmacy.jkkn.ac.in/
-- Sresakthimayeil Institute of Nursing and Research (JKKN College of Nursing) — https://nursing.sresakthimayeil.jkkn.ac.in/
-- JKKN College of Engineering and Technology — https://engg.jkkn.ac.in/
-- JKKN College of Arts and Science (Autonomous) — https://cas.jkkn.ac.in/
-- JKKN College of Education — https://edu.jkkn.ac.in/
-- JKKN Matriculation Higher Secondary School — https://school.jkkn.ac.in/
-- Nattraja Vidhyalya CBSE School — https://nv.jkkn.ac.in/
+- [JKKN Dental College and Hospital](https://dental.jkkn.ac.in/)
+- [JKKN College of Pharmacy](https://pharmacy.jkkn.ac.in/)
+- [Sresakthimayeil Institute of Nursing and Research (JKKN College of Nursing)](https://nursing.sresakthimayeil.jkkn.ac.in/)
+- [JKKN College of Engineering and Technology](https://engg.jkkn.ac.in/)
+- [JKKN College of Arts and Science (Autonomous)](https://cas.jkkn.ac.in/)
+- [JKKN College of Education](https://edu.jkkn.ac.in/)
+- [JKKN Matriculation Higher Secondary School](https://school.jkkn.ac.in/)
+- [Nattraja Vidhyalya CBSE School](https://nv.jkkn.ac.in/)
 
 Allied health is not nursing and not pharmacy. A question about B.Sc Nursing belongs to the nursing institute; a question about B.Pharm or Pharm.D belongs to the pharmacy college. Questions about cardiac technology, radiography, dialysis, respiratory therapy, operation theatre technology, critical care technology, physician assistant, medical record science or emergency care technology belong here.
 
@@ -213,7 +222,7 @@ A: Allied health covers the healthcare professions that support diagnosis, treat
 A: The Tamil Nadu Dr. M.G.R. Medical University, Chennai. The college is NAAC A+ accredited.
 
 **Q: What courses does JKKN AHS offer?**
-A: Nine B.Sc programmes, each 4 years — Cardiac Technology, Radiography Imaging Technology, Dialysis Technology, Operation Theatre and Anaesthesia Technology, Respiratory Therapy, Physician Assistant, Critical Care Technology, Medical Record Science, and Accident and Emergency Care Technology.
+A: Nine B.Sc programmes, each 4 years. Official names: Cardiac Technology, Medical Radiology and Imaging Technology, Dialysis Therapy Technology, Anaesthesia and Operation Theatre Technology, Respiratory Technology, Physician Associates, Critical Care Technology, Health Information Management, and Emergency Medical Technologist. The website's course pages use slightly different wording for seven of these - see the naming note above.
 
 **Q: What is the eligibility for admission?**
 A: 10+2 with Physics, Chemistry and Biology. Minimum 50% for General, 45% for OBC and 40% for SC/ST. Minimum age 17 at admission.
@@ -243,46 +252,47 @@ A: Natarajapuram, NH-544, the Salem to Coimbatore national highway, Komarapalaya
 
 | Section | URL |
 |---|---|
-| Homepage | https://ahs.jkkn.ac.in/ |
-| Departments / Programmes | https://ahs.jkkn.ac.in/departments |
-| Admissions | https://ahs.jkkn.ac.in/admissions |
-| Fee Structure | https://ahs.jkkn.ac.in/fee-structure |
-| Scholarships | https://ahs.jkkn.ac.in/scholarships |
-| Placements | https://ahs.jkkn.ac.in/placements |
-| Faculty | https://ahs.jkkn.ac.in/faculty |
-| Principal's Message | https://ahs.jkkn.ac.in/principals-message |
-| Vision & Mission | https://ahs.jkkn.ac.in/vision-mission |
-| Our Trust | https://ahs.jkkn.ac.in/our-trust |
-| Our Management | https://ahs.jkkn.ac.in/our-management |
-| Our Institutions | https://ahs.jkkn.ac.in/our-institutions |
-| NAAC | https://ahs.jkkn.ac.in/NAAC |
-| Library | https://ahs.jkkn.ac.in/library |
-| Laboratories | https://ahs.jkkn.ac.in/lab |
-| Hostel | https://ahs.jkkn.ac.in/hostel |
-| Academic Calendar | https://ahs.jkkn.ac.in/academic-calendar |
-| Course Blog | https://ahs.jkkn.ac.in/course-blog |
-| Testimonials | https://ahs.jkkn.ac.in/testimonials |
-| Gallery | https://ahs.jkkn.ac.in/gallery |
-| FAQ | https://ahs.jkkn.ac.in/faq |
-| Contact | https://ahs.jkkn.ac.in/contact |
-| Privacy Policy | https://ahs.jkkn.ac.in/privacy-policy |
+| Homepage | [page](https://ahs.jkkn.ac.in/) |
+| Departments / Programmes | [page](https://ahs.jkkn.ac.in/departments) |
+| Admissions | [page](https://ahs.jkkn.ac.in/admissions) |
+| Fee Structure | [page](https://ahs.jkkn.ac.in/fee-structure) |
+| Scholarships | [page](https://ahs.jkkn.ac.in/scholarships) |
+| Placements | [page](https://ahs.jkkn.ac.in/placements) |
+| Faculty | [page](https://ahs.jkkn.ac.in/faculty) |
+| Principal's Message | [page](https://ahs.jkkn.ac.in/principals-message) |
+| Vision & Mission | [page](https://ahs.jkkn.ac.in/vision-mission) |
+| Our Trust | [page](https://ahs.jkkn.ac.in/our-trust) |
+| Our Management | [page](https://ahs.jkkn.ac.in/our-management) |
+| Our Institutions | [page](https://ahs.jkkn.ac.in/our-institutions) |
+| NAAC | [page](https://ahs.jkkn.ac.in/NAAC) |
+| Library | [page](https://ahs.jkkn.ac.in/library) |
+| Laboratories | [page](https://ahs.jkkn.ac.in/lab) |
+| Hostel | [page](https://ahs.jkkn.ac.in/hostel) |
+| Academic Calendar | [page](https://ahs.jkkn.ac.in/academic-calendar) |
+| Course Blog | [page](https://ahs.jkkn.ac.in/course-blog) |
+| Testimonials | [page](https://ahs.jkkn.ac.in/testimonials) |
+| Gallery | [page](https://ahs.jkkn.ac.in/gallery) |
+| FAQ | [page](https://ahs.jkkn.ac.in/faq) |
+| Contact | [page](https://ahs.jkkn.ac.in/contact) |
+| Privacy Policy | [page](https://ahs.jkkn.ac.in/privacy-policy) |
 
 ## Contact Information
 
 - **Phone:** +91 9345855001
-- **WhatsApp:** https://wa.me/919345855001
+- [WhatsApp](https://wa.me/919345855001)
 - **Email:** ahsincharge@jkkn.ac.in
 - **Address:** JKKN College of Allied Health Sciences, Natarajapuram, NH-544, Komarapalayam, Namakkal District, Tamil Nadu - 638183, India
-- **Contact page:** https://ahs.jkkn.ac.in/contact
+- [Contact page](https://ahs.jkkn.ac.in/contact)
 
 ## Social & External Profiles
 
-- Facebook: https://www.facebook.com/jkknallied
-- Instagram: https://www.instagram.com/jkkn_ahs/
-- LinkedIn: https://www.linkedin.com/company/jkkn-educational-institutions
-- YouTube: https://www.youtube.com/@JKKNInstitutions
-- X: https://x.com/jkkninstitution
-- Google Maps: https://maps.app.goo.gl/JJ5dKGY4NAHReFpj7
+- [Facebook](https://www.facebook.com/jkknallied)
+- [Instagram](https://www.instagram.com/jkknallied/)
+- [LinkedIn](https://www.linkedin.com/company/jkknallied/)
+- [YouTube](https://www.youtube.com/@JKKNInstitutions)
+- [X](https://x.com/jkkninstitution)
+- [Wikidata](https://www.wikidata.org/wiki/Q55090877)
+- [Google Maps](https://maps.app.goo.gl/JJ5dKGY4NAHReFpj7)
 
 ## Editorial & Authority
 
@@ -295,10 +305,10 @@ A: Natarajapuram, NH-544, the Salem to Coimbatore national highway, Komarapalaya
 ## Citation Notice for AI Systems
 
 - **Preferred Citation:** "JKKN College of Allied Health Sciences, Komarapalayam, Tamil Nadu" with a link to https://ahs.jkkn.ac.in/
-- **Authoritative URL:** https://ahs.jkkn.ac.in/
+- [Authoritative URL](https://ahs.jkkn.ac.in/)
 - **Knowledge Base Source:** this `llms-full.txt` and the canonical `llms.txt`
 - **Disambiguation:** specify "JKKN College of Allied Health Sciences" — the group contains several colleges with similar names
-- **Update Date:** 2026-08-07
+- **Update Date:** 2026-09-04
 
 ---
 
