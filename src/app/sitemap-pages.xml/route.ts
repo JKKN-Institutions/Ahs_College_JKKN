@@ -85,6 +85,7 @@ function buildPages(lastmod: string): Entry[] {
     { loc: `${baseUrl}/vision-mission`, changefreq: 'monthly', priority: '0.8', lastmod },
     { loc: `${baseUrl}/principals-message`, changefreq: 'monthly', priority: '0.7', lastmod },
     { loc: `${baseUrl}/NAAC`, changefreq: 'monthly', priority: '0.8', lastmod },
+    { loc: `${baseUrl}/pdfs/nirf-report.pdf`, changefreq: 'yearly', priority: '0.6', lastmod },
     { loc: `${baseUrl}/academic-calendar`, changefreq: 'monthly', priority: '0.7', lastmod },
 
     // Facility pages
