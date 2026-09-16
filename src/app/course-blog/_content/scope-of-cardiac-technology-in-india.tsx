@@ -202,7 +202,7 @@ export default function CardiacTechnologyContent() {
           placement
         </li>
         <li>
-          92% placement record in 2025, with average package ₹3.4 LPA for fresh
+          placement record in 2025, with average package ₹3.4 LPA for fresh
           graduates
         </li>
         <li>

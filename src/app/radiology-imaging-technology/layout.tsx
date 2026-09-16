@@ -118,7 +118,7 @@ const faqSchema = {
       "name": "What is the eligibility criteria for Bachelor of Science Radiography Imaging Technology at JKKN Allied Health Sciences Komarapalayam?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Candidates need 10+2 with Physics, Chemistry, and Biology or Mathematics, minimum 50% marks. Scheduled Caste and Scheduled Tribe: 40%. Other Backward Classes: 45%. Age minimum 17 years."
+        "text": "Candidates need 10+2 with Physics, Chemistry, and Biology, minimum 50% marks. Scheduled Caste and Scheduled Tribe: 40%. Other Backward Classes: 45%. Age minimum 17 years."
       }
     },
     {

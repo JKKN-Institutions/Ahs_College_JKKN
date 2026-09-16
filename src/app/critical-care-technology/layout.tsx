@@ -118,7 +118,7 @@ const faqSchema = {
       "name": "What is the eligibility to join the Bachelor of Science Critical Care Technology program at JKKN College Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Candidates need 10+2 with Physics, Chemistry, and Biology or Mathematics, minimum 50% marks. Scheduled Caste and Scheduled Tribe candidates need 40%, Other Backward Classes candidates need 45%. Minimum age is 17 years."
+        "text": "Candidates need 10+2 with Physics, Chemistry, and Biology, minimum 50% marks. Scheduled Caste and Scheduled Tribe candidates need 40%, Other Backward Classes candidates need 45%. Minimum age is 17 years."
       }
     },
     {

@@ -152,7 +152,7 @@ export default function CourseBlogLayout({ post, children }: Props) {
             </h2>
             <p className="text-white/90 mb-6 leading-relaxed max-w-2xl">
               JKKN College of Allied Health Sciences offers state-of-the-art learning labs,
-              clinical training in partner hospitals, and 92% placement support.
+              clinical training in partner hospitals, and placement support.
               Admissions for 2026-27 are now open.
             </p>
             <div className="flex flex-wrap gap-3">

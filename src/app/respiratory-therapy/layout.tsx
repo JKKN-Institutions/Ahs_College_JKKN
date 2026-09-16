@@ -116,7 +116,7 @@ const faqSchema = {
       "name": "What is the eligibility criteria for Bachelor of Science Respiratory Therapy at JKKN College Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Candidates need 10+2 with Physics, Chemistry, and Biology or Mathematics, minimum 50% marks (40% for Scheduled Caste and Scheduled Tribe, 45% for Other Backward Classes), and age 17 years or older."
+        "text": "Candidates need 10+2 with Physics, Chemistry, and Biology, minimum 50% marks (40% for Scheduled Caste and Scheduled Tribe, 45% for Other Backward Classes), and age 17 years or older."
       }
     },
     {
