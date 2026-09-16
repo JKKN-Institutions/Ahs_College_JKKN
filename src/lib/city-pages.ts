@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { createPageMetadata } from "@/lib/metadata";
+import { AHS_MAPS_URL } from "@/lib/entity-profiles";
 
 /**
  * City landing page content library (Phase 1 commute-belt + Phase 2 district hubs).
@@ -860,7 +861,7 @@ export function buildCitySchemas(city: CityPage): object[] {
     geo: { "@type": "GeoCoordinates", latitude: 11.4467, longitude: 77.7046 },
     telephone: "+919345855001",
     email: "info@jkkn.ac.in",
-    sameAs: ["https://maps.app.goo.gl/JJ5dKGY4NAHReFpj7"],
+    sameAs: [AHS_MAPS_URL],
     areaServed: { "@type": "City", name: cityName },
     parentOrganization: {
       "@type": "Organization",

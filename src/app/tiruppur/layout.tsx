@@ -1,4 +1,5 @@
 import { createPageMetadata } from "@/lib/metadata";
+import { AHS_MAPS_URL } from "@/lib/entity-profiles";
 
 export const metadata = createPageMetadata({
   title: "Allied Health Sciences Colleges in Tiruppur | JKKN AHS",
@@ -195,7 +196,7 @@ const educationalOrgSchema = {
   },
   telephone: "+919345855001",
   email: "info@jkkn.ac.in",
-  sameAs: ["https://maps.app.goo.gl/JJ5dKGY4NAHReFpj7"],
+  sameAs: [AHS_MAPS_URL],
   areaServed: {
     "@type": "City",
     name: "Tiruppur",

@@ -1,4 +1,5 @@
 import { createPageMetadata } from "@/lib/metadata";
+import { AHS_MAPS_URL, AHS_SAME_AS } from "@/lib/entity-profiles";
 
 export const metadata = createPageMetadata({
   title: "Contact Us | JKKN Allied Health Sciences, Komarapalayam",
@@ -48,7 +49,7 @@ const contactSchema = {
     "latitude": "11.445190",
     "longitude": "77.726549"
   },
-  "hasMap": "https://maps.app.goo.gl/JJ5dKGY4NAHReFpj7",
+  "hasMap": AHS_MAPS_URL,
   "openingHoursSpecification": [
     {
       "@type": "OpeningHoursSpecification",
@@ -81,12 +82,7 @@ const contactSchema = {
       "availableLanguage": ["English", "Tamil"]
     }
   ],
-  "sameAs": [
-    "https://www.facebook.com/jkknallied",
-    "https://www.instagram.com/jkknallied/",
-    "https://www.linkedin.com/company/jkknallied/",
-    "https://maps.app.goo.gl/JJ5dKGY4NAHReFpj7"
-  ],
+  "sameAs": [...AHS_SAME_AS],
   "potentialAction": [
     {
       "@type": "CommunicateAction",

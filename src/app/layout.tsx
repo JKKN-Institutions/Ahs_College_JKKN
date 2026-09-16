@@ -12,6 +12,7 @@ import {
   GARouteTracker,
 } from "@/components/analytics/GoogleAnalytics";
 import { ConversionTracking } from "@/components/analytics/ConversionTracking";
+import { AHS_MAPS_URL, AHS_SAME_AS } from "@/lib/entity-profiles";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -85,15 +86,13 @@ const collegeSchema = {
     "longitude": "77.726549"
   },
   "sameAs": [
-    "https://www.facebook.com/jkknallied",
-    "https://www.instagram.com/jkknallied/",
-    "https://www.linkedin.com/company/jkknallied/",
-    "https://www.youtube.com/playlist?list=PL6QsTq-__HhsWGzdJbTOuadFqdXlcawUE",
-    "https://maps.app.goo.gl/JJ5dKGY4NAHReFpj7",
+    ...AHS_SAME_AS,
+    // KEPT BY USER DECISION 2026-09-16, still flagged. These three are NOT identity URLs for
+    // this college: tnmgrmu.ac.in is the affiliating university (belongs in `affiliation`),
+    // jkkn.ac.in is the parent trust (belongs in `parentOrganization`), and wa.me is an action
+    // endpoint, already expressed as a CommunicateAction on /contact.
     "https://www.tnmgrmu.ac.in/",
     "https://jkkn.ac.in/",
-    "https://www.wikidata.org/wiki/Q55090877",
-    "https://x.com/jkkninstitution",
     "https://wa.me/919345855001"
   ],
   "logo": {
@@ -171,7 +170,7 @@ const collegeSchema = {
     "bestRating": "5",
     "worstRating": "1",
     "ratingCount": "127", // read live from the Maps place below on 2026-09-12 (was 4.5 / 150, unverified)
-    "url": "https://maps.app.goo.gl/JJ5dKGY4NAHReFpj7"
+    "url": AHS_MAPS_URL
   },
   "dateModified": LAST_UPDATED
 };

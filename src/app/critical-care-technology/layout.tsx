@@ -1,4 +1,5 @@
 import { createPageMetadata } from "@/lib/metadata";
+import { AHS_MAPS_URL } from "@/lib/entity-profiles";
 
 export const metadata = createPageMetadata({
   title: "BSc Critical Care Technology Course Details | JKKN",
@@ -26,7 +27,7 @@ const courseSchema = {
     "@type": "CollegeOrUniversity",
     "name": "JKKN College of Allied Health Sciences",
     "url": "https://ahs.jkkn.ac.in/",
-    "sameAs": "https://maps.app.goo.gl/JJ5dKGY4NAHReFpj7"
+    "sameAs": AHS_MAPS_URL
   },
   "educationalLevel": "Undergraduate",
   "educationalCredentialAwarded": "Bachelor of Science (B.Sc)",
