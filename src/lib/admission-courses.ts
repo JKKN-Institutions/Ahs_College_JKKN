@@ -71,7 +71,7 @@ export const admissionCourses: AdmissionCourse[] = [
         mqFee: "₹1,70,000 / year",
         mqFeeNumeric: 170000,
         totalFeeMQ: "₹6,80,000",
-        seats: "7 (MQ)",
+        seats: "7 (sanctioned)",
         avgPackage: "₹4 – 6 LPA",
         salaryRange: "Entry: ₹2.5 – 4 LPA · Senior (5+ yrs): ₹6 – 12 LPA · International (Gulf/UK): ₹15 – 30 LPA",
         description: "Train as a Cardiac Care Technologist — operate ECG, Echo, TMT, Cath Lab equipment and assist cardiologists in diagnostics and interventional procedures.",
@@ -95,7 +95,7 @@ export const admissionCourses: AdmissionCourse[] = [
         internship: "1 year paid internship at JKKN's 500+ bed multi-speciality hospital — rotations across Cardiology OPD, CTVS, ICCU, Cath Lab, and Echo Lab.",
         iconKey: "heart-pulse",
         seoTitle: "BSc Cardiac Technology Admission 2026-27 in Tamil Nadu | JKKN College",
-        seoDescription: "Apply for BSc Cardiac Technology admission 2026-27 at JKKN College, Tamil Nadu. ₹1.7L/yr MQ, 7 seats, 4-yr course, 95% placement, ₹4-6 LPA avg package. No NEET required.",
+        seoDescription: "Apply for BSc Cardiac Technology admission 2026-27 at JKKN College, Tamil Nadu. ₹1.7L/yr MQ, 7 seats, 4-yr course, placement support, ₹4-6 LPA avg package. No NEET required.",
         seoKeywords: [
             "bsc cardiac technology admission tamilnadu",
             "bsc cardiac technology admission 2026",
@@ -164,7 +164,7 @@ export const admissionCourses: AdmissionCourse[] = [
             { q: "What does a BSc Cardiac Technologist do after graduation?", a: "A BSc Cardiac Technologist performs and assists in non-invasive and invasive cardiac diagnostic procedures including ECG, Echocardiography (TTE/TEE/Stress Echo), TMT, Holter monitoring, and Cath Lab procedures like angiograms, angioplasties, pacemaker implantation, and electrophysiology studies. They work directly with cardiologists in OPD, ICCU, CTVS, and Cath Labs." },
             { q: "Is BSc Cardiac Technology a good career in 2026?", a: "Yes — cardiac technology is one of the fastest-growing allied health careers globally. With cardiovascular disease being the leading cause of mortality worldwide, demand for cardiac technologists is growing 14–18% in India and 20–25% globally. Average packages range from ₹2.5–4 LPA at entry to ₹6–12 LPA after 5 years; international roles in UK/Gulf pay ₹15–30 LPA." },
             { q: "What is the fee for BSc Cardiac Technology at JKKN?", a: "Management Quota (MQ) fee is ₹1,70,000 per year. Total course fee (4 years, MQ) is ₹6,80,000. Government Quota (GQ) fee is as per Tamil Nadu Government norms. Installment payments, education loan assistance, and merit-based scholarships are available." },
-            { q: "How many seats are available for BSc Cardiac Technology at JKKN?", a: "JKKN College of Allied Health Sciences offers 7 seats under Management Quota (MQ) for BSc Cardiac Technology. Additional seats are filled under Government Quota (GQ) through Tamil Nadu Government counselling. Apply early as this is a high-demand course with limited seats." },
+            { q: "How many seats are available for BSc Cardiac Technology at JKKN?", a: "JKKN College of Allied Health Sciences offers 7 sanctioned seats for BSc Cardiac Technology. Government Quota candidates are allotted from this same sanctioned intake through Tamil Nadu Government counselling — they are not additional seats. Apply early as this is a high-demand course with limited seats." },
             { q: "Do I need to pass NEET for BSc Cardiac Technology admission?", a: "No — NEET is NOT required for BSc Cardiac Technology admission at JKKN College. Admission is purely merit-based using +2 marks. Eligibility: +2 with PCB (50% Gen / 45% OBC / 40% SC-ST), age 17+ as on 31 Dec 2026." },
             { q: "Can BSc Cardiac Technology graduates work abroad?", a: "Yes — BSc Cardiac Technology has excellent international scope. JKKN graduates have been placed in UK (NHS), UAE (Cleveland Clinic Abu Dhabi, NMC, Aster), Saudi Arabia (King Faisal Specialist Hospital), and Singapore. International salaries range from ₹15–30 LPA. Licensing (HAAD/DHA/MOH for Gulf, NHS registration for UK) may be required." }
         ]
@@ -179,7 +179,7 @@ export const admissionCourses: AdmissionCourse[] = [
         mqFee: "₹1,10,000 / year",
         mqFeeNumeric: 110000,
         totalFeeMQ: "₹4,40,000",
-        seats: "5 (MQ)",
+        seats: "5 (sanctioned)",
         avgPackage: "₹2.8 – 4.2 LPA",
         salaryRange: "Entry: ₹2 – 3 LPA · Senior (5+ yrs): ₹4.5 – 7 LPA · International: ₹12 – 25 LPA",
         description: "Become a Renal Dialysis Technologist — operate haemodialysis machines, perform CRRT/SLED procedures, and manage chronic kidney disease patients.",
@@ -203,7 +203,7 @@ export const admissionCourses: AdmissionCourse[] = [
         internship: "1 year clinical internship in Nephrology, Dialysis Units, ICU-CRRT, and partnered renal centres at JKKN hospital.",
         iconKey: "activity",
         seoTitle: "BSc Dialysis Technology Admission 2026-27 in Tamil Nadu | JKKN College",
-        seoDescription: "Apply for BSc Dialysis Technology admission at JKKN College, Tamil Nadu. ₹1.1L/yr MQ, 5 seats, 4-yr course, 95% placement, ₹2.8-4.2 LPA avg package. No NEET needed.",
+        seoDescription: "Apply for BSc Dialysis Technology admission at JKKN College, Tamil Nadu. ₹1.1L/yr MQ, 5 seats, 4-yr course, placement support, ₹2.8-4.2 LPA avg package. No NEET needed.",
         seoKeywords: [
             "bsc dialysis technology admission tamilnadu",
             "bsc dialysis admission 2026",
@@ -255,7 +255,7 @@ export const admissionCourses: AdmissionCourse[] = [
             { q: "What is the job role of a BSc Dialysis Technologist?", a: "A BSc Dialysis Technologist sets up and operates haemodialysis machines, monitors patients during 4-hour dialysis sessions, manages vascular access (AV fistulas, catheters), performs CRRT in ICU, handles peritoneal dialysis, manages water treatment systems, and assists nephrologists. They typically handle 2-3 patients per shift in a dialysis unit." },
             { q: "Is BSc Dialysis Technology in demand in 2026?", a: "Very high demand. India has 2.2 lakh+ new end-stage kidney disease patients yearly but only ~12,000 trained dialysis technicians — a severe shortage. Government's PMNDP scheme has opened dialysis centres in every district. Private chains like NephroPlus, DaVita, and Apollo Dialysis hire 500+ BSc Dialysis grads each year." },
             { q: "What is the fee for BSc Dialysis Technology at JKKN?", a: "Management Quota (MQ) fee is ₹1,10,000 per year — total ₹4,40,000 for 4 years. Government Quota (GQ) is as per TN Govt norms. Installment options, education loan support, and scholarships available." },
-            { q: "How many seats are there for BSc Dialysis Technology at JKKN?", a: "5 seats under Management Quota (MQ). Additional seats are filled via Government Quota (GQ) Tamil Nadu counselling. Limited intake — apply early." },
+            { q: "How many seats are there for BSc Dialysis Technology at JKKN?", a: "5 sanctioned seats. Government Quota candidates are allotted from this same sanctioned intake through Tamil Nadu Government counselling — they are not additional seats. Limited intake — apply early." },
             { q: "What salary can I earn as a Dialysis Technologist abroad?", a: "Dialysis technologists in UAE, Saudi Arabia, Kuwait, and Qatar earn ₹12-25 LPA depending on experience and certifications. UK NHS roles pay ₹15-22 LPA. Most Gulf employers require 2 years of Indian experience and DHA/HAAD/MOH licensing exam." },
             { q: "Can I do MSc or further study after BSc Dialysis Technology?", a: "Yes — after BSc Dialysis Technology, you can pursue MSc Renal Sciences, MSc Medical Lab Technology, MBA Hospital Administration, or specialised certifications like ASN Nephrology Technologist (US) and AVR (Australia). Many grads also become dialysis unit managers or trainers." }
         ]
@@ -270,7 +270,7 @@ export const admissionCourses: AdmissionCourse[] = [
         mqFee: "₹1,30,000 / year",
         mqFeeNumeric: 130000,
         totalFeeMQ: "₹5,20,000",
-        seats: "5 (MQ)",
+        seats: "5 (sanctioned)",
         avgPackage: "₹3.5 – 5 LPA",
         salaryRange: "Entry: ₹2.5 – 3.5 LPA · Senior (5+ yrs): ₹6 – 10 LPA · International: ₹18 – 35 LPA",
         description: "Operate X-ray, CT, MRI, USG, Mammography, and Interventional Radiology equipment. Excellent international placement scope.",
@@ -294,7 +294,7 @@ export const admissionCourses: AdmissionCourse[] = [
         internship: "1 year internship rotation across CT, MRI, Ultrasound, X-ray, Cath Lab, and Interventional Radiology at JKKN's 500+ bed hospital.",
         iconKey: "scan-line",
         seoTitle: "B.Sc Radiography Imaging Technology Admission | JKKN AHS",
-        seoDescription: "Four-year B.Sc Radiography Imaging Technology at JKKN AHS, NAAC A+ accredited. Five seats. Eligibility, fees and how to apply for 2026-27.",
+        seoDescription: "Four-year B.Sc Radiography Imaging Technology at JKKN AHS, NAAC A accredited. Five seats. Eligibility, fees and how to apply for 2026-27.",
         seoKeywords: [
             "bsc radiology imaging technology admission tamilnadu",
             "bsc radiology admission 2026 tamilnadu",
@@ -347,7 +347,7 @@ export const admissionCourses: AdmissionCourse[] = [
             { q: "What does a BSc Radiology & Imaging Technologist do?", a: "A Radiology & Imaging Technologist performs and operates X-ray, CT scans, MRI, Ultrasonography, Mammography, Fluoroscopy, and Bone Density scans. They position patients correctly, administer contrast agents, manage radiation safety, process images via PACS, and assist radiologists during interventional procedures." },
             { q: "Is BSc Radiology a good career for going abroad?", a: "Excellent — radiography has the strongest international scope of any AHS career. UK (NHS), Australia (AHPRA), Canada (CAMRT), and Gulf countries face chronic radiographer shortages. JKKN graduates earn ₹18-35 LPA abroad. UK NHS sponsors visas for qualified radiographers. Average time from BSc to overseas job is 2-3 years." },
             { q: "What is the fee for BSc Radiology at JKKN?", a: "Management Quota (MQ) annual fee is ₹1,30,000 — total ₹5,20,000 for the 4-year course. Government Quota (GQ) is as per Tamil Nadu Govt norms. Scholarships, installments, and education loan support available." },
-            { q: "How many seats are available for BSc Radiology at JKKN?", a: "5 Management Quota (MQ) seats + additional Government Quota (GQ) seats filled through Tamil Nadu Govt counselling. Among the most competitive AHS courses — apply early." },
+            { q: "How many seats are available for BSc Radiology at JKKN?", a: "5 sanctioned seats. Government Quota candidates are allotted from this same sanctioned intake through Tamil Nadu Government counselling — they are not additional seats. Among the most competitive AHS courses — apply early." },
             { q: "Is there exposure to MRI and CT during the course?", a: "Yes — JKKN's 500+ bed hospital has a fully-equipped Radiology Department with digital X-ray, CT scan, MRI, USG, Mammography, and Cath Lab. Learners rotate across all modalities during the 1-year internship and get hands-on patient positioning, scan protocols, and image processing experience." },
             { q: "Can I specialise in CT or MRI after BSc Radiology?", a: "Yes — after BSc you can pursue PG Diploma in CT/MRI, MSc Medical Imaging Technology, certifications like IAEA Radiation Safety, ARRT (US), or vendor-specific training (Siemens, GE, Philips). Many specialists earn 30-50% more than generalist radiographers." }
         ]
@@ -362,7 +362,7 @@ export const admissionCourses: AdmissionCourse[] = [
         mqFee: "₹1,70,000 / year",
         mqFeeNumeric: 170000,
         totalFeeMQ: "₹6,80,000",
-        seats: "10 (MQ)",
+        seats: "10 (sanctioned)",
         avgPackage: "₹3.5 – 5 LPA",
         salaryRange: "Entry: ₹2.5 – 4 LPA · Senior (5+ yrs): ₹5 – 9 LPA · International: ₹15 – 28 LPA",
         description: "Assist anaesthesiologists and surgeons, manage OT equipment, monitor vitals during surgery, handle peri-operative care across all specialities.",
@@ -386,7 +386,7 @@ export const admissionCourses: AdmissionCourse[] = [
         internship: "1 year rotation across General Surgery, Ortho, Neuro, Cardiac, OB-GYN, Paediatric, and Day-Care OTs at JKKN hospital.",
         iconKey: "scissors",
         seoTitle: "BSc Operation Theatre & Anaesthesia Admission 2026-27 Tamil Nadu | JKKN",
-        seoDescription: "Apply for BSc OT & Anaesthesia Technology admission at JKKN College. ₹1.7L/yr MQ, 10 seats, 4-yr course, 95% placement, ₹3.5-5 LPA avg package. No NEET.",
+        seoDescription: "Apply for BSc OT & Anaesthesia Technology admission at JKKN College. ₹1.7L/yr MQ, 10 seats, 4-yr course, placement support, ₹3.5-5 LPA avg package. No NEET.",
         seoKeywords: [
             "bsc operation theatre technology admission tamilnadu",
             "bsc anaesthesia technology admission",
@@ -439,7 +439,7 @@ export const admissionCourses: AdmissionCourse[] = [
             { q: "What is the role of an OT & Anaesthesia Technologist?", a: "OT & Anaesthesia Technologists set up the operation theatre, prepare instruments and equipment, assist the anaesthesiologist with airway management and drug administration, monitor patient vitals (ECG/BP/SpO2/EtCO2) during surgery, manage the CSSD, and ensure sterile field maintenance. They are critical members of every surgical team." },
             { q: "Is BSc OT & Anaesthesia a good career?", a: "Yes — universal employability since every hospital with surgical capability needs OT and anaesthesia techs. India has 50,000+ open positions. Career progression: ₹2.5-4 LPA at entry → ₹5-9 LPA in 5 years → OT In-charge / CSSD Manager in 8-10 years. Gulf packages range ₹15-28 LPA." },
             { q: "What is the fee for BSc OT & Anaesthesia at JKKN?", a: "Management Quota (MQ) annual fee is ₹1,70,000 — total ₹6,80,000 for 4 years. Government Quota (GQ) is as per Tamil Nadu Govt norms. Installments, scholarships, and education loan assistance are available." },
-            { q: "How many seats for BSc OT & Anaesthesia at JKKN?", a: "10 Management Quota (MQ) seats — among the larger intakes among AHS courses at JKKN. Additional Government Quota (GQ) seats are filled via Tamil Nadu Govt counselling." },
+            { q: "How many seats for BSc OT & Anaesthesia at JKKN?", a: "10 sanctioned seats — among the larger intakes among AHS courses at JKKN. Government Quota candidates are allotted from this same sanctioned intake through Tamil Nadu Government counselling — they are not additional seats." },
             { q: "Will I get hands-on training in OT during the course?", a: "Yes — extensive hands-on training. 1-year mandatory internship at JKKN's 500+ bed hospital includes rotations across General Surgery, Ortho, Neuro, Cardiac, OB-GYN, Paediatric, and Day-Care OTs. Learners assist with 200+ procedures during the internship." },
             { q: "Can OT & Anaesthesia graduates work in cardiac surgery?", a: "Yes — with 2-3 years of general OT experience, technologists can specialise in Cardiac Anaesthesia, CTVS OT, or Transplant OT. These specialist roles pay 30-50% more than general OT positions. Many JKKN alumni currently work in cardiac OTs at Apollo and Madras Medical Mission." }
         ]
@@ -454,7 +454,7 @@ export const admissionCourses: AdmissionCourse[] = [
         mqFee: "₹1,10,000 / year",
         mqFeeNumeric: 110000,
         totalFeeMQ: "₹4,40,000",
-        seats: "10 (MQ)",
+        seats: "10 (sanctioned)",
         avgPackage: "₹3 – 4.5 LPA",
         salaryRange: "Entry: ₹2.4 – 3.5 LPA · Senior (5+ yrs): ₹5 – 8 LPA · International: ₹14 – 26 LPA",
         description: "Manage ventilators, ABG analysis, pulmonary rehabilitation, oxygen therapy, and critical care of patients with respiratory failure.",
@@ -478,7 +478,7 @@ export const admissionCourses: AdmissionCourse[] = [
         internship: "1 year ICU + Pulmonology rotation at JKKN — adult MICU, SICU, neonatal NICU, paediatric PICU, and Sleep Lab postings.",
         iconKey: "wind",
         seoTitle: "BSc Respiratory Therapy Admission 2026-27 in Tamil Nadu | JKKN College",
-        seoDescription: "Apply for BSc Respiratory Therapy admission at JKKN College, Tamil Nadu. ₹1.1L/yr MQ, 10 seats, 4-yr course, 95% placement, ₹3-4.5 LPA. Strong abroad scope.",
+        seoDescription: "Apply for BSc Respiratory Therapy admission at JKKN College, Tamil Nadu. ₹1.1L/yr MQ, 10 seats, 4-yr course, placement support, ₹3-4.5 LPA. Strong abroad scope.",
         seoKeywords: [
             "bsc respiratory therapy admission tamilnadu",
             "bsc respiratory therapy admission 2026",
@@ -532,7 +532,7 @@ export const admissionCourses: AdmissionCourse[] = [
             { q: "What does a BSc Respiratory Therapist do?", a: "A Respiratory Therapist manages mechanical ventilators in ICU, performs ABG analysis, sets up non-invasive ventilation (BiPAP/CPAP/HFNC), conducts pulmonary function tests, manages airway and oxygen therapy, runs pulmonary rehab programs, and supports ECMO patients. Critical role in ICUs, ERs, NICUs, and Sleep Labs." },
             { q: "Is respiratory therapy a good career after COVID?", a: "Excellent — post-COVID, demand surged 18-22% globally. India has only ~5,000 qualified RTs for 1.4 billion people. US RTs earn USD 70-90k; Canada, UK, Australia have active visa pathways. India entry packages ₹2.4-3.5 LPA, senior roles ₹5-8 LPA, Gulf ₹14-26 LPA." },
             { q: "What is the fee for BSc Respiratory Therapy at JKKN?", a: "Management Quota (MQ) annual fee is ₹1,10,000 — total ₹4,40,000 for 4 years. Government Quota (GQ) is as per Tamil Nadu Govt norms. Installments and scholarships available." },
-            { q: "How many seats for BSc Respiratory Therapy at JKKN?", a: "10 Management Quota (MQ) seats + additional GQ seats via Tamil Nadu Govt counselling. Affordable fee + strong placement makes it one of the most popular AHS courses at JKKN." },
+            { q: "How many seats for BSc Respiratory Therapy at JKKN?", a: "10 sanctioned seats. Government Quota candidates are allotted from this same sanctioned intake through Tamil Nadu Government counselling — they are not additional seats. Affordable fee + strong placement makes it one of the most popular AHS courses at JKKN." },
             { q: "Can BSc Respiratory Therapy graduates migrate to the USA?", a: "Yes — but the US requires the NBRC CRT/RRT certification and additional bridge education (typically a 1-year US AS-RT program). JKKN BSc RT is a strong foundation. Many alumni follow this pathway and earn USD 70-90k as RRTs. Canada and Australia have simpler bridging programs." },
             { q: "Will I learn ECMO and advanced ventilation?", a: "Yes — JKKN's MICU/SICU has advanced ventilators, BiPAP/CPAP/HFNC machines, and ECMO capability. The 1-year internship includes hands-on exposure to ARDS management, prone ventilation, weaning protocols, and basic ECMO support." }
         ]
@@ -547,7 +547,7 @@ export const admissionCourses: AdmissionCourse[] = [
         mqFee: "₹1,30,000 / year",
         mqFeeNumeric: 130000,
         totalFeeMQ: "₹5,20,000",
-        seats: "10 (MQ)",
+        seats: "10 (sanctioned)",
         avgPackage: "₹3 – 4.5 LPA",
         salaryRange: "Entry: ₹2.4 – 3.5 LPA · Senior (5+ yrs): ₹5 – 9 LPA · International (US/UK): ₹40 – 80 LPA (post bridge)",
         description: "Work alongside doctors in OPD/IPD/Emergency — perform history taking, basic procedures, patient counselling, and clinical documentation.",
@@ -623,7 +623,7 @@ export const admissionCourses: AdmissionCourse[] = [
             { q: "What does a BSc Physician Assistant do?", a: "A Physician Assistant works under a physician's supervision — takes patient history, performs physical examinations, orders and interprets basic tests, performs procedures (suturing, IV access, ABG, dressings), counsels patients, manages EMR documentation, and runs OPD/IPD workflows. PAs are doctor-extenders in busy hospitals." },
             { q: "How is BSc Physician Assistant different from BSc Nursing?", a: "BSc Nursing focuses on bedside nursing care, medication administration, and patient monitoring. BSc PA focuses on doctor-side clinical work — history taking, examination, basic procedures, and clinical decision support. PAs work in OPDs/clinics under doctors; nurses primarily work in wards/ICUs. PAs have stronger international migration pathways (US/UK PA programs)." },
             { q: "What is the fee for BSc Physician Assistant at JKKN?", a: "Management Quota (MQ) annual fee is ₹1,30,000 — total ₹5,20,000 for 4 years. Government Quota (GQ) as per TN Govt norms. Installments and scholarships available." },
-            { q: "How many seats for BSc Physician Assistant at JKKN?", a: "10 Management Quota (MQ) seats + GQ seats via Tamil Nadu counselling. One of the more competitive intakes due to international PA pathway appeal." },
+            { q: "How many seats for BSc Physician Assistant at JKKN?", a: "10 sanctioned seats + GQ seats via Tamil Nadu counselling. One of the more competitive intakes due to international PA pathway appeal." },
             { q: "Can I become a US Physician Assistant after BSc PA from India?", a: "Yes, with additional steps. The US requires a Master's-level accredited PA program (typically 2-3 years post-bachelor). Indian BSc PA is a strong foundation but you'll need to complete the US PA program + PANCE certification. US PAs earn USD 100-130k. Alternative: UK Physician Associate registration (1-year bridge)." },
             { q: "Will I get hands-on patient interaction during the course?", a: "Yes — extensive patient interaction from Year 2. 1-year mandatory clinical internship at JKKN's 500+ bed hospital covers Medicine, Cardiology, Neurology, Oncology, OB-GYN, Paediatrics, and Emergency. Learners complete 2,000+ patient encounters during the program." }
         ]
@@ -638,7 +638,7 @@ export const admissionCourses: AdmissionCourse[] = [
         mqFee: "₹1,10,000 / year",
         mqFeeNumeric: 110000,
         totalFeeMQ: "₹4,40,000",
-        seats: "10 (MQ)",
+        seats: "10 (sanctioned)",
         avgPackage: "₹3 – 4.5 LPA",
         salaryRange: "Entry: ₹2.4 – 3.5 LPA · Senior (5+ yrs): ₹5 – 8 LPA · International: ₹14 – 26 LPA",
         description: "Manage MICU/SICU/CCU/NICU equipment, ventilators, monitors, and assist intensivists in life-saving interventions.",
@@ -662,7 +662,7 @@ export const admissionCourses: AdmissionCourse[] = [
         internship: "1 year rotation across MICU, SICU, CCU, NICU, PICU, and ECMO unit at JKKN's 500+ bed multi-speciality hospital.",
         iconKey: "siren",
         seoTitle: "BSc Critical Care Technology Admission 2026-27 Tamil Nadu | JKKN",
-        seoDescription: "Apply for BSc Critical Care Technology admission at JKKN College. ₹1.1L/yr MQ, 10 seats, 4-yr course, 95% placement, ₹3-4.5 LPA. Strong ICU career scope.",
+        seoDescription: "Apply for BSc Critical Care Technology admission at JKKN College. ₹1.1L/yr MQ, 10 seats, 4-yr course, placement support, ₹3-4.5 LPA. Strong ICU career scope.",
         seoKeywords: [
             "bsc critical care technology admission tamilnadu",
             "bsc critical care admission 2026",
@@ -715,7 +715,7 @@ export const admissionCourses: AdmissionCourse[] = [
             { q: "What does a BSc Critical Care Technologist do?", a: "A Critical Care Technologist operates ICU equipment (ventilators, monitors, infusion pumps, ECMO machines), performs ABG analysis, assists intensivists with intubation/central lines, manages haemodynamic monitoring, runs CRRT, participates in Code Blue responses, and provides 24/7 critical patient care in MICU/SICU/CCU/NICU." },
             { q: "Is BSc Critical Care a good career in 2026?", a: "Excellent — post-COVID India added 2 lakh+ ICU beds with massive ongoing shortage of trained critical care professionals. ICUs operate 24/7 with high staffing ratios. Top recruiters pay ₹2.4-3.5 LPA entry, ₹5-8 LPA in 5 years, ICU In-charges ₹8-12 LPA, Gulf packages ₹14-26 LPA." },
             { q: "What is the fee for BSc Critical Care Technology at JKKN?", a: "Management Quota (MQ) annual fee is ₹1,10,000 — total ₹4,40,000 for 4 years. Government Quota (GQ) as per Tamil Nadu Govt norms. Installments and scholarships available." },
-            { q: "How many seats for BSc Critical Care at JKKN?", a: "10 Management Quota (MQ) seats + additional Government Quota (GQ) seats via Tamil Nadu Govt counselling." },
+            { q: "How many seats for BSc Critical Care at JKKN?", a: "10 sanctioned seats. Government Quota candidates are allotted from this same sanctioned intake through Tamil Nadu Government counselling — they are not additional seats." },
             { q: "Will I learn ECMO during BSc Critical Care?", a: "Yes — JKKN's MICU/SICU includes ECMO capability. The internship covers basic ECMO setup, monitoring, and circuit management. After graduation, focused ECMO Specialist certification (ELSO) opens roles at ₹6-12 LPA in India and ₹20-30 LPA in Gulf." },
             { q: "Is the work in ICU stressful?", a: "Critical care is intense — long shifts, life-and-death decisions, emotional weight. But it's also one of the most rewarding healthcare careers because you directly save lives. JKKN's internship includes mentorship and gradual responsibility scaling to build resilience and clinical confidence." }
         ]
@@ -730,7 +730,7 @@ export const admissionCourses: AdmissionCourse[] = [
         mqFee: "₹60,000 / year",
         mqFeeNumeric: 60000,
         totalFeeMQ: "₹2,40,000",
-        seats: "15 (MQ)",
+        seats: "15 (sanctioned)",
         avgPackage: "₹2.5 – 4 LPA",
         salaryRange: "Entry: ₹2 – 3 LPA · Senior (5+ yrs): ₹4.5 – 8 LPA · International (US Medical Coding): ₹8 – 18 LPA",
         description: "Handle medical records, ICD-10 / CPT coding, hospital data analytics, HIM systems, and insurance/TPA processing.",
@@ -807,7 +807,7 @@ export const admissionCourses: AdmissionCourse[] = [
             { q: "What is BSc Medical Record Science about?", a: "BSc Medical Record Science covers Health Information Management (HIM), ICD-10/CPT medical coding, EMR/EHR systems, hospital data analytics, insurance and TPA processing, healthcare quality (NABH/JCI), and medical transcription. It's the gateway to office-based, work-from-home-friendly healthcare careers." },
             { q: "Why is BSc Medical Record Science fee so low at JKKN?", a: "₹60,000/year (₹2.4L total) is the lowest among AHS courses because the program doesn't require expensive clinical equipment (no ventilators, cath labs, dialysis machines). It's learning studio + digital learning lab focused — making it the most affordable AHS pathway with strong career outcomes." },
             { q: "Can I work from home after BSc Medical Record Science?", a: "Yes — medical coding (ICD-10/CPT) for US healthcare is the largest work-from-home healthcare job in India. Companies like Optum, Cognizant Healthcare, Omega Healthcare, and AGS Health hire BSc MRS grads for remote coding roles. Salaries: ₹2.5-4 LPA entry, ₹5-8 LPA after certifications (CPC/CCS)." },
-            { q: "How many seats for BSc Medical Record Science at JKKN?", a: "15 Management Quota (MQ) seats — the largest MQ intake among AHS courses at JKKN. Additional Government Quota (GQ) seats via Tamil Nadu counselling." },
+            { q: "How many seats for BSc Medical Record Science at JKKN?", a: "15 sanctioned seats — the largest MQ intake among AHS courses at JKKN. Government Quota candidates are allotted from this same sanctioned intake through Tamil Nadu Government counselling — they are not additional seats." },
             { q: "Is BSc Medical Record Science a good career?", a: "Yes — diverse pathways: US medical coding (₹2.5-18 LPA), hospital HIM (₹2-10 LPA), insurance/TPA (₹3-8 LPA), healthcare analytics (₹4-12 LPA). Lowest fee + highest seat count + recession-proof office work + work-from-home options = high ROI. India's medical coding industry employs 1.5 lakh+ professionals." },
             { q: "Do I need CPC or CCS certification after BSc?", a: "Highly recommended. CPC (Certified Professional Coder) and CCS (Certified Coding Specialist) certifications from AAPC/AHIMA boost salary 50-100%. Many JKKN MRS grads pursue these in Year 3-4 or right after graduation — typically a 4-6 month additional course." }
         ]
@@ -822,7 +822,7 @@ export const admissionCourses: AdmissionCourse[] = [
         mqFee: "₹1,10,000 / year",
         mqFeeNumeric: 110000,
         totalFeeMQ: "₹4,40,000",
-        seats: "10 (MQ)",
+        seats: "10 (sanctioned)",
         avgPackage: "₹3 – 4.5 LPA",
         salaryRange: "Entry: ₹2.4 – 3.5 LPA · Senior (5+ yrs): ₹5 – 8 LPA · International: ₹14 – 24 LPA",
         description: "Handle trauma resuscitation, ACLS/BLS, pre-hospital ambulance care, disaster response, and ER triage.",
@@ -846,7 +846,7 @@ export const admissionCourses: AdmissionCourse[] = [
         internship: "1 year rotation in ER, Trauma Bay, Ambulance Service, Disaster Management cell, and Toxicology unit at JKKN hospital.",
         iconKey: "siren",
         seoTitle: "BSc Accident & Emergency Care Admission 2026-27 Tamil Nadu | JKKN",
-        seoDescription: "Apply for BSc Accident & Emergency Care Technology admission at JKKN College. ₹1.1L/yr MQ, 10 seats, 4-yr course, 95% placement, ₹3-4.5 LPA. Trauma & ER focus.",
+        seoDescription: "Apply for BSc Accident & Emergency Care Technology admission at JKKN College. ₹1.1L/yr MQ, 10 seats, 4-yr course, placement support, ₹3-4.5 LPA. Trauma & ER focus.",
         seoKeywords: [
             "bsc accident emergency care admission tamilnadu",
             "bsc emergency care admission 2026",
@@ -899,7 +899,7 @@ export const admissionCourses: AdmissionCourse[] = [
             { q: "What does a BSc Accident & Emergency Care Technologist do?", a: "An Emergency Care Technologist works on the frontline of the Emergency Department — performs trauma resuscitation, ACLS/BLS, manages polytrauma cases, runs ER triage, handles pre-hospital ambulance care, responds to disasters and mass casualty incidents, assists ER physicians during emergency procedures, and operates 108 ambulance services." },
             { q: "Is BSc Emergency Care a good career?", a: "Yes — India's organised emergency medicine is growing 20% annually. Trauma centres, 108 EMRI ambulance services, corporate hospital ERs, and disaster response networks all need trained emergency techs. Entry ₹2.4-3.5 LPA, senior ER techs ₹5-8 LPA, Gulf packages ₹14-24 LPA. Recession-proof, 24/7 staffed." },
             { q: "What is the fee for BSc Accident & Emergency Care at JKKN?", a: "Management Quota (MQ) annual fee is ₹1,10,000 — total ₹4,40,000 for 4 years. Government Quota (GQ) as per Tamil Nadu Govt norms. Installments and scholarships available." },
-            { q: "How many seats for BSc Accident & Emergency Care at JKKN?", a: "10 Management Quota (MQ) seats + additional Government Quota (GQ) seats via Tamil Nadu Govt counselling." },
+            { q: "How many seats for BSc Accident & Emergency Care at JKKN?", a: "10 sanctioned seats. Government Quota candidates are allotted from this same sanctioned intake through Tamil Nadu Government counselling — they are not additional seats." },
             { q: "Will I learn to drive an ambulance during the course?", a: "Ambulance driving requires a separate commercial license, not part of BSc. However, you'll get extensive training on pre-hospital ambulance care, equipment operation (defibrillator, ventilator, suction), patient stabilisation in transit, and coordination with the receiving ER. JKKN partners with 108 EMRI for ambulance rotations." },
             { q: "Is BSc Emergency Care stressful?", a: "Yes — emergency medicine is one of the most stressful clinical environments (trauma, deaths, mass casualties, long shifts). It's also one of the most rewarding because you directly save lives in critical moments. JKKN's learning framework includes resilience training, peer support, and gradual exposure scaling during the internship." }
         ]

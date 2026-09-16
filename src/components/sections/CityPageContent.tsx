@@ -114,8 +114,6 @@ function HeroSection({ city }: { city: CityPage }) {
 
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-2xl mx-auto mb-10">
           {[
-            { value: "92%+", label: "PLACEMENTS" },
-            { value: "12", label: "LPA HIGHEST" },
             { value: `~${city.distanceKm}km`, label: `FROM ${city.cityName.toUpperCase()}` },
             { value: "9", label: "PROGRAMMES" },
           ].map((stat) => (
@@ -431,11 +429,7 @@ function ProgrammesSection() {
    PLACEMENT HIGHLIGHTS
 ────────────────────────────────────────── */
 function PlacementHighlights() {
-  const stats = [
-    { value: "92%+", label: "PLACEMENT RATE" },
-    { value: "12", label: "LPA HIGHEST" },
-    { value: "3.2–4.5", label: "LPA AVERAGE" },
-    { value: "60+", label: "TOP RECRUITERS" },
+  const stats: { value: string; label: string }[] = [
   ];
 
   const companies = [
@@ -457,10 +451,11 @@ function PlacementHighlights() {
           Placement Highlights
         </h2>
         <p className="text-gray-500 text-sm mb-3">
-          92%+ placement rate — our students work at India&apos;s and the world&apos;s top hospitals
+          Our students work at India&apos;s and the world&apos;s top hospitals
         </p>
         <div className="w-12 h-1 bg-[#7cb983] rounded mx-auto mb-10"></div>
 
+        {stats.length > 0 && (
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
           {stats.map((s) => (
             <div
@@ -476,6 +471,7 @@ function PlacementHighlights() {
             </div>
           ))}
         </div>
+        )}
 
         <div className="text-xs text-gray-400 font-medium tracking-widest uppercase mb-4">
           Companies That Hire From Us
@@ -508,7 +504,7 @@ function CompetitiveAdvantageSection({ city }: { city: CityPage }) {
       desc: `Choose from Cardiac Technology, Dialysis, Radiology, OT & Anaesthesia, Respiratory Therapy, Physician Assistant, Critical Care, Medical Records, and Emergency Care — more options than most colleges near ${city.cityName}.`,
     },
     {
-      title: "85%+ Placement Rate with 60+ Recruiters",
+      title: "Placement Support with 60+ Recruiters",
       desc: "Our graduates work at Apollo Hospitals, Fortis Healthcare, Sun Pharma, NHS UK, and Cleveland Clinic Abu Dhabi. Both domestic and international career paths available.",
     },
     city.advantageDistance,
@@ -788,8 +784,8 @@ function SnippetBaitSection({ city }: { city: CityPage }) {
           <div className="bg-white rounded-2xl p-6 shadow-sm">
             <h3 className="font-bold text-gray-900 mb-3">How to Choose the Best AHS College Near {city.cityName}</h3>
             <div className="snippet-answer voice-answer text-sm text-gray-600 leading-relaxed space-y-2">
-              <p>When choosing an allied health science college near {city.cityName}, consider these factors: university affiliation (The Tamil Nadu Dr. M.G.R. Medical University is the gold standard), NAAC accreditation status, clinical training infrastructure (look for attached teaching hospitals), placement track record (85%+ is excellent), faculty experience, and {city.tier === "commute" ? "proximity to your home for easy commuting" : "hostel quality for comfortable campus stay"}.</p>
-              <p>JKKN College of Allied Health Sciences checks all these boxes — NAAC accredited, university-affiliated, 500+ bed hospital for clinical training, 85%+ placement rate, and ~{city.distanceKm} km from {city.cityName} {city.routeVia}.</p>
+              <p>When choosing an allied health science college near {city.cityName}, consider these factors: university affiliation (The Tamil Nadu Dr. M.G.R. Medical University is the gold standard), NAAC accreditation status, clinical training infrastructure (look for attached teaching hospitals), placement track record, faculty experience, and {city.tier === "commute" ? "proximity to your home for easy commuting" : "hostel quality for comfortable campus stay"}.</p>
+              <p>JKKN College of Allied Health Sciences checks all these boxes — NAAC accredited, university-affiliated, 500+ bed hospital for clinical training, placement support, and ~{city.distanceKm} km from {city.cityName} {city.routeVia}.</p>
             </div>
           </div>
         </div>

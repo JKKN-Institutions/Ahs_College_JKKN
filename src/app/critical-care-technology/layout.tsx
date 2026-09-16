@@ -2,7 +2,7 @@ import { createPageMetadata } from "@/lib/metadata";
 
 export const metadata = createPageMetadata({
   title: "BSc Critical Care Technology Course Details | JKKN",
-  description: "BSc Critical Care Technology course details at JKKN, Tamil Nadu — eligibility, duration, syllabus, fees and ICU training. NAAC A+. Apply 2026-27.",
+  description: "BSc Critical Care Technology course details at JKKN, Tamil Nadu — eligibility, duration, syllabus, fees and ICU training. NAAC A. Apply 2026-27.",
   path: "/critical-care-technology",
   keywords: [
     "bsc critical care technology college in tamilnadu",
@@ -32,7 +32,7 @@ const courseSchema = {
   "educationalCredentialAwarded": "Bachelor of Science (B.Sc)",
   "timeRequired": "P4Y",
   "inLanguage": "en",
-  "coursePrerequisites": "10+2 or equivalent with Physics, Chemistry, and Biology/Mathematics. Minimum 50% aggregate (40% for SC/ST, 45% for OBC). Age 17+ years.",
+  "coursePrerequisites": "10+2 or equivalent with Physics, Chemistry, and Biology. Minimum 50% aggregate (40% for SC/ST, 45% for OBC). Age 17+ years.",
   "hasCourseInstance": {
     "@type": "CourseInstance",
     "courseMode": "full-time",

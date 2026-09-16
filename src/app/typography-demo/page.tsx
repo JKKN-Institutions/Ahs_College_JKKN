@@ -292,7 +292,7 @@ export default function TypographyDemo() {
               },
               {
                 icon: "💼",
-                title: "100% Placement",
+                title: "Placement Support",
                 description: "Dedicated placement cell ensuring successful career launch for all graduates",
               },
             ].map((feature, index) => (

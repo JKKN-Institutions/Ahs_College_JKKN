@@ -3,7 +3,7 @@ import { createPageMetadata } from "@/lib/metadata";
 export const metadata = createPageMetadata({
   title: "Allied Health Sciences Colleges in Tiruppur | JKKN AHS",
   description:
-    "JKKN AHS — ~67 km from Tiruppur via NH-544. 9 BSc allied health programmes, NAAC accredited, 85%+ placements, 500+ bed hospital. Admissions open 2026-27.",
+    "JKKN AHS — ~67 km from Tiruppur via NH-544. 9 BSc allied health programmes, NAAC accredited, placement support, 500+ bed hospital. Admissions open 2026-27.",
   path: "/tiruppur",
   keywords: [
     "allied health science courses in tiruppur",
@@ -124,7 +124,7 @@ const faqSchema = {
       name: "What is the salary after BSc allied health science?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "BSc Allied Health Science graduates can expect starting salaries of ₹2.5–4.5 LPA in India, with experienced professionals earning ₹6–12 LPA. International opportunities in Gulf countries, UK, and Australia offer ₹8–25 LPA. JKKN AHS graduates benefit from an 85%+ placement rate with 60+ recruiting partners.",
+        text: "BSc Allied Health Science graduates can expect starting salaries of ₹2.5–4.5 LPA in India, with experienced professionals earning ₹6–12 LPA. International opportunities in Gulf countries, UK, and Australia offer ₹8–25 LPA. JKKN AHS graduates benefit from placement support with 60+ recruiting partners.",
       },
     },
     {
@@ -132,7 +132,7 @@ const faqSchema = {
       name: "How many allied health science colleges are there near Tiruppur?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Tiruppur has limited allied health science colleges within the city. JKKN College of Allied Health Sciences, located ~67 km from Tiruppur via NH-544, offers a wider selection of 9 BSc programmes with NAAC approval and an 85%+ placement rate.",
+        text: "Tiruppur has limited allied health science colleges within the city. JKKN College of Allied Health Sciences, located ~67 km from Tiruppur via NH-544, offers a wider selection of 9 BSc programmes with NAAC approval and placement support.",
       },
     },
     {

@@ -254,7 +254,6 @@ function HeroSection() {
 function StatsSection() {
     const stats = [
         { label: "Years Duration", value: "3+1", icon: <Clock className="w-5 h-5" /> },
-        { label: "Placement Rate", value: "95%", icon: <Users className="w-5 h-5" /> },
         { label: "Hospital Partners", value: "25+", icon: <Building2 className="w-5 h-5" /> },
         { label: "Clinical Hours", value: "2000+", icon: <Activity className="w-5 h-5" /> },
     ];
@@ -329,9 +328,9 @@ function AboutSection() {
                             {[
                                 { label: "Duration", value: "3 + 1" },
                                 { label: "Degree", value: "B.Sc" },
-                                { label: "Intake", value: "10 Seats" },
+                                { label: "Sanctioned Intake", value: "10 Seats" },
                                 { label: "Session", value: "2026-2027" },
-                                { label: "Approval", value: "UGC Approved" },
+                                { label: "Affiliation", value: "TN Dr. M.G.R. Medical University" },
                                 { label: "Fee", value: "Contact Us" },
                             ].map((item, i) => (
                                 <li key={i} className="flex justify-between items-center py-2 border-b border-gray-100 last:border-0">
@@ -369,7 +368,7 @@ function EligibilitySection() {
                         <ul className="space-y-4">
                             {[
                                 "Passed +2 or equivalent examination from a recognized board",
-                                "Physics, Chemistry, and Biology/Mathematics as core subjects",
+                                "Physics, Chemistry, and Biology as core subjects",
                                 "Minimum 50% aggregate marks (40% for SC/ST, 45% for OBC)",
                                 "English as a compulsory subject in +2"
                             ].map((item, i) => (
@@ -386,7 +385,7 @@ function EligibilitySection() {
                         </h3>
                         <ul className="space-y-4">
                             {[
-                                "Age: Candidates should have completed 17 years of age as on 31st December 2025.",
+                                "Age: Candidates must have completed 17 years of age on or before 31st December 2026.",
                                 "Valid entrance exam score (if applicable to state regulations)",
                                 "Medical fitness certificate from registered medical practitioner",
                                 "Conduct certificate from last attended institution"
@@ -620,7 +619,7 @@ function FAQSection() {
     const [openIndex, setOpenIndex] = useState<number | null>(0);
     const faqs = [
         { q: "What is B.Sc Respiratory Therapy and what does it involve?", a: "B.Sc Respiratory Therapy is a 4-year undergraduate degree program that trains healthcare professionals in respiratory care, pulmonary diagnostics, and cardiopulmonary management. The program covers pulmonary function testing, mechanical ventilation, oxygen therapy, arterial blood gas analysis, airway management, critical care respiratory therapy, and cardiopulmonary rehabilitation. Graduates work as respiratory therapists in hospitals, ICUs, diagnostic centers, and rehabilitation facilities, assisting pulmonologists and critical care physicians in managing patients with breathing disorders." },
-        { q: "What is the eligibility criteria for B.Sc Respiratory Therapy?", a: "To be eligible for B.Sc Respiratory Therapy, candidates must have passed 10+2 or equivalent examination with Physics, Chemistry, and Biology/Mathematics as core subjects from a recognized board. A minimum of 50% aggregate marks is required (40% for SC/ST, 45% for OBC candidates). Applicants must be at least 17 years of age as on December 31st of the admission year and possess a medical fitness certificate." },
+        { q: "What is the eligibility criteria for B.Sc Respiratory Therapy?", a: "To be eligible for B.Sc Respiratory Therapy, candidates must have passed 10+2 or equivalent examination with Physics, Chemistry, and Biology as core subjects from a recognized board. A minimum of 50% aggregate marks is required (40% for SC/ST, 45% for OBC candidates). Applicants must be at least 17 years of age as on December 31st of the admission year and possess a medical fitness certificate." },
         { q: "What is the salary of a Respiratory Therapist in India?", a: "Entry-level respiratory therapists in India typically earn between ₹3-5 lakhs per annum. With 3-5 years of experience and specialization in areas like critical care or neonatal respiratory care, salaries can range from ₹6-12 lakhs per annum. Senior respiratory therapists in corporate hospitals and those working abroad can earn ₹15-25 lakhs or more per annum. Salaries vary based on location, hospital type, and specialized skills in mechanical ventilation and critical care." },
         { q: "What are the career opportunities after B.Sc Respiratory Therapy?", a: "Graduates can pursue diverse career paths including Respiratory Therapist, ICU Ventilator Specialist, Pulmonary Function Technologist, Sleep Lab Technician, Neonatal Respiratory Care Specialist, Cardiopulmonary Rehabilitation Specialist, Home Care Respiratory Therapist, and Medical Equipment Sales Representative. Employment opportunities exist in multi-specialty hospitals, ICUs, pulmonary function laboratories, sleep centers, neonatal units, rehabilitation centers, home healthcare companies, and medical device organizations." },
         { q: "Can I pursue higher education after B.Sc Respiratory Therapy?", a: "Yes, graduates can pursue M.Sc in Respiratory Therapy, M.Sc in Critical Care Technology, MBA in Healthcare Management, or MPH (Master of Public Health). Research-oriented individuals can pursue Ph.D. in Respiratory Sciences. International certifications such as Registered Respiratory Therapist (RRT) from the National Board for Respiratory Care (USA) can significantly enhance career prospects globally. Many graduates also pursue specialized certifications in mechanical ventilation, sleep medicine, and neonatal respiratory care." },

@@ -124,7 +124,7 @@ const faqSchema = {
       "name": "What is the placement record and average salary after B.Sc. AHS?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "JKKN Allied Health Sciences College has 95%+ placement rate with 100+ recruiting partners including Apollo, MIOT, Fortis, Manipal, SRL, Thyrocare, and Dr. Lal PathLabs. The average package is ₹3.2 LPA with highest packages reaching ₹7.5 LPA. International placement opportunities are also available in UAE, Saudi Arabia, UK, and Australia."
+        "text": "JKKN Allied Health Sciences College has placement support with 100+ recruiting partners including Apollo, MIOT, Fortis, Manipal, SRL, Thyrocare, and Dr. Lal PathLabs. The average package is ₹3.2 LPA with highest packages reaching ₹7.5 LPA. International placement opportunities are also available in UAE, Saudi Arabia, UK, and Australia."
       }
     },
     {
@@ -164,7 +164,7 @@ const faqSchema = {
       "name": "What makes JKKN different from other Allied Health Sciences colleges?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "JKKN stands apart with its 70+ Year Legacy of educational excellence, state-of-the-art learning labs matching hospital standards, partnerships with 50+ leading hospitals for clinical training, experienced Learning Facilitators with industry expertise, 95%+ placement rate with top healthcare organizations, scholarship programs for deserving Learners, and comprehensive support from admissions through career placement."
+        "text": "JKKN stands apart with its 70+ Year Legacy of educational excellence, state-of-the-art learning labs matching hospital standards, partnerships with 50+ leading hospitals for clinical training, experienced Learning Facilitators with industry expertise, placement support with top healthcare organizations, scholarship programs for deserving Learners, and comprehensive support from admissions through career placement."
       }
     },
     {
@@ -251,7 +251,7 @@ const reviewSchema = {
     {
       "@type": "Review",
       "author": { "@type": "Person", "name": "Senthil Kumar" },
-      "reviewBody": "As a parent, choosing the right college was crucial. JKKN's campus safety, hostel facilities, and 95% placement record convinced us. My daughter is now in her final year of Dialysis Technology and already has an internship offer from Kauvery Hospital.",
+      "reviewBody": "As a parent, choosing the right college was crucial. JKKN's campus safety, hostel facilities, and the placement record convinced us. My daughter is now in her final year of Dialysis Technology and already has an internship offer from Kauvery Hospital.",
       "reviewRating": { "@type": "Rating", "ratingValue": "4", "bestRating": "5" },
       "datePublished": "2024-02-20",
       "itemReviewed": { "@id": "https://ahs.jkkn.ac.in/#organization" }

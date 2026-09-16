@@ -25,7 +25,7 @@ const faqs: { question: string; answer: ReactNode }[] = [
     },
     {
         question: "What is the placement record and average salary after B.Sc. AHS?",
-        answer: <>JKKN Allied Health Sciences College has 95%+ placement rate with 100+ recruiting partners including Apollo, MIOT, Fortis, Manipal, SRL, Thyrocare, and Dr. Lal PathLabs. The average package is ₹3.2 LPA with highest packages reaching ₹7.5 LPA. International placement opportunities are also available in UAE, Saudi Arabia, UK, and Australia. <Link href="/placements" className="text-[#0b6d41] font-semibold hover:underline">See placement details</Link>.</>
+        answer: <>JKKN Allied Health Sciences College has placement support with 100+ recruiting partners including Apollo, MIOT, Fortis, Manipal, SRL, Thyrocare, and Dr. Lal PathLabs. The average package is ₹3.2 LPA with highest packages reaching ₹7.5 LPA. International placement opportunities are also available in UAE, Saudi Arabia, UK, and Australia. <Link href="/placements" className="text-[#0b6d41] font-semibold hover:underline">See placement details</Link>.</>
     },
     {
         question: "Does JKKN provide hospital training and internship?",
@@ -45,11 +45,11 @@ const faqs: { question: string; answer: ReactNode }[] = [
     },
     {
         question: "What makes JKKN different from other Allied Health Sciences colleges?",
-        answer: <>JKKN stands apart with its {BRAND_LEGACY.FULL_TEXT} of educational excellence, state-of-the-art <Link href="/lab" className="text-[#0b6d41] font-semibold hover:underline">learning labs</Link> matching hospital standards, partnerships with 50+ leading hospitals for clinical training, experienced Learning Facilitators with industry expertise, 95%+ <Link href="/placements" className="text-[#0b6d41] font-semibold hover:underline">placement rate</Link> with top healthcare organizations, scholarship programs for deserving Learners, and comprehensive support from <Link href="/admissions" className="text-[#0b6d41] font-semibold hover:underline">admissions</Link> through career placement.</>
+        answer: <>JKKN stands apart with its {BRAND_LEGACY.FULL_TEXT} of educational excellence, state-of-the-art <Link href="/lab" className="text-[#0b6d41] font-semibold hover:underline">learning labs</Link> matching hospital standards, partnerships with 50+ leading hospitals for clinical training, experienced Learning Facilitators with industry expertise, <Link href="/placements" className="text-[#0b6d41] font-semibold hover:underline">placement support</Link> with top healthcare organizations, scholarship programs for deserving Learners, and comprehensive support from <Link href="/admissions" className="text-[#0b6d41] font-semibold hover:underline">admissions</Link> through career placement.</>
     },
     {
         question: "How much does B.Sc Allied Health Sciences cost in Tamil Nadu?",
-        answer: <>B.Sc Allied Health Sciences fees in Tamil Nadu typically range from ₹50,000 to ₹2,00,000 per year depending on the college and program. At JKKN, Government Quota (GQ) fees are as per Govt norms. Management Quota (MQ) annual fees range from ₹60,000 to ₹1,70,000 covering tuition, <Link href="/lab" className="text-[#0b6d41] font-semibold hover:underline">learning lab access</Link>, and hospital training. Merit-based scholarships cover up to 50% of fees. The 4-year program (3 years academics + 1 year internship) offers strong return on investment with a 95% placement rate and starting salaries of ₹3.2 LPA.</>
+        answer: <>B.Sc Allied Health Sciences fees in Tamil Nadu typically range from ₹50,000 to ₹2,00,000 per year depending on the college and program. At JKKN, Government Quota (GQ) fees are as per Govt norms. Management Quota (MQ) annual fees range from ₹60,000 to ₹1,70,000 covering tuition, <Link href="/lab" className="text-[#0b6d41] font-semibold hover:underline">learning lab access</Link>, and hospital training. Merit-based scholarships cover up to 50% of fees. The 4-year program (3 years academics + 1 year internship) offers strong return on investment with placement support and starting salaries of ₹3.2 LPA.</>
     },
     {
         question: "Is NEET required for B.Sc Allied Health Sciences admission?",

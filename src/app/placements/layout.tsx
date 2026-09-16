@@ -1,8 +1,8 @@
 import { createPageMetadata } from "@/lib/metadata";
 
 export const metadata = createPageMetadata({
-  title: "JKKN AHS Placements — 95% Rate, ₹7.5L Package | Tamil Nadu",
-  description: "JKKN AHS achieves 95% placement rate, 100+ recruiters. Highest ₹7.5L, average ₹3.2L. International placements in UK, UAE. Admissions open 2026.",
+  title: "JKKN AHS Placements — Hospital Recruiters & Career Support | Tamil Nadu",
+  description: "JKKN AHS achieves placement support, 100+ recruiters. Highest ₹7.5L, average ₹3.2L. International placements in UK, UAE. Admissions open 2026.",
   path: "/placements",
   keywords: [
     "allied health sciences placement tamil nadu",
@@ -193,7 +193,7 @@ const reviewSchema = {
     { name: "Rajesh Sundaram", body: "JKKN's CCT program and clinical exposure helped me start my own eye care practice within 2 years of graduation. The foundation was exceptional." },
     { name: "Anitha Mohan", body: "From state-of-the-art cardiac simulation labs to hospital internship at MIOT, JKKN gave me everything I needed to become a confident cardiac technologist." },
     { name: "Kavitha Rajan", body: "JKKN's radiology program gave me hands-on training with CT, MRI, and X-ray equipment from day one. Within months of graduating, I was placed at Fortis Healthcare, Chennai." },
-    { name: "Mr. Senthil Kumar", body: "As a parent, choosing the right college was crucial. JKKN's campus safety, hostel facilities, and 95% placement record convinced us. My daughter already has an internship offer from Kauvery Hospital." },
+    { name: "Mr. Senthil Kumar", body: "As a parent, choosing the right college was crucial. JKKN's campus safety, hostel facilities, and the placement record convinced us. My daughter already has an internship offer from Kauvery Hospital." },
     { name: "Mohammed Farhan", body: "JKKN prepared me for an international healthcare career. After completing my Respiratory Therapy degree, I secured a position with the NHS in the United Kingdom." }
   ].map(r => ({
     "@type": "Review",
@@ -206,7 +206,7 @@ const reviewSchema = {
 const speakableSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "name": "JKKN AHS Placements — 95% Rate, ₹7.5L Package | Tamil Nadu",
+  "name": "JKKN AHS Placements — Hospital Recruiters & Career Support | Tamil Nadu",
   "url": "https://ahs.jkkn.ac.in/placements",
   "speakable": {
     "@type": "SpeakableSpecification",

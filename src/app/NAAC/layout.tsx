@@ -11,7 +11,7 @@ export const metadata = createPageMetadata({
     "accredited allied health college Komarapalayam",
     "NAAC assessment JKKN Allied Health Sciences",
     "quality accreditation medical college Tamil Nadu",
-    "JKKN NAAC A+ accredited college",
+    "JKKN NAAC A accredited college",
   ],
 });
 

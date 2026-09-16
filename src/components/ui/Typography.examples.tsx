@@ -248,7 +248,7 @@ export function GridLayoutExample() {
       description: "State-of-the-art laboratories and equipment",
     },
     {
-      title: "100% Placement",
+      title: "Placement Support",
       description: "Dedicated placement cell ensuring career success",
     },
   ];

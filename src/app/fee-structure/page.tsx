@@ -9,68 +9,74 @@ import { motion } from "framer-motion";
 import { IndianRupee, Phone, Mail, ChevronDown, ChevronUp, Info } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
 
+// Seat counts are the intake SANCTIONED BY THE UNIVERSITY, read from the TNMGRMU allied-health
+// affiliation list `FINALAHSWEBSITEUPDATIONsep72026.pdf` (updated 7 Sep 2026), entry #146 / code 825,
+// and independently confirmed by this college's own NIRF submission (UG 4-year sanctioned intake 82).
+// An earlier `seats: {gq, mq}` split published a 121-seat total. The GQ figures had no basis in either
+// document and were removed 2026-09-12. Government-quota candidates are allotted FROM this sanctioned
+// intake through TN counselling — they are not additional seats.
 const programs = [
   {
     name: "B.Sc Cardiac Technology",
     href: "/cardiac-technology",
     duration: "3+1 Years",
-    seats: { gq: 3, mq: 7 },
+    sanctionedSeats: 7,
     annualFee: 170000,
   },
   {
     name: "B.Sc Dialysis Technology",
     href: "/dialysis-technology",
     duration: "3+1 Years",
-    seats: { gq: 2, mq: 5 },
+    sanctionedSeats: 5,
     annualFee: 110000,
   },
   {
     name: "B.Sc Radiology & Imaging Technology",
     href: "/radiology-imaging-technology",
     duration: "3+1 Years",
-    seats: { gq: 2, mq: 5 },
+    sanctionedSeats: 5,
     annualFee: 130000,
   },
   {
     name: "B.Sc Operation Theatre & Anaesthesia",
     href: "/operation-theatre-anaesthesia",
     duration: "3+1 Years",
-    seats: { gq: 5, mq: 10 },
+    sanctionedSeats: 10,
     annualFee: 170000,
   },
   {
     name: "B.Sc Respiratory Therapy",
     href: "/respiratory-therapy",
     duration: "3+1 Years",
-    seats: { gq: 5, mq: 10 },
+    sanctionedSeats: 10,
     annualFee: 110000,
   },
   {
     name: "B.Sc Physician Assistant",
     href: "/physician-assistant",
     duration: "3+1 Years",
-    seats: { gq: 5, mq: 10 },
+    sanctionedSeats: 10,
     annualFee: 130000,
   },
   {
     name: "B.Sc Critical Care Technology",
     href: "/critical-care-technology",
     duration: "3+1 Years",
-    seats: { gq: 5, mq: 10 },
+    sanctionedSeats: 10,
     annualFee: 110000,
   },
   {
     name: "B.Sc Medical Record Science",
     href: "/medical-record-science",
     duration: "3+1 Years",
-    seats: { gq: 7, mq: 15 },
+    sanctionedSeats: 15,
     annualFee: 60000,
   },
   {
     name: "B.Sc Accident & Emergency Care",
     href: "/accident-emergency-care",
     duration: "3+1 Years",
-    seats: { gq: 5, mq: 10 },
+    sanctionedSeats: 10,
     annualFee: 110000,
   },
 ];
@@ -155,11 +161,7 @@ export default function FeeStructurePage() {
                       <span className="ml-3 text-sm text-gray-500">Duration: {prog.duration}</span>
                     </div>
                     <div className="text-sm text-gray-500">
-                      Total Seats: <span className="font-semibold text-[#1a1a1a]">{prog.seats.gq + prog.seats.mq}</span>
-                      <span className="mx-1 text-gray-300">|</span>
-                      GQ: <span className="font-semibold text-[#1a1a1a]">{prog.seats.gq}</span>
-                      <span className="mx-1 text-gray-300">|</span>
-                      MQ: <span className="font-semibold text-[#1a1a1a]">{prog.seats.mq}</span>
+                      Sanctioned Seats: <span className="font-semibold text-[#1a1a1a]">{prog.sanctionedSeats}</span>
                     </div>
                   </div>
 
@@ -221,7 +223,7 @@ export default function FeeStructurePage() {
                     >
                       <div>
                         <p className="font-semibold text-[#0b6d41] text-sm leading-snug">{prog.name}</p>
-                        <p className="text-xs text-gray-500 mt-0.5">{prog.duration} · {prog.seats.gq + prog.seats.mq} Seats</p>
+                        <p className="text-xs text-gray-500 mt-0.5">{prog.duration} · {prog.sanctionedSeats} Seats</p>
                       </div>
                       {isOpen ? (
                         <ChevronUp className="w-5 h-5 text-gray-400 shrink-0" />
@@ -234,8 +236,7 @@ export default function FeeStructurePage() {
                       <div className="border-t border-gray-100 px-4 pb-4">
                         {/* Seats */}
                         <div className="flex gap-4 py-3 text-xs text-gray-500 border-b border-gray-100">
-                          <span>GQ Seats: <strong className="text-[#1a1a1a]">{prog.seats.gq}</strong></span>
-                          <span>MQ Seats: <strong className="text-[#1a1a1a]">{prog.seats.mq}</strong></span>
+                          <span>Sanctioned Seats: <strong className="text-[#1a1a1a]">{prog.sanctionedSeats}</strong></span>
                         </div>
 
                         {/* GQ row */}

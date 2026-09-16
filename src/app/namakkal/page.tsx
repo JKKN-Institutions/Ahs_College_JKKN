@@ -67,11 +67,11 @@ export default function NamakkalPage() {
           },
           {
             q: "What is the salary after BSc allied health science?",
-            a: "BSc Allied Health Science graduates can expect starting salaries of ₹2.5–4.5 LPA in India, with experienced professionals earning ₹6–12 LPA. International opportunities in Gulf countries, UK, and Australia offer ₹8–25 LPA. JKKN AHS graduates benefit from an 85%+ placement rate with 60+ recruiting partners.",
+            a: "BSc Allied Health Science graduates can expect starting salaries of ₹2.5–4.5 LPA in India, with experienced professionals earning ₹6–12 LPA. International opportunities in Gulf countries, UK, and Australia offer ₹8–25 LPA. JKKN AHS graduates benefit from placement support with 60+ recruiting partners.",
           },
           {
             q: "How many allied health science colleges are there in Namakkal?",
-            a: "Namakkal district has several allied health science colleges. JKKN College of Allied Health Sciences, located in Komarapalayam (Namakkal district), offers 9 BSc programmes with NAAC approval and an 85%+ placement rate — making it the preferred choice for Namakkal district learners.",
+            a: "Namakkal district has several allied health science colleges. JKKN College of Allied Health Sciences, located in Komarapalayam (Namakkal district), offers 9 BSc programmes with NAAC approval and placement support — making it the preferred choice for Namakkal district learners.",
           },
           {
             q: "What are the eligibility requirements for allied health science courses?",
@@ -159,14 +159,12 @@ function HeroSection() {
         <p className="text-white/85 text-base sm:text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
           Namakkal is home — and so are we. JKKN College of Allied Health
           Sciences offers top-tier allied health sciences programmes with
-          92%+ placement support — located right in your home district.
+          placement support — located right in your home district.
         </p>
 
         {/* Stats */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-2xl mx-auto mb-10">
           {[
-            { value: "92%+", label: "PLACEMENTS" },
-            { value: "12", label: "LPA HIGHEST" },
             { value: "~15km", label: "FROM TIRUCHENGODE" },
             { value: "9", label: "PROGRAMMES" },
           ].map((stat) => (
@@ -483,11 +481,7 @@ function ProgrammesSection() {
    PLACEMENT HIGHLIGHTS
 ────────────────────────────────────────── */
 function PlacementHighlights() {
-  const stats = [
-    { value: "92%+", label: "PLACEMENT RATE" },
-    { value: "12", label: "LPA HIGHEST" },
-    { value: "3.2–4.5", label: "LPA AVERAGE" },
-    { value: "60+", label: "TOP RECRUITERS" },
+  const stats: { value: string; label: string }[] = [
   ];
 
   const companies = [
@@ -509,10 +503,11 @@ function PlacementHighlights() {
           Placement Highlights
         </h2>
         <p className="text-gray-500 text-sm mb-3">
-          92%+ placement rate — our learners work at India&apos;s and the world&apos;s top hospitals
+          Our learners work at India&apos;s and the world&apos;s top hospitals
         </p>
         <div className="w-12 h-1 bg-[#7cb983] rounded mx-auto mb-10"></div>
 
+        {stats.length > 0 && (
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
           {stats.map((s) => (
             <div
@@ -528,6 +523,7 @@ function PlacementHighlights() {
             </div>
           ))}
         </div>
+        )}
 
         <div className="text-xs text-gray-400 font-medium tracking-widest uppercase mb-4">
           Companies That Hire From Us
@@ -753,7 +749,7 @@ function CompetitiveAdvantageSection() {
   const advantages = [
     { title: "In Namakkal District — Komarapalayam Campus", desc: "Located in Komarapalayam (Namakkal district), JKKN is the closest allied health sciences college for Namakkal district residents. Just 15 km from Tiruchengode. Daily commute or hostel accommodation — your choice." },
     { title: "9 BSc Programmes — Widest Selection in the District", desc: "From Cardiac Technology to Emergency Care, JKKN offers the most diverse range of allied health programmes in Namakkal district." },
-    { title: "85%+ Placement with International Opportunities", desc: "Our graduates secure positions in top hospitals across India, Gulf countries, UK (NHS), and Australia. 60+ recruiting partners ensure strong career outcomes." },
+    { title: "Placement Support with International Opportunities", desc: "Our graduates secure positions in top hospitals across India, Gulf countries, UK (NHS), and Australia. 60+ recruiting partners ensure strong career outcomes." },
     { title: "74+ Years of Institutional Legacy", desc: "Founded in 1952, JKKN Institutions brings over seven decades of educational excellence. A trusted name for Namakkal families." },
     { title: "Complete Campus Ecosystem", desc: "500+ bed teaching hospital, separate hostels for boys and girls, transport services, learning commons, learning labs, food court, and Wi-Fi — everything under one roof." },
   ];
@@ -827,7 +823,7 @@ function SnippetBaitSection() {
             <h3 className="font-bold text-gray-900 mb-3">How to Choose the Best AHS College in Namakkal District</h3>
             <div className="snippet-answer voice-answer text-sm text-gray-600 leading-relaxed space-y-2">
               <p>When choosing an allied health science college in Namakkal district, consider university affiliation (The Tamil Nadu Dr. M.G.R. Medical University is the gold standard), NAAC accreditation, clinical training infrastructure, placement track record, and campus accessibility from your hometown.</p>
-              <p>JKKN College of Allied Health Sciences in Komarapalayam (Namakkal district) is NAAC accredited, university-affiliated, has a 500+ bed hospital for clinical training, and maintains an 85%+ placement rate. Located on NH-544, it&apos;s just ~15 km from Tiruchengode.</p>
+              <p>JKKN College of Allied Health Sciences in Komarapalayam (Namakkal district) is NAAC accredited, university-affiliated, has a 500+ bed hospital for clinical training, and provides placement support. Located on NH-544, it&apos;s just ~15 km from Tiruchengode.</p>
             </div>
           </div>
         </div>

@@ -54,7 +54,7 @@ const testimonials = [
         role: "Parent of B.Sc. Dialysis Technology 2024 Learner",
         programLink: "/dialysis-technology",
         initials: "SK",
-        content: "As a parent, choosing the right college was crucial. JKKN's campus safety, hostel facilities, and 95% placement record convinced us. My daughter already has an internship offer from Kauvery Hospital.",
+        content: "As a parent, choosing the right college was crucial. JKKN's campus safety, hostel facilities, and the placement record convinced us. My daughter already has an internship offer from Kauvery Hospital.",
         rating: 5
     },
     {
@@ -70,7 +70,7 @@ const testimonials = [
 const placementFaqs = [
     {
         question: "What is the placement rate at JKKN AHS?",
-        answer: "The placement rate at JKKN College of Allied Health Sciences is 95%. This includes placements in leading hospitals like Apollo, MIOT, Fortis, Manipal, Kauvery, and Columbia Asia, as well as international placements in the UK, UAE, Saudi Arabia, and Singapore."
+        answer: "Batch-wise placement figures are maintained by the placement cell; contact the admissions office for the latest data. Graduates have been placed in leading hospitals like Apollo, MIOT, Fortis, Manipal, Kauvery, and Columbia Asia, as well as international placements in the UK, UAE, Saudi Arabia, and Singapore."
     },
     {
         question: "What is the average salary after B.Sc. Allied Health Sciences?",
@@ -102,7 +102,7 @@ const placementFaqs = [
     },
     {
         question: "Is placement guaranteed at JKKN AHS?",
-        answer: "While JKKN does not offer a formal placement guarantee, the college maintains a consistent 95% placement rate across all Allied Health Sciences programs. The dedicated placement cell works year-round to bring recruitment opportunities, conduct training programs, and ensure every eligible learner receives placement support. Learners who actively participate in the placement process have an excellent track record of securing positions."
+        answer: "While JKKN does not offer a formal placement guarantee, the college maintains a consistent placement support across all Allied Health Sciences programs. The dedicated placement cell works year-round to bring recruitment opportunities, conduct training programs, and ensure every eligible learner receives placement support. Learners who actively participate in the placement process have an excellent track record of securing positions."
     },
     {
         question: "What is the salary of a Cardiac Technologist in Tamil Nadu?",
@@ -114,7 +114,7 @@ const placementFaqs = [
     },
     {
         question: "How does JKKN placement compare to other AHS colleges?",
-        answer: "JKKN AHS placement performance ranks among the top in Tamil Nadu with a 95% placement rate compared to the state average of 60-70% for Allied Health Sciences colleges. Key differentiators include 100+ recruiting partners (vs. 20-30 at most colleges), international placement track record, dedicated placement cell with year-round operations, and hospital tie-ups with tier-1 institutions like Apollo, MIOT, and Fortis."
+        answer: "JKKN AHS placement performance ranks among the top in Tamil Nadu with strong placement support for Allied Health Sciences colleges. Key differentiators include 100+ recruiting partners (vs. 20-30 at most colleges), international placement track record, dedicated placement cell with year-round operations, and hospital tie-ups with tier-1 institutions like Apollo, MIOT, and Fortis."
     }
 ];
 
@@ -137,8 +137,7 @@ const internationalDestinations = [
     { country: "United Kingdom", flag: "🇬🇧", hospitals: "NHS Hospitals", salary: "₹25L+", highlight: "Largest international employer of JKKN graduates" },
     { country: "UAE", flag: "🇦🇪", hospitals: "Cleveland Clinic Abu Dhabi, NMC Healthcare", salary: "₹18 - 22L", highlight: "Tax-free salary, modern facilities" },
     { country: "Saudi Arabia", flag: "🇸🇦", hospitals: "King Fahad, Saudi German Hospital", salary: "₹15 - 20L", highlight: "High demand for Allied Health professionals" },
-    { country: "Singapore", flag: "🇸🇬", hospitals: "Tan Tock Seng, Raffles Medical", salary: "₹20L+", highlight: "World-class healthcare infrastructure" },
-    { country: "Australia & Canada", flag: "🇦🇺", hospitals: "[UPDATE — confirm partner hospitals]", salary: "₹22L+", highlight: "Growing demand for skilled health technologists" }
+    { country: "Singapore", flag: "🇸🇬", hospitals: "Tan Tock Seng, Raffles Medical", salary: "₹20L+", highlight: "World-class healthcare infrastructure" }
 ];
 
 const processSteps = [
@@ -185,7 +184,6 @@ export default function PlacementsPage() {
 
 function HeroSection() {
     const stats = [
-        { value: "95%", label: "Placement Rate" },
         { value: "₹7.5L", label: "Highest Package" },
         { value: "₹3.2L", label: "Average Package" },
         { value: "100+", label: "Recruiters" }
@@ -200,7 +198,7 @@ function HeroSection() {
                 </span>
                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-6 leading-tight">
                     Allied Health Sciences Placements at JKKN —{' '}
-                    <span className="text-[#ffde59]">95% Placement Rate</span>
+                    <span className="text-[#ffde59]">Placement Support</span>
                 </h1>
                 <p className="text-white/90 text-base sm:text-lg md:text-xl max-w-3xl mx-auto mb-8 leading-relaxed">
                     JKKN College of Allied Health Sciences, Tamil Nadu, connects healthcare graduates with 100+ leading hospitals across India and abroad. Your career in Allied Health starts here.
@@ -246,7 +244,6 @@ function HeroSection() {
 
 function StatsSection() {
     const stats = [
-        { value: "95%", label: "Placement Rate", icon: <TrendingUp className="w-6 h-6" /> },
         { value: "₹7.5L", label: "Highest Package", icon: <Award className="w-6 h-6" /> },
         { value: "₹3.2L", label: "Average Package", icon: <Briefcase className="w-6 h-6" /> },
         { value: "100+", label: "Recruiting Partners", icon: <Hospital className="w-6 h-6" /> },
@@ -327,7 +324,7 @@ function WhyStandOutSection() {
                         Why JKKN Placements Stand Out
                     </h2>
                     <p className="text-gray-600 max-w-3xl mx-auto text-sm sm:text-base">
-                        A combination of industry partnerships, rigorous training, and dedicated support drives our consistent 95% placement record.
+                        A combination of industry partnerships, rigorous training, and dedicated support drives our consistent placement support.
                     </p>
                 </div>
 
@@ -644,7 +641,7 @@ function SalaryTableSection() {
                     </table>
                 </div>
                 <p className="text-center text-gray-400 text-xs mt-4 italic">
-                    [UPDATE — Salary ranges are indicative. Verify with placement cell for latest figures.]
+                    Salary ranges are indicative sector figures, not JKKN placement records. Confirm current figures with the placement cell.
                 </p>
             </div>
         </section>
@@ -725,7 +722,7 @@ function CTASection() {
                             Ready to Start Your Healthcare Career?
                         </h2>
                         <p className="text-gray-600 text-sm sm:text-base mb-8 max-w-2xl mx-auto">
-                            Admissions for 2026-27 are now open. Join 95% of JKKN AHS graduates who start their careers within months of graduating.
+                            Admissions for 2026-27 are now open. Join JKKN AHS graduates who start their careers in leading hospitals.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">

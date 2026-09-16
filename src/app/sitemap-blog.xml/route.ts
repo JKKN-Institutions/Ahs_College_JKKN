@@ -13,8 +13,9 @@ const baseUrl = `https://${domain}`;
 // It replaces `top-10-career-options-after-bed-2026`, which was hardcoded here and is a phantom:
 // measured the same day, it returns 404 at /blog/<slug> AND at /blog/campus/<slug>. It is also
 // a B.Ed post, which is Education's subject, not Allied Health's.
-const staticPosts = [
-  { loc: `${baseUrl}/blog/allied-health-sciences-admission-2026`, changefreq: 'monthly', priority: '0.6' },
+const staticPosts: { loc: string; changefreq: string; priority: string }[] = [
+  // 2026-09-16: /blog/allied-health-sciences-admission-2026 removed - its body was a B.Ed article
+  // (Education's subject), now 301 -> /admissions in next.config.ts. Nothing lives at /blog/<slug>.
 ];
 
 export async function GET() {

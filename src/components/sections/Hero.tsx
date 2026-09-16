@@ -10,7 +10,6 @@ import { siteConfig } from '@/lib/site-config';
 export function Hero() {
     const stats = [
         { label: 'Specialized Programs', value: '9' },
-        { label: 'Placement Rate', value: '95%' },
         { label: 'Hospital Partners', value: '50+' },
         { label: 'Active Learners', value: '250+' },
     ];
@@ -44,7 +43,7 @@ export function Hero() {
                         </h1>
 
                         <p className="voice-answer text-sm sm:text-base text-white/90 mb-4 sm:mb-6 max-w-2xl leading-relaxed">
-                            Join JKKN College of Allied Health Sciences and become a vital part of modern healthcare. 9 specialized B.Sc. programs, hospital training partnerships, and 95% placement success.
+                            Join JKKN College of Allied Health Sciences and become a vital part of modern healthcare. 9 specialized B.Sc. programs, hospital training partnerships, and placement support.
                         </p>
 
                         <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
@@ -107,7 +106,7 @@ export function Hero() {
                             className="absolute -top-4 -right-4 md:-top-6 md:-right-6 glass-card p-3 sm:p-4 rounded-xl sm:rounded-2xl z-20 hidden sm:block"
                         >
                             <div className="flex items-center gap-2 sm:gap-3">
-                                <div className="w-8 h-8 sm:w-10 sm:h-10 bg-secondary rounded-lg sm:rounded-xl flex items-center justify-center font-black text-primary text-xs sm:text-sm">A+</div>
+                                <div className="w-8 h-8 sm:w-10 sm:h-10 bg-secondary rounded-lg sm:rounded-xl flex items-center justify-center font-black text-primary text-xs sm:text-sm">A</div>
                                 <div>
                                     <div className="text-[10px] sm:text-xs font-bold text-gray-800 leading-none">NAAC Accredited</div>
                                     <div className="text-[8px] sm:text-[9px] text-gray-500 font-medium">Top Rank Institution</div>
@@ -123,7 +122,7 @@ export function Hero() {
                             <div className="flex items-center gap-2 sm:gap-3">
                                 <div className="w-8 h-8 sm:w-10 sm:h-10 bg-primary rounded-lg sm:rounded-xl flex items-center justify-center text-white text-lg sm:text-xl">🏆</div>
                                 <div>
-                                    <div className="text-[10px] sm:text-xs font-bold text-gray-800 leading-none">95% Placement</div>
+                                    <div className="text-[10px] sm:text-xs font-bold text-gray-800 leading-none">Placement Support</div>
                                     <div className="text-[8px] sm:text-[9px] text-gray-500 font-medium">Global Opportunities</div>
                                 </div>
                             </div>

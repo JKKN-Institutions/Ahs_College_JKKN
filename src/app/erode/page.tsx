@@ -68,11 +68,11 @@ export default function ErodePage() {
             },
             {
               q: "What is the salary after BSc allied health science?",
-              a: "BSc Allied Health Science graduates can expect starting salaries of ₹2.5–4.5 LPA in India, with experienced professionals earning ₹6–12 LPA. International opportunities in Gulf countries, UK, and Australia offer ₹8–25 LPA. JKKN AHS graduates benefit from an 85%+ placement rate with 60+ recruiting partners.",
+              a: "BSc Allied Health Science graduates can expect starting salaries of ₹2.5–4.5 LPA in India, with experienced professionals earning ₹6–12 LPA. International opportunities in Gulf countries, UK, and Australia offer ₹8–25 LPA. JKKN AHS graduates benefit from placement support with 60+ recruiting partners.",
             },
             {
               q: "How many allied health science colleges are there near Erode?",
-              a: "Erode district has a limited number of allied health science colleges. JKKN College of Allied Health Sciences, located just ~22 km from Erode on NH-544, stands out with 9 BSc programmes, NAAC approval, and an 85%+ placement rate — making it one of the top choices for Erode learners.",
+              a: "Erode district has a limited number of allied health science colleges. JKKN College of Allied Health Sciences, located just ~22 km from Erode on NH-544, stands out with 9 BSc programmes, NAAC approval, and placement support — making it one of the top choices for Erode learners.",
             },
             {
               q: "What are the eligibility requirements for allied health science courses?",
@@ -161,15 +161,13 @@ function HeroSection() {
         <p className="text-white/85 text-base sm:text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
           Erode to JKKN — a short, smooth ride on NH-544. JKKN College of Allied
           Health Sciences offers top-tier allied health sciences programmes with
-          92%+ placement support — just ~22 km from Erode with excellent
+          placement support — just ~22 km from Erode with excellent
           highway connectivity.
         </p>
 
         {/* Stats */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-2xl mx-auto mb-10">
           {[
-            { value: "92%+", label: "PLACEMENTS" },
-            { value: "12", label: "LPA HIGHEST" },
             { value: "~22km", label: "FROM ERODE" },
             { value: "9", label: "PROGRAMMES" },
           ].map((stat) => (
@@ -485,11 +483,7 @@ function ProgrammesSection() {
    PLACEMENT HIGHLIGHTS
 ────────────────────────────────────────── */
 function PlacementHighlights() {
-  const stats = [
-    { value: "92%+", label: "PLACEMENT RATE" },
-    { value: "12", label: "LPA HIGHEST" },
-    { value: "3.2–4.5", label: "LPA AVERAGE" },
-    { value: "60+", label: "TOP RECRUITERS" },
+  const stats: { value: string; label: string }[] = [
   ];
 
   const companies = [
@@ -511,10 +505,11 @@ function PlacementHighlights() {
           Placement Highlights
         </h2>
         <p className="text-gray-500 text-sm mb-3">
-          92%+ placement rate — our learners work at India&apos;s and the world&apos;s top hospitals
+          Our learners work at India&apos;s and the world&apos;s top hospitals
         </p>
         <div className="w-12 h-1 bg-[#7cb983] rounded mx-auto mb-10"></div>
 
+        {stats.length > 0 && (
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
           {stats.map((s) => (
             <div
@@ -530,6 +525,7 @@ function PlacementHighlights() {
             </div>
           ))}
         </div>
+        )}
 
         <div className="text-xs text-gray-400 font-medium tracking-widest uppercase mb-4">
           Companies That Hire From Us
@@ -754,7 +750,7 @@ function CampusGallerySection() {
 function CompetitiveAdvantageSection() {
   const advantages = [
     { title: "9 Specialized BSc Programmes", desc: "Choose from Cardiac Technology, Dialysis, Radiology, OT & Anaesthesia, Respiratory Therapy, Physician Assistant, Critical Care, Medical Records, and Emergency Care — more options than most colleges near Erode." },
-    { title: "85%+ Placement Rate with 60+ Recruiters", desc: "Our graduates work at TCS, Apollo Hospitals, Sun Pharma, NHS UK, and Cleveland Clinic Abu Dhabi. Both domestic and international career paths available." },
+    { title: "Placement Support with 60+ Recruiters", desc: "Our graduates work at TCS, Apollo Hospitals, Sun Pharma, NHS UK, and Cleveland Clinic Abu Dhabi. Both domestic and international career paths available." },
     { title: "Just 30–40 Minutes from Erode", desc: "Located on NH-544 (Salem–Coimbatore Highway) with direct bus connectivity. Easy commute or hostel stay — both options available for Erode learners." },
     { title: "500+ Bed Teaching Hospital on Campus", desc: "Clinical training from Year 1 at our multi-specialty teaching hospital. Hands-on experience that textbooks alone cannot provide." },
     { title: "NAAC Approved & University Affiliated", desc: "Approved by NAAC and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai — your degree is recognized nationwide and internationally." },
@@ -828,8 +824,8 @@ function SnippetBaitSection() {
           <div className="bg-white rounded-2xl p-6 shadow-sm">
             <h3 className="font-bold text-gray-900 mb-3">How to Choose the Best AHS College Near Erode</h3>
             <div className="snippet-answer voice-answer text-sm text-gray-600 leading-relaxed space-y-2">
-              <p>When choosing an allied health science college near Erode, consider these factors: university affiliation (The Tamil Nadu Dr. M.G.R. Medical University is the gold standard), NAAC accreditation status, clinical training infrastructure (look for attached teaching hospitals), placement track record (85%+ is excellent), senior learner experience, and proximity to your home for easy commuting.</p>
-              <p>JKKN College of Allied Health Sciences checks all these boxes — NAAC accredited, university-affiliated, 500+ bed hospital for clinical training, 85%+ placement rate, and just ~22 km from Erode on NH-544.</p>
+              <p>When choosing an allied health science college near Erode, consider these factors: university affiliation (The Tamil Nadu Dr. M.G.R. Medical University is the gold standard), NAAC accreditation status, clinical training infrastructure (look for attached teaching hospitals), placement track record, senior learner experience, and proximity to your home for easy commuting.</p>
+              <p>JKKN College of Allied Health Sciences checks all these boxes — NAAC accredited, university-affiliated, 500+ bed hospital for clinical training, placement support, and just ~22 km from Erode on NH-544.</p>
             </div>
           </div>
         </div>

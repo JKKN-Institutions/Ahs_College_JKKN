@@ -67,11 +67,11 @@ export default function CoimbatorePage() {
           },
           {
             q: "What is the salary after BSc allied health science?",
-            a: "BSc Allied Health Science graduates can expect starting salaries of ₹2.5–4.5 LPA in India, with experienced professionals earning ₹6–12 LPA. International opportunities in Gulf countries, UK, and Australia offer ₹8–25 LPA. JKKN AHS graduates benefit from an 85%+ placement rate with 60+ recruiting partners.",
+            a: "BSc Allied Health Science graduates can expect starting salaries of ₹2.5–4.5 LPA in India, with experienced professionals earning ₹6–12 LPA. International opportunities in Gulf countries, UK, and Australia offer ₹8–25 LPA. JKKN AHS graduates benefit from placement support with 60+ recruiting partners.",
           },
           {
             q: "How many allied health science colleges are there in Coimbatore?",
-            a: "Coimbatore has 14+ allied health science colleges. JKKN College of Allied Health Sciences, located ~105 km from Coimbatore on NH-544, offers a strong value proposition with competitive fees, 9 BSc programmes, NAAC approval, and an 85%+ placement rate with international opportunities.",
+            a: "Coimbatore has 14+ allied health science colleges. JKKN College of Allied Health Sciences, located ~105 km from Coimbatore on NH-544, offers a strong value proposition with competitive fees, 9 BSc programmes, NAAC approval, and placement support with international opportunities.",
           },
           {
             q: "What are the eligibility requirements for allied health science courses?",
@@ -79,7 +79,7 @@ export default function CoimbatorePage() {
           },
           {
             q: "With so many colleges in Coimbatore, why should I choose JKKN AHS?",
-            a: "While Coimbatore has 14+ allied health science colleges, JKKN AHS offers distinct advantages: NAAC accreditation with strong university affiliation, a 500+ bed multi-specialty teaching hospital on campus (rare among competitors), 85%+ placement rate with international opportunities (NHS UK, Cleveland Clinic Abu Dhabi), smaller batch sizes for personalised attention, and significantly lower cost of living compared to Coimbatore city. The NH-544 location ensures easy weekend travel home.",
+            a: "While Coimbatore has 14+ allied health science colleges, JKKN AHS offers distinct advantages: NAAC accreditation with strong university affiliation, a 500+ bed multi-specialty teaching hospital on campus (rare among competitors), placement support with international opportunities (NHS UK, Cleveland Clinic Abu Dhabi), smaller batch sizes for personalised attention, and significantly lower cost of living compared to Coimbatore city. The NH-544 location ensures easy weekend travel home.",
           },
           {
             q: "How does Coimbatore's medical hub benefit JKKN AHS graduates?",
@@ -159,15 +159,13 @@ function HeroSection() {
         <p className="text-white/85 text-base sm:text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
           Better value, better campus, better you — just 2 hours from Coimbatore.
           JKKN College of Allied Health Sciences offers top-tier allied health
-          sciences programmes with 92%+ placement support — world-class
+          sciences programmes with placement support — world-class
           education at a fraction of Coimbatore city college fees.
         </p>
 
         {/* Stats */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-2xl mx-auto mb-10">
           {[
-            { value: "92%+", label: "PLACEMENTS" },
-            { value: "12", label: "LPA HIGHEST" },
             { value: "~105km", label: "FROM COIMBATORE" },
             { value: "9", label: "PROGRAMMES" },
           ].map((stat) => (
@@ -484,11 +482,7 @@ function ProgrammesSection() {
    PLACEMENT HIGHLIGHTS
 ────────────────────────────────────────── */
 function PlacementHighlights() {
-  const stats = [
-    { value: "92%+", label: "PLACEMENT RATE" },
-    { value: "12", label: "LPA HIGHEST" },
-    { value: "3.2–4.5", label: "LPA AVERAGE" },
-    { value: "60+", label: "TOP RECRUITERS" },
+  const stats: { value: string; label: string }[] = [
   ];
 
   const companies = [
@@ -510,10 +504,11 @@ function PlacementHighlights() {
           Placement Highlights
         </h2>
         <p className="text-gray-500 text-sm mb-3">
-          92%+ placement rate — our learners work at India&apos;s and the world&apos;s top hospitals
+          Our learners work at India&apos;s and the world&apos;s top hospitals
         </p>
         <div className="w-12 h-1 bg-[#7cb983] rounded mx-auto mb-10"></div>
 
+        {stats.length > 0 && (
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
           {stats.map((s) => (
             <div
@@ -529,6 +524,7 @@ function PlacementHighlights() {
             </div>
           ))}
         </div>
+        )}
 
         <div className="text-xs text-gray-400 font-medium tracking-widest uppercase mb-4">
           Companies That Hire From Us
@@ -753,7 +749,7 @@ function CampusGallerySection() {
 function CompetitiveAdvantageSection() {
   const advantages = [
     { title: "Competitive Fees vs Coimbatore Premium", desc: "Get quality allied health education at significantly lower costs compared to Coimbatore-based colleges. Lower cost of living in Komarapalayam means your total education expense is much more affordable." },
-    { title: "Equal or Better Placement Outcomes", desc: "85%+ placement rate with 60+ recruiters including international opportunities. JKKN graduates work at NHS UK, Cleveland Clinic Abu Dhabi, Apollo, TCS, and more." },
+    { title: "Equal or Better Placement Outcomes", desc: "placement support with 60+ recruiters including international opportunities. JKKN graduates work at NHS UK, Cleveland Clinic Abu Dhabi, Apollo, TCS, and more." },
     { title: "9 Specialized BSc Programmes", desc: "Cardiac Technology, Dialysis, Radiology, OT & Anaesthesia, Respiratory Therapy, Physician Assistant, Critical Care, Medical Records, and Emergency Care — comprehensive options under one roof." },
     { title: "Own Teaching Hospital — Clinical Exposure from Day 1", desc: "500+ bed multi-specialty teaching hospital on campus. Learners get hands-on clinical training from Year 1, a significant advantage for healthcare career readiness." },
     { title: "Scholarships for Meritorious Learners", desc: "Merit-based scholarships available for deserving learners. Combined with competitive fees and lower living costs, JKKN offers excellent return on educational investment." },
@@ -828,7 +824,7 @@ function SnippetBaitSection() {
             <h3 className="font-bold text-gray-900 mb-3">How to Choose the Best AHS College in Coimbatore Region</h3>
             <div className="snippet-answer voice-answer text-sm text-gray-600 leading-relaxed space-y-2">
               <p>Coimbatore has 14+ allied health science colleges. When choosing, consider university affiliation (The Tamil Nadu Dr. M.G.R. Medical University is the gold standard), NAAC accreditation, attached teaching hospital quality, placement track record, fee structure, and clinical training hours.</p>
-              <p>JKKN College of Allied Health Sciences — ~105 km from Coimbatore on NH-544 — stands out with NAAC accreditation, a 500+ bed hospital on campus, 85%+ placement rate, international placement opportunities (NHS UK, Cleveland Clinic Abu Dhabi), and competitive fees with scholarship options.</p>
+              <p>JKKN College of Allied Health Sciences — ~105 km from Coimbatore on NH-544 — stands out with NAAC accreditation, a 500+ bed hospital on campus, placement support, international placement opportunities (NHS UK, Cleveland Clinic Abu Dhabi), and competitive fees with scholarship options.</p>
             </div>
           </div>
         </div>

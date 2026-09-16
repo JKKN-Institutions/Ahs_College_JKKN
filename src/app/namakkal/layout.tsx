@@ -3,7 +3,7 @@ import { createPageMetadata } from "@/lib/metadata";
 export const metadata = createPageMetadata({
   title: "Allied Health Science College Namakkal | JKKN AHS",
   description:
-    "JKKN AHS — in Namakkal district on NH-544, Komarapalayam. 9 BSc allied health programmes, NAAC accredited, 95% placement, 500+ bed hospital. Admissions 2026-27.",
+    "JKKN AHS — in Namakkal district on NH-544, Komarapalayam. 9 BSc allied health programmes, NAAC accredited, placement support, 500+ bed hospital. Admissions 2026-27.",
   path: "/namakkal",
   keywords: [
     "allied health science college namakkal",
@@ -124,7 +124,7 @@ const faqSchema = {
       name: "What is the salary after BSc allied health science?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "BSc Allied Health Science graduates can expect starting salaries of ₹2.5–4.5 LPA in India, with experienced professionals earning ₹6–12 LPA. International opportunities in Gulf countries, UK, and Australia offer ₹8–25 LPA. JKKN AHS graduates benefit from an 85%+ placement rate with 60+ recruiting partners.",
+        text: "BSc Allied Health Science graduates can expect starting salaries of ₹2.5–4.5 LPA in India, with experienced professionals earning ₹6–12 LPA. International opportunities in Gulf countries, UK, and Australia offer ₹8–25 LPA. JKKN AHS graduates benefit from placement support with 60+ recruiting partners.",
       },
     },
     {
@@ -132,7 +132,7 @@ const faqSchema = {
       name: "How many allied health science colleges are there in Namakkal?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Namakkal district has several allied health science colleges. JKKN College of Allied Health Sciences, located in Komarapalayam (Namakkal district), offers 9 BSc programmes with NAAC approval and an 85%+ placement rate — making it the preferred choice for Namakkal district learners.",
+        text: "Namakkal district has several allied health science colleges. JKKN College of Allied Health Sciences, located in Komarapalayam (Namakkal district), offers 9 BSc programmes with NAAC approval and placement support — making it the preferred choice for Namakkal district learners.",
       },
     },
     {

@@ -68,7 +68,7 @@ function HeroSection() {
                     <span className="text-[#ffde59]">Allied Health Sciences</span>
                 </h1>
                 <p className="text-white/90 text-base sm:text-lg md:text-xl max-w-3xl mx-auto mb-8 leading-relaxed">
-                    9 Programs &bull; NAAC A+ &bull; 95% Placement &bull; TN Dr. MGR Medical University
+                    9 Programs &bull; NAAC A &bull; Placement Support &bull; TN Dr. MGR Medical University
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                     <a
@@ -95,9 +95,8 @@ function HeroSection() {
 function HighlightsSection() {
     const highlights = [
         { value: "9", label: "Programs", icon: <GraduationCap className="w-5 h-5" /> },
-        { value: "95%", label: "Placement", icon: <TrendingUp className="w-5 h-5" /> },
         { value: "₹60K-1.7L", label: "Annual Fees (MQ)", icon: <IndianRupee className="w-5 h-5" /> },
-        { value: "NAAC A+", label: "Accredited", icon: <Award className="w-5 h-5" /> },
+        { value: "NAAC A", label: "Accredited", icon: <Award className="w-5 h-5" /> },
         { value: "500+", label: "Bed Hospital", icon: <Hospital className="w-5 h-5" /> },
         { value: "3+1 Yr", label: "Duration", icon: <Clock className="w-5 h-5" /> },
     ];
@@ -159,8 +158,8 @@ function ProgramsFeesSection() {
                             <tr className="bg-[#0b6d41] text-white">
                                 <th className="text-left py-4 px-6 rounded-tl-xl font-bold text-sm">Program</th>
                                 <th className="text-center py-4 px-4 font-bold text-sm">Duration</th>
-                                <th className="text-center py-4 px-4 font-bold text-sm">Annual Fee</th>
-                                <th className="text-center py-4 px-4 font-bold text-sm">Seats</th>
+                                <th className="text-center py-4 px-4 font-bold text-sm">Annual Fee (MQ)</th>
+                                <th className="text-center py-4 px-4 font-bold text-sm">Sanctioned Seats</th>
                                 <th className="text-center py-4 px-6 rounded-tr-xl font-bold text-sm">Action</th>
                             </tr>
                         </thead>
@@ -548,9 +547,9 @@ function WhyChooseSection() {
     const usps = [
         { title: "70+ Year Legacy", desc: "Part of JKKN Educational Institutions with over 70 years of excellence in education across 10 institutions.", icon: <Award className="w-6 h-6" /> },
         { title: "500+ Bed Hospital", desc: "Clinical training at our multi-specialty teaching hospital with real patient exposure from Year 1.", icon: <Hospital className="w-6 h-6" /> },
-        { title: "95% Placement Rate", desc: "Strong placement track record with 100+ recruiters including Apollo, Fortis, MIOT, and international hospitals.", icon: <TrendingUp className="w-6 h-6" /> },
+        { title: "Placement Support", desc: "Strong placement track record with 100+ recruiters including Apollo, Fortis, MIOT, and international hospitals.", icon: <TrendingUp className="w-6 h-6" /> },
         { title: "Global Opportunities", desc: "International placement pathways to UK (NHS), Saudi Arabia, UAE (Cleveland Clinic), and Singapore.", icon: <Globe className="w-6 h-6" /> },
-        { title: "NAAC A+ Accredited", desc: "Recognized for academic excellence and quality infrastructure by the National Assessment and Accreditation Council.", icon: <Sparkles className="w-6 h-6" /> },
+        { title: "NAAC A Accredited", desc: "Recognized for academic excellence and quality infrastructure by the National Assessment and Accreditation Council.", icon: <Sparkles className="w-6 h-6" /> },
         { title: "Clinical Exposure", desc: "2000+ hours of hands-on clinical training across partnered hospitals with expert supervision.", icon: <Stethoscope className="w-6 h-6" /> },
     ];
 
@@ -620,7 +619,7 @@ function FAQSection() {
         },
         {
             q: "What is the placement record at JKKN AHS?",
-            a: <>JKKN has a 95% placement rate with an average package of ₹3.2 LPA. Graduates are placed in leading hospitals like Apollo, Fortis, MIOT, and international healthcare facilities in UK, UAE, Saudi Arabia, and Singapore. <Link href="/placements" className="text-[#0b6d41] font-semibold hover:underline">View full placement record</Link>.</>
+            a: <>JKKN has placement support with an average package of ₹3.2 LPA. Graduates are placed in leading hospitals like Apollo, Fortis, MIOT, and international healthcare facilities in UK, UAE, Saudi Arabia, and Singapore. <Link href="/placements" className="text-[#0b6d41] font-semibold hover:underline">View full placement record</Link>.</>
         },
         {
             q: "Can NRI learners apply for admission?",

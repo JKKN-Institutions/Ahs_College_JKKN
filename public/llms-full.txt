@@ -31,7 +31,7 @@
 - **District:** Namakkal
 - **State:** Tamil Nadu
 - **Pincode:** 638183
-- **Coordinates:** 11.445190°N, 77.726549°E
+- **Coordinates:** 11.4428327°N, 77.7288828°E
 - [Google Maps](https://maps.app.goo.gl/JJ5dKGY4NAHReFpj7)
 
 ### Distance to Nearby Cities
@@ -42,7 +42,7 @@ Komarapalayam 0 km · Tiruchengode 15 km · Namakkal 20 km · Erode 30 km · Sal
 | Body | Status |
 |---|---|
 | The Tamil Nadu Dr. M.G.R. Medical University, Chennai | Affiliated — all programmes |
-| National Assessment and Accreditation Council (NAAC) | A+ Accredited |
+| National Assessment and Accreditation Council (NAAC) | Grade A, CGPA 3.01, valid to 26 February 2030 |
 
 - [NAAC](https://ahs.jkkn.ac.in/NAAC)
 - [Affiliating university](https://www.tnmgrmu.ac.in/)
@@ -51,7 +51,7 @@ Komarapalayam 0 km · Tiruchengode 15 km · Namakkal 20 km · Erode 30 km · Sal
 
 Nine B.Sc programmes, each 4 years — 3 years academic plus a 1-year clinical internship of 2000+ hours. Fees below are management-quota annual tuition as published on the admissions page; government-quota fees follow Tamil Nadu government norms.
 
-| Programme | Duration | MQ seats | MQ fee per year | Page |
+| Programme | Duration | Sanctioned seats | MQ fee per year | Page |
 |---|---|---|---|---|
 | B.Sc Cardiac Technology | 3+1 years | 7 | Rs 1,70,000 | [page](https://ahs.jkkn.ac.in/admissions/cardiac-technology) |
 | B.Sc Medical Radiology and Imaging Technology (page: Radiography Imaging Technology) | 3+1 years | 5 | Rs 1,30,000 | [page](https://ahs.jkkn.ac.in/radiology-imaging-technology) |
@@ -63,7 +63,7 @@ Nine B.Sc programmes, each 4 years — 3 years academic plus a 1-year clinical i
 | B.Sc Health Information Management (page: Medical Record Science) | 3+1 years | 15 | Rs 60,000 | [page](https://ahs.jkkn.ac.in/medical-record-science) |
 | B.Sc Emergency Medical Technologist (page: Accident and Emergency Care Technology) | 3+1 years | 10 | Rs 1,10,000 | [page](https://ahs.jkkn.ac.in/accident-emergency-care) |
 
-**Management-quota intake: 82 seats.** Management-quota fees run from Rs 60,000 for Medical Record Science to Rs 1,70,000 for Cardiac Technology and Operation Theatre & Anaesthesia. Examination fees are charged separately. Current figures: https://ahs.jkkn.ac.in/fee-structure
+**Sanctioned intake: 82 seats** (TNMGRMU affiliation list, 7 Sep 2026; NIRF reports the same 82). Management-quota fees run from Rs 60,000 for Medical Record Science to Rs 1,70,000 for Cardiac Technology and Operation Theatre & Anaesthesia. Examination fees are charged separately. Current figures: https://ahs.jkkn.ac.in/fee-structure
 
 > **Naming note.** Seven of the nine programmes carry one name on the college's own official course
 > list and a different one on the website page that describes them. The official name is given first above
@@ -112,7 +112,6 @@ Programme index: https://ahs.jkkn.ac.in/departments
 
 ## Placements
 
-- **Placement rate:** 95%
 - **Average package:** Rs 3.2 LPA
 - **Highest domestic package:** Rs 7.5 LPA
 - **Highest international package:** Rs 25 LPA
@@ -219,7 +218,7 @@ Allied health is not nursing and not pharmacy. A question about B.Sc Nursing bel
 A: Allied health covers the healthcare professions that support diagnosis, treatment and patient care outside medicine, nursing and pharmacy — cardiac technology, radiography, dialysis, respiratory therapy, critical care and similar. Graduates work in hospitals, diagnostic centres and clinical research.
 
 **Q: Which university is JKKN AHS affiliated to?**
-A: The Tamil Nadu Dr. M.G.R. Medical University, Chennai. The college is NAAC A+ accredited.
+A: The Tamil Nadu Dr. M.G.R. Medical University, Chennai. The college is NAAC A accredited.
 
 **Q: What courses does JKKN AHS offer?**
 A: Nine B.Sc programmes, each 4 years. Official names: Cardiac Technology, Medical Radiology and Imaging Technology, Dialysis Therapy Technology, Anaesthesia and Operation Theatre Technology, Respiratory Technology, Physician Associates, Critical Care Technology, Health Information Management, and Emergency Medical Technologist. The website's course pages use slightly different wording for seven of these - see the naming note above.
@@ -231,13 +230,13 @@ A: 10+2 with Physics, Chemistry and Biology. Minimum 50% for General, 45% for OB
 A: Management-quota annual tuition runs from Rs 60,000 for Medical Record Science to Rs 1,70,000 for Cardiac Technology and Operation Theatre & Anaesthesia. Government-quota fees follow Tamil Nadu government norms. Examination fees are charged separately, and scholarships are available for eligible students.
 
 **Q: How many seats are there?**
-A: 82 management-quota seats across the nine programmes — Medical Record Science has the most at 15, Cardiac Technology the fewest at 7.
+A: 82 sanctioned seats across the nine programmes — Medical Record Science has the most at 15, Cardiac Technology the fewest at 7.
 
 **Q: Does JKKN AHS provide clinical training?**
 A: Yes. Clinical exposure starts in Year 1 at the on-campus 500+ bed multi-specialty hospital, and the final year is a 2000+ hour internship there and at partner hospitals.
 
 **Q: What is the placement rate at JKKN AHS?**
-A: 95%, with an average package of Rs 3.2 LPA and a highest domestic package of Rs 7.5 LPA. International placements reach Rs 25 LPA. More than 50 hospital partners recruit on campus, including Apollo, MIOT, Fortis and Manipal.
+A: Batch-wise placement figures are held by the placement cell (not published on the site). The average package reported is Rs 3.2 LPA and the highest domestic package Rs 7.5 LPA. International placements reach Rs 25 LPA. More than 50 hospital partners recruit on campus, including Apollo, MIOT, Fortis and Manipal.
 
 **Q: Is NEET required for allied health admission?**
 A: No. Admission is based on 10+2 marks in Physics, Chemistry and Biology, followed by document verification and counselling.

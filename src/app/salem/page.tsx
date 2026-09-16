@@ -67,7 +67,7 @@ export default function SalemPage() {
           },
           {
             q: "What is the salary after BSc allied health science?",
-            a: "BSc Allied Health Science graduates can expect starting salaries of ₹2.5–4.5 LPA in India, with experienced professionals earning ₹6–12 LPA. International opportunities in Gulf countries, UK, and Australia offer ₹8–25 LPA. JKKN AHS graduates benefit from an 85%+ placement rate with 60+ recruiting partners.",
+            a: "BSc Allied Health Science graduates can expect starting salaries of ₹2.5–4.5 LPA in India, with experienced professionals earning ₹6–12 LPA. International opportunities in Gulf countries, UK, and Australia offer ₹8–25 LPA. JKKN AHS graduates benefit from placement support with 60+ recruiting partners.",
           },
           {
             q: "How many allied health science colleges are there near Salem?",
@@ -87,7 +87,7 @@ export default function SalemPage() {
           },
           {
             q: "Is JKKN AHS near Salem a better value than colleges in Chennai?",
-            a: "JKKN AHS offers excellent value compared to Chennai colleges: significantly lower tuition and living costs, the same Tamil Nadu Dr. M.G.R. Medical University affiliation, 500+ bed hospital for clinical training, 85%+ placement rate with both domestic and international opportunities, and a safer, focused campus environment. Learners save considerably while receiving comparable education quality.",
+            a: "JKKN AHS offers excellent value compared to Chennai colleges: significantly lower tuition and living costs, the same Tamil Nadu Dr. M.G.R. Medical University affiliation, 500+ bed hospital for clinical training, placement support with both domestic and international opportunities, and a safer, focused campus environment. Learners save considerably while receiving comparable education quality.",
           },
         ]} />
         <ExploreCitiesSection />
@@ -159,14 +159,12 @@ function HeroSection() {
         <p className="text-white/85 text-base sm:text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
           Under 1 hour from Salem — closer than you think. JKKN College of Allied
           Health Sciences offers top-tier allied health sciences programmes with
-          92%+ placement support — just under 1 hour from Salem via NH-544.
+          placement support — just under 1 hour from Salem via NH-544.
         </p>
 
         {/* Stats */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-2xl mx-auto mb-10">
           {[
-            { value: "92%+", label: "PLACEMENTS" },
-            { value: "12", label: "LPA HIGHEST" },
             { value: "~58 km", label: "FROM SALEM" },
             { value: "9", label: "PROGRAMMES" },
           ].map((stat) => (
@@ -483,11 +481,7 @@ function ProgrammesSection() {
    PLACEMENT HIGHLIGHTS
 ────────────────────────────────────────── */
 function PlacementHighlights() {
-  const stats = [
-    { value: "92%+", label: "PLACEMENT RATE" },
-    { value: "12", label: "LPA HIGHEST" },
-    { value: "3.2–4.5", label: "LPA AVERAGE" },
-    { value: "60+", label: "TOP RECRUITERS" },
+  const stats: { value: string; label: string }[] = [
   ];
 
   const companies = [
@@ -509,10 +503,11 @@ function PlacementHighlights() {
           Placement Highlights
         </h2>
         <p className="text-gray-500 text-sm mb-3">
-          92%+ placement rate — our learners work at India&apos;s and the world&apos;s top hospitals
+          Our learners work at India&apos;s and the world&apos;s top hospitals
         </p>
         <div className="w-12 h-1 bg-[#7cb983] rounded mx-auto mb-10"></div>
 
+        {stats.length > 0 && (
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
           {stats.map((s) => (
             <div
@@ -528,6 +523,7 @@ function PlacementHighlights() {
             </div>
           ))}
         </div>
+        )}
 
         <div className="text-xs text-gray-400 font-medium tracking-widest uppercase mb-4">
           Companies That Hire From Us
@@ -754,7 +750,7 @@ function CompetitiveAdvantageSection() {
     { title: "Competitive Fees with Scholarship Support", desc: "JKKN offers quality allied health education at competitive pricing compared to deemed universities in Salem. Merit-based scholarships available for deserving learners." },
     { title: "9 Specialized BSc Programmes", desc: "Choose from Cardiac Technology, Dialysis, Radiology, OT & Anaesthesia, Respiratory Therapy, Physician Assistant, Critical Care, Medical Records, and Emergency Care." },
     { title: "Direct NH-544 Access — 50–60 Minutes from Salem", desc: "Straight highway connectivity via Salem–Coimbatore Highway. Regular bus services from Salem bus stand make the commute convenient." },
-    { title: "International Placement Track Record", desc: "JKKN graduates work at NHS UK, Cleveland Clinic Abu Dhabi, and hospitals across Singapore and Gulf countries. 85%+ placement rate with 60+ recruiters." },
+    { title: "International Placement Track Record", desc: "JKKN graduates work at NHS UK, Cleveland Clinic Abu Dhabi, and hospitals across Singapore and Gulf countries. placement support with 60+ recruiters." },
     { title: "Own Teaching Hospital for Clinical Training", desc: "500+ bed multi-specialty teaching hospital on campus provides hands-on clinical exposure from Year 1 — a critical advantage for healthcare careers." },
   ];
 
@@ -827,7 +823,7 @@ function SnippetBaitSection() {
             <h3 className="font-bold text-gray-900 mb-3">How to Choose the Best AHS College Near Salem</h3>
             <div className="snippet-answer voice-answer text-sm text-gray-600 leading-relaxed space-y-2">
               <p>When choosing an allied health science college near Salem, consider university affiliation (The Tamil Nadu Dr. M.G.R. Medical University is the gold standard), NAAC accreditation, clinical training infrastructure, placement track record, and accessibility via NH-544 highway.</p>
-              <p>JKKN College of Allied Health Sciences — located ~58 km from Salem on NH-544 — is NAAC accredited, university-affiliated, has a 500+ bed hospital for clinical training, and maintains an 85%+ placement rate with 60+ recruiting partners.</p>
+              <p>JKKN College of Allied Health Sciences — located ~58 km from Salem on NH-544 — is NAAC accredited, university-affiliated, has a 500+ bed hospital for clinical training, and provides placement support with 60+ recruiting partners.</p>
             </div>
           </div>
         </div>

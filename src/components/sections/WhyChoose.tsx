@@ -23,7 +23,7 @@ const reasons = [
         icon: <Building2 className="w-10 h-10" />,
     },
     {
-        title: "95% Placement Rate",
+        title: "Placement Support",
         description: "100+ recruiters including Apollo, MIOT, Fortis, Kauvery, SRL, Thyrocare, and Dr. Lal PathLabs. Salary packages range from ₹3.2 to ₹7.5 LPA with international opportunities in the UK (NHS), UAE, Saudi Arabia, and Australia through our dedicated placement cell.",
         icon: <Briefcase className="w-10 h-10" />,
     },
@@ -68,7 +68,7 @@ export function WhyChoose() {
                                 {reason.title === "Advanced Learning Labs" && (
                                     <> <Link href="/lab" className="text-[#0b6d41] font-semibold hover:underline">Explore our learning labs</Link>.</>
                                 )}
-                                {reason.title === "95% Placement Rate" && (
+                                {reason.title === "Placement Support" && (
                                     <> <Link href="/placements" className="text-[#0b6d41] font-semibold hover:underline">View placement details</Link>.</>
                                 )}
                             </p>

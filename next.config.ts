@@ -54,6 +54,15 @@ const nextConfig: NextConfig = {
       { source: '/blog/campus/medical-lab-technician-course-what-it-is', destination: '/blog/campus/which-allied-health-science-course-to-choose-after-12th', permanent: true },
       { source: '/blog/campus/medical-lab-technician-course-what-it-is/', destination: '/blog/campus/which-allied-health-science-course-to-choose-after-12th', permanent: true },
 
+      // ── Wrong-college article removal 2026-09-16 ─────────────────────────
+      // /blog/allied-health-sciences-admission-2026 was titled for allied-health admission but its
+      // body was a 2,068-word B.Ed / TNTEU / NCTE article advertising JKKN College of Education
+      // (measured live 2026-09-12: TNTEU x16, B.Ed x39, 'allied health' x1). It was the only
+      // article app/blog/[slug] ever rendered, so that route is removed with it. The redirect
+      // fires at the edge, ahead of any render, and is what proves the URL is gone.
+      { source: '/blog/allied-health-sciences-admission-2026', destination: '/admissions', permanent: true },
+      { source: '/blog/allied-health-sciences-admission-2026/', destination: '/admissions', permanent: true },
+
       {
         source: '/principal-message',
         destination: '/principals-message',

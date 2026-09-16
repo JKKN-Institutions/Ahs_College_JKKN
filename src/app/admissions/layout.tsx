@@ -2,7 +2,7 @@ import { createPageMetadata } from "@/lib/metadata";
 
 export const metadata = createPageMetadata({
   title: "Admission 2026-27 | JKKN Allied Health Sciences College Tamil Nadu",
-  description: "Apply for BSc Allied Health Sciences admission 2026-27 at JKKN College, Tamil Nadu. 9 programs, GQ as per Govt norms, MQ 60K-1.7L, 95% placement, NAAC A+. Apply now!",
+  description: "Apply for BSc Allied Health Sciences admission 2026-27 at JKKN College, Tamil Nadu. 9 programs, GQ as per Govt norms, MQ 60K-1.7L, placement support, NAAC A. Apply now!",
   path: "/admissions",
   keywords: [
     "allied health science admission 2026",

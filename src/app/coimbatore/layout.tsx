@@ -3,7 +3,7 @@ import { createPageMetadata } from "@/lib/metadata";
 export const metadata = createPageMetadata({
   title: "Allied Health Sciences Colleges in Coimbatore | JKKN AHS",
   description:
-    "JKKN AHS — ~105 km from Coimbatore on NH-544. 9 BSc allied health programmes, NAAC accredited, 95% placement, 500+ bed hospital. Admissions open 2026-27.",
+    "JKKN AHS — ~105 km from Coimbatore on NH-544. 9 BSc allied health programmes, NAAC accredited, placement support, 500+ bed hospital. Admissions open 2026-27.",
   path: "/coimbatore",
   keywords: [
     "allied health sciences colleges in coimbatore",
@@ -124,7 +124,7 @@ const faqSchema = {
       name: "What is the salary after BSc allied health science?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "BSc Allied Health Science graduates can expect starting salaries of ₹2.5–4.5 LPA in India, with experienced professionals earning ₹6–12 LPA. International opportunities in Gulf countries, UK, and Australia offer ₹8–25 LPA. JKKN AHS graduates benefit from an 85%+ placement rate with 60+ recruiting partners.",
+        text: "BSc Allied Health Science graduates can expect starting salaries of ₹2.5–4.5 LPA in India, with experienced professionals earning ₹6–12 LPA. International opportunities in Gulf countries, UK, and Australia offer ₹8–25 LPA. JKKN AHS graduates benefit from placement support with 60+ recruiting partners.",
       },
     },
     {
@@ -132,7 +132,7 @@ const faqSchema = {
       name: "How many allied health science colleges are there in Coimbatore?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Coimbatore has 14+ allied health science colleges. JKKN College of Allied Health Sciences, located ~105 km from Coimbatore on NH-544, offers a strong value proposition with competitive fees, 9 BSc programmes, NAAC approval, and an 85%+ placement rate with international opportunities.",
+        text: "Coimbatore has 14+ allied health science colleges. JKKN College of Allied Health Sciences, located ~105 km from Coimbatore on NH-544, offers a strong value proposition with competitive fees, 9 BSc programmes, NAAC approval, and placement support with international opportunities.",
       },
     },
     {
@@ -148,7 +148,7 @@ const faqSchema = {
       name: "With so many colleges in Coimbatore, why should I choose JKKN AHS?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "While Coimbatore has 14+ allied health science colleges, JKKN AHS offers distinct advantages: NAAC accreditation with strong university affiliation, a 500+ bed multi-specialty teaching hospital on campus (rare among competitors), 85%+ placement rate with international opportunities (NHS UK, Cleveland Clinic Abu Dhabi), smaller batch sizes for personalised attention, and significantly lower cost of living compared to Coimbatore city. The NH-544 location ensures easy weekend travel home.",
+        text: "While Coimbatore has 14+ allied health science colleges, JKKN AHS offers distinct advantages: NAAC accreditation with strong university affiliation, a 500+ bed multi-specialty teaching hospital on campus (rare among competitors), placement support with international opportunities (NHS UK, Cleveland Clinic Abu Dhabi), smaller batch sizes for personalised attention, and significantly lower cost of living compared to Coimbatore city. The NH-544 location ensures easy weekend travel home.",
       },
     },
     {

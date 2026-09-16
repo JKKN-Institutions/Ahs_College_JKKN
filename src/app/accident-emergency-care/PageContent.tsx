@@ -255,7 +255,6 @@ function HeroSection() {
 function StatsSection() {
     const stats = [
         { label: "Years Duration", value: "3+1", icon: <Clock className="w-5 h-5" /> },
-        { label: "Placement Rate", value: "95%", icon: <Users className="w-5 h-5" /> },
         { label: "Hospital Partners", value: "25+", icon: <Building2 className="w-5 h-5" /> },
         { label: "Clinical Hours", value: "2000+", icon: <Activity className="w-5 h-5" /> },
     ];
@@ -329,9 +328,9 @@ function AboutSection() {
                         {[
                             { label: "Duration", value: "3 + 1" },
                             { label: "Degree", value: "B.Sc" },
-                            { label: "Intake", value: "10 Seats" },
+                            { label: "Sanctioned Intake", value: "10 Seats" },
                             { label: "Session", value: "2026-2027" },
-                            { label: "Approval", value: "UGC Approved" },
+                            { label: "Affiliation", value: "TN Dr. M.G.R. Medical University" },
                             { label: "Fee", value: "Contact Us" },
                         ].map((item, i) => (
                             <li key={i} className="flex justify-between items-center py-2 border-b border-gray-100 last:border-0">
@@ -385,7 +384,7 @@ function EligibilitySection() {
                         </h3>
                         <ul className="space-y-4">
                             {[
-                                "Age: Candidates should have completed 17 years of age as on 31st December 2025.",
+                                "Age: Candidates must have completed 17 years of age on or before 31st December 2026.",
                                 "Valid entrance exam score (if applicable)",
                                 "Medical fitness certificate",
                                 "Conduct certificate from last attended institution"
