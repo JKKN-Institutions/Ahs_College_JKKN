@@ -847,6 +847,9 @@ export function buildCitySchemas(city: CityPage): object[] {
     "@context": "https://schema.org",
     "@type": "CollegeOrUniversity",
     "@id": `${SITE_URL}/#organization`,
+    // `name` repeated on purpose: Google merges by @id, but a validator reads each block on its
+    // own and CollegeOrUniversity requires a name.
+    name: "JKKN College of Allied Health Sciences",
     areaServed: { "@type": "City", name: cityName },
   };
 
