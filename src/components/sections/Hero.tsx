@@ -162,8 +162,8 @@ export function Hero() {
                             💼
                         </div>
                         <div>
-                            <h3 className="text-[10px] sm:text-xs font-bold text-[#1a5f7a] mb-0.5">Avg. Package</h3>
-                            <p className="text-gray-700 font-semibold text-[10px] sm:text-xs">₹3.2 - 7.5 LPA</p>
+                            <h3 className="text-[10px] sm:text-xs font-bold text-[#1a5f7a] mb-0.5">Sanctioned Seats</h3>
+                            <p className="text-gray-700 font-semibold text-[10px] sm:text-xs">82 across 9 B.Sc</p>
                         </div>
                     </div>
 

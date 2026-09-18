@@ -28,11 +28,11 @@ const speakableSchema = {
 const chairpersonSchema = {
   "@context": "https://schema.org",
   "@type": "Person",
+  "@id": "https://ahs.jkkn.ac.in/#chairperson",
   "name": "Smt. N. Sendamaraai",
   "jobTitle": "Chairperson",
   "worksFor": {
-    "@type": "CollegeOrUniversity",
-    "name": "JKKN College of Allied Health Sciences",
+    "@id": "https://ahs.jkkn.ac.in/#organization",
     "url": "https://ahs.jkkn.ac.in/"
   },
   "affiliation": {
@@ -45,11 +45,11 @@ const chairpersonSchema = {
 const directorSchema = {
   "@context": "https://schema.org",
   "@type": "Person",
+  "@id": "https://ahs.jkkn.ac.in/#director",
   "name": "Shri. S. Ommsharravana",
   "jobTitle": "Director",
   "worksFor": {
-    "@type": "CollegeOrUniversity",
-    "name": "JKKN College of Allied Health Sciences",
+    "@id": "https://ahs.jkkn.ac.in/#organization",
     "url": "https://ahs.jkkn.ac.in/"
   },
   "affiliation": {

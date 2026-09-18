@@ -18,6 +18,7 @@ export const metadata = createPageMetadata({
 const speakableSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
+  "@id": "https://ahs.jkkn.ac.in/privacy-policy#webpage",
   "name": "Privacy Policy — JKKN College of Allied Health Sciences",
   "url": "https://ahs.jkkn.ac.in/privacy-policy",
   "speakable": {
@@ -39,17 +40,14 @@ const breadcrumbSchema = {
 const policySchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
+  "@id": "https://ahs.jkkn.ac.in/privacy-policy#speakable",
   "name": "Privacy Policy — JKKN College of Allied Health Sciences",
   "url": "https://ahs.jkkn.ac.in/privacy-policy",
   "about": {
     "@type": "Thing",
     "name": "Privacy Policy"
   },
-  "publisher": {
-    "@type": "CollegeOrUniversity",
-    "name": "JKKN College of Allied Health Sciences",
-    "url": "https://ahs.jkkn.ac.in/"
-  },
+  "publisher": { "@id": "https://ahs.jkkn.ac.in/#organization" },
   "dateModified": "2026-03-19"
 };
 

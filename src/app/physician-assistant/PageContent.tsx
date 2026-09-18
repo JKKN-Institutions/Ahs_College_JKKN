@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
+import { COURSE_FAQS } from "@/lib/course-faqs";
 import Image from 'next/image';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
@@ -14,56 +15,12 @@ import {
     Shield, Syringe, ClipboardList, UserCog, Microscope, HeartPulse
 } from 'lucide-react';
 import { Breadcrumb } from '@/components/Breadcrumb';
-import { generateBreadcrumbSchema } from '@/lib/breadcrumb-schema';
 import AhsEnquiryForm from "@/components/lead/AhsEnquiryForm";
 import { DEFAULT_PROGRAMME_BY_PAGE } from "@/lib/ahs-programmes";
-
-const courseSchema = {
-    "@context": "https://schema.org",
-    "@type": "Course",
-    "name": "B.Sc Physician Assistant",
-    "description": "Comprehensive medical training program preparing learners to assist physicians in patient care including history taking, physical examination, diagnostic procedures, and treatment planning.",
-    "provider": {
-        "@type": "CollegeOrUniversity",
-        "@id": "https://ahs.jkkn.ac.in/#organization",
-        "name": "JKKN College of Allied Health Sciences"
-    },
-    "url": "https://ahs.jkkn.ac.in/physician-assistant",
-    "timeRequired": "P4Y",
-    "educationalCredentialAwarded": "B.Sc Physician Assistant",
-    "occupationalCredentialAwarded": "Physician Assistant",
-    "hasCourseInstance": {
-        "@type": "CourseInstance",
-        "courseMode": "In-Person",
-        "startDate": "2026-08-01"
-    },
-    "offers": {
-        "@type": "Offer",
-        "category": "Tuition",
-        "price": "130000",
-        "priceCurrency": "INR",
-        "priceValidUntil": "2027-03-31",
-        "availability": "https://schema.org/InStock"
-    }
-};
-
-const breadcrumbSchema = generateBreadcrumbSchema([
-    { name: "Home", url: "https://ahs.jkkn.ac.in/" },
-    { name: "Departments", url: "https://ahs.jkkn.ac.in/#programs" },
-    { name: "Physician Assistant", url: "https://ahs.jkkn.ac.in/physician-assistant" }
-]);
 
 export default function PhysicianAssistant() {
     return (
         <div className="min-h-screen flex flex-col bg-[#fbfbee]">
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }}
-            />
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-            />
             <Navbar />
 
             <main className="flex-grow pt-20">
@@ -648,40 +605,7 @@ function AdmissionProcessSection() {
 // 9. FAQ Section
 function FAQSection() {
     const [openIndex, setOpenIndex] = useState<number | null>(0);
-    const faqs = [
-        {
-            q: "What is B.Sc Physician Assistant?",
-            a: "B.Sc Physician Assistant is a 3 years + 1 year internship program that trains healthcare professionals to work alongside physicians in clinical settings. Physician Assistants are skilled in patient assessment, diagnosis support, medical procedures, treatment planning, and patient care management across various medical specialties including general medicine, surgery, emergency care, and community health."
-        },
-        {
-            q: "What is the eligibility criteria?",
-            a: "Candidates must have passed +2 with Physics, Chemistry, and Biology with minimum 50% aggregate marks (40% for SC/ST, 45% for OBC). Minimum age is 17 years as on December 31st of the admission year. A medical fitness certificate is also required."
-        },
-        {
-            q: "What is the salary of a Physician Assistant in India?",
-            a: "Entry-level Physician Assistants earn ₹3-5 lakhs per annum. With 3-5 years of experience, salaries range from ₹6-10 lakhs. Senior Physician Assistants and those in specialized roles at corporate hospitals can earn ₹12-20 lakhs per annum. International opportunities offer significantly higher packages."
-        },
-        {
-            q: "What are the career opportunities?",
-            a: "Graduates can work as Clinical Physician Assistant, Emergency Care Assistant, Surgical Assistant, ICU/Critical Care Assistant, OPD Coordinator, Community Health Officer, Primary Care Provider, and Clinical Research Associate in hospitals, clinics, community health centers, and pharmaceutical companies."
-        },
-        {
-            q: "Is B.Sc Physician Assistant a good career choice?",
-            a: "Yes, B.Sc Physician Assistant is an excellent career choice due to growing demand for mid-level healthcare providers in India, competitive salaries, diverse work environments, opportunities for specialization, and the fulfilling nature of patient care. With India's expanding healthcare infrastructure, PAs are increasingly recognized as vital healthcare team members."
-        },
-        {
-            q: "Can I pursue higher education after this course?",
-            a: "Yes, graduates can pursue M.Sc in Physician Assistant Studies, M.Sc in Clinical Medicine, M.Sc in Public Health (MPH), MBA in Healthcare Management, or specialized certifications in Emergency Medicine, Critical Care, or specific medical specialties for advanced career opportunities."
-        },
-        {
-            q: "What practical training is included?",
-            a: "The program includes 2000+ hours of clinical training across OPD, emergency departments, ICU, operation theaters, and community health settings with hands-on experience in patient assessment, medical procedures, diagnostic interpretations, and clinical rotations in multiple specialties including medicine, surgery, pediatrics, and emergency care."
-        },
-        {
-            q: "What is the difference between a Physician Assistant and a Doctor?",
-            a: "Physician Assistants practice medicine under the supervision of physicians. While doctors have independent practice rights, PAs work as part of a healthcare team. PAs can diagnose, treat, and prescribe medications but always collaborate with physicians for complex cases. The 4-year PA program focuses on clinical practice, while medical doctors complete 5.5 years of MBBS."
-        },
-    ];
+    const faqs = COURSE_FAQS["physician-assistant"];
 
     return (
         <section className="py-20 max-w-3xl mx-auto px-4">
@@ -704,20 +628,9 @@ function FAQSection() {
                             {openIndex === i ? <Minus className="w-5 h-5 text-[#ffde59]" /> : <Plus className="w-5 h-5 text-gray-400" />}
                         </button>
                         </h3>
-                        <AnimatePresence>
-                            {openIndex === i && (
-                                <motion.div
-                                    initial={{ height: 0 }}
-                                    animate={{ height: "auto" }}
-                                    exit={{ height: 0 }}
-                                    className="overflow-hidden"
-                                >
-                                    <div className="faq-answer p-6 pt-0 text-gray-600 text-sm leading-relaxed">
+                        <div className={`faq-answer p-6 pt-0 text-gray-600 text-sm leading-relaxed ${openIndex === i ? "" : "hidden"}`}>
                                         {faq.a}
-                                    </div>
-                                </motion.div>
-                            )}
-                        </AnimatePresence>
+                        </div>
                     </div>
                 ))}
             </div>

@@ -25,7 +25,7 @@ const organizationSchema = {
   "description": "J. K. K. Nattraja Educational Institutions, founded in 1952, is a multi-institution educational trust managing 9 colleges and schools in Komarapalayam, Namakkal, Tamil Nadu, India.",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "NH-544, Natarajapuram",
+    "streetAddress": "NH-544 (Salem to Coimbatore National Highway), Natarajapuram",
     "addressLocality": "Komarapalayam",
     "addressRegion": "Tamil Nadu",
     "postalCode": "638183",

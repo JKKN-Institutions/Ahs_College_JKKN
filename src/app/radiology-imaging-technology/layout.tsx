@@ -1,5 +1,5 @@
 import { createPageMetadata } from "@/lib/metadata";
-import { AHS_MAPS_URL } from "@/lib/entity-profiles";
+import { COURSE_FAQS } from "@/lib/course-faqs";
 
 export const metadata = createPageMetadata({
   title: "Best Radiography Course in Tamilnadu | JKKN AHS College",
@@ -21,12 +21,9 @@ const courseSchema = {
   "name": "B.Sc Radiography Imaging Technology",
   "description": "Comprehensive program that prepares learners to become skilled radiography technologists, mastering X-ray, CT scan, MRI, ultrasound, mammography, and advanced radiological procedures for accurate disease diagnosis and treatment planning.",
   "url": "https://ahs.jkkn.ac.in/radiology-imaging-technology",
-  "provider": {
-    "@type": "CollegeOrUniversity",
-    "name": "JKKN College of Allied Health Sciences",
-    "url": "https://ahs.jkkn.ac.in/",
-    "sameAs": AHS_MAPS_URL
-  },
+  // Link, do not re-declare: a fresh anonymous Organization on every Course is a new entity
+  // to Google, so the courses never attached to the college node.
+  "provider": { "@id": "https://ahs.jkkn.ac.in/#organization" },
   "educationalLevel": "Undergraduate",
   "educationalCredentialAwarded": "Bachelor of Science (B.Sc)",
   "occupationalCredentialAwarded": "Radiographer / Imaging Technologist",
@@ -105,72 +102,11 @@ const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "dateModified": "2026-03-19",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is Bachelor of Science Radiography Imaging Technology at JKKN College of Allied Health Sciences in Komarapalayam?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Bachelor of Science Radiography Imaging Technology is a three-year plus one-year internship undergraduate program training learners in X-ray, Computed Tomography, Magnetic Resonance Imaging, and ultrasound diagnostic imaging."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the eligibility criteria for Bachelor of Science Radiography Imaging Technology at JKKN Allied Health Sciences Komarapalayam?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Candidates need 10+2 with Physics, Chemistry, and Biology, minimum 50% marks. Scheduled Caste and Scheduled Tribe: 40%. Other Backward Classes: 45%. Age minimum 17 years."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the salary after completing Bachelor of Science Radiography Imaging Technology from JKKN College Komarapalayam Tamil Nadu?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Entry-level radiology technologists earn three to five lakhs per year. Experienced Computed Tomography and Magnetic Resonance Imaging specialists at corporate hospitals earn twelve to twenty lakhs annually."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What are the career opportunities after Bachelor of Science Radiography Imaging Technology from JKKN Allied Health Sciences in Tamil Nadu?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Graduates work as X-ray Technician, Computed Tomography Technologist, Magnetic Resonance Imaging Technologist, Ultrasound Technician, Mammography Specialist, and Interventional Radiology Technician in hospitals."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is Bachelor of Science Radiography Imaging Technology at JKKN College of Allied Health Sciences Komarapalayam a good career choice?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Growing healthcare demand, advanced imaging technology, competitive salaries, and diverse specializations make Bachelor of Science Radiography Imaging Technology an excellent career choice in Tamil Nadu."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I pursue higher education after Bachelor of Science Radiography Imaging Technology from JKKN Allied Health Sciences Tamil Nadu?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Graduates can pursue Master of Science in Radiography, Medical Imaging, or Radiological Sciences. Postgraduate Diploma in Computed Tomography or Magnetic Resonance Imaging technology is also available."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What practical training is included in Bachelor of Science Radiography Imaging Technology at JKKN College Komarapalayam?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The program includes over two thousand hours of clinical training covering X-ray, Computed Tomography, Magnetic Resonance Imaging, ultrasound, mammography, and radiation safety in hospital radiology departments."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is radiation exposure a concern for Radiography Imaging Technology learners at JKKN Allied Health Sciences in Tamil Nadu?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. Strict safety protocols, protective equipment, and As Low As Reasonably Achievable radiation principles keep exposure minimal. Technologists receive thorough radiation safety training before clinical practice."
-      }
-    }
-  ]
+  "mainEntity": COURSE_FAQS["radiology-imaging-technology"].map((f) => ({
+    "@type": "Question",
+    "name": f.q,
+    "acceptedAnswer": { "@type": "Answer", "text": f.a },
+  })),
 };
 
 export default function RadiologyImagingTechnologyLayout({

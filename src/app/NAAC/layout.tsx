@@ -47,7 +47,7 @@ const naacSchema = {
     "recognizedBy": {
       "@type": "Organization",
       "name": "National Assessment and Accreditation Council (NAAC)",
-      "url": "http://www.naac.gov.in/"
+      "url": "https://www.naac.gov.in/"
     }
   }
 };

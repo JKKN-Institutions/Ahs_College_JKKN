@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
+import { COURSE_FAQS } from "@/lib/course-faqs";
 import Image from 'next/image';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
@@ -14,7 +15,6 @@ import {
     Shield, Zap, ClipboardList, UserCog, Microscope, Radio
 } from 'lucide-react';
 import { Breadcrumb } from '@/components/Breadcrumb';
-import { generateBreadcrumbSchema } from '@/lib/breadcrumb-schema';
 import AhsEnquiryForm from "@/components/lead/AhsEnquiryForm";
 import { DEFAULT_PROGRAMME_BY_PAGE } from "@/lib/ahs-programmes";
 
@@ -25,20 +25,10 @@ import { DEFAULT_PROGRAMME_BY_PAGE } from "@/lib/ahs-programmes";
 // names, is worse than one. The layout copy is also strictly richer (17 properties to
 // 11), and its one missing property was carried across rather than dropped.
 
-const breadcrumbSchema = generateBreadcrumbSchema([
-    { name: "Home", url: "https://ahs.jkkn.ac.in/" },
-    { name: "Departments", url: "https://ahs.jkkn.ac.in/#programs" },
-    { name: "Radiology & Imaging Technology", url: "https://ahs.jkkn.ac.in/radiology-imaging-technology" }
-]);
-
 export default function RadiologyImagingTechnology() {
     return (
         <div className="min-h-screen flex flex-col bg-[#fbfbee]">
 
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-            />
             <Navbar />
 
             <main className="flex-grow pt-20">
@@ -604,40 +594,7 @@ function AdmissionProcessSection() {
 // 9. FAQ Section
 function FAQSection() {
     const [openIndex, setOpenIndex] = useState<number | null>(0);
-    const faqs = [
-        {
-            q: "What is B.Sc Radiography Imaging Technology?",
-            a: "B.Sc Radiography Imaging Technology is a 3 years + 1 year internship program that trains professionals in diagnostic medical imaging. It covers X-ray, CT scan, MRI, ultrasound, mammography, fluoroscopy, interventional radiology, and nuclear medicine imaging techniques. Graduates become skilled in operating imaging equipment, patient positioning, radiation safety, and producing high-quality diagnostic images."
-        },
-        {
-            q: "What is the eligibility criteria?",
-            a: "Candidates must have passed 10+2 with Physics, Chemistry, and Biology with minimum 50% aggregate marks (40% for SC/ST, 45% for OBC). Minimum age is 17 years as on December 31st of the admission year. A medical fitness certificate is also required."
-        },
-        {
-            q: "What is the salary of a Radiology Technologist?",
-            a: "Entry-level radiology technologists earn ₹3-5 lakhs per annum. With 3-5 years experience, salaries range from ₹6-10 lakhs. Specialists in CT/MRI and senior positions at corporate hospitals can earn ₹12-20 lakhs per annum. International opportunities offer significantly higher packages."
-        },
-        {
-            q: "What are the career opportunities?",
-            a: "Graduates can work as X-ray Technician, CT Scan Technologist, MRI Technologist, Ultrasound Technician, Mammography Specialist, Interventional Radiology Technician, Nuclear Medicine Technologist, and Quality Assurance Officer in hospitals, diagnostic centers, and research institutions."
-        },
-        {
-            q: "Is B.Sc Radiography Imaging Technology a good career choice?",
-            a: "Yes, B.Sc Radiography Imaging Technology offers excellent career prospects due to growing healthcare infrastructure, increasing demand for diagnostic services, technological advancements in medical imaging, and competitive salaries. The field offers diverse specializations and opportunities for continuous professional development."
-        },
-        {
-            q: "Can I pursue higher education after this course?",
-            a: "Yes, graduates can pursue M.Sc in Radiography Imaging Technology, M.Sc in Medical Imaging, M.Sc in Radiological Sciences, PG Diploma in CT/MRI Technology, or MBA in Healthcare Management for advanced career opportunities and leadership roles."
-        },
-        {
-            q: "What practical training is included?",
-            a: "The program includes 2000+ hours of clinical training in radiology departments with hands-on experience in X-ray, CT, MRI, ultrasound, mammography, fluoroscopy, and interventional radiology. Learners work with latest imaging equipment and learn patient care, positioning techniques, image processing, and radiation safety protocols."
-        },
-        {
-            q: "Is radiation exposure a concern in this profession?",
-            a: "Modern radiology technology and strict safety protocols minimize radiation exposure. Radiology technologists are trained in radiation safety, use protective equipment, and follow ALARA (As Low As Reasonably Achievable) principles. With proper safety measures, this is a safe and rewarding healthcare career."
-        },
-    ];
+    const faqs = COURSE_FAQS["radiology-imaging-technology"];
 
     return (
         <section className="py-20 max-w-3xl mx-auto px-4">
@@ -660,20 +617,9 @@ function FAQSection() {
                                 {openIndex === i ? <Minus className="w-5 h-5 text-[#ffde59]" /> : <Plus className="w-5 h-5 text-gray-400" />}
                             </button>
                         </h3>
-                        <AnimatePresence>
-                            {openIndex === i && (
-                                <motion.div
-                                    initial={{ height: 0 }}
-                                    animate={{ height: "auto" }}
-                                    exit={{ height: 0 }}
-                                    className="overflow-hidden"
-                                >
-                                    <div className="faq-answer p-6 pt-0 text-gray-600 text-sm leading-relaxed">
+                        <div className={`faq-answer p-6 pt-0 text-gray-600 text-sm leading-relaxed ${openIndex === i ? "" : "hidden"}`}>
                                         {faq.a}
-                                    </div>
-                                </motion.div>
-                            )}
-                        </AnimatePresence>
+                        </div>
                     </div>
                 ))}
             </div>

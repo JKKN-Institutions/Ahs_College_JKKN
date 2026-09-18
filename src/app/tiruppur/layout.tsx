@@ -171,79 +171,12 @@ const faqSchema = {
   ],
 };
 
+// The college is declared once, in src/app/layout.tsx. A city page adds one fact.
 const educationalOrgSchema = {
   "@context": "https://schema.org",
-  "@type": "EducationalOrganization",
+  "@type": "CollegeOrUniversity",
   "@id": "https://ahs.jkkn.ac.in/#organization",
-  name: "JKKN College of Allied Health Sciences",
-  alternateName: "JKKN AHS",
-  url: "https://ahs.jkkn.ac.in/",
-  logo: "https://ahs.jkkn.ac.in/ahs-logo.svg",
-  image: "https://ahs.jkkn.ac.in/allied-health-science-hero.webp",
-  foundingDate: "1952",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "Natarajapuram, NH-544 (Salem–Coimbatore Highway)",
-    addressLocality: "Komarapalayam",
-    addressRegion: "Tamil Nadu",
-    postalCode: "638183",
-    addressCountry: "IN",
-  },
-  geo: {
-    "@type": "GeoCoordinates",
-    latitude: 11.4467,
-    longitude: 77.7046,
-  },
-  telephone: "+919345855001",
-  email: "info@jkkn.ac.in",
-  sameAs: [AHS_MAPS_URL],
-  areaServed: {
-    "@type": "City",
-    name: "Tiruppur",
-  },
-  parentOrganization: {
-    "@type": "Organization",
-    name: "JKKN Institutions",
-    url: "https://jkkn.ac.in/",
-  },
-  hasCredential: {
-    "@type": "EducationalOccupationalCredential",
-    credentialCategory: "Accreditation",
-    recognizedBy: {
-      "@type": "Organization",
-      name: "NAAC",
-    },
-  },
-  department: [
-    { "@type": "EducationalOrganization", name: "B.Sc Cardiac Technology", url: "https://ahs.jkkn.ac.in/cardiac-technology" },
-    { "@type": "EducationalOrganization", name: "B.Sc Dialysis Technology", url: "https://ahs.jkkn.ac.in/dialysis-technology" },
-    { "@type": "EducationalOrganization", name: "B.Sc Radiology & Imaging Technology", url: "https://ahs.jkkn.ac.in/radiology-imaging-technology" },
-    { "@type": "EducationalOrganization", name: "B.Sc Operation Theatre & Anaesthesia Technology", url: "https://ahs.jkkn.ac.in/operation-theatre-anaesthesia" },
-    { "@type": "EducationalOrganization", name: "B.Sc Respiratory Therapy", url: "https://ahs.jkkn.ac.in/respiratory-therapy" },
-    { "@type": "EducationalOrganization", name: "B.Sc Physician Assistant", url: "https://ahs.jkkn.ac.in/physician-assistant" },
-    { "@type": "EducationalOrganization", name: "B.Sc Critical Care Technology", url: "https://ahs.jkkn.ac.in/critical-care-technology" },
-    { "@type": "EducationalOrganization", name: "B.Sc Medical Record Science", url: "https://ahs.jkkn.ac.in/medical-record-science" },
-    { "@type": "EducationalOrganization", name: "B.Sc Accident & Emergency Care Technology", url: "https://ahs.jkkn.ac.in/accident-emergency-care" },
-  ],
-};
-
-const courseListSchema = {
-  "@context": "https://schema.org",
-  "@type": "ItemList",
-  name: "Allied Health Science Courses at JKKN AHS",
-  description: "9 BSc Allied Health Science programmes offered at JKKN College of Allied Health Sciences, accessible from Tiruppur",
-  numberOfItems: 9,
-  itemListElement: [
-    { "@type": "ListItem", position: 1, item: { "@type": "Course", name: "B.Sc Cardiac Technology", description: "Specialised programme in cardiovascular diagnostics — ECG, echocardiography, cardiac catheterisation, and pacemaker technology.", provider: { "@type": "CollegeOrUniversity", "@id": "https://ahs.jkkn.ac.in/#organization", name: "JKKN College of Allied Health Sciences" }, url: "https://ahs.jkkn.ac.in/cardiac-technology", timeRequired: "P4Y", educationalCredentialAwarded: "B.Sc Cardiac Technology" } },
-    { "@type": "ListItem", position: 2, item: { "@type": "Course", name: "B.Sc Dialysis Technology", description: "Programme covering haemodialysis, peritoneal dialysis, and renal care with hands-on clinical training.", provider: { "@type": "CollegeOrUniversity", "@id": "https://ahs.jkkn.ac.in/#organization", name: "JKKN College of Allied Health Sciences" }, url: "https://ahs.jkkn.ac.in/dialysis-technology", timeRequired: "P3Y", educationalCredentialAwarded: "B.Sc Dialysis Technology" } },
-    { "@type": "ListItem", position: 3, item: { "@type": "Course", name: "B.Sc Radiology & Imaging Technology", description: "Training in X-ray, CT scan, MRI, and ultrasound imaging with clinical rotations.", provider: { "@type": "CollegeOrUniversity", "@id": "https://ahs.jkkn.ac.in/#organization", name: "JKKN College of Allied Health Sciences" }, url: "https://ahs.jkkn.ac.in/radiology-imaging-technology", timeRequired: "P3Y", educationalCredentialAwarded: "B.Sc Radiology & Imaging Technology" } },
-    { "@type": "ListItem", position: 4, item: { "@type": "Course", name: "B.Sc Operation Theatre & Anaesthesia Technology", description: "Programme in surgical suite management, anaesthesia equipment handling, and patient monitoring.", provider: { "@type": "CollegeOrUniversity", "@id": "https://ahs.jkkn.ac.in/#organization", name: "JKKN College of Allied Health Sciences" }, url: "https://ahs.jkkn.ac.in/operation-theatre-anaesthesia", timeRequired: "P3Y", educationalCredentialAwarded: "B.Sc OT & Anaesthesia Technology" } },
-    { "@type": "ListItem", position: 5, item: { "@type": "Course", name: "B.Sc Respiratory Therapy", description: "Specialisation in ventilator management, pulmonary function testing, and respiratory rehabilitation.", provider: { "@type": "CollegeOrUniversity", "@id": "https://ahs.jkkn.ac.in/#organization", name: "JKKN College of Allied Health Sciences" }, url: "https://ahs.jkkn.ac.in/respiratory-therapy", timeRequired: "P3Y", educationalCredentialAwarded: "B.Sc Respiratory Therapy" } },
-    { "@type": "ListItem", position: 6, item: { "@type": "Course", name: "B.Sc Physician Assistant", description: "Training in clinical diagnosis, patient assessment, and medical management under physician supervision.", provider: { "@type": "CollegeOrUniversity", "@id": "https://ahs.jkkn.ac.in/#organization", name: "JKKN College of Allied Health Sciences" }, url: "https://ahs.jkkn.ac.in/physician-assistant", timeRequired: "P3Y", educationalCredentialAwarded: "B.Sc Physician Assistant" } },
-    { "@type": "ListItem", position: 7, item: { "@type": "Course", name: "B.Sc Critical Care Technology", description: "Programme covering ICU monitoring, life support systems, and critical patient management.", provider: { "@type": "CollegeOrUniversity", "@id": "https://ahs.jkkn.ac.in/#organization", name: "JKKN College of Allied Health Sciences" }, url: "https://ahs.jkkn.ac.in/critical-care-technology", timeRequired: "P3Y", educationalCredentialAwarded: "B.Sc Critical Care Technology" } },
-    { "@type": "ListItem", position: 8, item: { "@type": "Course", name: "B.Sc Medical Record Science", description: "Programme in health informatics, medical coding, hospital data management, and health information systems.", provider: { "@type": "CollegeOrUniversity", "@id": "https://ahs.jkkn.ac.in/#organization", name: "JKKN College of Allied Health Sciences" }, url: "https://ahs.jkkn.ac.in/medical-record-science", timeRequired: "P3Y", educationalCredentialAwarded: "B.Sc Medical Record Science" } },
-    { "@type": "ListItem", position: 9, item: { "@type": "Course", name: "B.Sc Accident & Emergency Care Technology", description: "Training in trauma care, emergency response, triage, and pre-hospital emergency medical services.", provider: { "@type": "CollegeOrUniversity", "@id": "https://ahs.jkkn.ac.in/#organization", name: "JKKN College of Allied Health Sciences" }, url: "https://ahs.jkkn.ac.in/accident-emergency-care", timeRequired: "P3Y", educationalCredentialAwarded: "B.Sc Accident & Emergency Care Technology" } },
-  ],
+  areaServed: { "@type": "City", name: "Tiruppur" },
 };
 
 const howToSchema = {
@@ -291,10 +224,6 @@ export default function TiruppurLayout({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(educationalOrgSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(courseListSchema) }}
       />
       <script
         type="application/ld+json"

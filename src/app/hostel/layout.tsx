@@ -51,7 +51,7 @@ const facilitySchema = {
   },
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "NH-544, Natarajapuram",
+    "streetAddress": "NH-544 (Salem to Coimbatore National Highway), Natarajapuram",
     "addressLocality": "Komarapalayam",
     "addressRegion": "Tamil Nadu",
     "postalCode": "638183",
@@ -68,7 +68,7 @@ const faqSchema = {
     { "@type": "Question", "name": "What amenities are included in the JKKN hostel?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN hostels include furnished rooms, attached bathrooms, high-speed WiFi, study areas, gymnasium, and recreational facilities for learners." } },
     { "@type": "Question", "name": "Is the JKKN hostel located within the campus?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, both boys and girls hostels are situated within the JKKN campus at Natarajapuram, Komarapalayam, ensuring convenient access to classes." } },
     { "@type": "Question", "name": "What food facilities are available for hostel learners at JKKN?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN hostels have an in-campus mess providing nutritious vegetarian and non-vegetarian meals three times daily with snacks." } },
-    { "@type": "Question", "name": "What is the hostel fee at JKKN College?", "acceptedAnswer": { "@type": "Answer", "text": "Hostel fees vary by room type. Contact JKKN admissions at 9345855001 for current hostel fee details and room availability." } }
+    { "@type": "Question", "name": "What is the hostel fee at JKKN College?", "acceptedAnswer": { "@type": "Answer", "text": "Hostel fees for Allied Health Sciences (AHS) learners: Girls \u2014 Classic Mess \u20b965,000/yr, Premium Mess \u20b980,000/yr, AC Room \u20b930,000/yr. Boys \u2014 Classic Mess \u20b965,000/yr, Premium Mess \u20b980,000/yr (AC Room not available for boys). Separate hostel facilities for Boys and Girls with 24/7 security, mess, laundry, gym, sports, WiFi, hospital & 24/7 ambulance support, and study areas." } }
   ]
 };
 

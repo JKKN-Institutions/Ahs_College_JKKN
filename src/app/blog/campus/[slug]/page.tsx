@@ -187,11 +187,7 @@ export default async function CampusBlogPost({
       name: 'JKKN Editorial Team',
       url: siteUrl,
     },
-    publisher: {
-      '@type': 'Organization',
-      name: 'JKKN College of Allied Health Sciences',
-      url: siteUrl,
-    },
+    publisher: { "@id": "https://ahs.jkkn.ac.in/#organization" },
     mainEntityOfPage: {
       '@type': 'WebPage',
       '@id': postUrl,

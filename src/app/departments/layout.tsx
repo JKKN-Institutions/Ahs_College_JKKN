@@ -39,6 +39,7 @@ const breadcrumbSchema = {
 const itemListSchema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
+  "@id": "https://ahs.jkkn.ac.in/#b-sc-allied-health-science-departments-at-jkkn",
   "name": "B.Sc Allied Health Science Departments at JKKN",
   "description": "Nine specialized B.Sc Allied Health Science departments offered at JKKN College of Allied Health Sciences, Komarapalayam, Tamil Nadu.",
   "url": "https://ahs.jkkn.ac.in/departments",

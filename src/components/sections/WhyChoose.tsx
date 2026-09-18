@@ -24,7 +24,7 @@ const reasons = [
     },
     {
         title: "Placement Support",
-        description: "100+ recruiters including Apollo, MIOT, Fortis, Kauvery, SRL, Thyrocare, and Dr. Lal PathLabs. Salary packages range from ₹3.2 to ₹7.5 LPA with international opportunities in the UK (NHS), UAE, Saudi Arabia, and Australia through our dedicated placement cell.",
+        description: "Recruiters include Apollo, MIOT, Fortis, Kauvery, SRL, Thyrocare, and Dr. Lal PathLabs, with opportunities abroad in the UK (NHS), UAE, Saudi Arabia and Australia through our dedicated placement cell. No salary range is published, because none is audited.",
         icon: <Briefcase className="w-10 h-10" />,
     },
     {

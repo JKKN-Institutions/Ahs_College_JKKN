@@ -763,56 +763,56 @@ const COURSE_LIST = [
     description:
       "Programme covering haemodialysis, peritoneal dialysis, and renal care with hands-on clinical training.",
     url: `${SITE_URL}/dialysis-technology`,
-    timeRequired: "P3Y",
+    timeRequired: "P4Y",
   },
   {
     name: "B.Sc Radiology & Imaging Technology",
     description:
       "Training in X-ray, CT scan, MRI, and ultrasound imaging with clinical rotations at JKKN Hospital.",
     url: `${SITE_URL}/radiology-imaging-technology`,
-    timeRequired: "P3Y",
+    timeRequired: "P4Y",
   },
   {
     name: "B.Sc Operation Theatre & Anaesthesia Technology",
     description:
       "Programme in surgical suite management, anaesthesia equipment handling, and patient monitoring during surgery.",
     url: `${SITE_URL}/operation-theatre-anaesthesia`,
-    timeRequired: "P3Y",
+    timeRequired: "P4Y",
   },
   {
     name: "B.Sc Respiratory Therapy",
     description:
       "Specialisation in ventilator management, pulmonary function testing, and respiratory rehabilitation.",
     url: `${SITE_URL}/respiratory-therapy`,
-    timeRequired: "P3Y",
+    timeRequired: "P4Y",
   },
   {
     name: "B.Sc Physician Assistant",
     description:
       "Training in clinical diagnosis, patient assessment, and medical management under physician supervision.",
     url: `${SITE_URL}/physician-assistant`,
-    timeRequired: "P3Y",
+    timeRequired: "P4Y",
   },
   {
     name: "B.Sc Critical Care Technology",
     description:
       "Programme covering ICU monitoring, life support systems, and critical patient management.",
     url: `${SITE_URL}/critical-care-technology`,
-    timeRequired: "P3Y",
+    timeRequired: "P4Y",
   },
   {
     name: "B.Sc Medical Record Science",
     description:
       "Programme in health informatics, medical coding, hospital data management, and health information systems.",
     url: `${SITE_URL}/medical-record-science`,
-    timeRequired: "P3Y",
+    timeRequired: "P4Y",
   },
   {
     name: "B.Sc Accident & Emergency Care Technology",
     description:
       "Training in trauma care, emergency response, triage, and pre-hospital emergency medical services.",
     url: `${SITE_URL}/accident-emergency-care`,
-    timeRequired: "P3Y",
+    timeRequired: "P4Y",
   },
 ];
 
@@ -840,72 +840,17 @@ export function buildCitySchemas(city: CityPage): object[] {
     })),
   };
 
+    // The college is declared once, in src/app/layout.tsx. Re-declaring the whole node here
+  // shipped a second CollegeOrUniversity block on every city page and 9 more department
+  // Organizations with it. A city page only adds one fact: the area this campus serves.
   const educationalOrgSchema = {
     "@context": "https://schema.org",
-    "@type": "EducationalOrganization",
+    "@type": "CollegeOrUniversity",
     "@id": `${SITE_URL}/#organization`,
-    name: "JKKN College of Allied Health Sciences",
-    alternateName: "JKKN AHS",
-    url: `${SITE_URL}/`,
-    logo: `${SITE_URL}/ahs-logo.svg`,
-    image: `${SITE_URL}/allied-health-science-hero.webp`,
-    foundingDate: "1952",
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: "Natarajapuram, NH-544 (Salem–Coimbatore Highway)",
-      addressLocality: "Komarapalayam",
-      addressRegion: "Tamil Nadu",
-      postalCode: "638183",
-      addressCountry: "IN",
-    },
-    geo: { "@type": "GeoCoordinates", latitude: 11.4467, longitude: 77.7046 },
-    telephone: "+919345855001",
-    email: "info@jkkn.ac.in",
-    sameAs: [AHS_MAPS_URL],
     areaServed: { "@type": "City", name: cityName },
-    parentOrganization: {
-      "@type": "Organization",
-      name: "JKKN Institutions",
-      url: "https://jkkn.ac.in/",
-    },
-    hasCredential: {
-      "@type": "EducationalOccupationalCredential",
-      credentialCategory: "Accreditation",
-      recognizedBy: { "@type": "Organization", name: "NAAC" },
-    },
-    department: COURSE_LIST.map((c) => ({
-      "@type": "EducationalOrganization",
-      name: c.name,
-      url: c.url,
-    })),
   };
 
-  const courseListSchema = {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    name: "Allied Health Science Courses at JKKN AHS",
-    description: `9 BSc Allied Health Science programmes offered at JKKN College of Allied Health Sciences, accessible from ${cityName}`,
-    numberOfItems: 9,
-    itemListElement: COURSE_LIST.map((c, i) => ({
-      "@type": "ListItem",
-      position: i + 1,
-      item: {
-        "@type": "Course",
-        name: c.name,
-        description: c.description,
-        provider: {
-          "@type": "CollegeOrUniversity",
-          "@id": `${SITE_URL}/#organization`,
-          name: "JKKN College of Allied Health Sciences",
-        },
-        url: c.url,
-        timeRequired: c.timeRequired,
-        educationalCredentialAwarded: c.name,
-      },
-    })),
-  };
-
-  const howToSchema = {
+    const howToSchema = {
     "@context": "https://schema.org",
     "@type": "HowTo",
     name: "How to Apply for Allied Health Science Admission at JKKN AHS",
@@ -936,7 +881,6 @@ export function buildCitySchemas(city: CityPage): object[] {
     breadcrumbSchema,
     faqSchema,
     educationalOrgSchema,
-    courseListSchema,
     howToSchema,
     speakableSchema,
   ];

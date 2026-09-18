@@ -59,11 +59,7 @@ export default async function CourseAdmissionPage(
         name: course.name,
         description: course.longDescription,
         url,
-        provider: {
-            "@type": "CollegeOrUniversity",
-            name: "JKKN College of Allied Health Sciences",
-            sameAs: "https://ahs.jkkn.ac.in/",
-        },
+        provider: { "@id": "https://ahs.jkkn.ac.in/#organization" },
         educationalCredentialAwarded: {
             "@type": "EducationalOccupationalCredential",
             credentialCategory: "Bachelor's Degree",
@@ -85,7 +81,7 @@ export default async function CourseAdmissionPage(
                 name: "JKKN College of Allied Health Sciences",
                 address: {
                     "@type": "PostalAddress",
-                    streetAddress: "NH-544, Komarapalayam",
+                    streetAddress: "NH-544 (Salem to Coimbatore National Highway), Natarajapuram",
                     addressLocality: "Komarapalayam",
                     addressRegion: "Tamil Nadu",
                     postalCode: "638183",
@@ -110,11 +106,7 @@ export default async function CourseAdmissionPage(
         description: course.longDescription,
         url,
         programType: "Bachelor's Degree",
-        provider: {
-            "@type": "CollegeOrUniversity",
-            name: "JKKN College of Allied Health Sciences",
-            sameAs: "https://ahs.jkkn.ac.in/",
-        },
+        provider: { "@id": "https://ahs.jkkn.ac.in/#organization" },
         timeToComplete: course.durationISO,
         educationalCredentialAwarded: course.name,
         numberOfCredits: 160,

@@ -1,5 +1,5 @@
 import { createPageMetadata } from "@/lib/metadata";
-import { AHS_MAPS_URL } from "@/lib/entity-profiles";
+import { COURSE_FAQS } from "@/lib/course-faqs";
 
 export const metadata = createPageMetadata({
   title: "BSc Medical Record Science Course Details | JKKN",
@@ -23,12 +23,9 @@ const courseSchema = {
   "name": "B.Sc Medical Record Science",
   "description": "Undergraduate program training healthcare professionals in health information management, medical coding, disease classification systems (ICD-10, CPT), healthcare data analytics, electronic health records, and hospital information systems.",
   "url": "https://ahs.jkkn.ac.in/medical-record-science",
-  "provider": {
-    "@type": "CollegeOrUniversity",
-    "name": "JKKN College of Allied Health Sciences",
-    "url": "https://ahs.jkkn.ac.in/",
-    "sameAs": AHS_MAPS_URL
-  },
+  // Link, do not re-declare: a fresh anonymous Organization on every Course is a new entity
+  // to Google, so the courses never attached to the college node.
+  "provider": { "@id": "https://ahs.jkkn.ac.in/#organization" },
   "educationalLevel": "Undergraduate",
   "educationalCredentialAwarded": "Bachelor of Science (B.Sc)",
   "timeRequired": "P4Y",
@@ -105,72 +102,11 @@ const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "dateModified": "2026-03-19",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is Bachelor of Science Medical Record Science at JKKN College Tamil Nadu?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Bachelor of Science Medical Record Science at JKKN College Tamil Nadu is a four-year degree training professionals in Health Information Management, medical coding, International Classification of Diseases, and hospital information systems."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the eligibility to join Bachelor of Science Medical Record Science at JKKN College Tamil Nadu?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Candidates need 10+2 with Physics, Chemistry, and Biology, minimum 50% marks. Scheduled Caste and Scheduled Tribe learners need 40%, Other Backward Classes learners need 45%. Minimum age is 17 years."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What salary can I earn after Bachelor of Science Medical Record Science at JKKN College Tamil Nadu?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Entry-level Medical Record Science professionals earn 2.5 to 4 lakhs per year. Experienced Health Information Management specialists earn 5 to 12 lakhs. Senior roles in corporate hospitals pay up to 20 lakhs annually."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What career opportunities are available after Bachelor of Science Medical Record Science at JKKN College Tamil Nadu?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Graduates work as Medical Record Technicians, Health Information Managers, Medical Coders, Clinical Data Analysts, and Healthcare Information Technology Specialists in hospitals, insurance companies, and pharmaceutical firms."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is medical coding using International Classification of Diseases taught in Bachelor of Science Medical Record Science at JKKN College Tamil Nadu?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, International Classification of Diseases coding and Electronic Medical Records are core components. Learners learn disease classification, procedural coding, and hands-on practice with real medical records and coding software."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I work abroad after completing Bachelor of Science Medical Record Science at JKKN College Tamil Nadu?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, Health Information Management professionals are globally in demand. USA, UK, Canada, Australia, and Gulf nations hire trained medical coders. Additional international certifications further increase overseas job opportunities."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I pursue Master of Science after Bachelor of Science Medical Record Science at JKKN College Tamil Nadu?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, graduates can pursue Master of Science in Medical Record Science or Health Informatics, or an MBA in Healthcare Management. Professional certifications in coding specialization are also available for career advancement."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What practical training is included in Bachelor of Science Medical Record Science at JKKN College Tamil Nadu?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The program includes over 2000 hours of practical training in medical record departments, coding laboratories, Electronic Medical Records systems, and hospital internships with hands-on Health Information Management experience."
-      }
-    }
-  ]
+  "mainEntity": COURSE_FAQS["medical-record-science"].map((f) => ({
+    "@type": "Question",
+    "name": f.q,
+    "acceptedAnswer": { "@type": "Answer", "text": f.a },
+  })),
 };
 
 export default function MedicalRecordScienceLayout({

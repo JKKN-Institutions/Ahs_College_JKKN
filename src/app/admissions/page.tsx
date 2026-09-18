@@ -1,11 +1,11 @@
 "use client";
 
 import React, { useState } from 'react';
+import { nodeText } from "@/lib/node-text";
 import Link from 'next/link';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { Breadcrumb } from '@/components/Breadcrumb';
-import { generateBreadcrumbSchema } from '@/lib/breadcrumb-schema';
 import { motion, AnimatePresence } from 'framer-motion';
 import { siteConfig } from '@/lib/site-config';
 import {
@@ -17,15 +17,150 @@ import {
     Stethoscope, ChevronRight
 } from 'lucide-react';
 
+// These four describe THIS page. They lived in layout.tsx, which also wraps
+// /admissions/<course>, so every child page carried this page's breadcrumb, its HowTo,
+// its WebPage node and a FAQPage of ten questions it never rendered.
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "JKKN Institutions", "item": "https://jkkn.ac.in/" },
+    { "@type": "ListItem", "position": 2, "name": "Allied Health Sciences", "item": "https://ahs.jkkn.ac.in/" },
+    { "@type": "ListItem", "position": 3, "name": "Admission 2026-27", "item": "https://ahs.jkkn.ac.in/admissions" }
+  ]
+};
+
+const howToSchema = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to Apply for BSc Allied Health Sciences at JKKN College Tamil Nadu",
+  "description": "Step-by-step guide to apply for BSc Allied Health Sciences admission 2026-27 at JKKN College, Komarapalayam, Tamil Nadu.",
+  "totalTime": "PT30M",
+  "estimatedCost": {
+    "@type": "MonetaryAmount",
+    "currency": "INR",
+    "value": "60000"
+  },
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "Check Eligibility",
+      "text": "Verify you have completed Plus Two with Physics, Chemistry, and Biology with minimum 50 percent marks. SC/ST candidates need 40 percent and OBC candidates need 45 percent.",
+      "url": "https://ahs.jkkn.ac.in/admissions#eligibility"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "Choose Your Program",
+      "text": "Select from 9 BSc Allied Health Sciences programs including Cardiac Technology, Dialysis Technology, Radiology, Operation Theatre, Respiratory Therapy, Physician Assistant, Critical Care, Medical Record Science, and Accident Emergency Care.",
+      "url": "https://ahs.jkkn.ac.in/admissions#programs"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "Apply Online",
+      "text": "Complete the online application form at https://www.jkkn.ai/apply/jkkn-admission-2026 with personal details, academic records, and program preference.",
+      "url": "https://www.jkkn.ai/apply/jkkn-admission-2026"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 4,
+      "name": "Upload Documents",
+      "text": "Upload scanned copies of 10th and 12th marksheets, transfer certificate, community certificate, passport photos, and Aadhaar card.",
+      "url": "https://ahs.jkkn.ac.in/admissions#documents"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 5,
+      "name": "Attend Counseling",
+      "text": "Attend the admission counseling session where original documents are verified and seat is allotted based on merit.",
+      "url": "https://ahs.jkkn.ac.in/admissions#process"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 6,
+      "name": "Complete Fee Payment",
+      "text": "Government Quota (GQ) fees are as per government norms. Management Quota (MQ) annual fees range from 60000 to 170000 rupees per year depending on the program. Installment options and scholarship assistance are available.",
+      "url": "https://ahs.jkkn.ac.in/admissions#programs"
+    }
+  ]
+};
+
+const ADMISSION_FAQS: { q: string; a: React.ReactNode }[] = [
+        {
+            q: "What are the eligibility criteria for BSc Allied Health Sciences at JKKN?",
+            a: "Candidates must have completed +2 with Physics, Chemistry, and Biology (PCB) with minimum 50% marks for General category, 45% for OBC, and 40% for SC/ST. Age should be 17 years or above as on 31st December 2026. English must be a compulsory subject."
+        },
+        {
+            q: "Is NEET required for Allied Health Sciences admission?",
+            a: "No, NEET is not mandatory for BSc Allied Health Sciences admission at JKKN College. Admission is purely merit-based through +2 marks and counseling. This is an excellent pathway for learners interested in healthcare without NEET."
+        },
+        {
+            q: "What is the fee range for BSc AHS programs?",
+            a: "Government Quota (GQ) fees are as per Govt norms. Management Quota (MQ) annual fees range from ₹60,000 (Medical Record Science) to ₹1,70,000 (Cardiac & Operation Theatre Technology) depending on the specialization. Fee payment can be made in installments. Government scholarships and JKKN merit scholarships are available to reduce the financial burden."
+        },
+        {
+            q: "How many programs does JKKN AHS College offer?",
+            a: "JKKN offers 9 BSc Allied Health Sciences programs: Cardiac Technology, Dialysis Technology, Radiology & Imaging Technology, Operation Theatre & Anaesthesia, Respiratory Therapy, Physician Assistant, Critical Care Technology, Medical Record Science, and Accident & Emergency Care Technology."
+        },
+        {
+            q: "What is the course duration for BSc Allied Health Sciences?",
+            a: "All BSc Allied Health Sciences programs are 4-year courses — 3 years of academic study followed by 1 year of mandatory clinical internship at partnered hospitals. The degree is awarded by TN Dr. MGR Medical University."
+        },
+        {
+            q: "What documents are needed for admission?",
+            a: "You need 10th and 12th marksheets, transfer certificate, community certificate, income certificate, 6 passport-size photos, Aadhaar card, medical fitness certificate, conduct certificate, and migration certificate (if from another state/university)."
+        },
+        {
+            q: "Are scholarships available for AHS Learners?",
+            a: "Yes, the following scholarships are available for AHS Learners: (1) Trust Scholarship (Merit Based) — ₹5,000–₹10,000/year for BC/MBC/DNC/BCM category Learners. (2) Naan Mudhalvan Scholarship — ₹1,000/month for learners who studied in Tamil Medium Government or Government-Aided Schools (Class 6–12). Installment payment options and education loan assistance are also available."
+        },
+        {
+            q: "What is the placement record at JKKN AHS?",
+            a: <>JKKN has a dedicated placement cell; no average package is published, because none is audited. Graduates are placed in leading hospitals like Apollo, Fortis, MIOT, and international healthcare facilities in UK, UAE, Saudi Arabia, and Singapore. <Link href="/placements" className="text-[#0b6d41] font-semibold hover:underline">View full placement record</Link>.</>
+        },
+        {
+            q: "Can NRI learners apply for admission?",
+            a: "Yes, NRI candidates are eligible for BSc Allied Health Sciences programs. They need to have completed equivalent qualification with PCB subjects. Additional documents like passport copy and NRI certificate may be required."
+        },
+        {
+            q: "How do I apply for JKKN AHS admission 2026-27?",
+            a: "You can apply online at https://www.jkkn.ai/apply/jkkn-admission-2026 or visit the campus at Komarapalayam, Namakkal, Tamil Nadu 638183. For admission enquiries, call 93458 55001 or email ahsincharge@jkkn.ac.in."
+        },
+    ];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  // Derived from ADMISSION_FAQS, the array the accordion renders. These were two
+  // separate arrays and nine of the ten declared answers were absent from the page.
+  "mainEntity": ADMISSION_FAQS.map((f) => ({
+    "@type": "Question",
+    "name": f.q,
+    "acceptedAnswer": { "@type": "Answer", "text": nodeText(f.a) },
+  })),
+};
+
+const speakableSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Admission 2026-27 | JKKN Allied Health Sciences College Tamil Nadu",
+  "url": "https://ahs.jkkn.ac.in/admissions",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [".faq-answer", "h1", "h2"]
+  }
+};
+
 export default function AdmissionPage() {
-    const breadcrumbSchema = generateBreadcrumbSchema([
-        { name: "Home", url: "https://ahs.jkkn.ac.in/" },
-        { name: "Admission", url: "https://ahs.jkkn.ac.in/admissions" }
-    ]);
 
     return (
         <div className="min-h-screen flex flex-col bg-[#fbfbee]">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
             <Navbar />
 
             <main className="flex-grow pt-16">
@@ -547,7 +682,7 @@ function WhyChooseSection() {
     const usps = [
         { title: "70+ Year Legacy", desc: "Part of JKKN Educational Institutions with over 70 years of excellence in education across 10 institutions.", icon: <Award className="w-6 h-6" /> },
         { title: "500+ Bed Hospital", desc: "Clinical training at our multi-specialty teaching hospital with real patient exposure from Year 1.", icon: <Hospital className="w-6 h-6" /> },
-        { title: "Placement Support", desc: "Strong placement track record with 100+ recruiters including Apollo, Fortis, MIOT, and international hospitals.", icon: <TrendingUp className="w-6 h-6" /> },
+        { title: "Placement Support", desc: "Dedicated placement cell working with hospitals including Apollo, Fortis and MIOT, and with employers abroad.", icon: <TrendingUp className="w-6 h-6" /> },
         { title: "Global Opportunities", desc: "International placement pathways to UK (NHS), Saudi Arabia, UAE (Cleveland Clinic), and Singapore.", icon: <Globe className="w-6 h-6" /> },
         { title: "NAAC A Accredited", desc: "Recognized for academic excellence and quality infrastructure by the National Assessment and Accreditation Council.", icon: <Sparkles className="w-6 h-6" /> },
         { title: "Clinical Exposure", desc: "2000+ hours of hands-on clinical training across partnered hospitals with expert supervision.", icon: <Stethoscope className="w-6 h-6" /> },
@@ -588,49 +723,7 @@ function WhyChooseSection() {
 function FAQSection() {
     const [openIndex, setOpenIndex] = useState<number | null>(0);
 
-    const faqs: { q: string; a: React.ReactNode }[] = [
-        {
-            q: "What are the eligibility criteria for BSc Allied Health Sciences at JKKN?",
-            a: "Candidates must have completed +2 with Physics, Chemistry, and Biology (PCB) with minimum 50% marks for General category, 45% for OBC, and 40% for SC/ST. Age should be 17 years or above as on 31st December 2026. English must be a compulsory subject."
-        },
-        {
-            q: "Is NEET required for Allied Health Sciences admission?",
-            a: "No, NEET is not mandatory for BSc Allied Health Sciences admission at JKKN College. Admission is purely merit-based through +2 marks and counseling. This is an excellent pathway for learners interested in healthcare without NEET."
-        },
-        {
-            q: "What is the fee range for BSc AHS programs?",
-            a: "Government Quota (GQ) fees are as per Govt norms. Management Quota (MQ) annual fees range from ₹60,000 (Medical Record Science) to ₹1,70,000 (Cardiac & Operation Theatre Technology) depending on the specialization. Fee payment can be made in installments. Government scholarships and JKKN merit scholarships are available to reduce the financial burden."
-        },
-        {
-            q: "How many programs does JKKN AHS College offer?",
-            a: "JKKN offers 9 BSc Allied Health Sciences programs: Cardiac Technology, Dialysis Technology, Radiology & Imaging Technology, Operation Theatre & Anaesthesia, Respiratory Therapy, Physician Assistant, Critical Care Technology, Medical Record Science, and Accident & Emergency Care Technology."
-        },
-        {
-            q: "What is the course duration for BSc Allied Health Sciences?",
-            a: "All BSc Allied Health Sciences programs are 4-year courses — 3 years of academic study followed by 1 year of mandatory clinical internship at partnered hospitals. The degree is awarded by TN Dr. MGR Medical University."
-        },
-        {
-            q: "What documents are needed for admission?",
-            a: "You need 10th and 12th marksheets, transfer certificate, community certificate, income certificate, 6 passport-size photos, Aadhaar card, medical fitness certificate, conduct certificate, and migration certificate (if from another state/university)."
-        },
-        {
-            q: "Are scholarships available for AHS Learners?",
-            a: "Yes, the following scholarships are available for AHS Learners: (1) Trust Scholarship (Merit Based) — ₹5,000–₹10,000/year for BC/MBC/DNC/BCM category Learners. (2) Naan Mudhalvan Scholarship — ₹1,000/month for learners who studied in Tamil Medium Government or Government-Aided Schools (Class 6–12). Installment payment options and education loan assistance are also available."
-        },
-        {
-            q: "What is the placement record at JKKN AHS?",
-            a: <>JKKN has placement support with an average package of ₹3.2 LPA. Graduates are placed in leading hospitals like Apollo, Fortis, MIOT, and international healthcare facilities in UK, UAE, Saudi Arabia, and Singapore. <Link href="/placements" className="text-[#0b6d41] font-semibold hover:underline">View full placement record</Link>.</>
-        },
-        {
-            q: "Can NRI learners apply for admission?",
-            a: "Yes, NRI candidates are eligible for BSc Allied Health Sciences programs. They need to have completed equivalent qualification with PCB subjects. Additional documents like passport copy and NRI certificate may be required."
-        },
-        {
-            q: "How do I apply for JKKN AHS admission 2026-27?",
-            a: "You can apply online at https://www.jkkn.ai/apply/jkkn-admission-2026 or visit the campus at Komarapalayam, Namakkal, Tamil Nadu 638183. For admission enquiries, call 93458 55001 or email ahsincharge@jkkn.ac.in."
-        },
-    ];
-
+        const faqs = ADMISSION_FAQS;
     return (
         <section className="py-16 md:py-20 bg-[#fbfbee]">
             <div className="max-w-3xl mx-auto px-4">
@@ -652,20 +745,9 @@ function FAQSection() {
                                     {openIndex === i ? <Minus className="w-5 h-5 text-[#ffde59] shrink-0" /> : <Plus className="w-5 h-5 text-gray-400 shrink-0" />}
                                 </button>
                             </h3>
-                            <AnimatePresence>
-                                {openIndex === i && (
-                                    <motion.div
-                                        initial={{ height: 0 }}
-                                        animate={{ height: "auto" }}
-                                        exit={{ height: 0 }}
-                                        className="overflow-hidden"
-                                    >
-                                        <div className="faq-answer p-5 pt-0 text-gray-600 text-sm leading-relaxed">
+                            <div className={`faq-answer p-5 pt-0 text-gray-600 text-sm leading-relaxed ${openIndex === i ? "" : "hidden"}`}>
                                             {faq.a}
-                                        </div>
-                                    </motion.div>
-                                )}
-                            </AnimatePresence>
+                            </div>
                         </div>
                     ))}
                 </div>

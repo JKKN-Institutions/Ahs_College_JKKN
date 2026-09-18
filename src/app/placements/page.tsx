@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
+import { PLACEMENT_FAQS } from "@/lib/placement-faqs";
 import Link from 'next/link';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
@@ -64,57 +65,6 @@ const testimonials = [
         initials: "MF",
         content: "JKKN prepared me for an international healthcare career. After completing my Respiratory Therapy degree, I secured a position with the NHS in the United Kingdom.",
         rating: 5
-    }
-];
-
-const placementFaqs = [
-    {
-        question: "What is the placement rate at JKKN AHS?",
-        answer: "Batch-wise placement figures are maintained by the placement cell; contact the admissions office for the latest data. Graduates have been placed in leading hospitals like Apollo, MIOT, Fortis, Manipal, Kauvery, and Columbia Asia, as well as international placements in the UK, UAE, Saudi Arabia, and Singapore."
-    },
-    {
-        question: "What is the average salary after B.Sc. Allied Health Sciences?",
-        answer: "The average salary after B.Sc. Allied Health Sciences from JKKN is ₹3.2 lakh per annum for domestic placements. Salaries vary by specialization — Cardiac Technology and Radiology graduates typically earn higher starting packages. International placements offer significantly higher packages, starting from ₹15 lakh per annum."
-    },
-    {
-        question: "Which hospitals recruit from JKKN AHS?",
-        answer: "Over 100 hospitals and healthcare organizations recruit from JKKN AHS. Top recruiters include Apollo Hospitals, MIOT International, Fortis Healthcare, Manipal Hospitals, Kauvery Hospital, Columbia Asia, Narayana Health, GEM Hospital, SRL Diagnostics, Thyrocare, and Dr. Lal PathLabs. International recruiters include NHS UK and hospitals in UAE, Saudi Arabia, and Singapore."
-    },
-    {
-        question: "Can I work abroad after B.Sc. AHS from JKKN?",
-        answer: "Yes, JKKN actively supports international placements. Graduates have been placed in NHS hospitals (UK), Cleveland Clinic Abu Dhabi and NMC Healthcare (UAE), King Fahad and Saudi German hospitals (Saudi Arabia), and Tan Tock Seng and Raffles Medical (Singapore). JKKN provides IELTS preparation, visa guidance, and international protocol training to facilitate overseas careers."
-    },
-    {
-        question: "What is the highest salary package at JKKN AHS?",
-        answer: "The highest salary package at JKKN Allied Health Sciences is ₹7.5 lakh per annum for domestic placements. For international placements, packages can go up to ₹25 lakh per annum, particularly for positions with the NHS in the United Kingdom."
-    },
-    {
-        question: "How does the JKKN placement process work?",
-        answer: "The JKKN placement process is a structured 6-step program: (1) Registration in Semester 5, (2) Resume building and skills workshop, (3) Hospital tie-up drives where partner hospitals visit campus, (4) Shortlisting and interviews, (5) Offer letter distribution, and (6) Joining and onboarding support. The dedicated placement cell manages the entire process."
-    },
-    {
-        question: "Do learners get placed before graduation?",
-        answer: "Yes, many JKKN AHS learners receive placement offers before completing their final year. Campus recruitment drives begin in Semester 5 (third year), and a significant number of learners secure offers 3-6 months before graduation. Some learners also receive pre-placement offers from hospitals where they complete their clinical internships."
-    },
-    {
-        question: "What job roles are available after B.Sc. AHS?",
-        answer: "B.Sc. Allied Health Sciences graduates can work as Cardiac Technologists, Radiographers, Dialysis Technicians, Respiratory Therapists, Physician Assistants, OT Technicians, Critical Care Technologists, Medical Records Officers, and Emergency Care Technicians. Roles are available in hospitals, diagnostic centers, research laboratories, home healthcare, and medical equipment companies."
-    },
-    {
-        question: "Is placement guaranteed at JKKN AHS?",
-        answer: "While JKKN does not offer a formal placement guarantee, the college maintains a consistent placement support across all Allied Health Sciences programs. The dedicated placement cell works year-round to bring recruitment opportunities, conduct training programs, and ensure every eligible learner receives placement support. Learners who actively participate in the placement process have an excellent track record of securing positions."
-    },
-    {
-        question: "What is the salary of a Cardiac Technologist in Tamil Nadu?",
-        answer: "A Cardiac Technologist in Tamil Nadu can expect a starting salary of ₹2.5 to ₹4.5 lakh per annum in leading hospitals. With 3-5 years of experience, salaries can rise to ₹5-8 lakh per annum. Cardiac Technologists working in metro cities like Chennai or in international hospitals earn significantly higher packages. JKKN AHS cardiac technology graduates have been placed at Apollo, MIOT, and Kauvery hospitals."
-    },
-    {
-        question: "Does JKKN help with international job placement?",
-        answer: "Yes, JKKN has a dedicated international placement support system. This includes IELTS and language preparation classes, visa and immigration guidance, international protocol and certification training, tie-ups with international recruitment agencies, alumni network support in UK, UAE, Saudi Arabia, and Singapore, and bridge course facilitation for country-specific certifications."
-    },
-    {
-        question: "How does JKKN placement compare to other AHS colleges?",
-        answer: "JKKN AHS placement performance ranks among the top in Tamil Nadu with strong placement support for Allied Health Sciences colleges. Key differentiators include 100+ recruiting partners (vs. 20-30 at most colleges), international placement track record, dedicated placement cell with year-round operations, and hospital tie-ups with tier-1 institutions like Apollo, MIOT, and Fortis."
     }
 ];
 
@@ -184,9 +134,10 @@ export default function PlacementsPage() {
 
 function HeroSection() {
     const stats = [
-        { value: "₹7.5L", label: "Highest Package" },
-        { value: "₹3.2L", label: "Average Package" },
-        { value: "100+", label: "Recruiters" }
+        // Sourced figures only; the package and recruiter counts were never audited.
+        { value: "9", label: "B.Sc Programmes" },
+        { value: "82", label: "Sanctioned Seats" },
+        { value: "4 Yrs", label: "Incl. Internship Year" }
     ];
 
     return (
@@ -244,11 +195,14 @@ function HeroSection() {
 
 function StatsSection() {
     const stats = [
-        { value: "₹7.5L", label: "Highest Package", icon: <Award className="w-6 h-6" /> },
-        { value: "₹3.2L", label: "Average Package", icon: <Briefcase className="w-6 h-6" /> },
-        { value: "100+", label: "Recruiting Partners", icon: <Hospital className="w-6 h-6" /> },
-        { value: "6", label: "Countries", icon: <Globe className="w-6 h-6" /> },
-        { value: "3+", label: "Years Consistent Record", icon: <Users className="w-6 h-6" /> }
+        // Every figure here is traceable: seats and programme length to the TNMGRMU
+        // allied-health list (#146) and this college's NIRF submission; the programme count to
+        // the live admission CRM. The five it replaces were unaudited.
+        { value: "9", label: "B.Sc Programmes", icon: <Award className="w-6 h-6" /> },
+        { value: "82", label: "Sanctioned Seats", icon: <Briefcase className="w-6 h-6" /> },
+        { value: "4 Yrs", label: "Incl. Internship Year", icon: <Users className="w-6 h-6" /> },
+        { value: "TNMGRMU", label: "Affiliating University", icon: <Hospital className="w-6 h-6" /> },
+        { value: "NAAC A", label: "Accreditation", icon: <Globe className="w-6 h-6" /> }
     ];
 
     return (
@@ -281,7 +235,7 @@ function StatsSection() {
                 {/* AEO snippet paragraph */}
                 <div id="stats-snippet" className="max-w-4xl mx-auto text-center">
                     <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
-                        The placement rate at JKKN Allied Health Sciences is 95 percent. Over 100 hospitals and healthcare organizations recruit from JKKN AHS every year. The highest salary package after B.Sc. Allied Health Sciences at JKKN is 7.5 lakh per annum, and the average salary is 3.2 lakh per year. JKKN graduates work in 6 countries including India, United Kingdom, UAE, Saudi Arabia, Singapore, and Australia.
+                        JKKN College of Allied Health Sciences runs a dedicated placement cell for its nine B.Sc Allied Health Sciences programmes, with clinical training at partner hospitals and support for graduates seeking roles abroad. This college publishes no audited placement rate, recruiter count or salary figure, so none is quoted here — the placement cell can give current, verifiable numbers on request.
                     </p>
                 </div>
             </div>
@@ -299,8 +253,8 @@ function WhyStandOutSection() {
             icon: <Users className="w-7 h-7" />
         },
         {
-            title: "50+ Hospital Network",
-            desc: "Strong partnerships with 50+ hospitals across Tamil Nadu and India — including Apollo, MIOT, Fortis, Manipal, and Kauvery — for clinical training and direct recruitment.",
+            title: "Hospital Network",
+            desc: "Clinical training partnerships with hospitals across Tamil Nadu and India — including Apollo, MIOT, Fortis, Manipal, and Kauvery — for clinical training and direct recruitment.",
             icon: <Hospital className="w-7 h-7" />
         },
         {
@@ -667,7 +621,7 @@ function FAQSection() {
                 </div>
 
                 <div className="space-y-3 sm:space-y-4">
-                    {placementFaqs.map((faq, index) => (
+                    {PLACEMENT_FAQS.map((faq, index) => (
                         <div
                             key={index}
                             className="bg-[#fbfbee] rounded-xl sm:rounded-2xl border border-gray-100 shadow-sm overflow-hidden"
@@ -684,20 +638,9 @@ function FAQSection() {
                                 </div>
                             </button>
 
-                            <AnimatePresence>
-                                {activeIndex === index && (
-                                    <motion.div
-                                        initial={{ height: 0, opacity: 0 }}
-                                        animate={{ height: 'auto', opacity: 1 }}
-                                        exit={{ height: 0, opacity: 0 }}
-                                        transition={{ duration: 0.3 }}
-                                    >
-                                        <div className="px-4 sm:px-6 pb-4 sm:pb-6 pt-2 text-gray-600 text-sm leading-relaxed">
+                            <div className={`faq-answer px-4 sm:px-6 pb-4 sm:pb-6 pt-2 text-gray-600 text-sm leading-relaxed ${activeIndex === index ? "" : "hidden"}`}>
                                             {faq.answer}
-                                        </div>
-                                    </motion.div>
-                                )}
-                            </AnimatePresence>
+                            </div>
                         </div>
                     ))}
                 </div>

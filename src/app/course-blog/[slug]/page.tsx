@@ -107,14 +107,7 @@ export default async function CourseBlogDetailPage(
       name: post.author,
       url: "https://ahs.jkkn.ac.in/",
     },
-    publisher: {
-      "@type": "CollegeOrUniversity",
-      name: "JKKN College of Allied Health Sciences",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://ahs.jkkn.ac.in/ahs-logo.svg",
-      },
-    },
+    publisher: { "@id": "https://ahs.jkkn.ac.in/#organization" },
     articleSection: post.category,
     keywords: post.keywords.join(", "),
     inLanguage: "en-IN",
