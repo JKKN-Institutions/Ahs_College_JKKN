@@ -8,10 +8,17 @@ import { ArrowRight, Play, CheckCircle2 } from 'lucide-react';
 import { siteConfig } from '@/lib/site-config';
 
 export function Hero() {
+    // Every figure here traces to a document. "50+ Hospital Partners" and "250+ Active
+    // Learners" did not, and they survived the audit's text sweep because the claim was split
+    // across two fields - a grep for "50+ hospital" never sees `value: '50+'` next to
+    // `label: 'Hospital Partners'`. Caught on the live homepage after the fix shipped.
     const stats = [
+        // src/lib/ahs-programmes.ts, matched against the live admission CRM form 2026-08-16
         { label: 'Specialized Programs', value: '9' },
-        { label: 'Hospital Partners', value: '50+' },
-        { label: 'Active Learners', value: '250+' },
+        // TNMGRMU allied-health list entry #146; NIRF "UG [4 Years Program(s)] 82 82 82"
+        { label: 'Sanctioned Seats', value: '82' },
+        // NIRF: the award is a 4-year programme, 3 academic years plus the internship year
+        { label: 'Years, Incl. Internship', value: '4' },
     ];
 
     return (
