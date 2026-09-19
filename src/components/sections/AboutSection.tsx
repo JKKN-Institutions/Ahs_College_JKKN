@@ -41,7 +41,7 @@ export function AboutSection() {
                         </p>
 
                         <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
-                            Located on NH-544 (Salem-Coimbatore Highway) in Komarapalayam, just 22 km from <Link href="/erode" className="text-[#0b6d41] font-semibold hover:underline">Erode</Link> and 58 km from <Link href="/salem" className="text-[#0b6d41] font-semibold hover:underline">Salem</Link>, our <Link href="/NAAC" className="text-[#0b6d41] font-semibold hover:underline">NAAC A accredited</Link> campus features <Link href="/lab" className="text-[#0b6d41] font-semibold hover:underline">advanced learning labs</Link>, a 500+ bed teaching hospital, <Link href="/hostel" className="text-[#0b6d41] font-semibold hover:underline">hostel facilities</Link>, and a dedicated placement cell delivering placement support across 100+ recruiting partners.
+                            Located on NH-544 (Salem-Coimbatore Highway) in Komarapalayam, just 22 km from <Link href="/erode" className="text-[#0b6d41] font-semibold hover:underline">Erode</Link> and 58 km from <Link href="/salem" className="text-[#0b6d41] font-semibold hover:underline">Salem</Link>, our <Link href="/NAAC" className="text-[#0b6d41] font-semibold hover:underline">NAAC A accredited</Link> campus features <Link href="/lab" className="text-[#0b6d41] font-semibold hover:underline">advanced learning labs</Link>, a 500+ bed teaching hospital, <Link href="/hostel" className="text-[#0b6d41] font-semibold hover:underline">hostel facilities</Link>, and a dedicated placement cell supporting graduates into hospital and diagnostic roles.
                         </p>
                     </motion.div>
 

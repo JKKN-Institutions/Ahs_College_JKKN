@@ -316,15 +316,9 @@ function FAQ({ faqs }: { faqs: AdmissionCourse["faqs"] }) {
                                     {openIndex === i ? <Minus className="w-5 h-5 text-[#ffde59] shrink-0" /> : <Plus className="w-5 h-5 text-gray-400 shrink-0" />}
                                 </button>
                             </h3>
-                            <AnimatePresence>
-                                {openIndex === i && (
-                                    <motion.div initial={{ height: 0 }} animate={{ height: "auto" }} exit={{ height: 0 }} className="overflow-hidden">
-                                        <div className="faq-answer p-5 pt-0 text-gray-600 text-sm leading-relaxed">
+                            <div className={`faq-answer p-5 pt-0 text-gray-600 text-sm leading-relaxed ${openIndex === i ? "" : "hidden"}`}>
                                             {faq.a}
-                                        </div>
-                                    </motion.div>
-                                )}
-                            </AnimatePresence>
+                            </div>
                         </div>
                     ))}
                 </div>

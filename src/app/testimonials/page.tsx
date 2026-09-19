@@ -1,3 +1,13 @@
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "JKKN Institutions", "item": "https://jkkn.ac.in/" },
+    { "@type": "ListItem", "position": 2, "name": "Allied Health Sciences", "item": "https://ahs.jkkn.ac.in/" },
+    { "@type": "ListItem", "position": 3, "name": "Testimonials", "item": "https://ahs.jkkn.ac.in/testimonials" },
+  ],
+};
+
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { Testimonials } from '@/components/sections/Testimonials';
@@ -5,6 +15,7 @@ import { Testimonials } from '@/components/sections/Testimonials';
 export default function TestimonialsPage() {
     return (
         <>
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <Navbar />
             <main>
                 <div className="bg-[#0b6d41] py-10 sm:py-14">

@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
+import { COURSE_FAQS } from "@/lib/course-faqs";
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -14,56 +15,12 @@ import {
     Shield, Heart, Monitor, Filter
 } from 'lucide-react';
 import { Breadcrumb } from '@/components/Breadcrumb';
-import { generateBreadcrumbSchema } from '@/lib/breadcrumb-schema';
 import AhsEnquiryForm from "@/components/lead/AhsEnquiryForm";
 import { DEFAULT_PROGRAMME_BY_PAGE } from "@/lib/ahs-programmes";
-
-const courseSchema = {
-    "@context": "https://schema.org",
-    "@type": "Course",
-    "name": "B.Sc Dialysis Technology",
-    "description": "Focused program on renal replacement therapy including hemodialysis, peritoneal dialysis, and continuous renal replacement therapy with clinical training at nephrology centers.",
-    "provider": {
-        "@type": "CollegeOrUniversity",
-        "@id": "https://ahs.jkkn.ac.in/#organization",
-        "name": "JKKN College of Allied Health Sciences"
-    },
-    "url": "https://ahs.jkkn.ac.in/dialysis-technology",
-    "timeRequired": "P4Y",
-    "educationalCredentialAwarded": "B.Sc Dialysis Technology",
-    "occupationalCredentialAwarded": "Dialysis Technologist",
-    "hasCourseInstance": {
-        "@type": "CourseInstance",
-        "courseMode": "In-Person",
-        "startDate": "2026-08-01"
-    },
-    "offers": {
-        "@type": "Offer",
-        "category": "Tuition",
-        "price": "110000",
-        "priceCurrency": "INR",
-        "priceValidUntil": "2027-03-31",
-        "availability": "https://schema.org/InStock"
-    }
-};
-
-const breadcrumbSchema = generateBreadcrumbSchema([
-    { name: "Home", url: "https://ahs.jkkn.ac.in/" },
-    { name: "Departments", url: "https://ahs.jkkn.ac.in/#programs" },
-    { name: "Dialysis Technology", url: "https://ahs.jkkn.ac.in/dialysis-technology" }
-]);
 
 export default function DialysisTechnology() {
     return (
         <div className="min-h-screen flex flex-col bg-[#fbfbee]">
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }}
-            />
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-            />
             <Navbar />
 
             <main className="flex-grow pt-20">
@@ -615,40 +572,7 @@ function AdmissionProcessSection() {
 // 9. FAQ Section
 function FAQSection() {
     const [openIndex, setOpenIndex] = useState<number | null>(0);
-    const faqs = [
-        {
-            q: "What is B.Sc Dialysis Technology?",
-            a: "B.Sc Dialysis Technology is a 3 years + 1 year internship program that trains professionals in renal replacement therapy. It covers hemodialysis, peritoneal dialysis, water treatment systems, vascular access management, patient care, and dialysis unit operations. Graduates become qualified to operate dialysis equipment and provide critical care to patients with kidney failure."
-        },
-        {
-            q: "What is the eligibility criteria?",
-            a: "Candidates must have passed 10+2 with Physics, Chemistry, and Biology with minimum 50% aggregate marks (40% for SC/ST, 45% for OBC). Minimum age is 17 years as on December 31st of the admission year. A medical fitness certificate is also required."
-        },
-        {
-            q: "What is the salary of a Dialysis Technologist?",
-            a: "Entry-level dialysis technologists earn ₹2.5-4 lakhs per annum. With 3-5 years experience, salaries range from ₹5-10 lakhs. Senior positions like Dialysis Unit Supervisors or Coordinators in corporate hospitals offer ₹12-20 lakhs per annum. International opportunities offer even higher remuneration."
-        },
-        {
-            q: "What are the career opportunities?",
-            a: "Graduates can work as Dialysis Technicians, Hemodialysis Specialists, Peritoneal Dialysis Technicians, Renal Care Coordinators, Dialysis Unit Supervisors, and Research Associates in hospitals, standalone dialysis centers, nephrology departments, and research institutions. There are also opportunities in medical equipment companies and healthcare consulting."
-        },
-        {
-            q: "Can I pursue higher education after this course?",
-            a: "Yes, graduates can pursue M.Sc in Dialysis Technology, M.Sc in Renal Sciences, M.Sc in Medical Technology, MBA in Healthcare Management, or specialized certifications in advanced dialysis techniques like CRRT (Continuous Renal Replacement Therapy) for enhanced career opportunities."
-        },
-        {
-            q: "What practical training is included?",
-            a: "The program includes 2000+ hours of clinical training in hemodialysis units, peritoneal dialysis centers, and nephrology departments with hands-on experience in machine operations, vascular access cannulation, patient monitoring, water treatment system management, and emergency response procedures."
-        },
-        {
-            q: "Is there a demand for Dialysis Technologists in India?",
-            a: "Yes, the demand is rapidly growing. India has over 2 lakh patients requiring regular dialysis, with the number increasing by 10-15% annually due to rising diabetes and hypertension cases. The government's initiatives to establish dialysis centers in every district further increase employment opportunities. Globally, the dialysis market is expected to reach $135 billion by 2028."
-        },
-        {
-            q: "What is the difference between Hemodialysis and Peritoneal Dialysis?",
-            a: "Hemodialysis uses an external machine to filter blood through a dialyzer, typically performed at a dialysis center 3 times weekly for 4 hours. Peritoneal Dialysis uses the patient's peritoneal membrane as a natural filter, with dialysate fluid introduced into the abdomen. It can be done at home daily. Our program covers both modalities comprehensively."
-        },
-    ];
+    const faqs = COURSE_FAQS["dialysis-technology"];
 
     return (
         <section className="py-20 bg-white">
@@ -672,20 +596,9 @@ function FAQSection() {
                                 {openIndex === i ? <Minus className="w-5 h-5 text-[#ffde59]" /> : <Plus className="w-5 h-5 text-gray-400" />}
                             </button>
                             </h3>
-                            <AnimatePresence>
-                                {openIndex === i && (
-                                    <motion.div
-                                        initial={{ height: 0 }}
-                                        animate={{ height: "auto" }}
-                                        exit={{ height: 0 }}
-                                        className="overflow-hidden"
-                                    >
-                                        <div className="faq-answer p-6 pt-0 text-gray-600 text-sm leading-relaxed">
+                            <div className={`faq-answer p-6 pt-0 text-gray-600 text-sm leading-relaxed ${openIndex === i ? "" : "hidden"}`}>
                                             {faq.a}
-                                        </div>
-                                    </motion.div>
-                                )}
-                            </AnimatePresence>
+                            </div>
                         </div>
                     ))}
                 </div>

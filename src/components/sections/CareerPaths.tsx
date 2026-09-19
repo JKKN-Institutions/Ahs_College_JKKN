@@ -92,9 +92,11 @@ export function CareerPaths() {
                     {/* Stats Cards */}
                     <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6 mb-8 sm:mb-12 md:mb-16">
                         {[
-                            { label: "Recruiting Partners", value: "100+" },
-                            { label: "Highest Package", value: "₹7.5L" },
-                            { label: "Average Package", value: "₹3.2L" },
+                            // Sourced figures only. The previous three tiles (100+ recruiters,
+                            // ₹7.5L highest, ₹3.2L average) had no audited source behind them.
+                            { label: "B.Sc Programmes", value: "9" },
+                            { label: "Sanctioned Seats", value: "82" },
+                            { label: "Programme Length", value: "4 Yrs" },
                         ].map((stat, i) => (
                             <motion.div
                                 key={i}

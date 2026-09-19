@@ -1,4 +1,5 @@
 import { createPageMetadata } from "@/lib/metadata";
+import { COURSE_FAQS } from "@/lib/course-faqs";
 
 export const metadata = createPageMetadata({
   title: "BSc Critical Care Technology Course Details | JKKN",
@@ -22,12 +23,9 @@ const courseSchema = {
   "name": "B.Sc Critical Care Technology",
   "description": "Comprehensive program that prepares learners to become skilled critical care technologists, mastering ICU management, ventilator support, hemodynamic monitoring, and advanced life support systems for critically ill patients.",
   "url": "https://ahs.jkkn.ac.in/critical-care-technology",
-  "provider": {
-    "@type": "CollegeOrUniversity",
-    "name": "JKKN College of Allied Health Sciences",
-    "url": "https://ahs.jkkn.ac.in/",
-    "sameAs": "https://maps.app.goo.gl/JJ5dKGY4NAHReFpj7"
-  },
+  // Link, do not re-declare: a fresh anonymous Organization on every Course is a new entity
+  // to Google, so the courses never attached to the college node.
+  "provider": { "@id": "https://ahs.jkkn.ac.in/#organization" },
   "educationalLevel": "Undergraduate",
   "educationalCredentialAwarded": "Bachelor of Science (B.Sc)",
   "timeRequired": "P4Y",
@@ -104,56 +102,11 @@ const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "dateModified": "2026-03-19",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is the Bachelor of Science Critical Care Technology course at JKKN College Tamil Nadu?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The Bachelor of Science Critical Care Technology course at JKKN College Tamil Nadu is a four-year program training learners in Intensive Care Unit management, ventilator support, hemodynamic monitoring, and emergency care."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the eligibility to join the Bachelor of Science Critical Care Technology program at JKKN College Tamil Nadu?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Candidates need 10+2 with Physics, Chemistry, and Biology, minimum 50% marks. Scheduled Caste and Scheduled Tribe candidates need 40%, Other Backward Classes candidates need 45%. Minimum age is 17 years."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the salary of a Critical Care Technology graduate from JKKN College Tamil Nadu?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Entry-level critical care technologists earn three to five lakhs per year. With experience, salaries reach six to twelve lakhs. Senior Intensive Care Unit roles in corporate hospitals offer fifteen to twenty-five lakhs annually."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What career opportunities are available after the Bachelor of Science Critical Care Technology course at JKKN College Tamil Nadu?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Graduates work as Intensive Care Unit Technicians, Ventilator Technicians, Emergency Care Specialists, Respiratory Therapists, and Critical Care Coordinators in hospitals, trauma centers, and dialysis centers."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I pursue higher studies after the Bachelor of Science Critical Care Technology course at JKKN College Tamil Nadu?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Graduates can pursue Master of Science in Critical Care Technology, Emergency Medicine, or Respiratory Care, or a Postgraduate Diploma in Critical Care and Master of Business Administration in Healthcare Management."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What practical training is included in the Bachelor of Science Critical Care Technology course at JKKN College Tamil Nadu?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The program includes over two thousand hours of clinical training in Intensive Care Units, Coronary Care Units, emergency departments, dialysis units, neonatal and paediatric Intensive Care Units, and trauma care centers."
-      }
-    }
-  ]
+  "mainEntity": COURSE_FAQS["critical-care-technology"].map((f) => ({
+    "@type": "Question",
+    "name": f.q,
+    "acceptedAnswer": { "@type": "Answer", "text": f.a },
+  })),
 };
 
 export default function CriticalCareTechnologyLayout({

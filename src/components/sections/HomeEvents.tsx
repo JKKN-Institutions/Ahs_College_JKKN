@@ -41,7 +41,7 @@ export async function HomeEvents() {
       "name": event.venue || "JKKN Campus",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "NH-544, Natarajapuram",
+        "streetAddress": "NH-544 (Salem to Coimbatore National Highway), Natarajapuram",
         "addressLocality": "Komarapalayam",
         "addressRegion": "IN-TN",
         "postalCode": "638183",

@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
+import { COURSE_FAQS } from "@/lib/course-faqs";
 import Image from 'next/image';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
@@ -14,56 +15,12 @@ import {
     Shield, Zap, ClipboardList, UserCog, Microscope, Ambulance, HeartPulse
 } from 'lucide-react';
 import { Breadcrumb } from '@/components/Breadcrumb';
-import { generateBreadcrumbSchema } from '@/lib/breadcrumb-schema';
 import AhsEnquiryForm from "@/components/lead/AhsEnquiryForm";
 import { DEFAULT_PROGRAMME_BY_PAGE } from "@/lib/ahs-programmes";
-
-const courseSchema = {
-    "@context": "https://schema.org",
-    "@type": "Course",
-    "name": "B.Sc Accident & Emergency Care Technology",
-    "description": "Specialized program in emergency medicine covering triage, trauma care, basic and advanced life support, disaster management, and emergency department operations.",
-    "provider": {
-        "@type": "CollegeOrUniversity",
-        "@id": "https://ahs.jkkn.ac.in/#organization",
-        "name": "JKKN College of Allied Health Sciences"
-    },
-    "url": "https://ahs.jkkn.ac.in/accident-emergency-care",
-    "timeRequired": "P4Y",
-    "educationalCredentialAwarded": "B.Sc Accident & Emergency Care Technology",
-    "occupationalCredentialAwarded": "Emergency Care Technologist",
-    "hasCourseInstance": {
-        "@type": "CourseInstance",
-        "courseMode": "In-Person",
-        "startDate": "2026-08-01"
-    },
-    "offers": {
-        "@type": "Offer",
-        "category": "Tuition",
-        "price": "110000",
-        "priceCurrency": "INR",
-        "priceValidUntil": "2027-03-31",
-        "availability": "https://schema.org/InStock"
-    }
-};
-
-const breadcrumbSchema = generateBreadcrumbSchema([
-    { name: "Home", url: "https://ahs.jkkn.ac.in/" },
-    { name: "Departments", url: "https://ahs.jkkn.ac.in/#programs" },
-    { name: "Accident & Emergency Care", url: "https://ahs.jkkn.ac.in/accident-emergency-care" }
-]);
 
 export default function AccidentEmergencyCare() {
     return (
         <div className="min-h-screen flex flex-col bg-[#fbfbee]">
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }}
-            />
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-            />
             <Navbar />
 
             <main className="flex-grow pt-2 md:pt-5">
@@ -615,40 +572,7 @@ function AdmissionProcessSection() {
 // 9. FAQ Section
 function FAQSection() {
     const [openIndex, setOpenIndex] = useState<number | null>(0);
-    const faqs = [
-        {
-            q: "What is B.Sc Accident and Emergency Care Technology?",
-            a: "B.Sc Accident and Emergency Care Technology is a 3 years + 1 year internship undergraduate degree program that trains professionals in emergency medical services, trauma care, critical care management, advanced life support, disaster management, and emergency response coordination. Graduates become skilled first responders and emergency care specialists capable of handling any medical crisis."
-        },
-        {
-            q: "What is the eligibility criteria?",
-            a: "Candidates must have passed 10+2 with Physics, Chemistry, and Biology with minimum 50% aggregate marks (40% for SC/ST, 45% for OBC). Minimum age is 17 years as on December 31st of the admission year. A medical fitness certificate is also required."
-        },
-        {
-            q: "What is the salary of an Emergency Care Technologist?",
-            a: "Entry-level emergency care technologists earn ₹3-5 lakhs per annum. With 3-5 years experience, salaries range from ₹6-10 lakhs. Senior positions in corporate hospitals and emergency services offer ₹12-20 lakhs per annum. International opportunities offer significantly higher packages."
-        },
-        {
-            q: "What are the career opportunities?",
-            a: "Graduates can work as Emergency Medical Technicians, Trauma Care Specialists, Critical Care Technologists, Disaster Management Coordinators, Emergency Room Technicians, Ambulance Service Managers, and Research Associates in hospitals, trauma centers, and emergency services."
-        },
-        {
-            q: "What certifications will I receive?",
-            a: "The program includes certifications in Basic Life Support (BLS), Advanced Cardiac Life Support (ACLS), Advanced Trauma Life Support (ATLS), Pediatric Advanced Life Support (PALS), and Pre-Hospital Trauma Life Support (PHTLS), making graduates highly qualified for emergency care positions."
-        },
-        {
-            q: "Can I pursue higher education after this course?",
-            a: "Yes, graduates can pursue M.Sc in Emergency Medicine, M.Sc in Critical Care, M.Sc in Disaster Management, MBA in Healthcare Management, or specialized certifications in trauma care, disaster management, or emergency medical services for advanced career opportunities."
-        },
-        {
-            q: "What practical training is included?",
-            a: "The program includes 2000+ hours of clinical training in emergency departments, trauma centers, ICUs, ambulance services, and disaster management units with hands-on experience in patient assessment, triage, CPR, airway management, trauma care, and all major emergency medical procedures."
-        },
-        {
-            q: "Is this a physically demanding career?",
-            a: "Yes, emergency care requires physical stamina, quick thinking, and emotional resilience. The program includes physical fitness training and prepares learners to handle high-stress situations, long shifts, and physically demanding tasks. However, the rewarding nature of saving lives makes it a fulfilling career choice."
-        },
-    ];
+    const faqs = COURSE_FAQS["accident-emergency-care"];
 
     return (
         <section className="py-20 max-w-3xl mx-auto px-4">
@@ -671,20 +595,9 @@ function FAQSection() {
                             {openIndex === i ? <Minus className="w-5 h-5 text-[#ffde59]" /> : <Plus className="w-5 h-5 text-gray-400" />}
                         </button>
                         </h3>
-                        <AnimatePresence>
-                            {openIndex === i && (
-                                <motion.div
-                                    initial={{ height: 0 }}
-                                    animate={{ height: "auto" }}
-                                    exit={{ height: 0 }}
-                                    className="overflow-hidden"
-                                >
-                                    <div className="faq-answer p-6 pt-0 text-gray-600 text-sm leading-relaxed">
+                        <div className={`faq-answer p-6 pt-0 text-gray-600 text-sm leading-relaxed ${openIndex === i ? "" : "hidden"}`}>
                                         {faq.a}
-                                    </div>
-                                </motion.div>
-                            )}
-                        </AnimatePresence>
+                        </div>
                     </div>
                 ))}
             </div>

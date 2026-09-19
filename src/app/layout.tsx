@@ -12,6 +12,7 @@ import {
   GARouteTracker,
 } from "@/components/analytics/GoogleAnalytics";
 import { ConversionTracking } from "@/components/analytics/ConversionTracking";
+import { AHS_MAPS_URL, AHS_SAME_AS } from "@/lib/entity-profiles";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -48,10 +49,7 @@ const websiteSchema = {
   "name": "JKKN College of Allied Health Sciences",
   "alternateName": "JKKN AHS",
   "url": "https://ahs.jkkn.ac.in/",
-  "publisher": {
-    "@type": "CollegeOrUniversity",
-    "name": "JKKN College of Allied Health Sciences"
-  },
+  "publisher": { "@id": "https://ahs.jkkn.ac.in/#organization" },
   "inLanguage": "en",
   "dateModified": LAST_UPDATED,
   "potentialAction": {
@@ -84,18 +82,18 @@ const collegeSchema = {
     "latitude": "11.445190",
     "longitude": "77.726549"
   },
-  "sameAs": [
-    "https://www.facebook.com/jkknallied",
-    "https://www.instagram.com/jkknallied/",
-    "https://www.linkedin.com/company/jkknallied/",
-    "https://www.youtube.com/playlist?list=PL6QsTq-__HhsWGzdJbTOuadFqdXlcawUE",
-    "https://maps.app.goo.gl/JJ5dKGY4NAHReFpj7",
-    "https://www.tnmgrmu.ac.in/",
-    "https://jkkn.ac.in/",
-    "https://www.wikidata.org/wiki/Q55090877",
-    "https://x.com/jkkninstitution",
-    "https://wa.me/919345855001"
-  ],
+  // `sameAs` is an identity assertion: "this entity IS also reachable there". The three
+  // non-identity URLs were kept by a 2026-09-16 decision and removed 2026-09-18 at the user's
+  // instruction, because each names a DIFFERENT entity and so told Google and every AI engine
+  // that this college IS that thing. The affiliating university now sits in `affiliation`, the
+  // parent trust is already in `parentOrganization`, and wa.me stays a CommunicateAction
+  // on /contact.
+  "sameAs": [...AHS_SAME_AS],
+  "affiliation": {
+    "@type": "CollegeOrUniversity",
+    "name": "The Tamil Nadu Dr. M.G.R. Medical University",
+    "url": "https://www.tnmgrmu.ac.in/"
+  },
   "logo": {
     "@type": "ImageObject",
     "url": "https://ahs.jkkn.ac.in/ahs-logo.svg"
@@ -165,14 +163,6 @@ const collegeSchema = {
     "Medical Record Science",
     "Emergency Care Technology"
   ],
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.6",
-    "bestRating": "5",
-    "worstRating": "1",
-    "ratingCount": "127", // read live from the Maps place below on 2026-09-12 (was 4.5 / 150, unverified)
-    "url": "https://maps.app.goo.gl/JJ5dKGY4NAHReFpj7"
-  },
   "dateModified": LAST_UPDATED
 };
 
@@ -180,6 +170,7 @@ const collegeSchema = {
 const programListSchema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
+  "@id": "https://ahs.jkkn.ac.in/#programme-list",
   "name": "B.Sc Allied Health Sciences Programs at JKKN",
   "description": "9 specialized undergraduate allied health science programs offered by JKKN College of Allied Health Sciences, Komarapalayam, Tamil Nadu.",
   "numberOfItems": 9,

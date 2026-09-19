@@ -18,6 +18,7 @@ export const metadata = createPageMetadata({
 const itemListSchema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
+  "@id": "https://ahs.jkkn.ac.in/#jkkn-group-of-institutions",
   "name": "JKKN Group of Institutions",
   "description": "All colleges and schools under J. K. K. Nattraja Educational Institutions in Komarapalayam, Namakkal, Tamil Nadu.",
   "url": "https://ahs.jkkn.ac.in/our-institutions",

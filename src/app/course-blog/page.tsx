@@ -30,6 +30,7 @@ const breadcrumbSchema = {
 const itemListSchema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
+    "@id": "https://ahs.jkkn.ac.in/course-blog#article-list",
   name: "Course Career Insights — JKKN Allied Health Sciences",
   itemListElement: courseBlogPosts.map((p, i) => ({
     "@type": "ListItem",

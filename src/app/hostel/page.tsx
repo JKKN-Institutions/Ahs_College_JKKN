@@ -7,7 +7,6 @@ import { Footer } from '@/components/layout/Footer';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 import { Breadcrumb } from '@/components/Breadcrumb';
-import { generateBreadcrumbSchema } from '@/lib/breadcrumb-schema';
 
 interface HostelSection {
     title: string;
@@ -41,15 +40,9 @@ const hostelSections: HostelSection[] = [
 export default function Hostel() {
     const [activeIndex, setActiveIndex] = useState<number | null>(0);
 
-    const breadcrumbSchema = generateBreadcrumbSchema([
-        { name: "Home", url: "https://ahs.jkkn.ac.in/" },
-        { name: "Facilities", url: "https://ahs.jkkn.ac.in/#facilities" },
-        { name: "Hostel", url: "https://ahs.jkkn.ac.in/hostel" }
-    ]);
 
     return (
         <div className="min-h-screen flex flex-col bg-[#fbfbee]">
-            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <Navbar />
 
             <main className="flex-grow pt-4 md:pt-20 lg:pt-24 pb-16">

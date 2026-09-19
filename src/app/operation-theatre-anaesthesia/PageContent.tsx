@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
+import { COURSE_FAQS } from "@/lib/course-faqs";
 import Image from 'next/image';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
@@ -14,56 +15,12 @@ import {
     Shield, Syringe, ClipboardList, UserCog, Microscope
 } from 'lucide-react';
 import { Breadcrumb } from '@/components/Breadcrumb';
-import { generateBreadcrumbSchema } from '@/lib/breadcrumb-schema';
 import AhsEnquiryForm from "@/components/lead/AhsEnquiryForm";
 import { DEFAULT_PROGRAMME_BY_PAGE } from "@/lib/ahs-programmes";
-
-const courseSchema = {
-    "@context": "https://schema.org",
-    "@type": "Course",
-    "name": "B.Sc Operation Theatre & Anaesthesia Technology",
-    "description": "Dual-specialization program covering surgical assistance, anaesthesia administration, and operation theatre management with extensive hands-on training in surgical suites.",
-    "provider": {
-        "@type": "CollegeOrUniversity",
-        "@id": "https://ahs.jkkn.ac.in/#organization",
-        "name": "JKKN College of Allied Health Sciences"
-    },
-    "url": "https://ahs.jkkn.ac.in/operation-theatre-anaesthesia",
-    "timeRequired": "P4Y",
-    "educationalCredentialAwarded": "B.Sc Operation Theatre & Anaesthesia Technology",
-    "occupationalCredentialAwarded": "OT Technologist / Anaesthesia Technician",
-    "hasCourseInstance": {
-        "@type": "CourseInstance",
-        "courseMode": "In-Person",
-        "startDate": "2026-08-01"
-    },
-    "offers": {
-        "@type": "Offer",
-        "category": "Tuition",
-        "price": "170000",
-        "priceCurrency": "INR",
-        "priceValidUntil": "2027-03-31",
-        "availability": "https://schema.org/InStock"
-    }
-};
-
-const breadcrumbSchema = generateBreadcrumbSchema([
-    { name: "Home", url: "https://ahs.jkkn.ac.in/" },
-    { name: "Departments", url: "https://ahs.jkkn.ac.in/#programs" },
-    { name: "Operation Theatre & Anaesthesia", url: "https://ahs.jkkn.ac.in/operation-theatre-anaesthesia" }
-]);
 
 export default function OperationTheatreAnaesthesia() {
     return (
         <div className="min-h-screen flex flex-col bg-[#fbfbee]">
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }}
-            />
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-            />
             <Navbar />
 
             <main className="flex-grow pt-20">
@@ -613,40 +570,7 @@ function AdmissionProcessSection() {
 // 9. FAQ Section
 function FAQSection() {
     const [openIndex, setOpenIndex] = useState<number | null>(0);
-    const faqs = [
-        {
-            q: "What is B.Sc Operation Theatre & Anaesthesia Technology?",
-            a: "B.Sc Operation Theatre & Anaesthesia Technology is a 3 years + 1 year internship program that trains professionals in surgical assistance, anaesthesia administration support, patient monitoring during surgery, sterilization techniques, and perioperative care management. Graduates become essential members of surgical teams in operation theatres."
-        },
-        {
-            q: "What is the eligibility criteria?",
-            a: "Candidates must have passed 10+2 with Physics, Chemistry, and Biology with minimum 50% aggregate marks (40% for SC/ST, 45% for OBC). Minimum age is 17 years as on December 31st of the admission year. A medical fitness certificate is also required."
-        },
-        {
-            q: "What is the salary of an OT Technician?",
-            a: "Entry-level OT technicians earn ₹3-5 lakhs per annum. With 3-5 years experience, salaries range from ₹5-10 lakhs. Senior positions like OT Coordinators or Supervisors in corporate hospitals offer ₹12-20 lakhs per annum. International opportunities offer even higher remuneration."
-        },
-        {
-            q: "What are the career opportunities?",
-            a: "Graduates can work as OT Technician, Anaesthesia Technician, Surgical Assistant, CSSD Technician, Endoscopy Technician, ICU Technician, Perfusionist Assistant, and Medical Device Specialist in multi-specialty hospitals, surgical centers, diagnostic facilities, and medical equipment companies."
-        },
-        {
-            q: "What is the scope of OT Technology in India?",
-            a: "With increasing surgical procedures, growing healthcare infrastructure, and rising demand for skilled paramedical staff, OT and Anaesthesia technologists are in high demand across government hospitals, private healthcare chains, and international medical facilities. The healthcare sector is expected to grow at 22% CAGR, creating extensive opportunities."
-        },
-        {
-            q: "Can I pursue higher education after this course?",
-            a: "Yes, graduates can pursue M.Sc in OT & Anaesthesia Technology, M.Sc in Critical Care, Post Graduate Diploma in Surgical Technology, MBA in Healthcare Management, or specialized certifications in perfusion technology, endoscopy, or laparoscopy for advanced career opportunities."
-        },
-        {
-            q: "What practical training is included?",
-            a: "The program includes 2000+ hours of clinical training in operation theatres, anaesthesia departments, CSSD units, ICUs, and surgical specialty departments with hands-on experience in surgical procedures, anaesthesia equipment handling, instrument sterilization, and patient monitoring systems."
-        },
-        {
-            q: "What is the difference between OT Technician and Anaesthesia Technician?",
-            a: "OT Technicians assist surgeons during procedures, manage surgical instruments, and maintain sterile environments. Anaesthesia Technicians specifically support anaesthesiologists, prepare and maintain anaesthesia equipment, monitor patients during anaesthesia, and manage airway equipment. Our program trains you in both specializations."
-        },
-    ];
+    const faqs = COURSE_FAQS["operation-theatre-anaesthesia"];
 
     return (
         <section className="py-20 max-w-3xl mx-auto px-4">
@@ -669,20 +593,9 @@ function FAQSection() {
                             {openIndex === i ? <Minus className="w-5 h-5 text-[#ffde59]" /> : <Plus className="w-5 h-5 text-gray-400" />}
                         </button>
                         </h3>
-                        <AnimatePresence>
-                            {openIndex === i && (
-                                <motion.div
-                                    initial={{ height: 0 }}
-                                    animate={{ height: "auto" }}
-                                    exit={{ height: 0 }}
-                                    className="overflow-hidden"
-                                >
-                                    <div className="faq-answer p-6 pt-0 text-gray-600 text-sm leading-relaxed">
+                        <div className={`faq-answer p-6 pt-0 text-gray-600 text-sm leading-relaxed ${openIndex === i ? "" : "hidden"}`}>
                                         {faq.a}
-                                    </div>
-                                </motion.div>
-                            )}
-                        </AnimatePresence>
+                        </div>
                     </div>
                 ))}
             </div>

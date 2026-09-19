@@ -45,14 +45,15 @@ const breadcrumbSchema = {
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "CollegeOrUniversity",
+  "@id": "https://ahs.jkkn.ac.in/#organization",
   "name": "JKKN College of Allied Health Sciences",
   "url": "https://ahs.jkkn.ac.in/",
   "description": "JKKN College of Allied Health Sciences trains healthcare professionals through nine specialized Bachelor of Science programs with clinical exposure from year one.",
-  "foundingDate": "1952",
+  "foundingDate": "2019",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Komarapalayam",
-    "addressRegion": "Tamil Nadu",
+    "addressRegion": "IN-TN",
     "postalCode": "638183",
     "addressCountry": "IN"
   }

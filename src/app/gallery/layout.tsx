@@ -42,11 +42,7 @@ const imageGallerySchema = {
   "name": "JKKN College of Allied Health Sciences — Campus Photo Gallery",
   "description": "Photos of JKKN College of Allied Health Sciences campus including learning studios, learning labs, hostel, learning commons, and learner life at Komarapalayam, Tamil Nadu.",
   "url": "https://ahs.jkkn.ac.in/gallery",
-  "publisher": {
-    "@type": "CollegeOrUniversity",
-    "name": "JKKN College of Allied Health Sciences",
-    "url": "https://ahs.jkkn.ac.in/"
-  }
+  "publisher": { "@id": "https://ahs.jkkn.ac.in/#organization" }
 };
 
 export default function GalleryLayout({

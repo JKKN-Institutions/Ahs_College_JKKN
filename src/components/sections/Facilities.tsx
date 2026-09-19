@@ -43,7 +43,7 @@ const facilities = [
     },
     {
         title: "Career Guidance & Placement Cell",
-        description: "Dedicated placement cell connecting Learners with 100+ recruiting partners. Services include mock interviews, resume workshops, soft skills training, and industry networking events to ensure career readiness.",
+        description: "Dedicated placement cell connecting Learners with recruiting partners. Services include mock interviews, resume workshops, soft skills training, and industry networking events to ensure career readiness.",
         icon: <Home className="w-6 h-6 sm:w-8 sm:h-8" />,
         iconBg: "bg-[#ffde59]",
         href: "/#careers"

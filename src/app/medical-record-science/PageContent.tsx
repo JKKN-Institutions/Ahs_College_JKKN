@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
+import { COURSE_FAQS } from "@/lib/course-faqs";
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -14,56 +15,12 @@ import {
     Shield, BarChart3, ClipboardList, Code2, FolderOpen
 } from 'lucide-react';
 import { Breadcrumb } from '@/components/Breadcrumb';
-import { generateBreadcrumbSchema } from '@/lib/breadcrumb-schema';
 import AhsEnquiryForm from "@/components/lead/AhsEnquiryForm";
 import { DEFAULT_PROGRAMME_BY_PAGE } from "@/lib/ahs-programmes";
-
-const courseSchema = {
-    "@context": "https://schema.org",
-    "@type": "Course",
-    "name": "B.Sc Medical Record Science",
-    "description": "Program covering health information management, medical coding (ICD-10, CPT), electronic health records, hospital information systems, and healthcare data analytics.",
-    "provider": {
-        "@type": "CollegeOrUniversity",
-        "@id": "https://ahs.jkkn.ac.in/#organization",
-        "name": "JKKN College of Allied Health Sciences"
-    },
-    "url": "https://ahs.jkkn.ac.in/medical-record-science",
-    "timeRequired": "P4Y",
-    "educationalCredentialAwarded": "B.Sc Medical Record Science",
-    "occupationalCredentialAwarded": "Medical Record Officer / Health Information Manager",
-    "hasCourseInstance": {
-        "@type": "CourseInstance",
-        "courseMode": "In-Person",
-        "startDate": "2026-08-01"
-    },
-    "offers": {
-        "@type": "Offer",
-        "category": "Tuition",
-        "price": "60000",
-        "priceCurrency": "INR",
-        "priceValidUntil": "2027-03-31",
-        "availability": "https://schema.org/InStock"
-    }
-};
-
-const breadcrumbSchema = generateBreadcrumbSchema([
-    { name: "Home", url: "https://ahs.jkkn.ac.in/" },
-    { name: "Departments", url: "https://ahs.jkkn.ac.in/#programs" },
-    { name: "Medical Record Science", url: "https://ahs.jkkn.ac.in/medical-record-science" }
-]);
 
 export default function MedicalRecordScience() {
     return (
         <div className="min-h-screen flex flex-col bg-[#fbfbee]">
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }}
-            />
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-            />
             <Navbar />
 
             <main className="flex-grow pt-20">
@@ -622,40 +579,7 @@ function AdmissionProcessSection() {
 // 9. FAQ Section
 function FAQSection() {
     const [openIndex, setOpenIndex] = useState<number | null>(0);
-    const faqs = [
-        {
-            q: "What is B.Sc Medical Record Science?",
-            a: "B.Sc Medical Record Science is a 3 years + 1 year internship program that trains professionals in health information management, medical coding, ICD classification, health records administration, healthcare data analytics, and hospital information systems. Graduates manage patient health records and ensure data accuracy for quality healthcare delivery."
-        },
-        {
-            q: "What is the eligibility criteria?",
-            a: "Candidates must have passed 10+2 with Physics, Chemistry, and Biology with minimum 50% aggregate marks (40% for SC/ST, 45% for OBC). Minimum age is 17 years as on December 31st of the admission year."
-        },
-        {
-            q: "What is the salary of a Medical Record Science professional?",
-            a: "Entry-level medical record technicians earn ₹2.5-4 lakhs per annum. With experience, salaries range from ₹5-10 lakhs. Senior Health Information Managers and Certified Coders in corporate hospitals, insurance companies, and international organizations earn ₹12-20 lakhs per annum."
-        },
-        {
-            q: "What are the career opportunities?",
-            a: "Graduates can work as Medical Record Technician, Health Information Manager, Medical Coder, Clinical Data Analyst, Medical Transcriptionist, Quality Assurance Officer, Medical Auditor, and Healthcare IT Specialist in hospitals, diagnostic centers, insurance companies, pharmaceutical firms, and healthcare IT organizations."
-        },
-        {
-            q: "Is medical coding covered in this course?",
-            a: "Yes, comprehensive medical coding training is a core component of the program. Learners learn ICD-10 coding for diagnoses, CPT coding for procedures, and other classification systems like ICD-O for oncology. The learning framework includes extensive hands-on practice with real medical records and coding scenarios."
-        },
-        {
-            q: "Can I work abroad after this course?",
-            a: "Yes, medical record science professionals are in high demand globally. Countries like USA, UK, Canada, Australia, and Gulf nations hire trained medical coders and health information managers. Additional certifications like RHIT (Registered Health Information Technician) or CPC (Certified Professional Coder) increase international job opportunities."
-        },
-        {
-            q: "Can I pursue higher education after this course?",
-            a: "Yes, graduates can pursue M.Sc in Medical Record Science, M.Sc in Health Informatics, MBA in Healthcare Management, or professional certifications like RHIA (Registered Health Information Administrator), CCS (Certified Coding Specialist), or CCA (Certified Coding Associate) for advanced career opportunities."
-        },
-        {
-            q: "What practical training is included?",
-            a: "The program includes 2000+ hours of practical training in medical record departments, coding laboratories, health information management systems, and hospital internships. Learners gain hands-on experience with electronic health records (EHR), medical coding software, health information systems, and real-world medical record management."
-        },
-    ];
+    const faqs = COURSE_FAQS["medical-record-science"];
 
     return (
         <section className="py-20 max-w-3xl mx-auto px-4">
@@ -678,20 +602,9 @@ function FAQSection() {
                             {openIndex === i ? <Minus className="w-5 h-5 text-[#ffde59]" /> : <Plus className="w-5 h-5 text-gray-400" />}
                         </button>
                         </h3>
-                        <AnimatePresence>
-                            {openIndex === i && (
-                                <motion.div
-                                    initial={{ height: 0 }}
-                                    animate={{ height: "auto" }}
-                                    exit={{ height: 0 }}
-                                    className="overflow-hidden"
-                                >
-                                    <div className="faq-answer p-6 pt-0 text-gray-600 text-sm leading-relaxed">
+                        <div className={`faq-answer p-6 pt-0 text-gray-600 text-sm leading-relaxed ${openIndex === i ? "" : "hidden"}`}>
                                         {faq.a}
-                                    </div>
-                                </motion.div>
-                            )}
-                        </AnimatePresence>
+                        </div>
                     </div>
                 ))}
             </div>
