@@ -39,8 +39,13 @@ const courseSchema = {
       "name": "JKKN College of Allied Health Sciences",
       "address": {
         "@type": "PostalAddress",
+        // The CourseInstance location is the same campus as the organisation node. It was
+        // shipping with no streetAddress at all, which made a 2nd distinct postal address
+        // across the site; caught on the LIVE site, because the value is an empty string and
+        // a "one address" check on the built HTML read it as present.
+        "streetAddress": "NH-544 (Salem to Coimbatore National Highway), Natarajapuram",
         "addressLocality": "Komarapalayam",
-        "addressRegion": "Tamil Nadu",
+        "addressRegion": "IN-TN",
         "postalCode": "638183",
         "addressCountry": "IN"
       }

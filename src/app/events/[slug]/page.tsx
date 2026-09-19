@@ -101,8 +101,9 @@ export default async function EventPage({
       "name": event.venue || "JKKN College of Allied Health Sciences",
       "address": {
         "@type": "PostalAddress",
+        "streetAddress": "NH-544 (Salem to Coimbatore National Highway), Natarajapuram",
         "addressLocality": "Komarapalayam",
-        "addressRegion": "Tamil Nadu",
+        "addressRegion": "IN-TN",
         "postalCode": "638183",
         "addressCountry": "IN"
       }

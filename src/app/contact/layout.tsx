@@ -40,7 +40,7 @@ const contactSchema = {
     "@type": "PostalAddress",
     "streetAddress": "NH-544 (Salem to Coimbatore National Highway), Natarajapuram",
     "addressLocality": "Komarapalayam, Namakkal District",
-    "addressRegion": "Tamil Nadu",
+    "addressRegion": "IN-TN",
     "postalCode": "638183",
     "addressCountry": "IN"
   },

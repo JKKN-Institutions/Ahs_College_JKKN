@@ -53,7 +53,7 @@ const facilitySchema = {
     "@type": "PostalAddress",
     "streetAddress": "NH-544 (Salem to Coimbatore National Highway), Natarajapuram",
     "addressLocality": "Komarapalayam",
-    "addressRegion": "Tamil Nadu",
+    "addressRegion": "IN-TN",
     "postalCode": "638183",
     "addressCountry": "IN"
   }

@@ -52,6 +52,7 @@ const organizationSchema = {
   "foundingDate": "2019",
   "address": {
     "@type": "PostalAddress",
+    "streetAddress": "NH-544 (Salem to Coimbatore National Highway), Natarajapuram",
     "addressLocality": "Komarapalayam",
     "addressRegion": "IN-TN",
     "postalCode": "638183",
