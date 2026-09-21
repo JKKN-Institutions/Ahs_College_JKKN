@@ -22,7 +22,7 @@ export const PLACEMENT_FAQS = [
     },
     {
         question: "What is the highest salary package at JKKN AHS?",
-        answer: "The highest salary package at JKKN Allied Health Sciences is ₹7.5 lakh per annum for domestic placements. For international placements, packages can go up to ₹25 lakh per annum, particularly for positions with the NHS in the United Kingdom."
+        answer: "JKKN publishes no audited highest-package figure, so none is stated here. Packages differ by specialisation and by whether the role is in India or abroad. The placement cell can give current, verifiable figures on request."
     },
     {
         question: "How does the JKKN placement process work?",
@@ -42,7 +42,7 @@ export const PLACEMENT_FAQS = [
     },
     {
         question: "What is the salary of a Cardiac Technologist in Tamil Nadu?",
-        answer: "A Cardiac Technologist in Tamil Nadu can expect a starting salary of ₹2.5 to ₹4.5 lakh per annum in leading hospitals. With 3-5 years of experience, salaries can rise to ₹5-8 lakh per annum. Cardiac Technologists working in metro cities like Chennai or in international hospitals earn significantly higher packages. JKKN AHS cardiac technology graduates have been placed at Apollo, MIOT, and Kauvery hospitals."
+        answer: "JKKN publishes no audited salary data for its Cardiac Technology graduates, so no figure is stated here. In general, pay rises with experience and is higher in metro cities and abroad than in smaller towns. The placement cell can give current, verifiable figures on request."
     },
     {
         question: "Does JKKN help with international job placement?",

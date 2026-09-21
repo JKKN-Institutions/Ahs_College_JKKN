@@ -473,7 +473,7 @@ function EquipmentSection({ course }: { course: AdmissionCourse }) {
                 <div className="text-center mb-10">
                     <span className="text-[#0b6d41] font-bold tracking-widest uppercase text-xs mb-2 p-1 bg-[#0b6d41]/10 rounded inline-block">Hands-On Exposure</span>
                     <h2 className="text-2xl md:text-3xl font-black text-[#0b6d41] mt-2">Equipment & Technology You'll Train On</h2>
-                    <p className="text-sm text-gray-600 mt-2 max-w-2xl mx-auto">Real medical equipment used at JKKN's 500+ bed teaching hospital — the same machines you'll operate as a working professional.</p>
+                    <p className="text-sm text-gray-600 mt-2 max-w-2xl mx-auto">Real medical equipment used at JKKN's teaching hospital — the same machines you'll operate as a working professional.</p>
                 </div>
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
                     {course.equipment.map((eq, i) => (

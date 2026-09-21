@@ -762,7 +762,7 @@ function SnippetBaitSection({ city }: { city: CityPage }) {
           <div className="bg-white rounded-2xl p-6 shadow-sm">
             <h3 className="font-bold text-gray-900 mb-3">What are Allied Health Sciences?</h3>
             <p className="snippet-answer voice-answer text-sm text-gray-600 leading-relaxed">
-              Allied Health Sciences are healthcare professions that support doctors and nurses in diagnosing, treating, and preventing diseases. These include specialisations like cardiac technology, radiology, dialysis technology, respiratory therapy, and emergency care. For students from {city.cityName}, JKKN College of Allied Health Sciences — ~{city.distanceKm} km away at Komarapalayam — offers 9 BSc programmes with clinical training at a 500+ bed teaching hospital.
+              Allied Health Sciences are healthcare professions that support doctors and nurses in diagnosing, treating, and preventing diseases. These include specialisations like cardiac technology, radiology, dialysis technology, respiratory therapy, and emergency care. For students from {city.cityName}, JKKN College of Allied Health Sciences — ~{city.distanceKm} km away at Komarapalayam — offers 9 BSc programmes with clinical training at a teaching hospital.
             </p>
           </div>
 
@@ -785,7 +785,7 @@ function SnippetBaitSection({ city }: { city: CityPage }) {
             <h3 className="font-bold text-gray-900 mb-3">How to Choose the Best AHS College Near {city.cityName}</h3>
             <div className="snippet-answer voice-answer text-sm text-gray-600 leading-relaxed space-y-2">
               <p>When choosing an allied health science college near {city.cityName}, consider these factors: university affiliation (The Tamil Nadu Dr. M.G.R. Medical University is the gold standard), NAAC accreditation status, clinical training infrastructure (look for attached teaching hospitals), placement track record, faculty experience, and {city.tier === "commute" ? "proximity to your home for easy commuting" : "hostel quality for comfortable campus stay"}.</p>
-              <p>JKKN College of Allied Health Sciences checks all these boxes — NAAC accredited, university-affiliated, 500+ bed hospital for clinical training, placement support, and ~{city.distanceKm} km from {city.cityName} {city.routeVia}.</p>
+              <p>JKKN College of Allied Health Sciences checks all these boxes — NAAC accredited, university-affiliated, a teaching hospital for clinical training, placement support, and ~{city.distanceKm} km from {city.cityName} {city.routeVia}.</p>
             </div>
           </div>
         </div>

@@ -67,7 +67,7 @@ export default function SalemPage() {
           },
           {
             q: "What is the salary after BSc allied health science?",
-            a: "BSc Allied Health Science graduates can expect starting salaries of ₹2.5–4.5 LPA in India, with experienced professionals earning ₹6–12 LPA. International opportunities in Gulf countries, UK, and Australia offer ₹8–25 LPA. JKKN AHS graduates benefit from placement support with 60+ recruiting partners.",
+            a: "JKKN College of Allied Health Sciences publishes no audited salary figure for its graduates, so none is stated here. Pay differs by specialisation, hospital and country, and roles abroad generally pay more than the same role in India. A dedicated placement cell supports graduates with recruitment drives, interview preparation and guidance for roles abroad; it can give current, verifiable figures on request.",
           },
           {
             q: "How many allied health science colleges are there near Salem?",
@@ -83,11 +83,11 @@ export default function SalemPage() {
           },
           {
             q: "Does JKKN AHS provide clinical training at Salem government hospitals?",
-            a: "JKKN AHS primarily provides clinical training at its own 500+ bed multi-specialty teaching hospital on campus. Additionally, learners gain exposure through partnerships with various healthcare facilities in the region. The Salem Government Mohan Kumaramangalam Medical College Hospital is one of the major government hospitals learners can access for observational learning.",
+            a: "JKKN AHS primarily provides clinical training at its own multi-specialty teaching hospital on campus. Additionally, learners gain exposure through partnerships with various healthcare facilities in the region. The Salem Government Mohan Kumaramangalam Medical College Hospital is one of the major government hospitals learners can access for observational learning.",
           },
           {
             q: "Is JKKN AHS near Salem a better value than colleges in Chennai?",
-            a: "JKKN AHS offers excellent value compared to Chennai colleges: significantly lower tuition and living costs, the same Tamil Nadu Dr. M.G.R. Medical University affiliation, 500+ bed hospital for clinical training, placement support with both domestic and international opportunities, and a safer, focused campus environment. Learners save considerably while receiving comparable education quality.",
+            a: "JKKN AHS offers excellent value compared to Chennai colleges: significantly lower tuition and living costs, the same Tamil Nadu Dr. M.G.R. Medical University affiliation, a teaching hospital for clinical training, placement support with both domestic and international opportunities, and a safer, focused campus environment. Learners save considerably while receiving comparable education quality.",
           },
         ]} />
         <ExploreCitiesSection />
@@ -750,8 +750,8 @@ function CompetitiveAdvantageSection() {
     { title: "Competitive Fees with Scholarship Support", desc: "JKKN offers quality allied health education at competitive pricing compared to deemed universities in Salem. Merit-based scholarships available for deserving learners." },
     { title: "9 Specialized BSc Programmes", desc: "Choose from Cardiac Technology, Dialysis, Radiology, OT & Anaesthesia, Respiratory Therapy, Physician Assistant, Critical Care, Medical Records, and Emergency Care." },
     { title: "Direct NH-544 Access — 50–60 Minutes from Salem", desc: "Straight highway connectivity via Salem–Coimbatore Highway. Regular bus services from Salem bus stand make the commute convenient." },
-    { title: "International Placement Track Record", desc: "JKKN graduates work at NHS UK, Cleveland Clinic Abu Dhabi, and hospitals across Singapore and Gulf countries. placement support with 60+ recruiters." },
-    { title: "Own Teaching Hospital for Clinical Training", desc: "500+ bed multi-specialty teaching hospital on campus provides hands-on clinical exposure from Year 1 — a critical advantage for healthcare careers." },
+    { title: "Support for Careers Abroad", desc: "The placement cell supports graduates who want to work abroad, from licensing exams to visa guidance. The college publishes no audited international placement figures; the cell can share current, verifiable numbers on request." },
+    { title: "Own Teaching Hospital for Clinical Training", desc: "Multi-specialty teaching hospital on campus provides hands-on clinical exposure from Year 1 — a critical advantage for healthcare careers." },
   ];
 
   return (
@@ -800,7 +800,7 @@ function SnippetBaitSection() {
           <div className="bg-white rounded-2xl p-6 shadow-sm">
             <h3 className="font-bold text-gray-900 mb-3">What are Allied Health Sciences?</h3>
             <p className="snippet-answer voice-answer text-sm text-gray-600 leading-relaxed">
-              Allied Health Sciences are healthcare professions that support doctors and nurses in diagnosing, treating, and preventing diseases. These include specialisations like cardiac technology, radiology, dialysis technology, respiratory therapy, and emergency care. Near Salem, JKKN College of Allied Health Sciences offers 9 BSc programmes with clinical training at a 500+ bed teaching hospital — just ~58 km via NH-544.
+              Allied Health Sciences are healthcare professions that support doctors and nurses in diagnosing, treating, and preventing diseases. These include specialisations like cardiac technology, radiology, dialysis technology, respiratory therapy, and emergency care. Near Salem, JKKN College of Allied Health Sciences offers 9 BSc programmes with clinical training at a teaching hospital — just ~58 km via NH-544.
             </p>
           </div>
 
@@ -823,7 +823,7 @@ function SnippetBaitSection() {
             <h3 className="font-bold text-gray-900 mb-3">How to Choose the Best AHS College Near Salem</h3>
             <div className="snippet-answer voice-answer text-sm text-gray-600 leading-relaxed space-y-2">
               <p>When choosing an allied health science college near Salem, consider university affiliation (The Tamil Nadu Dr. M.G.R. Medical University is the gold standard), NAAC accreditation, clinical training infrastructure, placement track record, and accessibility via NH-544 highway.</p>
-              <p>JKKN College of Allied Health Sciences — located ~58 km from Salem on NH-544 — is NAAC accredited, university-affiliated, has a 500+ bed hospital for clinical training, and provides placement support with 60+ recruiting partners.</p>
+              <p>JKKN College of Allied Health Sciences — located ~58 km from Salem on NH-544 — is NAAC accredited, university-affiliated, has a hospital for clinical training, and provides placement support through a dedicated placement cell.</p>
             </div>
           </div>
         </div>
