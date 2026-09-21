@@ -202,10 +202,6 @@ export default function CardiacTechnologyContent() {
           placement
         </li>
         <li>
-          placement record in 2025, with average package ₹3.4 LPA for fresh
-          graduates
-        </li>
-        <li>
           Access to <Link href="/lab">advanced simulation learning labs</Link>,{" "}
           <Link href="/library">medical learning commons</Link>, and{" "}
           <Link href="/hostel">on-campus hostel</Link>

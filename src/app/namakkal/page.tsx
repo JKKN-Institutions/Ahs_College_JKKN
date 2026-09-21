@@ -67,7 +67,7 @@ export default function NamakkalPage() {
           },
           {
             q: "What is the salary after BSc allied health science?",
-            a: "BSc Allied Health Science graduates can expect starting salaries of ₹2.5–4.5 LPA in India, with experienced professionals earning ₹6–12 LPA. International opportunities in Gulf countries, UK, and Australia offer ₹8–25 LPA. JKKN AHS graduates benefit from placement support with 60+ recruiting partners.",
+            a: "JKKN College of Allied Health Sciences publishes no audited salary figure for its graduates, so none is stated here. Pay differs by specialisation, hospital and country, and roles abroad generally pay more than the same role in India. A dedicated placement cell supports graduates with recruitment drives, interview preparation and guidance for roles abroad; it can give current, verifiable figures on request.",
           },
           {
             q: "How many allied health science colleges are there in Namakkal?",
@@ -749,9 +749,9 @@ function CompetitiveAdvantageSection() {
   const advantages = [
     { title: "In Namakkal District — Komarapalayam Campus", desc: "Located in Komarapalayam (Namakkal district), JKKN is the closest allied health sciences college for Namakkal district residents. Just 15 km from Tiruchengode. Daily commute or hostel accommodation — your choice." },
     { title: "9 BSc Programmes — Widest Selection in the District", desc: "From Cardiac Technology to Emergency Care, JKKN offers the most diverse range of allied health programmes in Namakkal district." },
-    { title: "Placement Support with International Opportunities", desc: "Our graduates secure positions in top hospitals across India, Gulf countries, UK (NHS), and Australia. 60+ recruiting partners ensure strong career outcomes." },
+    { title: "Placement Support", desc: "A dedicated placement cell runs recruitment drives with partner hospitals and supports graduates who want to work abroad. The college publishes no audited placement figures; the cell can share current, verifiable numbers on request." },
     { title: "74+ Years of Institutional Legacy", desc: "Founded in 1952, JKKN Institutions brings over seven decades of educational excellence. A trusted name for Namakkal families." },
-    { title: "Complete Campus Ecosystem", desc: "500+ bed teaching hospital, separate hostels for boys and girls, transport services, learning commons, learning labs, food court, and Wi-Fi — everything under one roof." },
+    { title: "Complete Campus Ecosystem", desc: "Teaching hospital, separate hostels for boys and girls, transport services, learning commons, learning labs, food court, and Wi-Fi — everything under one roof." },
   ];
 
   return (
@@ -800,7 +800,7 @@ function SnippetBaitSection() {
           <div className="bg-white rounded-2xl p-6 shadow-sm">
             <h3 className="font-bold text-gray-900 mb-3">What are Allied Health Sciences?</h3>
             <p className="snippet-answer voice-answer text-sm text-gray-600 leading-relaxed">
-              Allied Health Sciences are healthcare professions that support doctors and nurses in diagnosing, treating, and preventing diseases. These include specialisations like cardiac technology, radiology, dialysis technology, respiratory therapy, and emergency care. JKKN College of Allied Health Sciences, located in Komarapalayam (Namakkal district) on NH-544, offers 9 BSc programmes with clinical training at a 500+ bed teaching hospital.
+              Allied Health Sciences are healthcare professions that support doctors and nurses in diagnosing, treating, and preventing diseases. These include specialisations like cardiac technology, radiology, dialysis technology, respiratory therapy, and emergency care. JKKN College of Allied Health Sciences, located in Komarapalayam (Namakkal district) on NH-544, offers 9 BSc programmes with clinical training at a teaching hospital.
             </p>
           </div>
 
@@ -823,7 +823,7 @@ function SnippetBaitSection() {
             <h3 className="font-bold text-gray-900 mb-3">How to Choose the Best AHS College in Namakkal District</h3>
             <div className="snippet-answer voice-answer text-sm text-gray-600 leading-relaxed space-y-2">
               <p>When choosing an allied health science college in Namakkal district, consider university affiliation (The Tamil Nadu Dr. M.G.R. Medical University is the gold standard), NAAC accreditation, clinical training infrastructure, placement track record, and campus accessibility from your hometown.</p>
-              <p>JKKN College of Allied Health Sciences in Komarapalayam (Namakkal district) is NAAC accredited, university-affiliated, has a 500+ bed hospital for clinical training, and provides placement support. Located on NH-544, it&apos;s just ~15 km from Tiruchengode.</p>
+              <p>JKKN College of Allied Health Sciences in Komarapalayam (Namakkal district) is NAAC accredited, university-affiliated, has a hospital for clinical training, and provides placement support. Located on NH-544, it&apos;s just ~15 km from Tiruchengode.</p>
             </div>
           </div>
         </div>

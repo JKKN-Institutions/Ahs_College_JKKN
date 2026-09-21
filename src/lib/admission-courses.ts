@@ -75,7 +75,7 @@ export const admissionCourses: AdmissionCourse[] = [
         avgPackage: "₹4 – 6 LPA",
         salaryRange: "Entry: ₹2.5 – 4 LPA · Senior (5+ yrs): ₹6 – 12 LPA · International (Gulf/UK): ₹15 – 30 LPA",
         description: "Train as a Cardiac Care Technologist — operate ECG, Echo, TMT, Cath Lab equipment and assist cardiologists in diagnostics and interventional procedures.",
-        longDescription: "B.Sc Cardiac Technology at JKKN College is a 4-year program (3 years academic + 1 year clinical internship) that trains learners to become certified Cardiac Care Technologists. Learners learn to operate ECG machines, perform Echocardiography (TTE, TEE, Stress Echo), conduct Treadmill Tests (TMT), and assist cardiologists in the Cath Lab during angiograms, angioplasties, pacemaker implantations, and electrophysiology studies. The curriculum is affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai. Clinical training happens at JKKN's 500+ bed multi-specialty hospital with rotations across Cardiology OPD, CTVS, ICCU, and Cath Lab.",
+        longDescription: "B.Sc Cardiac Technology at JKKN College is a 4-year program (3 years academic + 1 year clinical internship) that trains learners to become certified Cardiac Care Technologists. Learners learn to operate ECG machines, perform Echocardiography (TTE, TEE, Stress Echo), conduct Treadmill Tests (TMT), and assist cardiologists in the Cath Lab during angiograms, angioplasties, pacemaker implantations, and electrophysiology studies. The curriculum is affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai. Clinical training happens at JKKN's multi-specialty hospital with rotations across Cardiology OPD, CTVS, ICCU, and Cath Lab.",
         careerScope: "Cardiac Technology is one of the highest-paying allied health specialisations in India. With cardiovascular disease being the leading cause of mortality globally, demand for cardiac technologists is growing at 14–18% CAGR in India and 20–25% globally. Top hospitals — Apollo, Fortis, MIOT, Madras Medical Mission, Narayana Health, Manipal, and Kauvery — actively recruit fresh BSc Cardiac graduates. International opportunities are excellent: UK (NHS), UAE (Cleveland Clinic Abu Dhabi, NMC, Aster), Saudi Arabia (King Faisal Specialist Hospital), and Singapore. Senior cardiac technologists with 5+ years of experience earn ₹6–12 LPA in India and ₹15–30 LPA abroad. Specialised pathways include Cath Lab Specialist, EP Lab Specialist, Pediatric Cardiac Tech, and Perfusion Technology.",
         eligibility: [
             "+2 with Physics, Chemistry, Biology (PCB)",
@@ -92,7 +92,7 @@ export const admissionCourses: AdmissionCourse[] = [
         roles: ["Cardiac Care Technologist", "Cath Lab Technologist", "Echo Technician", "TMT Technician", "EP Lab Specialist", "ICCU Technician", "Pacemaker Technologist", "Perfusionist (with further study)"],
         recruiters: ["Apollo Hospitals", "Fortis Healthcare", "MIOT International", "Madras Medical Mission", "Kauvery Hospital", "Narayana Health", "Manipal Hospitals", "NHS UK", "Cleveland Clinic Abu Dhabi", "King Faisal Specialist Hospital (Saudi)"],
         bestFor: "Learners aiming for the highest salary potential, interventional cardiology exposure, and strong international placement scope.",
-        internship: "1 year paid internship at JKKN's 500+ bed multi-speciality hospital — rotations across Cardiology OPD, CTVS, ICCU, Cath Lab, and Echo Lab.",
+        internship: "1 year paid internship at JKKN's multi-speciality hospital — rotations across Cardiology OPD, CTVS, ICCU, Cath Lab, and Echo Lab.",
         iconKey: "heart-pulse",
         seoTitle: "BSc Cardiac Technology Admission 2026-27 in Tamil Nadu | JKKN College",
         seoDescription: "Apply for BSc Cardiac Technology admission 2026-27 at JKKN College, Tamil Nadu. ₹1.7L/yr MQ, 7 seats, 4-yr course, placement support, ₹4-6 LPA avg package. No NEET required.",
@@ -291,7 +291,7 @@ export const admissionCourses: AdmissionCourse[] = [
         roles: ["Radiology Technologist", "CT Technologist", "MRI Technologist", "Interventional Radiology Tech", "Mammography Specialist", "Sonographer", "PACS Administrator", "Cath Lab Imaging Tech"],
         recruiters: ["Apollo Imaging", "Fortis Imaging", "Medall Diagnostics", "Aarthi Scans", "Vijaya Diagnostic", "NHS UK", "Bumrungrad Thailand", "Cleveland Clinic Abu Dhabi", "NMC Healthcare UAE"],
         bestFor: "Learners aiming for international careers (UK/Australia/Canada/Gulf) with the highest earning potential among AHS courses.",
-        internship: "1 year internship rotation across CT, MRI, Ultrasound, X-ray, Cath Lab, and Interventional Radiology at JKKN's 500+ bed hospital.",
+        internship: "1 year internship rotation across CT, MRI, Ultrasound, X-ray, Cath Lab, and Interventional Radiology at JKKN's hospital.",
         iconKey: "scan-line",
         seoTitle: "B.Sc Radiography Imaging Technology Admission | JKKN AHS",
         seoDescription: "Four-year B.Sc Radiography Imaging Technology at JKKN AHS, NAAC A accredited. Five seats. Eligibility, fees and how to apply for 2026-27.",
@@ -309,7 +309,7 @@ export const admissionCourses: AdmissionCourse[] = [
         whyChoose: [
             { title: "Strongest International Scope", desc: "UK NHS, Australia AHPRA, Canada CAMRT, and Gulf hospitals all face chronic radiographer shortages. JKKN grads earn ₹18-35 LPA abroad within 2-3 years." },
             { title: "Full-Spectrum Modality Training", desc: "Hands-on exposure to digital X-ray, CT, MRI, USG, Mammography, Fluoroscopy, DEXA, and Interventional Radiology — not just X-ray." },
-            { title: "JKKN Hospital Imaging Department", desc: "500+ bed hospital fully equipped with all imaging modalities — learners rotate across every machine during the 1-year internship." },
+            { title: "JKKN Hospital Imaging Department", desc: "Hospital fully equipped with all imaging modalities — learners rotate across every machine during the 1-year internship." },
             { title: "PACS & DICOM Training", desc: "Learning framework includes PACS administration and DICOM workflow — opens hybrid clinical+IT roles in teleradiology and healthcare AI." },
             { title: "Highest AHS Earning Ceiling", desc: "Senior radiographers in UK earn GBP 50-70k (₹50-70 LPA); US radiographers earn USD 75-95k (₹62-78 LPA) — among the highest of any allied health career globally." }
         ],
@@ -348,7 +348,7 @@ export const admissionCourses: AdmissionCourse[] = [
             { q: "Is BSc Radiology a good career for going abroad?", a: "Excellent — radiography has the strongest international scope of any AHS career. UK (NHS), Australia (AHPRA), Canada (CAMRT), and Gulf countries face chronic radiographer shortages. JKKN graduates earn ₹18-35 LPA abroad. UK NHS sponsors visas for qualified radiographers. Average time from BSc to overseas job is 2-3 years." },
             { q: "What is the fee for BSc Radiology at JKKN?", a: "Management Quota (MQ) annual fee is ₹1,30,000 — total ₹5,20,000 for the 4-year course. Government Quota (GQ) is as per Tamil Nadu Govt norms. Scholarships, installments, and education loan support available." },
             { q: "How many seats are available for BSc Radiology at JKKN?", a: "5 sanctioned seats. Government Quota candidates are allotted from this same sanctioned intake through Tamil Nadu Government counselling — they are not additional seats. Among the most competitive AHS courses — apply early." },
-            { q: "Is there exposure to MRI and CT during the course?", a: "Yes — JKKN's 500+ bed hospital has a fully-equipped Radiology Department with digital X-ray, CT scan, MRI, USG, Mammography, and Cath Lab. Learners rotate across all modalities during the 1-year internship and get hands-on patient positioning, scan protocols, and image processing experience." },
+            { q: "Is there exposure to MRI and CT during the course?", a: "Yes — JKKN's hospital has a fully-equipped Radiology Department with digital X-ray, CT scan, MRI, USG, Mammography, and Cath Lab. Learners rotate across all modalities during the 1-year internship and get hands-on patient positioning, scan protocols, and image processing experience." },
             { q: "Can I specialise in CT or MRI after BSc Radiology?", a: "Yes — after BSc you can pursue PG Diploma in CT/MRI, MSc Medical Imaging Technology, certifications like IAEA Radiation Safety, ARRT (US), or vendor-specific training (Siemens, GE, Philips). Many specialists earn 30-50% more than generalist radiographers." }
         ]
     },
@@ -440,7 +440,7 @@ export const admissionCourses: AdmissionCourse[] = [
             { q: "Is BSc OT & Anaesthesia a good career?", a: "Yes — universal employability since every hospital with surgical capability needs OT and anaesthesia techs. India has 50,000+ open positions. Career progression: ₹2.5-4 LPA at entry → ₹5-9 LPA in 5 years → OT In-charge / CSSD Manager in 8-10 years. Gulf packages range ₹15-28 LPA." },
             { q: "What is the fee for BSc OT & Anaesthesia at JKKN?", a: "Management Quota (MQ) annual fee is ₹1,70,000 — total ₹6,80,000 for 4 years. Government Quota (GQ) is as per Tamil Nadu Govt norms. Installments, scholarships, and education loan assistance are available." },
             { q: "How many seats for BSc OT & Anaesthesia at JKKN?", a: "10 sanctioned seats — among the larger intakes among AHS courses at JKKN. Government Quota candidates are allotted from this same sanctioned intake through Tamil Nadu Government counselling — they are not additional seats." },
-            { q: "Will I get hands-on training in OT during the course?", a: "Yes — extensive hands-on training. 1-year mandatory internship at JKKN's 500+ bed hospital includes rotations across General Surgery, Ortho, Neuro, Cardiac, OB-GYN, Paediatric, and Day-Care OTs. Learners assist with 200+ procedures during the internship." },
+            { q: "Will I get hands-on training in OT during the course?", a: "Yes — extensive hands-on training. 1-year mandatory internship at JKKN's hospital includes rotations across General Surgery, Ortho, Neuro, Cardiac, OB-GYN, Paediatric, and Day-Care OTs. Learners assist with 200+ procedures during the internship." },
             { q: "Can OT & Anaesthesia graduates work in cardiac surgery?", a: "Yes — with 2-3 years of general OT experience, technologists can specialise in Cardiac Anaesthesia, CTVS OT, or Transplant OT. These specialist roles pay 30-50% more than general OT positions. Many JKKN alumni currently work in cardiac OTs at Apollo and Madras Medical Mission." }
         ]
     },
@@ -493,7 +493,7 @@ export const admissionCourses: AdmissionCourse[] = [
         whyChoose: [
             { title: "Post-COVID Demand Surge", desc: "Respiratory therapy demand grew 18-22% globally post-pandemic. India has only ~5,000 qualified RTs for 1.4 billion — structural shortage will persist for a decade." },
             { title: "Strong Migration Pathway", desc: "USA (NBRC RRT cert), UK, Canada, and Australia have active visa programs for Indian BSc RTs. US RTs earn USD 70-90k (₹58-75 LPA)." },
-            { title: "Multi-Unit ICU Training", desc: "Rotations across MICU, SICU, NICU, PICU, Pulmonology OPD, and Sleep Lab at JKKN's 500+ bed hospital — broad clinical exposure." },
+            { title: "Multi-Unit ICU Training", desc: "Rotations across MICU, SICU, NICU, PICU, Pulmonology OPD, and Sleep Lab at JKKN's hospital — broad clinical exposure." },
             { title: "ECMO & Advanced Ventilation", desc: "JKKN's MICU has ECMO capability; you train on ARDS management, prone ventilation, weaning protocols, and HFNC therapy." },
             { title: "Specialisation Routes", desc: "After BSc, specialise in Neonatal RT, ECMO Specialist, Pulmonary Rehab, or Sleep Tech — each opens 30-50% higher salary brackets." }
         ],
@@ -551,7 +551,7 @@ export const admissionCourses: AdmissionCourse[] = [
         avgPackage: "₹3 – 4.5 LPA",
         salaryRange: "Entry: ₹2.4 – 3.5 LPA · Senior (5+ yrs): ₹5 – 9 LPA · International (US/UK): ₹40 – 80 LPA (post bridge)",
         description: "Work alongside doctors in OPD/IPD/Emergency — perform history taking, basic procedures, patient counselling, and clinical documentation.",
-        longDescription: "B.Sc Physician Assistant at JKKN College is a 4-year program (3 + 1) preparing learners as Clinical Physician Assistants who work directly under physicians' supervision. The course covers clinical history-taking, physical examination, basic diagnostic procedures (suturing, IV cannulation, ABG sampling, lumbar puncture assistance), patient counselling, clinical documentation, EMR systems, and OPD/IPD/Emergency workflows. Affiliated to TN Dr. MGR Medical University. Internship rotations cover General Medicine, Cardiology, Neurology, Oncology, OB-GYN, Paediatrics, and Emergency Medicine at JKKN's 500+ bed teaching hospital.",
+        longDescription: "B.Sc Physician Assistant at JKKN College is a 4-year program (3 + 1) preparing learners as Clinical Physician Assistants who work directly under physicians' supervision. The course covers clinical history-taking, physical examination, basic diagnostic procedures (suturing, IV cannulation, ABG sampling, lumbar puncture assistance), patient counselling, clinical documentation, EMR systems, and OPD/IPD/Emergency workflows. Affiliated to TN Dr. MGR Medical University. Internship rotations cover General Medicine, Cardiology, Neurology, Oncology, OB-GYN, Paediatrics, and Emergency Medicine at JKKN's teaching hospital.",
         careerScope: "Physician Assistant is uniquely positioned as a bridge career between nursing and medicine. In India, demand is growing in corporate hospitals (Apollo, Fortis, Manipal, Aster) for OPD-based clinical assistants — entry packages ₹2.4–3.5 LPA, senior PAs ₹5–9 LPA. The biggest opportunity is international migration: US Physician Assistants earn USD 100,000–130,000 (₹80L–₹1Cr+); UK Physician Associates earn GBP 45,000–65,000. The pathway requires a 2-3 year US PA bridge program or UK PA registration. JKKN BSc PA forms an excellent foundation. Specialisations include Cardiology PA, Oncology PA, Emergency PA, and Surgical First Assistant.",
         eligibility: [
             "+2 with Physics, Chemistry, Biology (PCB)",
@@ -625,7 +625,7 @@ export const admissionCourses: AdmissionCourse[] = [
             { q: "What is the fee for BSc Physician Assistant at JKKN?", a: "Management Quota (MQ) annual fee is ₹1,30,000 — total ₹5,20,000 for 4 years. Government Quota (GQ) as per TN Govt norms. Installments and scholarships available." },
             { q: "How many seats for BSc Physician Assistant at JKKN?", a: "10 sanctioned seats + GQ seats via Tamil Nadu counselling. One of the more competitive intakes due to international PA pathway appeal." },
             { q: "Can I become a US Physician Assistant after BSc PA from India?", a: "Yes, with additional steps. The US requires a Master's-level accredited PA program (typically 2-3 years post-bachelor). Indian BSc PA is a strong foundation but you'll need to complete the US PA program + PANCE certification. US PAs earn USD 100-130k. Alternative: UK Physician Associate registration (1-year bridge)." },
-            { q: "Will I get hands-on patient interaction during the course?", a: "Yes — extensive patient interaction from Year 2. 1-year mandatory clinical internship at JKKN's 500+ bed hospital covers Medicine, Cardiology, Neurology, Oncology, OB-GYN, Paediatrics, and Emergency. Learners complete 2,000+ patient encounters during the program." }
+            { q: "Will I get hands-on patient interaction during the course?", a: "Yes — extensive patient interaction from Year 2. 1-year mandatory clinical internship at JKKN's hospital covers Medicine, Cardiology, Neurology, Oncology, OB-GYN, Paediatrics, and Emergency. Learners complete 2,000+ patient encounters during the program." }
         ]
     },
     {
@@ -642,7 +642,7 @@ export const admissionCourses: AdmissionCourse[] = [
         avgPackage: "₹3 – 4.5 LPA",
         salaryRange: "Entry: ₹2.4 – 3.5 LPA · Senior (5+ yrs): ₹5 – 8 LPA · International: ₹14 – 26 LPA",
         description: "Manage MICU/SICU/CCU/NICU equipment, ventilators, monitors, and assist intensivists in life-saving interventions.",
-        longDescription: "B.Sc Critical Care Technology at JKKN College is a 4-year program (3 + 1) training learners as Critical Care Technologists who form the backbone of every Intensive Care Unit (MICU, SICU, CCU, NICU, PICU). The learning framework covers ICU equipment (ventilators, monitors, infusion pumps, dialysis machines, ECMO), haemodynamic monitoring, ABG analysis, advanced airway management, drug calculations, sepsis protocols, ACLS/BLS, organ donation, and end-of-life care. Affiliated to TN Dr. MGR Medical University. Internship rotates across all ICU types at JKKN's 500+ bed multi-speciality hospital.",
+        longDescription: "B.Sc Critical Care Technology at JKKN College is a 4-year program (3 + 1) training learners as Critical Care Technologists who form the backbone of every Intensive Care Unit (MICU, SICU, CCU, NICU, PICU). The learning framework covers ICU equipment (ventilators, monitors, infusion pumps, dialysis machines, ECMO), haemodynamic monitoring, ABG analysis, advanced airway management, drug calculations, sepsis protocols, ACLS/BLS, organ donation, and end-of-life care. Affiliated to TN Dr. MGR Medical University. Internship rotates across all ICU types at JKKN's multi-speciality hospital.",
         careerScope: "ICU demand has structurally grown post-COVID — India added 2 lakh+ ICU beds during 2020-2024 with massive ongoing shortage of trained critical care professionals. Top Indian recruiters: Apollo Critical Care, Fortis, MIOT, Manipal, Kauvery, Narayana — pay ₹2.4–3.5 LPA entry, ₹5–8 LPA after 5 years as senior CCT or ICU In-charge. Gulf countries (UAE, Saudi, Qatar) hire Indian CCTs at ₹14–26 LPA. Specialisations include ECMO Specialist, NICU/PICU Specialist, CRRT Specialist, Cardiac ICU Tech, and ICU Manager. The structural shortage means high job security across the next decade.",
         eligibility: [
             "+2 with Physics, Chemistry, Biology (PCB)",
@@ -659,7 +659,7 @@ export const admissionCourses: AdmissionCourse[] = [
         roles: ["Critical Care Technologist", "ICU Technician", "ECMO Specialist", "NICU/PICU Specialist", "CRRT Specialist", "Code Blue Team Member", "ICU In-charge", "Cardiac ICU Tech"],
         recruiters: ["Apollo Critical Care", "Fortis ICU", "MIOT", "Manipal Hospitals", "Kauvery Hospital", "Narayana Health", "Mediclinic Middle East", "Saudi German Hospital", "Aster Gulf"],
         bestFor: "Learners passionate about intensive care, ECMO, and life-support technology — high-pressure but extremely rewarding clinical work.",
-        internship: "1 year rotation across MICU, SICU, CCU, NICU, PICU, and ECMO unit at JKKN's 500+ bed multi-speciality hospital.",
+        internship: "1 year rotation across MICU, SICU, CCU, NICU, PICU, and ECMO unit at JKKN's multi-speciality hospital.",
         iconKey: "siren",
         seoTitle: "BSc Critical Care Technology Admission 2026-27 Tamil Nadu | JKKN",
         seoDescription: "Apply for BSc Critical Care Technology admission at JKKN College. ₹1.1L/yr MQ, 10 seats, 4-yr course, placement support, ₹3-4.5 LPA. Strong ICU career scope.",
@@ -676,7 +676,7 @@ export const admissionCourses: AdmissionCourse[] = [
         ],
         whyChoose: [
             { title: "Post-COVID ICU Expansion", desc: "India added 2 lakh+ ICU beds during 2020-2024. Massive shortage of trained critical care professionals — placement is rapid and broad." },
-            { title: "Multi-ICU Rotations", desc: "Internship covers MICU, SICU, CCU, NICU, PICU, and ECMO unit at JKKN's 500+ bed hospital. Wider clinical exposure than most AHS programs." },
+            { title: "Multi-ICU Rotations", desc: "Internship covers MICU, SICU, CCU, NICU, PICU, and ECMO unit at JKKN's hospital. Wider clinical exposure than most AHS programs." },
             { title: "ECMO Specialist Pathway", desc: "JKKN's MICU has ECMO capability — learners get hands-on exposure. Post-graduation ELSO certification opens ₹6-12 LPA India / ₹25-40 LPA Gulf ECMO Specialist roles." },
             { title: "24/7 Job Security", desc: "ICUs operate 24/7 with high staffing ratios — recession-proof career with high shift premiums and overtime pay." },
             { title: "Speciality Tracks", desc: "Pathways into NICU Specialist (neonatal), PICU Specialist (paediatric), CRRT Specialist (ICU dialysis), and Cardiac ICU Tech — each opens niche, well-paid careers." }

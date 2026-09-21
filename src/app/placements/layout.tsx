@@ -51,7 +51,7 @@ const howToSchema = {
   "step": [
     { "@type": "HowToStep", "position": 1, "name": "Registration", "text": "Learners register with the placement cell in Semester 5. Profile creation, career interest mapping, and goal setting." },
     { "@type": "HowToStep", "position": 2, "name": "Resume & Skills Workshop", "text": "Professional resume building, interview skills training, communication workshops, and hospital etiquette sessions." },
-    { "@type": "HowToStep", "position": 3, "name": "Hospital Tie-up Drives", "text": "100+ partner hospitals visit campus for recruitment drives. Group discussions, aptitude tests, and technical assessments." },
+    { "@type": "HowToStep", "position": 3, "name": "Hospital Tie-up Drives", "text": "Partner hospitals visit campus for recruitment drives. Group discussions, aptitude tests, and technical assessments." },
     { "@type": "HowToStep", "position": 4, "name": "Shortlisting & Interviews", "text": "Hospitals shortlist candidates based on academic performance, skills assessment, and clinical training records." },
     { "@type": "HowToStep", "position": 5, "name": "Offer Letter", "text": "Selected learners receive official offer letters with salary details, role description, and joining date." },
     { "@type": "HowToStep", "position": 6, "name": "Joining & Onboarding", "text": "Placement cell supports learners through joining formalities, relocation assistance, and initial onboarding." }
@@ -63,7 +63,7 @@ const recruiterListSchema = {
   "@type": "ItemList",
   "@id": "https://ahs.jkkn.ac.in/#top-recruiters-at-jkkn-ahs",
   "name": "Top Recruiters at JKKN AHS",
-  "description": "100+ hospitals and healthcare organizations that recruit Allied Health Sciences graduates from JKKN.",
+  "description": "Hospitals and healthcare organizations named by JKKN College of Allied Health Sciences as placement partners.",
   "numberOfItems": 18,
   "itemListElement": [
     "Apollo Hospitals", "MIOT International", "Fortis Healthcare", "Manipal Hospitals", "Kauvery Hospital", "Columbia Asia",

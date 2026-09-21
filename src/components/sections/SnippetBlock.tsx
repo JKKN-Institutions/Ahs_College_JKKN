@@ -22,7 +22,7 @@ export function SnippetBlock() {
             Best Allied Health Sciences College in Tamil Nadu
           </h2>
           <p className="snippet-answer voice-answer text-gray-700 text-sm sm:text-base leading-relaxed max-w-4xl">
-            JKKN College of Allied Health Sciences, located on NH-544 in Komarapalayam, Tamil Nadu, is one of the best allied health sciences colleges in the state. Affiliated with Tamil Nadu Dr. M.G.R. Medical University and NAAC A accredited, the college offers 9 specialized B.Sc programs with 2,000+ clinical training hours at a 500+ bed multi-specialty teaching hospital. With placement support and a dedicated placement cell, JKKN produces job-ready allied health professionals for leading hospitals across India and abroad.
+            JKKN College of Allied Health Sciences, located on NH-544 in Komarapalayam, Tamil Nadu, is one of the best allied health sciences colleges in the state. Affiliated with Tamil Nadu Dr. M.G.R. Medical University and NAAC A accredited, the college offers 9 specialized B.Sc programs with 2,000+ clinical training hours at a multi-specialty teaching hospital. With placement support and a dedicated placement cell, JKKN produces job-ready allied health professionals for leading hospitals across India and abroad.
           </p>
         </div>
 

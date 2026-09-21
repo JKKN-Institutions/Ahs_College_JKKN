@@ -68,32 +68,36 @@ const testimonials = [
     }
 ];
 
+// Role -> programme links only. The salary columns that used to sit here were sector
+// guesses with no source, and this page states that no audited salary figure is published.
 const salaryData = [
-    { role: "Cardiac Technologist", link: "/cardiac-technology", starting: "₹2.5 - 4.5 LPA", international: "₹15 - 25 LPA" },
-    { role: "Radiographer / Imaging Technologist", link: "/radiology-imaging-technology", starting: "₹2.5 - 4.0 LPA", international: "₹12 - 20 LPA" },
-    { role: "Dialysis Technician", link: "/dialysis-technology", starting: "₹2.0 - 3.5 LPA", international: "₹12 - 18 LPA" },
-    { role: "Respiratory Therapist", link: "/respiratory-therapy", starting: "₹2.5 - 4.5 LPA", international: "₹15 - 25 LPA" },
-    { role: "Physician Assistant", link: "/physician-assistant", starting: "₹3.0 - 5.0 LPA", international: "₹15 - 22 LPA" },
-    { role: "OT & Anaesthesia Technologist", link: "/operation-theatre-anaesthesia", starting: "₹2.0 - 3.5 LPA", international: "₹12 - 18 LPA" },
-    { role: "Critical Care Technologist", link: "/critical-care-technology", starting: "₹2.5 - 4.0 LPA", international: "₹14 - 22 LPA" },
-    { role: "Medical Records Officer", link: "/medical-record-science", starting: "₹2.0 - 3.5 LPA", international: "₹10 - 15 LPA" },
-    { role: "Emergency Care Technician", link: "/accident-emergency-care", starting: "₹2.0 - 3.5 LPA", international: "₹12 - 18 LPA" }
+    { role: "Cardiac Technologist", link: "/cardiac-technology" },
+    { role: "Radiographer / Imaging Technologist", link: "/radiology-imaging-technology" },
+    { role: "Dialysis Technician", link: "/dialysis-technology" },
+    { role: "Respiratory Therapist", link: "/respiratory-therapy" },
+    { role: "Physician Assistant", link: "/physician-assistant" },
+    { role: "OT & Anaesthesia Technologist", link: "/operation-theatre-anaesthesia" },
+    { role: "Critical Care Technologist", link: "/critical-care-technology" },
+    { role: "Medical Records Officer", link: "/medical-record-science" },
+    { role: "Emergency Care Technician", link: "/accident-emergency-care" }
 ];
 
 const tier1Recruiters = ["Apollo Hospitals", "MIOT International", "Fortis Healthcare", "Manipal Hospitals", "Kauvery Hospital", "Columbia Asia"];
 const tier2Recruiters = ["Narayana Health", "GEM Hospital", "Brookefield Hospital", "5C Network", "Punarvaas", "SRL Diagnostics", "Thyrocare", "Dr. Lal PathLabs", "Meenakshi Mission", "KG Hospital", "PSG Hospitals", "Ganga Hospital"];
 
+// Destination cards carry no salary, employer or superlative claim: the college publishes
+// no audited international placement data (see the placement-cell statement below).
 const internationalDestinations = [
-    { country: "United Kingdom", flag: "🇬🇧", hospitals: "NHS Hospitals", salary: "₹25L+", highlight: "Largest international employer of JKKN graduates" },
-    { country: "UAE", flag: "🇦🇪", hospitals: "Cleveland Clinic Abu Dhabi, NMC Healthcare", salary: "₹18 - 22L", highlight: "Tax-free salary, modern facilities" },
-    { country: "Saudi Arabia", flag: "🇸🇦", hospitals: "King Fahad, Saudi German Hospital", salary: "₹15 - 20L", highlight: "High demand for Allied Health professionals" },
-    { country: "Singapore", flag: "🇸🇬", hospitals: "Tan Tock Seng, Raffles Medical", salary: "₹20L+", highlight: "World-class healthcare infrastructure" }
+    { country: "United Kingdom", flag: "🇬🇧" },
+    { country: "UAE", flag: "🇦🇪" },
+    { country: "Saudi Arabia", flag: "🇸🇦" },
+    { country: "Singapore", flag: "🇸🇬" }
 ];
 
 const processSteps = [
     { step: 1, title: "Registration", desc: "Learners register with the placement cell in Semester 5 (third year). Profile creation, career interest mapping, and goal setting.", icon: <ClipboardList className="w-5 h-5" /> },
     { step: 2, title: "Resume & Skills Workshop", desc: "Professional resume building, interview skills training, communication workshops, and hospital etiquette sessions.", icon: <FileText className="w-5 h-5" /> },
-    { step: 3, title: "Hospital Tie-up Drives", desc: "100+ partner hospitals visit campus for recruitment drives. Group discussions, aptitude tests, and technical assessments.", icon: <Hospital className="w-5 h-5" /> },
+    { step: 3, title: "Hospital Tie-up Drives", desc: "Partner hospitals visit campus for recruitment drives. Group discussions, aptitude tests, and technical assessments.", icon: <Hospital className="w-5 h-5" /> },
     { step: 4, title: "Shortlisting & Interviews", desc: "Hospitals shortlist candidates based on academic performance, skills assessment, and clinical training records.", icon: <UserCheck className="w-5 h-5" /> },
     { step: 5, title: "Offer Letter", desc: "Selected learners receive official offer letters with salary details, role description, and joining date.", icon: <Briefcase className="w-5 h-5" /> },
     { step: 6, title: "Joining & Onboarding", desc: "Placement cell supports learners through joining formalities, relocation assistance, and initial onboarding.", icon: <HandshakeIcon className="w-5 h-5" /> }
@@ -152,7 +156,7 @@ function HeroSection() {
                     <span className="text-[#ffde59]">Placement Support</span>
                 </h1>
                 <p className="text-white/90 text-base sm:text-lg md:text-xl max-w-3xl mx-auto mb-8 leading-relaxed">
-                    JKKN College of Allied Health Sciences, Tamil Nadu, connects healthcare graduates with 100+ leading hospitals across India and abroad. Your career in Allied Health starts here.
+                    JKKN College of Allied Health Sciences, Tamil Nadu, runs a dedicated placement cell that connects graduates with partner hospitals across India and abroad. Your career in Allied Health starts here.
                 </p>
 
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-3xl mx-auto mb-10">
@@ -386,7 +390,7 @@ function RecruitersSection() {
                 <div className="text-center mb-8 md:mb-12">
                     <span className="text-[#0b6d41] font-bold tracking-wider uppercase text-xs sm:text-sm mb-4 block">OUR PARTNERS</span>
                     <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#0b6d41] leading-tight mb-4">
-                        Top Recruiters — 100+ Partner Hospitals
+                        Top Recruiters — Partner Hospitals
                     </h2>
                     <p className="text-gray-600 max-w-3xl mx-auto text-sm sm:text-base">
                         Leading hospitals and healthcare organizations across India trust JKKN AHS graduates for their clinical skills and professional readiness.
@@ -433,7 +437,7 @@ function RecruitersSection() {
 
                 {/* Tier 3 — Count */}
                 <p className="text-center text-gray-500 text-sm font-medium">
-                    + 80 more partner hospitals across Tamil Nadu and India
+                    Further partner hospitals across Tamil Nadu and India — the placement cell can share the current list on request
                 </p>
             </div>
         </section>
@@ -452,7 +456,7 @@ function GlobalCareersSection() {
                         International Placements — Work Abroad After B.Sc. AHS
                     </h2>
                     <p className="text-gray-600 max-w-3xl mx-auto text-sm sm:text-base">
-                        JKKN graduates are working in world-class hospitals across 6 countries. Our international placement cell provides end-to-end support for global careers.
+                        Our international placement cell supports graduates who want to work abroad, from licensing exams to visa guidance.
                     </p>
                 </div>
 
@@ -469,9 +473,6 @@ function GlobalCareersSection() {
                         >
                             <div className="text-3xl mb-3">{dest.flag}</div>
                             <h3 className="font-bold text-gray-900 text-lg mb-1">{dest.country}</h3>
-                            <p className="text-[#0b6d41] font-bold text-sm mb-2">{dest.salary} per annum</p>
-                            <p className="text-gray-600 text-xs mb-2"><span className="font-semibold">Hospitals:</span> {dest.hospitals}</p>
-                            <p className="text-gray-500 text-xs italic">{dest.highlight}</p>
                         </motion.div>
                     ))}
                 </div>
@@ -565,7 +566,7 @@ function SalaryTableSection() {
                 {/* AEO snippet paragraph */}
                 <div id="salary-snippet" className="max-w-4xl mx-auto text-center mb-8">
                     <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
-                        The average starting salary after B.Sc. Allied Health Sciences from JKKN is 3.2 lakh per year. Specialized roles like Cardiac Technology and Respiratory Therapy offer starting packages of 2.5 to 4.5 lakh per annum in India. International salaries range from 12 to 25 lakh per annum in countries like the UK, UAE, Saudi Arabia, and Singapore.
+                        JKKN College of Allied Health Sciences publishes no audited average or highest salary figure, so none is quoted here. Pay differs by specialisation, hospital and country, and roles abroad generally pay more than the same role in India. The placement cell can give current, verifiable figures on request.
                     </p>
                 </div>
 
@@ -574,28 +575,26 @@ function SalaryTableSection() {
                     <table className="w-full bg-white rounded-2xl overflow-hidden shadow-md border border-gray-100">
                         <thead>
                             <tr className="bg-[#0b6d41] text-white">
-                                <th className="text-left py-4 px-4 sm:px-6 text-sm font-bold">Role</th>
-                                <th className="text-left py-4 px-4 sm:px-6 text-sm font-bold">Starting Salary (India)</th>
-                                <th className="text-left py-4 px-4 sm:px-6 text-sm font-bold">International Salary</th>
+                                <th className="text-left py-4 px-4 sm:px-6 text-sm font-bold">Role after graduation</th>
+                                <th className="text-left py-4 px-4 sm:px-6 text-sm font-bold">Programme</th>
                             </tr>
                         </thead>
                         <tbody>
                             {salaryData.map((row, i) => (
                                 <tr key={row.role} className={i % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
+                                    <td className="py-3 px-4 sm:px-6 text-gray-900 font-semibold text-sm">{row.role}</td>
                                     <td className="py-3 px-4 sm:px-6">
                                         <Link href={row.link} className="text-[#0b6d41] font-semibold text-sm hover:underline">
-                                            {row.role}
+                                            View programme
                                         </Link>
                                     </td>
-                                    <td className="py-3 px-4 sm:px-6 text-gray-700 text-sm">{row.starting}</td>
-                                    <td className="py-3 px-4 sm:px-6 text-gray-700 text-sm">{row.international}</td>
                                 </tr>
                             ))}
                         </tbody>
                     </table>
                 </div>
                 <p className="text-center text-gray-400 text-xs mt-4 italic">
-                    Salary ranges are indicative sector figures, not JKKN placement records. Confirm current figures with the placement cell.
+                    No salary figure is published on this page because no audited placement record exists for it. The placement cell can share current, verifiable numbers on request.
                 </p>
             </div>
         </section>

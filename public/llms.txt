@@ -9,7 +9,7 @@
 
 ## Institution Overview
 
-JKKN College of Allied Health Sciences is a NAAC A accredited allied health institution in Komarapalayam, Namakkal District, Tamil Nadu, India. Established in 2019 as part of J.K.K. Nattraja Educational Institutions (founded 1952, 70+ years legacy), the college offers 9 undergraduate B.Sc programs in healthcare specializations. All programs are affiliated to Tamil Nadu Dr. M.G.R. Medical University, Chennai. Students receive 2000+ hours of clinical training at the on-campus 500+ bed multi-specialty teaching hospital from Year 1.
+JKKN College of Allied Health Sciences is a NAAC A accredited allied health institution in Komarapalayam, Namakkal District, Tamil Nadu, India. Established in 2019 as part of J.K.K. Nattraja Educational Institutions (founded 1952, 70+ years legacy), the college offers 9 undergraduate B.Sc programs in healthcare specializations. All programs are affiliated to Tamil Nadu Dr. M.G.R. Medical University, Chennai. Students receive 2000+ hours of clinical training at the on-campus multi-specialty teaching hospital from Year 1.
 
 ## Key Facts
 
@@ -20,7 +20,7 @@ JKKN College of Allied Health Sciences is a NAAC A accredited allied health inst
 - Campus: NH-544 (Salem to Coimbatore National Highway), Natarajapuram, Komarapalayam, Namakkal District, Tamil Nadu 638183, India
 - Coordinates: 11.4428327°N, 77.7288828°E
 - Contact: +91 9345855001 | ahsincharge@jkkn.ac.in
-- Teaching hospital: 500+ bed multi-specialty hospital on campus
+- Teaching hospital: multi-specialty hospital on campus (bed count not published)
 - Average salary package: INR 3.2 LPA
 - Highest salary package: INR 7.5 LPA (domestic), INR 25 LPA (international)
 - Active students: 250+
@@ -101,7 +101,7 @@ Sectors: Multi-specialty hospitals, diagnostic centers, clinical research organi
 
 ## Campus Infrastructure
 
-- 500+ bed multi-specialty teaching hospital (clinical training from Year 1)
+- Multi-specialty teaching hospital (clinical training from Year 1)
 - Specialized laboratories (list provided by the college; the public /lab page does not itemise them): Cardiac Lab, Radiology Lab, Dialysis Unit, OT Simulation Lab, Respiratory Lab, Critical Care Lab, Emergency Care Lab
 - Library: 5,000+ medical books, online journal subscriptions
 - Separate hostels for boys and girls with mess facility
@@ -185,7 +185,7 @@ Q: What is the placement rate at JKKN AHS?
 A: JKKN provides placement support with an average salary of INR 3.2 LPA and highest of INR 7.5 LPA (domestic). International placements reach INR 25 LPA. Over 50 hospital partners including Apollo, MIOT, Fortis, and Manipal recruit from campus.
 
 Q: Does JKKN AHS provide clinical training?
-A: Yes, all programs include 2000+ hours of clinical training during the 1-year internship at the on-campus 500+ bed multi-specialty hospital and partner hospitals.
+A: Yes, all programs include 2000+ hours of clinical training during the 1-year internship at the on-campus multi-specialty hospital and partner hospitals.
 
 Q: What is the fee structure at JKKN AHS?
 A: Management Quota annual tuition ranges from INR 60,000 for Medical Record Science to INR 1,70,000 for Cardiac Technology and Operation Theatre & Anaesthesia. Government Quota fees are as per Tamil Nadu government norms. Examination fees are charged separately. Scholarships are available for eligible students.

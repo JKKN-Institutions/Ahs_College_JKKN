@@ -19,7 +19,7 @@ const reasons = [
     },
     {
         title: "Hospital Partnerships",
-        description: "Clinical rotations at partner hospitals including Senthil Multi-Speciality, Lotus, Erode Medical Center, and Olirum Erode Foundation. Learners complete 2,000+ hours of hands-on patient care at a 500+ bed multi-specialty teaching hospital, gaining real-world exposure from Year 1.",
+        description: "Clinical rotations at partner hospitals including Senthil Multi-Speciality, Lotus, Erode Medical Center, and Olirum Erode Foundation. Learners complete 2,000+ hours of hands-on patient care at a multi-specialty teaching hospital, gaining real-world exposure from Year 1.",
         icon: <Building2 className="w-10 h-10" />,
     },
     {
@@ -29,7 +29,7 @@ const reasons = [
     },
     {
         title: "Clinical Training Excellence",
-        description: "Allied Health Sciences professionals bridge doctors and patients by providing vital diagnostic and therapeutic care, rapid emergency response, and smart use of medical technology. Trained across 50+ partner hospitals, our graduates are equipped for ICU, OT, radiology, cardiac labs, and emergency departments.",
+        description: "Allied Health Sciences professionals bridge doctors and patients by providing vital diagnostic and therapeutic care, rapid emergency response, and smart use of medical technology. Trained at partner hospitals, our graduates are equipped for ICU, OT, radiology, cardiac labs, and emergency departments.",
         icon: <Briefcase className="w-10 h-10" />,
     }
 ];
