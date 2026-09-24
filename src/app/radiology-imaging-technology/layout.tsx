@@ -1,15 +1,22 @@
 import { createPageMetadata } from "@/lib/metadata";
 import { COURSE_FAQS } from "@/lib/course-faqs";
+import { RAD_LIST_SOURCE, RAD_GOVT_COLLEGES, RAD_JKKN_SEATS } from "@/lib/radiology-colleges-tn";
 
 export const metadata = createPageMetadata({
-  title: "Best Radiography Course in Tamilnadu | JKKN AHS College",
-  description: "JKKN offers the best radiography course in Tamilnadu. BSc radiography programme with hospital-attached imaging training & placements. Admissions 2026-27!",
+  title: "BSc Radiology & Imaging Technology Colleges in Tamilnadu | JKKN",
+  description: `${RAD_LIST_SOURCE.totalInstitutions} BSc Radiology & Imaging Technology (B.MRIT) colleges in Tamilnadu (TNMGRMU ${RAD_LIST_SOURCE.year}), ${RAD_GOVT_COLLEGES.length} govt. Govt list, B.Sc vs MD, JKKN ${RAD_JKKN_SEATS} seats.`,
   path: "/radiology-imaging-technology",
   keywords: [
     "radiography course in tamilnadu",
     "b sc radiography colleges in tamilnadu",
     "bsc radiography colleges in tamilnadu",
-    "radiography courses in tamilnadu"
+    "radiography courses in tamilnadu",
+    "bsc radiology colleges in tamilnadu",
+    "b sc radiology colleges in tamilnadu",
+    "bsc radiology and imaging technology colleges in tamilnadu",
+    "radiology and imaging technology colleges in tamilnadu",
+    "radiology colleges in tamilnadu",
+    "radiology course colleges in tamilnadu"
   ],
   ogImage: { url: "https://ahs.jkkn.ac.in/radiology-technology-hero.webp", width: 1200, height: 630, alt: "BSc Radiology Imaging Technology at JKKN College" },
 });
@@ -85,7 +92,7 @@ const courseSchema = {
 const speakableSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "name": "Best Radiography Course in Tamilnadu | JKKN AHS College",
+  "name": "BSc Radiology & Imaging Technology Colleges in Tamilnadu | JKKN",
   "url": "https://ahs.jkkn.ac.in/radiology-imaging-technology",
   "speakable": {
     "@type": "SpeakableSpecification",
