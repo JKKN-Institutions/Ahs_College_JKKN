@@ -1,15 +1,19 @@
 import { createPageMetadata } from "@/lib/metadata";
 import { COURSE_FAQS } from "@/lib/course-faqs";
+import { OT_LIST_SOURCE, OT_GOVT_COLLEGES, OT_JKKN_SEATS } from "@/lib/ot-colleges-tn";
 
 export const metadata = createPageMetadata({
-  title: "BSc OT & Anaesthesia Technology College in TN | JKKN",
-  description: "Looking for BSc operation theatre & anaesthesia technology colleges in Tamilnadu? JKKN offers clinical OT training, placements & scholarships. Enrol 2026!",
+  title: "BSc Operation Theatre & Anaesthesia Technology Colleges in Tamilnadu | JKKN",
+  description: `BSc Anaesthesia and Operation Theatre Technology (B.AOTT): ${OT_LIST_SOURCE.totalInstitutions} colleges in Tamilnadu (TNMGRMU ${OT_LIST_SOURCE.year}), ${OT_GOVT_COLLEGES.length} govt. Govt list, seats, B.Sc vs MD, JKKN ${OT_JKKN_SEATS} seats.`,
   path: "/operation-theatre-anaesthesia",
   keywords: [
     "b.sc operation theatre & anaesthesia technology colleges in tamilnadu",
     "bsc operation theatre & anaesthesia technology colleges in tamilnadu",
     "operation theatre technician course in tamilnadu",
-    "bsc operation theatre technology colleges in tamilnadu"
+    "bsc operation theatre technology colleges in tamilnadu",
+    "bsc anaesthesia technology colleges in tamilnadu",
+    "anaesthesia colleges in tamilnadu",
+    "bsc anaesthesia and operation theatre technology"
   ],
 });
 

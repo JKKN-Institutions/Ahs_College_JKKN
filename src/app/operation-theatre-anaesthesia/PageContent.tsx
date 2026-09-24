@@ -17,6 +17,7 @@ import {
 import { Breadcrumb } from '@/components/Breadcrumb';
 import AhsEnquiryForm from "@/components/lead/AhsEnquiryForm";
 import { DEFAULT_PROGRAMME_BY_PAGE } from "@/lib/ahs-programmes";
+import { OtCollegesTamilNadu } from "@/components/OtCollegesTamilNadu";
 
 export default function OperationTheatreAnaesthesia() {
     return (
@@ -39,6 +40,7 @@ export default function OperationTheatreAnaesthesia() {
                 <CareerSection />
                 <FacilitiesSection />
                 <AdmissionProcessSection />
+                <OtCollegesTamilNadu />
                 <FAQSection />
                 <CTASection />
                 {/* City Pages Cross-Links */}
@@ -459,12 +461,12 @@ function SyllabusSection() {
 // 6. Career Section
 function CareerSection() {
     const jobs = [
-        { title: "OT Technician", desc: "Assist surgeons during operations, manage surgical instruments, and ensure sterile environment.", salary: "₹3 - 6 LPA", icon: <Scissors /> },
-        { title: "Anaesthesia Technician", desc: "Prepare and maintain anaesthesia equipment, assist anaesthesiologists during procedures.", salary: "₹4 - 8 LPA", icon: <Syringe /> },
-        { title: "Surgical Assistant", desc: "Provide direct surgical support, handle tissue retraction, and maintain operative field.", salary: "₹5 - 10 LPA", icon: <UserCog /> },
-        { title: "CSSD Technician", desc: "Manage central sterile supply department, ensure proper sterilization of instruments.", salary: "₹3 - 7 LPA", icon: <Shield /> },
-        { title: "Endoscopy Technician", desc: "Operate endoscopic equipment and assist in minimally invasive procedures.", salary: "₹4 - 9 LPA", icon: <Microscope /> },
-        { title: "ICU Technician", desc: "Monitor critically ill patients and operate life support systems in intensive care units.", salary: "₹4 - 10 LPA", icon: <Heart /> },
+        { title: "OT Technician", desc: "Assist surgeons during operations, manage surgical instruments, and ensure sterile environment.", icon: <Scissors /> },
+        { title: "Anaesthesia Technician", desc: "Prepare and maintain anaesthesia equipment, assist anaesthesiologists during procedures.", icon: <Syringe /> },
+        { title: "Surgical Assistant", desc: "Provide direct surgical support, handle tissue retraction, and maintain operative field.", icon: <UserCog /> },
+        { title: "CSSD Technician", desc: "Manage central sterile supply department, ensure proper sterilization of instruments.", icon: <Shield /> },
+        { title: "Endoscopy Technician", desc: "Operate endoscopic equipment and assist in minimally invasive procedures.", icon: <Microscope /> },
+        { title: "ICU Technician", desc: "Monitor critically ill patients and operate life support systems in intensive care units.", icon: <Heart /> },
     ];
 
     return (
@@ -482,9 +484,6 @@ function CareerSection() {
                             </div>
                             <h3 className="text-xl font-bold mb-3 text-[#0b6d41]">{job.title}</h3>
                             <p className="text-gray-600 text-sm leading-relaxed mb-4">{job.desc}</p>
-                            <div className="inline-flex items-center gap-2 bg-green-50 text-green-700 text-xs font-bold px-3 py-1.5 rounded-full">
-                                💰 {job.salary}
-                            </div>
                         </div>
                     ))}
                 </div>
