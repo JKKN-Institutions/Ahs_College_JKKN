@@ -1,12 +1,15 @@
 import { createPageMetadata } from "@/lib/metadata";
 import { COURSE_FAQS } from "@/lib/course-faqs";
+import { MRS_LIST_SOURCE, MRS_JKKN_SEATS } from "@/lib/medical-record-colleges-tn";
 
 export const metadata = createPageMetadata({
   title: "BSc Medical Record Science Course Details | JKKN",
-  description: "BSc Medical Record Science course details at JKKN, Tamil Nadu — eligibility, duration, syllabus, fees and clinical training. NAAC A. Apply 2026-27.",
+  description: `BSc Medical Record Science course details at JKKN, Komarapalayam: ${MRS_JKKN_SEATS} seats. ${MRS_LIST_SOURCE.totalInstitutions} colleges in Tamilnadu offer it, none of them government. NAAC A.`,
   path: "/medical-record-science",
   keywords: [
     "bsc medical record science colleges in tamilnadu",
+    "government bsc medical record science colleges in tamilnadu",
+    "medical record technician course in tamilnadu",
     "health information management course",
     "medical coding course tamilnadu",
     "icd-10 training college",
