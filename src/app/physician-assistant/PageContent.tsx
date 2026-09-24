@@ -17,6 +17,7 @@ import {
 import { Breadcrumb } from '@/components/Breadcrumb';
 import AhsEnquiryForm from "@/components/lead/AhsEnquiryForm";
 import { DEFAULT_PROGRAMME_BY_PAGE } from "@/lib/ahs-programmes";
+import { PaCollegesTamilNadu } from "@/components/PaCollegesTamilNadu";
 
 export default function PhysicianAssistant() {
     return (
@@ -39,6 +40,7 @@ export default function PhysicianAssistant() {
                 <CareerSection />
                 <FacilitiesSection />
                 <AdmissionProcessSection />
+                <PaCollegesTamilNadu />
                 <FAQSection />
                 <CTASection />
                 {/* City Pages Cross-Links */}
@@ -493,12 +495,12 @@ function SyllabusSection() {
 // 6. Career Section
 function CareerSection() {
     const jobs = [
-        { title: "Clinical Physician Assistant", desc: "Provide direct patient care, conduct examinations, and assist physicians in diagnosis and treatment.", salary: "₹4 - 8 LPA", icon: <Stethoscope /> },
-        { title: "Emergency Care Assistant", desc: "Work in emergency departments, assess critical patients, and provide immediate medical care.", salary: "₹5 - 10 LPA", icon: <HeartPulse /> },
-        { title: "Surgical Assistant", desc: "Assist surgeons in operations, pre-operative care, and post-operative patient management.", salary: "₹5 - 12 LPA", icon: <UserCog /> },
-        { title: "ICU/Critical Care Assistant", desc: "Monitor critically ill patients and support intensive care medical teams.", salary: "₹5 - 11 LPA", icon: <Activity /> },
-        { title: "OPD Coordinator", desc: "Manage outpatient departments, conduct preliminary assessments, and coordinate patient flow.", salary: "₹4 - 9 LPA", icon: <ClipboardList /> },
-        { title: "Community Health Officer", desc: "Provide primary healthcare in community settings and rural health programs.", salary: "₹3 - 8 LPA", icon: <Heart /> },
+        { title: "Clinical Physician Assistant", desc: "Provide direct patient care, conduct examinations, and assist physicians in diagnosis and treatment.", icon: <Stethoscope /> },
+        { title: "Emergency Care Assistant", desc: "Work in emergency departments, assess critical patients, and provide immediate medical care.", icon: <HeartPulse /> },
+        { title: "Surgical Assistant", desc: "Assist surgeons in operations, pre-operative care, and post-operative patient management.", icon: <UserCog /> },
+        { title: "ICU/Critical Care Assistant", desc: "Monitor critically ill patients and support intensive care medical teams.", icon: <Activity /> },
+        { title: "OPD Coordinator", desc: "Manage outpatient departments, conduct preliminary assessments, and coordinate patient flow.", icon: <ClipboardList /> },
+        { title: "Community Health Officer", desc: "Provide primary healthcare in community settings and rural health programs.", icon: <Heart /> },
     ];
 
     return (
@@ -516,9 +518,6 @@ function CareerSection() {
                             </div>
                             <h3 className="text-xl font-bold mb-3 text-[#0b6d41]">{job.title}</h3>
                             <p className="text-gray-600 text-sm leading-relaxed mb-4">{job.desc}</p>
-                            <div className="inline-flex items-center gap-2 bg-green-50 text-green-700 text-xs font-bold px-3 py-1.5 rounded-full">
-                                💰 {job.salary}
-                            </div>
                         </div>
                     ))}
                 </div>
