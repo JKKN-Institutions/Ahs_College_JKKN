@@ -17,6 +17,7 @@ import {
 import { Breadcrumb } from '@/components/Breadcrumb';
 import AhsEnquiryForm from "@/components/lead/AhsEnquiryForm";
 import { DEFAULT_PROGRAMME_BY_PAGE } from "@/lib/ahs-programmes";
+import { CriticalCareCollegesTamilNadu } from "@/components/CriticalCareCollegesTamilNadu";
 
 export default function CriticalCareTechnology() {
     return (
@@ -39,6 +40,7 @@ export default function CriticalCareTechnology() {
                 <CareerSection />
                 <FacilitiesSection />
                 <AdmissionProcessSection />
+                <CriticalCareCollegesTamilNadu />
                 <FAQSection />
                 <CTASection />
                 {/* City Pages Cross-Links */}
@@ -463,11 +465,11 @@ function SyllabusSection() {
 // 6. Career Section
 function CareerSection() {
     const jobs = [
-        { title: "ICU Technician", desc: "Operate and maintain life support equipment and monitor critically ill patients in intensive care units.", salary: "₹3 - 6 LPA", icon: <Activity /> },
-        { title: "Ventilator Technician", desc: "Manage mechanical ventilation systems and ensure optimal respiratory support for patients.", salary: "₹4 - 8 LPA", icon: <Zap /> },
-        { title: "Emergency Care Specialist", desc: "Provide immediate care in emergency departments and trauma centers during critical situations.", salary: "₹5 - 10 LPA", icon: <Siren /> },
-        { title: "Respiratory Therapist", desc: "Assess and treat patients with respiratory disorders using specialized therapeutic techniques.", salary: "₹5 - 12 LPA", icon: <Heart /> },
-        { title: "Clinical Coordinator", desc: "Manage ICU operations, coordinate patient care, and lead critical care teams effectively.", salary: "₹6 - 15 LPA", icon: <Users /> },
+        { title: "ICU Technician", desc: "Operate and maintain life support equipment and monitor critically ill patients in intensive care units.", icon: <Activity /> },
+        { title: "Ventilator Technician", desc: "Manage mechanical ventilation systems and ensure optimal respiratory support for patients.", icon: <Zap /> },
+        { title: "Emergency Care Specialist", desc: "Provide immediate care in emergency departments and trauma centers during critical situations.", icon: <Siren /> },
+        { title: "Respiratory Therapist", desc: "Assess and treat patients with respiratory disorders using specialized therapeutic techniques.", icon: <Heart /> },
+        { title: "Clinical Coordinator", desc: "Manage ICU operations, coordinate patient care, and lead critical care teams effectively.", icon: <Users /> },
     ];
 
     return (
@@ -485,9 +487,6 @@ function CareerSection() {
                             </div>
                             <h3 className="text-xl font-bold mb-3 text-[#0b6d41]">{job.title}</h3>
                             <p className="text-gray-600 text-sm leading-relaxed mb-4">{job.desc}</p>
-                            <div className="inline-flex items-center gap-2 bg-green-50 text-green-700 text-xs font-bold px-3 py-1.5 rounded-full">
-                                💰 {job.salary}
-                            </div>
                         </div>
                     ))}
                 </div>

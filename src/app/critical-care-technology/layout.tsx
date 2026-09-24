@@ -1,12 +1,15 @@
 import { createPageMetadata } from "@/lib/metadata";
 import { COURSE_FAQS } from "@/lib/course-faqs";
+import { CC_LIST_SOURCE, CC_GOVT_COLLEGES, CC_JKKN_SEATS } from "@/lib/critical-care-colleges-tn";
 
 export const metadata = createPageMetadata({
   title: "BSc Critical Care Technology Course Details | JKKN",
-  description: "BSc Critical Care Technology course details at JKKN, Tamil Nadu — eligibility, duration, syllabus, fees and ICU training. NAAC A. Apply 2026-27.",
+  description: `BSc Critical Care Technology course details at JKKN, Komarapalayam: ${CC_JKKN_SEATS} seats, 3+1 years. Plus the ${CC_LIST_SOURCE.totalInstitutions} colleges in Tamilnadu (${CC_GOVT_COLLEGES.length} govt) that offer it. NAAC A.`,
   path: "/critical-care-technology",
   keywords: [
     "bsc critical care technology college in tamilnadu",
+    "bsc critical care technology colleges in tamilnadu",
+    "government bsc critical care technology colleges in tamilnadu",
     "icu technology course tamilnadu",
     "ventilator training course",
     "critical care training namakkal",
