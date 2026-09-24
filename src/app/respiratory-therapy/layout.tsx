@@ -1,14 +1,17 @@
 import { createPageMetadata } from "@/lib/metadata";
 import { COURSE_FAQS } from "@/lib/course-faqs";
+import { RT_LIST_SOURCE, RT_GOVT_COLLEGES, RT_JKKN_SEATS } from "@/lib/respiratory-colleges-tn";
 
 export const metadata = createPageMetadata({
   title: "BSc Respiratory Therapy Colleges in Tamilnadu | JKKN",
-  description: "Looking for BSc respiratory therapy colleges in Tamilnadu? JKKN offers respiratory therapy course with clinical training & scholarships. Apply 2026-27!",
+  description: `${RT_LIST_SOURCE.totalInstitutions} BSc Respiratory Therapy (B.RT) colleges in Tamilnadu (TNMGRMU ${RT_LIST_SOURCE.year}), ${RT_GOVT_COLLEGES.length} govt. Govt list, seats, fee, and JKKN's course with ${RT_JKKN_SEATS} seats.`,
   path: "/respiratory-therapy",
   keywords: [
     "bsc respiratory therapy colleges in tamilnadu",
     "respiratory therapy course in tamilnadu",
-    "bsc respiratory therapy in tamilnadu"
+    "bsc respiratory therapy in tamilnadu",
+    "government bsc respiratory therapy colleges in tamilnadu",
+    "bachelor of respiratory technology"
   ],
   ogImage: { url: "https://ahs.jkkn.ac.in/images/departments/respiratory-therapy-hero.webp", width: 1200, height: 630, alt: "BSc Respiratory Therapy at JKKN College" },
 });
