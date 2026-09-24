@@ -1,14 +1,17 @@
 import { createPageMetadata } from "@/lib/metadata";
 import { COURSE_FAQS } from "@/lib/course-faqs";
+import { DIALYSIS_LIST_SOURCE, DIALYSIS_GOVT_COLLEGES, DIALYSIS_JKKN_SEATS } from "@/lib/dialysis-colleges-tn";
 
 export const metadata = createPageMetadata({
   title: "B Sc Dialysis Technology Colleges in Tamilnadu | JKKN",
-  description: "Looking for BSc dialysis technology colleges in Tamilnadu? JKKN offers renal dialysis technology courses with clinical training & placements. Apply now.",
+  description: `${DIALYSIS_LIST_SOURCE.totalInstitutions} BSc Dialysis Technology (B.DTT) colleges in Tamilnadu (TNMGRMU ${DIALYSIS_LIST_SOURCE.year}), ${DIALYSIS_GOVT_COLLEGES.length} govt. Govt list, seats, fee, and JKKN's course with ${DIALYSIS_JKKN_SEATS} seats.`,
   path: "/dialysis-technology",
   keywords: [
     "b sc dialysis technology colleges in tamilnadu",
     "bsc dialysis technology colleges in tamilnadu",
-    "bsc renal dialysis technology colleges in tamilnadu"
+    "bsc renal dialysis technology colleges in tamilnadu",
+    "government bsc dialysis technology colleges in tamilnadu",
+    "bachelor of dialysis therapy technology"
   ],
   ogImage: { url: "https://ahs.jkkn.ac.in/dialysis-technology-hero.webp", width: 1200, height: 630, alt: "BSc Dialysis Technology at JKKN College" },
 });

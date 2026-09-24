@@ -17,6 +17,7 @@ import {
 import { Breadcrumb } from '@/components/Breadcrumb';
 import AhsEnquiryForm from "@/components/lead/AhsEnquiryForm";
 import { DEFAULT_PROGRAMME_BY_PAGE } from "@/lib/ahs-programmes";
+import { DialysisCollegesTamilNadu } from "@/components/DialysisCollegesTamilNadu";
 
 export default function DialysisTechnology() {
     return (
@@ -39,6 +40,7 @@ export default function DialysisTechnology() {
                 <CareerSection />
                 <FacilitiesSection />
                 <AdmissionProcessSection />
+                <DialysisCollegesTamilNadu />
                 <FAQSection />
                 <CTASection />
                 {/* City Pages Cross-Links */}
@@ -459,12 +461,12 @@ function SyllabusSection() {
 // 6. Career Section
 function CareerSection() {
     const jobs = [
-        { title: "Dialysis Technician", desc: "Operate dialysis machines and provide direct patient care during hemodialysis treatments.", salary: "₹2.5 - 5 LPA", icon: <Droplet /> },
-        { title: "Hemodialysis Specialist", desc: "Specialize in advanced hemodialysis procedures and patient management.", salary: "₹4 - 8 LPA", icon: <Monitor /> },
-        { title: "Peritoneal Dialysis Tech", desc: "Train patients and manage peritoneal dialysis programs at home and clinics.", salary: "₹3.5 - 7 LPA", icon: <Heart /> },
-        { title: "Renal Care Coordinator", desc: "Coordinate patient care across nephrology departments and dialysis units.", salary: "₹5 - 10 LPA", icon: <Shield /> },
-        { title: "Dialysis Unit Supervisor", desc: "Manage dialysis unit operations, staff, and quality assurance programs.", salary: "₹8 - 15 LPA", icon: <Users /> },
-        { title: "Clinical Research Associate", desc: "Participate in nephrology research and clinical trials for new treatments.", salary: "₹5 - 12 LPA", icon: <FlaskConical /> },
+        { title: "Dialysis Technician", desc: "Operate dialysis machines and provide direct patient care during hemodialysis treatments.", icon: <Droplet /> },
+        { title: "Hemodialysis Specialist", desc: "Specialize in advanced hemodialysis procedures and patient management.", icon: <Monitor /> },
+        { title: "Peritoneal Dialysis Tech", desc: "Train patients and manage peritoneal dialysis programs at home and clinics.", icon: <Heart /> },
+        { title: "Renal Care Coordinator", desc: "Coordinate patient care across nephrology departments and dialysis units.", icon: <Shield /> },
+        { title: "Dialysis Unit Supervisor", desc: "Manage dialysis unit operations, staff, and quality assurance programs.", icon: <Users /> },
+        { title: "Clinical Research Associate", desc: "Participate in nephrology research and clinical trials for new treatments.", icon: <FlaskConical /> },
     ];
 
     return (
@@ -482,9 +484,6 @@ function CareerSection() {
                             </div>
                             <h3 className="text-xl font-bold mb-3 text-[#0b6d41]">{job.title}</h3>
                             <p className="text-gray-600 text-sm leading-relaxed mb-4">{job.desc}</p>
-                            <div className="inline-flex items-center gap-2 bg-green-50 text-green-700 text-xs font-bold px-3 py-1.5 rounded-full">
-                                💰 {job.salary}
-                            </div>
                         </div>
                     ))}
                 </div>
