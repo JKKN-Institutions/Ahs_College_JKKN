@@ -24,8 +24,8 @@ export function SnippetBlock() {
             Paramedical (Allied Health Sciences) College in Namakkal District
           </h2>
           <p className="snippet-answer voice-answer text-gray-700 text-sm sm:text-base leading-relaxed max-w-4xl">
-            JKKN College of Allied Health Sciences, on NH-544 in Komarapalayam, Namakkal district, offers 9 B.Sc paramedical (allied health) programmes affiliated to The Tamil Nadu Dr. M.G.R. Medical University, and is NAAC A accredited. Learners get 2,000+ clinical training hours and support from a dedicated placement cell. It is one of {AHS_TN_TOTAL} institutions on the university&apos;s {AHS_LIST_SOURCE.year} list for these courses - see the{" "}
-            <Link href="/paramedical-colleges-in-tamil-nadu" className="text-[#0b6d41] font-semibold hover:underline">full list of paramedical colleges in Tamil Nadu</Link>.
+            JKKN College of Allied Health Sciences, on NH-544 in Komarapalayam, Namakkal district, offers 9 B.Sc paramedical (allied health) programmes affiliated to The Tamil Nadu Dr. M.G.R. Medical University, and is NAAC A accredited. Learners get 2,000+ clinical training hours and support from a dedicated placement cell. It is one of {AHS_TN_TOTAL} institutions on the university&apos;s {AHS_LIST_SOURCE.year} list for these courses - see{" "}
+            <Link href="/paramedical-college-in-tamil-nadu" className="text-[#0b6d41] font-semibold hover:underline">JKKN paramedical courses, seats and eligibility</Link>.
           </p>
         </div>
 

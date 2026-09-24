@@ -1,3 +1,4 @@
+// Source data for the paramedical page counts (the page shows only the totals, no other college).
 // Every institution affiliated to The Tamil Nadu Dr. M.G.R. Medical University for at least one
 // undergraduate allied health (paramedical) course that is still admitting, 2025-26.
 //
