@@ -70,6 +70,10 @@ export function CardiacCollegesTamilNadu() {
           between them; the rest are self-financing. JKKN College of Allied Health Sciences in Komarapalayam,
           Namakkal district, is one of them, with 7 seats.
         </p>
+        <p className="text-gray-700 text-sm mb-8">
+          Many students search for this course as &quot;B.Sc Cardiology&quot;. The university&apos;s course
+          name is B.Sc Cardiac Technology, and that is the name the colleges below are listed under.
+        </p>
 
         <h3 className="text-xl font-bold text-[#0b6d41] mb-3">Government colleges offering B.Sc Cardiac Technology</h3>
         <CollegeTable rows={GOVERNMENT_CARDIAC_COLLEGES} caption="Government colleges offering B.Sc Cardiac Technology in Tamil Nadu" />
