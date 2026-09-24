@@ -24,7 +24,7 @@ export function CTASection() {
 
                     <div className="relative z-10">
                         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-[#0b6d41] mb-4 sm:mb-6 leading-tight px-4">
-                            Ready to Join the Best Allied Health Sciences College in <span className="text-[#ffde59]">Tamil Nadu?</span>
+                            Ready to Start Your Paramedical Career in <span className="text-[#ffde59]">Tamil Nadu?</span>
                         </h2>
                         <p className="text-gray-600 text-sm sm:text-base md:text-lg mb-8 sm:mb-10 md:mb-12 max-w-2xl mx-auto px-4">
                             Join thousands of learners who are shaping the future of healthcare. Explore <Link href="/cardiac-technology" className="text-[#0b6d41] font-semibold hover:underline">9 specialized B.Sc programs</Link>, train at a <Link href="/lab" className="text-[#0b6d41] font-semibold hover:underline">teaching hospital</Link>, and benefit from our <Link href="/placements" className="text-[#0b6d41] font-semibold hover:underline">placement support</Link>. Admissions for 2026-27 are now open.

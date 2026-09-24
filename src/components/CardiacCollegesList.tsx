@@ -94,6 +94,13 @@ export function CardiacCollegesTamilNadu() {
           );
         })}
         <SourceNote />
+        <p className="text-sm text-gray-700 mt-4">
+          All JKKN allied health courses:{" "}
+          <Link href="/paramedical-college-in-tamil-nadu" className="text-[#0b6d41] underline">
+            paramedical courses at JKKN
+          </Link>
+          .
+        </p>
       </div>
     </section>
   );
