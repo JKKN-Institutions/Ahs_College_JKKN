@@ -17,6 +17,7 @@ import {
 import { Breadcrumb } from '@/components/Breadcrumb';
 import AhsEnquiryForm from "@/components/lead/AhsEnquiryForm";
 import { DEFAULT_PROGRAMME_BY_PAGE } from "@/lib/ahs-programmes";
+import { RadiologyCollegesTamilNadu } from "@/components/RadiologyCollegesTamilNadu";
 
 // DEP-12, 2026-08-07: the Course block that sat here is gone. layout.tsx already emits
 // one for this page, and the two disagreed on the programme name - this one said
@@ -47,6 +48,7 @@ export default function RadiologyImagingTechnology() {
                 <CareerSection />
                 <FacilitiesSection />
                 <AdmissionProcessSection />
+                <RadiologyCollegesTamilNadu />
                 <FAQSection />
                 <CTASection />
                 {/* City Pages Cross-Links */}
@@ -483,12 +485,12 @@ function SyllabusSection() {
 // 6. Career Section
 function CareerSection() {
     const jobs = [
-        { title: "X-ray Technician", desc: "Operate X-ray equipment and produce diagnostic radiographs for disease detection.", salary: "₹3 - 6 LPA", icon: <Radio /> },
-        { title: "CT Scan Technologist", desc: "Operate CT scanners and produce cross-sectional images for detailed diagnosis.", salary: "₹4 - 9 LPA", icon: <ScanLine /> },
-        { title: "MRI Technologist", desc: "Operate MRI machines and create detailed magnetic resonance images.", salary: "₹5 - 12 LPA", icon: <Zap /> },
-        { title: "Ultrasound Technician", desc: "Perform ultrasound examinations and produce sonographic images.", salary: "₹4 - 10 LPA", icon: <Activity /> },
-        { title: "Mammography Specialist", desc: "Specialize in breast imaging and early cancer detection screening.", salary: "₹4 - 10 LPA", icon: <Shield /> },
-        { title: "Interventional Radiology Tech", desc: "Assist in minimally invasive image-guided procedures and interventions.", salary: "₹6 - 15 LPA", icon: <ClipboardList /> },
+        { title: "X-ray Technician", desc: "Operate X-ray equipment and produce diagnostic radiographs for disease detection.", icon: <Radio /> },
+        { title: "CT Scan Technologist", desc: "Operate CT scanners and produce cross-sectional images for detailed diagnosis.", icon: <ScanLine /> },
+        { title: "MRI Technologist", desc: "Operate MRI machines and create detailed magnetic resonance images.", icon: <Zap /> },
+        { title: "Ultrasound Technician", desc: "Perform ultrasound examinations and produce sonographic images.", icon: <Activity /> },
+        { title: "Mammography Specialist", desc: "Specialize in breast imaging and early cancer detection screening.", icon: <Shield /> },
+        { title: "Interventional Radiology Tech", desc: "Assist in minimally invasive image-guided procedures and interventions.", icon: <ClipboardList /> },
     ];
 
     return (
@@ -506,9 +508,6 @@ function CareerSection() {
                             </div>
                             <h3 className="text-xl font-bold mb-3 text-[#0b6d41]">{job.title}</h3>
                             <p className="text-gray-600 text-sm leading-relaxed mb-4">{job.desc}</p>
-                            <div className="inline-flex items-center gap-2 bg-green-50 text-green-700 text-xs font-bold px-3 py-1.5 rounded-full">
-                                💰 {job.salary}
-                            </div>
                         </div>
                     ))}
                 </div>
