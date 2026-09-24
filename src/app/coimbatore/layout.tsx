@@ -4,7 +4,7 @@ import { AHS_MAPS_URL } from "@/lib/entity-profiles";
 export const metadata = createPageMetadata({
   title: "Allied Health Sciences Colleges in Coimbatore | JKKN AHS",
   description:
-    "JKKN AHS — ~105 km from Coimbatore on NH-544. 9 BSc allied health programmes, NAAC accredited, placement support, teaching hospital. Admissions open 2026-27.",
+    "JKKN AHS — ~112 km from Coimbatore on NH-544. 9 BSc allied health programmes, NAAC accredited, placement support, teaching hospital. Admissions open 2026-27.",
   path: "/coimbatore",
   keywords: [
     "allied health sciences colleges in coimbatore",
@@ -61,7 +61,7 @@ const faqSchema = {
       name: "What is the best allied health sciences college in Coimbatore?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "JKKN College of Allied Health Sciences is ~105 km from Coimbatore on NH-544, in Komarapalayam, Namakkal district. Approved by NAAC and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers excellent programmes with strong placement support.",
+        text: "JKKN College of Allied Health Sciences is ~112 km from Coimbatore on NH-544, in Komarapalayam, Namakkal district. Approved by NAAC and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers excellent programmes with strong placement support.",
       },
     },
     {
@@ -69,7 +69,7 @@ const faqSchema = {
       name: "How far is JKKN AHS from Coimbatore?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "JKKN AHS is approximately ~105 km from Coimbatore city centre, which takes about 2-2.5 hours by road via NH-544 (Coimbatore-Salem Highway) — direct route. Regular bus services are available from Coimbatore.",
+        text: "JKKN AHS is approximately ~112 km from Coimbatore city centre, which takes about 2-2.5 hours by road via NH-544 (Coimbatore-Salem Highway) — direct route. Regular bus services are available from Coimbatore.",
       },
     },
     {
@@ -133,7 +133,7 @@ const faqSchema = {
       name: "How many allied health science colleges are there in Coimbatore?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Coimbatore has 14+ allied health science colleges. JKKN College of Allied Health Sciences, located ~105 km from Coimbatore on NH-544, offers a strong value proposition with competitive fees, 9 BSc programmes, NAAC approval, and placement support with international opportunities.",
+        text: "Coimbatore has 14+ allied health science colleges. JKKN College of Allied Health Sciences, located ~112 km from Coimbatore on NH-544, offers a strong value proposition with competitive fees, 9 BSc programmes, NAAC approval, and placement support with international opportunities.",
       },
     },
     {
@@ -165,7 +165,7 @@ const faqSchema = {
       name: "Does proximity to Coimbatore International Airport benefit JKKN AHS learners?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes, Coimbatore International Airport (CJB) — just ~80 km from campus — is a significant advantage for international placements. JKKN AHS has placed learners at NHS UK, Cleveland Clinic Abu Dhabi, and hospitals in Singapore and Saudi Arabia. The airport connection makes international career transitions smooth, with direct flights to major cities and Gulf destinations.",
+        text: "Yes, Coimbatore International Airport (CJB), ~101 km from campus, is an advantage for international placements. JKKN AHS has placed learners at NHS UK, Cleveland Clinic Abu Dhabi, and hospitals in Singapore and Saudi Arabia. The airport connection makes international career transitions smooth, with direct flights to major cities and Gulf destinations.",
       },
     },
   ],

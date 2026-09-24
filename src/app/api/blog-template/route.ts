@@ -182,7 +182,7 @@ export async function GET() {
           p('2. Extensive School Internship \u2014 Learners complete 16 weeks of practice teaching at partner government and private schools across Komarapalayam, Namakkal, and Erode districts. Real classroom exposure under expert mentorship prepares graduates for confident teaching from day one.'),
           p('3. Experienced Senior Learners \u2014 Our senior learners include experienced teacher-educators with postgraduate and doctoral qualifications in Education, Psychology, and their respective subject specializations. Regular workshops, seminars, and guest lectures enrich learner learning.'),
           p('4. Placement Support \u2014 graduates placed in CBSE, ICSE, and Tamil Nadu State Board schools. TNTET coaching and TRB guidance are integrated into the program, ensuring graduates are exam-ready alongside classroom-ready.'),
-          p('5. Strategic Location & Residential Campus \u2014 Situated on NH-544 (Salem-Coimbatore Highway) at Natarajapuram, Komarapalayam, easily accessible from Salem (45 km), Erode (30 km), Namakkal (20 km), and Tiruchengode (15 km). The residential campus includes hostel, learning commons, and sports facilities.'),
+          p('5. Strategic Location & Residential Campus \u2014 Situated on NH-544 (Salem-Coimbatore Highway) at Natarajapuram, Komarapalayam, easily accessible from Salem (57 km), Erode (18 km), Namakkal town (65 km), and Tiruchengode (15 km). The residential campus includes hostel, learning commons, and sports facilities.'),
           p(''),
 
           // ── Section 8 ──

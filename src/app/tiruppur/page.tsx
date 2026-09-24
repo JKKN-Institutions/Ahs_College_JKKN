@@ -308,9 +308,9 @@ function WhyChooseSection() {
         <p className="text-center text-sm text-gray-500 mt-8">
           Learners from nearby cities also choose JKKN AHS:{" "}
           <a href="/erode" className="text-[#006837] hover:underline font-medium">Erode (~18 km)</a>,{" "}
-          <a href="/salem" className="text-[#006837] hover:underline font-medium">Salem (~58 km)</a>,{" "}
+          <a href="/salem" className="text-[#006837] hover:underline font-medium">Salem (~57 km)</a>,{" "}
           <a href="/namakkal" className="text-[#006837] hover:underline font-medium">Namakkal</a>, and{" "}
-          <a href="/coimbatore" className="text-[#006837] hover:underline font-medium">Coimbatore (~105 km)</a>.
+          <a href="/coimbatore" className="text-[#006837] hover:underline font-medium">Coimbatore (~112 km)</a>.
         </p>
       </div>
     </section>
@@ -545,12 +545,12 @@ function HowToReachSection() {
     {
       icon: Train,
       label: "NEAREST RAILWAY STATION",
-      desc: "Tiruppur Junction (~85 km from campus)",
+      desc: "Tiruppur railway station (~64 km from campus)",
     },
     {
       icon: Plane,
       label: "NEAREST AIRPORT",
-      desc: "Coimbatore International Airport (Code: CJB) (~50 km)",
+      desc: "Coimbatore International Airport (Code: CJB) (~101 km)",
     },
     {
       icon: Home,
@@ -818,10 +818,10 @@ function SnippetBaitSection() {
 ────────────────────────────────────────── */
 function ExploreCitiesSection() {
   const cities = [
-    { name: "Namakkal", distance: "~66 km", href: "/namakkal" },
-    { name: "Salem", distance: "~58 km", href: "/salem" },
+    { name: "Namakkal", distance: "~65 km", href: "/namakkal" },
+    { name: "Salem", distance: "~57 km", href: "/salem" },
     { name: "Erode", distance: "~18 km", href: "/erode" },
-    { name: "Coimbatore", distance: "~105 km", href: "/coimbatore" },
+    { name: "Coimbatore", distance: "~112 km", href: "/coimbatore" },
   ];
 
   return (

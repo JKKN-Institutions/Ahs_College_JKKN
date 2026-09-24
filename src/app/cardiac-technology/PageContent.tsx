@@ -55,9 +55,9 @@ export default function CardiacTechnology() {
                     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
                       <Link href="/erode" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors text-center">Erode (~18 km)</Link>
                       <Link href="/namakkal" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors text-center">Namakkal district</Link>
-                      <Link href="/salem" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors text-center">Salem (~58 km)</Link>
+                      <Link href="/salem" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors text-center">Salem (~57 km)</Link>
                       <Link href="/tiruppur" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors text-center">Tiruppur (~67 km)</Link>
-                      <Link href="/coimbatore" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors text-center">Coimbatore (~105 km)</Link>
+                      <Link href="/coimbatore" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors text-center">Coimbatore (~112 km)</Link>
                     </div>
                   </div>
                 </section>

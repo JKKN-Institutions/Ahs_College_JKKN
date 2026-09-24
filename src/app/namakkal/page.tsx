@@ -41,7 +41,7 @@ export default function NamakkalPage() {
           },
           {
             q: "How far is JKKN AHS from Namakkal?",
-            a: "JKKN AHS is located in Komarapalayam, Namakkal district (not Namakkal town). It's approximately 15 km from Tiruchengode and around 66 km from Namakkal town via NH-544 (Salem-Coimbatore Highway). Regular bus services connect the campus to nearby towns.",
+            a: "JKKN AHS is located in Komarapalayam, Namakkal district (not Namakkal town). It's approximately 15 km from Tiruchengode and around 65 km from Namakkal town via NH-544 (Salem-Coimbatore Highway). Regular bus services connect the campus to nearby towns.",
           },
           {
             q: "What is Allied Health Sciences?",
@@ -81,7 +81,7 @@ export default function NamakkalPage() {
           },
           {
             q: "What is the advantage of JKKN AHS being in Namakkal district?",
-            a: "Being in Namakkal district's Komarapalayam offers key advantages: strategic NH-544 highway location connecting Salem and Coimbatore, proximity to Tiruchengode (~15 km) for daily needs, affordable cost of living compared to major cities, peaceful campus environment ideal for studies, and easy accessibility from multiple towns — Erode (~18 km), Salem (~58 km), and Tiruppur (~67 km).",
+            a: "Being in Namakkal district's Komarapalayam offers key advantages: strategic NH-544 highway location connecting Salem and Coimbatore, proximity to Tiruchengode (~15 km) for daily needs, affordable cost of living compared to major cities, peaceful campus environment ideal for studies, and easy accessibility from multiple towns — Erode (~18 km), Salem (~57 km), and Tiruppur (~67 km).",
           },
           {
             q: "How well connected is JKKN AHS campus by public transport?",
@@ -329,9 +329,9 @@ function WhyChooseSection() {
         <p className="text-center text-sm text-gray-500 mt-8">
           Learners from nearby cities also choose JKKN AHS:{" "}
           <a href="/erode" className="text-[#006837] hover:underline font-medium">Erode (~18 km)</a>,{" "}
-          <a href="/salem" className="text-[#006837] hover:underline font-medium">Salem (~58 km)</a>,{" "}
+          <a href="/salem" className="text-[#006837] hover:underline font-medium">Salem (~57 km)</a>,{" "}
           <a href="/tiruppur" className="text-[#006837] hover:underline font-medium">Tiruppur (~67 km)</a>, and{" "}
-          <a href="/coimbatore" className="text-[#006837] hover:underline font-medium">Coimbatore (~105 km)</a>.
+          <a href="/coimbatore" className="text-[#006837] hover:underline font-medium">Coimbatore (~112 km)</a>.
         </p>
       </div>
     </section>
@@ -566,12 +566,12 @@ function HowToReachSection() {
     {
       icon: Train,
       label: "NEAREST RAILWAY STATION",
-      desc: "Salem Junction (~40 km from campus)",
+      desc: "Salem Junction (~55 km from campus)",
     },
     {
       icon: Plane,
       label: "NEAREST AIRPORT",
-      desc: "Coimbatore International Airport (Code: CJB) (~110 km)",
+      desc: "Coimbatore International Airport (Code: CJB) (~101 km)",
     },
     {
       icon: Home,
@@ -839,9 +839,9 @@ function SnippetBaitSection() {
 ────────────────────────────────────────── */
 function ExploreCitiesSection() {
   const cities = [
-    { name: "Salem", distance: "~58 km", href: "/salem" },
+    { name: "Salem", distance: "~57 km", href: "/salem" },
     { name: "Erode", distance: "~18 km", href: "/erode" },
-    { name: "Coimbatore", distance: "~105 km", href: "/coimbatore" },
+    { name: "Coimbatore", distance: "~112 km", href: "/coimbatore" },
     { name: "Tiruppur", distance: "~67 km", href: "/tiruppur" },
   ];
 
