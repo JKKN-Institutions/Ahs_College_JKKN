@@ -17,6 +17,7 @@ import {
 import { Breadcrumb } from '@/components/Breadcrumb';
 import AhsEnquiryForm from "@/components/lead/AhsEnquiryForm";
 import { DEFAULT_PROGRAMME_BY_PAGE } from "@/lib/ahs-programmes";
+import { MedicalRecordCollegesTamilNadu } from "@/components/MedicalRecordCollegesTamilNadu";
 
 export default function MedicalRecordScience() {
     return (
@@ -39,6 +40,7 @@ export default function MedicalRecordScience() {
                 <CareerSection />
                 <FacilitiesSection />
                 <AdmissionProcessSection />
+                <MedicalRecordCollegesTamilNadu />
                 <FAQSection />
                 <CTASection />
                 {/* City Pages Cross-Links */}
@@ -468,12 +470,12 @@ function SyllabusSection() {
 // 6. Career Section
 function CareerSection() {
     const jobs = [
-        { title: "Medical Records Technician", desc: "Manage and maintain patient health records, ensuring accuracy and confidentiality.", salary: "₹2.5 - 5 LPA", icon: <FolderOpen /> },
-        { title: "Medical Coder", desc: "Assign ICD, CPT codes for diagnosis and procedures for billing and reimbursement.", salary: "₹3 - 8 LPA", icon: <Code2 /> },
-        { title: "Health Information Manager", desc: "Oversee health information departments, ensure regulatory compliance and data security.", salary: "₹5 - 12 LPA", icon: <Database /> },
-        { title: "Clinical Data Analyst", desc: "Analyze healthcare data to improve patient outcomes and operational efficiency.", salary: "₹4 - 10 LPA", icon: <BarChart3 /> },
-        { title: "Medical Transcriptionist", desc: "Convert voice recordings of healthcare providers into written medical reports.", salary: "₹3 - 6 LPA", icon: <FileText /> },
-        { title: "Healthcare IT Specialist", desc: "Implement and manage electronic health record systems in healthcare facilities.", salary: "₹4 - 12 LPA", icon: <Laptop /> },
+        { title: "Medical Records Technician", desc: "Manage and maintain patient health records, ensuring accuracy and confidentiality.", icon: <FolderOpen /> },
+        { title: "Medical Coder", desc: "Assign ICD, CPT codes for diagnosis and procedures for billing and reimbursement.", icon: <Code2 /> },
+        { title: "Health Information Manager", desc: "Oversee health information departments, ensure regulatory compliance and data security.", icon: <Database /> },
+        { title: "Clinical Data Analyst", desc: "Analyze healthcare data to improve patient outcomes and operational efficiency.", icon: <BarChart3 /> },
+        { title: "Medical Transcriptionist", desc: "Convert voice recordings of healthcare providers into written medical reports.", icon: <FileText /> },
+        { title: "Healthcare IT Specialist", desc: "Implement and manage electronic health record systems in healthcare facilities.", icon: <Laptop /> },
     ];
 
     return (
@@ -491,9 +493,6 @@ function CareerSection() {
                             </div>
                             <h3 className="text-xl font-bold mb-3 text-[#0b6d41]">{job.title}</h3>
                             <p className="text-gray-600 text-sm leading-relaxed mb-4">{job.desc}</p>
-                            <div className="inline-flex items-center gap-2 bg-green-50 text-green-700 text-xs font-bold px-3 py-1.5 rounded-full">
-                                💰 {job.salary}
-                            </div>
                         </div>
                     ))}
                 </div>
