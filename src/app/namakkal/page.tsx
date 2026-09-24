@@ -7,6 +7,7 @@ import { MapPin, GraduationCap, Phone, TrendingUp, Building2, GitBranch, Target,
 import Image from "next/image";
 import Link from "next/link";
 import AhsEnquiryForm from "@/components/lead/AhsEnquiryForm";
+import { CardiacCollegesInDistrict } from "@/components/CardiacCollegesList";
 
 export default function NamakkalPage() {
   return (
@@ -26,6 +27,7 @@ export default function NamakkalPage() {
         <DistanceCard />
         <WhyChooseSection />
         <ProgrammesSection />
+        <CardiacCollegesInDistrict district="Namakkal" lead="JKKN College of Allied Health Sciences in Komarapalayam is one of them, with 7 seats." />
         <PlacementHighlights />
         <CompetitiveAdvantageSection />
         <HowToReachSection />
@@ -35,7 +37,7 @@ export default function NamakkalPage() {
         <CityFAQAccordion cityName="Namakkal" faqs={[
           {
             q: "What is the best allied health sciences college in Namakkal?",
-            a: "JKKN College of Allied Health Sciences is located in Komarapalayam, Namakkal district, on NH-544. It's widely regarded as one of the top allied health sciences colleges in Namakkal district. Approved by NAAC and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers excellent programmes with strong placement support.",
+            a: "JKKN College of Allied Health Sciences is in Komarapalayam, Namakkal district, on NH-544. Its 9 B.Sc programmes are affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai. For B.Sc Cardiac Technology, the university's 2025-26 list has 8 colleges in Namakkal district, and JKKN is one of them.",
           },
           {
             q: "How far is JKKN AHS from Namakkal?",
@@ -79,7 +81,7 @@ export default function NamakkalPage() {
           },
           {
             q: "What is the advantage of JKKN AHS being in Namakkal district?",
-            a: "Being in Namakkal district's Komarapalayam offers key advantages: strategic NH-544 highway location connecting Salem and Coimbatore, proximity to Tiruchengode (~15 km) for daily needs, affordable cost of living compared to major cities, peaceful campus environment ideal for studies, and easy accessibility from multiple towns — Erode (~22 km), Salem (~58 km), and Tiruppur (~67 km).",
+            a: "Being in Namakkal district's Komarapalayam offers key advantages: strategic NH-544 highway location connecting Salem and Coimbatore, proximity to Tiruchengode (~15 km) for daily needs, affordable cost of living compared to major cities, peaceful campus environment ideal for studies, and easy accessibility from multiple towns — Erode (~18 km), Salem (~58 km), and Tiruppur (~67 km).",
           },
           {
             q: "How well connected is JKKN AHS campus by public transport?",
@@ -326,7 +328,7 @@ function WhyChooseSection() {
 
         <p className="text-center text-sm text-gray-500 mt-8">
           Learners from nearby cities also choose JKKN AHS:{" "}
-          <a href="/erode" className="text-[#006837] hover:underline font-medium">Erode (~22 km)</a>,{" "}
+          <a href="/erode" className="text-[#006837] hover:underline font-medium">Erode (~18 km)</a>,{" "}
           <a href="/salem" className="text-[#006837] hover:underline font-medium">Salem (~58 km)</a>,{" "}
           <a href="/tiruppur" className="text-[#006837] hover:underline font-medium">Tiruppur (~67 km)</a>, and{" "}
           <a href="/coimbatore" className="text-[#006837] hover:underline font-medium">Coimbatore (~105 km)</a>.
@@ -838,7 +840,7 @@ function SnippetBaitSection() {
 function ExploreCitiesSection() {
   const cities = [
     { name: "Salem", distance: "~58 km", href: "/salem" },
-    { name: "Erode", distance: "~22 km", href: "/erode" },
+    { name: "Erode", distance: "~18 km", href: "/erode" },
     { name: "Coimbatore", distance: "~105 km", href: "/coimbatore" },
     { name: "Tiruppur", distance: "~67 km", href: "/tiruppur" },
   ];

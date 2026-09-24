@@ -131,7 +131,7 @@ Approximate road distances provided by the college.
 - Komarapalayam — campus location (0 km)
 - Tiruchengode — 15 km
 - Namakkal — 20 km
-- Erode — 30 km
+- Erode — 18 km
 - Salem — 45 km
 - Karur — 60 km
 - Tiruppur — 80 km

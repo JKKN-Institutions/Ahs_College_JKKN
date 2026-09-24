@@ -17,6 +17,7 @@ import {
 import { Breadcrumb } from '@/components/Breadcrumb';
 import AhsEnquiryForm from "@/components/lead/AhsEnquiryForm";
 import { DEFAULT_PROGRAMME_BY_PAGE } from "@/lib/ahs-programmes";
+import { CardiacCollegesTamilNadu } from "@/components/CardiacCollegesList";
 
 export default function CardiacTechnology() {
     return (
@@ -39,6 +40,7 @@ export default function CardiacTechnology() {
                 <CareerSection />
                 <FacilitiesSection />
                 <AdmissionProcessSection />
+                <CardiacCollegesTamilNadu />
                 <FAQSection />
                 <CTASection />
                 {/* City Pages Cross-Links */}
@@ -51,11 +53,11 @@ export default function CardiacTechnology() {
                       JKKN College is well-connected via NH-544 from major Tamil Nadu cities
                     </p>
                     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
-                      <Link href="/erode" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors text-center">Erode (30-40 km)</Link>
-                      <Link href="/namakkal" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors text-center">Namakkal (5-10 km)</Link>
-                      <Link href="/salem" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors text-center">Salem (40-50 km)</Link>
-                      <Link href="/tiruppur" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors text-center">Tiruppur (80-90 km)</Link>
-                      <Link href="/coimbatore" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors text-center">Coimbatore (100-110 km)</Link>
+                      <Link href="/erode" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors text-center">Erode (~18 km)</Link>
+                      <Link href="/namakkal" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors text-center">Namakkal district</Link>
+                      <Link href="/salem" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors text-center">Salem (~58 km)</Link>
+                      <Link href="/tiruppur" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors text-center">Tiruppur (~67 km)</Link>
+                      <Link href="/coimbatore" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors text-center">Coimbatore (~105 km)</Link>
                     </div>
                   </div>
                 </section>

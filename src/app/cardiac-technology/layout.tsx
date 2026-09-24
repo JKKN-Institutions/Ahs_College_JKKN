@@ -1,26 +1,23 @@
 import { createPageMetadata } from "@/lib/metadata";
 import { COURSE_FAQS } from "@/lib/course-faqs";
+import { CARDIAC_LIST_SOURCE, GOVERNMENT_CARDIAC_COUNT } from "@/lib/cardiac-colleges-tn";
 
-// DEP-15, 2026-08-08. This page and /admissions/cardiac-technology were measured competing for
-// the same searches, so this one now canonicalises to that one. Measured over the 28 days to
-// 2026-08-03 (runs/2026-08-07/dep15-pairs.json): 90 shared queries, 66 genuinely contested,
-// 3,770 contested impressions. The admissions page wins on every axis - 9,023 impressions to
-// this page's 6,194, 113 clicks to 36, and a better average position on every one of the top
-// contested queries (bsc cardiac technology 7.3 vs 7.8, bsc cardiology 6.5 vs 8.3, cardiac
-// technology 9.2 vs 11.4). It also carries 14,222 words to this page's 2,083.
+// Canonical: SELF, since 2026-09-23 (was /admissions/cardiac-technology under DEP-15, 2026-08-08).
 //
-// canonical ONLY. No 301, and this page stays in the sitemap and keeps its internal links.
-// That is deliberate: a canonical reverts in one deploy and a 301 does not, and pair 1 of this
-// programme is a 60,388-impression page. This is the SMALLEST of the 12 pairs worth fixing and
-// was chosen to go first precisely so that being wrong is cheap.
+// DEP-15 pointed this page at the admissions page on a 28-day blended read. Google declined the hint
+// (googleCanonical kept reading /cardiac-technology), and the per-page split measured 2026-08-27 showed
+// why: this page owns the list-intent searches ("bsc cardiac technology colleges in tamilnadu" and its
+// variants - 25 keywords / 2,220 mobile impressions against the admissions page's 7 / 138), while the
+// admissions page owns fees / how-to-apply phrasing. Every Tamil Nadu list keyword in GSC mobile
+// 2026-06-24..09-21 ranks on THIS URL (e.g. 244 impressions @ 6.0). A page Google ranks for a query
+// should not declare another URL as the original. The admissions page keeps its own self-canonical.
 //
-// A canonical is a hint, not an instruction, and these two pages differ by 7x in length, so
-// Google may decline it. Read GSC 2-3 weeks out before touching any other pair.
+// A canonical is a hint and reverts in one deploy - this is a two-way door. Re-read GSC per-page
+// 3-4 weeks after deploy; revert only if the admissions page's fee/apply queries fall.
 export const metadata = createPageMetadata({
   title: "BSc Cardiac Technology Colleges in Tamilnadu | JKKN",
-  description: "Looking for BSc cardiac technology colleges in Tamilnadu? JKKN offers cardiac care technology courses with clinical training & scholarships. Apply 2026-27!",
+  description: `${CARDIAC_LIST_SOURCE.totalInstitutions} institutions offer BSc Cardiac Technology in Tamilnadu (TN Dr. MGR Medical University list ${CARDIAC_LIST_SOURCE.year}). See the ${GOVERNMENT_CARDIAC_COUNT} government colleges, the Namakkal, Erode & Salem colleges, and JKKN's course.`,
   path: "/cardiac-technology",
-  canonicalPath: "/admissions/cardiac-technology",
   keywords: [
     "bsc cardiac technology colleges in tamilnadu",
     "cardiac technology college in tamilnadu",
@@ -32,7 +29,13 @@ export const metadata = createPageMetadata({
     "cardiac care technology colleges in tamilnadu",
     "cardiac perfusion technology colleges in tamilnadu",
     "b sc cardiac perfusion technology colleges in tamilnadu",
-    "cardiac perfusion technology course in tamilnadu"
+    "cardiac perfusion technology course in tamilnadu",
+    "bsc cardiology colleges in tamilnadu",
+    "b sc cardiology colleges in tamilnadu",
+    "bsc cardiac technology government colleges in tamilnadu",
+    "bsc cardiac technology colleges in namakkal",
+    "bsc cardiac technology colleges in erode",
+    "bsc cardiac technology colleges in salem"
   ],
   ogImage: { url: "https://ahs.jkkn.ac.in/cardiac-technology-hero.webp", width: 1200, height: 630, alt: "BSc Cardiac Technology at JKKN College" },
 });

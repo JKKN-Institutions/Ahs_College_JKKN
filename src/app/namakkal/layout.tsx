@@ -61,7 +61,7 @@ const faqSchema = {
       name: "What is the best allied health sciences college in Namakkal?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "JKKN College of Allied Health Sciences is located in Komarapalayam, Namakkal district, on NH-544. It's widely regarded as one of the top allied health sciences colleges in Namakkal district. Approved by NAAC and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers excellent programmes with strong placement support.",
+        text: "JKKN College of Allied Health Sciences is in Komarapalayam, Namakkal district, on NH-544. Its 9 B.Sc programmes are affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai. For B.Sc Cardiac Technology, the university's 2025-26 list has 8 colleges in Namakkal district, and JKKN is one of them.",
       },
     },
     {
@@ -149,7 +149,7 @@ const faqSchema = {
       name: "What is the advantage of JKKN AHS being in Namakkal district?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Being in Namakkal district's Komarapalayam offers key advantages: strategic NH-544 highway location connecting Salem and Coimbatore, proximity to Tiruchengode (~15 km) for daily needs, affordable cost of living compared to major cities, peaceful campus environment ideal for studies, and easy accessibility from multiple towns — Erode (~22 km), Salem (~58 km), and Tiruppur (~67 km).",
+        text: "Being in Namakkal district's Komarapalayam offers key advantages: strategic NH-544 highway location connecting Salem and Coimbatore, proximity to Tiruchengode (~15 km) for daily needs, affordable cost of living compared to major cities, peaceful campus environment ideal for studies, and easy accessibility from multiple towns — Erode (~18 km), Salem (~58 km), and Tiruppur (~67 km).",
       },
     },
     {
