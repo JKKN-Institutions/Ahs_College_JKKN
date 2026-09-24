@@ -17,6 +17,7 @@ import {
 import { Breadcrumb } from '@/components/Breadcrumb';
 import AhsEnquiryForm from "@/components/lead/AhsEnquiryForm";
 import { DEFAULT_PROGRAMME_BY_PAGE } from "@/lib/ahs-programmes";
+import { EmergencyCollegesTamilNadu } from "@/components/EmergencyCollegesTamilNadu";
 
 export default function AccidentEmergencyCare() {
     return (
@@ -39,6 +40,7 @@ export default function AccidentEmergencyCare() {
                 <CareerSection />
                 <FacilitiesSection />
                 <AdmissionProcessSection />
+                <EmergencyCollegesTamilNadu />
                 <FAQSection />
                 <CTASection />
                 {/* City Pages Cross-Links */}
@@ -459,12 +461,12 @@ function SyllabusSection() {
 // 6. Career Section
 function CareerSection() {
     const jobs = [
-        { title: "Emergency Medical Technician", desc: "Provide immediate care to patients in emergency situations and during ambulance transport.", salary: "₹3 - 6 LPA", icon: <Ambulance /> },
-        { title: "Trauma Care Specialist", desc: "Manage trauma patients and provide specialized care in trauma centers.", salary: "₹4 - 9 LPA", icon: <HeartPulse /> },
-        { title: "Emergency Room Technician", desc: "Work in emergency departments and provide critical care to ER patients.", salary: "₹4 - 10 LPA", icon: <Siren /> },
-        { title: "Critical Care Technologist", desc: "Monitor and support critically ill patients in ICU and emergency settings.", salary: "₹5 - 11 LPA", icon: <Activity /> },
-        { title: "Disaster Management Officer", desc: "Coordinate emergency response during disasters and mass casualty events.", salary: "₹5 - 12 LPA", icon: <Shield /> },
-        { title: "Ambulance Service Manager", desc: "Manage ambulance operations, coordinate emergency response teams.", salary: "₹6 - 15 LPA", icon: <ClipboardList /> },
+        { title: "Emergency Medical Technician", desc: "Provide immediate care to patients in emergency situations and during ambulance transport.", icon: <Ambulance /> },
+        { title: "Trauma Care Specialist", desc: "Manage trauma patients and provide specialized care in trauma centers.", icon: <HeartPulse /> },
+        { title: "Emergency Room Technician", desc: "Work in emergency departments and provide critical care to ER patients.", icon: <Siren /> },
+        { title: "Critical Care Technologist", desc: "Monitor and support critically ill patients in ICU and emergency settings.", icon: <Activity /> },
+        { title: "Disaster Management Officer", desc: "Coordinate emergency response during disasters and mass casualty events.", icon: <Shield /> },
+        { title: "Ambulance Service Manager", desc: "Manage ambulance operations, coordinate emergency response teams.", icon: <ClipboardList /> },
     ];
 
     return (
@@ -482,9 +484,6 @@ function CareerSection() {
                             </div>
                             <h3 className="text-xl font-bold mb-3 text-[#0b6d41]">{job.title}</h3>
                             <p className="text-gray-600 text-sm leading-relaxed mb-4">{job.desc}</p>
-                            <div className="inline-flex items-center gap-2 bg-green-50 text-green-700 text-xs font-bold px-3 py-1.5 rounded-full">
-                                💰 {job.salary}
-                            </div>
                         </div>
                     ))}
                 </div>
