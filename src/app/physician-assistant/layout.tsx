@@ -1,16 +1,20 @@
 import { createPageMetadata } from "@/lib/metadata";
 import { COURSE_FAQS } from "@/lib/course-faqs";
+import { PA_LIST_SOURCE, PA_GOVT_COLLEGES, PA_JKKN_SEATS } from "@/lib/pa-colleges-tn";
 
 export const metadata = createPageMetadata({
-  title: "Physician Assistant Course in Tamilnadu | JKKN AHS College",
-  description: "JKKN offers the best physician assistant course in Tamilnadu. BSc physician assistant programme with hospital training & placements. Admissions 2026-27!",
+  title: "BSc Physician Assistant Course & Colleges in Tamilnadu | JKKN AHS",
+  description: `${PA_LIST_SOURCE.totalInstitutions} institutions offer BSc Physician Assistant in Tamilnadu (TN Dr. MGR Medical University ${PA_LIST_SOURCE.year}), ${PA_GOVT_COLLEGES.length} government. See the government colleges and seats, and JKKN's 4-year course with ${PA_JKKN_SEATS} seats.`,
   path: "/physician-assistant",
   keywords: [
     "physician assistant course in tamilnadu",
     "bsc physician assistant colleges in tamilnadu",
     "physician assistant colleges in tamilnadu",
     "bsc physician assistant course in tamilnadu",
-    "physician assistant course colleges in tamilnadu"
+    "physician assistant course colleges in tamilnadu",
+    "b sc physician assistant colleges in tamilnadu",
+    "physician assistant course in tamilnadu government colleges",
+    "government bsc physician assistant colleges in tamilnadu"
   ],
 });
 
