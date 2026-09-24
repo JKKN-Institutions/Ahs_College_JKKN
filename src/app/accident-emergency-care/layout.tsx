@@ -1,9 +1,10 @@
 import { createPageMetadata } from "@/lib/metadata";
 import { COURSE_FAQS } from "@/lib/course-faqs";
+import { AE_LIST_SOURCE, AE_GOVT_COLLEGES, AE_JKKN_SEATS } from "@/lib/emergency-colleges-tn";
 
 export const metadata = createPageMetadata({
-  title: "BSc Accident and Emergency Care Technology in Tamilnadu",
-  description: "Looking for BSc accident and emergency care technology colleges in Tamilnadu? JKKN provides hospital training, placements & scholarships. Enrol 2026-27!",
+  title: "BSc Accident and Emergency Care Technology Colleges in Tamilnadu | JKKN",
+  description: `${AE_LIST_SOURCE.totalInstitutions} BSc Accident & Emergency Care Technology colleges in Tamilnadu (TNMGRMU ${AE_LIST_SOURCE.year}), ${AE_GOVT_COLLEGES.length} govt. Govt list, seats, fee, JKKN ${AE_JKKN_SEATS} seats.`,
   path: "/accident-emergency-care",
   keywords: [
     "bsc accident and emergency care technology colleges in tamilnadu",
@@ -11,7 +12,9 @@ export const metadata = createPageMetadata({
     "emergency medical technician course tamilnadu",
     "bsc emergency care admission 2026",
     "emt training college namakkal",
-    "accident emergency care technology course"
+    "accident emergency care technology course",
+    "government bsc accident and emergency care technology colleges in tamilnadu",
+    "bachelor of emergency medical technologist paramedic"
   ],
   ogImage: { url: "https://ahs.jkkn.ac.in/accident-emergency-care-hero.webp", width: 1200, height: 630, alt: "BSc Accident and Emergency Care at JKKN College" },
 });
@@ -85,7 +88,7 @@ const courseSchema = {
 const speakableSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "name": "BSc Accident and Emergency Care Technology in Tamilnadu",
+  "name": "BSc Accident and Emergency Care Technology Colleges in Tamilnadu | JKKN",
   "url": "https://ahs.jkkn.ac.in/accident-emergency-care",
   "speakable": {
     "@type": "SpeakableSpecification",
