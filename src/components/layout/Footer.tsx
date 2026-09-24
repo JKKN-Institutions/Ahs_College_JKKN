@@ -101,10 +101,6 @@ export function Footer() {
                                 referrerPolicy="no-referrer-when-downgrade"
                             ></iframe>
                         </div>
-                        <p className="text-white font-semibold text-xs sm:text-sm">
-                            Best Innovation Focused<br />
-                            Multi-Disciplinary Campus
-                        </p>
                     </div>
 
                     {/* Middle Column - Our Institutions */}
