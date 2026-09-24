@@ -130,12 +130,12 @@ Approximate road distances provided by the college.
 
 - Komarapalayam — campus location (0 km)
 - Tiruchengode — 15 km
-- Namakkal — 20 km
+- Namakkal town — 65 km
 - Erode — 18 km
-- Salem — 45 km
+- Salem — 57 km
 - Karur — 60 km
-- Tiruppur — 80 km
-- Coimbatore — 120 km
+- Tiruppur — 67 km
+- Coimbatore — 112 km
 
 ## Parent Institution — JKKN Educational Institutions
 

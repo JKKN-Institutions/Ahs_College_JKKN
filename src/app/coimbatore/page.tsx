@@ -35,11 +35,11 @@ export default function CoimbatorePage() {
         <CityFAQAccordion cityName="Coimbatore" faqs={[
           {
             q: "What is the best allied health sciences college in Coimbatore?",
-            a: "JKKN College of Allied Health Sciences is ~105 km from Coimbatore on NH-544, in Komarapalayam, Namakkal district. Approved by NAAC and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers excellent programmes with strong placement support.",
+            a: "JKKN College of Allied Health Sciences is ~112 km from Coimbatore on NH-544, in Komarapalayam, Namakkal district. Approved by NAAC and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers excellent programmes with strong placement support.",
           },
           {
             q: "How far is JKKN AHS from Coimbatore?",
-            a: "JKKN AHS is approximately ~105 km from Coimbatore city centre, which takes about 2-2.5 hours by road via NH-544 (Coimbatore-Salem Highway) — direct route. Regular bus services are available from Coimbatore.",
+            a: "JKKN AHS is approximately ~112 km from Coimbatore city centre, which takes about 2-2.5 hours by road via NH-544 (Coimbatore-Salem Highway) — direct route. Regular bus services are available from Coimbatore.",
           },
           {
             q: "What is Allied Health Sciences?",
@@ -71,7 +71,7 @@ export default function CoimbatorePage() {
           },
           {
             q: "How many allied health science colleges are there in Coimbatore?",
-            a: "Coimbatore has 14+ allied health science colleges. JKKN College of Allied Health Sciences, located ~105 km from Coimbatore on NH-544, offers a strong value proposition with competitive fees, 9 BSc programmes, NAAC approval, and placement support with international opportunities.",
+            a: "Coimbatore has 14+ allied health science colleges. JKKN College of Allied Health Sciences, located ~112 km from Coimbatore on NH-544, offers a strong value proposition with competitive fees, 9 BSc programmes, NAAC approval, and placement support with international opportunities.",
           },
           {
             q: "What are the eligibility requirements for allied health science courses?",
@@ -87,7 +87,7 @@ export default function CoimbatorePage() {
           },
           {
             q: "Does proximity to Coimbatore International Airport benefit JKKN AHS learners?",
-            a: "Yes, Coimbatore International Airport (CJB) — just ~80 km from campus — is a significant advantage for international placements. JKKN AHS has placed learners at NHS UK, Cleveland Clinic Abu Dhabi, and hospitals in Singapore and Saudi Arabia. The airport connection makes international career transitions smooth, with direct flights to major cities and Gulf destinations.",
+            a: "Yes, Coimbatore International Airport (CJB), ~101 km from campus, is an advantage for international placements. JKKN AHS has placed learners at NHS UK, Cleveland Clinic Abu Dhabi, and hospitals in Singapore and Saudi Arabia. The airport connection makes international career transitions smooth, with direct flights to major cities and Gulf destinations.",
           },
         ]} />
         <ExploreCitiesSection />
@@ -232,7 +232,7 @@ function DistanceCard() {
       <div className="max-w-3xl mx-auto">
         <div className="bg-white rounded-2xl shadow-sm flex flex-col sm:flex-row items-center gap-4 p-6">
           <div className="flex-1 text-center sm:text-left">
-            <span className="text-5xl font-black text-[#006837]">105</span>
+            <span className="text-5xl font-black text-[#006837]">112</span>
             <span className="text-xl font-bold text-[#006837] ml-1">km</span>
           </div>
           <div className="flex-[3] text-center sm:text-left">
@@ -291,7 +291,7 @@ function WhyChooseSection() {
     {
       icon: Bus,
       title: "Easy Commute",
-      desc: "Just ~105 km from Coimbatore. Daily commute or comfortable hostel — your choice.",
+      desc: "~112 km from Coimbatore, about 2-2.5 hours by road. Hostel accommodation is available on campus.",
     },
   ];
 
@@ -328,7 +328,7 @@ function WhyChooseSection() {
         <p className="text-center text-sm text-gray-500 mt-8">
           Learners from nearby cities also choose JKKN AHS:{" "}
           <a href="/erode" className="text-[#006837] hover:underline font-medium">Erode (~18 km)</a>,{" "}
-          <a href="/salem" className="text-[#006837] hover:underline font-medium">Salem (~58 km)</a>,{" "}
+          <a href="/salem" className="text-[#006837] hover:underline font-medium">Salem (~57 km)</a>,{" "}
           <a href="/tiruppur" className="text-[#006837] hover:underline font-medium">Tiruppur (~67 km)</a>, and{" "}
           <a href="/namakkal" className="text-[#006837] hover:underline font-medium">Namakkal</a>.
         </p>
@@ -565,12 +565,12 @@ function HowToReachSection() {
     {
       icon: Train,
       label: "NEAREST RAILWAY STATION",
-      desc: "Coimbatore Junction (~105 km from campus)",
+      desc: "Coimbatore Junction (~112 km from campus)",
     },
     {
       icon: Plane,
       label: "NEAREST AIRPORT",
-      desc: "Coimbatore International Airport (Code: CJB) (~105 km)",
+      desc: "Coimbatore International Airport (Code: CJB) (~101 km)",
     },
     {
       icon: Home,
@@ -598,7 +598,7 @@ function HowToReachSection() {
               Coimbatore → JKKN AHS Campus
             </div>
             <div className="text-white/70 text-xs mt-0.5">
-              ~105 km • 2-2.5 hours
+              ~112 km • 2-2.5 hours
             </div>
           </div>
         </div>
@@ -801,7 +801,7 @@ function SnippetBaitSection() {
           <div className="bg-white rounded-2xl p-6 shadow-sm">
             <h3 className="font-bold text-gray-900 mb-3">What are Allied Health Sciences?</h3>
             <p className="snippet-answer voice-answer text-sm text-gray-600 leading-relaxed">
-              Allied Health Sciences are healthcare professions that support doctors and nurses in diagnosing, treating, and preventing diseases. These include specialisations like cardiac technology, radiology, dialysis technology, respiratory therapy, and emergency care. Near Coimbatore, JKKN College of Allied Health Sciences offers 9 BSc programmes with clinical training at a teaching hospital — ~105 km via NH-544.
+              Allied Health Sciences are healthcare professions that support doctors and nurses in diagnosing, treating, and preventing diseases. These include specialisations like cardiac technology, radiology, dialysis technology, respiratory therapy, and emergency care. Near Coimbatore, JKKN College of Allied Health Sciences offers 9 BSc programmes with clinical training at a teaching hospital — ~112 km via NH-544.
             </p>
           </div>
 
@@ -824,7 +824,7 @@ function SnippetBaitSection() {
             <h3 className="font-bold text-gray-900 mb-3">How to Choose the Best AHS College in Coimbatore Region</h3>
             <div className="snippet-answer voice-answer text-sm text-gray-600 leading-relaxed space-y-2">
               <p>Coimbatore has 14+ allied health science colleges. When choosing, consider university affiliation (The Tamil Nadu Dr. M.G.R. Medical University is the gold standard), NAAC accreditation, attached teaching hospital quality, placement track record, fee structure, and clinical training hours.</p>
-              <p>JKKN College of Allied Health Sciences — ~105 km from Coimbatore on NH-544 — stands out with NAAC accreditation, a hospital on campus, placement support, international placement opportunities (NHS UK, Cleveland Clinic Abu Dhabi), and competitive fees with scholarship options.</p>
+              <p>JKKN College of Allied Health Sciences — ~112 km from Coimbatore on NH-544 — stands out with NAAC accreditation, a hospital on campus, placement support, international placement opportunities (NHS UK, Cleveland Clinic Abu Dhabi), and competitive fees with scholarship options.</p>
             </div>
           </div>
         </div>
@@ -838,8 +838,8 @@ function SnippetBaitSection() {
 ────────────────────────────────────────── */
 function ExploreCitiesSection() {
   const cities = [
-    { name: "Namakkal", distance: "~66 km", href: "/namakkal" },
-    { name: "Salem", distance: "~58 km", href: "/salem" },
+    { name: "Namakkal", distance: "~65 km", href: "/namakkal" },
+    { name: "Salem", distance: "~57 km", href: "/salem" },
     { name: "Erode", distance: "~18 km", href: "/erode" },
     { name: "Tiruppur", distance: "~67 km", href: "/tiruppur" },
   ];

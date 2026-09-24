@@ -571,7 +571,7 @@ function HowToReachSection({ city }: { city: CityPage }) {
     {
       icon: Plane,
       label: "NEAREST AIRPORT",
-      desc: "Coimbatore International Airport (Code: CJB) (~80 km)",
+      desc: "Coimbatore International Airport (Code: CJB) (~101 km)",
     },
     {
       icon: Home,
