@@ -16,6 +16,7 @@ import {
 import { Breadcrumb } from '@/components/Breadcrumb';
 import AhsEnquiryForm from "@/components/lead/AhsEnquiryForm";
 import { DEFAULT_PROGRAMME_BY_PAGE } from "@/lib/ahs-programmes";
+import { RespiratoryCollegesTamilNadu } from "@/components/RespiratoryCollegesTamilNadu";
 
 export default function RespiratoryTherapy() {
     return (
@@ -38,6 +39,7 @@ export default function RespiratoryTherapy() {
                 <CareerSection />
                 <FacilitiesSection />
                 <AdmissionProcessSection />
+                <RespiratoryCollegesTamilNadu />
                 <FAQSection />
                 <CTASection />
                 {/* City Pages Cross-Links */}
@@ -465,12 +467,12 @@ function SyllabusSection() {
 // 6. Career Section
 function CareerSection() {
     const jobs = [
-        { title: "Respiratory Therapist", desc: "Provide respiratory care to patients with breathing disorders in hospitals, clinics, and home care settings.", salary: "₹3 - 6 LPA", icon: <Activity /> },
-        { title: "ICU Ventilator Specialist", desc: "Manage mechanical ventilation for critically ill patients in intensive care units under physician guidance.", salary: "₹5 - 10 LPA", icon: <Wind /> },
-        { title: "Pulmonary Function Technologist", desc: "Conduct pulmonary function tests to diagnose and monitor respiratory conditions like asthma and COPD.", salary: "₹3 - 6 LPA", icon: <Stethoscope /> },
-        { title: "Sleep Lab Technician", desc: "Perform sleep studies and polysomnography to diagnose sleep disorders including sleep apnea.", salary: "₹4 - 7 LPA", icon: <Clock /> },
-        { title: "Neonatal Respiratory Care Specialist", desc: "Provide specialized respiratory care for newborns and premature infants in NICUs.", salary: "₹4 - 8 LPA", icon: <Activity /> },
-        { title: "Cardiopulmonary Rehabilitation Specialist", desc: "Design rehabilitation programs for patients recovering from heart and lung conditions.", salary: "₹4 - 8 LPA", icon: <Users /> },
+        { title: "Respiratory Therapist", desc: "Provide respiratory care to patients with breathing disorders in hospitals, clinics, and home care settings.", icon: <Activity /> },
+        { title: "ICU Ventilator Specialist", desc: "Manage mechanical ventilation for critically ill patients in intensive care units under physician guidance.", icon: <Wind /> },
+        { title: "Pulmonary Function Technologist", desc: "Conduct pulmonary function tests to diagnose and monitor respiratory conditions like asthma and COPD.", icon: <Stethoscope /> },
+        { title: "Sleep Lab Technician", desc: "Perform sleep studies and polysomnography to diagnose sleep disorders including sleep apnea.", icon: <Clock /> },
+        { title: "Neonatal Respiratory Care Specialist", desc: "Provide specialized respiratory care for newborns and premature infants in NICUs.", icon: <Activity /> },
+        { title: "Cardiopulmonary Rehabilitation Specialist", desc: "Design rehabilitation programs for patients recovering from heart and lung conditions.", icon: <Users /> },
     ];
 
     return (
@@ -487,7 +489,6 @@ function CareerSection() {
                             </div>
                             <h3 className="text-xl font-bold mb-3 text-[#0b6d41]">{job.title}</h3>
                             <p className="text-gray-900 text-sm leading-relaxed mb-4">{job.desc}</p>
-                            <span className="inline-block bg-[#0b6d41]/10 text-[#0b6d41] px-3 py-1 rounded-full text-xs font-bold">{job.salary}</span>
                         </div>
                     ))}
                 </div>
