@@ -34,7 +34,7 @@ export default function TiruppurPage() {
         <CityFAQAccordion cityName="Tiruppur" faqs={[
           {
             q: "What is the best allied health sciences college in Tiruppur?",
-            a: "JKKN College of Allied Health Sciences, located just ~67 km from Tiruppur on NH-544, is widely regarded as one of the top allied health sciences colleges accessible from Tiruppur. Approved by NAAC and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers excellent programmes with strong placement support.",
+            a: "JKKN College of Allied Health Sciences is ~67 km from Tiruppur on NH-544, in Komarapalayam, Namakkal district. Approved by NAAC and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers excellent programmes with strong placement support.",
           },
           {
             q: "How far is JKKN AHS from Tiruppur?",
@@ -307,7 +307,7 @@ function WhyChooseSection() {
 
         <p className="text-center text-sm text-gray-500 mt-8">
           Learners from nearby cities also choose JKKN AHS:{" "}
-          <a href="/erode" className="text-[#006837] hover:underline font-medium">Erode (~22 km)</a>,{" "}
+          <a href="/erode" className="text-[#006837] hover:underline font-medium">Erode (~18 km)</a>,{" "}
           <a href="/salem" className="text-[#006837] hover:underline font-medium">Salem (~58 km)</a>,{" "}
           <a href="/namakkal" className="text-[#006837] hover:underline font-medium">Namakkal</a>, and{" "}
           <a href="/coimbatore" className="text-[#006837] hover:underline font-medium">Coimbatore (~105 km)</a>.
@@ -820,7 +820,7 @@ function ExploreCitiesSection() {
   const cities = [
     { name: "Namakkal", distance: "~66 km", href: "/namakkal" },
     { name: "Salem", distance: "~58 km", href: "/salem" },
-    { name: "Erode", distance: "~22 km", href: "/erode" },
+    { name: "Erode", distance: "~18 km", href: "/erode" },
     { name: "Coimbatore", distance: "~105 km", href: "/coimbatore" },
   ];
 

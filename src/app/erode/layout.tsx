@@ -4,7 +4,7 @@ import { AHS_MAPS_URL } from "@/lib/entity-profiles";
 export const metadata = createPageMetadata({
   title: "Allied Health Science Colleges near Erode | JKKN AHS",
   description:
-    "JKKN AHS — ~22 km from Erode on NH-544. 9 BSc allied health programmes, NAAC accredited, placement support, teaching hospital. Admissions open 2026-27.",
+    "JKKN AHS — ~18 km from Erode on NH-544. 9 BSc allied health programmes, NAAC accredited, placement support, teaching hospital. Admissions open 2026-27.",
   path: "/erode",
   keywords: [
     "allied health science colleges in erode",
@@ -61,7 +61,7 @@ const faqSchema = {
       name: "What is the best allied health sciences college near Erode?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "JKKN College of Allied Health Sciences is ~22 km from Erode on NH-544, in Komarapalayam, Namakkal district - it is not in Erode district. Its 9 B.Sc programmes are affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai. Compare it with the colleges inside Erode district too: for B.Sc Cardiac Technology alone, the university's 2025-26 list has 4 there.",
+        text: "JKKN College of Allied Health Sciences is ~18 km from Erode on NH-544, in Komarapalayam, Namakkal district - it is not in Erode district. Its 9 B.Sc programmes are affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai. Compare it with the colleges inside Erode district too: for B.Sc Cardiac Technology alone, the university's 2025-26 list has 4 there.",
       },
     },
     {
@@ -69,7 +69,7 @@ const faqSchema = {
       name: "How far is JKKN AHS from Erode?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "JKKN AHS is approximately ~22 km from Erode city centre, which takes about 35-40 minutes by road via NH-544 — direct highway connectivity. Regular bus services are available from Erode.",
+        text: "JKKN AHS is ~18 km from the Erode Bus Stand, about 30 minutes by road via NH-544 — direct highway connectivity. Regular bus services are available from Erode.",
       },
     },
     {
@@ -101,7 +101,7 @@ const faqSchema = {
       name: "Does JKKN AHS provide hostel for Erode learners?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes, JKKN AHS provides separate hostel facilities for boys and girls. Learners from Erode can also opt for daily commute as the campus is just 35-40 minutes away. College transport services are available.",
+        text: "Yes, JKKN AHS provides separate hostel facilities for boys and girls. Learners from Erode can also opt for daily commute as the campus is about 30 minutes away by road. College transport services are available.",
       },
     },
     {
@@ -133,7 +133,7 @@ const faqSchema = {
       name: "How many allied health science colleges are there near Erode?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Erode district has several allied health colleges affiliated to The Tamil Nadu Dr. M.G.R. Medical University. For B.Sc Cardiac Technology, the university's 2025-26 list has 4 in Erode district - two Nandha colleges at Pitchandampalayam, Shree Venkateshwara at Gobichettipalayam and JKK Munirajah at T.N. Palayam. JKKN College of Allied Health Sciences is ~22 km from Erode, in Namakkal district.",
+        text: "Erode district has several allied health colleges affiliated to The Tamil Nadu Dr. M.G.R. Medical University. For B.Sc Cardiac Technology, the university's 2025-26 list has 4 in Erode district - two Nandha colleges at Pitchandampalayam, Shree Venkateshwara at Gobichettipalayam and JKK Munirajah at T.N. Palayam. JKKN College of Allied Health Sciences is ~18 km from Erode, in Namakkal district.",
       },
     },
     {
@@ -157,7 +157,7 @@ const faqSchema = {
       name: "Can Erode learners commute daily to JKKN AHS?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Absolutely. At just ~22 km via NH-544, many Erode learners commute daily. The journey takes only 35-40 minutes by bus or bike. JKKN also provides dedicated college transport services with multiple pickup points in Erode city. Hostel facilities are available for those who prefer to stay on campus.",
+        text: "Absolutely. At ~18 km via NH-544, many Erode learners commute daily - about 30 minutes by road. JKKN also provides dedicated college transport services with multiple pickup points in Erode city. Hostel facilities are available for those who prefer to stay on campus.",
       },
     },
     {
@@ -165,7 +165,7 @@ const faqSchema = {
       name: "Why choose JKKN AHS near Erode over colleges in Coimbatore?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "JKKN AHS offers comparable programme quality to Coimbatore colleges but with key advantages: closer proximity (~22 km vs 105 km from Erode), lower cost of living, personalised attention with smaller batch sizes, direct clinical exposure at the JKKN Hospital from Year 1, and strong local industry connections for placements. The NH-544 location also means easy access to opportunities in both Erode and Coimbatore.",
+        text: "JKKN AHS offers comparable programme quality to Coimbatore colleges but with key advantages: closer proximity (~18 km vs 105 km from Erode), lower cost of living, personalised attention with smaller batch sizes, direct clinical exposure at the JKKN Hospital from Year 1, and strong local industry connections for placements. The NH-544 location also means easy access to opportunities in both Erode and Coimbatore.",
       },
     },
   ],

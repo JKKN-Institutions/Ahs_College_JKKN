@@ -61,7 +61,7 @@ const faqSchema = {
       name: "What is the best allied health sciences college in Coimbatore?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "JKKN College of Allied Health Sciences, located just ~105 km from Coimbatore on NH-544, is widely regarded as one of the top allied health sciences colleges accessible from Coimbatore. Approved by NAAC and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers excellent programmes with strong placement support.",
+        text: "JKKN College of Allied Health Sciences is ~105 km from Coimbatore on NH-544, in Komarapalayam, Namakkal district. Approved by NAAC and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers excellent programmes with strong placement support.",
       },
     },
     {
