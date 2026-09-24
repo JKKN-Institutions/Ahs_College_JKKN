@@ -2,7 +2,7 @@ import { createPageMetadata } from "@/lib/metadata";
 import { AHS_MAPS_URL } from "@/lib/entity-profiles";
 
 export const metadata = createPageMetadata({
-  title: "Allied Health Science Colleges in Erode | JKKN AHS",
+  title: "Allied Health Science Colleges near Erode | JKKN AHS",
   description:
     "JKKN AHS — ~22 km from Erode on NH-544. 9 BSc allied health programmes, NAAC accredited, placement support, teaching hospital. Admissions open 2026-27.",
   path: "/erode",
@@ -61,7 +61,7 @@ const faqSchema = {
       name: "What is the best allied health sciences college near Erode?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "JKKN College of Allied Health Sciences, located just ~22 km from Erode on NH-544, is widely regarded as one of the top allied health sciences colleges accessible from Erode. Approved by NAAC and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers excellent programmes with strong placement support.",
+        text: "JKKN College of Allied Health Sciences is ~22 km from Erode on NH-544, in Komarapalayam, Namakkal district - it is not in Erode district. Its 9 B.Sc programmes are affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai. Compare it with the colleges inside Erode district too: for B.Sc Cardiac Technology alone, the university's 2025-26 list has 4 there.",
       },
     },
     {
@@ -133,7 +133,7 @@ const faqSchema = {
       name: "How many allied health science colleges are there near Erode?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Erode district has a limited number of allied health science colleges. JKKN College of Allied Health Sciences, located just ~22 km from Erode on NH-544, stands out with 9 BSc programmes, NAAC approval, and placement support — making it one of the top choices for Erode learners.",
+        text: "Erode district has several allied health colleges affiliated to The Tamil Nadu Dr. M.G.R. Medical University. For B.Sc Cardiac Technology, the university's 2025-26 list has 4 in Erode district - two Nandha colleges at Pitchandampalayam, Shree Venkateshwara at Gobichettipalayam and JKK Munirajah at T.N. Palayam. JKKN College of Allied Health Sciences is ~22 km from Erode, in Namakkal district.",
       },
     },
     {

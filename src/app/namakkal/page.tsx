@@ -7,6 +7,7 @@ import { MapPin, GraduationCap, Phone, TrendingUp, Building2, GitBranch, Target,
 import Image from "next/image";
 import Link from "next/link";
 import AhsEnquiryForm from "@/components/lead/AhsEnquiryForm";
+import { CardiacCollegesInDistrict } from "@/components/CardiacCollegesList";
 
 export default function NamakkalPage() {
   return (
@@ -26,6 +27,7 @@ export default function NamakkalPage() {
         <DistanceCard />
         <WhyChooseSection />
         <ProgrammesSection />
+        <CardiacCollegesInDistrict district="Namakkal" lead="JKKN College of Allied Health Sciences in Komarapalayam is one of them, with 7 seats." />
         <PlacementHighlights />
         <CompetitiveAdvantageSection />
         <HowToReachSection />
@@ -35,7 +37,7 @@ export default function NamakkalPage() {
         <CityFAQAccordion cityName="Namakkal" faqs={[
           {
             q: "What is the best allied health sciences college in Namakkal?",
-            a: "JKKN College of Allied Health Sciences is located in Komarapalayam, Namakkal district, on NH-544. It's widely regarded as one of the top allied health sciences colleges in Namakkal district. Approved by NAAC and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers excellent programmes with strong placement support.",
+            a: "JKKN College of Allied Health Sciences is in Komarapalayam, Namakkal district, on NH-544. Its 9 B.Sc programmes are affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai. For B.Sc Cardiac Technology, the university's 2025-26 list has 8 colleges in Namakkal district, and JKKN is one of them.",
           },
           {
             q: "How far is JKKN AHS from Namakkal?",
