@@ -46,7 +46,7 @@ export function Hero() {
                         </div>
 
                         <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-4xl font-black text-white leading-[1.2] mb-3 sm:mb-4">
-                            Best Allied Health Sciences College in Tamil Nadu — <span className="text-[#ffde59]">Shape Your Healthcare Career</span> at JKKN
+                            Paramedical &amp; Allied Health Degree Courses in Komarapalayam — <span className="text-[#ffde59]">Shape Your Healthcare Career</span> at JKKN
                         </h1>
 
                         <p className="voice-answer text-sm sm:text-base text-white/90 mb-4 sm:mb-6 max-w-2xl leading-relaxed">

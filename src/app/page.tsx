@@ -100,7 +100,7 @@ const faqSchema = {
 const speakableSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "name": "JKKN College of Allied Health Sciences — Best Allied Health Sciences College in Tamil Nadu",
+  "name": "JKKN College of Allied Health Sciences — Paramedical & Allied Health Degree Courses, Komarapalayam, Namakkal district",
   "url": "https://ahs.jkkn.ac.in/",
   "speakable": {
     "@type": "SpeakableSpecification",

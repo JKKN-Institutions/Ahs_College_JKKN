@@ -50,6 +50,9 @@ function buildPages(lastmod: string): Entry[] {
       lastmod,
     })),
 
+    // Tamil Nadu list page (GL6-327)
+    { loc: `${baseUrl}/paramedical-colleges-in-tamil-nadu`, changefreq: 'monthly', priority: '0.9', lastmod },
+
     // Departments hub
     { loc: `${baseUrl}/departments`, changefreq: 'monthly', priority: '0.8', lastmod },
 

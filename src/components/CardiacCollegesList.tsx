@@ -94,6 +94,13 @@ export function CardiacCollegesTamilNadu() {
           );
         })}
         <SourceNote />
+        <p className="text-sm text-gray-700 mt-4">
+          All allied health courses:{" "}
+          <Link href="/paramedical-colleges-in-tamil-nadu" className="text-[#0b6d41] underline">
+            paramedical colleges in Tamil Nadu
+          </Link>
+          .
+        </p>
       </div>
     </section>
   );

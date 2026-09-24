@@ -505,11 +505,11 @@ function CompetitiveAdvantageSection({ city }: { city: CityPage }) {
     },
     {
       title: "Placement Support with 60+ Recruiters",
-      desc: "Our graduates work at Apollo Hospitals, Fortis Healthcare, Sun Pharma, NHS UK, and Cleveland Clinic Abu Dhabi. Both domestic and international career paths available.",
+      desc: "A dedicated placement cell helps learners apply to hospitals and diagnostic centres, in India and abroad.",
     },
     city.advantageDistance,
     {
-      title: "500+ Bed Teaching Hospital on Campus",
+      title: "Hospital-Based Clinical Training",
       desc: "Clinical training from Year 1 at our multi-specialty teaching hospital. Hands-on experience that textbooks alone cannot provide.",
     },
     {
