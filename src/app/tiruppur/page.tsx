@@ -137,10 +137,9 @@ function HeroSection() {
 
         {/* Description */}
         <p className="text-white/85 text-base sm:text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
-          Tiruppur learners — world-class education without the big-city hassle.
-          JKKN College of Allied Health Sciences offers top-tier allied health
-          sciences programmes with placement support — no need to go to
-          Coimbatore — quality education is closer than you think.
+          JKKN College of Allied Health Sciences offers allied health sciences
+          programmes with placement support, ~67 km from Tiruppur. Tiruppur
+          learners have no need to go to Coimbatore.
         </p>
 
         {/* Stats */}
@@ -282,10 +281,10 @@ function WhyChooseSection() {
           Why Tiruppur Learners Choose JKKN AHS
         </h2>
         <p className="text-gray-500 max-w-2xl mx-auto mb-3 text-sm sm:text-base leading-relaxed">
-          Tiruppur learners no longer need to travel all the way to Coimbatore or
-          Chennai for quality professional education. JKKN offers an excellent alternative
-          with comfortable hostel facilities, strong placements, and a peaceful campus
-          environment ideal for focused learning.
+          JKKN offers Tiruppur learners comfortable hostel facilities, placement support
+          and a peaceful campus environment ideal for focused learning. Tiruppur learners
+          no longer need to travel all the way to Coimbatore or Chennai for professional
+          education.
         </p>
         <div className="w-12 h-1 bg-[#7cb983] rounded mx-auto mb-10"></div>
 
@@ -728,10 +727,10 @@ function CampusGallerySection() {
 ────────────────────────────────────────── */
 function CompetitiveAdvantageSection() {
   const advantages = [
-    { title: "Wider Course Selection Than Local Options", desc: "With 9 BSc programmes covering cardiac, dialysis, radiology, respiratory, critical care, and more — JKKN offers more specialization options than most colleges accessible from Tiruppur." },
+    { title: "9 BSc Programmes", desc: "JKKN offers 9 BSc programmes covering cardiac, dialysis, radiology, respiratory, critical care, and more." },
     { title: "Placement Support", desc: "A dedicated placement cell runs recruitment drives with partner hospitals and supports graduates who want to work abroad. The college publishes no audited placement figures; the cell can share current, verifiable numbers on request." },
     { title: "NAAC Approved — Trusted Credential", desc: "NAAC approval and affiliation to The Tamil Nadu Dr. M.G.R. Medical University, Chennai ensures your degree is recognized across India and abroad." },
-    { title: "500+ Bed Teaching Hospital on Campus", desc: "Hands-on clinical training from Year 1 at our multi-specialty teaching hospital. Real patients, real experience — not just learning studio theory." },
+    { title: "Teaching Hospital on Campus", desc: "Hands-on clinical training from Year 1 at our multi-specialty teaching hospital. Real patients, real experience — not just learning studio theory." },
     { title: "Well-Connected via NH-544", desc: "Located on the Salem–Coimbatore Highway, JKKN is easily accessible from Tiruppur via Erode. Hostel and transport services available for outstation learners." },
   ];
 
@@ -742,7 +741,7 @@ function CompetitiveAdvantageSection() {
           Why Tiruppur Learners Choose JKKN AHS
         </h2>
         <p className="voice-answer text-gray-500 text-sm mb-3 text-center">
-          More courses, better placements, and trusted credentials
+          JKKN AHS offers Tiruppur learners 9 BSc programmes, a teaching hospital on campus and placement support
         </p>
         <div className="w-12 h-1 bg-[#7cb983] rounded mx-auto mb-10"></div>
 

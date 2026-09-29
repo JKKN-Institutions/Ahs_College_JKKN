@@ -73,7 +73,7 @@ export default function SalemPage() {
           },
           {
             q: "How many allied health science colleges are there near Salem?",
-            a: "Salem has multiple allied health science colleges including government and private institutions. JKKN College of Allied Health Sciences, located ~57 km from Salem on NH-544, offers a competitive alternative with 9 BSc programmes, NAAC approval, affordable fees, and strong placement support.",
+            a: "Salem has multiple allied health science colleges including government and private institutions. JKKN College of Allied Health Sciences, located ~57 km from Salem on NH-544, offers 9 BSc programmes, NAAC approval and strong placement support.",
           },
           {
             q: "What are the eligibility requirements for allied health science courses?",
@@ -89,7 +89,7 @@ export default function SalemPage() {
           },
           {
             q: "Is JKKN AHS near Salem a better value than colleges in Chennai?",
-            a: "JKKN AHS offers excellent value compared to Chennai colleges: significantly lower tuition and living costs, the same Tamil Nadu Dr. M.G.R. Medical University affiliation, a teaching hospital for clinical training, placement support with both domestic and international opportunities, and a safer, focused campus environment. Learners save considerably while receiving comparable education quality.",
+            a: "JKKN AHS is affiliated to The Tamil Nadu Dr. M.G.R. Medical University, the same university as the affiliated allied health colleges in Chennai, and offers a teaching hospital for clinical training and placement support with both domestic and international opportunities.",
           },
         ]} />
         <ExploreCitiesSection />
@@ -303,10 +303,9 @@ function WhyChooseSection() {
           Why Salem Learners Choose JKKN AHS
         </h2>
         <p className="text-gray-500 max-w-2xl mx-auto mb-3 text-sm sm:text-base leading-relaxed">
-          Salem is one of the largest cities in central Tamil Nadu with excellent
-          connectivity to JKKN via NH-544. The journey takes under 1 hour, making daily
-          commute a practical option. Learners from Salem get access to quality
-          professional education without the high costs of metro city colleges.
+          JKKN is under 1 hour from Salem, making daily commute a practical option.
+          Salem is one of the largest cities in central Tamil Nadu, with excellent
+          connectivity to JKKN via NH-544.
         </p>
         <div className="w-12 h-1 bg-[#7cb983] rounded mx-auto mb-10"></div>
 
@@ -749,7 +748,7 @@ function CampusGallerySection() {
 ────────────────────────────────────────── */
 function CompetitiveAdvantageSection() {
   const advantages = [
-    { title: "Competitive Fees with Scholarship Support", desc: "JKKN offers quality allied health education at competitive pricing compared to deemed universities in Salem. Merit-based scholarships available for deserving learners." },
+    { title: "Scholarship Support", desc: "Merit-based scholarships available for deserving learners." },
     { title: "9 Specialized BSc Programmes", desc: "Choose from Cardiac Technology, Dialysis, Radiology, OT & Anaesthesia, Respiratory Therapy, Physician Assistant, Critical Care, Medical Records, and Emergency Care." },
     { title: "Direct NH-544 Access — 50–60 Minutes from Salem", desc: "Straight highway connectivity via Salem–Coimbatore Highway. Regular bus services from Salem bus stand make the commute convenient." },
     { title: "Support for Careers Abroad", desc: "The placement cell supports graduates who want to work abroad, from licensing exams to visa guidance. The college publishes no audited international placement figures; the cell can share current, verifiable numbers on request." },
@@ -763,7 +762,7 @@ function CompetitiveAdvantageSection() {
           Why Salem Learners Choose JKKN AHS
         </h2>
         <p className="voice-answer text-gray-500 text-sm mb-3 text-center">
-          A strong alternative with competitive fees and proven placements
+          JKKN AHS offers Salem learners 9 BSc programmes, a teaching hospital on campus and scholarship support
         </p>
         <div className="w-12 h-1 bg-[#7cb983] rounded mx-auto mb-10"></div>
 

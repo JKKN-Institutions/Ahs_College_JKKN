@@ -74,7 +74,7 @@ export default function ErodePage() {
             },
             {
               q: "How many allied health science colleges are there near Erode?",
-              a: "Erode district has several allied health colleges affiliated to The Tamil Nadu Dr. M.G.R. Medical University. For B.Sc Cardiac Technology, the university's 2025-26 list has 4 in Erode district - two Nandha colleges at Pitchandampalayam, Shree Venkateshwara at Gobichettipalayam and JKK Munirajah at T.N. Palayam. JKKN College of Allied Health Sciences is ~18 km from Erode, in Namakkal district.",
+              a: "Erode district has several allied health colleges affiliated to The Tamil Nadu Dr. M.G.R. Medical University. JKKN College of Allied Health Sciences is ~18 km from Erode, in Namakkal district. For B.Sc Cardiac Technology, the university's 2025-26 list has 4 in Erode district - two Nandha colleges at Pitchandampalayam, Shree Venkateshwara at Gobichettipalayam and JKK Munirajah at T.N. Palayam.",
             },
             {
               q: "What are the eligibility requirements for allied health science courses?",
@@ -90,7 +90,7 @@ export default function ErodePage() {
             },
             {
               q: "Why choose JKKN AHS near Erode over colleges in Coimbatore?",
-              a: "JKKN AHS offers comparable programme quality to Coimbatore colleges but with key advantages: closer proximity (~18 km vs 105 km from Erode), lower cost of living, personalised attention with smaller batch sizes, direct clinical exposure at the JKKN Hospital from Year 1, and strong local industry connections for placements. The NH-544 location also means easy access to opportunities in both Erode and Coimbatore.",
+              a: "JKKN AHS is ~18 km from Erode on NH-544, with direct clinical exposure at the JKKN Hospital from Year 1 and strong local industry connections for placements. The NH-544 location also means easy access to opportunities in both Erode and Coimbatore.",
             },
           ]}
         />
@@ -306,10 +306,9 @@ function WhyChooseSection() {
           Why Erode Learners Choose JKKN AHS
         </h2>
         <p className="text-gray-500 max-w-2xl mx-auto mb-3 text-sm sm:text-base leading-relaxed">
-          Erode&apos;s strong industrial base means families value quality education with
-          good placement outcomes. JKKN is just ~18 km away — closer than many
-          colleges within Erode city itself. The excellent NH-544 connectivity makes
-          daily commute comfortable and quick.
+          JKKN is just ~18 km from Erode, and the excellent NH-544 connectivity makes
+          daily commute comfortable and quick. Erode&apos;s strong industrial base means
+          families value quality education with good placement outcomes.
         </p>
         <div className="w-12 h-1 bg-[#7cb983] rounded mx-auto mb-10"></div>
 
@@ -751,10 +750,10 @@ function CampusGallerySection() {
 ────────────────────────────────────────── */
 function CompetitiveAdvantageSection() {
   const advantages = [
-    { title: "9 Specialized BSc Programmes", desc: "Choose from Cardiac Technology, Dialysis, Radiology, OT & Anaesthesia, Respiratory Therapy, Physician Assistant, Critical Care, Medical Records, and Emergency Care — more options than most colleges near Erode." },
+    { title: "9 Specialized BSc Programmes", desc: "Choose from Cardiac Technology, Dialysis, Radiology, OT & Anaesthesia, Respiratory Therapy, Physician Assistant, Critical Care, Medical Records, and Emergency Care." },
     { title: "Placement Support with 60+ Recruiters", desc: "Our graduates work at TCS, Apollo Hospitals, Sun Pharma, NHS UK, and Cleveland Clinic Abu Dhabi. Both domestic and international career paths available." },
     { title: "Just 30–40 Minutes from Erode", desc: "Located on NH-544 (Salem–Coimbatore Highway) with direct bus connectivity. Easy commute or hostel stay — both options available for Erode learners." },
-    { title: "500+ Bed Teaching Hospital on Campus", desc: "Clinical training from Year 1 at our multi-specialty teaching hospital. Hands-on experience that textbooks alone cannot provide." },
+    { title: "Teaching Hospital on Campus", desc: "Clinical training from Year 1 at our multi-specialty teaching hospital. Hands-on experience that textbooks alone cannot provide." },
     { title: "NAAC Approved & University Affiliated", desc: "Approved by NAAC and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai — your degree is recognized nationwide and internationally." },
   ];
 
@@ -765,7 +764,7 @@ function CompetitiveAdvantageSection() {
           Why Erode Learners Choose JKKN AHS
         </h2>
         <p className="voice-answer text-gray-500 text-sm mb-3 text-center">
-          Discover why learners from Erode prefer JKKN for allied health sciences
+          JKKN AHS offers Erode learners 9 BSc programmes, clinical training from Year 1 and placement support
         </p>
         <div className="w-12 h-1 bg-[#7cb983] rounded mx-auto mb-10"></div>
 

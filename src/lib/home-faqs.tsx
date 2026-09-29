@@ -47,7 +47,7 @@ export const HOME_FAQS: { question: string; answer: ReactNode }[] = [
     },
     {
         question: "What makes JKKN different from other Allied Health Sciences colleges?",
-        answer: <>JKKN stands apart with its {BRAND_LEGACY.FULL_TEXT} of educational excellence, state-of-the-art <Link href="/lab" className="text-[#0b6d41] font-semibold hover:underline">learning labs</Link> matching hospital standards, partnerships with 50+ leading hospitals for clinical training, experienced Learning Facilitators with industry expertise, <Link href="/placements" className="text-[#0b6d41] font-semibold hover:underline">placement support</Link> with top healthcare organizations, scholarship programs for deserving Learners, and comprehensive support from <Link href="/admissions" className="text-[#0b6d41] font-semibold hover:underline">admissions</Link> through career placement.</>
+        answer: <>JKKN brings its {BRAND_LEGACY.FULL_TEXT} of educational excellence, state-of-the-art <Link href="/lab" className="text-[#0b6d41] font-semibold hover:underline">learning labs</Link> matching hospital standards, partnerships with 50+ hospitals for clinical training, experienced Learning Facilitators with industry expertise, <Link href="/placements" className="text-[#0b6d41] font-semibold hover:underline">placement support</Link> with healthcare organizations, scholarship programs for deserving Learners, and comprehensive support from <Link href="/admissions" className="text-[#0b6d41] font-semibold hover:underline">admissions</Link> through career placement.</>
     },
     {
         question: "How much does B.Sc Allied Health Sciences cost in Tamil Nadu?",

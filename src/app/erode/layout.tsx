@@ -133,7 +133,7 @@ const faqSchema = {
       name: "How many allied health science colleges are there near Erode?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Erode district has several allied health colleges affiliated to The Tamil Nadu Dr. M.G.R. Medical University. For B.Sc Cardiac Technology, the university's 2025-26 list has 4 in Erode district - two Nandha colleges at Pitchandampalayam, Shree Venkateshwara at Gobichettipalayam and JKK Munirajah at T.N. Palayam. JKKN College of Allied Health Sciences is ~18 km from Erode, in Namakkal district.",
+        text: "Erode district has several allied health colleges affiliated to The Tamil Nadu Dr. M.G.R. Medical University. JKKN College of Allied Health Sciences is ~18 km from Erode, in Namakkal district. For B.Sc Cardiac Technology, the university's 2025-26 list has 4 in Erode district - two Nandha colleges at Pitchandampalayam, Shree Venkateshwara at Gobichettipalayam and JKK Munirajah at T.N. Palayam.",
       },
     },
     {
@@ -165,7 +165,7 @@ const faqSchema = {
       name: "Why choose JKKN AHS near Erode over colleges in Coimbatore?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "JKKN AHS offers comparable programme quality to Coimbatore colleges but with key advantages: closer proximity (~18 km vs 105 km from Erode), lower cost of living, personalised attention with smaller batch sizes, direct clinical exposure at the JKKN Hospital from Year 1, and strong local industry connections for placements. The NH-544 location also means easy access to opportunities in both Erode and Coimbatore.",
+        text: "JKKN AHS is ~18 km from Erode on NH-544, with direct clinical exposure at the JKKN Hospital from Year 1 and strong local industry connections for placements. The NH-544 location also means easy access to opportunities in both Erode and Coimbatore.",
       },
     },
   ],
