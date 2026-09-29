@@ -149,7 +149,7 @@ const faqSchema = {
       name: "With so many colleges in Coimbatore, why should I choose JKKN AHS?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "While Coimbatore has 14+ allied health science colleges, JKKN AHS offers distinct advantages: NAAC accreditation with strong university affiliation, a multi-specialty teaching hospital on campus (rare among competitors), placement support with international opportunities (NHS UK, Cleveland Clinic Abu Dhabi), smaller batch sizes for personalised attention, and significantly lower cost of living compared to Coimbatore city. The NH-544 location ensures easy weekend travel home.",
+        text: "JKKN AHS offers NAAC accreditation with strong university affiliation, a multi-specialty teaching hospital on campus and placement support with international opportunities (NHS UK, Cleveland Clinic Abu Dhabi). The NH-544 location ensures easy weekend travel home. Coimbatore has 14+ allied health science colleges of its own.",
       },
     },
     {

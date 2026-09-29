@@ -501,7 +501,7 @@ function CompetitiveAdvantageSection({ city }: { city: CityPage }) {
   const advantages = [
     {
       title: "9 Specialized BSc Programmes",
-      desc: `Choose from Cardiac Technology, Dialysis, Radiology, OT & Anaesthesia, Respiratory Therapy, Physician Assistant, Critical Care, Medical Records, and Emergency Care — more options than most colleges near ${city.cityName}.`,
+      desc: `Choose from Cardiac Technology, Dialysis, Radiology, OT & Anaesthesia, Respiratory Therapy, Physician Assistant, Critical Care, Medical Records, and Emergency Care.`,
     },
     {
       title: "Placement Support with 60+ Recruiters",
@@ -525,7 +525,7 @@ function CompetitiveAdvantageSection({ city }: { city: CityPage }) {
           What Makes JKKN AHS Different
         </h2>
         <p className="voice-answer text-gray-500 text-sm mb-3 text-center">
-          Discover why students from {city.cityName} prefer JKKN for allied health sciences
+          JKKN AHS offers students from {city.cityName} 9 BSc programmes, clinical training from Year 1 and placement support
         </p>
         <div className="w-12 h-1 bg-[#7cb983] rounded mx-auto mb-10"></div>
 

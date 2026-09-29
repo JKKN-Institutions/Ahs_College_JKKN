@@ -749,8 +749,8 @@ function CampusGallerySection() {
 ────────────────────────────────────────── */
 function CompetitiveAdvantageSection() {
   const advantages = [
-    { title: "In Namakkal District — Komarapalayam Campus", desc: "Located in Komarapalayam (Namakkal district), JKKN is the closest allied health sciences college for Namakkal district residents. Just 15 km from Tiruchengode. Daily commute or hostel accommodation — your choice." },
-    { title: "9 BSc Programmes — Widest Selection in the District", desc: "From Cardiac Technology to Emergency Care, JKKN offers the most diverse range of allied health programmes in Namakkal district." },
+    { title: "In Namakkal District — Komarapalayam Campus", desc: "JKKN's campus is in Komarapalayam, Namakkal district. Just 15 km from Tiruchengode. Daily commute or hostel accommodation — your choice." },
+    { title: "9 BSc Programmes", desc: "From Cardiac Technology to Emergency Care, JKKN offers 9 allied health programmes." },
     { title: "Placement Support", desc: "A dedicated placement cell runs recruitment drives with partner hospitals and supports graduates who want to work abroad. The college publishes no audited placement figures; the cell can share current, verifiable numbers on request." },
     { title: "74+ Years of Institutional Legacy", desc: "Founded in 1952, JKKN Institutions brings over seven decades of educational excellence. A trusted name for Namakkal families." },
     { title: "Complete Campus Ecosystem", desc: "Teaching hospital, separate hostels for boys and girls, transport services, learning commons, learning labs, food court, and Wi-Fi — everything under one roof." },
@@ -763,7 +763,7 @@ function CompetitiveAdvantageSection() {
           Why Namakkal Learners Choose JKKN AHS
         </h2>
         <p className="voice-answer text-gray-500 text-sm mb-3 text-center">
-          Namakkal&apos;s closest and most trusted allied health sciences campus
+          JKKN AHS is in Komarapalayam, Namakkal district, with 9 BSc programmes and a teaching hospital on campus
         </p>
         <div className="w-12 h-1 bg-[#7cb983] rounded mx-auto mb-10"></div>
 

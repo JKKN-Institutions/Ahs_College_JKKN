@@ -79,7 +79,7 @@ export default function CoimbatorePage() {
           },
           {
             q: "With so many colleges in Coimbatore, why should I choose JKKN AHS?",
-            a: "While Coimbatore has 14+ allied health science colleges, JKKN AHS offers distinct advantages: NAAC accreditation with strong university affiliation, a multi-specialty teaching hospital on campus (rare among competitors), placement support with international opportunities (NHS UK, Cleveland Clinic Abu Dhabi), smaller batch sizes for personalised attention, and significantly lower cost of living compared to Coimbatore city. The NH-544 location ensures easy weekend travel home.",
+            a: "JKKN AHS offers NAAC accreditation with strong university affiliation, a multi-specialty teaching hospital on campus and placement support with international opportunities (NHS UK, Cleveland Clinic Abu Dhabi). The NH-544 location ensures easy weekend travel home. Coimbatore has 14+ allied health science colleges of its own.",
           },
           {
             q: "How does Coimbatore's medical hub benefit JKKN AHS graduates?",
@@ -157,10 +157,8 @@ function HeroSection() {
 
         {/* Description */}
         <p className="text-white/85 text-base sm:text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
-          Better value, better campus, better you — just 2 hours from Coimbatore.
-          JKKN College of Allied Health Sciences offers top-tier allied health
-          sciences programmes with placement support — world-class
-          education at a fraction of Coimbatore city college fees.
+          JKKN College of Allied Health Sciences offers allied health sciences
+          programmes with placement support — just 2 hours from Coimbatore.
         </p>
 
         {/* Stats */}
@@ -302,10 +300,9 @@ function WhyChooseSection() {
           Why Coimbatore Learners Choose JKKN AHS
         </h2>
         <p className="text-gray-500 max-w-2xl mx-auto mb-3 text-sm sm:text-base leading-relaxed">
-          While Coimbatore has many colleges, JKKN offers a distinct advantage: world-class
-          education at significantly lower costs, a peaceful campus away from city congestion,
-          personalised attention with smaller class sizes, and strong placement support.
-          Hostel and transport facilities make the transition easy.
+          JKKN offers a peaceful campus away from city congestion and strong placement
+          support, and hostel and transport facilities make the transition easy.
+          Coimbatore has many colleges of its own.
         </p>
         <div className="w-12 h-1 bg-[#7cb983] rounded mx-auto mb-10"></div>
 
@@ -748,11 +745,10 @@ function CampusGallerySection() {
 ────────────────────────────────────────── */
 function CompetitiveAdvantageSection() {
   const advantages = [
-    { title: "Competitive Fees vs Coimbatore Premium", desc: "Get quality allied health education at significantly lower costs compared to Coimbatore-based colleges. Lower cost of living in Komarapalayam means your total education expense is much more affordable." },
     { title: "Placement Support", desc: "A dedicated placement cell runs recruitment drives with partner hospitals and supports graduates who want to work abroad. The college publishes no audited placement figures; the cell can share current, verifiable numbers on request." },
     { title: "9 Specialized BSc Programmes", desc: "Cardiac Technology, Dialysis, Radiology, OT & Anaesthesia, Respiratory Therapy, Physician Assistant, Critical Care, Medical Records, and Emergency Care — comprehensive options under one roof." },
     { title: "Own Teaching Hospital — Clinical Exposure from Day 1", desc: "Multi-specialty teaching hospital on campus. Learners get hands-on clinical training from Year 1, a significant advantage for healthcare career readiness." },
-    { title: "Scholarships for Meritorious Learners", desc: "Merit-based scholarships available for deserving learners. Combined with competitive fees and lower living costs, JKKN offers excellent return on educational investment." },
+    { title: "Scholarships for Meritorious Learners", desc: "Merit-based scholarships available for deserving learners." },
   ];
 
   return (
@@ -762,7 +758,7 @@ function CompetitiveAdvantageSection() {
           Why Coimbatore Learners Choose JKKN AHS
         </h2>
         <p className="voice-answer text-gray-500 text-sm mb-3 text-center">
-          Quality education with better value and strong career outcomes
+          JKKN AHS offers Coimbatore learners 9 BSc programmes, a teaching hospital on campus and merit scholarships
         </p>
         <div className="w-12 h-1 bg-[#7cb983] rounded mx-auto mb-10"></div>
 
