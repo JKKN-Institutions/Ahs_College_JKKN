@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { ArrowRight, Send } from 'lucide-react';
 import { siteConfig } from '@/lib/site-config';
+import EnquiryButton from '@/components/lead/EnquiryButton';
 
 export function CTASection() {
     return (
@@ -27,13 +28,18 @@ export function CTASection() {
                             Ready to Start Your Paramedical Career in <span className="text-[#ffde59]">Tamil Nadu?</span>
                         </h2>
                         <p className="text-gray-600 text-sm sm:text-base md:text-lg mb-8 sm:mb-10 md:mb-12 max-w-2xl mx-auto px-4">
-                            Join thousands of learners who are shaping the future of healthcare. Explore <Link href="/cardiac-technology" className="text-[#0b6d41] font-semibold hover:underline">9 specialized B.Sc programs</Link>, train at a <Link href="/lab" className="text-[#0b6d41] font-semibold hover:underline">teaching hospital</Link>, and benefit from our <Link href="/placements" className="text-[#0b6d41] font-semibold hover:underline">placement support</Link>. Admissions for 2026-27 are now open.
+                            Join thousands of learners who are shaping the future of healthcare. Explore <Link href="/cardiac-technology" className="text-[#0b6d41] font-semibold hover:underline">9 specialized B.Sc programs</Link>, train at a <Link href="/lab" className="text-[#0b6d41] font-semibold hover:underline">teaching hospital</Link>, and benefit from our <Link href="/placements" className="text-[#0b6d41] font-semibold hover:underline">placement support</Link>. Talk to our admission team about the course that suits you.
                         </p>
 
                         <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-3 sm:gap-4 md:gap-6">
-                            <Link href={siteConfig.admissionFormUrl} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto px-8 sm:px-10 py-3 sm:py-4 bg-[#ffde59] text-white rounded-full font-black text-base sm:text-lg shadow-xl transition-all hover:scale-110 hover:bg-[#e5c44f] active:scale-95 flex items-center justify-center gap-2 sm:gap-3">
-                                Apply Online <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6" />
-                            </Link>
+                            <EnquiryButton
+                                sourcePage="home-cta"
+                                fallbackHref={siteConfig.admissionFormUrl}
+                                fallbackLabel={<>Apply Online <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6" /></>}
+                                className="w-full sm:w-auto px-8 sm:px-10 py-3 sm:py-4 bg-[#ffde59] text-white rounded-full font-black text-base sm:text-lg shadow-xl transition-all hover:scale-110 hover:bg-[#e5c44f] active:scale-95 flex items-center justify-center gap-2 sm:gap-3"
+                            >
+                                Get a Call Back <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6" />
+                            </EnquiryButton>
                             <a href="tel:+919345855001" className="w-full sm:w-auto px-8 sm:px-10 py-3 sm:py-4 border-2 border-[#0b6d41] text-[#0b6d41] rounded-full font-black text-base sm:text-lg transition-all hover:bg-[#0b6d41] hover:text-white flex items-center justify-center gap-2 sm:gap-3">
                                 Talk to Expert <Send className="w-5 h-5 sm:w-6 sm:h-6" />
                             </a>

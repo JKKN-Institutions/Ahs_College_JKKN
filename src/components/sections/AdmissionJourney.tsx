@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react';
+import AhsEnquiryForm from '@/components/lead/AhsEnquiryForm';
 import { motion } from 'framer-motion';
 import { FileText, CheckCircle2, Phone, Mail } from 'lucide-react';
 
@@ -97,6 +98,13 @@ export function AdmissionJourney() {
                             ))}
                         </div>
                     </motion.div>
+                </div>
+
+                {/* The 3-box form where the admission steps are read (2026-10-16) */}
+                <div className="max-w-xl mx-auto bg-[#0b6d41] rounded-xl sm:rounded-2xl p-5 sm:p-6 mb-6 sm:mb-8">
+                    <h3 className="text-xl sm:text-2xl font-bold text-white leading-snug">Check your eligibility with our admission team</h3>
+                    <p className="mt-1 mb-5 text-sm sm:text-base text-white/80">Fill 3 details. Our admission team will call you within 24 hours.</p>
+                    <AhsEnquiryForm sourcePage="home-admissions" compact />
                 </div>
 
                 <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-3 sm:gap-4 md:gap-6">

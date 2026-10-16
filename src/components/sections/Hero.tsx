@@ -5,6 +5,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { ArrowRight, Play, CheckCircle2 } from 'lucide-react';
+import EnquiryButton from '@/components/lead/EnquiryButton';
+import AhsEnquiryForm from '@/components/lead/AhsEnquiryForm';
 import { siteConfig } from '@/lib/site-config';
 
 export function Hero() {
@@ -53,21 +55,23 @@ export function Hero() {
                             Join JKKN College of Allied Health Sciences and become a vital part of modern healthcare. 9 specialized B.Sc. programs, hospital training partnerships, and placement support.
                         </p>
 
+                        {/* 2026-10-16: the call-back button leads; md and up also has the form card on the right */}
+                        <p className="lg:hidden text-sm text-white/90 mb-3">Fill 3 details. Our admission team will call you within 24 hours.</p>
                         <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
+                            <EnquiryButton
+                                sourcePage="home-hero-btn"
+                                fallbackHref={siteConfig.admissionFormUrl}
+                                fallbackLabel="Apply for 2026-27"
+                                className="w-full sm:w-auto px-5 sm:px-6 py-2.5 bg-white text-[#0b6d41] rounded-full font-semibold transition-all hover:bg-white/90 hover:shadow-2xl hover:scale-105 flex items-center justify-center gap-2 text-sm min-h-[44px]"
+                            >
+                                Get a Call Back
+                            </EnquiryButton>
                             <a
                                 href="#programs"
-                                className="w-full sm:w-auto px-5 sm:px-6 py-2.5 bg-white text-[#0b6d41] rounded-full font-semibold transition-all hover:bg-white/90 hover:shadow-2xl hover:scale-105 flex items-center justify-center gap-2 text-sm"
+                                className="w-full sm:w-auto px-5 sm:px-6 py-2.5 bg-white/20 backdrop-blur-md text-white rounded-full font-semibold transition-all hover:bg-white/30 border-2 border-white/40 hover:shadow-xl hover:scale-105 text-sm text-center flex items-center justify-center gap-2"
                             >
                                 Explore Programs <ArrowRight className="w-4 h-4" />
                             </a>
-                            <Link
-                                href={siteConfig.admissionFormUrl}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="w-full sm:w-auto px-5 sm:px-6 py-2.5 bg-white/20 backdrop-blur-md text-white rounded-full font-semibold transition-all hover:bg-white/30 border-2 border-white/40 hover:shadow-xl hover:scale-105 text-sm text-center"
-                            >
-                                Apply for 2026-27
-                            </Link>
                         </div>
 
                         <div className="mt-5 sm:mt-6 lg:mt-8 grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
@@ -91,13 +95,18 @@ export function Hero() {
                         transition={{ duration: 0.4, ease: "easeOut" }}
                         className="relative mt-6 lg:mt-0"
                     >
-                        <div className="relative z-10 rounded-2xl sm:rounded-3xl overflow-hidden shadow-[0_20px_40px_-12px_rgba(11,109,65,0.2)] border-4 sm:border-[6px] border-white/50 backdrop-blur-md max-w-sm lg:max-w-md mx-auto lg:mx-0">
+                        {/* lg and up: the 3-box enquiry card takes the photo's place (2026-10-16) */}
+                        <div className="hidden lg:block relative z-10 rounded-2xl sm:rounded-3xl bg-[#0b3d1f]/60 border border-white/15 shadow-2xl p-6 lg:p-7">
+                            <h2 className="text-xl lg:text-2xl font-bold text-white leading-snug">Get Allied Health course fee and admission details</h2>
+                            <p className="mt-1 mb-5 text-sm text-white/80">Fill 3 details. Our admission team will call you within 24 hours.</p>
+                            <AhsEnquiryForm sourcePage="home-hero" compact />
+                        </div>
+                        <div className="lg:hidden relative z-10 rounded-2xl sm:rounded-3xl overflow-hidden shadow-[0_20px_40px_-12px_rgba(11,109,65,0.2)] border-4 sm:border-[6px] border-white/50 backdrop-blur-md max-w-sm lg:max-w-md mx-auto lg:mx-0">
                             <div className="aspect-[5/4] lg:aspect-[4/3] bg-gray-100 relative">
                                 <Image
                                     src="/allied-health-science-hero.webp"
                                     alt="Allied Health Sciences — JKKN College of Allied Health Sciences, Komarapalayam"
                                     fill
-                                    priority
                                     placeholder="blur"
                                     blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiMwYjZkNDEiLz48L3N2Zz4="
                                     sizes="(max-width: 768px) 100vw, 50vw"
@@ -110,7 +119,7 @@ export function Hero() {
                         <motion.div
                             animate={{ y: [0, -20, 0] }}
                             transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                            className="absolute -top-4 -right-4 md:-top-6 md:-right-6 glass-card p-3 sm:p-4 rounded-xl sm:rounded-2xl z-20 hidden sm:block"
+                            className="absolute -top-4 -right-4 md:-top-6 md:-right-6 glass-card p-3 sm:p-4 rounded-xl sm:rounded-2xl z-20 hidden sm:block lg:hidden"
                         >
                             <div className="flex items-center gap-2 sm:gap-3">
                                 <div className="w-8 h-8 sm:w-10 sm:h-10 bg-secondary rounded-lg sm:rounded-xl flex items-center justify-center font-black text-primary text-xs sm:text-sm">A</div>
@@ -124,7 +133,7 @@ export function Hero() {
                         <motion.div
                             animate={{ y: [0, 20, 0] }}
                             transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-                            className="absolute -bottom-6 -left-6 md:-bottom-8 md:-left-8 glass-card p-3 sm:p-4 rounded-xl sm:rounded-2xl z-20 hidden sm:block"
+                            className="absolute -bottom-6 -left-6 md:-bottom-8 md:-left-8 glass-card p-3 sm:p-4 rounded-xl sm:rounded-2xl z-20 hidden sm:block lg:hidden"
                         >
                             <div className="flex items-center gap-2 sm:gap-3">
                                 <div className="w-8 h-8 sm:w-10 sm:h-10 bg-primary rounded-lg sm:rounded-xl flex items-center justify-center text-white text-lg sm:text-xl">🏆</div>
