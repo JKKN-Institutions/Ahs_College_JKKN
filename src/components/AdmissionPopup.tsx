@@ -1,43 +1,53 @@
 "use client";
 
-import { useState } from "react";
+// Homepage popup — poster AND the 3-box enquiry form in one popup, the pattern the user chose for
+// the Dental homepage on 2026-10-16 (DEP-48). The poster used to be a link to jkkn.ai in a new
+// tab; now a tap on it moves the cursor into the Name box. The lead is tagged <college>-home-popup.
+// Once a visitor has submitted the enquiry form anywhere on this site, the popup stops.
+// Without the modal provider (any page other than the homepage) the old poster is the fallback.
+
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import { X } from "lucide-react";
+import { useEnquiryModal } from "@/components/lead/EnquiryModal";
+import { ENQUIRY_DONE_KEY, readStore } from "@/lib/enquiry-store";
+import { sendGaEvent } from "@/lib/ga-event";
 
 export function AdmissionPopup() {
-  const [visible, setVisible] = useState(true);
+  const modal = useEnquiryModal();
+  const [showPoster, setShowPoster] = useState(false);
 
-  if (!visible) return null;
+  useEffect(() => {
+    if (readStore(ENQUIRY_DONE_KEY)) return;
+
+    const variant = modal ? "poster_form" : "poster";
+    sendGaEvent("popup_view", { popup_variant: variant, page_path: window.location.pathname });
+
+    if (modal) modal.openEnquiry("home-popup", { withPoster: true });
+    else setShowPoster(true);
+    // Runs once per page load, like the poster did. `modal` is stable for the page's lifetime.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  if (!showPoster) return null;
 
   return (
-    <div
-      className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/60 p-4"
-      onClick={() => setVisible(false)}
-    >
-      <div
-        className="relative w-full max-w-sm sm:max-w-md md:max-w-lg"
-        onClick={(e) => e.stopPropagation()}
-      >
+    <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/60 p-4">
+      <div className="relative w-full max-w-sm lg:max-w-md xl:max-w-lg" style={{ maxHeight: "90vh" }}>
         <button
-          onClick={() => setVisible(false)}
+          onClick={() => setShowPoster(false)}
+          className="absolute -top-3 -right-3 z-10 bg-white rounded-full p-1 shadow-lg hover:bg-gray-100 transition-colors"
           aria-label="Close popup"
-          className="absolute -top-3 -right-3 z-10 flex h-8 w-8 items-center justify-center rounded-full bg-white shadow-lg hover:bg-gray-100 transition-colors"
         >
-          <X size={18} className="text-gray-700" />
+          <X className="w-5 h-5 text-gray-700" />
         </button>
-
-        <a
-          href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=ahs.jkkn.ac.in&utm_medium=organic&utm_campaign=components-admissionpopup"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=ahs.jkkn.ac.in&utm_medium=organic&utm_campaign=components-admissionpopup" target="_blank" rel="noopener noreferrer">
           <Image
             src="/ahs-pop-up-poster.webp"
-            alt="JKKN Allied Health Sciences Admissions Open 2026-27"
-            width={600}
-            height={600}
-            className="w-full h-auto rounded-lg shadow-2xl cursor-pointer"
-            priority
+            alt="JKKN College of Allied Health Sciences admission poster"
+            width={500}
+            height={500}
+            className="w-full h-auto max-h-[85vh] object-contain rounded-lg shadow-2xl cursor-pointer"
           />
         </a>
       </div>

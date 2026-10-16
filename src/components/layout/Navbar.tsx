@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { Menu, X, ChevronDown, ChevronRight } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { siteConfig } from '@/lib/site-config';
+import EnquiryButton from '@/components/lead/EnquiryButton';
 import { motion, AnimatePresence } from 'framer-motion';
 
 interface SubLink {
@@ -235,14 +236,15 @@ export function Navbar() {
                             </AnimatePresence>
                         </div>
                     ))}
-                    <Link
-                        href={siteConfig.admissionFormUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
+                    {/* Homepage only (2026-10-16): opens the 3-box enquiry form; other pages keep the Apply Now link */}
+                    <EnquiryButton
+                        sourcePage="home-header"
+                        fallbackHref={siteConfig.admissionFormUrl}
+                        fallbackLabel="Apply Now"
                         className="text-sm py-2 px-6 bg-[#0b6d41] text-white rounded-full font-semibold transition-all hover:bg-[#085231] hover:shadow-lg"
                     >
-                        Apply Now
-                    </Link>
+                        Enquire Now
+                    </EnquiryButton>
                 </div>
             </div>
         </nav>

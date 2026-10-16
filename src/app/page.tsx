@@ -9,6 +9,7 @@ import { Programs } from "@/components/sections/Programs";
 import { SnippetBlock } from "@/components/sections/SnippetBlock";
 import { ScrollToSection } from "@/components/ScrollToSection";
 import { AdmissionPopup } from "@/components/AdmissionPopup";
+import { EnquiryModalProvider } from "@/components/lead/EnquiryModal";
 
 // Lazy-load below-fold sections
 const WhyChoose = dynamic(() => import("@/components/sections/WhyChoose").then(m => ({ default: m.WhyChoose })), {
@@ -140,6 +141,7 @@ const courseGraphSchema = {
 
 export default function Home() {
   return (
+    <EnquiryModalProvider>
     <div className="min-h-screen">
       <script
         type="application/ld+json"
@@ -176,5 +178,6 @@ export default function Home() {
       </main>
       <Footer />
     </div>
+    </EnquiryModalProvider>
   );
 }
