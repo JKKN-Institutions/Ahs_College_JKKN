@@ -6,6 +6,8 @@ import {
   getCourseBlogPostBySlug,
 } from "@/lib/course-blog-posts";
 import CourseBlogLayout from "@/components/course-blog/CourseBlogLayout";
+import { Navbar } from "@/components/layout/Navbar";
+import { Footer } from "@/components/layout/Footer";
 
 import CardiacTechnologyContent from "../_content/scope-of-cardiac-technology-in-india";
 import DialysisTechnologyContent from "../_content/future-of-dialysis-technology-careers";
@@ -146,9 +148,12 @@ export default async function CourseBlogDetailPage(
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
+      {/* Site menu + footer, as on every other page (2026-10-23). */}
+      <Navbar />
       <CourseBlogLayout post={post}>
         <ContentComponent />
       </CourseBlogLayout>
+      <Footer />
     </>
   );
 }
