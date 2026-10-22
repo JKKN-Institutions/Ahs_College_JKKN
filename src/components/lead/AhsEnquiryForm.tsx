@@ -7,16 +7,35 @@
 //
 // PII rule, and it is not a style preference: name and phone are collected here and NEVER sent to
 // GA4. Only the source page, the programme id and the path leave this component.
+//
+// LOOK — mockup #7 "What Happens Next", the user's pick of 10 on 2026-10-22, live on the Dental
+// site first (PR #18) and ported here with the same colours. The form is now its own white card:
+// the old see-through dark card and white-on-green boxes did not stand out on the green hosts.
+// The three-step strip answers the parent's first doubt ("what happens after I give my number?")
+// and the trust line answers the second ("is this college genuine?"). Fields, labels, button text
+// and the CRM payload are unchanged.
 
 "use client"
 
 import { useActionState, useEffect, useId, useRef } from "react"
+import { CheckCircle2, ChevronDown } from "lucide-react"
 import { submitAhsEnquiry, type AhsEnquiryState } from "@/app/actions/ahs-enquiry"
 import { AHS_PROGRAMMES } from "@/lib/ahs-programmes"
 import { ENQUIRY_DONE_KEY, writeStore } from "@/lib/enquiry-store"
 
 const ADMISSION_PHONE = "+919345855001"
 const ADMISSION_PHONE_DISPLAY = "+91 93458 55001"
+
+// Only what a document proves for THIS college (checked 2026-10-22):
+// - Affiliation: The Tamil Nadu Dr. M.G.R. Medical University, "AHS Courses - Affiliated Colleges /
+//   Institutions for the Academic Year 2025-26" (FINALAHSWEBSITEUPDATIONsep72026.pdf) lists all 9
+//   of our B.Sc programmes under institution code 825 (printed as J.K.K.Nattraja Dental College &
+//   Hospital, Kumarapalayam) - see src/lib/ahs-colleges-tn.ts, row 825.
+// - Since 2019: the same list prints "Year of PA issued 2019-20" for all 9 programmes, and the site
+//   says "Since 2019" (AboutSection heading, foundingDate in src/app/layout.tsx).
+// - NAAC is NOT here on purpose: /pdfs/NAAC-certificate.pdf is addressed to J K K Nattraja Dental
+//   College and Hospital and does not name this college. Add it only with a certificate that does.
+const TRUST = ["Affiliated to TN Dr. M.G.R. Medical University", "Since 2019"]
 
 type Props = {
   /** Which page this instance sits on, e.g. "cardiac-technology". Tags the lead in the CRM. */
@@ -28,6 +47,8 @@ type Props = {
   /** 3 boxes only (name, mobile, programme) — for the homepage popup and cards. District and
    *  the question box are optional in the CRM form, so a compact lead is still a complete lead. */
   compact?: boolean
+  /** No white card of its own — for a host that already is the white card (homepage hero, popup). */
+  bare?: boolean
 }
 
 export default function AhsEnquiryForm({
@@ -35,6 +56,7 @@ export default function AhsEnquiryForm({
   defaultProgrammeId,
   heading = "Get a Call Back",
   compact = false,
+  bare = false,
 }: Props) {
   // Unique per instance: the homepage can show this form twice (hero card + popup).
   const uid = useId()
@@ -75,23 +97,28 @@ export default function AhsEnquiryForm({
     }
   }, [state, sourcePage])
 
+  const surface = bare
+    ? ""
+    : "bg-white rounded-[20px] shadow-[0_18px_40px_rgba(3,40,22,0.35)] p-4 sm:p-6"
+
   if (state?.success) {
     return (
-      <div className="space-y-4 text-center" role="status" aria-live="polite">
-        <p className="text-white text-lg font-semibold">{state.message}</p>
-        <p className="text-white/70 text-sm">You can also reach us directly:</p>
+      <div className={`${surface} space-y-4 text-center`} role="status" aria-live="polite">
+        <p className="text-[#032816] text-lg font-semibold">{state.message}</p>
+        <p className="text-[#4b5563] text-sm">You can also reach us directly:</p>
         <div className="flex justify-center gap-3 flex-wrap">
           <a
             href={`tel:${ADMISSION_PHONE}`}
-            className="bg-white/20 text-white px-4 py-2 rounded-full text-sm font-semibold"
+            className="bg-[#0b6d41] text-white px-4 py-2 rounded-full text-sm font-semibold"
           >
             {ADMISSION_PHONE_DISPLAY}
           </a>
+          {/* Dark text: white on WhatsApp green is 1.98:1, below the 4.5:1 text minimum. */}
           <a
             href={`https://wa.me/${ADMISSION_PHONE.replace("+", "")}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#25d366] text-white px-4 py-2 rounded-full text-sm font-semibold"
+            className="bg-[#25d366] text-[#032816] px-4 py-2 rounded-full text-sm font-semibold"
           >
             WhatsApp
           </a>
@@ -101,13 +128,18 @@ export default function AhsEnquiryForm({
   }
 
   const err = state?.fieldErrors
-  // Compact (homepage) boxes use 16 px text: below 16 px, iPhone Safari zooms the page on focus.
-  const inputCls = `w-full bg-white/20 border border-white/30 rounded-xl px-4 py-3 text-white placeholder-white/50 ${
-    compact ? "text-base" : "text-sm"
-  } focus:outline-none focus:border-white/60`
+  // 16 px text in every box: below 16 px, iPhone Safari zooms the page on focus (the full form
+  // used 14 px). Border #75867e is 3.84:1 on white and the hint text #5f6b66 is 5.55:1 — the
+  // WCAG minimums are 3:1 for a box edge and 4.5:1 for text.
+  const inputCls =
+    "w-full bg-white border-[1.5px] border-[#75867e] rounded-xl px-4 py-3 text-base text-[#1f2a24] placeholder:text-[#5f6b66] focus:outline-none focus:border-[#0b6d41] focus:ring-[3px] focus:ring-[#0b6d41]/20"
+  const labelCls = "block text-[#032816] text-sm font-semibold mb-1.5"
+  const errCls = "text-[#b42318] text-xs mt-1"
+  // No-break space keeps "24 hrs" on one line: at 375 px the strip box broke it as "24 / hrs".
+  const steps = [compact ? "Fill 3 details" : "Fill your details", "We call in 24 hrs", "Get fee and admission details"]
 
   return (
-    <form action={formAction} className="space-y-5">
+    <form action={formAction} className={`${surface} space-y-4 text-left`}>
       <input type="hidden" name="source_page" value={sourcePage} />
 
       {/* Honeypot. Off-screen rather than display:none - a real browser autofill will not reach
@@ -123,9 +155,26 @@ export default function AhsEnquiryForm({
 
       <h2 className="sr-only">{heading}</h2>
 
+      <ol aria-label="What happens next" className="grid grid-cols-3 gap-1.5">
+        {steps.map((step, i) => (
+          <li
+            key={step}
+            className="rounded-xl bg-[#f1f7f3] px-1.5 py-2.5 text-center text-xs font-semibold leading-tight text-[#032816]"
+          >
+            <span
+              aria-hidden="true"
+              className="mx-auto mb-1.5 grid h-6 w-6 place-items-center rounded-full bg-[#ffde59] text-xs font-bold"
+            >
+              {i + 1}
+            </span>
+            {step}
+          </li>
+        ))}
+      </ol>
+
       <div className={compact ? "grid grid-cols-1 gap-4" : "grid grid-cols-1 sm:grid-cols-2 gap-4"}>
         <div>
-          <label htmlFor={fid("name")} className="block text-white text-sm font-medium mb-1.5">
+          <label htmlFor={fid("name")} className={labelCls}>
             Your Name <span aria-hidden="true">*</span>
           </label>
           <input
@@ -138,10 +187,10 @@ export default function AhsEnquiryForm({
             aria-invalid={!!err?.name}
             className={inputCls}
           />
-          {err?.name && <p className="text-red-200 text-xs mt-1">{err.name}</p>}
+          {err?.name && <p className={errCls}>{err.name}</p>}
         </div>
         <div>
-          <label htmlFor={fid("phone")} className="block text-white text-sm font-medium mb-1.5">
+          <label htmlFor={fid("phone")} className={labelCls}>
             Mobile Number <span aria-hidden="true">*</span>
           </label>
           <input
@@ -155,38 +204,46 @@ export default function AhsEnquiryForm({
             aria-invalid={!!err?.phone}
             className={inputCls}
           />
-          {err?.phone && <p className="text-red-200 text-xs mt-1">{err.phone}</p>}
+          {err?.phone && <p className={errCls}>{err.phone}</p>}
         </div>
       </div>
 
       <div className={compact ? "grid grid-cols-1 gap-4" : "grid grid-cols-1 sm:grid-cols-2 gap-4"}>
         <div>
-          <label htmlFor={fid("programme")} className="block text-white text-sm font-medium mb-1.5">
+          <label htmlFor={fid("programme")} className={labelCls}>
             Programme Interested In <span aria-hidden="true">*</span>
           </label>
-          <select
-            id={fid("programme")}
-            name="programme"
-            required
-            defaultValue={defaultProgrammeId ?? ""}
-            aria-invalid={!!err?.programme}
-            className={`${inputCls} appearance-none`}
-          >
-            <option value="" disabled className="text-gray-800 bg-white">
-              Select a Programme
-            </option>
-            {AHS_PROGRAMMES.map((p) => (
-              <option key={p.id} value={p.id} className="text-gray-800 bg-white">
-                {p.label}
+          {/* appearance-none hides the native arrow, so draw one: without it the box does not
+              read as a dropdown. */}
+          <div className="relative">
+            <select
+              id={fid("programme")}
+              name="programme"
+              required
+              defaultValue={defaultProgrammeId ?? ""}
+              aria-invalid={!!err?.programme}
+              className={`${inputCls} appearance-none pr-10`}
+            >
+              <option value="" disabled>
+                Select a Programme
               </option>
-            ))}
-          </select>
-          {err?.programme && <p className="text-red-200 text-xs mt-1">{err.programme}</p>}
+              {AHS_PROGRAMMES.map((p) => (
+                <option key={p.id} value={p.id}>
+                  {p.label}
+                </option>
+              ))}
+            </select>
+            <ChevronDown
+              aria-hidden="true"
+              className="pointer-events-none absolute right-3.5 top-1/2 h-5 w-5 -translate-y-1/2 text-[#4b5563]"
+            />
+          </div>
+          {err?.programme && <p className={errCls}>{err.programme}</p>}
         </div>
         {!compact && (
         <div>
-          <label htmlFor={fid("district")} className="block text-white text-sm font-medium mb-1.5">
-            Your District <span className="font-normal opacity-70">(optional)</span>
+          <label htmlFor={fid("district")} className={labelCls}>
+            Your District <span className="font-normal text-[#4b5563]">(optional)</span>
           </label>
           <input
             id={fid("district")}
@@ -201,8 +258,8 @@ export default function AhsEnquiryForm({
 
       {!compact && (
       <div>
-        <label htmlFor={fid("question")} className="block text-white text-sm font-medium mb-1.5">
-          Any Questions? <span className="font-normal opacity-70">(optional)</span>
+        <label htmlFor={fid("question")} className={labelCls}>
+          Any Questions? <span className="font-normal text-[#4b5563]">(optional)</span>
         </label>
         <textarea
           id={fid("question")}
@@ -218,20 +275,32 @@ export default function AhsEnquiryForm({
       <button
         type="submit"
         disabled={isPending}
-        className="w-full bg-orange-500 hover:bg-orange-600 disabled:opacity-60 text-white font-semibold py-4 rounded-full text-base transition-colors"
+        className="w-full bg-[#0b6d41] hover:bg-[#095a36] disabled:opacity-60 text-white font-bold py-4 rounded-full text-base transition-colors"
       >
         {isPending ? "Submitting…" : compact ? "Get a Call Back" : "Submit Enquiry — Get a Call Back"}
       </button>
 
       {state && !state.success && state.error && (
-        <p className="text-red-200 text-sm text-center" role="alert">
+        <p className="text-[#b42318] text-sm text-center" role="alert">
           {state.error}
         </p>
       )}
 
-      <p className="text-center text-white/70 text-sm">
+      <ul
+        aria-label="Recognition"
+        className="flex flex-wrap justify-center gap-x-3.5 gap-y-1.5 text-[12.5px] font-semibold text-[#032816]"
+      >
+        {TRUST.map((t) => (
+          <li key={t} className="flex items-center gap-1.5">
+            <CheckCircle2 aria-hidden="true" className="h-4 w-4 shrink-0 text-[#0b6d41]" />
+            {t}
+          </li>
+        ))}
+      </ul>
+
+      <p className="text-center text-[#4b5563] text-sm">
         Or call us directly:{" "}
-        <a href={`tel:${ADMISSION_PHONE}`} className="text-white underline">
+        <a href={`tel:${ADMISSION_PHONE}`} className="text-[#0b6d41] font-semibold underline">
           {ADMISSION_PHONE_DISPLAY}
         </a>{" "}
         •{" "}
@@ -239,14 +308,14 @@ export default function AhsEnquiryForm({
           href={`https://wa.me/${ADMISSION_PHONE.replace("+", "")}`}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-white underline"
+          className="text-[#0b6d41] font-semibold underline"
         >
           WhatsApp
         </a>
       </p>
 
       {compact && (
-        <p className="text-center text-white/60 text-xs">
+        <p className="text-center text-[#5f6b66] text-xs">
           By submitting, you agree to be contacted by our admission team.
         </p>
       )}
