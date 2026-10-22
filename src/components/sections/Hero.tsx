@@ -96,10 +96,11 @@ export function Hero() {
                         className="relative mt-6 lg:mt-0"
                     >
                         {/* lg and up: the 3-box enquiry card takes the photo's place (2026-10-16) */}
-                        <div className="hidden lg:block relative z-10 rounded-2xl sm:rounded-3xl bg-[#0b3d1f]/60 border border-white/15 shadow-2xl p-6 lg:p-7">
-                            <h2 className="text-xl lg:text-2xl font-bold text-white leading-snug">Get Allied Health course fee and admission details</h2>
-                            <p className="mt-1 mb-5 text-sm text-white/80">Fill 3 details. Our admission team will call you within 24 hours.</p>
-                            <AhsEnquiryForm sourcePage="home-hero" compact />
+                        {/* White card, mockup #7 (user's pick 2026-10-22): the form's own 3-step strip replaces the
+                            old sub-line, so the heading sits straight above it. */}
+                        <div className="hidden lg:block relative z-10 rounded-[20px] bg-white shadow-[0_18px_40px_rgba(3,40,22,0.35)] p-6 lg:p-7">
+                            <h2 className="mb-4 text-xl lg:text-2xl font-bold text-[#032816] leading-snug">Get Allied Health course fee and admission details</h2>
+                            <AhsEnquiryForm sourcePage="home-hero" compact bare />
                         </div>
                         <div className="lg:hidden relative z-10 rounded-2xl sm:rounded-3xl overflow-hidden shadow-[0_20px_40px_-12px_rgba(11,109,65,0.2)] border-4 sm:border-[6px] border-white/50 backdrop-blur-md max-w-sm lg:max-w-md mx-auto lg:mx-0">
                             <div className="aspect-[5/4] lg:aspect-[4/3] bg-gray-100 relative">

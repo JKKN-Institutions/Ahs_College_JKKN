@@ -130,8 +130,9 @@ export default function ContactPage() {
                                     Leave your details and our admission team will contact you within 24 hours.
                                 </p>
 
-                                {/* DEP-34 - enquiry form. Posts to the CRM from the server. */}
-                                <div className="bg-gradient-to-br from-[#0b6d41] to-[#12a15f] rounded-xl p-6 sm:p-8 mb-6 text-left">
+                                {/* DEP-34 - enquiry form. Posts to the CRM from the server. The form is its
+                                    own white card now (mockup #7, 2026-10-22); the green box stays as the frame. */}
+                                <div className="bg-gradient-to-br from-[#0b6d41] to-[#12a15f] rounded-xl p-3 sm:p-6 mb-6 text-left">
                                     <AhsEnquiryForm sourcePage="contact" />
                                 </div>
 
