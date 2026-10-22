@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import Image from 'next/image';
 import { Menu, X, ChevronDown, ChevronRight } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -92,6 +93,7 @@ const navLinks: NavLink[] = [
 ];
 
 export function Navbar() {
+    const pathname = usePathname();
     const [isOpen, setIsOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
     const [hoveredDropdown, setHoveredDropdown] = useState<string | null>(null);
@@ -236,9 +238,10 @@ export function Navbar() {
                             </AnimatePresence>
                         </div>
                     ))}
-                    {/* Homepage only (2026-10-16): opens the 3-box enquiry form; other pages keep the Apply Now link */}
+                    {/* Opens the 3-box enquiry form on every page (2026-10-22). Leads keep home-header on "/"
+                        and are tagged header elsewhere. */}
                     <EnquiryButton
-                        sourcePage="home-header"
+                        sourcePage={pathname === "/" ? "home-header" : "header"}
                         fallbackHref={siteConfig.admissionFormUrl}
                         fallbackLabel="Apply Now"
                         className="text-sm py-2 px-6 bg-[#0b6d41] text-white rounded-full font-semibold transition-all hover:bg-[#085231] hover:shadow-lg"
