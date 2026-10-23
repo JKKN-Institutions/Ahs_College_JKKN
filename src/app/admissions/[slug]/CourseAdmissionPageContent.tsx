@@ -488,7 +488,7 @@ function EquipmentSection({ course }: { course: AdmissionCourse }) {
                             <div className="w-8 h-8 rounded-lg bg-[#0b6d41]/10 text-[#0b6d41] flex items-center justify-center shrink-0">
                                 <Wrench className="w-4 h-4" />
                             </div>
-                            <p className="text-xs sm:text-sm font-semibold text-gray-800 leading-tight">{eq}</p>
+                            <p className="text-xs sm:text-sm font-semibold text-gray-800 leading-tight min-w-0 break-words">{eq}</p>
                         </motion.div>
                     ))}
                 </div>
