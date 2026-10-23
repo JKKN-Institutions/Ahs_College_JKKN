@@ -608,12 +608,12 @@ function FAQSection() {
 function CTASection() {
     return (
         <section className="bg-white py-16">
-            <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between text-[#0b6d41] text-center md:text-left gap-8">
+            <div className="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row items-center justify-between text-[#0b6d41] text-center lg:text-left gap-8">
                 <div>
                     <h2 className="text-3xl md:text-4xl font-black mb-2">Ready to Start Your Career in Emergency Care Technology?</h2>
                     <p className="font-medium opacity-90 text-[#0b6d41]">Join JKKN College and become a skilled emergency care professional saving lives.</p>
                 </div>
-                <div className="flex gap-4">
+                <div className="flex flex-wrap justify-center gap-4 shrink-0">
                     <a
                         href={siteConfig.admissionFormUrl}
                         target="_blank"

@@ -610,12 +610,12 @@ function FAQSection() {
 function CTASection() {
     return (
         <section className="bg-[#fbfbee] py-16">
-            <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between text-[#0b6d41] text-center md:text-left gap-8">
+            <div className="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row items-center justify-between text-[#0b6d41] text-center lg:text-left gap-8">
                 <div>
                     <h2 className="text-3xl md:text-4xl font-black mb-2">Ready to Start Your Career in Dialysis Technology?</h2>
                     <p className="font-medium opacity-90 text-[#0b6d41]">Join JKKN College and become a skilled dialysis technology professional.</p>
                 </div>
-                <div className="flex flex-nowrap gap-2 items-center justify-center shrink-0">
+                <div className="flex flex-wrap gap-2 items-center justify-center shrink-0">
                     <a
                         href={siteConfig.admissionFormUrl}
                         target="_blank"
