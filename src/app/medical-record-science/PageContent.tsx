@@ -526,7 +526,7 @@ function FacilitiesSection() {
             <h2 className="text-3xl font-black text-[#0b6d41] mb-4">World-Class Facilities with Tie-up Hospitals</h2>
             <p className="text-gray-500 mb-12 max-w-3xl mx-auto">State-of-the-art infrastructure for hands-on experience with industry-standard health information management systems</p>
 
-            <div className="grid md:grid-cols-4 gap-6">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {[
                     { title: "Computer Lab", color: "bg-[#0b6d41]", text: "text-white", desc: "Latest systems with HIM software and EHR platforms." },
                     { title: "Coding Lab ", color: "bg-[#ffde59]", text: "text-[#0b6d41]", desc: "ICD-10, CPT coding practice stations." },

@@ -530,7 +530,7 @@ function FacilitiesSection() {
                 <span className="text-[#0b6d41] font-bold tracking-widest uppercase text-xs mb-2 p-1 bg-[#0b6d41]/10 rounded inline-block">Infrastructure</span>
                 <h2 className="text-3xl font-black text-[#0b6d41] mb-12">World-Class Facilities with Tie-up Hospitals</h2>
 
-                <div className="grid md:grid-cols-4 gap-6">
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                     {[
                         { title: "ECG Lab", color: "bg-[#0b6d41]", text: "text-white", desc: "RPM Scholarship. Modern monitoring machines for learner learning." },
                         { title: "Echo Suite", color: "bg-[#ffde59]", text: "text-[#0b6d41]", desc: "Echo Suits. Latest portable and console echo units with partner hospitals." },
