@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { createPageMetadata } from "@/lib/metadata";
 import { courseBlogPosts } from "@/lib/course-blog-posts";
 import CourseBlogCard from "@/components/course-blog/CourseBlogCard";
+import { Navbar } from "@/components/layout/Navbar";
+import { Footer } from "@/components/layout/Footer";
 
 export const metadata: Metadata = createPageMetadata({
   title: "Course Career Insights — JKKN College of Allied Health Sciences",
@@ -51,6 +53,10 @@ export default function CourseBlogIndexPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
       />
+
+      {/* Site menu + footer, as on every other page (2026-10-23): these pages had neither, so a desktop
+          visitor had no menu and no "Enquire Now" button. */}
+      <Navbar />
 
       <div className="bg-[#fbfbee] min-h-screen pb-20">
         {/* Header */}
@@ -115,6 +121,8 @@ export default function CourseBlogIndexPage() {
           </div>
         </section>
       </div>
+
+      <Footer />
     </>
   );
 }

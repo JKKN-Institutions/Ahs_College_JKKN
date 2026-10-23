@@ -6,6 +6,8 @@ import { cn } from '@/lib/utils';
 import { BottomNavMoreMenuProps } from './types';
 import { X, ChevronDown } from 'lucide-react';
 import { useState } from 'react';
+import { siteConfig } from '@/lib/site-config';
+import EnquiryButton from '@/components/lead/EnquiryButton';
 
 export function BottomNavMoreMenu({
   groups,
@@ -72,6 +74,16 @@ export function BottomNavMoreMenu({
 
             {/* Scrollable Content */}
             <div className="flex-1 overflow-y-auto px-6 py-4">
+              {/* Same 3-box enquiry form as the header button (2026-10-23); the sheet closes first. */}
+              <EnquiryButton
+                sourcePage="bottom-menu"
+                fallbackHref={siteConfig.admissionFormUrl}
+                fallbackLabel="Apply Now"
+                onClick={onClose}
+                className="mb-4 w-full min-h-[48px] rounded-xl bg-[#0b6d41] text-white font-semibold text-base transition-colors hover:bg-[#085231] flex items-center justify-center"
+              >
+                Enquire Now
+              </EnquiryButton>
               {groups.map((group) => {
                 const GroupIcon = group.icon;
                 const isExpanded = expandedGroups.has(group.id);
