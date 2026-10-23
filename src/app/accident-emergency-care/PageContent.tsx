@@ -433,15 +433,15 @@ function SyllabusSection() {
                     <div className="bg-[#0b6d41] text-white px-6 py-4">
                         <h4 className="font-bold text-lg">{(syllabus as any)[activeYear].sem}</h4>
                     </div>
-                    <div className="p-8 bg-[#fbfbee]">
+                    <div className="p-5 sm:p-8 bg-[#fbfbee]">
                         <ul className="space-y-4">
                             {(syllabus as any)[activeYear].subjects.map((sub: any, idx: number) => {
                                 const type = getSubjectType(sub.hasTheory, sub.hasPractical);
                                 return (
                                     <li key={idx} className="flex items-center justify-between gap-4 text-gray-800 py-2">
-                                        <div className="flex items-center gap-3 flex-1">
+                                        <div className="flex items-center gap-3 flex-1 min-w-0">
                                             <div className={`w-2 h-2 rounded-full shrink-0 ${type === 'THEORY + PRACTICAL' ? 'bg-purple-600' : 'bg-orange-500'}`}></div>
-                                            <span className="font-medium text-[15px]">{sub.name}</span>
+                                            <span className="font-medium text-[15px] min-w-0 break-words">{sub.name}</span>
                                         </div>
                                         <span className={`text-[10px] uppercase font-bold px-3 py-1.5 rounded-md whitespace-nowrap tracking-wide ${type === 'THEORY + PRACTICAL' ? 'bg-green-100 text-green-700' : 'bg-blue-100 text-blue-700'
                                             }`}>
