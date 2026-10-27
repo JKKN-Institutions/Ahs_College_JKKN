@@ -8,6 +8,8 @@ import Image from "next/image";
 import Link from "next/link";
 import AhsEnquiryForm from "@/components/lead/AhsEnquiryForm";
 import { CardiacCollegesInDistrict } from "@/components/CardiacCollegesList";
+import SeatsFeesSection from "@/components/sections/SeatsFeesTable";
+import { SALEM_FAQS } from "./faqs";
 
 export default function SalemPage() {
   return (
@@ -27,6 +29,7 @@ export default function SalemPage() {
         <DistanceCard />
         <WhyChooseSection />
         <ProgrammesSection />
+        <SeatsFeesSection />
         <CardiacCollegesInDistrict district="Salem" lead="JKKN College of Allied Health Sciences is not in Salem district; it is ~57 km away in Komarapalayam, Namakkal district, with 7 B.Sc Cardiac Technology seats." />
         <PlacementHighlights />
         <CompetitiveAdvantageSection />
@@ -34,64 +37,7 @@ export default function SalemPage() {
         <FacilitiesSection />
         <CampusGallerySection />
         <SnippetBaitSection />
-        <CityFAQAccordion cityName="Salem" faqs={[
-          {
-            q: "What is the best allied health sciences college near Salem?",
-            a: "JKKN College of Allied Health Sciences is ~57 km from Salem on NH-544, in Komarapalayam, Namakkal district. Its 9 B.Sc programmes are affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai. Salem district has its own colleges too: for B.Sc Cardiac Technology, the university's 2025-26 list has 5 there, including Government Mohan Kumaramangalam Medical College.",
-          },
-          {
-            q: "How far is JKKN AHS from Salem?",
-            a: "JKKN AHS is approximately ~57 km from Salem city centre, which takes about 1 hour by road via NH-544 (Salem-Coimbatore Highway) — direct route. Regular bus services are available from Salem.",
-          },
-          {
-            q: "What is Allied Health Sciences?",
-            a: "Allied Health Sciences includes healthcare professions that support doctors and nurses in diagnosing, treating, and rehabilitating patients. At JKKN College of Allied Health Sciences, you can study physiotherapy, medical lab technology, radiology, cardiac technology, and more.",
-          },
-          {
-            q: "Is BPT a good career option?",
-            a: "Yes, BPT (Bachelor of Physiotherapy) is an excellent career choice. Physiotherapists are in high demand in hospitals, sports clinics, rehabilitation centres, and private practice. Graduates can also pursue international careers in Gulf countries, UK, and Australia.",
-          },
-          {
-            q: "How is AHS different from nursing?",
-            a: "While nursing focuses on patient care and bedside support, Allied Health Sciences covers specialised diagnostic and therapeutic roles like physiotherapy, lab testing, radiology imaging, and cardiac monitoring. Both are valuable healthcare careers, but AHS offers more specialisation options.",
-          },
-          {
-            q: "Does JKKN AHS provide hostel for Salem learners?",
-            a: "Yes, JKKN AHS provides separate hostel facilities for boys and girls. Learners from Salem can also opt for daily commute as the campus is just 50-60 minutes away. College transport services are available.",
-          },
-          {
-            q: "How can I apply for admission at JKKN AHS?",
-            a: "You can apply online through the official website at https://ahs.jkkn.ac.in/ or visit the campus directly. Admissions for 2026-27 are currently open. Contact the admission office for guidance.",
-          },
-          {
-            q: "What are the fees for BSc allied health science in Tamil Nadu?",
-            a: "BSc Allied Health Science fees in Tamil Nadu typically range from ₹50,000 to ₹2,00,000 per year depending on the college and course. At JKKN College of Allied Health Sciences, fees are competitively priced with scholarship options available for meritorious learners. Contact the admission office at +91 9345855001 for the latest fee structure.",
-          },
-          {
-            q: "What is the salary after BSc allied health science?",
-            a: "JKKN College of Allied Health Sciences publishes no audited salary figure for its graduates, so none is stated here. Pay differs by specialisation, hospital and country, and roles abroad generally pay more than the same role in India. A dedicated placement cell supports graduates with recruitment drives, interview preparation and guidance for roles abroad; it can give current, verifiable figures on request.",
-          },
-          {
-            q: "How many allied health science colleges are there near Salem?",
-            a: "Salem has multiple allied health science colleges including government and private institutions. JKKN College of Allied Health Sciences, located ~57 km from Salem on NH-544, offers 9 BSc programmes, NAAC approval and strong placement support.",
-          },
-          {
-            q: "What are the eligibility requirements for allied health science courses?",
-            a: "To pursue BSc Allied Health Sciences at JKKN AHS, candidates must have passed 12th standard (HSC/CBSE/ISC) with Physics, Chemistry, and Biology with a minimum aggregate of 50% (40% for reserved categories). Admission is based on merit and counselling. JKKN is affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai.",
-          },
-          {
-            q: "Are there healthcare job opportunities in Salem's steel and manufacturing sector?",
-            a: "Yes, Salem's steel plants, SAIL Salem Steel Plant, and manufacturing industries employ occupational health officers, industrial physiotherapists, and emergency medical technicians. JKKN AHS graduates with specialisations in critical care, accident & emergency care, and physician assistant programmes are well-suited for industrial healthcare roles in Salem.",
-          },
-          {
-            q: "Does JKKN AHS provide clinical training at Salem government hospitals?",
-            a: "JKKN AHS primarily provides clinical training at its own multi-specialty teaching hospital on campus. Additionally, learners gain exposure through partnerships with various healthcare facilities in the region. The Salem Government Mohan Kumaramangalam Medical College Hospital is one of the major government hospitals learners can access for observational learning.",
-          },
-          {
-            q: "Is JKKN AHS near Salem a better value than colleges in Chennai?",
-            a: "JKKN AHS is affiliated to The Tamil Nadu Dr. M.G.R. Medical University, the same university as the affiliated allied health colleges in Chennai, and offers a teaching hospital for clinical training and placement support with both domestic and international opportunities.",
-          },
-        ]} />
+        <CityFAQAccordion cityName="Salem" faqs={SALEM_FAQS} />
         <ExploreCitiesSection />
         {/* B-06 - enquiry form. MEASURED 2026-08-27: this page had ZERO <form> elements and the
             only conversion path was an outbound link to jkkn.ai. Over 90 days the four big city
@@ -148,7 +94,7 @@ function HeroSection() {
         {/* Badge */}
         <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-2 text-sm mb-8">
           <GraduationCap className="w-4 h-4" />
-          <span>NAAC Approved • Admissions Open</span>
+          <span>Dr. M.G.R. Medical University Affiliated • Admissions Open</span>
         </div>
 
         {/* Heading */}
@@ -159,16 +105,19 @@ function HeroSection() {
 
         {/* Description */}
         <p className="text-white/85 text-base sm:text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
-          Under 1 hour from Salem — closer than you think. JKKN College of Allied
-          Health Sciences offers top-tier allied health sciences programmes with
-          placement support — just under 1 hour from Salem via NH-544.
+          JKKN College of Allied Health Sciences is about 57 km from Salem on
+          NH-544, at Komarapalayam in Namakkal district, not in Salem district. It
+          offers nine four-year B.Sc courses, including Cardiac Technology,
+          Physician Assistant and Critical Care, with 82 university-sanctioned
+          seats and management-quota fees of ₹60,000 to ₹1,70,000 a year.
         </p>
 
         {/* Stats */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-2xl mx-auto mb-10">
+        <div className="grid grid-cols-3 gap-3 max-w-2xl mx-auto mb-10">
           {[
-            { value: "~57 km", label: "FROM SALEM" },
+            { value: "57 km", label: "FROM SALEM" },
             { value: "9", label: "PROGRAMMES" },
+            { value: "82", label: "SANCTIONED SEATS" },
           ].map((stat) => (
             <div
               key={stat.label}
@@ -213,7 +162,7 @@ function AffiliationBar() {
       <div className="max-w-4xl mx-auto flex items-center justify-center gap-4 flex-wrap text-sm">
         <span className="flex items-center gap-2 text-[#006837] font-semibold">
           <span className="w-5 h-5 rounded-full bg-[#e8f5ea] flex items-center justify-center text-xs">✓</span>
-          NAAC
+          Since 2019
         </span>
         <span className="text-gray-400">|</span>
         <span className="text-gray-600 text-center">
@@ -272,7 +221,7 @@ function WhyChooseSection() {
     {
       icon: Building2,
       title: "Clinical Training",
-      desc: "Hands-on clinical training at attached hospitals",
+      desc: "Hands-on clinical training at partner hospitals",
     },
     {
       icon: GitBranch,
@@ -287,7 +236,7 @@ function WhyChooseSection() {
     {
       icon: Globe,
       title: "International Scope",
-      desc: "International career opportunities, especially in physiotherapy and MLT",
+      desc: "International career opportunities for allied health graduates",
     },
     {
       icon: Bus,
@@ -347,7 +296,7 @@ function ProgrammesSection() {
       name: "B.Sc. Cardiac Technology",
       duration: "3 Years + 1 Year Internship",
       level: "UG",
-      intake: "30 seats",
+      intake: "7 seats",
       eligibility: "10+2 with Physics, Chemistry, Biology",
       link: "/cardiac-technology",
     },
@@ -356,7 +305,7 @@ function ProgrammesSection() {
       name: "B.Sc. Radiography & Imaging Technology",
       duration: "3 Years + 1 Year Internship",
       level: "UG",
-      intake: "40 seats",
+      intake: "5 seats",
       eligibility: "10+2 with Physics, Chemistry, Biology",
       link: "/radiology-imaging-technology",
     },
@@ -365,7 +314,7 @@ function ProgrammesSection() {
       name: "B.Sc. Dialysis Technology",
       duration: "3 Years + 1 Year Internship",
       level: "UG",
-      intake: "40 seats",
+      intake: "5 seats",
       eligibility: "10+2 with Physics, Chemistry, Biology",
       link: "/dialysis-technology",
     },
@@ -374,7 +323,7 @@ function ProgrammesSection() {
       name: "B.Sc. Operation Theatre & Anaesthesia Technology",
       duration: "3 Years + 1 Year Internship",
       level: "UG",
-      intake: "40 seats",
+      intake: "10 seats",
       eligibility: "10+2 with Physics, Chemistry, Biology",
       link: "/operation-theatre-anaesthesia",
     },
@@ -383,7 +332,7 @@ function ProgrammesSection() {
       name: "B.Sc. Respiratory Therapy",
       duration: "3 Years + 1 Year Internship",
       level: "UG",
-      intake: "30 seats",
+      intake: "10 seats",
       eligibility: "10+2 with Physics, Chemistry, Biology",
       link: "/respiratory-therapy",
     },
@@ -392,7 +341,7 @@ function ProgrammesSection() {
       name: "B.Sc. Physician Assistant",
       duration: "3 Years + 1 Year Internship",
       level: "UG",
-      intake: "40 seats",
+      intake: "10 seats",
       eligibility: "10+2 with Physics, Chemistry, Biology",
       link: "/physician-assistant",
     },
@@ -401,7 +350,7 @@ function ProgrammesSection() {
       name: "B.Sc. Critical Care Technology",
       duration: "3 Years + 1 Year Internship",
       level: "UG",
-      intake: "30 seats",
+      intake: "10 seats",
       eligibility: "10+2 with Physics, Chemistry, Biology",
       link: "/critical-care-technology",
     },
@@ -410,7 +359,7 @@ function ProgrammesSection() {
       name: "B.Sc. Medical Record Science",
       duration: "3 Years + 1 Year Internship",
       level: "UG",
-      intake: "30 seats",
+      intake: "15 seats",
       eligibility: "10+2 with Physics, Chemistry, Biology",
       link: "/medical-record-science",
     },
@@ -419,7 +368,7 @@ function ProgrammesSection() {
       name: "B.Sc. Accident & Emergency Care Technology",
       duration: "3 Years + 1 Year Internship",
       level: "UG",
-      intake: "30 seats",
+      intake: "10 seats",
       eligibility: "10+2 with Physics, Chemistry, Biology",
       link: "/accident-emergency-care",
     },
@@ -473,6 +422,10 @@ function ProgrammesSection() {
             );
           })}
         </div>
+        <p className="text-xs text-gray-400 mt-6">
+          Intake = seats sanctioned by The Tamil Nadu Dr. M.G.R. Medical University, AHS affiliated
+          colleges list 2025-26, institution code 825.
+        </p>
       </div>
     </section>
   );
@@ -489,12 +442,6 @@ function PlacementHighlights() {
     "Apollo Hospitals",
     "Fortis Healthcare",
     "Manipal Hospitals",
-    "SRL Diagnostics",
-    "Thyrocare",
-    "Dr. Lal PathLabs",
-    "Sun Pharma",
-    "NHS UK",
-    "Cleveland Clinic Abu Dhabi",
   ];
 
   return (
@@ -504,7 +451,7 @@ function PlacementHighlights() {
           Placement Highlights
         </h2>
         <p className="text-gray-500 text-sm mb-3">
-          Our learners work at India&apos;s and the world&apos;s top hospitals
+          The placement cell runs recruitment drives with partner hospitals
         </p>
         <div className="w-12 h-1 bg-[#7cb983] rounded mx-auto mb-10"></div>
 
@@ -560,7 +507,7 @@ function HowToReachSection() {
     {
       icon: Bus,
       label: "BY BUS",
-      desc: "TN State Transport buses from Salem New Bus Stand to Komarapalayam run every 15-20 minutes throughout the day",
+      desc: "TN State Transport buses from Salem New Bus Stand to Komarapalayam run regularly throughout the day",
     },
     {
       icon: Train,
@@ -752,7 +699,7 @@ function CompetitiveAdvantageSection() {
     { title: "9 Specialized BSc Programmes", desc: "Choose from Cardiac Technology, Dialysis, Radiology, OT & Anaesthesia, Respiratory Therapy, Physician Assistant, Critical Care, Medical Records, and Emergency Care." },
     { title: "Direct NH-544 Access — 50–60 Minutes from Salem", desc: "Straight highway connectivity via Salem–Coimbatore Highway. Regular bus services from Salem bus stand make the commute convenient." },
     { title: "Support for Careers Abroad", desc: "The placement cell supports graduates who want to work abroad, from licensing exams to visa guidance. The college publishes no audited international placement figures; the cell can share current, verifiable numbers on request." },
-    { title: "Own Teaching Hospital for Clinical Training", desc: "Multi-specialty teaching hospital on campus provides hands-on clinical exposure from Year 1 — a critical advantage for healthcare careers." },
+    { title: "Clinical Training at Partner Hospitals", desc: "Clinical postings at partner hospitals give hands-on patient exposure during the course and the one-year internship. The admission office can give the current list of posting hospitals in writing." },
   ];
 
   return (
@@ -762,7 +709,7 @@ function CompetitiveAdvantageSection() {
           Why Salem Learners Choose JKKN AHS
         </h2>
         <p className="voice-answer text-gray-500 text-sm mb-3 text-center">
-          JKKN AHS offers Salem learners 9 BSc programmes, a teaching hospital on campus and scholarship support
+          JKKN AHS offers Salem learners 9 BSc programmes, 82 university-sanctioned seats, clinical training at partner hospitals and scholarship support
         </p>
         <div className="w-12 h-1 bg-[#7cb983] rounded mx-auto mb-10"></div>
 
@@ -801,7 +748,7 @@ function SnippetBaitSection() {
           <div className="bg-white rounded-2xl p-6 shadow-sm">
             <h3 className="font-bold text-gray-900 mb-3">What are Allied Health Sciences?</h3>
             <p className="snippet-answer voice-answer text-sm text-gray-600 leading-relaxed">
-              Allied Health Sciences are healthcare professions that support doctors and nurses in diagnosing, treating, and preventing diseases. These include specialisations like cardiac technology, radiology, dialysis technology, respiratory therapy, and emergency care. Near Salem, JKKN College of Allied Health Sciences offers 9 BSc programmes with clinical training at a teaching hospital — just ~57 km via NH-544.
+              Allied Health Sciences are healthcare professions that support doctors and nurses in diagnosing, treating, and preventing diseases. These include specialisations like cardiac technology, radiology, dialysis technology, respiratory therapy, and emergency care. Near Salem, JKKN College of Allied Health Sciences offers 9 BSc programmes with clinical training at partner hospitals — about 57 km via NH-544.
             </p>
           </div>
 
@@ -824,7 +771,7 @@ function SnippetBaitSection() {
             <h3 className="font-bold text-gray-900 mb-3">How to Choose the Best AHS College Near Salem</h3>
             <div className="snippet-answer voice-answer text-sm text-gray-600 leading-relaxed space-y-2">
               <p>When choosing an allied health science college near Salem, consider university affiliation (The Tamil Nadu Dr. M.G.R. Medical University is the gold standard), NAAC accreditation, clinical training infrastructure, placement track record, and accessibility via NH-544 highway.</p>
-              <p>JKKN College of Allied Health Sciences — located ~57 km from Salem on NH-544 — is NAAC accredited, university-affiliated, has a hospital for clinical training, and provides placement support through a dedicated placement cell.</p>
+              <p>JKKN College of Allied Health Sciences, about 57 km from Salem on NH-544, is affiliated to The Tamil Nadu Dr. M.G.R. Medical University, which lists its courses under J.K.K. Nattraja Dental College &amp; Hospital (code 825), an institution NAAC accredited with an A grade (CGPA 3.01, valid to 26 February 2030). It offers clinical training at partner hospitals and placement support through a dedicated placement cell.</p>
             </div>
           </div>
         </div>
