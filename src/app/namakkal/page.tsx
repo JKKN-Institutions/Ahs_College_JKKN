@@ -8,6 +8,7 @@ import Image from "next/image";
 import Link from "next/link";
 import AhsEnquiryForm from "@/components/lead/AhsEnquiryForm";
 import { CardiacCollegesInDistrict } from "@/components/CardiacCollegesList";
+import { NAMAKKAL_FAQS } from "./faqs";
 
 export default function NamakkalPage() {
   return (
@@ -27,6 +28,7 @@ export default function NamakkalPage() {
         <DistanceCard />
         <WhyChooseSection />
         <ProgrammesSection />
+        <SeatsFeesSection />
         <CardiacCollegesInDistrict district="Namakkal" lead="JKKN College of Allied Health Sciences in Komarapalayam is one of them, with 7 seats." />
         <PlacementHighlights />
         <CompetitiveAdvantageSection />
@@ -34,64 +36,7 @@ export default function NamakkalPage() {
         <FacilitiesSection />
         <CampusGallerySection />
         <SnippetBaitSection />
-        <CityFAQAccordion cityName="Namakkal" faqs={[
-          {
-            q: "What is the best allied health sciences college in Namakkal?",
-            a: "JKKN College of Allied Health Sciences is in Komarapalayam, Namakkal district, on NH-544. Its 9 B.Sc programmes are affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai. For B.Sc Cardiac Technology, the university's 2025-26 list has 8 colleges in Namakkal district, and JKKN is one of them.",
-          },
-          {
-            q: "How far is JKKN AHS from Namakkal?",
-            a: "JKKN AHS is located in Komarapalayam, Namakkal district (not Namakkal town). It's approximately 15 km from Tiruchengode and around 65 km from Namakkal town via NH-544 (Salem-Coimbatore Highway). Regular bus services connect the campus to nearby towns.",
-          },
-          {
-            q: "What is Allied Health Sciences?",
-            a: "Allied Health Sciences includes healthcare professions that support doctors and nurses in diagnosing, treating, and rehabilitating patients. At JKKN College of Allied Health Sciences, you can study physiotherapy, medical lab technology, radiology, cardiac technology, and more.",
-          },
-          {
-            q: "Is BPT a good career option?",
-            a: "Yes, BPT (Bachelor of Physiotherapy) is an excellent career choice. Physiotherapists are in high demand in hospitals, sports clinics, rehabilitation centres, and private practice. Graduates can also pursue international careers in Gulf countries, UK, and Australia.",
-          },
-          {
-            q: "How is AHS different from nursing?",
-            a: "While nursing focuses on patient care and bedside support, Allied Health Sciences covers specialised diagnostic and therapeutic roles like physiotherapy, lab testing, radiology imaging, and cardiac monitoring. Both are valuable healthcare careers, but AHS offers more specialisation options.",
-          },
-          {
-            q: "Does JKKN AHS provide hostel for Namakkal learners?",
-            a: "Yes, JKKN AHS provides separate hostel facilities for boys and girls. Learners from Namakkal can also opt for daily commute as the campus is just 15-20 minutes away. College transport services are available.",
-          },
-          {
-            q: "How can I apply for admission at JKKN AHS?",
-            a: "You can apply online through the official website at https://ahs.jkkn.ac.in/ or visit the campus directly. Admissions for 2026-27 are currently open. Contact the admission office for guidance.",
-          },
-          {
-            q: "What are the fees for BSc allied health science in Tamil Nadu?",
-            a: "BSc Allied Health Science fees in Tamil Nadu typically range from ₹50,000 to ₹2,00,000 per year depending on the college and course. At JKKN College of Allied Health Sciences, Government Quota (GQ) fees are as per Govt norms. Management Quota (MQ) annual fees range from ₹60,000 (Medical Record Science) to ₹1,70,000 (Cardiac & Operation Theatre Technology). Scholarship options are available for meritorious learners. Contact the admission office at +91 9345855001 for details.",
-          },
-          {
-            q: "What is the salary after BSc allied health science?",
-            a: "JKKN College of Allied Health Sciences publishes no audited salary figure for its graduates, so none is stated here. Pay differs by specialisation, hospital and country, and roles abroad generally pay more than the same role in India. A dedicated placement cell supports graduates with recruitment drives, interview preparation and guidance for roles abroad; it can give current, verifiable figures on request.",
-          },
-          {
-            q: "How many allied health science colleges are there in Namakkal?",
-            a: "Namakkal district has several allied health science colleges. JKKN College of Allied Health Sciences, located in Komarapalayam (Namakkal district), offers 9 BSc programmes with NAAC approval and placement support — making it the preferred choice for Namakkal district learners.",
-          },
-          {
-            q: "What are the eligibility requirements for allied health science courses?",
-            a: "To pursue BSc Allied Health Sciences at JKKN AHS, candidates must have passed 12th standard (HSC/CBSE/ISC) with Physics, Chemistry, and Biology with a minimum aggregate of 50% (40% for reserved categories). Admission is based on merit and counselling. JKKN is affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai.",
-          },
-          {
-            q: "What is the advantage of JKKN AHS being in Namakkal district?",
-            a: "Being in Namakkal district's Komarapalayam offers key advantages: strategic NH-544 highway location connecting Salem and Coimbatore, proximity to Tiruchengode (~15 km) for daily needs, affordable cost of living compared to major cities, peaceful campus environment ideal for studies, and easy accessibility from multiple towns — Erode (~18 km), Salem (~57 km), and Tiruppur (~67 km).",
-          },
-          {
-            q: "How well connected is JKKN AHS campus by public transport?",
-            a: "JKKN AHS campus at Komarapalayam is excellently connected by public transport. It sits directly on NH-544 (Salem-Coimbatore Highway) with frequent TNSTC government buses and private services. Tiruchengode bus stand is ~15 km away with regular local buses. Learners from Erode, Salem, Namakkal town, and surrounding areas have multiple daily bus options. The campus also provides its own transport services.",
-          },
-          {
-            q: "Do Namakkal district learners get any special benefits at JKKN AHS?",
-            a: "While JKKN AHS welcomes learners from all districts equally, Namakkal district learners benefit from proximity advantages: easy daily commute from nearby towns, lower transportation costs, ability to stay at home and save on hostel fees, strong local community support, and the option to do clinical rotations closer to home. The college also participates in government scholarship programmes available to all eligible Tamil Nadu learners.",
-          },
-        ]} />
+        <CityFAQAccordion cityName="Namakkal" faqs={NAMAKKAL_FAQS} />
         <ExploreCitiesSection />
         {/* B-06 - enquiry form. MEASURED 2026-08-27: this page had ZERO <form> elements and the
             only conversion path was an outbound link to jkkn.ai. Over 90 days the four big city
@@ -148,7 +93,7 @@ function HeroSection() {
         {/* Badge */}
         <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-2 text-sm mb-8">
           <GraduationCap className="w-4 h-4" />
-          <span>NAAC Approved • Admissions Open</span>
+          <span>Dr. M.G.R. Medical University Affiliated • Admissions Open</span>
         </div>
 
         {/* Heading */}
@@ -159,16 +104,20 @@ function HeroSection() {
 
         {/* Description */}
         <p className="text-white/85 text-base sm:text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
-          Namakkal is home — and so are we. JKKN College of Allied Health
-          Sciences offers top-tier allied health sciences programmes with
-          placement support — located right in your home district.
+          JKKN College of Allied Health Sciences in Komarapalayam, Namakkal
+          district, offers nine four-year B.Sc allied health courses with 82 seats
+          sanctioned by The Tamil Nadu Dr. M.G.R. Medical University (institution
+          code 825). Government-quota seats are allotted through the Tamil Nadu
+          Selection Committee; management-quota fees run from ₹60,000 to
+          ₹1,70,000 a year.
         </p>
 
         {/* Stats */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-2xl mx-auto mb-10">
+        <div className="grid grid-cols-3 gap-3 max-w-2xl mx-auto mb-10">
           {[
-            { value: "~15km", label: "FROM TIRUCHENGODE" },
+            { value: "65 km", label: "FROM NAMAKKAL TOWN" },
             { value: "9", label: "PROGRAMMES" },
+            { value: "82", label: "SANCTIONED SEATS" },
           ].map((stat) => (
             <div
               key={stat.label}
@@ -213,7 +162,7 @@ function AffiliationBar() {
       <div className="max-w-4xl mx-auto flex items-center justify-center gap-4 flex-wrap text-sm">
         <span className="flex items-center gap-2 text-[#006837] font-semibold">
           <span className="w-5 h-5 rounded-full bg-[#e8f5ea] flex items-center justify-center text-xs">✓</span>
-          NAAC
+          Since 2019
         </span>
         <span className="text-gray-400">|</span>
         <span className="text-gray-600 text-center">
@@ -233,15 +182,15 @@ function DistanceCard() {
       <div className="max-w-3xl mx-auto">
         <div className="bg-white rounded-2xl shadow-sm flex flex-col sm:flex-row items-center gap-4 p-6">
           <div className="flex-1 text-center sm:text-left">
-            <span className="text-5xl font-black text-[#006837]">15</span>
+            <span className="text-5xl font-black text-[#006837]">65</span>
             <span className="text-xl font-bold text-[#006837] ml-1">km</span>
           </div>
           <div className="flex-[3] text-center sm:text-left">
             <div className="font-bold text-gray-800 text-base">
-              In Namakkal district — from Tiruchengode
+              From Namakkal town — inside Namakkal district
             </div>
             <div className="text-gray-500 text-sm mt-1">
-              Located in Komarapalayam via NH-544 (Salem-Coimbatore Highway)
+              About 1 hour 20 minutes by car to Komarapalayam on NH-544 (Salem-Coimbatore Highway)
             </div>
           </div>
           <a
@@ -272,7 +221,7 @@ function WhyChooseSection() {
     {
       icon: Building2,
       title: "Clinical Training",
-      desc: "Hands-on clinical training at attached hospitals",
+      desc: "Hands-on clinical training at partner hospitals",
     },
     {
       icon: GitBranch,
@@ -287,12 +236,12 @@ function WhyChooseSection() {
     {
       icon: Globe,
       title: "International Scope",
-      desc: "International career opportunities, especially in physiotherapy and MLT",
+      desc: "International career opportunities for allied health graduates",
     },
     {
       icon: Bus,
       title: "Easy Commute",
-      desc: "Located in Namakkal district (Komarapalayam), just 15 km from Tiruchengode. Daily commute or comfortable hostel — your choice.",
+      desc: "Komarapalayam campus on NH-544, about 26 km from Tiruchengode, with separate boys' and girls' hostels on campus.",
     },
   ];
 
@@ -303,10 +252,9 @@ function WhyChooseSection() {
           Why Namakkal Learners Choose JKKN AHS
         </h2>
         <p className="text-gray-500 max-w-2xl mx-auto mb-3 text-sm sm:text-base leading-relaxed">
-          Being in the home district of JKKN, Namakkal learners enjoy the closest
-          proximity to the campus. There is no need for hostel accommodation — daily
-          commute is easy and convenient. Learners can stay at home and still access
-          world-class education.
+          JKKN is in Namakkal district, but the Komarapalayam campus is about 65 km
+          from Namakkal town, so most learners from the town stay in the campus
+          hostels, while learners from nearer towns use college transport.
         </p>
         <div className="w-12 h-1 bg-[#7cb983] rounded mx-auto mb-10"></div>
 
@@ -348,7 +296,7 @@ function ProgrammesSection() {
       name: "B.Sc. Cardiac Technology",
       duration: "3 Years + 1 Year Internship",
       level: "UG",
-      intake: "30 seats",
+      intake: "7 seats",
       eligibility: "10+2 with Physics, Chemistry, Biology",
       link: "/cardiac-technology",
     },
@@ -357,7 +305,7 @@ function ProgrammesSection() {
       name: "B.Sc. Radiography & Imaging Technology",
       duration: "3 Years + 1 Year Internship",
       level: "UG",
-      intake: "40 seats",
+      intake: "5 seats",
       eligibility: "10+2 with Physics, Chemistry, Biology",
       link: "/radiology-imaging-technology",
     },
@@ -366,7 +314,7 @@ function ProgrammesSection() {
       name: "B.Sc. Dialysis Technology",
       duration: "3 Years + 1 Year Internship",
       level: "UG",
-      intake: "40 seats",
+      intake: "5 seats",
       eligibility: "10+2 with Physics, Chemistry, Biology",
       link: "/dialysis-technology",
     },
@@ -375,7 +323,7 @@ function ProgrammesSection() {
       name: "B.Sc. Operation Theatre & Anaesthesia Technology",
       duration: "3 Years + 1 Year Internship",
       level: "UG",
-      intake: "40 seats",
+      intake: "10 seats",
       eligibility: "10+2 with Physics, Chemistry, Biology",
       link: "/operation-theatre-anaesthesia",
     },
@@ -384,7 +332,7 @@ function ProgrammesSection() {
       name: "B.Sc. Respiratory Therapy",
       duration: "3 Years + 1 Year Internship",
       level: "UG",
-      intake: "30 seats",
+      intake: "10 seats",
       eligibility: "10+2 with Physics, Chemistry, Biology",
       link: "/respiratory-therapy",
     },
@@ -393,7 +341,7 @@ function ProgrammesSection() {
       name: "B.Sc. Physician Assistant",
       duration: "3 Years + 1 Year Internship",
       level: "UG",
-      intake: "40 seats",
+      intake: "10 seats",
       eligibility: "10+2 with Physics, Chemistry, Biology",
       link: "/physician-assistant",
     },
@@ -402,7 +350,7 @@ function ProgrammesSection() {
       name: "B.Sc. Critical Care Technology",
       duration: "3 Years + 1 Year Internship",
       level: "UG",
-      intake: "30 seats",
+      intake: "10 seats",
       eligibility: "10+2 with Physics, Chemistry, Biology",
       link: "/critical-care-technology",
     },
@@ -411,7 +359,7 @@ function ProgrammesSection() {
       name: "B.Sc. Medical Record Science",
       duration: "3 Years + 1 Year Internship",
       level: "UG",
-      intake: "30 seats",
+      intake: "15 seats",
       eligibility: "10+2 with Physics, Chemistry, Biology",
       link: "/medical-record-science",
     },
@@ -420,7 +368,7 @@ function ProgrammesSection() {
       name: "B.Sc. Accident & Emergency Care Technology",
       duration: "3 Years + 1 Year Internship",
       level: "UG",
-      intake: "30 seats",
+      intake: "10 seats",
       eligibility: "10+2 with Physics, Chemistry, Biology",
       link: "/accident-emergency-care",
     },
@@ -474,6 +422,76 @@ function ProgrammesSection() {
             );
           })}
         </div>
+        <p className="text-xs text-gray-400 mt-6">
+          Intake = seats sanctioned by The Tamil Nadu Dr. M.G.R. Medical University, AHS affiliated
+          colleges list 2025-26, institution code 825.
+        </p>
+      </div>
+    </section>
+  );
+}
+
+/* ──────────────────────────────────────────
+   SEATS AND FEES (S6 draft #2, Change B)
+   The course cards said 30 / 40 seats (310 in all) while /admissions and the university list
+   say 82. One table, both numbers sourced, so a parent or an answer engine reads one figure.
+────────────────────────────────────────── */
+function SeatsFeesSection() {
+  const rows = [
+    { name: "B.Sc Cardiac Technology", seats: 7, fee: "₹1,70,000" },
+    { name: "B.Sc Dialysis Technology", seats: 5, fee: "₹1,10,000" },
+    { name: "B.Sc Radiography & Imaging Technology", seats: 5, fee: "₹1,30,000" },
+    { name: "B.Sc Operation Theatre & Anaesthesia Technology", seats: 10, fee: "₹1,70,000" },
+    { name: "B.Sc Respiratory Therapy", seats: 10, fee: "₹1,10,000" },
+    { name: "B.Sc Physician Assistant", seats: 10, fee: "₹1,30,000" },
+    { name: "B.Sc Critical Care Technology", seats: 10, fee: "₹1,10,000" },
+    { name: "B.Sc Accident & Emergency Care Technology", seats: 10, fee: "₹1,10,000" },
+    { name: "B.Sc Medical Record Science", seats: 15, fee: "₹60,000" },
+  ];
+  const total = rows.reduce((s, r) => s + r.seats, 0);
+
+  return (
+    <section className="bg-white py-14 px-4">
+      <div className="max-w-4xl mx-auto">
+        <h2 className="text-2xl sm:text-3xl font-black text-gray-900 mb-3 text-center">
+          Seats and Fees, Course by Course
+        </h2>
+        <div className="w-12 h-1 bg-[#7cb983] rounded mx-auto mb-8"></div>
+        <div className="overflow-x-auto">
+          <table className="w-full text-sm border-collapse">
+            <thead>
+              <tr className="bg-[#e8f5ea] text-left">
+                <th className="p-3 font-semibold text-gray-900">Course (3 years + 1 year internship)</th>
+                <th className="p-3 font-semibold text-gray-900">Seats</th>
+                <th className="p-3 font-semibold text-gray-900">Management-quota tuition a year</th>
+              </tr>
+            </thead>
+            <tbody>
+              {rows.map((r) => (
+                <tr key={r.name} className="border-b border-gray-100">
+                  <td className="p-3 text-gray-800">{r.name}</td>
+                  <td className="p-3 text-gray-800">{r.seats}</td>
+                  <td className="p-3 text-gray-800">{r.fee}</td>
+                </tr>
+              ))}
+              <tr className="font-semibold">
+                <td className="p-3 text-gray-900">Total</td>
+                <td className="p-3 text-gray-900">{total}</td>
+                <td className="p-3 text-gray-600 font-normal">Government quota: as per government norms</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p className="text-xs text-gray-500 mt-4 leading-relaxed">
+          Seats: The Tamil Nadu Dr. M.G.R. Medical University, AHS affiliated colleges 2025-26,
+          institution code 825. Fees: JKKN College of Allied Health Sciences fee structure 2026-27
+          (see <Link href="/admissions" className="text-[#006837] font-semibold hover:underline">admissions</Link>).
+        </p>
+        <p className="text-xs text-gray-500 mt-2 leading-relaxed">
+          Institution: the university lists these courses under J.K.K. Nattraja Dental College &amp;
+          Hospital (code 825), which is NAAC accredited with an A grade (CGPA 3.01, valid to
+          26 February 2030).
+        </p>
       </div>
     </section>
   );
@@ -490,12 +508,6 @@ function PlacementHighlights() {
     "Apollo Hospitals",
     "Fortis Healthcare",
     "Manipal Hospitals",
-    "SRL Diagnostics",
-    "Thyrocare",
-    "Dr. Lal PathLabs",
-    "Sun Pharma",
-    "NHS UK",
-    "Cleveland Clinic Abu Dhabi",
   ];
 
   return (
@@ -505,7 +517,7 @@ function PlacementHighlights() {
           Placement Highlights
         </h2>
         <p className="text-gray-500 text-sm mb-3">
-          Our learners work at India&apos;s and the world&apos;s top hospitals
+          The placement cell runs recruitment drives with partner hospitals
         </p>
         <div className="w-12 h-1 bg-[#7cb983] rounded mx-auto mb-10"></div>
 
@@ -599,7 +611,7 @@ function HowToReachSection() {
               Tiruchengode → JKKN AHS Campus
             </div>
             <div className="text-white/70 text-xs mt-0.5">
-              ~15 km • In Namakkal district (Komarapalayam)
+              ~26 km • In Namakkal district (Komarapalayam)
             </div>
           </div>
         </div>
@@ -749,11 +761,11 @@ function CampusGallerySection() {
 ────────────────────────────────────────── */
 function CompetitiveAdvantageSection() {
   const advantages = [
-    { title: "In Namakkal District — Komarapalayam Campus", desc: "JKKN's campus is in Komarapalayam, Namakkal district. Just 15 km from Tiruchengode. Daily commute or hostel accommodation — your choice." },
+    { title: "In Namakkal District — Komarapalayam Campus", desc: "JKKN's campus is in Komarapalayam, Namakkal district, about 26 km from Tiruchengode and 65 km from Namakkal town. Daily commute or hostel accommodation — your choice." },
     { title: "9 BSc Programmes", desc: "From Cardiac Technology to Emergency Care, JKKN offers 9 allied health programmes." },
     { title: "Placement Support", desc: "A dedicated placement cell runs recruitment drives with partner hospitals and supports graduates who want to work abroad. The college publishes no audited placement figures; the cell can share current, verifiable numbers on request." },
     { title: "74+ Years of Institutional Legacy", desc: "Founded in 1952, JKKN Institutions brings over seven decades of educational excellence. A trusted name for Namakkal families." },
-    { title: "Complete Campus Ecosystem", desc: "Teaching hospital, separate hostels for boys and girls, transport services, learning commons, learning labs, food court, and Wi-Fi — everything under one roof." },
+    { title: "Complete Campus Ecosystem", desc: "Clinical training at partner hospitals, separate hostels for boys and girls, transport services, learning commons, learning labs, food court, and Wi-Fi — everything under one roof." },
   ];
 
   return (
@@ -763,7 +775,7 @@ function CompetitiveAdvantageSection() {
           Why Namakkal Learners Choose JKKN AHS
         </h2>
         <p className="voice-answer text-gray-500 text-sm mb-3 text-center">
-          JKKN AHS is in Komarapalayam, Namakkal district, with 9 BSc programmes and a teaching hospital on campus
+          JKKN AHS is in Komarapalayam, Namakkal district, with 9 BSc programmes, 82 university-sanctioned seats and clinical training at partner hospitals
         </p>
         <div className="w-12 h-1 bg-[#7cb983] rounded mx-auto mb-10"></div>
 
@@ -802,7 +814,7 @@ function SnippetBaitSection() {
           <div className="bg-white rounded-2xl p-6 shadow-sm">
             <h3 className="font-bold text-gray-900 mb-3">What are Allied Health Sciences?</h3>
             <p className="snippet-answer voice-answer text-sm text-gray-600 leading-relaxed">
-              Allied Health Sciences are healthcare professions that support doctors and nurses in diagnosing, treating, and preventing diseases. These include specialisations like cardiac technology, radiology, dialysis technology, respiratory therapy, and emergency care. JKKN College of Allied Health Sciences, located in Komarapalayam (Namakkal district) on NH-544, offers 9 BSc programmes with clinical training at a teaching hospital.
+              Allied Health Sciences are healthcare professions that support doctors and nurses in diagnosing, treating, and preventing diseases. These include specialisations like cardiac technology, radiology, dialysis technology, respiratory therapy, and emergency care. JKKN College of Allied Health Sciences, located in Komarapalayam (Namakkal district) on NH-544, offers 9 BSc programmes with clinical training at partner hospitals.
             </p>
           </div>
 
@@ -825,7 +837,7 @@ function SnippetBaitSection() {
             <h3 className="font-bold text-gray-900 mb-3">How to Choose the Best AHS College in Namakkal District</h3>
             <div className="snippet-answer voice-answer text-sm text-gray-600 leading-relaxed space-y-2">
               <p>When choosing an allied health science college in Namakkal district, consider university affiliation (The Tamil Nadu Dr. M.G.R. Medical University is the gold standard), NAAC accreditation, clinical training infrastructure, placement track record, and campus accessibility from your hometown.</p>
-              <p>JKKN College of Allied Health Sciences in Komarapalayam (Namakkal district) is NAAC accredited, university-affiliated, has a hospital for clinical training, and provides placement support. Located on NH-544, it&apos;s just ~15 km from Tiruchengode.</p>
+              <p>JKKN College of Allied Health Sciences in Komarapalayam (Namakkal district) is affiliated to The Tamil Nadu Dr. M.G.R. Medical University, which lists its courses under J.K.K. Nattraja Dental College &amp; Hospital (code 825), an institution NAAC accredited with an A grade (CGPA 3.01, valid to 26 February 2030). It offers clinical training at partner hospitals and placement support, on NH-544 about 26 km from Tiruchengode.</p>
             </div>
           </div>
         </div>
