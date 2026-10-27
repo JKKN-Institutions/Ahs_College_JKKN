@@ -198,7 +198,7 @@ export default function CriticalCareContent() {
         </li>
         <li>
           Clinical rotations across multi-specialty ICU, CTICU, neuro ICU, and NICU/PICU
-          in our teaching hospital
+          at partner hospitals
         </li>
         <li>
           Hands-on training with ventilators, CRRT machines, IABP, multi-parameter

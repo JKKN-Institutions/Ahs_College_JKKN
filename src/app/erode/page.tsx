@@ -46,15 +46,11 @@ export default function ErodePage() {
             },
             {
               q: "What is Allied Health Sciences?",
-              a: "Allied Health Sciences includes healthcare professions that support doctors and nurses in diagnosing, treating, and rehabilitating patients. At JKKN College of Allied Health Sciences, you can study physiotherapy, medical lab technology, radiology, cardiac technology, and more.",
-            },
-            {
-              q: "Is BPT a good career option?",
-              a: "Yes, BPT (Bachelor of Physiotherapy) is an excellent career choice. Physiotherapists are in high demand in hospitals, sports clinics, rehabilitation centres, and private practice. Graduates can also pursue international careers in Gulf countries, UK, and Australia.",
+              a: "Allied Health Sciences are healthcare professions that support doctors and nurses in diagnosing, treating and monitoring patients. At JKKN College of Allied Health Sciences you can study nine B.Sc courses, including Cardiac Technology, Radiography and Imaging, Dialysis, Operation Theatre and Anaesthesia, Respiratory Therapy and Physician Assistant.",
             },
             {
               q: "How is AHS different from nursing?",
-              a: "While nursing focuses on patient care and bedside support, Allied Health Sciences covers specialised diagnostic and therapeutic roles like physiotherapy, lab testing, radiology imaging, and cardiac monitoring. Both are valuable healthcare careers, but AHS offers more specialisation options.",
+              a: "While nursing focuses on patient care and bedside support, Allied Health Sciences covers specialised diagnostic and therapeutic roles like cardiac monitoring, radiology imaging, dialysis and operation theatre support. Both are valuable healthcare careers, but AHS offers more specialisation options.",
             },
             {
               q: "Does JKKN AHS provide hostel for Erode learners?",
@@ -66,7 +62,7 @@ export default function ErodePage() {
             },
             {
               q: "What are the fees for BSc allied health science in Tamil Nadu?",
-              a: "BSc Allied Health Science fees in Tamil Nadu typically range from ₹50,000 to ₹2,00,000 per year depending on the college and course. At JKKN College of Allied Health Sciences, fees are competitively priced with scholarship options available for meritorious learners. Contact the admission office at +91 9345855001 for the latest fee structure.",
+              a: "Management-quota tuition at JKKN College of Allied Health Sciences for 2026-27 is ₹1,70,000 a year for Cardiac Technology and Operation Theatre Technology, ₹1,30,000 for Radiography and Physician Assistant, ₹1,10,000 for Dialysis, Respiratory Therapy, Critical Care and Emergency Care, and ₹60,000 for Medical Record Science. Government-quota fees follow government norms.",
             },
             {
               q: "What is the salary after BSc allied health science?",
@@ -78,7 +74,7 @@ export default function ErodePage() {
             },
             {
               q: "What are the eligibility requirements for allied health science courses?",
-              a: "To pursue BSc Allied Health Sciences at JKKN AHS, candidates must have passed 12th standard (HSC/CBSE/ISC) with Physics, Chemistry, and Biology with a minimum aggregate of 50% (40% for reserved categories). Admission is based on merit and counselling. JKKN is affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai.",
+              a: "To pursue BSc Allied Health Sciences at JKKN AHS, candidates must have passed 12th standard (HSC/CBSE/ISC) with Physics, Chemistry, and Biology with a minimum aggregate of 50% (45% for OBC, 40% for SC/ST). Admission is based on merit and counselling. JKKN is affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai.",
             },
             {
               q: "Are there healthcare career opportunities in Erode's textile industry?",
@@ -90,7 +86,7 @@ export default function ErodePage() {
             },
             {
               q: "Why choose JKKN AHS near Erode over colleges in Coimbatore?",
-              a: "JKKN AHS is ~18 km from Erode on NH-544, with direct clinical exposure at the JKKN Hospital from Year 1 and strong local industry connections for placements. The NH-544 location also means easy access to opportunities in both Erode and Coimbatore.",
+              a: "JKKN AHS is ~18 km from Erode on NH-544, with clinical training at partner hospitals and local industry connections for placements. The NH-544 location also means easy access to opportunities in both Erode and Coimbatore.",
             },
           ]}
         />
@@ -150,7 +146,7 @@ function HeroSection() {
         {/* Badge */}
         <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-2 text-sm mb-8">
           <GraduationCap className="w-4 h-4" />
-          <span>NAAC Approved • Admissions Open</span>
+          <span>Dr. M.G.R. Medical University Affiliated • Admissions Open</span>
         </div>
 
         {/* Heading */}
@@ -216,7 +212,7 @@ function AffiliationBar() {
       <div className="max-w-4xl mx-auto flex items-center justify-center gap-4 flex-wrap text-sm">
         <span className="flex items-center gap-2 text-[#006837] font-semibold">
           <span className="w-5 h-5 rounded-full bg-[#e8f5ea] flex items-center justify-center text-xs">✓</span>
-          NAAC
+          Since 2019
         </span>
         <span className="text-gray-400">|</span>
         <span className="text-gray-600 text-center">
@@ -275,7 +271,7 @@ function WhyChooseSection() {
     {
       icon: Building2,
       title: "Clinical Training",
-      desc: "Hands-on clinical training at attached hospitals",
+      desc: "Hands-on clinical training at partner hospitals",
     },
     {
       icon: GitBranch,
@@ -290,7 +286,7 @@ function WhyChooseSection() {
     {
       icon: Globe,
       title: "International Scope",
-      desc: "International career opportunities, especially in physiotherapy and MLT",
+      desc: "International career opportunities for allied health graduates",
     },
     {
       icon: Bus,
@@ -349,7 +345,7 @@ function ProgrammesSection() {
       name: "B.Sc. Cardiac Technology",
       duration: "3 Years + 1 Year Internship",
       level: "UG",
-      intake: "30 seats",
+      intake: "7 seats",
       eligibility: "10+2 with Physics, Chemistry, Biology",
       link: "/cardiac-technology",
     },
@@ -358,7 +354,7 @@ function ProgrammesSection() {
       name: "B.Sc. Radiography & Imaging Technology",
       duration: "3 Years + 1 Year Internship",
       level: "UG",
-      intake: "40 seats",
+      intake: "5 seats",
       eligibility: "10+2 with Physics, Chemistry, Biology",
       link: "/radiology-imaging-technology",
     },
@@ -367,7 +363,7 @@ function ProgrammesSection() {
       name: "B.Sc. Dialysis Technology",
       duration: "3 Years + 1 Year Internship",
       level: "UG",
-      intake: "40 seats",
+      intake: "5 seats",
       eligibility: "10+2 with Physics, Chemistry, Biology",
       link: "/dialysis-technology",
     },
@@ -376,7 +372,7 @@ function ProgrammesSection() {
       name: "B.Sc. Operation Theatre & Anaesthesia Technology",
       duration: "3 Years + 1 Year Internship",
       level: "UG",
-      intake: "40 seats",
+      intake: "10 seats",
       eligibility: "10+2 with Physics, Chemistry, Biology",
       link: "/operation-theatre-anaesthesia",
     },
@@ -385,7 +381,7 @@ function ProgrammesSection() {
       name: "B.Sc. Respiratory Therapy",
       duration: "3 Years + 1 Year Internship",
       level: "UG",
-      intake: "30 seats",
+      intake: "10 seats",
       eligibility: "10+2 with Physics, Chemistry, Biology",
       link: "/respiratory-therapy",
     },
@@ -394,7 +390,7 @@ function ProgrammesSection() {
       name: "B.Sc. Physician Assistant",
       duration: "3 Years + 1 Year Internship",
       level: "UG",
-      intake: "40 seats",
+      intake: "10 seats",
       eligibility: "10+2 with Physics, Chemistry, Biology",
       link: "/physician-assistant",
     },
@@ -403,7 +399,7 @@ function ProgrammesSection() {
       name: "B.Sc. Critical Care Technology",
       duration: "3 Years + 1 Year Internship",
       level: "UG",
-      intake: "30 seats",
+      intake: "10 seats",
       eligibility: "10+2 with Physics, Chemistry, Biology",
       link: "/critical-care-technology",
     },
@@ -412,7 +408,7 @@ function ProgrammesSection() {
       name: "B.Sc. Medical Record Science",
       duration: "3 Years + 1 Year Internship",
       level: "UG",
-      intake: "30 seats",
+      intake: "15 seats",
       eligibility: "10+2 with Physics, Chemistry, Biology",
       link: "/medical-record-science",
     },
@@ -421,7 +417,7 @@ function ProgrammesSection() {
       name: "B.Sc. Accident & Emergency Care Technology",
       duration: "3 Years + 1 Year Internship",
       level: "UG",
-      intake: "30 seats",
+      intake: "10 seats",
       eligibility: "10+2 with Physics, Chemistry, Biology",
       link: "/accident-emergency-care",
     },
@@ -475,6 +471,10 @@ function ProgrammesSection() {
             );
           })}
         </div>
+        <p className="text-xs text-gray-400 mt-6">
+          Intake = seats sanctioned by The Tamil Nadu Dr. M.G.R. Medical University, AHS affiliated
+          colleges list 2025-26, institution code 825.
+        </p>
       </div>
     </section>
   );
@@ -491,12 +491,6 @@ function PlacementHighlights() {
     "Apollo Hospitals",
     "Fortis Healthcare",
     "Manipal Hospitals",
-    "SRL Diagnostics",
-    "Thyrocare",
-    "Dr. Lal PathLabs",
-    "Sun Pharma",
-    "NHS UK",
-    "Cleveland Clinic Abu Dhabi",
   ];
 
   return (
@@ -506,7 +500,7 @@ function PlacementHighlights() {
           Placement Highlights
         </h2>
         <p className="text-gray-500 text-sm mb-3">
-          Our learners work at India&apos;s and the world&apos;s top hospitals
+          The placement cell runs recruitment drives with partner hospitals
         </p>
         <div className="w-12 h-1 bg-[#7cb983] rounded mx-auto mb-10"></div>
 
@@ -751,10 +745,10 @@ function CampusGallerySection() {
 function CompetitiveAdvantageSection() {
   const advantages = [
     { title: "9 Specialized BSc Programmes", desc: "Choose from Cardiac Technology, Dialysis, Radiology, OT & Anaesthesia, Respiratory Therapy, Physician Assistant, Critical Care, Medical Records, and Emergency Care." },
-    { title: "Placement Support with 60+ Recruiters", desc: "Our graduates work at TCS, Apollo Hospitals, Sun Pharma, NHS UK, and Cleveland Clinic Abu Dhabi. Both domestic and international career paths available." },
+    { title: "Placement Support", desc: "A dedicated placement cell runs recruitment drives with partner hospitals and supports graduates who want to work abroad. The college publishes no audited placement figures; the cell can share current, verifiable numbers on request." },
     { title: "Just 30–40 Minutes from Erode", desc: "Located on NH-544 (Salem–Coimbatore Highway) with direct bus connectivity. Easy commute or hostel stay — both options available for Erode learners." },
-    { title: "Teaching Hospital on Campus", desc: "Clinical training from Year 1 at our multi-specialty teaching hospital. Hands-on experience that textbooks alone cannot provide." },
-    { title: "NAAC Approved & University Affiliated", desc: "Approved by NAAC and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai — your degree is recognized nationwide and internationally." },
+    { title: "Clinical Training at Partner Hospitals", desc: "Clinical postings at partner hospitals give hands-on patient exposure during the course and the one-year internship. The admission office can give the current list of posting hospitals in writing." },
+    { title: "University Affiliated", desc: "Affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai. The university lists these courses under J.K.K. Nattraja Dental College & Hospital (code 825), an institution NAAC accredited with an A grade." },
   ];
 
   return (
@@ -803,7 +797,7 @@ function SnippetBaitSection() {
           <div className="bg-white rounded-2xl p-6 shadow-sm">
             <h3 className="font-bold text-gray-900 mb-3">What are Allied Health Sciences?</h3>
             <p className="snippet-answer voice-answer text-sm text-gray-600 leading-relaxed">
-              Allied Health Sciences are healthcare professions that support doctors and nurses in diagnosing, treating, and preventing diseases. These include specialisations like cardiac technology, radiology, dialysis technology, respiratory therapy, and emergency care. In Erode, JKKN College of Allied Health Sciences offers 9 BSc programmes with clinical training at a teaching hospital.
+              Allied Health Sciences are healthcare professions that support doctors and nurses in diagnosing, treating, and preventing diseases. These include specialisations like cardiac technology, radiology, dialysis technology, respiratory therapy, and emergency care. In Erode, JKKN College of Allied Health Sciences offers 9 BSc programmes with clinical training at partner hospitals.
             </p>
           </div>
 
@@ -825,8 +819,8 @@ function SnippetBaitSection() {
           <div className="bg-white rounded-2xl p-6 shadow-sm">
             <h3 className="font-bold text-gray-900 mb-3">How to Choose the Best AHS College Near Erode</h3>
             <div className="snippet-answer voice-answer text-sm text-gray-600 leading-relaxed space-y-2">
-              <p>When choosing an allied health science college near Erode, consider these factors: university affiliation (The Tamil Nadu Dr. M.G.R. Medical University is the gold standard), NAAC accreditation status, clinical training infrastructure (look for attached teaching hospitals), placement track record, senior learner experience, and proximity to your home for easy commuting.</p>
-              <p>JKKN College of Allied Health Sciences checks all these boxes — NAAC accredited, university-affiliated, a teaching hospital for clinical training, placement support, and just ~18 km from Erode on NH-544.</p>
+              <p>When choosing an allied health science college near Erode, consider these factors: university affiliation (The Tamil Nadu Dr. M.G.R. Medical University is the gold standard), NAAC accreditation status, clinical training (ask which hospitals take students for postings), placement track record, senior learner experience, and proximity to your home for easy commuting.</p>
+              <p>JKKN College of Allied Health Sciences, just ~18 km from Erode on NH-544, is affiliated to The Tamil Nadu Dr. M.G.R. Medical University, which lists its courses under J.K.K. Nattraja Dental College &amp; Hospital (code 825), an institution NAAC accredited with an A grade (CGPA 3.01, valid to 26 February 2030). It offers clinical training at partner hospitals and placement support.</p>
             </div>
           </div>
         </div>

@@ -198,8 +198,8 @@ export default function RadiologyContent() {
           Affiliated with The Tamil Nadu Dr. M.G.R. Medical University, Chennai
         </li>
         <li>
-          Hands-on training across digital X-ray, CT scanner, 1.5T MRI, ultrasound, and
-          mammography in our teaching hospital
+          Hands-on training across digital X-ray, CT, MRI, ultrasound, and
+          mammography at partner hospitals
         </li>
         <li>
           Industry partnerships with diagnostic chains (Vijaya, Krsnaa, regional

@@ -12,8 +12,8 @@ export function AboutSection() {
         { text: "University-affiliated programs with clinical internship" },
         { text: "Hospital partnerships with Senthil Multispeciality, Lotus, Erode Medical Center and Olirum Erode Foundation" },
         { text: "Industry-experienced Learning Facilitators" },
-        { text: "NAAC A Accredited with 70+ year legacy" },
-        { text: "Multi-specialty teaching hospital for clinical training" }
+        { text: "Part of JKKN Educational Institutions, a 70+ year legacy" },
+        { text: "Course seats sanctioned by The Tamil Nadu Dr. M.G.R. Medical University" }
     ];
 
     return (
@@ -41,7 +41,7 @@ export function AboutSection() {
                         </p>
 
                         <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
-                            Located on NH-544 (Salem-Coimbatore Highway) in Komarapalayam, just 18 km from <Link href="/erode" className="text-[#0b6d41] font-semibold hover:underline">Erode</Link> and 58 km from <Link href="/salem" className="text-[#0b6d41] font-semibold hover:underline">Salem</Link>, our <Link href="/NAAC" className="text-[#0b6d41] font-semibold hover:underline">NAAC A accredited</Link> campus features <Link href="/lab" className="text-[#0b6d41] font-semibold hover:underline">advanced learning labs</Link>, a teaching hospital, <Link href="/hostel" className="text-[#0b6d41] font-semibold hover:underline">hostel facilities</Link>, and a dedicated placement cell supporting graduates into hospital and diagnostic roles.
+                            Located on NH-544 (Salem-Coimbatore Highway) in Komarapalayam, just 18 km from <Link href="/erode" className="text-[#0b6d41] font-semibold hover:underline">Erode</Link> and 58 km from <Link href="/salem" className="text-[#0b6d41] font-semibold hover:underline">Salem</Link>, our campus features <Link href="/lab" className="text-[#0b6d41] font-semibold hover:underline">advanced learning labs</Link>, <Link href="/hostel" className="text-[#0b6d41] font-semibold hover:underline">hostel facilities</Link>, clinical training at partner hospitals and a dedicated placement cell supporting graduates into hospital and diagnostic roles.
                         </p>
                     </motion.div>
 

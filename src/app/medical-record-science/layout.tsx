@@ -4,7 +4,7 @@ import { MRS_LIST_SOURCE, MRS_JKKN_SEATS } from "@/lib/medical-record-colleges-t
 
 export const metadata = createPageMetadata({
   title: "BSc Medical Record Science Course Details | JKKN",
-  description: `BSc Medical Record Science course details at JKKN, Komarapalayam: ${MRS_JKKN_SEATS} seats. ${MRS_LIST_SOURCE.totalInstitutions} colleges in Tamilnadu offer it, none of them government. NAAC A.`,
+  description: `BSc Medical Record Science course details at JKKN, Komarapalayam: ${MRS_JKKN_SEATS} seats. ${MRS_LIST_SOURCE.totalInstitutions} colleges in Tamilnadu offer it, none of them government.`,
   path: "/medical-record-science",
   keywords: [
     "bsc medical record science colleges in tamilnadu",

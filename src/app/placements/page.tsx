@@ -206,7 +206,7 @@ function StatsSection() {
         { value: "82", label: "Sanctioned Seats", icon: <Briefcase className="w-6 h-6" /> },
         { value: "4 Yrs", label: "Incl. Internship Year", icon: <Users className="w-6 h-6" /> },
         { value: "TNMGRMU", label: "Affiliating University", icon: <Hospital className="w-6 h-6" /> },
-        { value: "NAAC A", label: "Accreditation", icon: <Globe className="w-6 h-6" /> }
+        { value: "2019", label: "Established", icon: <Globe className="w-6 h-6" /> }
     ];
 
     return (
@@ -268,7 +268,7 @@ function WhyStandOutSection() {
         },
         {
             title: "Global Career Reach",
-            desc: "Dedicated international placement support with IELTS prep, visa guidance, and tie-ups with recruiters in the UK (NHS), UAE, Saudi Arabia, and Singapore.",
+            desc: "Dedicated support for graduates who want to work abroad, with IELTS prep and visa guidance.",
             icon: <Globe className="w-7 h-7" />
         }
     ];

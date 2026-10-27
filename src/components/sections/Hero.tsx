@@ -123,10 +123,10 @@ export function Hero() {
                             className="absolute -top-4 -right-4 md:-top-6 md:-right-6 glass-card p-3 sm:p-4 rounded-xl sm:rounded-2xl z-20 hidden sm:block lg:hidden"
                         >
                             <div className="flex items-center gap-2 sm:gap-3">
-                                <div className="w-8 h-8 sm:w-10 sm:h-10 bg-secondary rounded-lg sm:rounded-xl flex items-center justify-center font-black text-primary text-xs sm:text-sm">A</div>
+                                <div className="w-8 h-8 sm:w-10 sm:h-10 bg-secondary rounded-lg sm:rounded-xl flex items-center justify-center font-black text-primary text-xs sm:text-sm">✓</div>
                                 <div>
-                                    <div className="text-[10px] sm:text-xs font-bold text-gray-800 leading-none">NAAC Accredited</div>
-                                    <div className="text-[8px] sm:text-[9px] text-gray-500 font-medium">Top Rank Institution</div>
+                                    <div className="text-[10px] sm:text-xs font-bold text-gray-800 leading-none">University Affiliated</div>
+                                    <div className="text-[8px] sm:text-[9px] text-gray-500 font-medium">Dr. M.G.R. Medical University</div>
                                 </div>
                             </div>
                         </motion.div>

@@ -222,8 +222,8 @@ export default function MedicalRecordContent() {
           CPC certification within months of graduation
         </li>
         <li>
-          Hands-on training with EMR systems (we use a clinical-grade EMR in our
-          teaching hospital records department)
+          Hands-on training with EMR systems of the kind used in hospital records
+          departments
         </li>
         <li>
           Strong placement record with Optum, Cognizant, Access Healthcare, regional

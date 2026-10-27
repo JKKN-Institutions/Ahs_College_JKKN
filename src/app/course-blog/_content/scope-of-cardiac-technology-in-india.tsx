@@ -185,8 +185,8 @@ export default function CardiacTechnologyContent() {
       <h2 id="why-jkkn">Why Study at JKKN</h2>
       <p>
         JKKN College of Allied Health Sciences runs B.Sc Cardiac Care Technology with
-        clinical training at a 1,200-bed multi-specialty teaching hospital, equipped
-        with 2 cath labs, 4D echocardiography, EP lab, and a dedicated CCU. Specifically:
+        clinical training at partner hospitals, with postings in cath labs,
+        echocardiography and coronary care units. Specifically:
       </p>
       <ul>
         <li>

@@ -195,8 +195,8 @@ export default function RespiratoryTherapyContent() {
           Affiliated with The Tamil Nadu Dr. M.G.R. Medical University, Chennai
         </li>
         <li>
-          Clinical training in a teaching hospital with 30+ ICU beds, NICU/PICU, and a
-          dedicated pulmonology department
+          Clinical training at partner hospitals, with ICU, NICU/PICU and pulmonology
+          postings
         </li>
         <li>
           Hands-on training with multiple ventilator platforms (Hamilton, Drager,

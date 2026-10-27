@@ -1,24 +1,22 @@
 import { createPageMetadata } from "@/lib/metadata";
 
 export const metadata = createPageMetadata({
-  title: "NAAC Accreditation — JKKN College of Allied Health Sciences",
+  title: "NAAC Framework and the Code 825 Certificate | JKKN AHS",
   description:
-    "JKKN College of Allied Health Sciences NAAC accreditation details — quality assurance, assessment reports, and institutional excellence standards.",
+    "How NAAC assesses colleges, and the NAAC A certificate of J.K.K. Nattraja Dental College & Hospital, under which the university lists JKKN AHS courses.",
   path: "/NAAC",
   keywords: [
     "NAAC accreditation JKKN",
     "JKKN College NAAC grade Tamil Nadu",
-    "accredited allied health college Komarapalayam",
     "NAAC assessment JKKN Allied Health Sciences",
     "quality accreditation medical college Tamil Nadu",
-    "JKKN NAAC A accredited college",
   ],
 });
 
 const speakableSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "name": "NAAC Accreditation — JKKN College of Allied Health Sciences",
+  "name": "NAAC Framework and the Code 825 Certificate | JKKN AHS",
   "url": "https://ahs.jkkn.ac.in/NAAC",
   "speakable": {
     "@type": "SpeakableSpecification",
@@ -40,16 +38,7 @@ const naacSchema = {
   "@context": "https://schema.org",
   "@type": "EducationalOrganization",
   "name": "JKKN College of Allied Health Sciences",
-  "url": "https://ahs.jkkn.ac.in/",
-  "hasCredential": {
-    "@type": "EducationalOccupationalCredential",
-    "credentialCategory": "Accreditation",
-    "recognizedBy": {
-      "@type": "Organization",
-      "name": "National Assessment and Accreditation Council (NAAC)",
-      "url": "https://www.naac.gov.in/"
-    }
-  }
+  "url": "https://ahs.jkkn.ac.in/"
 };
 
 export default function NAACLayout({

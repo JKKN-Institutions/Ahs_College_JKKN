@@ -201,7 +201,7 @@ export default function OperationTheatreContent() {
           what corporate hospitals actually want
         </li>
         <li>
-          Clinical rotations across 6 surgical specialty OTs in our teaching hospital —
+          Clinical rotations across surgical specialty OTs at partner hospitals —
           general, ortho, gynae, ENT, ophthal, cardiac
         </li>
         <li>

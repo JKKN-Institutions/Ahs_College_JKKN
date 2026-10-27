@@ -203,7 +203,7 @@ function HeroSection() {
                     <span className="text-[#ffde59]">Allied Health Sciences</span>
                 </h1>
                 <p className="text-white/90 text-base sm:text-lg md:text-xl max-w-3xl mx-auto mb-8 leading-relaxed">
-                    9 Programs &bull; NAAC A &bull; Placement Support &bull; TN Dr. MGR Medical University
+                    9 Programs &bull; 82 Seats &bull; Placement Support &bull; TN Dr. MGR Medical University
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                     <a
@@ -231,8 +231,8 @@ function HighlightsSection() {
     const highlights = [
         { value: "9", label: "Programs", icon: <GraduationCap className="w-5 h-5" /> },
         { value: "₹60K-1.7L", label: "Annual Fees (MQ)", icon: <IndianRupee className="w-5 h-5" /> },
-        { value: "NAAC A", label: "Accredited", icon: <Award className="w-5 h-5" /> },
-        { value: "500+", label: "Bed Hospital", icon: <Hospital className="w-5 h-5" /> },
+        { value: "82", label: "Sanctioned Seats", icon: <Award className="w-5 h-5" /> },
+        { value: "2019", label: "Established", icon: <Sparkles className="w-5 h-5" /> },
         { value: "3+1 Yr", label: "Duration", icon: <Clock className="w-5 h-5" /> },
     ];
 
@@ -681,10 +681,10 @@ function ScholarshipsSection() {
 function WhyChooseSection() {
     const usps = [
         { title: "70+ Year Legacy", desc: "Part of JKKN Educational Institutions with over 70 years of excellence in education across 10 institutions.", icon: <Award className="w-6 h-6" /> },
-        { title: "500+ Bed Hospital", desc: "Clinical training at our multi-specialty teaching hospital with real patient exposure from Year 1.", icon: <Hospital className="w-6 h-6" /> },
+        { title: "Partner Hospital Training", desc: "Clinical postings at partner hospitals during the course and the one-year internship. The admission office can give the current list in writing.", icon: <Hospital className="w-6 h-6" /> },
         { title: "Placement Support", desc: "Dedicated placement cell working with hospitals including Apollo, Fortis and MIOT, and with employers abroad.", icon: <TrendingUp className="w-6 h-6" /> },
-        { title: "Global Opportunities", desc: "International placement pathways to UK (NHS), Saudi Arabia, UAE (Cleveland Clinic), and Singapore.", icon: <Globe className="w-6 h-6" /> },
-        { title: "NAAC A Accredited", desc: "Recognized for academic excellence and quality infrastructure by the National Assessment and Accreditation Council.", icon: <Sparkles className="w-6 h-6" /> },
+        { title: "Global Opportunities", desc: "The placement cell guides graduates who want to work abroad. The college publishes no audited international placement figures.", icon: <Globe className="w-6 h-6" /> },
+        { title: "University Affiliated", desc: "Affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai. The university lists these courses under J.K.K. Nattraja Dental College & Hospital (code 825), an institution NAAC accredited with an A grade.", icon: <Sparkles className="w-6 h-6" /> },
         { title: "Clinical Exposure", desc: "2000+ hours of hands-on clinical training across partnered hospitals with expert supervision.", icon: <Stethoscope className="w-6 h-6" /> },
     ];
 

@@ -19,7 +19,7 @@ const reasons = [
     },
     {
         title: "Hospital Partnerships",
-        description: "Clinical rotations at partner hospitals including Senthil Multi-Speciality, Lotus, Erode Medical Center, and Olirum Erode Foundation. Learners complete 2,000+ hours of hands-on patient care at a multi-specialty teaching hospital, gaining real-world exposure from Year 1.",
+        description: "Clinical rotations at partner hospitals including Senthil Multi-Speciality, Lotus, Erode Medical Center, and Olirum Erode Foundation. Learners complete 2,000+ hours of hands-on patient care during the course.",
         icon: <Building2 className="w-10 h-10" />,
     },
     {

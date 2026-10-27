@@ -24,7 +24,7 @@ export function SnippetBlock() {
             Paramedical (Allied Health Sciences) College in Namakkal District
           </h2>
           <p className="snippet-answer voice-answer text-gray-700 text-sm sm:text-base leading-relaxed max-w-4xl">
-            JKKN College of Allied Health Sciences, on NH-544 in Komarapalayam, Namakkal district, offers 9 B.Sc paramedical (allied health) programmes affiliated to The Tamil Nadu Dr. M.G.R. Medical University, and is NAAC A accredited. Learners get 2,000+ clinical training hours and support from a dedicated placement cell. It is one of {AHS_TN_TOTAL} institutions on the university&apos;s {AHS_LIST_SOURCE.year} list for these courses - see{" "}
+            JKKN College of Allied Health Sciences, on NH-544 in Komarapalayam, Namakkal district, offers 9 B.Sc paramedical (allied health) programmes affiliated to The Tamil Nadu Dr. M.G.R. Medical University, which lists them under J.K.K. Nattraja Dental College &amp; Hospital (code 825), an institution NAAC accredited with an A grade. Learners get 2,000+ clinical training hours and support from a dedicated placement cell. It is one of {AHS_TN_TOTAL} institutions on the university&apos;s {AHS_LIST_SOURCE.year} list for these courses - see{" "}
             <Link href="/paramedical-college-in-tamil-nadu" className="text-[#0b6d41] font-semibold hover:underline">JKKN paramedical courses, seats and eligibility</Link>.
           </p>
         </div>
@@ -35,9 +35,9 @@ export function SnippetBlock() {
             Why Choose JKKN for Allied Health Sciences?
           </h3>
           <ul className="snippet-answer list-disc pl-5 sm:pl-6 space-y-2 sm:space-y-3 text-gray-700 text-sm sm:text-base leading-relaxed max-w-4xl">
-            <li><strong>NAAC A Accredited</strong> — Part of JKKN Educational Institutions with a 70+ year legacy of educational excellence in Tamil Nadu.</li>
+            <li><strong>University Affiliated</strong> — Affiliated to The Tamil Nadu Dr. M.G.R. Medical University; part of JKKN Educational Institutions with a 70+ year legacy of educational excellence in Tamil Nadu.</li>
             <li><strong>9 Specialized B.Sc Programs</strong> — Including <Link href="/cardiac-technology" className="text-[#0b6d41] font-semibold hover:underline">Cardiac Technology</Link>, <Link href="/radiology-imaging-technology" className="text-[#0b6d41] font-semibold hover:underline">Radiology</Link>, <Link href="/dialysis-technology" className="text-[#0b6d41] font-semibold hover:underline">Dialysis Technology</Link>, and <Link href="/respiratory-therapy" className="text-[#0b6d41] font-semibold hover:underline">Respiratory Therapy</Link>.</li>
-            <li><strong>Hospital-Based Clinical Training</strong> — Hands-on clinical training from Year 1, with 2,000+ training hours.</li>
+            <li><strong>Clinical Training at Partner Hospitals</strong> — hands-on clinical postings, with 2,000+ training hours.</li>
             <li><strong>Placement Support</strong> — a dedicated placement cell that helps learners apply to hospitals and diagnostic centres.</li>
             <li><strong>International Careers</strong> — allied health graduates can work abroad after meeting that country&apos;s registration rules; ask the placement cell what guidance is offered.</li>
             <li><strong>Affordable Fees with Scholarships</strong> — GQ fees as per Govt norms; MQ annual fees from ₹60,000 to ₹1,70,000 with merit-based scholarships available.</li>

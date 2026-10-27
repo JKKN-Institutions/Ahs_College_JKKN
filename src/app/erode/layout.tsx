@@ -4,7 +4,7 @@ import { AHS_MAPS_URL } from "@/lib/entity-profiles";
 export const metadata = createPageMetadata({
   title: "Allied Health Science Colleges near Erode | JKKN AHS",
   description:
-    "JKKN AHS — ~18 km from Erode on NH-544. 9 BSc allied health programmes, NAAC accredited, placement support, teaching hospital. Admissions open 2026-27.",
+    "JKKN AHS — ~18 km from Erode on NH-544. 9 BSc allied health programmes, 82 university-sanctioned seats, placement support. Admissions open 2026-27.",
   path: "/erode",
   keywords: [
     "allied health science colleges in erode",
@@ -77,15 +77,7 @@ const faqSchema = {
       name: "What is Allied Health Sciences?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Allied Health Sciences includes healthcare professions that support doctors and nurses in diagnosing, treating, and rehabilitating patients. At JKKN College of Allied Health Sciences, you can study physiotherapy, medical lab technology, radiology, cardiac technology, and more.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Is BPT a good career option?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes, BPT (Bachelor of Physiotherapy) is an excellent career choice. Physiotherapists are in high demand in hospitals, sports clinics, rehabilitation centres, and private practice. Graduates can also pursue international careers in Gulf countries, UK, and Australia.",
+        text: "Allied Health Sciences are healthcare professions that support doctors and nurses in diagnosing, treating and monitoring patients. At JKKN College of Allied Health Sciences you can study nine B.Sc courses, including Cardiac Technology, Radiography and Imaging, Dialysis, Operation Theatre and Anaesthesia, Respiratory Therapy and Physician Assistant.",
       },
     },
     {
@@ -93,7 +85,7 @@ const faqSchema = {
       name: "How is AHS different from nursing?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "While nursing focuses on patient care and bedside support, Allied Health Sciences covers specialised diagnostic and therapeutic roles like physiotherapy, lab testing, radiology imaging, and cardiac monitoring. Both are valuable healthcare careers, but AHS offers more specialisation options.",
+        text: "While nursing focuses on patient care and bedside support, Allied Health Sciences covers specialised diagnostic and therapeutic roles like cardiac monitoring, radiology imaging, dialysis and operation theatre support. Both are valuable healthcare careers, but AHS offers more specialisation options.",
       },
     },
     {
@@ -117,7 +109,7 @@ const faqSchema = {
       name: "What are the fees for BSc allied health science in Tamil Nadu?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "BSc Allied Health Science fees in Tamil Nadu typically range from ₹50,000 to ₹2,00,000 per year depending on the college and course. At JKKN College of Allied Health Sciences, fees are competitively priced with scholarship options available for meritorious learners. Contact the admission office at +91 9345855001 for the latest fee structure.",
+        text: "Management-quota tuition at JKKN College of Allied Health Sciences for 2026-27 is ₹1,70,000 a year for Cardiac Technology and Operation Theatre Technology, ₹1,30,000 for Radiography and Physician Assistant, ₹1,10,000 for Dialysis, Respiratory Therapy, Critical Care and Emergency Care, and ₹60,000 for Medical Record Science. Government-quota fees follow government norms.",
       },
     },
     {
@@ -141,7 +133,7 @@ const faqSchema = {
       name: "What are the eligibility requirements for allied health science courses?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "To pursue BSc Allied Health Sciences at JKKN AHS, candidates must have passed 12th standard (HSC/CBSE/ISC) with Physics, Chemistry, and Biology with a minimum aggregate of 50% (40% for reserved categories). Admission is based on merit and counselling. JKKN is affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai.",
+        text: "To pursue BSc Allied Health Sciences at JKKN AHS, candidates must have passed 12th standard (HSC/CBSE/ISC) with Physics, Chemistry, and Biology with a minimum aggregate of 50% (45% for OBC, 40% for SC/ST). Admission is based on merit and counselling. JKKN is affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai.",
       },
     },
     {
@@ -165,7 +157,7 @@ const faqSchema = {
       name: "Why choose JKKN AHS near Erode over colleges in Coimbatore?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "JKKN AHS is ~18 km from Erode on NH-544, with direct clinical exposure at the JKKN Hospital from Year 1 and strong local industry connections for placements. The NH-544 location also means easy access to opportunities in both Erode and Coimbatore.",
+        text: "JKKN AHS is ~18 km from Erode on NH-544, with clinical training at partner hospitals and local industry connections for placements. The NH-544 location also means easy access to opportunities in both Erode and Coimbatore.",
       },
     },
   ],
@@ -189,7 +181,7 @@ const howToSchema = {
   description: "Step-by-step admission process for BSc Allied Health Sciences at JKKN College of Allied Health Sciences, near Erode.",
   totalTime: "P14D",
   step: [
-    { "@type": "HowToStep", position: 1, name: "Check Eligibility", text: "Ensure you have passed 12th standard (HSC/CBSE/ISC) with Physics, Chemistry, and Biology with minimum 50% aggregate (40% for reserved categories)." },
+    { "@type": "HowToStep", position: 1, name: "Check Eligibility", text: "Ensure you have passed 12th standard (HSC/CBSE/ISC) with Physics, Chemistry, and Biology with minimum 50% aggregate (45% for OBC, 40% for SC/ST)." },
     { "@type": "HowToStep", position: 2, name: "Apply Online", text: "Visit https://www.jkkn.ai/apply/jkkn-admission-2026 and fill out the online application form with your personal and academic details." },
     { "@type": "HowToStep", position: 3, name: "Submit Documents", text: "Upload or submit 12th mark sheet, community certificate, Aadhaar card, passport-size photos, and transfer certificate." },
     { "@type": "HowToStep", position: 4, name: "Attend Counselling", text: "Attend the admission counselling session at JKKN campus or online. Select your preferred BSc programme from 9 available options." },

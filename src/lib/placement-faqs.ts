@@ -14,11 +14,11 @@ export const PLACEMENT_FAQS = [
     },
     {
         question: "Which hospitals recruit from JKKN AHS?",
-        answer: "Recruiters include Apollo Hospitals, MIOT International, Fortis Healthcare, Manipal Hospitals, Kauvery Hospital, Columbia Asia, Narayana Health, GEM Hospital, SRL Diagnostics, Thyrocare, and Dr. Lal PathLabs. International recruiters include NHS UK and hospitals in UAE, Saudi Arabia, and Singapore."
+        answer: "Recruiters include Apollo Hospitals, MIOT International, Fortis Healthcare, Manipal Hospitals, Kauvery Hospital, Columbia Asia, Narayana Health, GEM Hospital, SRL Diagnostics, Thyrocare, and Dr. Lal PathLabs."
     },
     {
         question: "Can I work abroad after B.Sc. AHS from JKKN?",
-        answer: "Yes, JKKN actively supports international placements. Graduates have been placed in NHS hospitals (UK), Cleveland Clinic Abu Dhabi and NMC Healthcare (UAE), King Fahad and Saudi German hospitals (Saudi Arabia), and Tan Tock Seng and Raffles Medical (Singapore). JKKN provides IELTS preparation, visa guidance, and international protocol training to facilitate overseas careers."
+        answer: "Yes. JKKN's placement cell supports graduates who want to work abroad, with IELTS preparation, visa guidance and international protocol training. The college publishes no audited international placement figures; the cell can share current, verifiable numbers on request."
     },
     {
         question: "What is the highest salary package at JKKN AHS?",

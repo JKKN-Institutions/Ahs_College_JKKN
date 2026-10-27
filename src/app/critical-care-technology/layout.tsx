@@ -4,7 +4,7 @@ import { CC_LIST_SOURCE, CC_GOVT_COLLEGES, CC_JKKN_SEATS } from "@/lib/critical-
 
 export const metadata = createPageMetadata({
   title: "BSc Critical Care Technology Course Details | JKKN",
-  description: `BSc Critical Care Technology course details at JKKN, Komarapalayam: ${CC_JKKN_SEATS} seats, 3+1 years. Plus the ${CC_LIST_SOURCE.totalInstitutions} colleges in Tamilnadu (${CC_GOVT_COLLEGES.length} govt) that offer it. NAAC A.`,
+  description: `BSc Critical Care Technology course details at JKKN, Komarapalayam: ${CC_JKKN_SEATS} seats, 3+1 years. Plus the ${CC_LIST_SOURCE.totalInstitutions} colleges in Tamilnadu (${CC_GOVT_COLLEGES.length} govt) that offer it.`,
   path: "/critical-care-technology",
   keywords: [
     "bsc critical care technology college in tamilnadu",
