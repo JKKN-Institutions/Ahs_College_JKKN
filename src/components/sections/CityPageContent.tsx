@@ -545,7 +545,7 @@ function HowToReachSection({ city }: { city: CityPage }) {
     {
       icon: Train,
       label: "NEAREST RAILWAY STATION",
-      desc: "Erode Junction (~35 km from campus)",
+      desc: "Erode Junction (~21 km from campus)",
     },
     {
       icon: Plane,
