@@ -9,11 +9,6 @@ export interface SyllabusYear {
     topics: string[];
 }
 
-export interface RegionRecruiters {
-    region: string;
-    hospitals: string[];
-}
-
 export interface HigherStudy {
     name: string;
     description: string;
@@ -43,7 +38,6 @@ export interface AdmissionCourse {
     eligibility: string[];
     feeBreakdown: { label: string; value: string }[];
     roles: string[];
-    recruiters: string[];
     bestFor: string;
     internship: string;
     iconKey: string;
@@ -56,7 +50,6 @@ export interface AdmissionCourse {
     skills: string[];
     equipment: string[];
     dayInLife: string[];
-    recruitersByRegion: RegionRecruiters[];
     higherStudies: HigherStudy[];
 }
 
@@ -88,7 +81,6 @@ export const admissionCourses: AdmissionCourse[] = [
             { label: "Total (4 years, MQ)", value: "₹6,80,000" }
         ],
         roles: ["Cardiac Care Technologist", "Cath Lab Technologist", "Echo Technician", "TMT Technician", "EP Lab Specialist", "ICCU Technician", "Pacemaker Technologist", "Perfusionist (with further study)"],
-        recruiters: ["Apollo Hospitals", "Fortis Healthcare", "MIOT International", "Madras Medical Mission", "Kauvery Hospital", "Narayana Health", "Manipal Hospitals", "NHS UK", "Cleveland Clinic Abu Dhabi", "King Faisal Specialist Hospital (Saudi)"],
         bestFor: "Learners who want interventional cardiology work and the option of a career abroad.",
         internship: "1 year internship at partner hospitals — rotations across Cardiology OPD, CTVS, ICCU, Cath Lab, and Echo Lab.",
         iconKey: "heart-pulse",
@@ -145,12 +137,6 @@ export const admissionCourses: AdmissionCourse[] = [
             "04:00 PM — Round in ICCU; assist with bedside ECG, pacemaker checks, defibrillator readiness",
             "06:00 PM — On-call shift begins; respond to cardiac emergencies and Code Blue calls"
         ],
-        recruitersByRegion: [
-            { region: "India — Top Tier", hospitals: ["Apollo Hospitals", "Fortis Healthcare", "MIOT International", "Madras Medical Mission", "Narayana Health", "Manipal Hospitals", "Kauvery Hospital"] },
-            { region: "Gulf (UAE/Saudi/Qatar)", hospitals: ["Cleveland Clinic Abu Dhabi", "NMC Healthcare UAE", "King Faisal Specialist Hospital Saudi", "Aster DM Gulf", "Mediclinic Middle East"] },
-            { region: "UK / Europe", hospitals: ["NHS UK Trusts", "Bupa Cromwell Hospital", "King's College Hospital London"] },
-            { region: "Southeast Asia", hospitals: ["Mount Elizabeth Singapore", "Bumrungrad Thailand", "Gleneagles Singapore"] }
-        ],
         higherStudies: [
             { name: "MSc Cardiac Care Technology", description: "2-year specialisation — deeper expertise in interventional cardiology, EP studies, and cardiac imaging. Offered at TN MGR University and select private universities." },
             { name: "PG Diploma in Perfusion Technology", description: "1-year program to become a Cardiac Perfusionist — operates heart-lung machine during open-heart surgery." },
@@ -194,7 +180,6 @@ export const admissionCourses: AdmissionCourse[] = [
             { label: "Total (4 years, MQ)", value: "₹4,40,000" }
         ],
         roles: ["Dialysis Technologist", "Nephrology Technician", "CRRT Specialist", "Renal Transplant Technician", "Dialysis Unit In-charge", "Vascular Access Coordinator", "Water Treatment Specialist"],
-        recruiters: ["Apollo Dialysis", "NephroPlus", "DaVita Care India", "Fortis Renal", "MIOT Nephrology", "Aster DM Healthcare (Gulf)", "NMC Healthcare UAE", "PMNDP Centres (Govt)"],
         bestFor: "Learners wanting a stable, recession-proof healthcare career with strong demand in Tier-2/3 cities and Gulf countries.",
         internship: "1 year clinical internship in Nephrology, Dialysis Units, ICU-CRRT and renal centres at partner hospitals.",
         iconKey: "activity",
@@ -233,12 +218,6 @@ export const admissionCourses: AdmissionCourse[] = [
             "12:30 PM — Patient 2 cannulation begins; parallel lunch break with peer coverage",
             "04:30 PM — Patient 3 starts (afternoon shift); attend to CRRT call from ICU",
             "06:00 PM — End-of-day documentation, water treatment plant log, shift handover"
-        ],
-        recruitersByRegion: [
-            { region: "India — Dialysis Chains", hospitals: ["NephroPlus (100+ centres)", "DaVita Care India", "Apollo Dialysis", "Fresenius Medical Care", "B. Braun Avitum"] },
-            { region: "India — Hospital Renal Units", hospitals: ["Apollo Nephrology", "Fortis Renal", "MIOT", "Manipal", "Kauvery", "Aster Medcity"] },
-            { region: "Gulf", hospitals: ["NMC Healthcare UAE", "Aster DM Gulf", "Saudi German Hospital", "King Saud Medical City", "Hamad Medical Qatar"] },
-            { region: "Government — PMNDP", hospitals: ["District Hospitals (TN/AP/KA)", "ESI Dialysis Centres", "Government Medical Colleges"] }
         ],
         higherStudies: [
             { name: "MSc Renal Sciences / Dialysis Therapy Technology", description: "2-year specialisation. Opens academic and senior clinical roles. Offered at TN MGR University, Manipal, and select private universities." },
@@ -282,7 +261,6 @@ export const admissionCourses: AdmissionCourse[] = [
             { label: "Total (4 years, MQ)", value: "₹5,20,000" }
         ],
         roles: ["Radiology Technologist", "CT Technologist", "MRI Technologist", "Interventional Radiology Tech", "Mammography Specialist", "Sonographer", "PACS Administrator", "Cath Lab Imaging Tech"],
-        recruiters: ["Apollo Imaging", "Fortis Imaging", "Medall Diagnostics", "Aarthi Scans", "Vijaya Diagnostic", "NHS UK", "Bumrungrad Thailand", "Cleveland Clinic Abu Dhabi", "NMC Healthcare UAE"],
         bestFor: "Learners aiming for international careers (UK/Australia/Canada/Gulf).",
         internship: "1 year internship rotation across CT, MRI, Ultrasound, X-ray, Cath Lab, and Interventional Radiology at JKKN's hospital.",
         iconKey: "scan-line",
@@ -321,13 +299,6 @@ export const admissionCourses: AdmissionCourse[] = [
             "01:30 PM — MRI Scans — brain, spine, knee — patient screening for contraindications",
             "04:00 PM — Mammography & DEXA outpatient slot",
             "05:30 PM — On-call X-Ray for ER trauma cases; image upload to PACS, hand-off"
-        ],
-        recruitersByRegion: [
-            { region: "India — Hospital Imaging", hospitals: ["Apollo Imaging", "Fortis Imaging", "MIOT", "Manipal", "Kauvery", "Aster Medcity"] },
-            { region: "India — Diagnostic Chains", hospitals: ["Medall Diagnostics", "Aarthi Scans", "Vijaya Diagnostic", "Anderson Diagnostics", "Lucid Diagnostics", "Hindlabs"] },
-            { region: "UK", hospitals: ["NHS Trusts (chronic radiographer shortage)", "Bupa Cromwell Hospital", "King's College London", "Spire Healthcare"] },
-            { region: "Gulf", hospitals: ["Cleveland Clinic Abu Dhabi", "NMC Healthcare UAE", "Mediclinic Middle East", "Aster Gulf", "KFSH Saudi"] },
-            { region: "Australia / Canada", hospitals: ["AHPRA-registered Hospitals (AU)", "I-MED Radiology Network (AU)", "CAMRT-certified Hospitals (CA)"] }
         ],
         higherStudies: [
             { name: "MSc Medical Imaging Technology", description: "2-year specialisation. Opens senior clinical and academic roles. TN MGR University, AIIMS, PGI Chandigarh offer programs." },
@@ -372,7 +343,6 @@ export const admissionCourses: AdmissionCourse[] = [
             { label: "Total (4 years, MQ)", value: "₹6,80,000" }
         ],
         roles: ["OT Technologist", "Anaesthesia Technician", "Surgical Technologist", "Peri-Operative Coordinator", "OT In-charge", "CSSD In-charge", "Robotic Surgery Tech", "Transplant OT Coordinator"],
-        recruiters: ["Apollo Hospitals", "Fortis Healthcare", "MIOT International", "Manipal Hospitals", "Kauvery Hospital", "Narayana Health", "Aster DM (UAE/Saudi)", "Mediclinic Middle East", "NMC Healthcare"],
         bestFor: "Learners who enjoy fast-paced surgical environments and want broad multi-speciality OT exposure with reliable placement.",
         internship: "1 year rotation across General Surgery, Ortho, Neuro, Cardiac, OB-GYN, Paediatric, and Day-Care OTs at partner hospitals.",
         iconKey: "scissors",
@@ -412,12 +382,6 @@ export const admissionCourses: AdmissionCourse[] = [
             "03:00 PM — Lunch + CSSD inspection",
             "04:00 PM — Emergency C-section case; on-call until 6 PM",
             "06:00 PM — Day-end logbook, instrument count, shift handover"
-        ],
-        recruitersByRegion: [
-            { region: "India — Multi-Speciality", hospitals: ["Apollo Hospitals", "Fortis Healthcare", "MIOT International", "Manipal Hospitals", "Kauvery", "Narayana Health"] },
-            { region: "India — Day-Care & Robotic", hospitals: ["Apollo Day Care", "Vasan Health Care", "Sankara Eye Care", "Robotic Surgery Centres"] },
-            { region: "Gulf", hospitals: ["Aster DM Healthcare", "NMC Healthcare UAE", "Mediclinic Middle East", "Saudi German Hospital", "Hamad Medical Qatar"] },
-            { region: "Southeast Asia", hospitals: ["Mount Elizabeth Singapore", "Bumrungrad Thailand", "Gleneagles Malaysia"] }
         ],
         higherStudies: [
             { name: "MSc OT & Anaesthesia Technology", description: "2-year specialisation. Opens senior OT In-charge and academic roles. Offered at TN MGR University and select private universities." },
@@ -462,7 +426,6 @@ export const admissionCourses: AdmissionCourse[] = [
             { label: "Total (4 years, MQ)", value: "₹4,40,000" }
         ],
         roles: ["Respiratory Therapist", "Ventilator Specialist", "ECMO Specialist", "Pulmonary Rehab Therapist", "Sleep Lab Technician", "Neonatal RT", "ICU Respiratory Care Lead", "Home Ventilation Coordinator"],
-        recruiters: ["Apollo Critical Care", "Fortis ICU", "MIOT Pulmonology", "CMC Vellore", "AIIMS", "Manipal", "NHS UK", "Saudi German Hospital", "Cleveland Clinic UAE"],
         bestFor: "Learners drawn to critical care, ICU work, and post-COVID high-demand respiratory medicine — with strong abroad migration pathways.",
         internship: "1 year ICU + Pulmonology rotation at JKKN — adult MICU, SICU, neonatal NICU, paediatric PICU, and Sleep Lab postings.",
         iconKey: "wind",
@@ -503,13 +466,6 @@ export const admissionCourses: AdmissionCourse[] = [
             "02:00 PM — Pulmonary function testing (PFT) for OPD patients",
             "04:00 PM — Pulmonary rehab session with COPD patient",
             "06:00 PM — Evening ventilator round + handover; on-call for night emergencies"
-        ],
-        recruitersByRegion: [
-            { region: "India — Critical Care", hospitals: ["Apollo Critical Care", "Fortis ICU", "MIOT", "Manipal", "Kauvery", "Aster"] },
-            { region: "India — Teaching Hospitals", hospitals: ["CMC Vellore", "AIIMS Delhi", "PGI Chandigarh", "JIPMER", "St. John's Bangalore"] },
-            { region: "Gulf", hospitals: ["Cleveland Clinic Abu Dhabi", "Saudi German Hospital", "Aster Gulf", "King Faisal Specialist Hospital"] },
-            { region: "UK / Canada / Australia", hospitals: ["NHS Trusts (UK)", "AHPRA-registered Hospitals (AU)", "CSRT-certified Hospitals (CA)"] },
-            { region: "USA (Post-Bridge)", hospitals: ["Mayo Clinic", "Cleveland Clinic Ohio", "Johns Hopkins", "Massachusetts General"] }
         ],
         higherStudies: [
             { name: "MSc Respiratory Therapy", description: "2-year specialisation. Opens academic, ICU lead, and ECMO Specialist roles. Offered at Manipal, KMCT, and select institutions." },
@@ -554,7 +510,6 @@ export const admissionCourses: AdmissionCourse[] = [
             { label: "Total (4 years, MQ)", value: "₹5,20,000" }
         ],
         roles: ["Physician Associate", "Clinical Assistant", "Cardiology PA", "Oncology PA", "Emergency PA", "Surgical First Assistant", "Medical Officer Assistant", "Health Coach"],
-        recruiters: ["Apollo Hospitals", "Fortis Healthcare", "Manipal Hospitals", "Aster Medcity", "Narayana Health", "Kauvery Hospital", "Pathway to US PA / UK Physician Associate"],
         bestFor: "Learners who want a doctor-adjacent clinical role and a bridge to international PA careers.",
         internship: "1 year rotation across General Medicine, Cardiology, Neurology, Oncology, OB-GYN, Paediatrics, and Emergency at partner hospitals.",
         iconKey: "user-check",
@@ -594,12 +549,6 @@ export const admissionCourses: AdmissionCourse[] = [
             "02:30 PM — Speciality clinic (Cardiology) — pre-rounds, ECG interpretation, patient counselling",
             "05:00 PM — Emergency Department coverage — initial triage, history, basic procedures",
             "07:00 PM — End-of-day documentation, handover, on-call shift begins"
-        ],
-        recruitersByRegion: [
-            { region: "India — Corporate Hospitals", hospitals: ["Apollo Hospitals", "Fortis Healthcare", "Manipal Hospitals", "Aster Medcity", "Narayana Health", "Kauvery"] },
-            { region: "India — Speciality Clinics", hospitals: ["Cardiology Chains", "Oncology Day Care Centres", "Emergency Care Networks (108)"] },
-            { region: "UK — Physician Associate", hospitals: ["NHS Trusts (UK PA registration required)", "Private practice clinics"] },
-            { region: "USA (Post-Bridge)", hospitals: ["Mayo Clinic", "Cleveland Clinic", "Kaiser Permanente", "HCA Healthcare"] }
         ],
         higherStudies: [
             { name: "MSc Physician Assistant", description: "2-year specialisation in India. Opens senior clinical and academic roles. Offered at Manipal and select universities." },
@@ -643,7 +592,6 @@ export const admissionCourses: AdmissionCourse[] = [
             { label: "Total (4 years, MQ)", value: "₹4,40,000" }
         ],
         roles: ["Critical Care Technologist", "ICU Technician", "ECMO Specialist", "NICU/PICU Specialist", "CRRT Specialist", "Code Blue Team Member", "ICU In-charge", "Cardiac ICU Tech"],
-        recruiters: ["Apollo Critical Care", "Fortis ICU", "MIOT", "Manipal Hospitals", "Kauvery Hospital", "Narayana Health", "Mediclinic Middle East", "Saudi German Hospital", "Aster Gulf"],
         bestFor: "Learners passionate about intensive care, ECMO, and life-support technology — high-pressure but extremely rewarding clinical work.",
         internship: "1 year rotation across MICU, SICU, CCU, NICU, PICU, and ECMO unit at partner hospitals.",
         iconKey: "siren",
@@ -684,12 +632,6 @@ export const admissionCourses: AdmissionCourse[] = [
             "02:00 PM — CRRT setup for AKI patient in SICU",
             "04:00 PM — NICU rotation — neonatal ventilator management for premature infant",
             "07:00 PM — End-of-shift documentation; on-call coverage begins for night ICU"
-        ],
-        recruitersByRegion: [
-            { region: "India — Critical Care", hospitals: ["Apollo Critical Care", "Fortis ICU", "MIOT", "Manipal", "Kauvery", "Narayana Health", "Aster Medcity"] },
-            { region: "India — Teaching Hospitals", hospitals: ["CMC Vellore", "AIIMS", "PGI Chandigarh", "JIPMER", "Sree Chitra Tirunal"] },
-            { region: "Gulf", hospitals: ["Cleveland Clinic Abu Dhabi", "Mediclinic Middle East", "Saudi German Hospital", "Aster Gulf", "Hamad Medical Qatar"] },
-            { region: "UK / Singapore", hospitals: ["NHS UK Trusts", "Mount Elizabeth Singapore", "Gleneagles Singapore", "Raffles Hospital"] }
         ],
         higherStudies: [
             { name: "MSc Critical Care Technology", description: "2-year specialisation. Opens academic and ICU lead roles. Offered at TN MGR University, Manipal, and select universities." },
@@ -734,7 +676,6 @@ export const admissionCourses: AdmissionCourse[] = [
             { label: "Total (4 years, MQ)", value: "₹2,40,000" }
         ],
         roles: ["Medical Record Officer", "Medical Coder (ICD-10/CPT)", "HIM Specialist", "Insurance / TPA Coordinator", "Hospital Data Analyst", "EMR Administrator", "Healthcare Quality Officer", "Medical Auditor"],
-        recruiters: ["Apollo Health Information", "Fortis HIM", "Optum (UHG)", "Cognizant Healthcare", "Omega Healthcare", "AGS Health", "IKS Health", "Star Health Insurance", "ICICI Lombard"],
         bestFor: "Learners who want the lowest fee (₹60K/yr), office-based work, work-from-home roles, and entry into healthcare IT / US medical coding.",
         internship: "1 year rotation in Medical Records, HIM, Insurance/TPA, Healthcare Quality, and Health Analytics departments.",
         iconKey: "file-text",
@@ -775,12 +716,6 @@ export const admissionCourses: AdmissionCourse[] = [
             "04:00 PM — Audit pending records for completeness; flag missing documentation",
             "05:30 PM — Generate reports for clinical heads; coordinate with billing team",
             "06:30 PM — Day-end documentation, prepare next day's chart queue"
-        ],
-        recruitersByRegion: [
-            { region: "India — US Medical Coding (BPO)", hospitals: ["Optum (UnitedHealth Group)", "Cognizant Healthcare", "Omega Healthcare", "AGS Health", "IKS Health", "R1 RCM"] },
-            { region: "India — Hospital HIM", hospitals: ["Apollo Health Information", "Fortis HIM", "Manipal Health Records", "Kauvery Quality Cell", "Aster Medcity HIM"] },
-            { region: "India — Insurance / TPA", hospitals: ["Star Health Insurance", "ICICI Lombard", "Bajaj Allianz", "HDFC ERGO", "Medi Assist", "FHPL"] },
-            { region: "Healthcare Analytics", hospitals: ["IQVIA", "Cognizant Health Analytics", "Optum Analytics", "Accenture Health"] }
         ],
         higherStudies: [
             { name: "MSc Health Information Management", description: "2-year specialisation. Opens senior HIM, Healthcare Analytics, and academic roles. Offered at Manipal, JIPMER, and select universities." },
@@ -825,7 +760,6 @@ export const admissionCourses: AdmissionCourse[] = [
             { label: "Total (4 years, MQ)", value: "₹4,40,000" }
         ],
         roles: ["Emergency Medical Technologist", "Trauma Care Specialist", "Ambulance Paramedic", "ER Triage Officer", "Disaster Response Specialist", "108/EMRI Officer", "Flight Paramedic", "ER In-charge"],
-        recruiters: ["Apollo Emergency", "Fortis ER", "MIOT Trauma", "GVK EMRI (108 Services)", "Ziqitza Healthcare", "Mediclinic Middle East", "Saudi Red Crescent", "Aster DM Healthcare"],
         bestFor: "Learners who thrive in fast-paced, high-stakes trauma and emergency medicine — drawn to saving lives in critical moments.",
         internship: "1 year rotation in ER, Trauma Bay, Ambulance Service, Disaster Management cell, and Toxicology unit at partner hospitals.",
         iconKey: "siren",
@@ -865,12 +799,6 @@ export const admissionCourses: AdmissionCourse[] = [
             "01:00 PM — Ambulance (108) call — pre-hospital response to cardiac arrest at residence; CPR + transport",
             "03:30 PM — Toxicology case — pesticide poisoning; antidote administration assist",
             "06:00 PM — End-of-shift documentation, handover; on-call standby for disaster"
-        ],
-        recruitersByRegion: [
-            { region: "India — Emergency Departments", hospitals: ["Apollo Emergency", "Fortis ER", "MIOT Trauma", "Manipal Emergency", "Kauvery ER", "Aster Medcity Emergency"] },
-            { region: "India — Ambulance Networks", hospitals: ["GVK EMRI (108 Services)", "Ziqitza Healthcare", "Apollo HomeCare Ambulance", "Star Ambulance Services"] },
-            { region: "Gulf", hospitals: ["Saudi Red Crescent Authority", "Mediclinic Middle East", "NMC Healthcare UAE", "Hamad Medical Qatar", "Aster DM Gulf"] },
-            { region: "Government / Disaster Response", hospitals: ["State Disaster Response Force (SDRF)", "NDRF Medical Teams", "TN Govt Trauma Centres"] }
         ],
         higherStudies: [
             { name: "MSc Emergency Medicine / Trauma Care", description: "2-year specialisation. Opens senior ER lead and academic roles. Offered at Manipal, Christian Medical College (CMC), and select universities." },

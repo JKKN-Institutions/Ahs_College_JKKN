@@ -10,10 +10,10 @@ import { siteConfig } from "@/lib/site-config";
 import type { AdmissionCourse } from "@/lib/admission-courses";
 import {
     Clock, IndianRupee, Users, TrendingUp, CheckCircle2, Briefcase,
-    Building2, Stethoscope, Target, ArrowRight, ChevronRight,
+    Stethoscope, Target, ArrowRight, ChevronRight,
     Phone, Mail, MapPin, Plus, Minus, HeartPulse, Activity, ScanLine,
     Scissors, Wind, UserCheck, Siren, FileText, BookOpen, GraduationCap,
-    Wrench, Zap, Globe, Star
+    Wrench, Zap, Star
 } from "lucide-react";
 import AhsEnquiryForm from "@/components/lead/AhsEnquiryForm";
 import { DEFAULT_PROGRAMME_BY_PAGE } from "@/lib/ahs-programmes";
@@ -57,7 +57,6 @@ export default function CourseAdmissionPageContent({ course, otherCourses }: Pro
                 <SyllabusSection course={course} />
                 <SkillsSection course={course} />
                 <EquipmentSection course={course} />
-                <RecruitersByRegionSection course={course} />
                 <InternshipBlock course={course} />
                 <CareerScopeSection course={course} />
                 <HigherStudiesSection course={course} />
@@ -221,15 +220,6 @@ function DetailGrid({ course }: { course: AdmissionCourse }) {
                         </div>
                     </DetailCard>
 
-                    <DetailCard icon={<Building2 className="w-5 h-5" />} title="Hospitals That Hire These Graduates" accent="border-l-[6px] border-[#042d1a]">
-                        <div className="flex flex-wrap gap-2">
-                            {course.recruiters.map((r, i) => (
-                                <span key={i} className="text-xs font-medium text-gray-700 bg-gray-100 px-3 py-1.5 rounded-full">
-                                    {r}
-                                </span>
-                            ))}
-                        </div>
-                    </DetailCard>
                 </div>
             </div>
         </section>
@@ -485,44 +475,6 @@ function EquipmentSection({ course }: { course: AdmissionCourse }) {
                                 <Wrench className="w-4 h-4" />
                             </div>
                             <p className="text-xs sm:text-sm font-semibold text-gray-800 leading-tight min-w-0 break-words">{eq}</p>
-                        </motion.div>
-                    ))}
-                </div>
-            </div>
-        </section>
-    );
-}
-
-function RecruitersByRegionSection({ course }: { course: AdmissionCourse }) {
-    return (
-        <section className="py-12 md:py-16 bg-white">
-            <div className="max-w-6xl mx-auto px-4">
-                <div className="text-center mb-10">
-                    <span className="text-[#0b6d41] font-bold tracking-widest uppercase text-xs mb-2 p-1 bg-[#0b6d41]/10 rounded inline-block">Where You'll Work</span>
-                    <h2 className="text-2xl md:text-3xl font-black text-[#0b6d41] mt-2">Top Recruiters by Region</h2>
-                    <p className="text-sm text-gray-600 mt-2 max-w-2xl mx-auto">Hospitals and organisations that actively hire {course.shortName} graduates — categorised by region.</p>
-                </div>
-                <div className="grid md:grid-cols-2 gap-5">
-                    {course.recruitersByRegion.map((r, i) => (
-                        <motion.div
-                            key={i}
-                            initial={{ opacity: 0, y: 15 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: i * 0.07 }}
-                            className="bg-[#fbfbee] rounded-2xl p-5 border-l-4 border-[#0b6d41] shadow-sm"
-                        >
-                            <div className="flex items-center gap-2 mb-3">
-                                <Globe className="w-5 h-5 text-[#0b6d41]" />
-                                <h3 className="text-base font-bold text-[#0b6d41]">{r.region}</h3>
-                            </div>
-                            <div className="flex flex-wrap gap-2">
-                                {r.hospitals.map((h, j) => (
-                                    <span key={j} className="text-xs font-medium text-gray-700 bg-white border border-gray-200 px-3 py-1 rounded-full">
-                                        {h}
-                                    </span>
-                                ))}
-                            </div>
                         </motion.div>
                     ))}
                 </div>
