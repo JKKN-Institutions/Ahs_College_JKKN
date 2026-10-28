@@ -4,7 +4,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteConfig } from "@/lib/site-config";
 import { AHS_TN_TOTAL, AHS_TN_GOVT, AHS_LIST_SOURCE } from "@/lib/ahs-colleges-tn";
-import { JKKN_PARAMEDICAL_COURSES, JKKN_PARAMEDICAL_SEATS } from "./courses";
+import { JKKN_PARAMEDICAL_COURSES, JKKN_PARAMEDICAL_SEATS, JKKN_PARAMEDICAL_FEE_MIN, JKKN_PARAMEDICAL_FEE_MAX, inr } from "./courses";
 import { PARAMEDICAL_FAQS } from "./faqs";
 
 // Server-rendered: every table row and FAQ answer is in the HTML a crawler receives.
@@ -23,10 +23,11 @@ export default function ParamedicalCollegePage() {
               Paramedical College in Tamil Nadu - JKKN Paramedical Courses 2026-27
             </h1>
             <p className="snippet-answer text-gray-900 text-base leading-relaxed mb-4">
-              JKKN College of Allied Health Sciences is a paramedical (allied health) college on NH-544 in
-              Komarapalayam, Namakkal district, Tamil Nadu. It offers {JKKN_PARAMEDICAL_COURSES.length} four-year B.Sc
-              paramedical courses with {JKKN_PARAMEDICAL_SEATS} sanctioned seats, affiliated to The Tamil Nadu Dr.
-              M.G.R. Medical University. Admissions for 2026-27 are open.
+              JKKN College of Allied Health Sciences, a private college on NH-544 at Komarapalayam in Namakkal
+              district, offers {JKKN_PARAMEDICAL_COURSES.length} four-year paramedical (allied health) courses with{" "}
+              {JKKN_PARAMEDICAL_SEATS} seats sanctioned by The Tamil Nadu Dr. M.G.R. Medical University.
+              Government-quota seats are allotted by the Tamil Nadu Selection Committee; management-quota fees are{" "}
+              {inr(JKKN_PARAMEDICAL_FEE_MIN)} to {inr(JKKN_PARAMEDICAL_FEE_MAX)} a year. Admissions for 2026-27 are open.
             </p>
             <a
               href={siteConfig.admissionFormUrl}
@@ -63,6 +64,7 @@ export default function ParamedicalCollegePage() {
                     <th scope="col" className="px-4 py-3 font-bold">Course</th>
                     <th scope="col" className="px-4 py-3 font-bold">Duration</th>
                     <th scope="col" className="px-4 py-3 font-bold text-right">Seats</th>
+                    <th scope="col" className="px-4 py-3 font-bold text-right">Management-quota tuition a year, 2026-27</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -73,18 +75,20 @@ export default function ParamedicalCollegePage() {
                       </td>
                       <td className="px-4 py-3 text-gray-700">3 years + 1 year internship</td>
                       <td className="px-4 py-3 text-gray-900 text-right">{c.seats}</td>
+                      <td className="px-4 py-3 text-gray-900 text-right whitespace-nowrap">{inr(c.fee)}</td>
                     </tr>
                   ))}
                   <tr className="border-t border-gray-200 bg-[#f0f7f2] font-bold">
                     <td className="px-4 py-3">Total</td>
                     <td className="px-4 py-3"></td>
                     <td className="px-4 py-3 text-right">{JKKN_PARAMEDICAL_SEATS}</td>
+                    <td className="px-4 py-3 text-right font-normal text-gray-700">Government quota: as per government norms</td>
                   </tr>
                 </tbody>
               </table>
             </div>
             <p className="text-xs text-gray-500 mt-3">
-              Seats: sanctioned intake on {AHS_LIST_SOURCE.title}, institution code 825. Fees:{" "}
+              Seats: sanctioned intake on {AHS_LIST_SOURCE.title}, institution code 825. Fees: management quota,{" "}
               <Link href="/fee-structure" className="underline">fee structure 2026-27</Link>.
             </p>
           </div>
@@ -133,6 +137,7 @@ export default function ParamedicalCollegePage() {
                 <div key={f.q}>
                   <h3 className="font-bold text-gray-900 mb-1">{f.q}</h3>
                   <p className="faq-answer text-gray-800 text-sm leading-relaxed">{f.a}</p>
+                  {f.voice && <p className="text-xs text-[#0b6d41] mt-1">Also asked: {f.voice}</p>}
                 </div>
               ))}
             </div>

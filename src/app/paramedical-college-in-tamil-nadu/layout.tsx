@@ -1,13 +1,13 @@
 import { createPageMetadata } from "@/lib/metadata";
 import { PARAMEDICAL_FAQS } from "./faqs";
-import { JKKN_PARAMEDICAL_COURSES, JKKN_PARAMEDICAL_SEATS } from "./courses";
+import { JKKN_PARAMEDICAL_COURSES, JKKN_PARAMEDICAL_SEATS, JKKN_PARAMEDICAL_FEE_MIN, JKKN_PARAMEDICAL_FEE_MAX, inr } from "./courses";
 
 // GL6-327. The site never used the word "paramedical", so "paramedical colleges in tamilnadu" had
 // ZERO impressions (GSC 2026-06-24..09-21). User decision 2026-09-24: a separate paramedical page
 // about JKKN's own paramedical courses - NOT a list of other colleges.
 export const metadata = createPageMetadata({
   title: "Paramedical College in Tamil Nadu - JKKN Paramedical Courses 2026-27",
-  description: `JKKN College of Allied Health Sciences, Komarapalayam, Namakkal district: ${JKKN_PARAMEDICAL_COURSES.length} B.Sc paramedical (allied health) courses, ${JKKN_PARAMEDICAL_SEATS} seats, affiliated to TN Dr. M.G.R. Medical University. Eligibility, admission 2026-27.`,
+  description: `JKKN College of Allied Health Sciences, Komarapalayam: ${JKKN_PARAMEDICAL_COURSES.length} paramedical courses, ${JKKN_PARAMEDICAL_SEATS} university-sanctioned seats, fees ${inr(JKKN_PARAMEDICAL_FEE_MIN)} to ${inr(JKKN_PARAMEDICAL_FEE_MAX)} a year. Admission 2026-27.`,
   path: "/paramedical-college-in-tamil-nadu",
   keywords: [
     "paramedical colleges in tamilnadu",

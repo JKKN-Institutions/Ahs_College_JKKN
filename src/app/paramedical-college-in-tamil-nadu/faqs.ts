@@ -1,8 +1,18 @@
 import { AHS_TN_TOTAL, AHS_TN_GOVT, AHS_LIST_SOURCE } from "@/lib/ahs-colleges-tn";
-import { JKKN_PARAMEDICAL_COURSES, JKKN_PARAMEDICAL_SEATS } from "./courses";
+import { JKKN_PARAMEDICAL_COURSES, JKKN_PARAMEDICAL_SEATS, inr } from "./courses";
+
+// "Cardiac Technology and Anaesthesia ...": the courses that share one fee, highest fee first.
+const FEE_GROUPS = Array.from(new Set(JKKN_PARAMEDICAL_COURSES.map((c) => c.fee)))
+  .sort((a, b) => b - a)
+  .map((fee) => {
+    const names = JKKN_PARAMEDICAL_COURSES.filter((c) => c.fee === fee).map((c) => c.short);
+    const list = names.length > 1 ? `${names.slice(0, -1).join(", ")} and ${names[names.length - 1]}` : names[0];
+    return `${inr(fee)} for ${list}`;
+  });
 
 // One array feeds both the visible FAQ and the FAQPage schema. Numbers are derived, never typed.
-export const PARAMEDICAL_FAQS: { q: string; a: string }[] = [
+// voice = the spoken Tanglish form, shown under the answer as "Also asked"; it is not part of the JSON-LD.
+export const PARAMEDICAL_FAQS: { q: string; a: string; voice?: string }[] = [
   {
     q: "Is JKKN College of Allied Health Sciences a paramedical college?",
     a: `Yes. Its ${JKKN_PARAMEDICAL_COURSES.length} B.Sc programmes are paramedical (allied health) degree courses affiliated to The Tamil Nadu Dr. M.G.R. Medical University. The university lists them under J.K.K. Nattraja Dental College & Hospital, institution code 825, Kumarapalayam, Namakkal district.`,
@@ -22,6 +32,16 @@ export const PARAMEDICAL_FAQS: { q: string; a: string }[] = [
   {
     q: "How long is a paramedical degree at JKKN?",
     a: "Four years: three years of study and one year of compulsory internship.",
+  },
+  {
+    q: "What are the fees for paramedical courses at JKKN?",
+    a: `Management-quota tuition for 2026-27 at JKKN College of Allied Health Sciences is ${FEE_GROUPS.slice(0, -1).join(", ")} and ${FEE_GROUPS[FEE_GROUPS.length - 1]} a year. Government-quota fees follow government norms.`,
+    voice: "JKKN la paramedical course fees evlo?",
+  },
+  {
+    q: "Is Government Medical College, Namakkal the same as JKKN College of Allied Health Sciences?",
+    a: `No. Government Medical College, Namakkal is a separate government college. JKKN College of Allied Health Sciences is a private college at Komarapalayam on NH-544, about 65 km from Namakkal town, whose ${JKKN_PARAMEDICAL_COURSES.length} courses the university lists under J.K.K. Nattraja Dental College & Hospital, institution code 825.`,
+    voice: "Namakkal Government Medical College um JKKN AHS um onnaa?",
   },
   {
     q: "How many paramedical colleges are there in Tamil Nadu?",
