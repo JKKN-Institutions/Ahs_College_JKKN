@@ -63,6 +63,12 @@ export default function ErodePage() {
             {
               q: "What are the fees for BSc allied health science in Tamil Nadu?",
               a: "Management-quota tuition at JKKN College of Allied Health Sciences for 2026-27 is ₹1,70,000 a year for Cardiac Technology and Anaesthesia & OT Technology, ₹1,30,000 for Medical Radiology & Imaging and Physician Associates, ₹1,10,000 for Dialysis Therapy, Respiratory Technology, Critical Care and Emergency Medical Technologist, and ₹60,000 for Health Information Management. Government-quota fees follow government norms.",
+              voice: "JKKN AHS fees evlo?",
+            },
+            {
+              q: "What does B.Sc Cardiac Technology at JKKN cover, and how many seats are there?",
+              a: "B.Sc Cardiac Technology at JKKN College of Allied Health Sciences is three years of study plus a one-year internship, covering ECG, echocardiography and cardiac catheterization. The university sanctions 7 seats for 2025-26. Eligibility is a Class 12 pass with Physics, Chemistry and Biology, without NEET; management-quota tuition is ₹1,70,000 a year.",
+              voice: "JKKN la Cardiac Technology la enna padippaanga, evlo seats?",
             },
             {
               q: "What is the salary after BSc allied health science?",
@@ -74,7 +80,7 @@ export default function ErodePage() {
             },
             {
               q: "What are the eligibility requirements for allied health science courses?",
-              a: "To pursue BSc Allied Health Sciences at JKKN AHS, candidates must have passed 12th standard (HSC/CBSE/ISC) with Physics, Chemistry, and Biology with a minimum aggregate of 50% (45% for OBC, 40% for SC/ST). Admission is based on merit and counselling. JKKN is affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai.",
+              a: "Under the Tamil Nadu 2026-27 allied health prospectus, you need a Class 12 pass with English and Physics, Chemistry and Biology (or Botany and Zoology), and must be 17 by 31 December 2026; NEET is not required. For eight of JKKN's nine courses the prospectus sets no minimum percentage. Health Information Management needs 50% (40% for BC, BCM, MBC, DNC, SC, SCA and ST candidates) and also accepts Commerce or Arts; Anaesthesia and Operation Theatre Technology also accepts Mathematics.",
             },
             {
               q: "Are there healthcare career opportunities in Erode's textile industry?",
@@ -157,10 +163,11 @@ function HeroSection() {
 
         {/* Description */}
         <p className="text-white/85 text-base sm:text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
-          Erode to JKKN — a short, smooth ride on NH-544. JKKN College of Allied
-          Health Sciences offers top-tier allied health sciences programmes with
-          placement support — just ~18 km from Erode with excellent
-          highway connectivity.
+          JKKN College of Allied Health Sciences is about 18 km from Erode at
+          Komarapalayam, Namakkal district, on NH-544. It offers nine four-year
+          allied health degree courses, including B.Sc Cardiac Technology with 7
+          seats; The Tamil Nadu Dr. M.G.R. Medical University sanctions 82 seats
+          in all. Management-quota fees are ₹60,000 to ₹1,70,000 a year.
         </p>
 
         {/* Stats */}
@@ -347,6 +354,7 @@ function ProgrammesSection() {
       level: "UG",
       intake: "7 seats",
       eligibility: "10+2 with Physics, Chemistry, Biology",
+      fee: "₹1,70,000",
       link: "/cardiac-technology",
     },
     {
@@ -356,6 +364,7 @@ function ProgrammesSection() {
       level: "UG",
       intake: "5 seats",
       eligibility: "10+2 with Physics, Chemistry, Biology",
+      fee: "₹1,30,000",
       link: "/radiology-imaging-technology",
     },
     {
@@ -365,6 +374,7 @@ function ProgrammesSection() {
       level: "UG",
       intake: "5 seats",
       eligibility: "10+2 with Physics, Chemistry, Biology",
+      fee: "₹1,10,000",
       link: "/dialysis-technology",
     },
     {
@@ -373,7 +383,8 @@ function ProgrammesSection() {
       duration: "3 Years + 1 Year Internship",
       level: "UG",
       intake: "10 seats",
-      eligibility: "10+2 with Physics, Chemistry, Biology",
+      eligibility: "10+2 with Physics, Chemistry and Biology or Mathematics",
+      fee: "₹1,70,000",
       link: "/operation-theatre-anaesthesia",
     },
     {
@@ -383,6 +394,7 @@ function ProgrammesSection() {
       level: "UG",
       intake: "10 seats",
       eligibility: "10+2 with Physics, Chemistry, Biology",
+      fee: "₹1,10,000",
       link: "/respiratory-therapy",
     },
     {
@@ -392,6 +404,7 @@ function ProgrammesSection() {
       level: "UG",
       intake: "10 seats",
       eligibility: "10+2 with Physics, Chemistry, Biology",
+      fee: "₹1,30,000",
       link: "/physician-assistant",
     },
     {
@@ -401,6 +414,7 @@ function ProgrammesSection() {
       level: "UG",
       intake: "10 seats",
       eligibility: "10+2 with Physics, Chemistry, Biology",
+      fee: "₹1,10,000",
       link: "/critical-care-technology",
     },
     {
@@ -409,7 +423,8 @@ function ProgrammesSection() {
       duration: "3 Years + 1 Year Internship",
       level: "UG",
       intake: "15 seats",
-      eligibility: "10+2 with Physics, Chemistry, Biology",
+      eligibility: "10+2 with PCB, Commerce or Arts; 50% (40% BC/MBC/SC/ST)",
+      fee: "₹60,000",
       link: "/medical-record-science",
     },
     {
@@ -419,6 +434,7 @@ function ProgrammesSection() {
       level: "UG",
       intake: "10 seats",
       eligibility: "10+2 with Physics, Chemistry, Biology",
+      fee: "₹1,10,000",
       link: "/accident-emergency-care",
     },
   ];
@@ -475,6 +491,45 @@ function ProgrammesSection() {
           Intake = seats sanctioned by The Tamil Nadu Dr. M.G.R. Medical University, AHS affiliated
           colleges list 2025-26, institution code 825.
         </p>
+
+        <div className="mt-10 text-left">
+          <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-4 text-center">
+            Seats and Fees, Course by Course
+          </h3>
+          <div className="bg-white rounded-2xl shadow-sm overflow-hidden">
+            <table className="w-full text-xs sm:text-sm">
+              <thead className="bg-[#006837] text-white">
+                <tr>
+                  <th scope="col" className="px-3 py-3 text-left font-semibold">Course (3 years + 1-year internship)</th>
+                  <th scope="col" className="px-3 py-3 text-right font-semibold">Seats, 2025-26</th>
+                  <th scope="col" className="px-3 py-3 text-right font-semibold">Management-quota tuition a year, 2026-27</th>
+                </tr>
+              </thead>
+              <tbody>
+                {programmes.map((p) => (
+                  <tr key={p.link} className="border-t border-gray-100">
+                    <td className="px-3 py-2.5 text-gray-800">{p.name}</td>
+                    <td className="px-3 py-2.5 text-right text-gray-700 whitespace-nowrap">{parseInt(p.intake, 10)}</td>
+                    <td className="px-3 py-2.5 text-right text-gray-700 whitespace-nowrap">{p.fee}</td>
+                  </tr>
+                ))}
+              </tbody>
+              <tfoot>
+                <tr className="border-t-2 border-gray-200 font-bold">
+                  <td className="px-3 py-2.5 text-gray-900">Total</td>
+                  <td className="px-3 py-2.5 text-right text-gray-900">
+                    {programmes.reduce((sum, p) => sum + parseInt(p.intake, 10), 0)}
+                  </td>
+                  <td className="px-3 py-2.5"></td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+          <p className="text-xs text-gray-400 mt-3 text-center">
+            Government-quota fees: as per government norms. Seats: The Tamil Nadu Dr. M.G.R. Medical University,
+            AHS affiliated colleges 2025-26, institution code 825. Fees: JKKN AHS fee structure 2026-27.
+          </p>
+        </div>
       </div>
     </section>
   );
@@ -485,12 +540,6 @@ function ProgrammesSection() {
 ────────────────────────────────────────── */
 function PlacementHighlights() {
   const stats: { value: string; label: string }[] = [
-  ];
-
-  const companies = [
-    "Apollo Hospitals",
-    "Fortis Healthcare",
-    "Manipal Hospitals",
   ];
 
   return (
@@ -522,19 +571,6 @@ function PlacementHighlights() {
         </div>
         )}
 
-        <div className="text-xs text-gray-400 font-medium tracking-widest uppercase mb-4">
-          Companies That Hire From Us
-        </div>
-        <div className="flex flex-wrap justify-center gap-2">
-          {companies.map((c) => (
-            <span
-              key={c}
-              className="px-4 py-2 border border-gray-200 rounded-full text-sm text-gray-700"
-            >
-              {c}
-            </span>
-          ))}
-        </div>
         <Link href="/placements" className="inline-flex items-center gap-2 mt-6 text-[#006837] font-bold hover:underline text-sm">
             View full placement details <span aria-hidden="true">&rarr;</span>
         </Link>
@@ -561,7 +597,7 @@ function HowToReachSection() {
     {
       icon: Train,
       label: "NEAREST RAILWAY STATION",
-      desc: "Erode Junction (~35 km from campus)",
+      desc: "Erode Junction (~21 km from campus)",
     },
     {
       icon: Plane,

@@ -54,7 +54,7 @@ const breadcrumbSchema = {
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  dateModified: "2026-03-24",
+  dateModified: "2026-10-28",
   mainEntity: [
     {
       "@type": "Question",
@@ -114,6 +114,14 @@ const faqSchema = {
     },
     {
       "@type": "Question",
+      name: "What does B.Sc Cardiac Technology at JKKN cover, and how many seats are there?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "B.Sc Cardiac Technology at JKKN College of Allied Health Sciences is three years of study plus a one-year internship, covering ECG, echocardiography and cardiac catheterization. The university sanctions 7 seats for 2025-26. Eligibility is a Class 12 pass with Physics, Chemistry and Biology, without NEET; management-quota tuition is ₹1,70,000 a year.",
+      },
+    },
+    {
+      "@type": "Question",
       name: "What is the salary after BSc allied health science?",
       acceptedAnswer: {
         "@type": "Answer",
@@ -133,7 +141,7 @@ const faqSchema = {
       name: "What are the eligibility requirements for allied health science courses?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "To pursue BSc Allied Health Sciences at JKKN AHS, candidates must have passed 12th standard (HSC/CBSE/ISC) with Physics, Chemistry, and Biology with a minimum aggregate of 50% (45% for OBC, 40% for SC/ST). Admission is based on merit and counselling. JKKN is affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai.",
+        text: "Under the Tamil Nadu 2026-27 allied health prospectus, you need a Class 12 pass with English and Physics, Chemistry and Biology (or Botany and Zoology), and must be 17 by 31 December 2026; NEET is not required. For eight of JKKN's nine courses the prospectus sets no minimum percentage. Health Information Management needs 50% (40% for BC, BCM, MBC, DNC, SC, SCA and ST candidates) and also accepts Commerce or Arts; Anaesthesia and Operation Theatre Technology also accepts Mathematics.",
       },
     },
     {
@@ -181,7 +189,7 @@ const howToSchema = {
   description: "Step-by-step admission process for BSc Allied Health Sciences at JKKN College of Allied Health Sciences, near Erode.",
   totalTime: "P14D",
   step: [
-    { "@type": "HowToStep", position: 1, name: "Check Eligibility", text: "Ensure you have passed 12th standard (HSC/CBSE/ISC) with Physics, Chemistry, and Biology with minimum 50% aggregate (45% for OBC, 40% for SC/ST)." },
+    { "@type": "HowToStep", position: 1, name: "Check Eligibility", text: "Check that you have passed Class 12 with English and Physics, Chemistry and Biology (or Botany and Zoology) and will be 17 by 31 December 2026. Health Information Management needs 50% (40% for BC, BCM, MBC, DNC, SC, SCA and ST); the other courses set no minimum percentage." },
     { "@type": "HowToStep", position: 2, name: "Apply Online", text: "Visit https://www.jkkn.ai/apply/jkkn-admission-2026 and fill out the online application form with your personal and academic details." },
     { "@type": "HowToStep", position: 3, name: "Submit Documents", text: "Upload or submit 12th mark sheet, community certificate, Aadhaar card, passport-size photos, and transfer certificate." },
     { "@type": "HowToStep", position: 4, name: "Attend Counselling", text: "Attend the admission counselling session at JKKN campus or online. Select your preferred BSc programme from 9 available options." },

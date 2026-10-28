@@ -6,6 +6,8 @@ import { ChevronDown, ChevronUp } from "lucide-react";
 interface FAQ {
   q: string;
   a: string;
+  /** spoken Tanglish form of the question, shown under the answer as "Also asked"; not part of the JSON-LD */
+  voice?: string;
 }
 
 interface CityFAQAccordionProps {
@@ -57,6 +59,11 @@ export function CityFAQAccordion({ faqs, cityName }: CityFAQAccordionProps) {
               >
                 {faq.a}
               </div>
+              {faq.voice && (
+                <p className={`px-6 pb-5 -mt-3 text-xs text-[#006837] ${open === i ? "" : "hidden"}`}>
+                  Also asked: {faq.voice}
+                </p>
+              )}
             </div>
           ))}
         </div>
