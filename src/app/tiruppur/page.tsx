@@ -42,7 +42,7 @@ export default function TiruppurPage() {
           },
           {
             q: "What is Allied Health Sciences?",
-            a: "Allied Health Sciences are healthcare professions that support doctors and nurses in diagnosing, treating and monitoring patients. At JKKN College of Allied Health Sciences you can study nine B.Sc courses, including Cardiac Technology, Radiography and Imaging, Dialysis, Operation Theatre and Anaesthesia, Respiratory Therapy and Physician Assistant.",
+            a: "Allied Health Sciences are healthcare professions that support doctors and nurses in diagnosing, treating and monitoring patients. At JKKN College of Allied Health Sciences you can study nine B.Sc courses, including Cardiac Technology, Medical Radiology and Imaging, Dialysis Therapy, Anaesthesia and Operation Theatre, Respiratory Technology and Physician Associates.",
           },
           {
             q: "How is AHS different from nursing?",
@@ -58,7 +58,7 @@ export default function TiruppurPage() {
           },
           {
             q: "What are the fees for BSc allied health science in Tamil Nadu?",
-            a: "Management-quota tuition at JKKN College of Allied Health Sciences for 2026-27 is ₹1,70,000 a year for Cardiac Technology and Operation Theatre Technology, ₹1,30,000 for Radiography and Physician Assistant, ₹1,10,000 for Dialysis, Respiratory Therapy, Critical Care and Emergency Care, and ₹60,000 for Medical Record Science. Government-quota fees follow government norms.",
+            a: "Management-quota tuition at JKKN College of Allied Health Sciences for 2026-27 is ₹1,70,000 a year for Cardiac Technology and Anaesthesia & OT Technology, ₹1,30,000 for Medical Radiology & Imaging and Physician Associates, ₹1,10,000 for Dialysis Therapy, Respiratory Technology, Critical Care and Emergency Medical Technologist, and ₹60,000 for Health Information Management. Government-quota fees follow government norms.",
           },
           {
             q: "What is the salary after BSc allied health science?",
@@ -328,7 +328,7 @@ function ProgrammesSection() {
     },
     {
       icon: Activity,
-      name: "B.Sc. Radiography & Imaging Technology",
+      name: "Bachelor of Medical Radiology and Imaging Technology (B.MRIT)",
       duration: "3 Years + 1 Year Internship",
       level: "UG",
       intake: "5 seats",
@@ -337,7 +337,7 @@ function ProgrammesSection() {
     },
     {
       icon: Droplet,
-      name: "B.Sc. Dialysis Technology",
+      name: "Bachelor of Dialysis Therapy Technology (B.DTT)",
       duration: "3 Years + 1 Year Internship",
       level: "UG",
       intake: "5 seats",
@@ -346,7 +346,7 @@ function ProgrammesSection() {
     },
     {
       icon: ShieldCheck,
-      name: "B.Sc. Operation Theatre & Anaesthesia Technology",
+      name: "Bachelor of Anaesthesia and Operation Theatre Technology (B.AOTT)",
       duration: "3 Years + 1 Year Internship",
       level: "UG",
       intake: "10 seats",
@@ -355,7 +355,7 @@ function ProgrammesSection() {
     },
     {
       icon: Wind,
-      name: "B.Sc. Respiratory Therapy",
+      name: "Bachelor of Respiratory Technology (B.RT)",
       duration: "3 Years + 1 Year Internship",
       level: "UG",
       intake: "10 seats",
@@ -364,7 +364,7 @@ function ProgrammesSection() {
     },
     {
       icon: Stethoscope,
-      name: "B.Sc. Physician Assistant",
+      name: "Bachelor of Physician Associates (B.PA)",
       duration: "3 Years + 1 Year Internship",
       level: "UG",
       intake: "10 seats",
@@ -382,7 +382,7 @@ function ProgrammesSection() {
     },
     {
       icon: FileText,
-      name: "B.Sc. Medical Record Science",
+      name: "Bachelor of Science in Health Information Management (B.Sc. HIM)",
       duration: "3 Years + 1 Year Internship",
       level: "UG",
       intake: "15 seats",
@@ -391,7 +391,7 @@ function ProgrammesSection() {
     },
     {
       icon: Ambulance,
-      name: "B.Sc. Accident & Emergency Care Technology",
+      name: "Bachelor of Emergency Medical Technologist (Paramedic)",
       duration: "3 Years + 1 Year Internship",
       level: "UG",
       intake: "10 seats",
@@ -782,14 +782,14 @@ function SnippetBaitSection() {
             <h3 className="font-bold text-gray-900 mb-3">Top Allied Health Science Courses Available Near Tiruppur</h3>
             <ul className="snippet-answer text-sm text-gray-600 space-y-2">
               <li className="flex items-start gap-2"><span className="text-[#006837] mt-1">•</span>B.Sc Cardiac Technology — ECG, echocardiography, cardiac catheterisation</li>
-              <li className="flex items-start gap-2"><span className="text-[#006837] mt-1">•</span>B.Sc Radiology &amp; Imaging Technology — X-ray, CT, MRI, ultrasound</li>
-              <li className="flex items-start gap-2"><span className="text-[#006837] mt-1">•</span>B.Sc Dialysis Technology — haemodialysis, peritoneal dialysis, renal care</li>
-              <li className="flex items-start gap-2"><span className="text-[#006837] mt-1">•</span>B.Sc Operation Theatre &amp; Anaesthesia Technology — surgical support, anaesthesia monitoring</li>
-              <li className="flex items-start gap-2"><span className="text-[#006837] mt-1">•</span>B.Sc Respiratory Therapy — ventilator management, pulmonary rehabilitation</li>
-              <li className="flex items-start gap-2"><span className="text-[#006837] mt-1">•</span>B.Sc Physician Assistant — clinical diagnosis, patient management</li>
+              <li className="flex items-start gap-2"><span className="text-[#006837] mt-1">•</span>Bachelor of Medical Radiology and Imaging Technology (B.MRIT) — X-ray, CT, MRI, ultrasound</li>
+              <li className="flex items-start gap-2"><span className="text-[#006837] mt-1">•</span>Bachelor of Dialysis Therapy Technology (B.DTT) — haemodialysis, peritoneal dialysis, renal care</li>
+              <li className="flex items-start gap-2"><span className="text-[#006837] mt-1">•</span>Bachelor of Anaesthesia and Operation Theatre Technology (B.AOTT) — surgical support, anaesthesia monitoring</li>
+              <li className="flex items-start gap-2"><span className="text-[#006837] mt-1">•</span>Bachelor of Respiratory Technology (B.RT) — ventilator management, pulmonary rehabilitation</li>
+              <li className="flex items-start gap-2"><span className="text-[#006837] mt-1">•</span>Bachelor of Physician Associates (B.PA) — clinical diagnosis, patient management</li>
               <li className="flex items-start gap-2"><span className="text-[#006837] mt-1">•</span>B.Sc Critical Care Technology — ICU monitoring, life support systems</li>
-              <li className="flex items-start gap-2"><span className="text-[#006837] mt-1">•</span>B.Sc Medical Record Science — health informatics, hospital data management</li>
-              <li className="flex items-start gap-2"><span className="text-[#006837] mt-1">•</span>B.Sc Accident &amp; Emergency Care Technology — trauma care, emergency response</li>
+              <li className="flex items-start gap-2"><span className="text-[#006837] mt-1">•</span>Bachelor of Science in Health Information Management (B.Sc. HIM) — health informatics, hospital data management</li>
+              <li className="flex items-start gap-2"><span className="text-[#006837] mt-1">•</span>Bachelor of Emergency Medical Technologist (Paramedic) — trauma care, emergency response</li>
             </ul>
           </div>
 

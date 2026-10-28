@@ -53,7 +53,7 @@ const howToSchema = {
       "@type": "HowToStep",
       "position": 2,
       "name": "Choose Your Program",
-      "text": "Select from 9 BSc Allied Health Sciences programs including Cardiac Technology, Dialysis Technology, Radiology, Operation Theatre, Respiratory Therapy, Physician Assistant, Critical Care, Medical Record Science, and Accident Emergency Care.",
+      "text": "Select from 9 BSc Allied Health Sciences programs including Cardiac Technology, Dialysis Therapy Technology, Medical Radiology and Imaging Technology, Anaesthesia and Operation Theatre Technology, Respiratory Technology, Physician Associates, Critical Care, Health Information Management, and Emergency Medical Technologist (Paramedic).",
       "url": "https://ahs.jkkn.ac.in/admissions#programs"
     },
     {
@@ -98,11 +98,11 @@ const ADMISSION_FAQS: { q: string; a: React.ReactNode }[] = [
         },
         {
             q: "What is the fee range for BSc AHS programs?",
-            a: "Government Quota (GQ) fees are as per Govt norms. Management Quota (MQ) annual fees range from ₹60,000 (Medical Record Science) to ₹1,70,000 (Cardiac & Operation Theatre Technology) depending on the specialization. Fee payment can be made in installments. Government scholarships and JKKN merit scholarships are available to reduce the financial burden."
+            a: "Government Quota (GQ) fees are as per Govt norms. Management Quota (MQ) annual fees range from ₹60,000 (Health Information Management) to ₹1,70,000 (Cardiac & Operation Theatre Technology) depending on the specialization. Fee payment can be made in installments. Government scholarships and JKKN merit scholarships are available to reduce the financial burden."
         },
         {
             q: "How many programs does JKKN AHS College offer?",
-            a: "JKKN offers 9 BSc Allied Health Sciences programs: Cardiac Technology, Dialysis Technology, Radiology & Imaging Technology, Operation Theatre & Anaesthesia, Respiratory Therapy, Physician Assistant, Critical Care Technology, Medical Record Science, and Accident & Emergency Care Technology."
+            a: "JKKN offers 9 BSc Allied Health Sciences programs: Cardiac Technology, Dialysis Therapy Technology, Medical Radiology and Imaging Technology, Anaesthesia and Operation Theatre, Respiratory Technology, Physician Associate, Critical Care Technology, Health Information Management, and Emergency Medical Technologist (Paramedic)."
         },
         {
             q: "What is the course duration for BSc Allied Health Sciences?",
@@ -265,14 +265,14 @@ function HighlightsSection() {
 function ProgramsFeesSection() {
     const programs = [
         { name: "B.Sc Cardiac Technology", duration: "3+1 Years", fee: "₹1,70,000", seats: "7", href: "/cardiac-technology" },
-        { name: "B.Sc Dialysis Technology", duration: "3+1 Years", fee: "₹1,10,000", seats: "5", href: "/dialysis-technology" },
-        { name: "B.Sc Radiology & Imaging Technology", duration: "3+1 Years", fee: "₹1,30,000", seats: "5", href: "/radiology-imaging-technology" },
-        { name: "B.Sc Operation Theatre & Anaesthesia", duration: "3+1 Years", fee: "₹1,70,000", seats: "10", href: "/operation-theatre-anaesthesia" },
-        { name: "B.Sc Respiratory Therapy", duration: "3+1 Years", fee: "₹1,10,000", seats: "10", href: "/respiratory-therapy" },
-        { name: "B.Sc Physician Assistant", duration: "3+1 Years", fee: "₹1,30,000", seats: "10", href: "/physician-assistant" },
+        { name: "Bachelor of Dialysis Therapy Technology (B.DTT)", duration: "3+1 Years", fee: "₹1,10,000", seats: "5", href: "/dialysis-technology" },
+        { name: "Bachelor of Medical Radiology and Imaging Technology (B.MRIT)", duration: "3+1 Years", fee: "₹1,30,000", seats: "5", href: "/radiology-imaging-technology" },
+        { name: "Bachelor of Anaesthesia and Operation Theatre Technology (B.AOTT)", duration: "3+1 Years", fee: "₹1,70,000", seats: "10", href: "/operation-theatre-anaesthesia" },
+        { name: "Bachelor of Respiratory Technology (B.RT)", duration: "3+1 Years", fee: "₹1,10,000", seats: "10", href: "/respiratory-therapy" },
+        { name: "Bachelor of Physician Associates (B.PA)", duration: "3+1 Years", fee: "₹1,30,000", seats: "10", href: "/physician-assistant" },
         { name: "B.Sc Critical Care Technology", duration: "3+1 Years", fee: "₹1,10,000", seats: "10", href: "/critical-care-technology" },
-        { name: "B.Sc Medical Record Science", duration: "3+1 Years", fee: "₹60,000", seats: "15", href: "/medical-record-science" },
-        { name: "B.Sc Accident & Emergency Care", duration: "3+1 Years", fee: "₹1,10,000", seats: "10", href: "/accident-emergency-care" },
+        { name: "Bachelor of Science in Health Information Management (B.Sc. HIM)", duration: "3+1 Years", fee: "₹60,000", seats: "15", href: "/medical-record-science" },
+        { name: "Bachelor of Emergency Medical Technologist (Paramedic)", duration: "3+1 Years", fee: "₹1,10,000", seats: "10", href: "/accident-emergency-care" },
     ];
 
     return (
@@ -804,14 +804,14 @@ function CTASection() {
 function CrossLinksSection() {
     const programs = [
         { name: "Cardiac Technology", href: "/cardiac-technology" },
-        { name: "Dialysis Technology", href: "/dialysis-technology" },
-        { name: "Radiology & Imaging", href: "/radiology-imaging-technology" },
-        { name: "OT & Anaesthesia", href: "/operation-theatre-anaesthesia" },
-        { name: "Respiratory Therapy", href: "/respiratory-therapy" },
-        { name: "Physician Assistant", href: "/physician-assistant" },
+        { name: "Dialysis Therapy Technology", href: "/dialysis-technology" },
+        { name: "Medical Radiology and Imaging", href: "/radiology-imaging-technology" },
+        { name: "Anaesthesia & OT", href: "/operation-theatre-anaesthesia" },
+        { name: "Respiratory Technology", href: "/respiratory-therapy" },
+        { name: "Physician Associate", href: "/physician-assistant" },
         { name: "Critical Care", href: "/critical-care-technology" },
-        { name: "Medical Record Science", href: "/medical-record-science" },
-        { name: "Accident & Emergency", href: "/accident-emergency-care" },
+        { name: "Health Information Management", href: "/medical-record-science" },
+        { name: "Emergency Medical Technologist", href: "/accident-emergency-care" },
     ];
 
     const facilities = [

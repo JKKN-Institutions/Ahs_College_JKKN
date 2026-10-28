@@ -49,15 +49,15 @@ const navLinks: NavLink[] = [
         name: 'DEPARTMENTS',
         href: '/departments',
         submenu: [
-            { name: 'B.SC - Accident and Emergency Care Technology', href: '/accident-emergency-care' },
+            { name: 'B.SC - Emergency Medical Technologist (Paramedic)', href: '/accident-emergency-care' },
             { name: 'B.SC - Cardiac Technology', href: '/cardiac-technology' },
             { name: 'B.SC - Critical Care Technology', href: '/critical-care-technology' },
-            { name: 'B.SC - Dialysis Technology', href: '/dialysis-technology' },
-            { name: 'B.SC - Medical Record Science', href: '/medical-record-science' },
-            { name: 'B.SC - Operation Theatre & Anaesthesia Technology', href: '/operation-theatre-anaesthesia' },
-            { name: 'B.SC - Physician Assistant', href: '/physician-assistant' },
-            { name: 'B.SC - Radiography & Imaging Technology', href: '/radiology-imaging-technology' },
-            { name: 'B.SC - Respiratory Therapy', href: '/respiratory-therapy' }
+            { name: 'B.SC - Dialysis Therapy Technology', href: '/dialysis-technology' },
+            { name: 'B.SC - Health Information Management', href: '/medical-record-science' },
+            { name: 'B.SC - Anaesthesia and Operation Theatre Technology', href: '/operation-theatre-anaesthesia' },
+            { name: 'B.SC - Physician Associate', href: '/physician-assistant' },
+            { name: 'B.SC - Medical Radiology and Imaging Technology', href: '/radiology-imaging-technology' },
+            { name: 'B.SC - Respiratory Technology', href: '/respiratory-therapy' }
         ]
     },
     {

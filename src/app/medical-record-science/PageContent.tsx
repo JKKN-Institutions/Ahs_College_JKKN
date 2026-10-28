@@ -29,7 +29,7 @@ export default function MedicalRecordScience() {
                     <Breadcrumb items={[
                         { label: 'Home', href: '/' },
                         { label: 'Departments', href: '/departments' },
-                        { label: 'Medical Record Science' }
+                        { label: 'Health Information Management' }
                     ]} />
                 </div>
                 <HeroSection />
@@ -90,25 +90,25 @@ export default function MedicalRecordScience() {
                             <p className="text-sm font-semibold text-gray-800">B.Sc Cardiac Technology</p>
                         </Link>
                         <Link href="/dialysis-technology" className="bg-white rounded-xl p-4 text-center shadow-sm border border-gray-100 hover:shadow-md hover:border-[#0b6d41]/30 transition-all">
-                            <p className="text-sm font-semibold text-gray-800">B.Sc Dialysis Technology</p>
+                            <p className="text-sm font-semibold text-gray-800">Bachelor of Dialysis Therapy Technology (B.DTT)</p>
                         </Link>
                         <Link href="/radiology-imaging-technology" className="bg-white rounded-xl p-4 text-center shadow-sm border border-gray-100 hover:shadow-md hover:border-[#0b6d41]/30 transition-all">
-                            <p className="text-sm font-semibold text-gray-800">B.Sc Radiology & Imaging Technology</p>
+                            <p className="text-sm font-semibold text-gray-800">Bachelor of Medical Radiology and Imaging Technology (B.MRIT)</p>
                         </Link>
                         <Link href="/operation-theatre-anaesthesia" className="bg-white rounded-xl p-4 text-center shadow-sm border border-gray-100 hover:shadow-md hover:border-[#0b6d41]/30 transition-all">
-                            <p className="text-sm font-semibold text-gray-800">B.Sc Operation Theatre & Anaesthesia Technology</p>
+                            <p className="text-sm font-semibold text-gray-800">Bachelor of Anaesthesia and Operation Theatre Technology (B.AOTT)</p>
                         </Link>
                         <Link href="/respiratory-therapy" className="bg-white rounded-xl p-4 text-center shadow-sm border border-gray-100 hover:shadow-md hover:border-[#0b6d41]/30 transition-all">
-                            <p className="text-sm font-semibold text-gray-800">B.Sc Respiratory Therapy</p>
+                            <p className="text-sm font-semibold text-gray-800">Bachelor of Respiratory Technology (B.RT)</p>
                         </Link>
                         <Link href="/physician-assistant" className="bg-white rounded-xl p-4 text-center shadow-sm border border-gray-100 hover:shadow-md hover:border-[#0b6d41]/30 transition-all">
-                            <p className="text-sm font-semibold text-gray-800">B.Sc Physician Assistant</p>
+                            <p className="text-sm font-semibold text-gray-800">Bachelor of Physician Associates (B.PA)</p>
                         </Link>
                         <Link href="/critical-care-technology" className="bg-white rounded-xl p-4 text-center shadow-sm border border-gray-100 hover:shadow-md hover:border-[#0b6d41]/30 transition-all">
                             <p className="text-sm font-semibold text-gray-800">B.Sc Critical Care Technology</p>
                         </Link>
                         <Link href="/accident-emergency-care" className="bg-white rounded-xl p-4 text-center shadow-sm border border-gray-100 hover:shadow-md hover:border-[#0b6d41]/30 transition-all">
-                            <p className="text-sm font-semibold text-gray-800">B.Sc Accident & Emergency Care Technology</p>
+                            <p className="text-sm font-semibold text-gray-800">Bachelor of Emergency Medical Technologist (Paramedic)</p>
                         </Link>
                     </div>
                 </div>
@@ -162,8 +162,9 @@ function HeroSection() {
                 <div className="md:w-1/2">
                     <span className="text-[#0b6d41] font-bold tracking-widest uppercase text-xs mb-4 block p-1 bg-[#0b6d41]/10 w-fit rounded">Allied Health Sciences</span>
                     <h1 className="text-4xl md:text-6xl font-black mb-6 leading-tight">
-                        B.Sc Medical Record Science
+                        Bachelor of Science in Health Information Management (B.Sc. HIM)
                     </h1>
+                    <p className="text-base md:text-lg font-semibold text-gray-500 -mt-4 mb-6">Formerly B.Sc Medical Record Science</p>
                     <p className="text-gray-600 text-lg mb-8 leading-relaxed">
                         Embark on a rewarding career in health information management. Our comprehensive 3 Years + 1 Year Internship program prepares Learners to become skilled professionals in medical coding, health records administration, ICD classification, healthcare data analytics, and hospital information systems management.
                     </p>
@@ -191,7 +192,7 @@ function HeroSection() {
                     <div className="relative rounded-3xl overflow-hidden aspect-video shadow-2xl border-4 border-white group">
                         <Image
                             src="/medical-record-science-hero.webp"
-                            alt="Medical Record Science Lab"
+                            alt="Health Information Management Lab"
                             fill
                             priority
                             placeholder="blur"
@@ -200,7 +201,7 @@ function HeroSection() {
                             className="object-cover group-hover:scale-105 transition-transform duration-700"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-[#064225] to-transparent opacity-40"></div>
-                        <span className="absolute bottom-6 left-6 font-bold text-xl letter-spacing-wide text-white z-10">Medical Record Science</span>
+                        <span className="absolute bottom-6 left-6 font-bold text-xl letter-spacing-wide text-white z-10">Health Information Management</span>
                     </div>
                 </div>
             </div>
@@ -246,10 +247,10 @@ function AboutSection() {
         <section className="py-24 max-w-7xl mx-auto px-4 flex flex-col lg:flex-row gap-16">
             <div className="lg:w-2/3">
                 <span className="text-[#0b6d41] font-bold tracking-widest uppercase text-xs mb-2 block p-1 bg-[#0b6d41]/10 w-fit rounded">Program Overview</span>
-                <h2 className="text-3xl font-black text-[#0b6d41] mb-6">What is B.Sc Medical Record Science?</h2>
+                <h2 className="text-3xl font-black text-[#0b6d41] mb-6">What is Bachelor of Science in Health Information Management (B.Sc. HIM)?</h2>
                 <div className="text-gray-600 leading-relaxed text-lg space-y-6 text-justify">
                     <p>
-                        B.Sc Medical Record Science is a specialized undergraduate program designed to train healthcare professionals in health information management (HIM). This program equips Learners with expertise in managing patient health records, medical coding, disease classification systems, healthcare data analytics, and hospital information systems.
+                        Bachelor of Science in Health Information Management (B.Sc. HIM) is a specialized undergraduate program designed to train healthcare professionals in health information management (HIM). This program equips Learners with expertise in managing patient health records, medical coding, disease classification systems, healthcare data analytics, and hospital information systems.
                     </p>
                     <p>
                         The learning framework covers medical terminology, anatomy and physiology, ICD-10 coding systems, CPT coding, health records management, healthcare statistics, legal aspects of medical records, quality assurance, and healthcare informatics. Learners gain proficiency in electronic health records (EHR) systems used across the healthcare industry.
@@ -315,7 +316,7 @@ function EligibilitySection() {
                 <div className="text-center mb-12">
                     <span className="text-[#0b6d41] font-bold tracking-widest uppercase text-xs mb-2 p-1 bg-[#0b6d41]/5 rounded shadow-sm inline-block">Admission Requirements</span>
                     <h2 className="text-3xl font-black text-[#0b6d41]">Eligibility Criteria</h2>
-                    <p className="text-gray-500 mt-2">Review the academic qualifications needed to apply for the B.Sc Medical Record Science program</p>
+                    <p className="text-gray-500 mt-2">Review the academic qualifications needed to apply for the Bachelor of Science in Health Information Management (B.Sc. HIM) program</p>
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-8">
@@ -390,7 +391,7 @@ function SyllabusSection() {
                 { name: 'Pharmacology & Healthcare Statistics', hasTheory: true, hasPractical: false },
                 { name: 'ICD-10 Coding I & II', hasTheory: true, hasPractical: true },
                 { name: 'Health Records Management I & II', hasTheory: true, hasPractical: true },
-                { name: 'CPT Coding & Medical Record Science Ethics', hasTheory: true, hasPractical: true },
+                { name: 'CPT Coding & Health Information Management Ethics', hasTheory: true, hasPractical: true },
                 { name: 'Database Management & EHR Systems', hasTheory: false, hasPractical: true }
             ]
         },
@@ -483,7 +484,7 @@ function CareerSection() {
             <div className="max-w-7xl mx-auto px-4 text-center">
                 <span className="text-[#0b6d41] font-bold tracking-widest uppercase text-xs mb-2 block p-1 bg-[#0b6d41]/10 w-fit rounded inline-block">Future Pathways</span>
                 <h2 className="text-3xl md:text-5xl font-black mb-4 text-[#0b6d41]">Career Opportunities</h2>
-                <p className="text-gray-500 mb-16 max-w-3xl mx-auto">B.Sc Medical Record Science graduates enjoy diverse career paths in health information management across various healthcare settings</p>
+                <p className="text-gray-500 mb-16 max-w-3xl mx-auto">Bachelor of Science in Health Information Management (B.Sc. HIM) graduates enjoy diverse career paths in health information management across various healthcare settings</p>
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {jobs.map((job, i) => (
@@ -509,7 +510,7 @@ function CareerSection() {
                   href="/course-blog/medical-record-science-career-india"
                   className="font-bold text-[#0b6d41] underline underline-offset-4 hover:text-[#12a15f] transition-colors"
                 >
-                  Read our B.Sc Medical Record Science career guide
+                  Read our Bachelor of Science in Health Information Management (B.Sc. HIM) career guide
                 </Link>
                 .
               </p>
@@ -585,7 +586,7 @@ function FAQSection() {
             <div className="text-center mb-12">
                 <span className="text-[#0b6d41] font-bold tracking-widest uppercase text-xs mb-2 p-1 bg-white rounded inline-block">Common Questions</span>
                 <h2 className="text-3xl font-black text-[#0b6d41]">Frequently Asked Questions</h2>
-                <p className="text-gray-500 mt-2">Find answers to common questions about B.Sc Medical Record Science program</p>
+                <p className="text-gray-500 mt-2">Find answers to common questions about Bachelor of Science in Health Information Management (B.Sc. HIM) program</p>
             </div>
 
             <div className="space-y-4">
@@ -617,7 +618,7 @@ function CTASection() {
         <section className="bg-white py-16">
             <div className="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row items-center justify-between text-[#0b6d41] text-center lg:text-left gap-8">
                 <div>
-                    <h2 className="text-3xl md:text-4xl font-black mb-2">Ready to Start Your Career in Medical Record Science?</h2>
+                    <h2 className="text-3xl md:text-4xl font-black mb-2">Ready to Start Your Career in Health Information Management?</h2>
                     <p className="font-medium opacity-90 text-[#0b6d41]">Join JKKN College and become a skilled health information management professional.</p>
                 </div>
                 <div className="flex flex-wrap gap-2 items-center justify-center shrink-0">

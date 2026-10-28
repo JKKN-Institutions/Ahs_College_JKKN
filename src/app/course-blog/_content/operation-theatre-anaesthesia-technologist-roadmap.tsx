@@ -10,7 +10,7 @@ export default function OperationTheatreContent() {
         day-care surgical centres expand. Every operating room needs a sterile-zone
         captain. That role is yours after{" "}
         <Link href="/operation-theatre-anaesthesia">
-          B.Sc Operation Theatre &amp; Anaesthesia Technology
+          Bachelor of Anaesthesia and Operation Theatre Technology (B.AOTT)
         </Link>{" "}
         at JKKN. Here is the honest 2026 career roadmap — combining real salary data,
         day-in-the-life realities, and the path most graduates don't know they can take.
@@ -222,7 +222,7 @@ export default function OperationTheatreContent() {
       <p>
         Read the full{" "}
         <Link href="/operation-theatre-anaesthesia">
-          B.Sc Operation Theatre &amp; Anaesthesia Technology
+          Bachelor of Anaesthesia and Operation Theatre Technology (B.AOTT)
         </Link>{" "}
         program details or visit{" "}
         <Link href="/admissions/operation-theatre-anaesthesia">

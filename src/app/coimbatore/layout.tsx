@@ -77,7 +77,7 @@ const faqSchema = {
       name: "What is Allied Health Sciences?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Allied Health Sciences are healthcare professions that support doctors and nurses in diagnosing, treating and monitoring patients. At JKKN College of Allied Health Sciences you can study nine B.Sc courses, including Cardiac Technology, Radiography and Imaging, Dialysis, Operation Theatre and Anaesthesia, Respiratory Therapy and Physician Assistant.",
+        text: "Allied Health Sciences are healthcare professions that support doctors and nurses in diagnosing, treating and monitoring patients. At JKKN College of Allied Health Sciences you can study nine B.Sc courses, including Cardiac Technology, Medical Radiology and Imaging, Dialysis Therapy, Anaesthesia and Operation Theatre, Respiratory Technology and Physician Associates.",
       },
     },
     {
@@ -109,7 +109,7 @@ const faqSchema = {
       name: "What are the fees for BSc allied health science in Tamil Nadu?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Management-quota tuition at JKKN College of Allied Health Sciences for 2026-27 is ₹1,70,000 a year for Cardiac Technology and Operation Theatre Technology, ₹1,30,000 for Radiography and Physician Assistant, ₹1,10,000 for Dialysis, Respiratory Therapy, Critical Care and Emergency Care, and ₹60,000 for Medical Record Science. Government-quota fees follow government norms.",
+        text: "Management-quota tuition at JKKN College of Allied Health Sciences for 2026-27 is ₹1,70,000 a year for Cardiac Technology and Anaesthesia & OT Technology, ₹1,30,000 for Medical Radiology & Imaging and Physician Associates, ₹1,10,000 for Dialysis Therapy, Respiratory Technology, Critical Care and Emergency Medical Technologist, and ₹60,000 for Health Information Management. Government-quota fees follow government norms.",
       },
     },
     {

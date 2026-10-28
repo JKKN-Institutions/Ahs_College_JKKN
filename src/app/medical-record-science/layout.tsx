@@ -3,8 +3,8 @@ import { COURSE_FAQS } from "@/lib/course-faqs";
 import { MRS_LIST_SOURCE, MRS_JKKN_SEATS } from "@/lib/medical-record-colleges-tn";
 
 export const metadata = createPageMetadata({
-  title: "BSc Medical Record Science Course Details | JKKN",
-  description: `BSc Medical Record Science course details at JKKN, Komarapalayam: ${MRS_JKKN_SEATS} seats. ${MRS_LIST_SOURCE.totalInstitutions} colleges in Tamilnadu offer it, none of them government.`,
+  title: "B.Sc. HIM Health Information Management Course | JKKN",
+  description: `B.Sc. Health Information Management (formerly Medical Record Science) at JKKN, Komarapalayam: ${MRS_JKKN_SEATS} seats. ${MRS_LIST_SOURCE.totalInstitutions} TN colleges offer it, none government.`,
   path: "/medical-record-science",
   keywords: [
     "bsc medical record science colleges in tamilnadu",
@@ -16,14 +16,15 @@ export const metadata = createPageMetadata({
     "bsc medical records admission 2026",
     "medical record science course namakkal"
   ],
-  ogImage: { url: "https://ahs.jkkn.ac.in/medical-record-science-hero.webp", width: 1200, height: 630, alt: "BSc Medical Record Science at JKKN College" },
+  ogImage: { url: "https://ahs.jkkn.ac.in/medical-record-science-hero.webp", width: 1200, height: 630, alt: "Bachelor of Science in Health Information Management (B.Sc. HIM) at JKKN College" },
 });
 
 const courseSchema = {
   "@context": "https://schema.org",
   "@type": "Course",
   "dateModified": "2026-03-19",
-  "name": "B.Sc Medical Record Science",
+  "name": "Bachelor of Science in Health Information Management (B.Sc. HIM)",
+  "alternateName": "B.Sc Medical Record Science",
   "description": "Undergraduate program training healthcare professionals in health information management, medical coding, disease classification systems (ICD-10, CPT), healthcare data analytics, electronic health records, and hospital information systems.",
   "url": "https://ahs.jkkn.ac.in/medical-record-science",
   // Link, do not re-declare: a fresh anonymous Organization on every Course is a new entity
@@ -81,14 +82,14 @@ const courseSchema = {
       "urlTemplate": "https://www.jkkn.ai/apply/jkkn-admission-2026",
       "actionPlatform": "http://schema.org/DesktopWebPlatform"
     },
-    "name": "Apply for B.Sc Medical Record Science"
+    "name": "Apply for Bachelor of Science in Health Information Management (B.Sc. HIM)"
   }
 };
 
 const speakableSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "name": "BSc Medical Record Science Course Details | JKKN",
+  "name": "B.Sc. HIM Health Information Management Course | JKKN",
   "url": "https://ahs.jkkn.ac.in/medical-record-science",
   "speakable": {
     "@type": "SpeakableSpecification",
@@ -102,7 +103,7 @@ const breadcrumbSchema = {
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "JKKN Institutions", "item": "https://jkkn.ac.in/" },
     { "@type": "ListItem", "position": 2, "name": "Allied Health Sciences", "item": "https://ahs.jkkn.ac.in/" },
-    { "@type": "ListItem", "position": 3, "name": "B.Sc Medical Record Science", "item": "https://ahs.jkkn.ac.in/medical-record-science" }
+    { "@type": "ListItem", "position": 3, "name": "Bachelor of Science in Health Information Management (B.Sc. HIM)", "item": "https://ahs.jkkn.ac.in/medical-record-science" }
   ]
 };
 

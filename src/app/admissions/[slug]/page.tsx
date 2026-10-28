@@ -57,6 +57,7 @@ export default async function CourseAdmissionPage(
         "@context": "https://schema.org",
         "@type": "Course",
         name: course.name,
+        ...(course.formerName ? { alternateName: course.formerName } : {}),
         description: course.longDescription,
         url,
         provider: { "@id": "https://ahs.jkkn.ac.in/#organization" },

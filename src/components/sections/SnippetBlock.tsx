@@ -3,14 +3,14 @@ import { AHS_TN_TOTAL, AHS_LIST_SOURCE } from "@/lib/ahs-colleges-tn";
 
 const programs = [
   { name: "B.Sc Cardiac Technology", slug: "cardiac-technology", duration: "4 Years", careers: "Cardiac Technologist, ECG Technician, Cath Lab Technician" },
-  { name: "B.Sc Radiology & Imaging Technology", slug: "radiology-imaging-technology", duration: "4 Years", careers: "Radiographer, CT/MRI Technologist, Sonographer" },
-  { name: "B.Sc Dialysis Technology", slug: "dialysis-technology", duration: "4 Years", careers: "Dialysis Technician, Renal Care Specialist" },
-  { name: "B.Sc Operation Theatre & Anaesthesia Technology", slug: "operation-theatre-anaesthesia", duration: "4 Years", careers: "OT Technologist, Anaesthesia Technician" },
-  { name: "B.Sc Respiratory Therapy", slug: "respiratory-therapy", duration: "4 Years", careers: "Respiratory Therapist, Pulmonary Care Specialist" },
-  { name: "B.Sc Physician Assistant", slug: "physician-assistant", duration: "4 Years", careers: "Physician Assistant, Clinical Associate" },
+  { name: "Bachelor of Medical Radiology and Imaging Technology (B.MRIT)", slug: "radiology-imaging-technology", duration: "4 Years", careers: "Radiographer, CT/MRI Technologist, Sonographer" },
+  { name: "Bachelor of Dialysis Therapy Technology (B.DTT)", slug: "dialysis-technology", duration: "4 Years", careers: "Dialysis Technician, Renal Care Specialist" },
+  { name: "Bachelor of Anaesthesia and Operation Theatre Technology (B.AOTT)", slug: "operation-theatre-anaesthesia", duration: "4 Years", careers: "OT Technologist, Anaesthesia Technician" },
+  { name: "Bachelor of Respiratory Technology (B.RT)", slug: "respiratory-therapy", duration: "4 Years", careers: "Respiratory Therapist, Pulmonary Care Specialist" },
+  { name: "Bachelor of Physician Associates (B.PA)", slug: "physician-assistant", duration: "4 Years", careers: "Physician Associate, Clinical Associate" },
   { name: "B.Sc Critical Care Technology", slug: "critical-care-technology", duration: "4 Years", careers: "ICU Technologist, Critical Care Specialist" },
-  { name: "B.Sc Medical Record Science", slug: "medical-record-science", duration: "4 Years", careers: "Medical Records Officer, Health Information Manager" },
-  { name: "B.Sc Accident & Emergency Care Technology", slug: "accident-emergency-care", duration: "4 Years", careers: "Emergency Care Technologist, Trauma Care Specialist" },
+  { name: "Bachelor of Science in Health Information Management (B.Sc. HIM)", slug: "medical-record-science", duration: "4 Years", careers: "Medical Records Officer, Health Information Manager" },
+  { name: "Bachelor of Emergency Medical Technologist (Paramedic)", slug: "accident-emergency-care", duration: "4 Years", careers: "Emergency Medical Technologist, Trauma Care Specialist" },
 ];
 
 export function SnippetBlock() {
@@ -36,7 +36,7 @@ export function SnippetBlock() {
           </h3>
           <ul className="snippet-answer list-disc pl-5 sm:pl-6 space-y-2 sm:space-y-3 text-gray-700 text-sm sm:text-base leading-relaxed max-w-4xl">
             <li><strong>University Affiliated</strong> — Affiliated to The Tamil Nadu Dr. M.G.R. Medical University; part of JKKN Educational Institutions with a 70+ year legacy of educational excellence in Tamil Nadu.</li>
-            <li><strong>9 Specialized B.Sc Programs</strong> — Including <Link href="/cardiac-technology" className="text-[#0b6d41] font-semibold hover:underline">Cardiac Technology</Link>, <Link href="/radiology-imaging-technology" className="text-[#0b6d41] font-semibold hover:underline">Radiology</Link>, <Link href="/dialysis-technology" className="text-[#0b6d41] font-semibold hover:underline">Dialysis Technology</Link>, and <Link href="/respiratory-therapy" className="text-[#0b6d41] font-semibold hover:underline">Respiratory Therapy</Link>.</li>
+            <li><strong>9 Specialized B.Sc Programs</strong> — Including <Link href="/cardiac-technology" className="text-[#0b6d41] font-semibold hover:underline">Cardiac Technology</Link>, <Link href="/radiology-imaging-technology" className="text-[#0b6d41] font-semibold hover:underline">Medical Radiology and Imaging</Link>, <Link href="/dialysis-technology" className="text-[#0b6d41] font-semibold hover:underline">Dialysis Therapy Technology</Link>, and <Link href="/respiratory-therapy" className="text-[#0b6d41] font-semibold hover:underline">Respiratory Technology</Link>.</li>
             <li><strong>Clinical Training at Partner Hospitals</strong> — hands-on clinical postings, with 2,000+ training hours.</li>
             <li><strong>Placement Support</strong> — a dedicated placement cell that helps learners apply to hospitals and diagnostic centres.</li>
             <li><strong>International Careers</strong> — allied health graduates can work abroad after meeting that country&apos;s registration rules; ask the placement cell what guidance is offered.</li>

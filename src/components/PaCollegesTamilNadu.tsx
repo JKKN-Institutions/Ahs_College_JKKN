@@ -14,7 +14,7 @@ export function PaCollegesTamilNadu() {
   return (
     <section id="physician-assistant-colleges-tamil-nadu" className="py-20 bg-white">
       <div className="max-w-5xl mx-auto px-4">
-        <h2 className="text-3xl font-black text-[#0b6d41] mb-4">B.Sc Physician Assistant Colleges in Tamil Nadu</h2>
+        <h2 className="text-3xl font-black text-[#0b6d41] mb-4">Physician Associates (B.PA) Colleges in Tamil Nadu</h2>
         <p className="snippet-answer text-gray-900 leading-relaxed mb-6">
           {PA_LIST_SOURCE.totalInstitutions} institutions are affiliated to The Tamil Nadu Dr. M.G.R. Medical University
           for B.Sc Physician Assistant in {PA_LIST_SOURCE.year}: {PA_GOVT_COLLEGES.length} government colleges with{" "}
@@ -23,11 +23,11 @@ export function PaCollegesTamilNadu() {
         </p>
 
         <h3 className="text-xl font-bold text-[#0b6d41] mb-3">
-          Government colleges offering B.Sc Physician Assistant ({PA_GOVT_COLLEGES.length})
+          Government colleges offering B.PA Physician Associates ({PA_GOVT_COLLEGES.length})
         </h3>
         <div className="overflow-x-auto rounded-2xl border border-gray-200 bg-white">
           <table className="w-full text-sm text-left">
-            <caption className="sr-only">Government colleges offering B.Sc Physician Assistant in Tamil Nadu</caption>
+            <caption className="sr-only">Government colleges offering B.PA Physician Associates in Tamil Nadu</caption>
             <thead className="bg-[#f0f7f2] text-[#0b6d41]">
               <tr>
                 <th scope="col" className="px-4 py-3 font-bold">College</th>

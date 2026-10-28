@@ -17,7 +17,7 @@ const programs = [
         link: "/cardiac-technology"
     },
     {
-        title: "B.Sc. Radiography & Imaging Technology",
+        title: "Bachelor of Medical Radiology and Imaging Technology (B.MRIT)",
         icon: <Activity className="w-8 h-8" />,
         duration: "3 Years + 1 Year Internship",
         description: "Master X-ray, CT scan, MRI, ultrasound, and nuclear medicine imaging. High-demand field with excellent career prospects.",
@@ -27,7 +27,7 @@ const programs = [
         link: "/radiology-imaging-technology"
     },
     {
-        title: "B.Sc. Dialysis Technology",
+        title: "Bachelor of Dialysis Therapy Technology (B.DTT)",
         icon: <Droplet className="w-8 h-8" />,
         duration: "3 Years + 1 Year Internship",
         description: "Specialize in hemodialysis, peritoneal dialysis, and renal care. Growing demand with India's increasing kidney disease burden.",
@@ -37,7 +37,7 @@ const programs = [
         link: "/dialysis-technology"
     },
     {
-        title: "B.Sc. Operation Theatre & Anaesthesia Technology",
+        title: "Bachelor of Anaesthesia and Operation Theatre Technology (B.AOTT)",
         icon: <ShieldCheck className="w-8 h-8" />,
         duration: "3 Years + 1 Year Internship",
         description: "Learn surgical assistance, sterilization, instrument handling, and perioperative care. Essential role in every surgical team.",
@@ -47,7 +47,7 @@ const programs = [
         link: "/operation-theatre-anaesthesia"
     },
     {
-        title: "B.Sc. Respiratory Therapy",
+        title: "Bachelor of Respiratory Technology (B.RT)",
         icon: <Wind className="w-8 h-8" />,
         duration: "3 Years + 1 Year Internship",
         description: "Master ventilator management, pulmonary care, and critical care support. Increased demand post-pandemic in ICU settings.",
@@ -57,11 +57,11 @@ const programs = [
         link: "/respiratory-therapy"
     },
     {
-        title: "B.Sc. Physician Assistant",
+        title: "Bachelor of Physician Associates (B.PA)",
         icon: <Stethoscope className="w-8 h-8" />,
         duration: "3 Years + 1 Year Internship",
         description: "Train to assist physicians in patient examination, diagnosis, and treatment planning. Bridge the doctor-patient gap in healthcare.",
-        careers: "Physician Assistant, Clinical Associate, Medical Assistant, Healthcare Coordinator",
+        careers: "Physician Associate, Clinical Associate, Medical Assistant, Healthcare Coordinator",
         popular: false,
         bgColor: "bg-[#0b6d41]",
         link: "/physician-assistant"
@@ -77,7 +77,7 @@ const programs = [
         link: "/critical-care-technology"
     },
     {
-        title: "B.Sc. Medical Record Science",
+        title: "Bachelor of Science in Health Information Management (B.Sc. HIM)",
         icon: <FileText className="w-8 h-8" />,
         duration: "3 Years + 1 Year Internship",
         description: "Specialize in health information management, medical coding, and healthcare data analytics. Growing field in digital healthcare.",
@@ -87,7 +87,7 @@ const programs = [
         link: "/medical-record-science"
     },
     {
-        title: "B.Sc. Accident & Emergency Care Technology",
+        title: "Bachelor of Emergency Medical Technologist (Paramedic)",
         icon: <Ambulance className="w-8 h-8" />,
         duration: "3 Years + 1 Year Internship",
         description: "Train in emergency response, trauma care, and pre-hospital emergency services. Critical role in saving lives during emergencies.",

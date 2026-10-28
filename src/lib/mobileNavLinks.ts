@@ -112,7 +112,7 @@ export function getMobileNavLinks(pathname: string): MenuGroup[] {
       menus: [
         {
           href: '/accident-emergency-care',
-          label: 'Accident & Emergency Care',
+          label: 'Emergency Medical Technologist',
           icon: GraduationCap,
           active: pathname === '/accident-emergency-care'
         },
@@ -130,37 +130,37 @@ export function getMobileNavLinks(pathname: string): MenuGroup[] {
         },
         {
           href: '/dialysis-technology',
-          label: 'Dialysis Technology',
+          label: 'Dialysis Therapy Technology',
           icon: GraduationCap,
           active: pathname === '/dialysis-technology'
         },
         {
           href: '/medical-record-science',
-          label: 'Medical Record Science',
+          label: 'Health Information Management',
           icon: GraduationCap,
           active: pathname === '/medical-record-science'
         },
         {
           href: '/operation-theatre-anaesthesia',
-          label: 'Operation Theatre & Anaesthesia',
+          label: 'Anaesthesia and Operation Theatre',
           icon: GraduationCap,
           active: pathname === '/operation-theatre-anaesthesia'
         },
         {
           href: '/physician-assistant',
-          label: 'Physician Assistant',
+          label: 'Physician Associate',
           icon: GraduationCap,
           active: pathname === '/physician-assistant'
         },
         {
           href: '/radiology-imaging-technology',
-          label: 'Radiology & Imaging',
+          label: 'Medical Radiology and Imaging',
           icon: GraduationCap,
           active: pathname === '/radiology-imaging-technology'
         },
         {
           href: '/respiratory-therapy',
-          label: 'Respiratory Therapy',
+          label: 'Respiratory Technology',
           icon: GraduationCap,
           active: pathname === '/respiratory-therapy'
         }

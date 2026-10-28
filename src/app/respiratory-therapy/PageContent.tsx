@@ -28,7 +28,7 @@ export default function RespiratoryTherapy() {
                     <Breadcrumb items={[
                         { label: 'Home', href: '/' },
                         { label: 'Departments', href: '/departments' },
-                        { label: 'Respiratory Therapy' }
+                        { label: 'Respiratory Technology' }
                     ]} />
                 </div>
                 <HeroSection />
@@ -89,25 +89,25 @@ export default function RespiratoryTherapy() {
                             <p className="text-sm font-semibold text-gray-800">B.Sc Cardiac Technology</p>
                         </Link>
                         <Link href="/dialysis-technology" className="bg-white rounded-xl p-4 text-center shadow-sm border border-gray-100 hover:shadow-md hover:border-[#0b6d41]/30 transition-all">
-                            <p className="text-sm font-semibold text-gray-800">B.Sc Dialysis Technology</p>
+                            <p className="text-sm font-semibold text-gray-800">Bachelor of Dialysis Therapy Technology (B.DTT)</p>
                         </Link>
                         <Link href="/radiology-imaging-technology" className="bg-white rounded-xl p-4 text-center shadow-sm border border-gray-100 hover:shadow-md hover:border-[#0b6d41]/30 transition-all">
-                            <p className="text-sm font-semibold text-gray-800">B.Sc Radiology & Imaging Technology</p>
+                            <p className="text-sm font-semibold text-gray-800">Bachelor of Medical Radiology and Imaging Technology (B.MRIT)</p>
                         </Link>
                         <Link href="/operation-theatre-anaesthesia" className="bg-white rounded-xl p-4 text-center shadow-sm border border-gray-100 hover:shadow-md hover:border-[#0b6d41]/30 transition-all">
-                            <p className="text-sm font-semibold text-gray-800">B.Sc Operation Theatre & Anaesthesia Technology</p>
+                            <p className="text-sm font-semibold text-gray-800">Bachelor of Anaesthesia and Operation Theatre Technology (B.AOTT)</p>
                         </Link>
                         <Link href="/physician-assistant" className="bg-white rounded-xl p-4 text-center shadow-sm border border-gray-100 hover:shadow-md hover:border-[#0b6d41]/30 transition-all">
-                            <p className="text-sm font-semibold text-gray-800">B.Sc Physician Assistant</p>
+                            <p className="text-sm font-semibold text-gray-800">Bachelor of Physician Associates (B.PA)</p>
                         </Link>
                         <Link href="/critical-care-technology" className="bg-white rounded-xl p-4 text-center shadow-sm border border-gray-100 hover:shadow-md hover:border-[#0b6d41]/30 transition-all">
                             <p className="text-sm font-semibold text-gray-800">B.Sc Critical Care Technology</p>
                         </Link>
                         <Link href="/medical-record-science" className="bg-white rounded-xl p-4 text-center shadow-sm border border-gray-100 hover:shadow-md hover:border-[#0b6d41]/30 transition-all">
-                            <p className="text-sm font-semibold text-gray-800">B.Sc Medical Record Science</p>
+                            <p className="text-sm font-semibold text-gray-800">Bachelor of Science in Health Information Management (B.Sc. HIM)</p>
                         </Link>
                         <Link href="/accident-emergency-care" className="bg-white rounded-xl p-4 text-center shadow-sm border border-gray-100 hover:shadow-md hover:border-[#0b6d41]/30 transition-all">
-                            <p className="text-sm font-semibold text-gray-800">B.Sc Accident & Emergency Care Technology</p>
+                            <p className="text-sm font-semibold text-gray-800">Bachelor of Emergency Medical Technologist (Paramedic)</p>
                         </Link>
                     </div>
                 </div>
@@ -161,8 +161,9 @@ function HeroSection() {
                 <div className="md:w-1/2">
                     <span className="text-[#0b6d41] font-bold tracking-widest uppercase text-xs mb-4 block p-1 bg-[#0b6d41]/10 w-fit rounded">Allied Health Sciences</span>
                     <h1 className="text-4xl md:text-6xl font-black mb-6 leading-tight">
-                        B.Sc <span className="text-[#0b6d41]">Respiratory Therapy</span>
+                        Bachelor of <span className="text-[#0b6d41]">Respiratory Technology</span> (B.RT)
                     </h1>
+                    <p className="text-base md:text-lg font-semibold text-gray-500 -mt-4 mb-6">Formerly B.Sc Respiratory Therapy</p>
                     <p className="text-gray-900 text-lg mb-8 leading-relaxed">
                         Embark on a transformative journey into respiratory healthcare. Our comprehensive 3 Years + 1 Year Internship program prepares learners to become skilled respiratory therapists, mastering pulmonary diagnostics, mechanical ventilation, critical care respiratory management, and cardiopulmonary rehabilitation.
                     </p>
@@ -190,7 +191,7 @@ function HeroSection() {
                     <div className="relative rounded-3xl overflow-hidden aspect-video shadow-2xl border-4 border-white group">
                         <Image
                             src="/images/departments/respiratory-therapy-hero.webp"
-                            alt="Respiratory Therapy Department"
+                            alt="Respiratory Technology Department"
                             fill
                             priority
                             placeholder="blur"
@@ -246,10 +247,10 @@ function AboutSection() {
             <div className="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row gap-16">
                 <div className="lg:w-2/3">
                     <span className="text-[#0b6d41] font-bold tracking-widest uppercase text-xs mb-2 block p-1 bg-[#0b6d41]/10 w-fit rounded">Program Overview</span>
-                    <h2 className="text-3xl font-black text-[#0b6d41] mb-6">What is B.Sc Respiratory Therapy?</h2>
+                    <h2 className="text-3xl font-black text-[#0b6d41] mb-6">What is Bachelor of Respiratory Technology (B.RT)?</h2>
                     <div className="text-gray-900 leading-relaxed text-lg space-y-6 text-justify">
                         <p>
-                            B.Sc Respiratory Therapy is a specialized undergraduate program designed to train healthcare professionals in the assessment, treatment, and management of patients with respiratory and cardiopulmonary disorders. This program combines theoretical knowledge with extensive practical training, preparing learners to work alongside pulmonologists, intensivists, and critical care physicians in various healthcare settings.
+                            Bachelor of Respiratory Technology (B.RT) is a specialized undergraduate program designed to train healthcare professionals in the assessment, treatment, and management of patients with respiratory and cardiopulmonary disorders. This program combines theoretical knowledge with extensive practical training, preparing learners to work alongside pulmonologists, intensivists, and critical care physicians in various healthcare settings.
                         </p>
                         <p>
                             The learning framework covers essential areas including respiratory anatomy and physiology, pulmonary function testing, mechanical ventilation, airway management, arterial blood gas analysis, oxygen therapy, nebulization techniques, and cardiopulmonary rehabilitation. Learners gain hands-on experience through clinical rotations in leading hospitals, ICUs, and respiratory care units.
@@ -316,7 +317,7 @@ function EligibilitySection() {
                 <div className="text-center mb-12">
                     <span className="text-[#0b6d41] font-bold tracking-widest uppercase text-xs mb-2 p-1 bg-[#0b6d41]/5 rounded shadow-sm inline-block">Join our Department</span>
                     <h2 className="text-3xl font-black text-[#0b6d41]">Eligibility Criteria</h2>
-                    <p className="text-gray-900 mt-2">Ensure the academic qualifications required to apply for the B.Sc Respiratory Therapy program</p>
+                    <p className="text-gray-900 mt-2">Ensure the academic qualifications required to apply for the Bachelor of Respiratory Technology (B.RT) program</p>
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-8">
@@ -396,8 +397,8 @@ function SyllabusSection() {
         'Year 3': {
             sem: 'Year 3 Subjects',
             subjects: [
-                { name: 'Respiratory Therapy Techniques 1', hasTheory: true, hasPractical: true },
-                { name: 'Respiratory Therapy Techniques 2', hasTheory: true, hasPractical: true },
+                { name: 'Respiratory Technology Techniques 1', hasTheory: true, hasPractical: true },
+                { name: 'Respiratory Technology Techniques 2', hasTheory: true, hasPractical: true },
                 { name: 'Life Support System', hasTheory: true, hasPractical: true },
                 { name: 'Cardio Pulmonary Rehabilitation', hasTheory: true, hasPractical: true }
             ]
@@ -505,7 +506,7 @@ function CareerSection() {
                   href="/course-blog/respiratory-therapy-scope-and-salary-india"
                   className="font-bold text-[#0b6d41] underline underline-offset-4 hover:text-[#12a15f] transition-colors"
                 >
-                  Read our B.Sc Respiratory Therapy career guide
+                  Read our Bachelor of Respiratory Technology (B.RT) career guide
                 </Link>
                 .
               </p>
@@ -547,7 +548,7 @@ function AdmissionProcessSection() {
             <div className="max-w-4xl mx-auto px-4 text-center mb-16">
                 <span className="text-[#0b6d41] font-bold tracking-widest uppercase text-xs mb-2 p-1 bg-white rounded inline-block">Easy Steps</span>
                 <h2 className="text-3xl font-black text-[#0b6d41]">Admission Process</h2>
-                <p className="text-gray-900 mt-2">Simple steps to kickstart your journey towards becoming a respiratory therapy professional.</p>
+                <p className="text-gray-900 mt-2">Simple steps to kickstart your journey towards becoming a respiratory technology professional.</p>
             </div>
 
             <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center relative gap-8">
@@ -615,8 +616,8 @@ function CTASection() {
         <section className="bg-[#fbfbee] py-16">
             <div className="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row items-center justify-between text-[#0b6d41] text-center lg:text-left gap-8">
                 <div>
-                    <h2 className="text-3xl md:text-4xl font-black mb-2">Ready to Start Your Career in Respiratory Therapy?</h2>
-                    <p className="font-medium opacity-90 text-gray-900">Join JKKN College and become a skilled respiratory therapy professional.</p>
+                    <h2 className="text-3xl md:text-4xl font-black mb-2">Ready to Start Your Career in Respiratory Technology?</h2>
+                    <p className="font-medium opacity-90 text-gray-900">Join JKKN College and become a skilled respiratory technology professional.</p>
                 </div>
                 <div className="flex flex-wrap gap-3 items-center justify-center shrink-0">
                     <a

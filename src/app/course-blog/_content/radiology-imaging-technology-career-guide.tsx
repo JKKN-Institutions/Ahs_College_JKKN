@@ -11,7 +11,7 @@ export default function RadiologyContent() {
         scan, every bedside X-ray needs a skilled <strong>radiology technologist</strong>{" "}
         to operate it. Behind the AI hype, the reality is that radiology departments are
         running 24×7 with too few people. If you're weighing{" "}
-        <Link href="/radiology-imaging-technology">B.Sc Radiology &amp; Imaging Technology</Link>{" "}
+        <Link href="/radiology-imaging-technology">Bachelor of Medical Radiology and Imaging Technology (B.MRIT)</Link>{" "}
         at JKKN, here is what your career actually looks like — with real data, not
         prospectus promises.
       </p>
@@ -223,7 +223,7 @@ export default function RadiologyContent() {
       <p>
         See the full{" "}
         <Link href="/radiology-imaging-technology">
-          B.Sc Radiology &amp; Imaging Technology learning framework
+          Bachelor of Medical Radiology and Imaging Technology (B.MRIT) learning framework
         </Link>{" "}
         or visit{" "}
         <Link href="/admissions/radiology-imaging-technology">admissions for 2026-27</Link>{" "}

@@ -157,14 +157,14 @@ export default function Transport() {
                     <h2 className="text-xl font-semibold text-[#0b6d41] mb-6">Explore Our Courses</h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
                       <a href="/cardiac-technology" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors">BSc Cardiac Technology</a>
-                      <a href="/dialysis-technology" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors">BSc Dialysis Technology</a>
-                      <a href="/radiology-imaging-technology" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors">BSc Radiology &amp; Imaging</a>
-                      <a href="/respiratory-therapy" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors">BSc Respiratory Therapy</a>
-                      <a href="/operation-theatre-anaesthesia" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors">BSc OT &amp; Anaesthesia</a>
-                      <a href="/physician-assistant" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors">BSc Physician Assistant</a>
+                      <a href="/dialysis-technology" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors">Bachelor of Dialysis Therapy Technology (B.DTT)</a>
+                      <a href="/radiology-imaging-technology" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors">Bachelor of Medical Radiology and Imaging Technology (B.MRIT)</a>
+                      <a href="/respiratory-therapy" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors">Bachelor of Respiratory Technology (B.RT)</a>
+                      <a href="/operation-theatre-anaesthesia" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors">Bachelor of Anaesthesia and Operation Theatre Technology (B.AOTT)</a>
+                      <a href="/physician-assistant" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors">Bachelor of Physician Associates (B.PA)</a>
                       <a href="/critical-care-technology" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors">BSc Critical Care Technology</a>
-                      <a href="/medical-record-science" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors">BSc Medical Record Science</a>
-                      <a href="/accident-emergency-care" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors">BSc Accident &amp; Emergency Care</a>
+                      <a href="/medical-record-science" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors">Bachelor of Science in Health Information Management (B.Sc. HIM)</a>
+                      <a href="/accident-emergency-care" className="px-4 py-3 bg-white rounded-xl border border-gray-100 text-sm font-medium text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition-colors">Bachelor of Emergency Medical Technologist (Paramedic)</a>
                     </div>
                   </div>
                 </section>
@@ -175,13 +175,13 @@ export default function Transport() {
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
                       {[
                         { name: 'B.Sc Cardiac Technology', href: '/cardiac-technology' },
-                        { name: 'B.Sc Radiology & Imaging', href: '/radiology-imaging-technology' },
-                        { name: 'B.Sc Dialysis Technology', href: '/dialysis-technology' },
-                        { name: 'B.Sc OT & Anaesthesia', href: '/operation-theatre-anaesthesia' },
-                        { name: 'B.Sc Respiratory Therapy', href: '/respiratory-therapy' },
-                        { name: 'B.Sc Physician Assistant', href: '/physician-assistant' },
+                        { name: 'Bachelor of Medical Radiology and Imaging Technology (B.MRIT)', href: '/radiology-imaging-technology' },
+                        { name: 'Bachelor of Dialysis Therapy Technology (B.DTT)', href: '/dialysis-technology' },
+                        { name: 'Bachelor of Anaesthesia and Operation Theatre Technology (B.AOTT)', href: '/operation-theatre-anaesthesia' },
+                        { name: 'Bachelor of Respiratory Technology (B.RT)', href: '/respiratory-therapy' },
+                        { name: 'Bachelor of Physician Associates (B.PA)', href: '/physician-assistant' },
                         { name: 'B.Sc Critical Care Technology', href: '/critical-care-technology' },
-                        { name: 'B.Sc Medical Record Science', href: '/medical-record-science' },
+                        { name: 'Bachelor of Science in Health Information Management (B.Sc. HIM)', href: '/medical-record-science' },
                         { name: 'B.Sc Emergency Care', href: '/accident-emergency-care' },
                       ].map((p) => (
                         <a key={p.href} href={p.href} className="flex items-center gap-2 py-3 px-4 rounded-xl bg-white hover:bg-[#e8f5ec] transition-colors text-sm font-medium text-[#0b6d41] shadow-sm">

@@ -19,7 +19,7 @@ export function RadiologyCollegesTamilNadu() {
     <section id="radiology-imaging-technology-colleges-tamil-nadu" className="py-20 bg-white">
       <div className="max-w-5xl mx-auto px-4">
         <h2 className="text-3xl font-black text-[#0b6d41] mb-4">
-          B.Sc Radiology and Imaging Technology Colleges in Tamil Nadu
+          Medical Radiology and Imaging Technology (B.MRIT) Colleges in Tamil Nadu
         </h2>
         <p className="snippet-answer text-gray-900 leading-relaxed mb-4">
           {RAD_LIST_SOURCE.totalInstitutions} institutions are affiliated to The Tamil Nadu Dr. M.G.R. Medical
@@ -35,12 +35,12 @@ export function RadiologyCollegesTamilNadu() {
         </p>
 
         <h3 className="text-xl font-bold text-[#0b6d41] mb-3">
-          Government colleges offering B.Sc Radiology and Imaging Technology ({RAD_GOVT_COLLEGES.length})
+          Government colleges offering B.MRIT Medical Radiology and Imaging Technology ({RAD_GOVT_COLLEGES.length})
         </h3>
         <div className="overflow-x-auto rounded-2xl border border-gray-200 bg-white">
           <table className="w-full text-sm text-left">
             <caption className="sr-only">
-              Government colleges offering B.Sc Radiology and Imaging Technology in Tamil Nadu
+              Government colleges offering B.MRIT Medical Radiology and Imaging Technology in Tamil Nadu
             </caption>
             <thead className="bg-[#f0f7f2] text-[#0b6d41]">
               <tr>
@@ -71,7 +71,7 @@ export function RadiologyCollegesTamilNadu() {
 
         <div className="mt-10 rounded-2xl border-2 border-[#0b6d41]/20 bg-[#f0f7f2] p-6">
           <h3 className="text-xl font-bold text-[#0b6d41] mb-3">
-            Radiology technologist or radiologist? B.Sc vs MD
+            Radiology technologist or radiologist? B.MRIT vs MD
           </h3>
           <p className="text-gray-800 leading-relaxed mb-4">
             Many &quot;radiology colleges&quot; searches mix two different careers. This page is about the B.Sc
@@ -80,11 +80,11 @@ export function RadiologyCollegesTamilNadu() {
           </p>
           <div className="overflow-x-auto rounded-xl border border-gray-200 bg-white">
             <table className="w-full text-sm text-left">
-              <caption className="sr-only">B.Sc Radiology and Imaging Technology compared with MD Radio-Diagnosis</caption>
+              <caption className="sr-only">B.MRIT compared with MD Radio-Diagnosis</caption>
               <thead className="bg-white text-[#0b6d41]">
                 <tr>
                   <th scope="col" className="px-4 py-3 font-bold"> </th>
-                  <th scope="col" className="px-4 py-3 font-bold">B.Sc Radiology &amp; Imaging Technology (B.MRIT)</th>
+                  <th scope="col" className="px-4 py-3 font-bold">Bachelor of Medical Radiology and Imaging Technology (B.MRIT)</th>
                   <th scope="col" className="px-4 py-3 font-bold">MD Radio-Diagnosis</th>
                 </tr>
               </thead>
@@ -114,7 +114,7 @@ export function RadiologyCollegesTamilNadu() {
           </div>
         </div>
 
-        <h3 className="text-xl font-bold text-[#0b6d41] mt-10 mb-3">How to choose a B.Sc Radiology college</h3>
+        <h3 className="text-xl font-bold text-[#0b6d41] mt-10 mb-3">How to choose a B.MRIT (Medical Radiology) college</h3>
         <ol className="list-decimal pl-6 space-y-2 text-gray-800">
           <li>Check that the college is on the university&apos;s affiliated list for this course for your year.</li>
           <li>Check the sanctioned seats for the course; the list shows each college&apos;s intake.</li>

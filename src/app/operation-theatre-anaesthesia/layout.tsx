@@ -3,8 +3,8 @@ import { COURSE_FAQS } from "@/lib/course-faqs";
 import { OT_LIST_SOURCE, OT_GOVT_COLLEGES, OT_JKKN_SEATS } from "@/lib/ot-colleges-tn";
 
 export const metadata = createPageMetadata({
-  title: "BSc Operation Theatre & Anaesthesia Technology Colleges in Tamilnadu | JKKN",
-  description: `BSc Anaesthesia and Operation Theatre Technology (B.AOTT): ${OT_LIST_SOURCE.totalInstitutions} colleges in Tamilnadu (TNMGRMU ${OT_LIST_SOURCE.year}), ${OT_GOVT_COLLEGES.length} govt. Govt list, seats, B.Sc vs MD, JKKN ${OT_JKKN_SEATS} seats.`,
+  title: "B.AOTT Anaesthesia & OT Technology Colleges in Tamilnadu | JKKN",
+  description: `B.AOTT (formerly BSc OT & Anaesthesia Technology): ${OT_LIST_SOURCE.totalInstitutions} colleges in Tamilnadu (TNMGRMU ${OT_LIST_SOURCE.year}), ${OT_GOVT_COLLEGES.length} govt. Govt list, seats, B.AOTT vs MD, JKKN ${OT_JKKN_SEATS} seats.`,
   path: "/operation-theatre-anaesthesia",
   keywords: [
     "b.sc operation theatre & anaesthesia technology colleges in tamilnadu",
@@ -21,7 +21,8 @@ const courseSchema = {
   "@context": "https://schema.org",
   "@type": "Course",
   "dateModified": "2026-03-19",
-  "name": "B.Sc Operation Theatre and Anaesthesia Technology",
+  "name": "Bachelor of Anaesthesia and Operation Theatre Technology (B.AOTT)",
+  "alternateName": "B.Sc Operation Theatre and Anaesthesia Technology",
   "description": "Comprehensive program that prepares learners to become skilled OT and anaesthesia technologists with expertise in surgical assistance, anaesthesia support, patient monitoring, sterilization, and perioperative care management.",
   "url": "https://ahs.jkkn.ac.in/operation-theatre-anaesthesia",
   // Link, do not re-declare: a fresh anonymous Organization on every Course is a new entity
@@ -79,14 +80,14 @@ const courseSchema = {
       "urlTemplate": "https://www.jkkn.ai/apply/jkkn-admission-2026",
       "actionPlatform": "http://schema.org/DesktopWebPlatform"
     },
-    "name": "Apply for B.Sc Operation Theatre and Anaesthesia Technology"
+    "name": "Apply for Bachelor of Anaesthesia and Operation Theatre Technology (B.AOTT)"
   }
 };
 
 const speakableSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "name": "BSc OT & Anaesthesia Technology College in TN | JKKN",
+  "name": "B.AOTT Anaesthesia & OT Technology College in TN | JKKN",
   "url": "https://ahs.jkkn.ac.in/operation-theatre-anaesthesia",
   "speakable": {
     "@type": "SpeakableSpecification",
@@ -100,7 +101,7 @@ const breadcrumbSchema = {
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "JKKN Institutions", "item": "https://jkkn.ac.in/" },
     { "@type": "ListItem", "position": 2, "name": "Allied Health Sciences", "item": "https://ahs.jkkn.ac.in/" },
-    { "@type": "ListItem", "position": 3, "name": "B.Sc OT and Anaesthesia Technology", "item": "https://ahs.jkkn.ac.in/operation-theatre-anaesthesia" }
+    { "@type": "ListItem", "position": 3, "name": "Bachelor of Anaesthesia and Operation Theatre Technology (B.AOTT)", "item": "https://ahs.jkkn.ac.in/operation-theatre-anaesthesia" }
   ]
 };
 

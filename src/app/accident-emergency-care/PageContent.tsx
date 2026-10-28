@@ -29,7 +29,7 @@ export default function AccidentEmergencyCare() {
                     <Breadcrumb items={[
                         { label: 'Home', href: '/' },
                         { label: 'Departments', href: '/departments' },
-                        { label: 'Accident & Emergency Care' }
+                        { label: 'Emergency Medical Technologist' }
                     ]} />
                 </div>
                 <HeroSection />
@@ -90,25 +90,25 @@ export default function AccidentEmergencyCare() {
                             <p className="text-sm font-semibold text-gray-800">B.Sc Cardiac Technology</p>
                         </Link>
                         <Link href="/dialysis-technology" className="bg-white rounded-xl p-4 text-center shadow-sm border border-gray-100 hover:shadow-md hover:border-[#0b6d41]/30 transition-all">
-                            <p className="text-sm font-semibold text-gray-800">B.Sc Dialysis Technology</p>
+                            <p className="text-sm font-semibold text-gray-800">Bachelor of Dialysis Therapy Technology (B.DTT)</p>
                         </Link>
                         <Link href="/radiology-imaging-technology" className="bg-white rounded-xl p-4 text-center shadow-sm border border-gray-100 hover:shadow-md hover:border-[#0b6d41]/30 transition-all">
-                            <p className="text-sm font-semibold text-gray-800">B.Sc Radiology & Imaging Technology</p>
+                            <p className="text-sm font-semibold text-gray-800">Bachelor of Medical Radiology and Imaging Technology (B.MRIT)</p>
                         </Link>
                         <Link href="/operation-theatre-anaesthesia" className="bg-white rounded-xl p-4 text-center shadow-sm border border-gray-100 hover:shadow-md hover:border-[#0b6d41]/30 transition-all">
-                            <p className="text-sm font-semibold text-gray-800">B.Sc Operation Theatre & Anaesthesia Technology</p>
+                            <p className="text-sm font-semibold text-gray-800">Bachelor of Anaesthesia and Operation Theatre Technology (B.AOTT)</p>
                         </Link>
                         <Link href="/respiratory-therapy" className="bg-white rounded-xl p-4 text-center shadow-sm border border-gray-100 hover:shadow-md hover:border-[#0b6d41]/30 transition-all">
-                            <p className="text-sm font-semibold text-gray-800">B.Sc Respiratory Therapy</p>
+                            <p className="text-sm font-semibold text-gray-800">Bachelor of Respiratory Technology (B.RT)</p>
                         </Link>
                         <Link href="/physician-assistant" className="bg-white rounded-xl p-4 text-center shadow-sm border border-gray-100 hover:shadow-md hover:border-[#0b6d41]/30 transition-all">
-                            <p className="text-sm font-semibold text-gray-800">B.Sc Physician Assistant</p>
+                            <p className="text-sm font-semibold text-gray-800">Bachelor of Physician Associates (B.PA)</p>
                         </Link>
                         <Link href="/critical-care-technology" className="bg-white rounded-xl p-4 text-center shadow-sm border border-gray-100 hover:shadow-md hover:border-[#0b6d41]/30 transition-all">
                             <p className="text-sm font-semibold text-gray-800">B.Sc Critical Care Technology</p>
                         </Link>
                         <Link href="/medical-record-science" className="bg-white rounded-xl p-4 text-center shadow-sm border border-gray-100 hover:shadow-md hover:border-[#0b6d41]/30 transition-all">
-                            <p className="text-sm font-semibold text-gray-800">B.Sc Medical Record Science</p>
+                            <p className="text-sm font-semibold text-gray-800">Bachelor of Science in Health Information Management (B.Sc. HIM)</p>
                         </Link>
                     </div>
                 </div>
@@ -162,8 +162,9 @@ function HeroSection() {
                 <div className="md:w-1/2">
                     <span className="text-[#0b6d41] font-bold tracking-widest uppercase text-xs mb-4 block p-1 bg-[#0b6d41]/10 w-fit rounded">Allied Health Sciences</span>
                     <h1 className="text-4xl md:text-6xl font-black mb-6 leading-tight text-[#0b6d41]">
-                        B.Sc Accident & Emergency Care Technology
+                        Bachelor of Emergency Medical Technologist (Paramedic)
                     </h1>
+                    <p className="text-base md:text-lg font-semibold text-gray-500 -mt-4 mb-6">Formerly B.Sc Accident &amp; Emergency Care Technology</p>
                     <p className="text-gray-600 text-lg mb-8 leading-relaxed">
                         Embark on a life-saving career in emergency medicine. Our comprehensive 3 Years + 1 Year Internship program prepares Learners to become skilled emergency care technologists, mastering trauma management, emergency response, critical care, advanced life support, disaster management, and pre-hospital emergency care.
                     </p>
@@ -191,7 +192,7 @@ function HeroSection() {
                     <div className="relative rounded-3xl overflow-hidden aspect-video shadow-2xl border-4 border-white group">
                         <Image
                             src="/accident-emergency-care-hero.webp"
-                            alt="Accident & Emergency Care Technology"
+                            alt="Emergency Medical Technologist (Paramedic)"
                             fill
                             priority
                             placeholder="blur"
@@ -246,10 +247,10 @@ function AboutSection() {
         <section className="py-24 max-w-7xl mx-auto px-4 py-4 flex flex-col lg:flex-row gap-16">
             <div className="lg:w-2/3">
                 <span className="text-[#0b6d41] font-bold tracking-widest uppercase text-xs mb-2 block p-1 bg-[#0b6d41]/10 w-fit rounded">Program Overview</span>
-                <h2 className="text-3xl font-black text-[#0b6d41] mb-6">What is B.Sc Accident & Emergency Care Technology?</h2>
+                <h2 className="text-3xl font-black text-[#0b6d41] mb-6">What is Bachelor of Emergency Medical Technologist (Paramedic)?</h2>
                 <div className="text-gray-600 leading-relaxed text-lg space-y-6 text-justify">
                     <p>
-                        B.Sc Accident and Emergency Care Technology is a specialized undergraduate program designed to train healthcare professionals in emergency medical services, trauma care, and critical care management. This program combines theoretical knowledge with extensive practical training, preparing Learners to work as first responders and emergency care specialists in hospitals, trauma centers, and pre-hospital settings.
+                        Bachelor of Emergency Medical Technologist (Paramedic) is a specialized undergraduate program designed to train healthcare professionals in emergency medical services, trauma care, and critical care management. This program combines theoretical knowledge with extensive practical training, preparing Learners to work as first responders and emergency care specialists in hospitals, trauma centers, and pre-hospital settings.
                     </p>
                     <p>
                         The learning framework covers emergency medicine fundamentals, trauma assessment and management, advanced cardiac life support (ACLS), advanced trauma life support (ATLS), disaster management, pre-hospital care, emergency pharmacology, airway management, shock management, and emergency medical procedures. Learners gain expertise in rapid patient assessment, triage, life-saving interventions, and emergency response coordination.
@@ -315,7 +316,7 @@ function EligibilitySection() {
                 <div className="text-center mb-12">
                     <span className="text-[#0b6d41] font-bold tracking-widest uppercase text-xs mb-2 p-1 bg-[#0b6d41]/5 rounded shadow-sm inline-block">Admission Requirements</span>
                     <h2 className="text-3xl font-black text-[#0b6d41]">Eligibility Criteria</h2>
-                    <p className="text-gray-500 mt-2">Review the academic qualifications needed to apply for the B.Sc Accident and Emergency Care Technology program</p>
+                    <p className="text-gray-500 mt-2">Review the academic qualifications needed to apply for the Bachelor of Emergency Medical Technologist (Paramedic) program</p>
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-8">
@@ -474,7 +475,7 @@ function CareerSection() {
             <div className="max-w-7xl mx-auto px-4 text-center">
                 <span className="text-[#0b6d41] font-bold tracking-widest uppercase text-xs mb-2 block p-1 bg-[#0b6d41]/10 w-fit rounded inline-block">Future Pathways</span>
                 <h2 className="text-3xl md:text-5xl font-black mb-4 text-[#0b6d41]">Career Opportunities</h2>
-                <p className="text-gray-500 mb-16 max-w-3xl mx-auto">B.Sc Accident and Emergency Care Technology graduates enjoy diverse career paths in emergency healthcare</p>
+                <p className="text-gray-500 mb-16 max-w-3xl mx-auto">Bachelor of Emergency Medical Technologist (Paramedic) graduates enjoy diverse career paths in emergency healthcare</p>
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {jobs.map((job, i) => (
@@ -500,7 +501,7 @@ function CareerSection() {
                   href="/course-blog/accident-emergency-care-technician-guide"
                   className="font-bold text-[#0b6d41] underline underline-offset-4 hover:text-[#12a15f] transition-colors"
                 >
-                  Read our B.Sc Accident & Emergency Care Technology career guide
+                  Read our Bachelor of Emergency Medical Technologist (Paramedic) career guide
                 </Link>
                 .
               </p>
@@ -578,7 +579,7 @@ function FAQSection() {
             <div className="text-center mb-12">
                 <span className="text-[#0b6d41] font-bold tracking-widest uppercase text-xs mb-2 p-1 bg-white rounded inline-block">Common Questions</span>
                 <h2 className="text-3xl font-black text-[#0b6d41]">Frequently Asked Questions</h2>
-                <p className="text-gray-500 mt-2">Find answers to common questions about B.Sc Accident and Emergency Care Technology program</p>
+                <p className="text-gray-500 mt-2">Find answers to common questions about Bachelor of Emergency Medical Technologist (Paramedic) program</p>
             </div>
 
             <div className="space-y-4">
@@ -610,7 +611,7 @@ function CTASection() {
         <section className="bg-white py-16">
             <div className="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row items-center justify-between text-[#0b6d41] text-center lg:text-left gap-8">
                 <div>
-                    <h2 className="text-3xl md:text-4xl font-black mb-2">Ready to Start Your Career in Emergency Care Technology?</h2>
+                    <h2 className="text-3xl md:text-4xl font-black mb-2">Ready to Start Your Career in Emergency Medical Technologist (Paramedic)?</h2>
                     <p className="font-medium opacity-90 text-[#0b6d41]">Join JKKN College and become a skilled emergency care professional saving lives.</p>
                 </div>
                 <div className="flex flex-wrap justify-center gap-4 shrink-0">

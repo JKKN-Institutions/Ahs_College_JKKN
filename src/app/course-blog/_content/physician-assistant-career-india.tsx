@@ -4,14 +4,14 @@ export default function PhysicianAssistantContent() {
   return (
     <>
       <p>
-        Physician Assistant (PA) is one of the most misunderstood careers in India.
+        Physician Associate (PA) is one of the most misunderstood careers in India.
         Most learners think it is "just a nursing alternative." It is not. PAs are
         clinical extenders — trained to take histories, perform examinations, assist in
         procedures, write prescriptions under supervision, and counsel patients. India's
         corporate hospital chains are quietly hiring{" "}
         <strong>6,000+ physician assistants every year</strong> because they cannot find
         enough specialist doctors. If you're weighing{" "}
-        <Link href="/physician-assistant">B.Sc Physician Assistant</Link> at JKKN, this
+        <Link href="/physician-assistant">Bachelor of Physician Associates (B.PA)</Link> at JKKN, this
         is the honest 2026 picture.
       </p>
 
@@ -42,12 +42,12 @@ export default function PhysicianAssistantContent() {
         </li>
       </ul>
       <p>
-        The Indian Association of Physician Assistants (IAPA) is also lobbying for
+        The Indian Association of Physician Associates (IAPA) is also lobbying for
         formal regulatory recognition — which would significantly elevate salaries and
         career security in the next 3–5 years.
       </p>
 
-      <h2 id="day-in-life">Day in the Life of a Physician Assistant</h2>
+      <h2 id="day-in-life">Day in the Life of a Physician Associate</h2>
       <p>
         A cardiology PA at a corporate hospital starts at 8 AM with ward rounds
         alongside the senior consultant — reviewing overnight events, presenting cases,
@@ -177,7 +177,7 @@ export default function PhysicianAssistantContent() {
           <strong>USA</strong> — Indian PA degree is NOT directly accepted. To practice
           as a US PA, you need a Master's PA program (PANCE exam). However, Indian PAs
           frequently move to US clinical research, medical writing, or healthcare
-          consulting roles where the BSc PA is highly valued
+          consulting roles where the B.PA is highly valued
         </li>
         <li>
           <strong>UK</strong> — PA programs exist via FRCSEd PA(R) registration. Indian
@@ -221,7 +221,7 @@ export default function PhysicianAssistantContent() {
       </ul>
       <p>
         Read the full{" "}
-        <Link href="/physician-assistant">B.Sc Physician Assistant learning framework</Link> or
+        <Link href="/physician-assistant">Bachelor of Physician Associates (B.PA) learning framework</Link> or
         visit{" "}
         <Link href="/admissions/physician-assistant">admissions for 2026-27</Link>{" "}
         for eligibility, fee structure, and seat availability.

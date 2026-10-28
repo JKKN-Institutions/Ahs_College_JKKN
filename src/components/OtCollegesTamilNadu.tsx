@@ -19,7 +19,7 @@ export function OtCollegesTamilNadu() {
     <section id="anaesthesia-technology-colleges-tamil-nadu" className="py-20 bg-white">
       <div className="max-w-5xl mx-auto px-4">
         <h2 className="text-3xl font-black text-[#0b6d41] mb-4">
-          B.Sc Operation Theatre &amp; Anaesthesia Technology Colleges in Tamil Nadu
+          Anaesthesia and Operation Theatre Technology (B.AOTT) Colleges in Tamil Nadu
         </h2>
         <p className="snippet-answer text-gray-900 leading-relaxed mb-4">
           {OT_LIST_SOURCE.totalInstitutions} institutions are affiliated to The Tamil Nadu Dr. M.G.R. Medical University
@@ -35,12 +35,12 @@ export function OtCollegesTamilNadu() {
         </p>
 
         <h3 className="text-xl font-bold text-[#0b6d41] mb-3">
-          Government colleges offering B.Sc Operation Theatre &amp; Anaesthesia Technology ({OT_GOVT_COLLEGES.length})
+          Government colleges offering B.AOTT Anaesthesia and Operation Theatre Technology ({OT_GOVT_COLLEGES.length})
         </h3>
         <div className="overflow-x-auto rounded-2xl border border-gray-200 bg-white">
           <table className="w-full text-sm text-left">
             <caption className="sr-only">
-              Government colleges offering B.Sc Operation Theatre and Anaesthesia Technology in Tamil Nadu
+              Government colleges offering B.AOTT Anaesthesia and Operation Theatre Technology in Tamil Nadu
             </caption>
             <thead className="bg-[#f0f7f2] text-[#0b6d41]">
               <tr>
@@ -69,7 +69,7 @@ export function OtCollegesTamilNadu() {
 
         <div className="mt-10 rounded-2xl border-2 border-[#0b6d41]/20 bg-[#f0f7f2] p-6">
           <h3 className="text-xl font-bold text-[#0b6d41] mb-3">
-            Anaesthesia technologist or anaesthesiologist? B.Sc vs MD
+            Anaesthesia technologist or anaesthesiologist? B.AOTT vs MD
           </h3>
           <p className="text-gray-800 leading-relaxed mb-4">
             Many &quot;anaesthesia colleges&quot; searches mix two different careers. This page is about the B.Sc
@@ -82,7 +82,7 @@ export function OtCollegesTamilNadu() {
               <thead className="bg-white text-[#0b6d41]">
                 <tr>
                   <th scope="col" className="px-4 py-3 font-bold"> </th>
-                  <th scope="col" className="px-4 py-3 font-bold">B.Sc OT &amp; Anaesthesia Technology (B.AOTT)</th>
+                  <th scope="col" className="px-4 py-3 font-bold">Bachelor of Anaesthesia and Operation Theatre Technology (B.AOTT)</th>
                   <th scope="col" className="px-4 py-3 font-bold">MD Anaesthesiology</th>
                 </tr>
               </thead>

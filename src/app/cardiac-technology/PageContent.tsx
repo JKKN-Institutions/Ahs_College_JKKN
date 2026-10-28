@@ -87,28 +87,28 @@ export default function CardiacTechnology() {
                     </h2>
                     <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
                         <Link href="/dialysis-technology" className="bg-white rounded-xl p-4 text-center shadow-sm border border-gray-100 hover:shadow-md hover:border-[#0b6d41]/30 transition-all">
-                            <p className="text-sm font-semibold text-gray-800">B.Sc Dialysis Technology</p>
+                            <p className="text-sm font-semibold text-gray-800">Bachelor of Dialysis Therapy Technology (B.DTT)</p>
                         </Link>
                         <Link href="/radiology-imaging-technology" className="bg-white rounded-xl p-4 text-center shadow-sm border border-gray-100 hover:shadow-md hover:border-[#0b6d41]/30 transition-all">
-                            <p className="text-sm font-semibold text-gray-800">B.Sc Radiology & Imaging Technology</p>
+                            <p className="text-sm font-semibold text-gray-800">Bachelor of Medical Radiology and Imaging Technology (B.MRIT)</p>
                         </Link>
                         <Link href="/operation-theatre-anaesthesia" className="bg-white rounded-xl p-4 text-center shadow-sm border border-gray-100 hover:shadow-md hover:border-[#0b6d41]/30 transition-all">
-                            <p className="text-sm font-semibold text-gray-800">B.Sc Operation Theatre & Anaesthesia Technology</p>
+                            <p className="text-sm font-semibold text-gray-800">Bachelor of Anaesthesia and Operation Theatre Technology (B.AOTT)</p>
                         </Link>
                         <Link href="/respiratory-therapy" className="bg-white rounded-xl p-4 text-center shadow-sm border border-gray-100 hover:shadow-md hover:border-[#0b6d41]/30 transition-all">
-                            <p className="text-sm font-semibold text-gray-800">B.Sc Respiratory Therapy</p>
+                            <p className="text-sm font-semibold text-gray-800">Bachelor of Respiratory Technology (B.RT)</p>
                         </Link>
                         <Link href="/physician-assistant" className="bg-white rounded-xl p-4 text-center shadow-sm border border-gray-100 hover:shadow-md hover:border-[#0b6d41]/30 transition-all">
-                            <p className="text-sm font-semibold text-gray-800">B.Sc Physician Assistant</p>
+                            <p className="text-sm font-semibold text-gray-800">Bachelor of Physician Associates (B.PA)</p>
                         </Link>
                         <Link href="/critical-care-technology" className="bg-white rounded-xl p-4 text-center shadow-sm border border-gray-100 hover:shadow-md hover:border-[#0b6d41]/30 transition-all">
                             <p className="text-sm font-semibold text-gray-800">B.Sc Critical Care Technology</p>
                         </Link>
                         <Link href="/medical-record-science" className="bg-white rounded-xl p-4 text-center shadow-sm border border-gray-100 hover:shadow-md hover:border-[#0b6d41]/30 transition-all">
-                            <p className="text-sm font-semibold text-gray-800">B.Sc Medical Record Science</p>
+                            <p className="text-sm font-semibold text-gray-800">Bachelor of Science in Health Information Management (B.Sc. HIM)</p>
                         </Link>
                         <Link href="/accident-emergency-care" className="bg-white rounded-xl p-4 text-center shadow-sm border border-gray-100 hover:shadow-md hover:border-[#0b6d41]/30 transition-all">
-                            <p className="text-sm font-semibold text-gray-800">B.Sc Accident & Emergency Care Technology</p>
+                            <p className="text-sm font-semibold text-gray-800">Bachelor of Emergency Medical Technologist (Paramedic)</p>
                         </Link>
                     </div>
                 </div>

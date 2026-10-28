@@ -121,14 +121,14 @@ const collegeSchema = {
   },
   "department": [
     { "@type": "Organization", "name": "Department of Cardiac Technology" },
-    { "@type": "Organization", "name": "Department of Radiography and Imaging Technology" },
-    { "@type": "Organization", "name": "Department of Dialysis Technology" },
-    { "@type": "Organization", "name": "Department of Operation Theatre and Anaesthesia Technology" },
-    { "@type": "Organization", "name": "Department of Respiratory Therapy" },
-    { "@type": "Organization", "name": "Department of Physician Assistant Studies" },
+    { "@type": "Organization", "name": "Department of Medical Radiology and Imaging Technology" },
+    { "@type": "Organization", "name": "Department of Dialysis Therapy Technology" },
+    { "@type": "Organization", "name": "Department of Anaesthesia and Operation Theatre Technology" },
+    { "@type": "Organization", "name": "Department of Respiratory Technology" },
+    { "@type": "Organization", "name": "Department of Physician Associate Studies" },
     { "@type": "Organization", "name": "Department of Critical Care Technology" },
-    { "@type": "Organization", "name": "Department of Medical Record Science" },
-    { "@type": "Organization", "name": "Department of Accident and Emergency Care Technology" }
+    { "@type": "Organization", "name": "Department of Health Information Management" },
+    { "@type": "Organization", "name": "Department of Emergency Medical Technologist (Paramedic)" }
   ],
   "areaServed": [
     { "@type": "City", "name": "Erode" },
@@ -143,15 +143,15 @@ const collegeSchema = {
   "knowsAbout": [
     "Allied Health Sciences",
     "Cardiac Technology",
-    "Radiology and Imaging",
-    "Dialysis Technology",
-    "Operation Theatre Technology",
+    "Medical Radiology and Imaging",
+    "Dialysis Therapy Technology",
+    "Anaesthesia and Operation Theatre Technology",
     "Anaesthesia Technology",
-    "Respiratory Therapy",
-    "Physician Assistant Training",
+    "Respiratory Technology",
+    "Physician Associate Training",
     "Critical Care Technology",
-    "Medical Record Science",
-    "Emergency Care Technology"
+    "Health Information Management",
+    "Emergency Medical Technologist (Paramedic)"
   ],
   "dateModified": LAST_UPDATED
 };
@@ -166,14 +166,14 @@ const programListSchema = {
   "numberOfItems": 9,
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "B.Sc Cardiac Technology", "url": "https://ahs.jkkn.ac.in/cardiac-technology" },
-    { "@type": "ListItem", "position": 2, "name": "B.Sc Radiology & Imaging Technology", "url": "https://ahs.jkkn.ac.in/radiology-imaging-technology" },
-    { "@type": "ListItem", "position": 3, "name": "B.Sc Dialysis Technology", "url": "https://ahs.jkkn.ac.in/dialysis-technology" },
-    { "@type": "ListItem", "position": 4, "name": "B.Sc Operation Theatre & Anaesthesia Technology", "url": "https://ahs.jkkn.ac.in/operation-theatre-anaesthesia" },
-    { "@type": "ListItem", "position": 5, "name": "B.Sc Respiratory Therapy", "url": "https://ahs.jkkn.ac.in/respiratory-therapy" },
-    { "@type": "ListItem", "position": 6, "name": "B.Sc Physician Assistant", "url": "https://ahs.jkkn.ac.in/physician-assistant" },
+    { "@type": "ListItem", "position": 2, "name": "Bachelor of Medical Radiology and Imaging Technology (B.MRIT)", "url": "https://ahs.jkkn.ac.in/radiology-imaging-technology" },
+    { "@type": "ListItem", "position": 3, "name": "Bachelor of Dialysis Therapy Technology (B.DTT)", "url": "https://ahs.jkkn.ac.in/dialysis-technology" },
+    { "@type": "ListItem", "position": 4, "name": "Bachelor of Anaesthesia and Operation Theatre Technology (B.AOTT)", "url": "https://ahs.jkkn.ac.in/operation-theatre-anaesthesia" },
+    { "@type": "ListItem", "position": 5, "name": "Bachelor of Respiratory Technology (B.RT)", "url": "https://ahs.jkkn.ac.in/respiratory-therapy" },
+    { "@type": "ListItem", "position": 6, "name": "Bachelor of Physician Associates (B.PA)", "url": "https://ahs.jkkn.ac.in/physician-assistant" },
     { "@type": "ListItem", "position": 7, "name": "B.Sc Critical Care Technology", "url": "https://ahs.jkkn.ac.in/critical-care-technology" },
-    { "@type": "ListItem", "position": 8, "name": "B.Sc Medical Record Science", "url": "https://ahs.jkkn.ac.in/medical-record-science" },
-    { "@type": "ListItem", "position": 9, "name": "B.Sc Accident & Emergency Care Technology", "url": "https://ahs.jkkn.ac.in/accident-emergency-care" }
+    { "@type": "ListItem", "position": 8, "name": "Bachelor of Science in Health Information Management (B.Sc. HIM)", "url": "https://ahs.jkkn.ac.in/medical-record-science" },
+    { "@type": "ListItem", "position": 9, "name": "Bachelor of Emergency Medical Technologist (Paramedic)", "url": "https://ahs.jkkn.ac.in/accident-emergency-care" }
   ]
 };
 

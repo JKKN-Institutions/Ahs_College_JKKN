@@ -87,8 +87,8 @@ export const courseBlogPosts: CourseBlogPost[] = [
   },
   {
     slug: "future-of-dialysis-technology-careers",
-    title: "Future of Dialysis Technology in India: Why 2026 Is the Best Time to Start",
-    metaTitle: "Future of Dialysis Technology in India 2026 — Career, Salary & Scope",
+    title: "Future of Dialysis Therapy Technology in India: Why 2026 Is the Best Time to Start",
+    metaTitle: "Future of Dialysis Therapy Technology in India 2026 — Career, Salary & Scope",
     metaDescription:
       "India's dialysis demand is exploding with 2.2 lakh new ESRD cases yearly. Discover dialysis technologist career paths, salary, skills, and global jobs.",
     excerpt:
@@ -96,7 +96,7 @@ export const courseBlogPosts: CourseBlogPost[] = [
     heroImage: "/dialysis-technology-hero.webp",
     heroImageAlt: "Dialysis technologist operating hemodialysis machine at JKKN College",
     courseSlug: "dialysis-technology",
-    courseName: "B.Sc Renal Dialysis Technology",
+    courseName: "B.Sc Renal Dialysis Therapy Technology",
     category: "Career Guide",
     publishedDate: "2026-05-16",
     modifiedDate: "2026-05-16",
@@ -121,7 +121,7 @@ export const courseBlogPosts: CourseBlogPost[] = [
     ],
     faqs: [
       {
-        q: "Is dialysis technology a good career in India?",
+        q: "Is dialysis therapy technology a good career in India?",
         a: "Yes. India has fewer than 12,000 trained dialysis technicians for over 2 lakh new patients each year. Even rural Tamil Nadu, Kerala, and Andhra Pradesh dialysis chains are short-staffed. Job security and salary growth are exceptional.",
       },
       {
@@ -144,16 +144,16 @@ export const courseBlogPosts: CourseBlogPost[] = [
   },
   {
     slug: "radiology-imaging-technology-career-guide",
-    title: "Radiology & Imaging Technology Career Guide India 2026 — Salary, Scope & Future",
-    metaTitle: "Radiology & Imaging Technology Careers in India 2026",
+    title: "Medical Radiology and Imaging Technology Career Guide India 2026 — Salary, Scope & Future",
+    metaTitle: "Medical Radiology and Imaging Technology Careers in India 2026",
     metaDescription:
-      "Where a B.Sc in Radiology & Imaging Technology leads — MRI, CT and PET roles, the skills hospitals hire for, and routes abroad.",
+      "Where a Bachelor of Medical Radiology and Imaging Technology (B.MRIT) leads — MRI, CT and PET roles, the skills hospitals hire for, and routes abroad.",
     excerpt:
       "India will need 65,000 additional radiology technologists by 2030. AI isn't replacing them — it's multiplying their productivity. Here's what your career, salary, and skills should look like.",
     heroImage: "/radiology-technology-hero.webp",
     heroImageAlt: "Radiology technologist preparing patient for MRI scan at JKKN College",
     courseSlug: "radiology-imaging-technology",
-    courseName: "B.Sc Radiology & Imaging Technology",
+    courseName: "Bachelor of Medical Radiology and Imaging Technology (B.MRIT)",
     category: "Career Guide",
     publishedDate: "2026-05-16",
     modifiedDate: "2026-05-16",
@@ -201,16 +201,16 @@ export const courseBlogPosts: CourseBlogPost[] = [
   },
   {
     slug: "operation-theatre-anaesthesia-technologist-roadmap",
-    title: "Operation Theatre & Anaesthesia Technologist Career Roadmap India 2026",
-    metaTitle: "OT & Anaesthesia Technologist Career Roadmap India 2026 — Salary & Scope",
+    title: "Anaesthesia and Operation Theatre Technologist Career Roadmap India 2026",
+    metaTitle: "Anaesthesia & OT Technologist Career Roadmap India 2026 — Salary & Scope",
     metaDescription:
-      "Complete career roadmap for BSc Operation Theatre & Anaesthesia Technology in India. Salary, day-in-life, specializations, and global opportunities.",
+      "Complete career roadmap for B.AOTT (Anaesthesia & OT Technology) in India. Salary, day-in-life, specializations, and global opportunities.",
     excerpt:
       "India performs 25 million surgeries every year and is short of 80,000 OT technologists. Here's what the career, daily work, salary, and growth path look like.",
     heroImage: "/allied-health-science-hero.webp",
     heroImageAlt: "Operation theatre technologist preparing surgical instruments at JKKN College",
     courseSlug: "operation-theatre-anaesthesia",
-    courseName: "B.Sc Operation Theatre & Anaesthesia Technology",
+    courseName: "Bachelor of Anaesthesia and Operation Theatre Technology (B.AOTT)",
     category: "Career Guide",
     publishedDate: "2026-05-16",
     modifiedDate: "2026-05-16",
@@ -258,16 +258,16 @@ export const courseBlogPosts: CourseBlogPost[] = [
   },
   {
     slug: "respiratory-therapy-scope-and-salary-india",
-    title: "Respiratory Therapy Scope, Salary & Future in India (2026 Complete Guide)",
-    metaTitle: "Respiratory Therapy Scope & Salary India 2026 — Career, Jobs, Future",
+    title: "Respiratory Technology Scope, Salary & Future in India (2026 Complete Guide)",
+    metaTitle: "Respiratory Technology Scope & Salary India 2026 — Career, Jobs, Future",
     metaDescription:
-      "Post-COVID demand for respiratory therapists has tripled. Explore the career scope, salary, specializations, and US/Canada licensure paths for BSc Respiratory Therapy.",
+      "Post-COVID demand for respiratory therapists has tripled. Explore the career scope, salary, specializations, and US/Canada licensure paths for B.RT (Respiratory Technology).",
     excerpt:
       "Post-COVID, India added 1.5 lakh new ICU ventilator beds. The country has fewer than 8,000 trained respiratory therapists. The math makes this one of the most undersupplied healthcare careers.",
     heroImage: "/images/departments/respiratory-therapy-hero.webp",
     heroImageAlt: "Respiratory therapist setting up mechanical ventilator at JKKN College",
     courseSlug: "respiratory-therapy",
-    courseName: "B.Sc Respiratory Therapy",
+    courseName: "Bachelor of Respiratory Technology (B.RT)",
     category: "Career Guide",
     publishedDate: "2026-05-16",
     modifiedDate: "2026-05-16",
@@ -281,7 +281,7 @@ export const courseBlogPosts: CourseBlogPost[] = [
       "respiratory therapist US Canada",
     ],
     tableOfContents: [
-      { id: "industry", label: "Post-COVID Demand for Respiratory Therapy" },
+      { id: "industry", label: "Post-COVID Demand for Respiratory Technology" },
       { id: "day-in-life", label: "Day in the Life of a Respiratory Therapist" },
       { id: "career-paths", label: "Career Paths & Specializations" },
       { id: "salary", label: "Salary Outlook in India" },
@@ -292,7 +292,7 @@ export const courseBlogPosts: CourseBlogPost[] = [
     ],
     faqs: [
       {
-        q: "Is respiratory therapy a good career in India?",
+        q: "Is respiratory technology (respiratory therapy) a good career in India?",
         a: "Yes. India's ICU and ventilator capacity has doubled post-COVID, but trained respiratory therapists number under 8,000 nationwide. Demand far exceeds supply, salaries are rising, and global mobility (US/Canada) is exceptional.",
       },
       {
@@ -305,7 +305,7 @@ export const courseBlogPosts: CourseBlogPost[] = [
       },
       {
         q: "Can I work as a respiratory therapist in the US?",
-        a: "Yes. After your BSc Respiratory Therapy and clearing the NBRC (CRT + RRT) exams, you can practice in the US. Many Indian graduates pursue this pathway. Canada (CSRT registration) and Gulf countries are also strong options.",
+        a: "Yes. After your Bachelor of Respiratory Technology (B.RT) and clearing the NBRC (CRT + RRT) exams, you can practice in the US. Many Indian graduates pursue this pathway. Canada (CSRT registration) and Gulf countries are also strong options.",
       },
       {
         q: "Which hospitals hire respiratory therapists in India?",
@@ -315,16 +315,16 @@ export const courseBlogPosts: CourseBlogPost[] = [
   },
   {
     slug: "physician-assistant-career-india",
-    title: "Physician Assistant Career in India 2026 — Scope, Salary & Real Opportunities",
-    metaTitle: "Physician Assistant Career India 2026 — Salary, Scope, Jobs Guide",
+    title: "Physician Associate Career in India 2026 — Scope, Salary & Real Opportunities",
+    metaTitle: "Physician Associate Career India 2026 — Salary, Scope, Jobs Guide",
     metaDescription:
-      "Is BSc Physician Assistant a good career in India? Explore real scope, salary, day-in-life, hospital adoption, and how PA compares to nursing and MBBS.",
+      "Is B.PA (Physician Associates) a good career in India? Explore real scope, salary, day-in-life, hospital adoption, and how PA compares to nursing and MBBS.",
     excerpt:
       "Indian hospitals are quietly hiring 6,000+ physician assistants every year. The role is growing because hospitals can't find enough specialist doctors — and PAs fill a critical gap.",
     heroImage: "/allied-health-science-hero.webp",
-    heroImageAlt: "Physician assistant learner in clinical training at JKKN College",
+    heroImageAlt: "Physician associate learner in clinical training at JKKN College",
     courseSlug: "physician-assistant",
-    courseName: "B.Sc Physician Assistant",
+    courseName: "Bachelor of Physician Associates (B.PA)",
     category: "Career Guide",
     publishedDate: "2026-05-16",
     modifiedDate: "2026-05-16",
@@ -339,7 +339,7 @@ export const courseBlogPosts: CourseBlogPost[] = [
     ],
     tableOfContents: [
       { id: "industry", label: "Why PA Role Is Growing in India" },
-      { id: "day-in-life", label: "Day in the Life of a Physician Assistant" },
+      { id: "day-in-life", label: "Day in the Life of a Physician Associate" },
       { id: "career-paths", label: "Career Paths & Specializations" },
       { id: "salary", label: "Salary Outlook in India" },
       { id: "skills", label: "Skills & Certifications That Multiply Your Value" },
@@ -349,19 +349,19 @@ export const courseBlogPosts: CourseBlogPost[] = [
     ],
     faqs: [
       {
-        q: "Is physician assistant a good career in India?",
+        q: "Is physician associate (physician assistant) a good career in India?",
         a: "Yes — especially in corporate hospitals. Apollo, Fortis, Medanta, Manipal, and KMCH actively hire PAs for cardiology, nephrology, oncology, and surgical units. Salaries are competitive and the role is becoming formally recognized.",
       },
       {
-        q: "What is the difference between a physician assistant and a nurse?",
+        q: "What is the difference between a physician associate and a nurse?",
         a: "Nurses focus on patient care, monitoring, and medication administration. PAs assist doctors directly in clinical decision-making, history-taking, examinations, procedure assistance, and patient counseling. PAs work as the doctor's extension across OPD and inpatient settings.",
       },
       {
-        q: "What is the salary of a physician assistant in India?",
+        q: "What is the salary of a physician associate in India?",
         a: "Entry-level: ₹2.5–4.2 LPA. Mid-level (3–5 years): ₹5–8 LPA. Senior PAs attached to senior consultants in cardiology, oncology, transplant medicine: ₹8–15 LPA. International PA roles pay considerably more.",
       },
       {
-        q: "Which hospitals hire physician assistants?",
+        q: "Which hospitals hire physician associates?",
         a: "Apollo Hospitals (the largest PA employer in India), Fortis, Medanta, Manipal, KMCH, MIOT, Christian Medical College Vellore, Yashoda, Care Hospitals, and most super-specialty hospitals with cardiology, oncology, and transplant departments.",
       },
       {
@@ -429,16 +429,16 @@ export const courseBlogPosts: CourseBlogPost[] = [
   },
   {
     slug: "medical-record-science-career-india",
-    title: "Medical Record Science Career in India 2026 — HIM, Coding & Remote Work",
-    metaTitle: "Medical Record Science Career India 2026 — HIM Salary, Coding Jobs, Remote",
+    title: "Health Information Management Career in India 2026 — HIM, Coding & Remote Work",
+    metaTitle: "Health Information Management Career India 2026 — Salary & Jobs",
     metaDescription:
-      "Medical record science offers HIM, ICD-10 coding, and remote US medical coding careers. Explore scope, salary, certifications, and global opportunities.",
+      "Health Information Management (formerly medical record science): ICD-10 coding and remote US coding careers. Scope, salary, certifications, global jobs.",
     excerpt:
-      "Medical coding is now a ₹4,000 crore industry in India, with US hospitals outsourcing ICD-10 work to Indian coders. BSc Medical Record Science is the entry ticket.",
+      "Medical coding is now a ₹4,000 crore industry in India, with US hospitals outsourcing ICD-10 work to Indian coders. Bachelor of Science in Health Information Management (B.Sc. HIM) is the entry ticket.",
     heroImage: "/medical-record-science-hero.webp",
-    heroImageAlt: "Medical record science learner working on HIM digitization at JKKN College",
+    heroImageAlt: "Health Information Management learner working on HIM digitization at JKKN College",
     courseSlug: "medical-record-science",
-    courseName: "B.Sc Medical Record Science",
+    courseName: "Bachelor of Science in Health Information Management (B.Sc. HIM)",
     category: "Career Guide",
     publishedDate: "2026-05-16",
     modifiedDate: "2026-05-16",
@@ -464,7 +464,7 @@ export const courseBlogPosts: CourseBlogPost[] = [
     ],
     faqs: [
       {
-        q: "Is medical record science a good career in India?",
+        q: "Is health information management (medical record science) a good career in India?",
         a: "Yes. The HIM industry is growing at 18% CAGR, and US-bound medical coding is a ₹4,000 crore export segment. Graduates can work in hospitals, insurance, HIM consulting, or remote-coding for US hospitals.",
       },
       {
@@ -476,27 +476,27 @@ export const courseBlogPosts: CourseBlogPost[] = [
         a: "Entry-level in hospitals: ₹2–3.5 LPA. Mid-level HIM executive (3–5 years): ₹4–7 LPA. CPC-certified medical coders: ₹4–10 LPA. Senior HIM managers in corporate hospitals: ₹8–14 LPA.",
       },
       {
-        q: "Can I work from home as a medical record science graduate?",
+        q: "Can I work from home as a health information management graduate?",
         a: "Yes. Once you earn CPC (AAPC) or CCS (AHIMA) certification, US-bound medical coding companies like Optum, Cognizant, Omega Healthcare, Access Healthcare, R1 RCM, and Sutherland hire fully remote coders.",
       },
       {
-        q: "Which companies hire medical record science graduates?",
+        q: "Which companies hire health information management graduates?",
         a: "All Apollo, Fortis, Manipal, MIOT, KMCH, AIIMS, and government hospitals hire MRO/HIM staff. Medical coding companies: Optum, Cognizant, Omega Healthcare, Access Healthcare, R1 RCM, Sutherland, Genpact, and Wipro HealthPlume.",
       },
     ],
   },
   {
     slug: "accident-emergency-care-technician-guide",
-    title: "Accident & Emergency Care Technology Career Guide India 2026",
-    metaTitle: "Accident & Emergency Care Technology Career India 2026 — Salary, Scope, Jobs",
+    title: "Emergency Medical Technologist (Paramedic) Career Guide India 2026",
+    metaTitle: "Emergency Medical Technologist Career India 2026 — Salary & Jobs",
     metaDescription:
-      "India's trauma care and ambulance services are expanding fast. Discover career scope, salary, EMT certifications, and global opportunities for BSc Accident & Emergency Care.",
+      "India's trauma care and ambulance services are expanding fast. Discover career scope, salary, EMT certifications, and global jobs for Emergency Medical Technologists (Paramedic).",
     excerpt:
       "India has 4.5 lakh road accident victims a year but fewer than 15,000 trained emergency care technologists. The Modi government's trauma care expansion is creating thousands of new roles.",
     heroImage: "/accident-emergency-care-hero.webp",
     heroImageAlt: "Emergency care technologist responding to trauma case at JKKN College",
     courseSlug: "accident-emergency-care",
-    courseName: "B.Sc Accident & Emergency Care Technology",
+    courseName: "Bachelor of Emergency Medical Technologist (Paramedic)",
     category: "Career Guide",
     publishedDate: "2026-05-16",
     modifiedDate: "2026-05-16",
@@ -511,7 +511,7 @@ export const courseBlogPosts: CourseBlogPost[] = [
     ],
     tableOfContents: [
       { id: "industry", label: "Trauma Care Expansion in India" },
-      { id: "day-in-life", label: "Day in the Life of an Emergency Care Technologist" },
+      { id: "day-in-life", label: "Day in the Life of an Emergency Medical Technologist" },
       { id: "career-paths", label: "Career Paths & Specializations" },
       { id: "salary", label: "Salary Outlook in India" },
       { id: "skills", label: "Skills & Certifications That Multiply Your Value" },
@@ -521,7 +521,7 @@ export const courseBlogPosts: CourseBlogPost[] = [
     ],
     faqs: [
       {
-        q: "What is the scope of accident and emergency care technology in India?",
+        q: "What is the scope of an emergency medical technologist (paramedic) career in India?",
         a: "Excellent. India has 4.5 lakh road accident victims yearly, expanding 108 ambulance services, growing trauma centres under PMSSY, and corporate hospitals all hiring emergency care technologists.",
       },
       {
@@ -533,7 +533,7 @@ export const courseBlogPosts: CourseBlogPost[] = [
         a: "Entry-level: ₹2.4–4 LPA. Mid-level (3–5 years): ₹4.5–7 LPA. Senior emergency care technologists in trauma centres or air ambulance services: ₹7–13 LPA. Gulf and Saudi roles pay 2.5–4× higher.",
       },
       {
-        q: "Where can I work after BSc Accident & Emergency Care?",
+        q: "Where can I work after Bachelor of Emergency Medical Technologist (Paramedic)?",
         a: "Trauma centres (Apollo, Medanta, AIIMS, Christian Medical College Vellore), 108 ambulance services, corporate emergency departments, disaster response teams, oil-rig medical services, air ambulance companies, and ER chains like CARE Hospitals.",
       },
       {

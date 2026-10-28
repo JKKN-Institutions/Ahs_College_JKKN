@@ -3,8 +3,8 @@ import { COURSE_FAQS } from "@/lib/course-faqs";
 import { DIALYSIS_LIST_SOURCE, DIALYSIS_GOVT_COLLEGES, DIALYSIS_JKKN_SEATS } from "@/lib/dialysis-colleges-tn";
 
 export const metadata = createPageMetadata({
-  title: "B Sc Dialysis Technology Colleges in Tamilnadu | JKKN",
-  description: `${DIALYSIS_LIST_SOURCE.totalInstitutions} BSc Dialysis Technology (B.DTT) colleges in Tamilnadu (TNMGRMU ${DIALYSIS_LIST_SOURCE.year}), ${DIALYSIS_GOVT_COLLEGES.length} govt. Govt list, seats, fee, and JKKN's course with ${DIALYSIS_JKKN_SEATS} seats.`,
+  title: "B.DTT Dialysis Therapy Technology Colleges in Tamilnadu | JKKN",
+  description: `${DIALYSIS_LIST_SOURCE.totalInstitutions} B.DTT Dialysis Therapy (formerly BSc Dialysis Technology) colleges in TN (TNMGRMU ${DIALYSIS_LIST_SOURCE.year}), ${DIALYSIS_GOVT_COLLEGES.length} govt. Govt list, seats, fee, JKKN ${DIALYSIS_JKKN_SEATS} seats.`,
   path: "/dialysis-technology",
   keywords: [
     "b sc dialysis technology colleges in tamilnadu",
@@ -13,14 +13,15 @@ export const metadata = createPageMetadata({
     "government bsc dialysis technology colleges in tamilnadu",
     "bachelor of dialysis therapy technology"
   ],
-  ogImage: { url: "https://ahs.jkkn.ac.in/dialysis-technology-hero.webp", width: 1200, height: 630, alt: "BSc Dialysis Technology at JKKN College" },
+  ogImage: { url: "https://ahs.jkkn.ac.in/dialysis-technology-hero.webp", width: 1200, height: 630, alt: "Bachelor of Dialysis Therapy Technology (B.DTT) at JKKN College" },
 });
 
 const courseSchema = {
   "@context": "https://schema.org",
   "@type": "Course",
   "dateModified": "2026-03-19",
-  "name": "B.Sc Dialysis Technology",
+  "name": "Bachelor of Dialysis Therapy Technology (B.DTT)",
+  "alternateName": "B.Sc Dialysis Technology",
   "description": "Specialized program that prepares learners to become skilled dialysis technologists, mastering hemodialysis procedures, peritoneal dialysis techniques, water treatment systems, and advanced kidney patient care management.",
   "url": "https://ahs.jkkn.ac.in/dialysis-technology",
   // Link, do not re-declare: a fresh anonymous Organization on every Course is a new entity
@@ -78,14 +79,14 @@ const courseSchema = {
       "urlTemplate": "https://www.jkkn.ai/apply/jkkn-admission-2026",
       "actionPlatform": "http://schema.org/DesktopWebPlatform"
     },
-    "name": "Apply for B.Sc Dialysis Technology"
+    "name": "Apply for Bachelor of Dialysis Therapy Technology (B.DTT)"
   }
 };
 
 const speakableSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "name": "B Sc Dialysis Technology Colleges in Tamilnadu | JKKN",
+  "name": "B.DTT Dialysis Therapy Technology Colleges in Tamilnadu | JKKN",
   "url": "https://ahs.jkkn.ac.in/dialysis-technology",
   "speakable": {
     "@type": "SpeakableSpecification",
@@ -99,7 +100,7 @@ const breadcrumbSchema = {
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "JKKN Institutions", "item": "https://jkkn.ac.in/" },
     { "@type": "ListItem", "position": 2, "name": "Allied Health Sciences", "item": "https://ahs.jkkn.ac.in/" },
-    { "@type": "ListItem", "position": 3, "name": "B.Sc Dialysis Technology", "item": "https://ahs.jkkn.ac.in/dialysis-technology" }
+    { "@type": "ListItem", "position": 3, "name": "Bachelor of Dialysis Therapy Technology (B.DTT)", "item": "https://ahs.jkkn.ac.in/dialysis-technology" }
   ]
 };
 

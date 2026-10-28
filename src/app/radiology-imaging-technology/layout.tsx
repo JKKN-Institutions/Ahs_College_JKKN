@@ -3,8 +3,8 @@ import { COURSE_FAQS } from "@/lib/course-faqs";
 import { RAD_LIST_SOURCE, RAD_GOVT_COLLEGES, RAD_JKKN_SEATS } from "@/lib/radiology-colleges-tn";
 
 export const metadata = createPageMetadata({
-  title: "BSc Radiology & Imaging Technology Colleges in Tamilnadu | JKKN",
-  description: `${RAD_LIST_SOURCE.totalInstitutions} BSc Radiology & Imaging Technology (B.MRIT) colleges in Tamilnadu (TNMGRMU ${RAD_LIST_SOURCE.year}), ${RAD_GOVT_COLLEGES.length} govt. Govt list, B.Sc vs MD, JKKN ${RAD_JKKN_SEATS} seats.`,
+  title: "B.MRIT Medical Radiology & Imaging Colleges in TN | JKKN",
+  description: `${RAD_LIST_SOURCE.totalInstitutions} B.MRIT Medical Radiology & Imaging (formerly BSc Radiology & Imaging) colleges in TN (TNMGRMU ${RAD_LIST_SOURCE.year}), ${RAD_GOVT_COLLEGES.length} govt. Govt list, B.MRIT vs MD, JKKN ${RAD_JKKN_SEATS} seats.`,
   path: "/radiology-imaging-technology",
   keywords: [
     "radiography course in tamilnadu",
@@ -18,14 +18,15 @@ export const metadata = createPageMetadata({
     "radiology colleges in tamilnadu",
     "radiology course colleges in tamilnadu"
   ],
-  ogImage: { url: "https://ahs.jkkn.ac.in/radiology-technology-hero.webp", width: 1200, height: 630, alt: "BSc Radiology Imaging Technology at JKKN College" },
+  ogImage: { url: "https://ahs.jkkn.ac.in/radiology-technology-hero.webp", width: 1200, height: 630, alt: "Bachelor of Medical Radiology and Imaging Technology (B.MRIT) at JKKN College" },
 });
 
 const courseSchema = {
   "@context": "https://schema.org",
   "@type": "Course",
   "dateModified": "2026-03-19",
-  "name": "B.Sc Radiography Imaging Technology",
+  "name": "Bachelor of Medical Radiology and Imaging Technology (B.MRIT)",
+  "alternateName": "B.Sc Radiology and Imaging Technology",
   "description": "Comprehensive program that prepares learners to become skilled radiography technologists, mastering X-ray, CT scan, MRI, ultrasound, mammography, and advanced radiological procedures for accurate disease diagnosis and treatment planning.",
   "url": "https://ahs.jkkn.ac.in/radiology-imaging-technology",
   // Link, do not re-declare: a fresh anonymous Organization on every Course is a new entity
@@ -85,14 +86,14 @@ const courseSchema = {
       "urlTemplate": "https://www.jkkn.ai/apply/jkkn-admission-2026",
       "actionPlatform": "http://schema.org/DesktopWebPlatform"
     },
-    "name": "Apply for B.Sc Radiography Imaging Technology"
+    "name": "Apply for Bachelor of Medical Radiology and Imaging Technology (B.MRIT)"
   }
 };
 
 const speakableSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "name": "BSc Radiology & Imaging Technology Colleges in Tamilnadu | JKKN",
+  "name": "B.MRIT Medical Radiology & Imaging Colleges in TN | JKKN",
   "url": "https://ahs.jkkn.ac.in/radiology-imaging-technology",
   "speakable": {
     "@type": "SpeakableSpecification",
@@ -106,7 +107,7 @@ const breadcrumbSchema = {
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "JKKN Institutions", "item": "https://jkkn.ac.in/" },
     { "@type": "ListItem", "position": 2, "name": "Allied Health Sciences", "item": "https://ahs.jkkn.ac.in/" },
-    { "@type": "ListItem", "position": 3, "name": "B.Sc Radiography Imaging Technology", "item": "https://ahs.jkkn.ac.in/radiology-imaging-technology" }
+    { "@type": "ListItem", "position": 3, "name": "Bachelor of Medical Radiology and Imaging Technology (B.MRIT)", "item": "https://ahs.jkkn.ac.in/radiology-imaging-technology" }
   ]
 };
 

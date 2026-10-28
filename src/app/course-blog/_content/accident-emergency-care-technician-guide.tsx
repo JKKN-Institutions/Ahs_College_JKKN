@@ -12,7 +12,7 @@ export default function EmergencyCareContent() {
         technologists</strong> for a country that needs at least 100,000. If you're
         considering{" "}
         <Link href="/accident-emergency-care">
-          B.Sc Accident &amp; Emergency Care Technology
+          Bachelor of Emergency Medical Technologist (Paramedic)
         </Link>{" "}
         at JKKN, here's what the career, daily work, and growth path actually look like.
       </p>
@@ -49,7 +49,7 @@ export default function EmergencyCareContent() {
         </li>
       </ul>
 
-      <h2 id="day-in-life">Day in the Life of an Emergency Care Technologist</h2>
+      <h2 id="day-in-life">Day in the Life of an Emergency Medical Technologist</h2>
       <p>
         A multi-specialty hospital ER runs four parallel zones: triage, resuscitation
         bay, observation, and minor procedure. Your morning shift (7 AM – 3 PM) starts
@@ -239,7 +239,7 @@ export default function EmergencyCareContent() {
       <p>
         Read the full{" "}
         <Link href="/accident-emergency-care">
-          B.Sc Accident &amp; Emergency Care Technology learning framework
+          Bachelor of Emergency Medical Technologist (Paramedic) learning framework
         </Link>{" "}
         or visit{" "}
         <Link href="/admissions/accident-emergency-care">admissions for 2026-27</Link>.

@@ -29,7 +29,7 @@ export default function OperationTheatreAnaesthesia() {
                     <Breadcrumb items={[
                         { label: 'Home', href: '/' },
                         { label: 'Departments', href: '/departments' },
-                        { label: 'OT & Anaesthesia Technology' }
+                        { label: 'Anaesthesia and Operation Theatre Technology' }
                     ]} />
                 </div>
                 <HeroSection />
@@ -90,25 +90,25 @@ export default function OperationTheatreAnaesthesia() {
                             <p className="text-sm font-semibold text-gray-800">B.Sc Cardiac Technology</p>
                         </Link>
                         <Link href="/dialysis-technology" className="bg-white rounded-xl p-4 text-center shadow-sm border border-gray-100 hover:shadow-md hover:border-[#0b6d41]/30 transition-all">
-                            <p className="text-sm font-semibold text-gray-800">B.Sc Dialysis Technology</p>
+                            <p className="text-sm font-semibold text-gray-800">Bachelor of Dialysis Therapy Technology (B.DTT)</p>
                         </Link>
                         <Link href="/radiology-imaging-technology" className="bg-white rounded-xl p-4 text-center shadow-sm border border-gray-100 hover:shadow-md hover:border-[#0b6d41]/30 transition-all">
-                            <p className="text-sm font-semibold text-gray-800">B.Sc Radiology & Imaging Technology</p>
+                            <p className="text-sm font-semibold text-gray-800">Bachelor of Medical Radiology and Imaging Technology (B.MRIT)</p>
                         </Link>
                         <Link href="/respiratory-therapy" className="bg-white rounded-xl p-4 text-center shadow-sm border border-gray-100 hover:shadow-md hover:border-[#0b6d41]/30 transition-all">
-                            <p className="text-sm font-semibold text-gray-800">B.Sc Respiratory Therapy</p>
+                            <p className="text-sm font-semibold text-gray-800">Bachelor of Respiratory Technology (B.RT)</p>
                         </Link>
                         <Link href="/physician-assistant" className="bg-white rounded-xl p-4 text-center shadow-sm border border-gray-100 hover:shadow-md hover:border-[#0b6d41]/30 transition-all">
-                            <p className="text-sm font-semibold text-gray-800">B.Sc Physician Assistant</p>
+                            <p className="text-sm font-semibold text-gray-800">Bachelor of Physician Associates (B.PA)</p>
                         </Link>
                         <Link href="/critical-care-technology" className="bg-white rounded-xl p-4 text-center shadow-sm border border-gray-100 hover:shadow-md hover:border-[#0b6d41]/30 transition-all">
                             <p className="text-sm font-semibold text-gray-800">B.Sc Critical Care Technology</p>
                         </Link>
                         <Link href="/medical-record-science" className="bg-white rounded-xl p-4 text-center shadow-sm border border-gray-100 hover:shadow-md hover:border-[#0b6d41]/30 transition-all">
-                            <p className="text-sm font-semibold text-gray-800">B.Sc Medical Record Science</p>
+                            <p className="text-sm font-semibold text-gray-800">Bachelor of Science in Health Information Management (B.Sc. HIM)</p>
                         </Link>
                         <Link href="/accident-emergency-care" className="bg-white rounded-xl p-4 text-center shadow-sm border border-gray-100 hover:shadow-md hover:border-[#0b6d41]/30 transition-all">
-                            <p className="text-sm font-semibold text-gray-800">B.Sc Accident & Emergency Care Technology</p>
+                            <p className="text-sm font-semibold text-gray-800">Bachelor of Emergency Medical Technologist (Paramedic)</p>
                         </Link>
                     </div>
                 </div>
@@ -162,8 +162,9 @@ function HeroSection() {
                 <div className="md:w-1/2">
                     <span className="text-[#0b6d41] font-bold tracking-widest uppercase text-xs mb-4 block p-1 bg-[#0b6d41]/10 w-fit rounded">Allied Health Sciences</span>
                     <h1 className="text-4xl md:text-6xl font-black mb-6 leading-tight">
-                        B.Sc <span className="text-[#0b6d41]">Operation Theatre & Anaesthesia Technology</span>
+                        Bachelor of <span className="text-[#0b6d41]">Anaesthesia and Operation Theatre Technology</span> (B.AOTT)
                     </h1>
+                    <p className="text-base md:text-lg font-semibold text-gray-500 -mt-4 mb-6">Formerly B.Sc Operation Theatre &amp; Anaesthesia Technology</p>
                     <p className="text-gray-600 text-lg mb-8 leading-relaxed">
                         Embark on a life-saving career in surgical and anaesthesia care. Our comprehensive 3 Years + 1 Year Internship program prepares Learners to become skilled OT and anaesthesia technologists, mastering surgical assistance, anaesthesia administration support, patient monitoring, sterilization techniques, and perioperative care management.
                     </p>
@@ -191,7 +192,7 @@ function HeroSection() {
                     <div className="relative rounded-3xl overflow-hidden aspect-video shadow-2xl border-4 border-white group">
                         <Image
                             src="/allied health science main image7.webp"
-                            alt="Operation Theatre & Anaesthesia Technology"
+                            alt="Anaesthesia and Operation Theatre Technology"
                             fill
                             priority
                             placeholder="blur"
@@ -200,7 +201,7 @@ function HeroSection() {
                             className="object-cover group-hover:scale-105 transition-transform duration-700"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-[#064225] to-transparent opacity-40"></div>
-                        <span className="absolute bottom-6 left-6 font-bold text-xl letter-spacing-wide text-white z-10">OT & Anaesthesia</span>
+                        <span className="absolute bottom-6 left-6 font-bold text-xl letter-spacing-wide text-white z-10">Anaesthesia & OT</span>
                     </div>
                 </div>
             </div>
@@ -246,10 +247,10 @@ function AboutSection() {
         <section className="py-24 max-w-7xl mx-auto px-4 flex flex-col lg:flex-row gap-16">
             <div className="lg:w-2/3">
                 <span className="text-[#0b6d41] font-bold tracking-widest uppercase text-xs mb-2 block p-1 bg-[#0b6d41]/10 w-fit rounded">Program Overview</span>
-                <h2 className="text-3xl font-black text-[#0b6d41] mb-6">What is B.Sc Operation Theatre & Anaesthesia Technology?</h2>
+                <h2 className="text-3xl font-black text-[#0b6d41] mb-6">What is Bachelor of Anaesthesia and Operation Theatre Technology (B.AOTT)?</h2>
                 <div className="text-gray-600 leading-relaxed text-lg space-y-6 text-justify">
                     <p>
-                        B.Sc Operation Theatre & Anaesthesia Technology is a specialized undergraduate program designed to train healthcare professionals in surgical assistance and anaesthesia care. This program combines comprehensive theoretical knowledge with extensive practical training, preparing Learners to work alongside surgeons, anaesthesiologists, and surgical teams in providing critical perioperative care.
+                        Bachelor of Anaesthesia and Operation Theatre Technology (B.AOTT) is a specialized undergraduate program designed to train healthcare professionals in surgical assistance and anaesthesia care. This program combines comprehensive theoretical knowledge with extensive practical training, preparing Learners to work alongside surgeons, anaesthesiologists, and surgical teams in providing critical perioperative care.
                     </p>
                     <p>
                         The learning framework covers surgical anatomy, anaesthesiology fundamentals, sterilization techniques, surgical instrumentation, anaesthesia equipment management, patient monitoring systems, emergency management in OT, and advanced life support. Learners gain expertise in maintaining sterile environments, handling surgical instruments, preparing anaesthesia equipment, and ensuring patient safety during surgical procedures.
@@ -315,7 +316,7 @@ function EligibilitySection() {
                 <div className="text-center mb-12">
                     <span className="text-[#0b6d41] font-bold tracking-widest uppercase text-xs mb-2 p-1 bg-[#0b6d41]/5 rounded shadow-sm inline-block">Admission Requirements</span>
                     <h2 className="text-3xl font-black text-[#0b6d41]">Eligibility Criteria</h2>
-                    <p className="text-gray-500 mt-2">Review the academic qualifications needed to apply for the B.Sc Operation Theatre & Anaesthesia Technology program</p>
+                    <p className="text-gray-500 mt-2">Review the academic qualifications needed to apply for the Bachelor of Anaesthesia and Operation Theatre Technology (B.AOTT) program</p>
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-8">
@@ -474,7 +475,7 @@ function CareerSection() {
             <div className="max-w-7xl mx-auto px-4 text-center">
                 <span className="text-[#0b6d41] font-bold tracking-widest uppercase text-xs mb-2 block p-1 bg-[#0b6d41]/10 w-fit rounded inline-block">Future Pathways</span>
                 <h2 className="text-3xl md:text-5xl font-black mb-4 text-[#0b6d41]">Career Opportunities</h2>
-                <p className="text-gray-500 mb-16 max-w-3xl mx-auto">B.Sc Operation Theatre & Anaesthesia Technology graduates enjoy diverse career paths in the surgical healthcare sector</p>
+                <p className="text-gray-500 mb-16 max-w-3xl mx-auto">Bachelor of Anaesthesia and Operation Theatre Technology (B.AOTT) graduates enjoy diverse career paths in the surgical healthcare sector</p>
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {jobs.map((job, i) => (
@@ -500,7 +501,7 @@ function CareerSection() {
                   href="/course-blog/operation-theatre-anaesthesia-technologist-roadmap"
                   className="font-bold text-[#0b6d41] underline underline-offset-4 hover:text-[#12a15f] transition-colors"
                 >
-                  Read our B.Sc Operation Theatre & Anaesthesia Technology career guide
+                  Read our Bachelor of Anaesthesia and Operation Theatre Technology (B.AOTT) career guide
                 </Link>
                 .
               </p>
@@ -576,7 +577,7 @@ function FAQSection() {
             <div className="text-center mb-12">
                 <span className="text-[#0b6d41] font-bold tracking-widest uppercase text-xs mb-2 p-1 bg-white rounded inline-block">Common Questions</span>
                 <h2 className="text-3xl font-black text-[#0b6d41]">Frequently Asked Questions</h2>
-                <p className="text-gray-500 mt-2">Find answers to common questions about B.Sc Operation Theatre & Anaesthesia Technology program</p>
+                <p className="text-gray-500 mt-2">Find answers to common questions about Bachelor of Anaesthesia and Operation Theatre Technology (B.AOTT) program</p>
             </div>
 
             <div className="space-y-4">
@@ -608,7 +609,7 @@ function CTASection() {
         <section className="bg-white py-16">
             <div className="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row items-center justify-between text-[#0b6d41] text-center lg:text-left gap-8">
                 <div>
-                    <h2 className="text-3xl md:text-4xl font-black mb-2">Ready to Start Your Career in OT & Anaesthesia Technology?</h2>
+                    <h2 className="text-3xl md:text-4xl font-black mb-2">Ready to Start Your Career in Anaesthesia and Operation Theatre Technology?</h2>
                     <p className="font-medium opacity-90 text-[#0b6d41]">Join JKKN College and become a skilled surgical and anaesthesia technology professional.</p>
                 </div>
                 <div className="flex flex-wrap gap-3 items-center justify-center shrink-0">

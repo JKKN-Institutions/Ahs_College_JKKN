@@ -32,13 +32,13 @@ export type AhsProgramme = { id: string; label: string }
 export const AHS_PROGRAMMES: ReadonlyArray<AhsProgramme> = [
   { id: "89bb449f-433d-4b1c-b45b-bafd3e0f4b87", label: "B.Sc Cardiac Technology" },
   { id: "f36335f6-5b96-4358-956e-981bf8393dff", label: "B.Sc Critical Care Technology" },
-  { id: "8db907b8-8115-4f91-b95d-a64f1c007cdc", label: "B.Sc Physician Assistant" },
-  { id: "b8175e9c-7d16-4eba-996c-59d54e18c5eb", label: "B.Sc Dialysis Technology" },
-  { id: "d6662299-c40a-4da2-9099-2a2f7739f80b", label: "B.Sc Accident and Emergency Care Technology" },
-  { id: "353c4c23-7d10-42d8-9e20-f43f66b4b12e", label: "B.Sc Respiratory Therapy" },
-  { id: "c5ea2a50-343a-4560-a73e-28f3b6afae90", label: "B.Sc Operation Theatre and Anaesthesia Technology" },
-  { id: "dd98ecbc-a166-463b-8a17-ebc2e26c2035", label: "B.Sc Medical Record Science" },
-  { id: "ea7356c4-23ba-4ff5-aac2-04ad0555bccc", label: "B.Sc Radiology and Imaging Technology" },
+  { id: "8db907b8-8115-4f91-b95d-a64f1c007cdc", label: "Bachelor of Physician Associates (B.PA)" },
+  { id: "b8175e9c-7d16-4eba-996c-59d54e18c5eb", label: "Bachelor of Dialysis Therapy Technology (B.DTT)" },
+  { id: "d6662299-c40a-4da2-9099-2a2f7739f80b", label: "Bachelor of Emergency Medical Technologist (Paramedic)" },
+  { id: "353c4c23-7d10-42d8-9e20-f43f66b4b12e", label: "Bachelor of Respiratory Technology (B.RT)" },
+  { id: "c5ea2a50-343a-4560-a73e-28f3b6afae90", label: "Bachelor of Anaesthesia and Operation Theatre Technology (B.AOTT)" },
+  { id: "dd98ecbc-a166-463b-8a17-ebc2e26c2035", label: "Bachelor of Science in Health Information Management (B.Sc. HIM)" },
+  { id: "ea7356c4-23ba-4ff5-aac2-04ad0555bccc", label: "Bachelor of Medical Radiology and Imaging Technology (B.MRIT)" },
 ]
 
 export const VALID_AHS_PROGRAMME_IDS: ReadonlySet<string> = new Set(

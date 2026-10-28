@@ -6,14 +6,14 @@ import Link from "next/link";
 export default function SeatsFeesSection() {
   const rows = [
     { name: "B.Sc Cardiac Technology", seats: 7, fee: "₹1,70,000" },
-    { name: "B.Sc Dialysis Technology", seats: 5, fee: "₹1,10,000" },
-    { name: "B.Sc Radiography & Imaging Technology", seats: 5, fee: "₹1,30,000" },
-    { name: "B.Sc Operation Theatre & Anaesthesia Technology", seats: 10, fee: "₹1,70,000" },
-    { name: "B.Sc Respiratory Therapy", seats: 10, fee: "₹1,10,000" },
-    { name: "B.Sc Physician Assistant", seats: 10, fee: "₹1,30,000" },
+    { name: "Bachelor of Dialysis Therapy Technology (B.DTT)", seats: 5, fee: "₹1,10,000" },
+    { name: "Bachelor of Medical Radiology and Imaging Technology (B.MRIT)", seats: 5, fee: "₹1,30,000" },
+    { name: "Bachelor of Anaesthesia and Operation Theatre Technology (B.AOTT)", seats: 10, fee: "₹1,70,000" },
+    { name: "Bachelor of Respiratory Technology (B.RT)", seats: 10, fee: "₹1,10,000" },
+    { name: "Bachelor of Physician Associates (B.PA)", seats: 10, fee: "₹1,30,000" },
     { name: "B.Sc Critical Care Technology", seats: 10, fee: "₹1,10,000" },
-    { name: "B.Sc Accident & Emergency Care Technology", seats: 10, fee: "₹1,10,000" },
-    { name: "B.Sc Medical Record Science", seats: 15, fee: "₹60,000" },
+    { name: "Bachelor of Emergency Medical Technologist (Paramedic)", seats: 10, fee: "₹1,10,000" },
+    { name: "Bachelor of Science in Health Information Management (B.Sc. HIM)", seats: 15, fee: "₹60,000" },
   ];
   const total = rows.reduce((s, r) => s + r.seats, 0);
 

@@ -3,8 +3,8 @@ import { COURSE_FAQS } from "@/lib/course-faqs";
 import { AE_LIST_SOURCE, AE_GOVT_COLLEGES, AE_JKKN_SEATS } from "@/lib/emergency-colleges-tn";
 
 export const metadata = createPageMetadata({
-  title: "BSc Accident and Emergency Care Technology Colleges in Tamilnadu | JKKN",
-  description: `${AE_LIST_SOURCE.totalInstitutions} BSc Accident & Emergency Care Technology colleges in Tamilnadu (TNMGRMU ${AE_LIST_SOURCE.year}), ${AE_GOVT_COLLEGES.length} govt. Govt list, seats, fee, JKKN ${AE_JKKN_SEATS} seats.`,
+  title: "Emergency Medical Technologist (Paramedic) Course | JKKN AHS",
+  description: `${AE_LIST_SOURCE.totalInstitutions} Emergency Medical Technologist (formerly Accident & Emergency Care) colleges in TN (TNMGRMU ${AE_LIST_SOURCE.year}), ${AE_GOVT_COLLEGES.length} govt. Govt list, seats, fee, JKKN ${AE_JKKN_SEATS} seats.`,
   path: "/accident-emergency-care",
   keywords: [
     "bsc accident and emergency care technology colleges in tamilnadu",
@@ -16,14 +16,15 @@ export const metadata = createPageMetadata({
     "government bsc accident and emergency care technology colleges in tamilnadu",
     "bachelor of emergency medical technologist paramedic"
   ],
-  ogImage: { url: "https://ahs.jkkn.ac.in/accident-emergency-care-hero.webp", width: 1200, height: 630, alt: "BSc Accident and Emergency Care at JKKN College" },
+  ogImage: { url: "https://ahs.jkkn.ac.in/accident-emergency-care-hero.webp", width: 1200, height: 630, alt: "Bachelor of Emergency Medical Technologist (Paramedic) at JKKN College" },
 });
 
 const courseSchema = {
   "@context": "https://schema.org",
   "@type": "Course",
   "dateModified": "2026-03-19",
-  "name": "B.Sc Accident and Emergency Care Technology",
+  "name": "Bachelor of Emergency Medical Technologist (Paramedic)",
+  "alternateName": "B.Sc Accident and Emergency Care Technology",
   "description": "Comprehensive program that prepares learners to become skilled emergency care technologists, mastering trauma management, emergency response, critical care, advanced life support, disaster management, and pre-hospital emergency care.",
   "url": "https://ahs.jkkn.ac.in/accident-emergency-care",
   // Link, do not re-declare: a fresh anonymous Organization on every Course is a new entity
@@ -81,14 +82,14 @@ const courseSchema = {
       "urlTemplate": "https://www.jkkn.ai/apply/jkkn-admission-2026",
       "actionPlatform": "http://schema.org/DesktopWebPlatform"
     },
-    "name": "Apply for B.Sc Accident and Emergency Care Technology"
+    "name": "Apply for Bachelor of Emergency Medical Technologist (Paramedic)"
   }
 };
 
 const speakableSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "name": "BSc Accident and Emergency Care Technology Colleges in Tamilnadu | JKKN",
+  "name": "Emergency Medical Technologist (Paramedic) Course | JKKN AHS",
   "url": "https://ahs.jkkn.ac.in/accident-emergency-care",
   "speakable": {
     "@type": "SpeakableSpecification",
@@ -102,7 +103,7 @@ const breadcrumbSchema = {
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "JKKN Institutions", "item": "https://jkkn.ac.in/" },
     { "@type": "ListItem", "position": 2, "name": "Allied Health Sciences", "item": "https://ahs.jkkn.ac.in/" },
-    { "@type": "ListItem", "position": 3, "name": "B.Sc Accident and Emergency Care Technology", "item": "https://ahs.jkkn.ac.in/accident-emergency-care" }
+    { "@type": "ListItem", "position": 3, "name": "Bachelor of Emergency Medical Technologist (Paramedic)", "item": "https://ahs.jkkn.ac.in/accident-emergency-care" }
   ]
 };
 

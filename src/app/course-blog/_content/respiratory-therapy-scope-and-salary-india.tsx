@@ -10,11 +10,11 @@ export default function RespiratoryTherapyContent() {
         someone is a <strong>respiratory therapist</strong>. India has under 8,000 of
         them. The supply-demand gap is the most lopsided of any allied health career —
         and if you're considering{" "}
-        <Link href="/respiratory-therapy">B.Sc Respiratory Therapy</Link> at JKKN, you
+        <Link href="/respiratory-therapy">Bachelor of Respiratory Technology (B.RT)</Link> at JKKN, you
         are entering a field where you will not lack for opportunity.
       </p>
 
-      <h2 id="industry">Post-COVID Demand for Respiratory Therapy</h2>
+      <h2 id="industry">Post-COVID Demand for Respiratory Technology</h2>
       <p>
         The pandemic exposed a structural shortage: India had ventilators but not the
         trained people to operate them. Government and private sector response:
@@ -218,7 +218,7 @@ export default function RespiratoryTherapyContent() {
       </ul>
       <p>
         See the full{" "}
-        <Link href="/respiratory-therapy">B.Sc Respiratory Therapy learning framework</Link>{" "}
+        <Link href="/respiratory-therapy">Bachelor of Respiratory Technology (B.RT) learning framework</Link>{" "}
         or visit{" "}
         <Link href="/admissions/respiratory-therapy">admissions for 2026-27</Link>.
       </p>

@@ -4,14 +4,14 @@ export default function MedicalRecordContent() {
   return (
     <>
       <p>
-        Medical record science is the most underrated career in allied health. While
+        Health information management (earlier called medical record science) is the most underrated career in allied health. While
         learners chase glamorous clinical roles, the people quietly earning ₹6–10 LPA
         in fully remote jobs — without ever wearing scrubs — are{" "}
         <strong>medical coders</strong> and <strong>HIM (Health Information
         Management) executives</strong>. The Indian medical coding industry is now a{" "}
         <strong>₹4,000 crore export segment</strong>, with US hospitals outsourcing
         ICD-10 work to Indian graduates. If you're considering{" "}
-        <Link href="/medical-record-science">B.Sc Medical Record Science</Link> at
+        <Link href="/medical-record-science">Bachelor of Science in Health Information Management (B.Sc. HIM)</Link> at
         JKKN, here's the unspoken truth about this career in 2026.
       </p>
 
@@ -242,7 +242,7 @@ export default function MedicalRecordContent() {
       </ul>
       <p>
         See the full{" "}
-        <Link href="/medical-record-science">B.Sc Medical Record Science learning framework</Link>{" "}
+        <Link href="/medical-record-science">Bachelor of Science in Health Information Management (B.Sc. HIM) learning framework</Link>{" "}
         or visit{" "}
         <Link href="/admissions/medical-record-science">admissions for 2026-27</Link>{" "}
         for eligibility, fee structure, and seat availability.

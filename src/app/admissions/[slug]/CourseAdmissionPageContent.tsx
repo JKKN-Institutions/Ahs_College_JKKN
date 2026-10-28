@@ -97,6 +97,9 @@ function Hero({ course }: { course: AdmissionCourse }) {
                         {course.name}<br />
                         <span className="text-[#ffde59] text-xl sm:text-2xl md:text-3xl">Admission at JKKN College, Tamil Nadu</span>
                     </h1>
+                    {course.formerName && (
+                        <p className="text-white/80 text-sm sm:text-base font-semibold -mt-2 mb-4">Formerly {course.formerName}</p>
+                    )}
                     <p className="text-white/90 text-sm sm:text-base md:text-lg max-w-3xl mb-6 leading-relaxed">
                         {course.description}
                     </p>
@@ -542,7 +545,7 @@ function HigherStudiesSection({ course }: { course: AdmissionCourse }) {
                 <div className="text-center mb-10">
                     <span className="text-[#0b6d41] font-bold tracking-widest uppercase text-xs mb-2 p-1 bg-[#0b6d41]/10 rounded inline-block">What's Next</span>
                     <h2 className="text-2xl md:text-3xl font-black text-[#0b6d41] mt-2">Higher Studies & Specialisation Pathways</h2>
-                    <p className="text-sm text-gray-600 mt-2 max-w-2xl mx-auto">After BSc {course.shortName}, here are the pathways to specialise further or pursue international careers.</p>
+                    <p className="text-sm text-gray-600 mt-2 max-w-2xl mx-auto">After {course.name}, here are the pathways to specialise further or pursue international careers.</p>
                 </div>
                 <div className="space-y-4">
                     {course.higherStudies.map((hs, i) => (

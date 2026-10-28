@@ -10,63 +10,63 @@ import { Breadcrumb } from '@/components/Breadcrumb';
 
 const departments = [
   {
-    name: "Accident & Emergency Care Technology",
+    name: "Bachelor of Emergency Medical Technologist (Paramedic)",
     slug: "/accident-emergency-care",
     description:
       "Train as first responders and emergency care specialists with BLS, ACLS, and trauma care certifications.",
     icon: "🚑",
   },
   {
-    name: "Cardiac Technology",
+    name: "B.Sc Cardiac Technology",
     slug: "/cardiac-technology",
     description:
       "Specialize in cardiovascular diagnostics, ECG, echocardiography, and cardiac catheterization procedures.",
     icon: "❤️",
   },
   {
-    name: "Critical Care Technology",
+    name: "B.Sc Critical Care Technology",
     slug: "/critical-care-technology",
     description:
       "Master ICU management, ventilator support, hemodynamic monitoring, and advanced life support systems.",
     icon: "🏥",
   },
   {
-    name: "Dialysis Technology",
+    name: "Bachelor of Dialysis Therapy Technology (B.DTT)",
     slug: "/dialysis-technology",
     description:
       "Learn hemodialysis, peritoneal dialysis, water treatment systems, and renal replacement therapy.",
     icon: "🔬",
   },
   {
-    name: "Medical Record Science",
+    name: "Bachelor of Science in Health Information Management (B.Sc. HIM)",
     slug: "/medical-record-science",
     description:
       "Excel in health information management, medical coding (ICD-10, CPT), and healthcare data analytics.",
     icon: "📋",
   },
   {
-    name: "Operation Theatre & Anaesthesia Technology",
+    name: "Bachelor of Anaesthesia and Operation Theatre Technology (B.AOTT)",
     slug: "/operation-theatre-anaesthesia",
     description:
       "Become skilled in surgical assistance, anaesthesia support, sterilization, and perioperative care.",
     icon: "⚕️",
   },
   {
-    name: "Physician Assistant",
+    name: "Bachelor of Physician Associates (B.PA)",
     slug: "/physician-assistant",
     description:
       "Work alongside physicians in clinical settings with expertise in patient assessment and treatment planning.",
     icon: "👨‍⚕️",
   },
   {
-    name: "Radiography & Imaging Technology",
+    name: "Bachelor of Medical Radiology and Imaging Technology (B.MRIT)",
     slug: "/radiology-imaging-technology",
     description:
       "Operate X-ray, CT, MRI, and ultrasound equipment for diagnostic medical imaging.",
     icon: "📡",
   },
   {
-    name: "Respiratory Therapy",
+    name: "Bachelor of Respiratory Technology (B.RT)",
     slug: "/respiratory-therapy",
     description:
       "Specialize in pulmonary diagnostics, mechanical ventilation, and cardiopulmonary rehabilitation.",
@@ -164,12 +164,12 @@ export default function DepartmentsPage() {
 
                       {/* Course label */}
                       <span className="text-[10px] font-bold uppercase tracking-widest text-[#0b6d41]/60 mb-1">
-                        B.Sc Program
+                        UG Program
                       </span>
 
                       {/* Department name */}
                       <h2 className="text-[1.05rem] font-black text-[#0b6d41] leading-snug mb-3 group-hover:text-[#085231] transition-colors">
-                        B.Sc {dept.name}
+                        {dept.name}
                       </h2>
 
                       {/* Description */}

@@ -108,7 +108,7 @@ function HeroSection() {
           JKKN College of Allied Health Sciences is about 57 km from Salem on
           NH-544, at Komarapalayam in Namakkal district, not in Salem district. It
           offers nine four-year B.Sc courses, including Cardiac Technology,
-          Physician Assistant and Critical Care, with 82 university-sanctioned
+          Physician Associate and Critical Care, with 82 university-sanctioned
           seats and management-quota fees of ₹60,000 to ₹1,70,000 a year.
         </p>
 
@@ -302,7 +302,7 @@ function ProgrammesSection() {
     },
     {
       icon: Activity,
-      name: "B.Sc. Radiography & Imaging Technology",
+      name: "Bachelor of Medical Radiology and Imaging Technology (B.MRIT)",
       duration: "3 Years + 1 Year Internship",
       level: "UG",
       intake: "5 seats",
@@ -311,7 +311,7 @@ function ProgrammesSection() {
     },
     {
       icon: Droplet,
-      name: "B.Sc. Dialysis Technology",
+      name: "Bachelor of Dialysis Therapy Technology (B.DTT)",
       duration: "3 Years + 1 Year Internship",
       level: "UG",
       intake: "5 seats",
@@ -320,7 +320,7 @@ function ProgrammesSection() {
     },
     {
       icon: ShieldCheck,
-      name: "B.Sc. Operation Theatre & Anaesthesia Technology",
+      name: "Bachelor of Anaesthesia and Operation Theatre Technology (B.AOTT)",
       duration: "3 Years + 1 Year Internship",
       level: "UG",
       intake: "10 seats",
@@ -329,7 +329,7 @@ function ProgrammesSection() {
     },
     {
       icon: Wind,
-      name: "B.Sc. Respiratory Therapy",
+      name: "Bachelor of Respiratory Technology (B.RT)",
       duration: "3 Years + 1 Year Internship",
       level: "UG",
       intake: "10 seats",
@@ -338,7 +338,7 @@ function ProgrammesSection() {
     },
     {
       icon: Stethoscope,
-      name: "B.Sc. Physician Assistant",
+      name: "Bachelor of Physician Associates (B.PA)",
       duration: "3 Years + 1 Year Internship",
       level: "UG",
       intake: "10 seats",
@@ -356,7 +356,7 @@ function ProgrammesSection() {
     },
     {
       icon: FileText,
-      name: "B.Sc. Medical Record Science",
+      name: "Bachelor of Science in Health Information Management (B.Sc. HIM)",
       duration: "3 Years + 1 Year Internship",
       level: "UG",
       intake: "15 seats",
@@ -365,7 +365,7 @@ function ProgrammesSection() {
     },
     {
       icon: Ambulance,
-      name: "B.Sc. Accident & Emergency Care Technology",
+      name: "Bachelor of Emergency Medical Technologist (Paramedic)",
       duration: "3 Years + 1 Year Internship",
       level: "UG",
       intake: "10 seats",
@@ -696,7 +696,7 @@ function CampusGallerySection() {
 function CompetitiveAdvantageSection() {
   const advantages = [
     { title: "Scholarship Support", desc: "Merit-based scholarships available for deserving learners." },
-    { title: "9 Specialized BSc Programmes", desc: "Choose from Cardiac Technology, Dialysis, Radiology, OT & Anaesthesia, Respiratory Therapy, Physician Assistant, Critical Care, Medical Records, and Emergency Care." },
+    { title: "9 Specialized BSc Programmes", desc: "Choose from Cardiac Technology, Dialysis Therapy, Medical Radiology & Imaging, Anaesthesia & OT, Respiratory Technology, Physician Associates, Critical Care, Health Information Management, and Emergency Medical Technologist." },
     { title: "Direct NH-544 Access — 50–60 Minutes from Salem", desc: "Straight highway connectivity via Salem–Coimbatore Highway. Regular bus services from Salem bus stand make the commute convenient." },
     { title: "Support for Careers Abroad", desc: "The placement cell supports graduates who want to work abroad, from licensing exams to visa guidance. The college publishes no audited international placement figures; the cell can share current, verifiable numbers on request." },
     { title: "Clinical Training at Partner Hospitals", desc: "Clinical postings at partner hospitals give hands-on patient exposure during the course and the one-year internship. The admission office can give the current list of posting hospitals in writing." },
@@ -756,14 +756,14 @@ function SnippetBaitSection() {
             <h3 className="font-bold text-gray-900 mb-3">Top Allied Health Science Courses Available Near Salem</h3>
             <ul className="snippet-answer text-sm text-gray-600 space-y-2">
               <li className="flex items-start gap-2"><span className="text-[#006837] mt-1">•</span>B.Sc Cardiac Technology — ECG, echocardiography, cardiac catheterisation</li>
-              <li className="flex items-start gap-2"><span className="text-[#006837] mt-1">•</span>B.Sc Radiology &amp; Imaging Technology — X-ray, CT, MRI, ultrasound</li>
-              <li className="flex items-start gap-2"><span className="text-[#006837] mt-1">•</span>B.Sc Dialysis Technology — haemodialysis, peritoneal dialysis, renal care</li>
-              <li className="flex items-start gap-2"><span className="text-[#006837] mt-1">•</span>B.Sc Operation Theatre &amp; Anaesthesia Technology — surgical support, anaesthesia monitoring</li>
-              <li className="flex items-start gap-2"><span className="text-[#006837] mt-1">•</span>B.Sc Respiratory Therapy — ventilator management, pulmonary rehabilitation</li>
-              <li className="flex items-start gap-2"><span className="text-[#006837] mt-1">•</span>B.Sc Physician Assistant — clinical diagnosis, patient management</li>
+              <li className="flex items-start gap-2"><span className="text-[#006837] mt-1">•</span>Bachelor of Medical Radiology and Imaging Technology (B.MRIT) — X-ray, CT, MRI, ultrasound</li>
+              <li className="flex items-start gap-2"><span className="text-[#006837] mt-1">•</span>Bachelor of Dialysis Therapy Technology (B.DTT) — haemodialysis, peritoneal dialysis, renal care</li>
+              <li className="flex items-start gap-2"><span className="text-[#006837] mt-1">•</span>Bachelor of Anaesthesia and Operation Theatre Technology (B.AOTT) — surgical support, anaesthesia monitoring</li>
+              <li className="flex items-start gap-2"><span className="text-[#006837] mt-1">•</span>Bachelor of Respiratory Technology (B.RT) — ventilator management, pulmonary rehabilitation</li>
+              <li className="flex items-start gap-2"><span className="text-[#006837] mt-1">•</span>Bachelor of Physician Associates (B.PA) — clinical diagnosis, patient management</li>
               <li className="flex items-start gap-2"><span className="text-[#006837] mt-1">•</span>B.Sc Critical Care Technology — ICU monitoring, life support systems</li>
-              <li className="flex items-start gap-2"><span className="text-[#006837] mt-1">•</span>B.Sc Medical Record Science — health informatics, hospital data management</li>
-              <li className="flex items-start gap-2"><span className="text-[#006837] mt-1">•</span>B.Sc Accident &amp; Emergency Care Technology — trauma care, emergency response</li>
+              <li className="flex items-start gap-2"><span className="text-[#006837] mt-1">•</span>Bachelor of Science in Health Information Management (B.Sc. HIM) — health informatics, hospital data management</li>
+              <li className="flex items-start gap-2"><span className="text-[#006837] mt-1">•</span>Bachelor of Emergency Medical Technologist (Paramedic) — trauma care, emergency response</li>
             </ul>
           </div>
 

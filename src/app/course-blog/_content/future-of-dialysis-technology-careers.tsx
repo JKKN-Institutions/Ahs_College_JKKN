@@ -12,7 +12,7 @@ export default function DialysisTechnologyContent() {
         private chains like NephroPlus, B. Braun Avitum, DaVita, and Apex Kidney Care
         are scaling at a pace that classroom training simply isn't keeping up with.
         If you're thinking about{" "}
-        <Link href="/dialysis-technology">B.Sc Renal Dialysis Technology</Link>, here's
+        <Link href="/dialysis-technology">B.Sc Renal Dialysis Therapy Technology</Link>, here's
         the unvarnished career picture for 2026.
       </p>
 
@@ -187,7 +187,7 @@ export default function DialysisTechnologyContent() {
 
       <h2 id="why-jkkn">Why Study at JKKN</h2>
       <p>
-        JKKN's B.Sc Renal Dialysis Technology is structured for direct hospital
+        JKKN's B.Sc Renal Dialysis Therapy Technology is structured for direct hospital
         deployment from day one. Highlights:
       </p>
       <ul>
@@ -215,7 +215,7 @@ export default function DialysisTechnologyContent() {
       </ul>
       <p>
         Read the full{" "}
-        <Link href="/dialysis-technology">B.Sc Renal Dialysis Technology learning framework</Link>{" "}
+        <Link href="/dialysis-technology">B.Sc Renal Dialysis Therapy Technology learning framework</Link>{" "}
         or visit{" "}
         <Link href="/admissions/dialysis-technology">admissions for 2026-27</Link>{" "}
         for eligibility, fees, and the application process.

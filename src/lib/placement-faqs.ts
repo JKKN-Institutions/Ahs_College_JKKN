@@ -34,7 +34,7 @@ export const PLACEMENT_FAQS = [
     },
     {
         question: "What job roles are available after B.Sc. AHS?",
-        answer: "B.Sc. Allied Health Sciences graduates can work as Cardiac Technologists, Radiographers, Dialysis Technicians, Respiratory Therapists, Physician Assistants, OT Technicians, Critical Care Technologists, Medical Records Officers, and Emergency Care Technicians. Roles are available in hospitals, diagnostic centers, research laboratories, home healthcare, and medical equipment companies."
+        answer: "B.Sc. Allied Health Sciences graduates can work as Cardiac Technologists, Radiographers, Dialysis Technicians, Respiratory Therapists, Physician Associates, OT Technicians, Critical Care Technologists, Medical Records Officers, and Emergency Care Technicians. Roles are available in hospitals, diagnostic centers, research laboratories, home healthcare, and medical equipment companies."
     },
     {
         question: "Is placement guaranteed at JKKN AHS?",

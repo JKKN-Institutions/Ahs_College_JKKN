@@ -3,8 +3,8 @@ import { COURSE_FAQS } from "@/lib/course-faqs";
 import { RT_LIST_SOURCE, RT_GOVT_COLLEGES, RT_JKKN_SEATS } from "@/lib/respiratory-colleges-tn";
 
 export const metadata = createPageMetadata({
-  title: "BSc Respiratory Therapy Colleges in Tamilnadu | JKKN",
-  description: `${RT_LIST_SOURCE.totalInstitutions} BSc Respiratory Therapy (B.RT) colleges in Tamilnadu (TNMGRMU ${RT_LIST_SOURCE.year}), ${RT_GOVT_COLLEGES.length} govt. Govt list, seats, fee, and JKKN's course with ${RT_JKKN_SEATS} seats.`,
+  title: "B.RT Respiratory Technology Colleges in Tamilnadu | JKKN",
+  description: `${RT_LIST_SOURCE.totalInstitutions} B.RT Respiratory Technology (formerly BSc Respiratory Therapy) colleges in TN (TNMGRMU ${RT_LIST_SOURCE.year}), ${RT_GOVT_COLLEGES.length} govt. Govt list, seats, fee, JKKN ${RT_JKKN_SEATS} seats.`,
   path: "/respiratory-therapy",
   keywords: [
     "bsc respiratory therapy colleges in tamilnadu",
@@ -13,14 +13,15 @@ export const metadata = createPageMetadata({
     "government bsc respiratory therapy colleges in tamilnadu",
     "bachelor of respiratory technology"
   ],
-  ogImage: { url: "https://ahs.jkkn.ac.in/images/departments/respiratory-therapy-hero.webp", width: 1200, height: 630, alt: "BSc Respiratory Therapy at JKKN College" },
+  ogImage: { url: "https://ahs.jkkn.ac.in/images/departments/respiratory-therapy-hero.webp", width: 1200, height: 630, alt: "Bachelor of Respiratory Technology (B.RT) at JKKN College" },
 });
 
 const courseSchema = {
   "@context": "https://schema.org",
   "@type": "Course",
   "dateModified": "2026-03-19",
-  "name": "B.Sc Respiratory Therapy",
+  "name": "Bachelor of Respiratory Technology (B.RT)",
+  "alternateName": "B.Sc Respiratory Therapy",
   "description": "Program that trains healthcare professionals in assessment, treatment, and management of respiratory and cardiopulmonary disorders. Covers respiratory anatomy, pulmonary function testing, mechanical ventilation, airway management, arterial blood gas analysis, oxygen therapy, and cardiopulmonary rehabilitation.",
   "url": "https://ahs.jkkn.ac.in/respiratory-therapy",
   // Link, do not re-declare: a fresh anonymous Organization on every Course is a new entity
@@ -79,14 +80,14 @@ const courseSchema = {
       "urlTemplate": "https://www.jkkn.ai/apply/jkkn-admission-2026",
       "actionPlatform": "http://schema.org/DesktopWebPlatform"
     },
-    "name": "Apply for B.Sc Respiratory Therapy"
+    "name": "Apply for Bachelor of Respiratory Technology (B.RT)"
   }
 };
 
 const speakableSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "name": "BSc Respiratory Therapy Colleges in Tamilnadu | JKKN",
+  "name": "B.RT Respiratory Technology Colleges in Tamilnadu | JKKN",
   "url": "https://ahs.jkkn.ac.in/respiratory-therapy",
   "speakable": {
     "@type": "SpeakableSpecification",
@@ -100,7 +101,7 @@ const breadcrumbSchema = {
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "JKKN Institutions", "item": "https://jkkn.ac.in/" },
     { "@type": "ListItem", "position": 2, "name": "Allied Health Sciences", "item": "https://ahs.jkkn.ac.in/" },
-    { "@type": "ListItem", "position": 3, "name": "B.Sc Respiratory Therapy", "item": "https://ahs.jkkn.ac.in/respiratory-therapy" }
+    { "@type": "ListItem", "position": 3, "name": "Bachelor of Respiratory Technology (B.RT)", "item": "https://ahs.jkkn.ac.in/respiratory-therapy" }
   ]
 };
 

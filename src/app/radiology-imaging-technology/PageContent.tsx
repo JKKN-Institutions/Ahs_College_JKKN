@@ -37,7 +37,7 @@ export default function RadiologyImagingTechnology() {
                     <Breadcrumb items={[
                         { label: 'Home', href: '/' },
                         { label: 'Departments', href: '/departments' },
-                        { label: 'Radiology & Imaging Technology' }
+                        { label: 'Medical Radiology and Imaging Technology' }
                     ]} />
                 </div>
                 <HeroSection />
@@ -98,25 +98,25 @@ export default function RadiologyImagingTechnology() {
                             <p className="text-sm font-semibold text-gray-800">B.Sc Cardiac Technology</p>
                         </Link>
                         <Link href="/dialysis-technology" className="bg-white rounded-xl p-4 text-center shadow-sm border border-gray-100 hover:shadow-md hover:border-[#0b6d41]/30 transition-all">
-                            <p className="text-sm font-semibold text-gray-800">B.Sc Dialysis Technology</p>
+                            <p className="text-sm font-semibold text-gray-800">Bachelor of Dialysis Therapy Technology (B.DTT)</p>
                         </Link>
                         <Link href="/operation-theatre-anaesthesia" className="bg-white rounded-xl p-4 text-center shadow-sm border border-gray-100 hover:shadow-md hover:border-[#0b6d41]/30 transition-all">
-                            <p className="text-sm font-semibold text-gray-800">B.Sc Operation Theatre & Anaesthesia Technology</p>
+                            <p className="text-sm font-semibold text-gray-800">Bachelor of Anaesthesia and Operation Theatre Technology (B.AOTT)</p>
                         </Link>
                         <Link href="/respiratory-therapy" className="bg-white rounded-xl p-4 text-center shadow-sm border border-gray-100 hover:shadow-md hover:border-[#0b6d41]/30 transition-all">
-                            <p className="text-sm font-semibold text-gray-800">B.Sc Respiratory Therapy</p>
+                            <p className="text-sm font-semibold text-gray-800">Bachelor of Respiratory Technology (B.RT)</p>
                         </Link>
                         <Link href="/physician-assistant" className="bg-white rounded-xl p-4 text-center shadow-sm border border-gray-100 hover:shadow-md hover:border-[#0b6d41]/30 transition-all">
-                            <p className="text-sm font-semibold text-gray-800">B.Sc Physician Assistant</p>
+                            <p className="text-sm font-semibold text-gray-800">Bachelor of Physician Associates (B.PA)</p>
                         </Link>
                         <Link href="/critical-care-technology" className="bg-white rounded-xl p-4 text-center shadow-sm border border-gray-100 hover:shadow-md hover:border-[#0b6d41]/30 transition-all">
                             <p className="text-sm font-semibold text-gray-800">B.Sc Critical Care Technology</p>
                         </Link>
                         <Link href="/medical-record-science" className="bg-white rounded-xl p-4 text-center shadow-sm border border-gray-100 hover:shadow-md hover:border-[#0b6d41]/30 transition-all">
-                            <p className="text-sm font-semibold text-gray-800">B.Sc Medical Record Science</p>
+                            <p className="text-sm font-semibold text-gray-800">Bachelor of Science in Health Information Management (B.Sc. HIM)</p>
                         </Link>
                         <Link href="/accident-emergency-care" className="bg-white rounded-xl p-4 text-center shadow-sm border border-gray-100 hover:shadow-md hover:border-[#0b6d41]/30 transition-all">
-                            <p className="text-sm font-semibold text-gray-800">B.Sc Accident & Emergency Care Technology</p>
+                            <p className="text-sm font-semibold text-gray-800">Bachelor of Emergency Medical Technologist (Paramedic)</p>
                         </Link>
                     </div>
                 </div>
@@ -170,8 +170,9 @@ function HeroSection() {
                 <div className="md:w-1/2">
                     <span className="text-[#0b6d41] font-bold tracking-widest uppercase text-xs mb-4 block p-1 bg-[#0b6d41]/10 w-fit rounded">Allied Health Sciences</span>
                     <h1 className="text-4xl md:text-6xl font-black mb-6 leading-tight">
-                        B.Sc <span className="text-[#0b6d41]">Radiography Imaging Technology</span>
+                        Bachelor of <span className="text-[#0b6d41]">Medical Radiology and Imaging Technology</span> (B.MRIT)
                     </h1>
+                    <p className="text-base md:text-lg font-semibold text-gray-500 -mt-4 mb-6">Formerly B.Sc Radiology &amp; Imaging Technology</p>
                     <p className="text-gray-600 text-lg mb-8 leading-relaxed">
                         Embark on a rewarding career in diagnostic imaging. Our comprehensive 3 Years + 1 Year Internship program prepares Learners to become skilled radiography technologists, mastering X-ray, CT scan, MRI, ultrasound, mammography, and advanced radiological procedures for accurate disease diagnosis and treatment planning.
                     </p>
@@ -199,7 +200,7 @@ function HeroSection() {
                     <div className="relative rounded-3xl overflow-hidden aspect-video shadow-2xl border-4 border-white group">
                         <Image
                             src="/radiology-technology-hero.webp"
-                            alt="Radiology Imaging Technology"
+                            alt="Medical Radiology and Imaging Technology"
                             fill
                             priority
                             placeholder="blur"
@@ -208,7 +209,7 @@ function HeroSection() {
                             className="object-cover group-hover:scale-105 transition-transform duration-700"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-[#064225] to-transparent opacity-60"></div>
-                        <span className="absolute bottom-6 left-6 font-bold text-xl letter-spacing-wide text-white drop-shadow-lg">Radiology & Imaging</span>
+                        <span className="absolute bottom-6 left-6 font-bold text-xl letter-spacing-wide text-white drop-shadow-lg">Medical Radiology and Imaging</span>
                     </div>
                 </div>
             </div>
@@ -254,10 +255,10 @@ function AboutSection() {
         <section className="py-24 max-w-7xl mx-auto px-4 flex flex-col lg:flex-row gap-16">
             <div className="lg:w-2/3">
                 <span className="text-[#0b6d41] font-bold tracking-widest uppercase text-xs mb-2 block p-1 bg-[#0b6d41]/10 w-fit rounded">Program Overview</span>
-                <h2 className="text-3xl font-black text-[#0b6d41] mb-6">What is B.Sc Radiography Imaging Technology?</h2>
+                <h2 className="text-3xl font-black text-[#0b6d41] mb-6">What is Bachelor of Medical Radiology and Imaging Technology (B.MRIT)?</h2>
                 <div className="text-gray-600 leading-relaxed text-lg space-y-6 text-justify">
                     <p>
-                        B.Sc Radiography Imaging Technology is a specialized undergraduate program designed to train healthcare professionals in diagnostic medical imaging techniques. This program combines theoretical knowledge with extensive practical training, preparing Learners to work alongside radiologists and physicians in producing high-quality diagnostic images for accurate disease detection and treatment planning.
+                        Bachelor of Medical Radiology and Imaging Technology (B.MRIT) is a specialized undergraduate program designed to train healthcare professionals in diagnostic medical imaging techniques. This program combines theoretical knowledge with extensive practical training, preparing Learners to work alongside radiologists and physicians in producing high-quality diagnostic images for accurate disease detection and treatment planning.
                     </p>
                     <p>
                         The learning framework covers radiographic anatomy, radiation physics, X-ray techniques, CT scan technology, MRI imaging, ultrasound procedures, mammography, fluoroscopy, interventional radiology, radiation safety, and quality assurance. Learners gain expertise in operating sophisticated imaging equipment, patient positioning, image processing, and maintaining radiation safety standards.
@@ -323,7 +324,7 @@ function EligibilitySection() {
                 <div className="text-center mb-12">
                     <span className="text-[#0b6d41] font-bold tracking-widest uppercase text-xs mb-2 p-1 bg-[#0b6d41]/5 rounded shadow-sm inline-block">Admission Requirements</span>
                     <h2 className="text-3xl font-black text-[#0b6d41]">Eligibility Criteria</h2>
-                    <p className="text-gray-500 mt-2">Review the academic qualifications needed to apply for the B.Sc Radiography Imaging Technology program</p>
+                    <p className="text-gray-500 mt-2">Review the academic qualifications needed to apply for the Bachelor of Medical Radiology and Imaging Technology (B.MRIT) program</p>
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-8">
@@ -498,7 +499,7 @@ function CareerSection() {
             <div className="max-w-7xl mx-auto px-4 text-center">
                 <span className="text-[#0b6d41] font-bold tracking-widest uppercase text-xs mb-2 block p-1 bg-[#0b6d41]/10 w-fit rounded inline-block">Future Pathways</span>
                 <h2 className="text-3xl md:text-5xl font-black mb-4 text-[#0b6d41]">Career Opportunities</h2>
-                <p className="text-gray-500 mb-16 max-w-3xl mx-auto">B.Sc Radiography Imaging Technology graduates enjoy diverse career paths in the diagnostic imaging healthcare sector</p>
+                <p className="text-gray-500 mb-16 max-w-3xl mx-auto">Bachelor of Medical Radiology and Imaging Technology (B.MRIT) graduates enjoy diverse career paths in the diagnostic imaging healthcare sector</p>
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {jobs.map((job, i) => (
@@ -524,7 +525,7 @@ function CareerSection() {
                   href="/course-blog/radiology-imaging-technology-career-guide"
                   className="font-bold text-[#0b6d41] underline underline-offset-4 hover:text-[#12a15f] transition-colors"
                 >
-                  Read our B.Sc Radiology & Imaging Technology career guide
+                  Read our Bachelor of Medical Radiology and Imaging Technology (B.MRIT) career guide
                 </Link>
                 .
               </p>
@@ -600,7 +601,7 @@ function FAQSection() {
             <div className="text-center mb-12">
                 <span className="text-[#0b6d41] font-bold tracking-widest uppercase text-xs mb-2 p-1 bg-white rounded inline-block">Common Questions</span>
                 <h2 className="text-3xl font-black text-[#0b6d41]">Frequently Asked Questions</h2>
-                <p className="text-gray-500 mt-2">Find answers to common questions about B.Sc Radiography Imaging Technology program</p>
+                <p className="text-gray-500 mt-2">Find answers to common questions about Bachelor of Medical Radiology and Imaging Technology (B.MRIT) program</p>
             </div>
 
             <div className="space-y-4">
@@ -632,7 +633,7 @@ function CTASection() {
         <section className="bg-white py-16">
             <div className="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row items-center justify-between text-[#0b6d41] text-center lg:text-left gap-8">
                 <div>
-                    <h2 className="text-3xl md:text-4xl font-black mb-2">Ready to Start Your Career in Radiography Imaging Technology?</h2>
+                    <h2 className="text-3xl md:text-4xl font-black mb-2">Ready to Start Your Career in Medical Radiology and Imaging Technology?</h2>
                     <p className="font-medium opacity-90 text-[#0b6d41]">Join JKKN College and become a skilled diagnostic imaging professional.</p>
                 </div>
                 <div className="flex flex-wrap gap-3 items-center justify-center shrink-0">

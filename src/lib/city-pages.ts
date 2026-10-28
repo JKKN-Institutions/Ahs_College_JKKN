@@ -351,7 +351,7 @@ export const cityPages: CityPage[] = [
     extraFaqs: [
       {
         q: "Which allied health course suits Mettur's industrial belt?",
-        a: "B.Sc Accident & Emergency Care Technology and B.Sc Respiratory Therapy align well with industrial-belt healthcare needs like emergency response and occupational lung care. That said, all 9 JKKN AHS programmes lead to hospital careers statewide — choose based on your interest during counselling.",
+        a: "Bachelor of Emergency Medical Technologist (Paramedic) and Bachelor of Respiratory Technology (B.RT) align well with industrial-belt healthcare needs like emergency response and occupational lung care. That said, all 9 JKKN AHS programmes lead to hospital careers statewide — choose based on your interest during counselling.",
       },
     ],
     nearbyAreas: ["Mecheri", "Kolathur", "Omalur", "Thoppur"],
@@ -686,7 +686,7 @@ export function buildCityFaqs(city: CityPage): CityFAQ[] {
     },
     {
       q: "What is Allied Health Sciences?",
-      a: `Allied Health Sciences covers the healthcare professions that support doctors and nurses in diagnosing, treating, and rehabilitating patients. At JKKN College of Allied Health Sciences, students from ${cityName} can choose from 9 BSc programmes including cardiac technology, dialysis technology, radiology and imaging, operation theatre and anaesthesia technology, respiratory therapy, physician assistant, critical care, medical record science, and accident and emergency care.`,
+      a: `Allied Health Sciences covers the healthcare professions that support doctors and nurses in diagnosing, treating, and rehabilitating patients. At JKKN College of Allied Health Sciences, students from ${cityName} can choose from 9 BSc programmes including cardiac technology, dialysis therapy technology, medical radiology and imaging technology, anaesthesia and operation theatre technology, respiratory technology, physician associates, critical care, health information management, and emergency medical technologist (paramedic).`,
     },
     travelFaq,
     {
@@ -705,7 +705,7 @@ export function buildCityFaqs(city: CityPage): CityFAQ[] {
     },
     {
       q: "What are the fees for BSc allied health science in Tamil Nadu?",
-      a: "Management-quota tuition at JKKN College of Allied Health Sciences for 2026-27 is ₹1,70,000 a year for Cardiac Technology and Operation Theatre Technology, ₹1,30,000 for Radiography and Physician Assistant, ₹1,10,000 for Dialysis, Respiratory Therapy, Critical Care and Emergency Care, and ₹60,000 for Medical Record Science. Government-quota fees follow government norms.",
+      a: "Management-quota tuition at JKKN College of Allied Health Sciences for 2026-27 is ₹1,70,000 a year for Cardiac Technology and Anaesthesia & OT Technology, ₹1,30,000 for Medical Radiology & Imaging and Physician Associates, ₹1,10,000 for Dialysis Therapy, Respiratory Technology, Critical Care and Emergency Medical Technologist, and ₹60,000 for Health Information Management. Government-quota fees follow government norms.",
     },
     {
       q: "What is the salary after BSc allied health science?",
@@ -759,35 +759,35 @@ const COURSE_LIST = [
     timeRequired: "P4Y",
   },
   {
-    name: "B.Sc Dialysis Technology",
+    name: "Bachelor of Dialysis Therapy Technology (B.DTT)",
     description:
       "Programme covering haemodialysis, peritoneal dialysis, and renal care with hands-on clinical training.",
     url: `${SITE_URL}/dialysis-technology`,
     timeRequired: "P4Y",
   },
   {
-    name: "B.Sc Radiology & Imaging Technology",
+    name: "Bachelor of Medical Radiology and Imaging Technology (B.MRIT)",
     description:
       "Training in X-ray, CT scan, MRI, and ultrasound imaging with clinical rotations at partner hospitals.",
     url: `${SITE_URL}/radiology-imaging-technology`,
     timeRequired: "P4Y",
   },
   {
-    name: "B.Sc Operation Theatre & Anaesthesia Technology",
+    name: "Bachelor of Anaesthesia and Operation Theatre Technology (B.AOTT)",
     description:
       "Programme in surgical suite management, anaesthesia equipment handling, and patient monitoring during surgery.",
     url: `${SITE_URL}/operation-theatre-anaesthesia`,
     timeRequired: "P4Y",
   },
   {
-    name: "B.Sc Respiratory Therapy",
+    name: "Bachelor of Respiratory Technology (B.RT)",
     description:
       "Specialisation in ventilator management, pulmonary function testing, and respiratory rehabilitation.",
     url: `${SITE_URL}/respiratory-therapy`,
     timeRequired: "P4Y",
   },
   {
-    name: "B.Sc Physician Assistant",
+    name: "Bachelor of Physician Associates (B.PA)",
     description:
       "Training in clinical diagnosis, patient assessment, and medical management under physician supervision.",
     url: `${SITE_URL}/physician-assistant`,
@@ -801,14 +801,14 @@ const COURSE_LIST = [
     timeRequired: "P4Y",
   },
   {
-    name: "B.Sc Medical Record Science",
+    name: "Bachelor of Science in Health Information Management (B.Sc. HIM)",
     description:
       "Programme in health informatics, medical coding, hospital data management, and health information systems.",
     url: `${SITE_URL}/medical-record-science`,
     timeRequired: "P4Y",
   },
   {
-    name: "B.Sc Accident & Emergency Care Technology",
+    name: "Bachelor of Emergency Medical Technologist (Paramedic)",
     description:
       "Training in trauma care, emergency response, triage, and pre-hospital emergency medical services.",
     url: `${SITE_URL}/accident-emergency-care`,

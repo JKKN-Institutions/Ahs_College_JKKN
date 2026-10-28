@@ -75,8 +75,8 @@ const salaryData = [
     { role: "Radiographer / Imaging Technologist", link: "/radiology-imaging-technology" },
     { role: "Dialysis Technician", link: "/dialysis-technology" },
     { role: "Respiratory Therapist", link: "/respiratory-therapy" },
-    { role: "Physician Assistant", link: "/physician-assistant" },
-    { role: "OT & Anaesthesia Technologist", link: "/operation-theatre-anaesthesia" },
+    { role: "Physician Associate", link: "/physician-assistant" },
+    { role: "Anaesthesia & OT Technologist", link: "/operation-theatre-anaesthesia" },
     { role: "Critical Care Technologist", link: "/critical-care-technology" },
     { role: "Medical Records Officer", link: "/medical-record-science" },
     { role: "Emergency Care Technician", link: "/accident-emergency-care" }

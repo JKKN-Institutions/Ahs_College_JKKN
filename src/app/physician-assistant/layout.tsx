@@ -3,8 +3,8 @@ import { COURSE_FAQS } from "@/lib/course-faqs";
 import { PA_LIST_SOURCE, PA_GOVT_COLLEGES, PA_JKKN_SEATS } from "@/lib/pa-colleges-tn";
 
 export const metadata = createPageMetadata({
-  title: "BSc Physician Assistant Course & Colleges in Tamilnadu | JKKN AHS",
-  description: `${PA_LIST_SOURCE.totalInstitutions} institutions offer BSc Physician Assistant in Tamilnadu (TN Dr. MGR Medical University ${PA_LIST_SOURCE.year}), ${PA_GOVT_COLLEGES.length} government. See the government colleges and seats, and JKKN's 4-year course with ${PA_JKKN_SEATS} seats.`,
+  title: "B.PA Physician Associates Course & Colleges in TN | JKKN AHS",
+  description: `${PA_LIST_SOURCE.totalInstitutions} institutions offer B.PA Physician Associates (formerly BSc Physician Assistant) in TN (TNMGRMU ${PA_LIST_SOURCE.year}), ${PA_GOVT_COLLEGES.length} govt. Govt list, seats, JKKN ${PA_JKKN_SEATS} seats.`,
   path: "/physician-assistant",
   keywords: [
     "physician assistant course in tamilnadu",
@@ -22,7 +22,8 @@ const courseSchema = {
   "@context": "https://schema.org",
   "@type": "Course",
   "dateModified": "2026-03-19",
-  "name": "B.Sc Physician Assistant",
+  "name": "Bachelor of Physician Associates (B.PA)",
+  "alternateName": "B.Sc Physician Assistant",
   "description": "Comprehensive program that prepares learners to become skilled clinical professionals with expertise in patient assessment, diagnostic support, and therapeutic procedures across medical specialties. Graduates work alongside physicians in clinical settings.",
   "url": "https://ahs.jkkn.ac.in/physician-assistant",
   // Link, do not re-declare: a fresh anonymous Organization on every Course is a new entity
@@ -55,7 +56,7 @@ const courseSchema = {
     },
     "maximumAttendeeCapacity": 10
   },
-  "occupationalCategory": "Clinical Physician Assistant, Emergency Care Assistant, Surgical Assistant, ICU Critical Care Assistant, OPD Coordinator, Community Health Officer",
+  "occupationalCategory": "Clinical Physician Associate, Emergency Care Assistant, Surgical Assistant, ICU Critical Care Assistant, OPD Coordinator, Community Health Officer",
   "teaches": [
     "Clinical Patient Assessment",
     "Diagnostic Support",
@@ -80,14 +81,14 @@ const courseSchema = {
       "urlTemplate": "https://www.jkkn.ai/apply/jkkn-admission-2026",
       "actionPlatform": "http://schema.org/DesktopWebPlatform"
     },
-    "name": "Apply for B.Sc Physician Assistant"
+    "name": "Apply for Bachelor of Physician Associates (B.PA)"
   }
 };
 
 const speakableSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "name": "Physician Assistant Course in Tamilnadu | JKKN AHS College",
+  "name": "Physician Associate Course in Tamilnadu | JKKN AHS College",
   "url": "https://ahs.jkkn.ac.in/physician-assistant",
   "speakable": {
     "@type": "SpeakableSpecification",
@@ -101,7 +102,7 @@ const breadcrumbSchema = {
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "JKKN Institutions", "item": "https://jkkn.ac.in/" },
     { "@type": "ListItem", "position": 2, "name": "Allied Health Sciences", "item": "https://ahs.jkkn.ac.in/" },
-    { "@type": "ListItem", "position": 3, "name": "B.Sc Physician Assistant", "item": "https://ahs.jkkn.ac.in/physician-assistant" }
+    { "@type": "ListItem", "position": 3, "name": "Bachelor of Physician Associates (B.PA)", "item": "https://ahs.jkkn.ac.in/physician-assistant" }
   ]
 };
 

@@ -9,7 +9,7 @@ export function MedicalRecordCollegesTamilNadu() {
   return (
     <section id="medical-record-science-colleges-tamil-nadu" className="py-20 bg-white">
       <div className="max-w-5xl mx-auto px-4">
-        <h2 className="text-3xl font-black text-[#0b6d41] mb-4">B.Sc Medical Record Science Colleges in Tamil Nadu</h2>
+        <h2 className="text-3xl font-black text-[#0b6d41] mb-4">Health Information Management (B.Sc. HIM) Colleges in Tamil Nadu</h2>
         <p className="snippet-answer text-gray-900 leading-relaxed mb-4">
           {MRS_LIST_SOURCE.totalInstitutions} institutions are affiliated to The Tamil Nadu Dr. M.G.R. Medical
           University for B.Sc Medical Record Science in {MRS_LIST_SOURCE.year}, and all of them are self-financing
@@ -19,7 +19,7 @@ export function MedicalRecordCollegesTamilNadu() {
 
         <div className="overflow-x-auto rounded-2xl border border-gray-200 bg-white mb-4">
           <table className="w-full text-sm text-left">
-            <caption className="sr-only">B.Sc Medical Record Science institutions near Komarapalayam, by district</caption>
+            <caption className="sr-only">B.Sc. HIM institutions near Komarapalayam, by district</caption>
             <thead className="bg-[#f0f7f2] text-[#0b6d41]">
               <tr>
                 <th scope="col" className="px-4 py-3 font-bold">District</th>
