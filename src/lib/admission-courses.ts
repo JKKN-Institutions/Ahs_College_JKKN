@@ -99,7 +99,7 @@ export const admissionCourses: AdmissionCourse[] = [
             "bsc cardiac technology without neet"
         ],
         whyChoose: [
-            { title: "Direct Cath Lab Exposure", desc: "Hands-on training in JKKN's interventional Cath Lab — angiograms, angioplasties, pacemaker implants, and EP studies during the 1-year internship." },
+            { title: "Cath Lab Rotation", desc: "Cath Lab rotation during the 1-year internship at partner hospitals — angiograms, angioplasties, pacemaker implants and EP studies." },
             { title: "Clinical Training at Partner Hospitals", desc: "Clinical rotations in Cardiology OPD, ICCU, CTVS, Echo Lab and Cath Lab at partner hospitals, with real patient exposure." },
             { title: "International Pathway", desc: "HAAD/DHA/MOH licensing prep guidance from the placement cell for graduates who want to work abroad. The college publishes no audited international placement figures." },
             { title: "Specialisation Routes", desc: "Pathways into Perfusion Technology, Paediatric Cardiac Tech, EP Lab Specialist, and Cath Lab Lead via short PG diplomas after BSc." }
@@ -246,7 +246,7 @@ export const admissionCourses: AdmissionCourse[] = [
         totalFeeMQ: "₹5,20,000",
         seats: "5 (sanctioned)",
         description: "Operate X-ray, CT, MRI, USG, Mammography, and Interventional Radiology equipment. Excellent international placement scope.",
-        longDescription: "Bachelor of Medical Radiology and Imaging Technology (B.MRIT) at JKKN College is a 4-year program (3 + 1) training learners to operate the full spectrum of medical imaging equipment: digital X-ray, Computed Tomography (CT), Magnetic Resonance Imaging (MRI), Ultrasonography (USG), Mammography, Fluoroscopy, Bone Densitometry (DEXA), and Interventional Radiology (IR). The learning framework covers radiation physics, anatomy, patient positioning, contrast administration, image post-processing, PACS administration, and radiation safety. Affiliated to TN Dr. MGR Medical University; internship at JKKN's hospital with rotations across all imaging modalities.",
+        longDescription: "Bachelor of Medical Radiology and Imaging Technology (B.MRIT) at JKKN College is a 4-year program (3 + 1) training learners to operate the full spectrum of medical imaging equipment: digital X-ray, Computed Tomography (CT), Magnetic Resonance Imaging (MRI), Ultrasonography (USG), Mammography, Fluoroscopy, Bone Densitometry (DEXA), and Interventional Radiology (IR). The learning framework covers radiation physics, anatomy, patient positioning, contrast administration, image post-processing, PACS administration, and radiation safety. Affiliated to TN Dr. MGR Medical University; internship at partner hospitals with rotations across imaging modalities.",
         careerScope: "Medical Radiology and Imaging Technology has one of the strongest international job markets among allied health careers. In India, demand is growing 15% annually with new MRI/CT installations across Tier-2 cities, diagnostic chains (Aarthi Scans, Medall, Vijaya Diagnostics), and corporate hospitals. Specialised pathways include CT/MRI specialist, Interventional Radiology tech, Mammography specialist, Sonographer, and PACS Administrator. With OECD radiographer-to-population ratios still 3-5× higher than India, the domestic shortage will persist for the next decade.",
         eligibility: [
             "+2 with Physics, Chemistry, Biology (or Botany and Zoology)",
@@ -262,7 +262,7 @@ export const admissionCourses: AdmissionCourse[] = [
         ],
         roles: ["Radiology Technologist", "CT Technologist", "MRI Technologist", "Interventional Radiology Tech", "Mammography Specialist", "Sonographer", "PACS Administrator", "Cath Lab Imaging Tech"],
         bestFor: "Learners aiming for international careers (UK/Australia/Canada/Gulf).",
-        internship: "1 year internship rotation across CT, MRI, Ultrasound, X-ray, Cath Lab, and Interventional Radiology at JKKN's hospital.",
+        internship: "1 year internship rotation across CT, MRI, Ultrasound, X-ray, Cath Lab, and Interventional Radiology at partner hospitals.",
         iconKey: "scan-line",
         seoTitle: "B.MRIT Medical Radiology & Imaging Admission | JKKN AHS",
         seoDescription: "Four-year B.MRIT (Medical Radiology and Imaging Technology) at JKKN AHS. Five university-sanctioned seats. Eligibility, fees and how to apply for 2026-27.",
@@ -311,7 +311,7 @@ export const admissionCourses: AdmissionCourse[] = [
             { q: "Is B.MRIT (Medical Radiology) a good career for going abroad?", a: "Excellent — radiography has the strongest international scope of any AHS career. UK (NHS), Australia (AHPRA), Canada (CAMRT), and Gulf countries face chronic radiographer shortages. UK NHS sponsors visas for qualified radiographers. Average time from BSc to overseas job is 2-3 years." },
             { q: "What is the fee for B.MRIT (Medical Radiology) at JKKN?", a: "Management Quota (MQ) annual fee is ₹1,30,000 — total ₹5,20,000 for the 4-year course. Government Quota (GQ) is as per Tamil Nadu Govt norms. Scholarships, installments, and education loan support available." },
             { q: "How many seats are available for B.MRIT (Medical Radiology) at JKKN?", a: "5 sanctioned seats. Government Quota candidates are allotted from this same sanctioned intake through Tamil Nadu Government counselling — they are not additional seats. Among the most competitive AHS courses — apply early." },
-            { q: "Is there exposure to MRI and CT during the course?", a: "Yes — JKKN's hospital has a fully-equipped Radiology Department with digital X-ray, CT scan, MRI, USG, Mammography, and Cath Lab. Learners rotate across all modalities during the 1-year internship and get hands-on patient positioning, scan protocols, and image processing experience." },
+            { q: "Is there exposure to MRI and CT during the course?", a: "Yes — CT and MRI are part of the course. The 1-year internship at partner hospitals rotates learners across imaging modalities for hands-on patient positioning, scan protocols and image processing; ask the admission office which hospitals your batch will rotate through." },
             { q: "Can I specialise in CT or MRI after B.MRIT?", a: "Yes — after BSc you can pursue PG Diploma in CT/MRI, MSc Medical Imaging Technology, certifications like IAEA Radiation Safety, ARRT (US), or vendor-specific training (Siemens, GE, Philips)." }
         ]
     },
@@ -394,7 +394,7 @@ export const admissionCourses: AdmissionCourse[] = [
             { q: "Is Bachelor of Anaesthesia and Operation Theatre Technology (B.AOTT) a good career?", a: "Yes — universal employability since every hospital with surgical capability needs OT and anaesthesia techs. India has 50,000+ open positions." },
             { q: "What is the fee for Bachelor of Anaesthesia and Operation Theatre Technology (B.AOTT) at JKKN?", a: "Management Quota (MQ) annual fee is ₹1,70,000 — total ₹6,80,000 for 4 years. Government Quota (GQ) is as per Tamil Nadu Govt norms. Installments, scholarships, and education loan assistance are available." },
             { q: "How many seats for Bachelor of Anaesthesia and Operation Theatre Technology (B.AOTT) at JKKN?", a: "10 sanctioned seats — among the larger intakes among AHS courses at JKKN. Government Quota candidates are allotted from this same sanctioned intake through Tamil Nadu Government counselling — they are not additional seats." },
-            { q: "Will I get hands-on training in OT during the course?", a: "Yes — extensive hands-on training. 1-year mandatory internship at JKKN's hospital includes rotations across General Surgery, Ortho, Neuro, Cardiac, OB-GYN, Paediatric, and Day-Care OTs. Learners assist with 200+ procedures during the internship." },
+            { q: "Will I get hands-on training in OT during the course?", a: "Yes. The 1-year mandatory internship at partner hospitals includes rotations across General Surgery, Ortho, Neuro, Cardiac, OB-GYN, Paediatric and Day-Care OTs." },
             { q: "Can Anaesthesia & OT graduates work in cardiac surgery?", a: "Yes — with 2-3 years of general OT experience, technologists can specialise in Cardiac Anaesthesia, CTVS OT, or Transplant OT." }
         ]
     },
@@ -411,7 +411,7 @@ export const admissionCourses: AdmissionCourse[] = [
         totalFeeMQ: "₹4,40,000",
         seats: "10 (sanctioned)",
         description: "Manage ventilators, ABG analysis, pulmonary rehabilitation, oxygen therapy, and critical care of patients with respiratory failure.",
-        longDescription: "Bachelor of Respiratory Technology (B.RT) at JKKN College is a 4-year program (3 + 1) producing certified Respiratory Therapists trained to manage patients with acute and chronic respiratory disorders. The learning framework covers mechanical ventilation, non-invasive ventilation (BiPAP, CPAP, HFNC), arterial blood gas (ABG) analysis, pulmonary function testing, oxygen therapy, airway management, pulmonary rehabilitation, sleep medicine (PSG), and ECMO support. Affiliated to TN Dr. MGR Medical University. Clinical training across MICU, SICU, NICU, PICU, Pulmonology OPD, and Sleep Lab at JKKN's hospital.",
+        longDescription: "Bachelor of Respiratory Technology (B.RT) at JKKN College is a 4-year program (3 + 1) producing certified Respiratory Therapists trained to manage patients with acute and chronic respiratory disorders. The learning framework covers mechanical ventilation, non-invasive ventilation (BiPAP, CPAP, HFNC), arterial blood gas (ABG) analysis, pulmonary function testing, oxygen therapy, airway management, pulmonary rehabilitation, sleep medicine (PSG), and ECMO support. Affiliated to TN Dr. MGR Medical University. Clinical training across MICU, SICU, NICU, PICU, Pulmonology OPD, and Sleep Lab at partner hospitals.",
         careerScope: "Respiratory Technology demand exploded post-COVID and continues to grow at 18-22% CAGR globally. India has only ~5,000 qualified respiratory therapists for a population of 1.4 billion — a structural shortage. UK, Canada, and Australia have active immigration pathways for Indian BSc RTs. Specialisations include ECMO Specialist, Neonatal RT, Pulmonary Rehab Specialist, Sleep Technologist, and Home Ventilation Coordinator.",
         eligibility: [
             "+2 with Physics, Chemistry, Biology (or Botany and Zoology)",
@@ -445,8 +445,8 @@ export const admissionCourses: AdmissionCourse[] = [
         whyChoose: [
             { title: "Post-COVID Demand Surge", desc: "Respiratory therapy demand grew 18-22% globally post-pandemic. India has only ~5,000 qualified RTs for 1.4 billion — structural shortage will persist for a decade." },
             { title: "Strong Migration Pathway", desc: "USA (NBRC RRT cert), UK, Canada, and Australia have active visa programs for Indian BSc RTs." },
-            { title: "Multi-Unit ICU Training", desc: "Rotations across MICU, SICU, NICU, PICU, Pulmonology OPD, and Sleep Lab at JKKN's hospital — broad clinical exposure." },
-            { title: "ECMO & Advanced Ventilation", desc: "JKKN's MICU has ECMO capability; you train on ARDS management, prone ventilation, weaning protocols, and HFNC therapy." },
+            { title: "Multi-Unit ICU Training", desc: "Rotations across MICU, SICU, NICU, PICU, Pulmonology OPD, and Sleep Lab at partner hospitals." },
+            { title: "Advanced Ventilation", desc: "You train on ARDS management, prone ventilation, weaning protocols and HFNC therapy." },
             { title: "Specialisation Routes", desc: "After BSc, specialise in Neonatal RT, ECMO Specialist, Pulmonary Rehab, or Sleep Tech." }
         ],
         syllabus: [
@@ -479,7 +479,7 @@ export const admissionCourses: AdmissionCourse[] = [
             { q: "What is the fee for Bachelor of Respiratory Technology (B.RT) at JKKN?", a: "Management Quota (MQ) annual fee is ₹1,10,000 — total ₹4,40,000 for 4 years. Government Quota (GQ) is as per Tamil Nadu Govt norms. Installments and scholarships available." },
             { q: "How many seats for Bachelor of Respiratory Technology (B.RT) at JKKN?", a: "10 sanctioned seats. Government Quota candidates are allotted from this same sanctioned intake through Tamil Nadu Government counselling — they are not additional seats. Affordable fee + strong placement makes it one of the most popular AHS courses at JKKN." },
             { q: "Can Bachelor of Respiratory Technology (B.RT) graduates migrate to the USA?", a: "Yes — but the US requires the NBRC CRT/RRT certification and additional bridge education (typically a 1-year US AS-RT program). JKKN B.RT is a strong foundation. Canada and Australia have simpler bridging programs." },
-            { q: "Will I learn ECMO and advanced ventilation?", a: "Yes — JKKN's MICU/SICU has advanced ventilators, BiPAP/CPAP/HFNC machines, and ECMO capability. The 1-year internship includes hands-on exposure to ARDS management, prone ventilation, weaning protocols, and basic ECMO support." }
+            { q: "Will I learn ECMO and advanced ventilation?", a: "The course covers mechanical and non-invasive ventilation (BiPAP, CPAP, HFNC) and ECMO support. Hands-on exposure during the 1-year internship depends on the partner hospital's ICU, so ask the admission office which hospitals take interns." }
         ]
     },
     {
@@ -562,7 +562,7 @@ export const admissionCourses: AdmissionCourse[] = [
             { q: "What is the fee for Bachelor of Physician Associates (B.PA) at JKKN?", a: "Management Quota (MQ) annual fee is ₹1,30,000 — total ₹5,20,000 for 4 years. Government Quota (GQ) as per TN Govt norms. Installments and scholarships available." },
             { q: "How many seats for Bachelor of Physician Associates (B.PA) at JKKN?", a: "10 sanctioned seats + GQ seats via Tamil Nadu counselling. One of the more competitive intakes due to international PA pathway appeal." },
             { q: "Can I become a US Physician Assistant after B.PA from India?", a: "Yes, with additional steps. The US requires a Master's-level accredited PA program (typically 2-3 years post-bachelor). Indian B.PA is a strong foundation but you'll need to complete the US PA program + PANCE certification. Alternative: UK Physician Associate registration (1-year bridge)." },
-            { q: "Will I get hands-on patient interaction during the course?", a: "Yes — extensive patient interaction from Year 2. 1-year mandatory clinical internship at JKKN's hospital covers Medicine, Cardiology, Neurology, Oncology, OB-GYN, Paediatrics, and Emergency. Learners complete 2,000+ patient encounters during the program." }
+            { q: "Will I get hands-on patient interaction during the course?", a: "Yes — patient interaction starts in Year 2. The 1-year mandatory clinical internship at partner hospitals covers Medicine, Cardiology, Neurology, Oncology, OB-GYN, Paediatrics and Emergency." }
         ]
     },
     {
@@ -593,7 +593,7 @@ export const admissionCourses: AdmissionCourse[] = [
         ],
         roles: ["Critical Care Technologist", "ICU Technician", "ECMO Specialist", "NICU/PICU Specialist", "CRRT Specialist", "Code Blue Team Member", "ICU In-charge", "Cardiac ICU Tech"],
         bestFor: "Learners passionate about intensive care, ECMO, and life-support technology — high-pressure but extremely rewarding clinical work.",
-        internship: "1 year rotation across MICU, SICU, CCU, NICU, PICU, and ECMO unit at partner hospitals.",
+        internship: "1 year rotation across MICU, SICU, CCU, NICU and PICU at partner hospitals.",
         iconKey: "siren",
         seoTitle: "BSc Critical Care Technology Admission 2026-27 Tamil Nadu | JKKN",
         seoDescription: "Apply for BSc Critical Care Technology admission at JKKN College. ₹1.1L/yr MQ, 10 seats, 4-yr course, placement support. Strong ICU career scope.",
@@ -610,8 +610,7 @@ export const admissionCourses: AdmissionCourse[] = [
         ],
         whyChoose: [
             { title: "Post-COVID ICU Expansion", desc: "India added 2 lakh+ ICU beds during 2020-2024. Massive shortage of trained critical care professionals — placement is rapid and broad." },
-            { title: "Multi-ICU Rotations", desc: "Internship covers MICU, SICU, CCU, NICU, PICU, and ECMO unit at JKKN's hospital. Wider clinical exposure than most AHS programs." },
-            { title: "ECMO Specialist Pathway", desc: "JKKN's MICU has ECMO capability — learners get hands-on exposure." },
+            { title: "Multi-ICU Rotations", desc: "Internship rotations across MICU, SICU, CCU, NICU and PICU at partner hospitals." },
             { title: "24/7 Job Security", desc: "ICUs operate 24/7 with high staffing ratios — recession-proof career with high shift premiums and overtime pay." },
             { title: "Speciality Tracks", desc: "Pathways into NICU Specialist (neonatal), PICU Specialist (paediatric), CRRT Specialist (ICU dialysis), and Cardiac ICU Tech." }
         ],
@@ -644,7 +643,7 @@ export const admissionCourses: AdmissionCourse[] = [
             { q: "Is BSc Critical Care a good career in 2026?", a: "Excellent — post-COVID India added 2 lakh+ ICU beds with massive ongoing shortage of trained critical care professionals. ICUs operate 24/7 with high staffing ratios." },
             { q: "What is the fee for BSc Critical Care Technology at JKKN?", a: "Management Quota (MQ) annual fee is ₹1,10,000 — total ₹4,40,000 for 4 years. Government Quota (GQ) as per Tamil Nadu Govt norms. Installments and scholarships available." },
             { q: "How many seats for BSc Critical Care at JKKN?", a: "10 sanctioned seats. Government Quota candidates are allotted from this same sanctioned intake through Tamil Nadu Government counselling — they are not additional seats." },
-            { q: "Will I learn ECMO during BSc Critical Care?", a: "Yes — JKKN's MICU/SICU includes ECMO capability. The internship covers basic ECMO setup, monitoring, and circuit management." },
+            { q: "Will I learn ECMO during BSc Critical Care?", a: "Hands-on ECMO exposure depends on whether the partner hospital where you do the internship runs an ECMO programme, so ask the admission office before you join. ELSO certification after graduation is the usual route to ECMO specialist roles." },
             { q: "Is the work in ICU stressful?", a: "Critical care is intense — long shifts, life-and-death decisions, emotional weight. But it's also one of the most rewarding healthcare careers because you directly save lives. JKKN's internship includes mentorship and gradual responsibility scaling to build resilience and clinical confidence." }
         ]
     },
@@ -745,7 +744,7 @@ export const admissionCourses: AdmissionCourse[] = [
         totalFeeMQ: "₹4,40,000",
         seats: "10 (sanctioned)",
         description: "Handle trauma resuscitation, ACLS/BLS, pre-hospital ambulance care, disaster response, and ER triage.",
-        longDescription: "Bachelor of Emergency Medical Technologist (Paramedic) at JKKN College is a 4-year program (3 + 1) training Emergency Medical Care Technologists who form the frontline of every hospital's Emergency Department. The learning framework covers Advanced Cardiac Life Support (ACLS), Basic Life Support (BLS), Advanced Trauma Life Support (ATLS), pre-hospital ambulance care, disaster management, ER triage protocols, polytrauma resuscitation, toxicology, mass casualty incident response, and emergency surgical assistance. Affiliated to TN Dr. MGR Medical University. Internship at JKKN's Emergency Department, Trauma Bay, Ambulance Service, and Disaster Management cell.",
+        longDescription: "Bachelor of Emergency Medical Technologist (Paramedic) at JKKN College is a 4-year program (3 + 1) training Emergency Medical Care Technologists who form the frontline of every hospital's Emergency Department. The learning framework covers Advanced Cardiac Life Support (ACLS), Basic Life Support (BLS), Advanced Trauma Life Support (ATLS), pre-hospital ambulance care, disaster management, ER triage protocols, polytrauma resuscitation, toxicology, mass casualty incident response, and emergency surgical assistance. Affiliated to TN Dr. MGR Medical University. Internship in the emergency departments and trauma units of partner hospitals.",
         careerScope: "India's organised Emergency Medicine sector is growing 20% annually — fuelled by trauma centres (NABH-accredited Level 1/2 trauma units), 108 EMRI ambulance services, corporate hospital ERs, and disaster response networks. Top recruiters: Apollo Emergency, Fortis ER, MIOT Trauma, GVK EMRI (108 Services), Ziqitza Healthcare. Specialisations: Trauma Care Specialist, Ambulance Paramedic, Disaster Response Specialist, Flight Paramedic (helicopter EMS), 108/EMRI Officer, ER Triage Lead. Career stability is high since emergency services are recession-proof and 24/7 staffed.",
         eligibility: [
             "+2 with Physics, Chemistry, Biology (or Botany and Zoology)",
