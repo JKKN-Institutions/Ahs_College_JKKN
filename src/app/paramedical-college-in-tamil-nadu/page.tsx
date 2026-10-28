@@ -62,9 +62,9 @@ export default function ParamedicalCollegePage() {
                 <thead className="bg-[#f0f7f2] text-[#0b6d41]">
                   <tr>
                     <th scope="col" className="px-4 py-3 font-bold">Course</th>
-                    <th scope="col" className="px-4 py-3 font-bold">Duration</th>
+                    <th scope="col" className="hidden sm:table-cell px-4 py-3 font-bold">Duration</th>
                     <th scope="col" className="px-4 py-3 font-bold text-right">Seats</th>
-                    <th scope="col" className="px-4 py-3 font-bold text-right">Management-quota tuition a year, 2026-27</th>
+                    <th scope="col" className="px-4 py-3 font-bold text-right">Fee a year*</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -73,23 +73,24 @@ export default function ParamedicalCollegePage() {
                       <td className="px-4 py-3">
                         <Link href={`/${c.slug}`} className="text-[#0b6d41] font-semibold hover:underline">{c.name}</Link>
                       </td>
-                      <td className="px-4 py-3 text-gray-700">3 years + 1 year internship</td>
+                      <td className="hidden sm:table-cell px-4 py-3 text-gray-700">3 years + 1 year internship</td>
                       <td className="px-4 py-3 text-gray-900 text-right">{c.seats}</td>
                       <td className="px-4 py-3 text-gray-900 text-right whitespace-nowrap">{inr(c.fee)}</td>
                     </tr>
                   ))}
                   <tr className="border-t border-gray-200 bg-[#f0f7f2] font-bold">
                     <td className="px-4 py-3">Total</td>
-                    <td className="px-4 py-3"></td>
+                    <td className="hidden sm:table-cell px-4 py-3"></td>
                     <td className="px-4 py-3 text-right">{JKKN_PARAMEDICAL_SEATS}</td>
-                    <td className="px-4 py-3 text-right font-normal text-gray-700">Government quota: as per government norms</td>
+                    <td className="px-4 py-3"></td>
                   </tr>
                 </tbody>
               </table>
             </div>
             <p className="text-xs text-gray-500 mt-3">
-              Seats: sanctioned intake on {AHS_LIST_SOURCE.title}, institution code 825. Fees: management quota,{" "}
-              <Link href="/fee-structure" className="underline">fee structure 2026-27</Link>.
+              Every course is 3 years + 1 year internship. *Management-quota tuition a year, 2026-27; government-quota
+              fees as per government norms. Seats: sanctioned intake on {AHS_LIST_SOURCE.title}, institution code 825.
+              Fees:{" "}<Link href="/fee-structure" className="underline">fee structure 2026-27</Link>.
             </p>
           </div>
         </section>
