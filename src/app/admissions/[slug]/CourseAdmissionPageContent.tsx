@@ -10,7 +10,7 @@ import { siteConfig } from "@/lib/site-config";
 import type { AdmissionCourse } from "@/lib/admission-courses";
 import {
     Clock, IndianRupee, Users, TrendingUp, CheckCircle2, Briefcase,
-    Building2, Trophy, Stethoscope, Target, ArrowRight, ChevronRight,
+    Building2, Stethoscope, Target, ArrowRight, ChevronRight,
     Phone, Mail, MapPin, Plus, Minus, HeartPulse, Activity, ScanLine,
     Scissors, Wind, UserCheck, Siren, FileText, BookOpen, GraduationCap,
     Wrench, Zap, Globe, Star
@@ -58,7 +58,7 @@ export default function CourseAdmissionPageContent({ course, otherCourses }: Pro
                 <SkillsSection course={course} />
                 <EquipmentSection course={course} />
                 <RecruitersByRegionSection course={course} />
-                <SalaryInternshipBlock course={course} />
+                <InternshipBlock course={course} />
                 <CareerScopeSection course={course} />
                 <HigherStudiesSection course={course} />
                 <BestForCallout course={course} />
@@ -147,11 +147,10 @@ function StatBox({ icon, label, value, highlight }: { icon: React.ReactNode; lab
 function StatsStrip({ course }: { course: AdmissionCourse }) {
     return (
         <section className="relative z-20 -mt-8 px-4 pb-2">
-            <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-3">
+            <div className="max-w-5xl mx-auto grid grid-cols-3 gap-3">
                 <StatBox icon={<Clock className="w-4 h-4" />} label="Duration" value={course.duration} />
                 <StatBox icon={<IndianRupee className="w-4 h-4" />} label="MQ Fee" value={course.mqFee} highlight />
                 <StatBox icon={<Users className="w-4 h-4" />} label="Seats" value={course.seats} />
-                <StatBox icon={<TrendingUp className="w-4 h-4" />} label="Avg Package" value={course.avgPackage} />
             </div>
         </section>
     );
@@ -237,17 +236,11 @@ function DetailGrid({ course }: { course: AdmissionCourse }) {
     );
 }
 
-function SalaryInternshipBlock({ course }: { course: AdmissionCourse }) {
+// No salary figure: JKKN AHS publishes no audited salary data (user's choice 2026-10-28).
+function InternshipBlock({ course }: { course: AdmissionCourse }) {
     return (
         <section className="py-10 bg-[#fbfbee]">
-            <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-5">
-                <div className="bg-[#0b6d41]/5 rounded-2xl p-5 flex items-start gap-3 border border-[#0b6d41]/15">
-                    <Trophy className="w-6 h-6 text-[#0b6d41] shrink-0 mt-0.5" />
-                    <div>
-                        <div className="text-xs font-bold text-[#0b6d41] uppercase tracking-wider mb-1.5">Salary Range</div>
-                        <p className="text-sm text-gray-700 leading-relaxed">{course.salaryRange}</p>
-                    </div>
-                </div>
+            <div className="max-w-6xl mx-auto px-4 grid gap-5">
                 <div className="bg-[#ffde59]/20 rounded-2xl p-5 flex items-start gap-3 border border-[#ffde59]/40">
                     <Stethoscope className="w-6 h-6 text-[#b8860b] shrink-0 mt-0.5" />
                     <div>
