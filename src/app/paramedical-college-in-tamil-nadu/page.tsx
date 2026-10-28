@@ -94,8 +94,8 @@ export default function ParamedicalCollegePage() {
           <div className="max-w-5xl mx-auto">
             <h2 className="text-2xl font-black text-[#0b6d41] mb-3">Eligibility and admission</h2>
             <ul className="list-disc pl-6 text-gray-800 space-y-2">
-              <li>Plus Two (10+2) or equivalent with Physics, Chemistry and Biology.</li>
-              <li>Minimum 50% aggregate (45% for OBC, 40% for SC/ST); 17 years of age.</li>
+              <li>Plus Two (10+2) or equivalent with English and Physics, Chemistry and Biology (or Botany and Zoology).</li>
+              <li>No minimum percentage under the Tamil Nadu 2026-27 allied prospectus, except Health Information Management: 50% (40% for BC, BCM, MBC, DNC, SC, SCA and ST); 17 years of age by 31 December 2026.</li>
               <li>
                 Government-quota seats are allotted through the Tamil Nadu Selection Committee (tnmedicalselection.org).
                 Management-quota seats: apply to the college directly.

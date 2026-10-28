@@ -8,8 +8,8 @@ import { FileText, CheckCircle2, Phone, Mail } from 'lucide-react';
 export function AdmissionJourney() {
     const eligibilityCriteria = [
         "+2 with Physics, Chemistry & Biology (PCB)",
-        "Minimum 50% aggregate marks (40% for SC/ST, 45% for OBC)",
-        "Age: 17-25 years as on 31st December 2026",
+        "No minimum percentage, except Health Information Management: 50% (40% for BC, BCM, MBC, DNC, SC, SCA and ST)",
+        "Age: 17 years or above as on 31st December 2026",
         "Indian nationals and NRI candidates eligible",
         "NEET score not mandatory (merit-based admission)"
     ];

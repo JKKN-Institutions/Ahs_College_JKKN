@@ -327,8 +327,8 @@ function EligibilitySection() {
                         <ul className="space-y-4">
                             {[
                                 "Passed +2 or equivalent from a recognized board",
-                                "Physics, Chemistry, and Biology as core subjects",
-                                "Minimum 50% aggregate marks (40% for SC/ST, 45% for OBC)",
+                                "Physics, Chemistry and Biology (or Botany and Zoology) as core subjects",
+                                "No minimum percentage (TN allied prospectus 2026-27)",
                                 "English as a compulsory subject in +2"
                             ].map((item, i) => (
                                 <li key={i} className="flex gap-3 text-gray-900">

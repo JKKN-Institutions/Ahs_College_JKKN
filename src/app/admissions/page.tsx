@@ -46,7 +46,7 @@ const howToSchema = {
       "@type": "HowToStep",
       "position": 1,
       "name": "Check Eligibility",
-      "text": "Verify you have completed Plus Two with Physics, Chemistry, and Biology with minimum 50 percent marks. SC/ST candidates need 40 percent and OBC candidates need 45 percent.",
+      "text": "Verify you have completed Plus Two with English and Physics, Chemistry and Biology (or Botany and Zoology). Under the Tamil Nadu 2026-27 allied prospectus only Health Information Management has a minimum: 50 percent, or 40 percent for BC, BCM, MBC, DNC, SC, SCA and ST candidates.",
       "url": "https://ahs.jkkn.ac.in/admissions#eligibility"
     },
     {
@@ -90,7 +90,7 @@ const howToSchema = {
 const ADMISSION_FAQS: { q: string; a: React.ReactNode }[] = [
         {
             q: "What are the eligibility criteria for BSc Allied Health Sciences at JKKN?",
-            a: "Candidates must have completed +2 with Physics, Chemistry, and Biology (PCB) with minimum 50% marks for General category, 45% for OBC, and 40% for SC/ST. Age should be 17 years or above as on 31st December 2026. English must be a compulsory subject."
+            a: "Candidates must have completed +2 with English and Physics, Chemistry and Biology (or Botany and Zoology). Under the Tamil Nadu 2026-27 allied prospectus there is no minimum percentage except for Health Information Management: 50% for OC and 40% for BC, BCM, MBC, DNC, SC, SCA and ST. Anaesthesia and Operation Theatre Technology also accepts Mathematics, and Health Information Management also accepts Commerce or Arts. Age should be 17 years or above as on 31st December 2026."
         },
         {
             q: "Is NEET required for Allied Health Sciences admission?",
@@ -383,9 +383,9 @@ function EligibilitySection() {
                         <ul className="space-y-4">
                             {[
                                 "Passed +2 or equivalent from a recognized board",
-                                "Physics, Chemistry, and Biology (PCB) as core subjects",
+                                "Physics, Chemistry and Biology (or Botany and Zoology) as core subjects",
                                 "English as a compulsory subject in +2",
-                                "Minimum marks as per category (see cutoffs below)"
+                                "Minimum marks as per the TN allied prospectus 2026-27 (see below)"
                             ].map((item, i) => (
                                 <li key={i} className="flex gap-3 text-gray-700">
                                     <CheckCircle2 className="w-5 h-5 text-[#0b6d41] shrink-0 mt-0.5" />
@@ -418,9 +418,9 @@ function EligibilitySection() {
                 {/* Category Cutoff Badges */}
                 <div className="flex flex-wrap justify-center gap-4 mt-10">
                     {[
-                        { category: "General", cutoff: "50%", color: "bg-[#0b6d41]" },
-                        { category: "OBC", cutoff: "45%", color: "bg-[#085231]" },
-                        { category: "SC/ST", cutoff: "40%", color: "bg-[#042d1a]" },
+                        { category: "8 courses, all categories", cutoff: "Pass", color: "bg-[#0b6d41]" },
+                        { category: "Health Information Management, OC", cutoff: "50%", color: "bg-[#085231]" },
+                        { category: "HIM, BC / MBC / SC / ST", cutoff: "40%", color: "bg-[#042d1a]" },
                     ].map((item, i) => (
                         <div key={i} className={`${item.color} text-white px-6 py-3 rounded-full font-bold text-sm flex items-center gap-2`}>
                             <span>{item.category}</span>

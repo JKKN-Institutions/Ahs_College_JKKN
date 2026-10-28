@@ -37,7 +37,7 @@ export const NAMAKKAL_FAQS = [
   },
   {
     q: "Is NEET required for allied health science courses at JKKN?",
-    a: "No. JKKN College of Allied Health Sciences admits B.Sc allied health students on Class 12 marks with Physics, Chemistry and Biology, without NEET. The minimum is 50% aggregate, 45% for OBC and 40% for SC/ST candidates, and applicants must be 17 years old. Government-quota seats go through the Tamil Nadu Selection Committee.",
+    a: "No. JKKN College of Allied Health Sciences admits B.Sc allied health students on Class 12 marks with Physics, Chemistry and Biology, without NEET. Under the Tamil Nadu 2026-27 prospectus there is no minimum percentage except for Health Information Management (50%, or 40% for BC, BCM, MBC, DNC, SC, SCA and ST), and applicants must be 17 by 31 December 2026. Government-quota seats go through the Tamil Nadu Selection Committee.",
   },
   {
     q: "How can I apply for admission at JKKN AHS?",
@@ -57,7 +57,7 @@ export const NAMAKKAL_FAQS = [
   },
   {
     q: "What are the eligibility requirements for allied health science courses?",
-    a: "To pursue BSc Allied Health Sciences at JKKN AHS, candidates must have passed 12th standard (HSC/CBSE/ISC) with Physics, Chemistry, and Biology with a minimum aggregate of 50% (45% for OBC, 40% for SC/ST). Admission is based on merit and counselling. JKKN is affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai.",
+    a: "Under the Tamil Nadu 2026-27 allied health prospectus, you need a Class 12 pass with English and Physics, Chemistry and Biology (or Botany and Zoology), and must be 17 by 31 December 2026; NEET is not required. For eight of JKKN's nine courses the prospectus sets no minimum percentage. Health Information Management needs 50% (40% for BC, BCM, MBC, DNC, SC, SCA and ST candidates) and also accepts Commerce or Arts; Anaesthesia and Operation Theatre Technology also accepts Mathematics.",
   },
   {
     q: "What is the advantage of JKKN AHS being in Namakkal district?",

@@ -15,7 +15,7 @@ export const HOME_FAQS: { question: string; answer: ReactNode }[] = [
     },
     {
         question: "What is the eligibility for B.Sc. Allied Health Sciences admission at JKKN?",
-        answer: <>Eligibility requires completion of 10+2 with Physics, Chemistry, and Biology (PCB) with minimum 50% marks (40% for SC/ST, 45% for OBC). Age should be 17-25 years as on 31st December of the admission year. NEET is not mandatory. Both Indian nationals and NRI candidates are eligible. Admission is through merit-based selection and counseling. <Link href="/admissions" className="text-[#0b6d41] font-semibold hover:underline">View full admission details</Link>.</>
+        answer: <>Eligibility requires completion of 10+2 with English and Physics, Chemistry and Biology (or Botany and Zoology). Under the Tamil Nadu 2026-27 allied prospectus there is no minimum percentage except for Health Information Management (50%, or 40% for BC, BCM, MBC, DNC, SC, SCA and ST). You must be 17 or older on 31st December of the admission year. NEET is not mandatory. Both Indian nationals and NRI candidates are eligible. Admission is through merit-based selection and counseling. <Link href="/admissions" className="text-[#0b6d41] font-semibold hover:underline">View full admission details</Link>.</>
     },
     {
         question: "Which university is JKKN Allied Health Sciences College affiliated with?",
@@ -55,7 +55,7 @@ export const HOME_FAQS: { question: string; answer: ReactNode }[] = [
     },
     {
         question: "Is NEET required for B.Sc Allied Health Sciences admission?",
-        answer: <>No, NEET is not mandatory for B.Sc Allied Health Sciences admission in Tamil Nadu. Admission at JKKN is based on 10+2 marks in Physics, Chemistry, and Biology (PCB) with a minimum 50% aggregate (40% for SC/ST, 45% for OBC). Candidates aged 17-25 years can apply directly through the <Link href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=ahs.jkkn.ac.in&utm_medium=organic&utm_campaign=components-faq" className="text-[#0b6d41] font-semibold hover:underline" target="_blank" rel="noopener noreferrer">JKKN admissions portal</Link>. Selection is merit-based through counseling — no entrance exam required.</>
+        answer: <>No, NEET is not mandatory for B.Sc Allied Health Sciences admission in Tamil Nadu. Admission at JKKN is based on 10+2 marks in Physics, Chemistry and Biology (PCB); under the Tamil Nadu 2026-27 allied prospectus only Health Information Management has a minimum percentage. Candidates aged 17 or over can apply directly through the <Link href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=ahs.jkkn.ac.in&utm_medium=organic&utm_campaign=components-faq" className="text-[#0b6d41] font-semibold hover:underline" target="_blank" rel="noopener noreferrer">JKKN admissions portal</Link>. Selection is merit-based through counseling — no entrance exam required.</>
     },
     {
         question: "What is the salary after B.Sc Allied Health Sciences in India?",

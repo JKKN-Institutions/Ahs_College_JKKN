@@ -17,7 +17,7 @@ export const PARAMEDICAL_FAQS: { q: string; a: string }[] = [
   },
   {
     q: "What is the eligibility for paramedical courses at JKKN?",
-    a: "Plus Two (10+2) or equivalent with Physics, Chemistry and Biology, with a minimum of 50% aggregate (45% for OBC, 40% for SC/ST), and 17 years of age.",
+    a: "Plus Two (10+2) or equivalent with English and Physics, Chemistry and Biology (or Botany and Zoology), and 17 years of age by 31 December 2026. Under the Tamil Nadu 2026-27 allied prospectus there is no minimum percentage, except Health Information Management: 50% (40% for BC, BCM, MBC, DNC, SC, SCA and ST).",
   },
   {
     q: "How long is a paramedical degree at JKKN?",

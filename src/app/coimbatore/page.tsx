@@ -71,7 +71,7 @@ export default function CoimbatorePage() {
           },
           {
             q: "What are the eligibility requirements for allied health science courses?",
-            a: "To pursue BSc Allied Health Sciences at JKKN AHS, candidates must have passed 12th standard (HSC/CBSE/ISC) with Physics, Chemistry, and Biology with a minimum aggregate of 50% (45% for OBC, 40% for SC/ST). Admission is based on merit and counselling. JKKN is affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai.",
+            a: "Under the Tamil Nadu 2026-27 allied health prospectus, you need a Class 12 pass with English and Physics, Chemistry and Biology (or Botany and Zoology), and must be 17 by 31 December 2026; NEET is not required. For eight of JKKN's nine courses the prospectus sets no minimum percentage. Health Information Management needs 50% (40% for BC, BCM, MBC, DNC, SC, SCA and ST candidates) and also accepts Commerce or Arts; Anaesthesia and Operation Theatre Technology also accepts Mathematics.",
           },
           {
             q: "With so many colleges in Coimbatore, why should I choose JKKN AHS?",

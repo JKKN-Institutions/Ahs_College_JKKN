@@ -80,8 +80,8 @@ export const admissionCourses: AdmissionCourse[] = [
         longDescription: "B.Sc Cardiac Technology at JKKN College is a 4-year program (3 years academic + 1 year clinical internship) that trains learners to become certified Cardiac Care Technologists. Learners learn to operate ECG machines, perform Echocardiography (TTE, TEE, Stress Echo), conduct Treadmill Tests (TMT), and assist cardiologists in the Cath Lab during angiograms, angioplasties, pacemaker implantations, and electrophysiology studies. The curriculum is affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai. Clinical training happens at JKKN's multi-specialty hospital with rotations across Cardiology OPD, CTVS, ICCU, and Cath Lab.",
         careerScope: "Cardiac Technology is one of the highest-paying allied health specialisations in India. With cardiovascular disease being the leading cause of mortality globally, demand for cardiac technologists is growing at 14–18% CAGR in India and 20–25% globally. Top hospitals — Apollo, Fortis, MIOT, Madras Medical Mission, Narayana Health, Manipal, and Kauvery — actively recruit fresh BSc Cardiac graduates. International opportunities are excellent: UK (NHS), UAE (Cleveland Clinic Abu Dhabi, NMC, Aster), Saudi Arabia (King Faisal Specialist Hospital), and Singapore. Senior cardiac technologists with 5+ years of experience earn ₹6–12 LPA in India and ₹15–30 LPA abroad. Specialised pathways include Cath Lab Specialist, EP Lab Specialist, Pediatric Cardiac Tech, and Perfusion Technology.",
         eligibility: [
-            "+2 with Physics, Chemistry, Biology (PCB)",
-            "Minimum 50% (Gen) / 45% (OBC) / 40% (SC/ST) aggregate",
+            "+2 with Physics, Chemistry, Biology (or Botany and Zoology)",
+            "No minimum percentage (TN allied prospectus 2026-27)",
             "Age 17+ as on 31 Dec 2026",
             "English as compulsory subject in +2",
             "Medical fitness certificate from registered practitioner"
@@ -167,7 +167,7 @@ export const admissionCourses: AdmissionCourse[] = [
             { q: "Is BSc Cardiac Technology a good career in 2026?", a: "Yes — cardiac technology is one of the fastest-growing allied health careers globally. With cardiovascular disease being the leading cause of mortality worldwide, demand for cardiac technologists is growing 14–18% in India and 20–25% globally. Average packages range from ₹2.5–4 LPA at entry to ₹6–12 LPA after 5 years; international roles in UK/Gulf pay ₹15–30 LPA." },
             { q: "What is the fee for BSc Cardiac Technology at JKKN?", a: "Management Quota (MQ) fee is ₹1,70,000 per year. Total course fee (4 years, MQ) is ₹6,80,000. Government Quota (GQ) fee is as per Tamil Nadu Government norms. Installment payments, education loan assistance, and merit-based scholarships are available." },
             { q: "How many seats are available for BSc Cardiac Technology at JKKN?", a: "JKKN College of Allied Health Sciences offers 7 sanctioned seats for BSc Cardiac Technology. Government Quota candidates are allotted from this same sanctioned intake through Tamil Nadu Government counselling — they are not additional seats. Apply early as this is a high-demand course with limited seats." },
-            { q: "Do I need to pass NEET for BSc Cardiac Technology admission?", a: "No — NEET is NOT required for BSc Cardiac Technology admission at JKKN College. Admission is purely merit-based using +2 marks. Eligibility: +2 with PCB (50% Gen / 45% OBC / 40% SC-ST), age 17+ as on 31 Dec 2026." },
+            { q: "Do I need to pass NEET for BSc Cardiac Technology admission?", a: "No — NEET is NOT required for BSc Cardiac Technology admission at JKKN College. Admission is purely merit-based using +2 marks. Eligibility: +2 with PCB and English, no minimum percentage under the TN allied prospectus 2026-27, age 17+ as on 31 Dec 2026." },
             { q: "Can BSc Cardiac Technology graduates work abroad?", a: "Yes — BSc Cardiac Technology has excellent international scope. Cardiac technologists work in the UK (NHS), the UAE, Saudi Arabia and Singapore after meeting each country's registration rules. Licensing (HAAD/DHA/MOH for Gulf, NHS registration for UK) may be required." }
         ]
     },
@@ -189,8 +189,8 @@ export const admissionCourses: AdmissionCourse[] = [
         longDescription: "Bachelor of Dialysis Therapy Technology (B.DTT) at JKKN College is a 4-year program (3 + 1) preparing learners to become certified Renal Dialysis Technologists. Learners master haemodialysis machine operation, CRRT (Continuous Renal Replacement Therapy), SLED (Sustained Low-Efficiency Dialysis), peritoneal dialysis, vascular access management, water treatment systems, and dialyser reprocessing. Curriculum is affiliated to TN Dr. MGR Medical University with clinical postings in Nephrology, ICU, and renal transplant units at partner hospitals.",
         careerScope: "India has 2.2 lakh+ new end-stage kidney disease patients each year and only 12,000 trained dialysis technicians — creating massive demand. Career growth is rapid: starting at ₹2-3 LPA in private dialysis chains (NephroPlus, DaVita, Apollo Dialysis) and reaching ₹4.5-7 LPA within 5 years as a unit in-charge. Gulf countries (UAE, Saudi Arabia, Kuwait) actively hire Indian dialysis technologists at ₹12-25 LPA. Further specialisations include CRRT specialist, renal transplant coordinator, dialysis unit manager, and dialysis trainer/educator. Government 'Pradhan Mantri National Dialysis Programme' (PMNDP) has expanded dialysis centres to all districts — boosting Tier-2 and Tier-3 city jobs.",
         eligibility: [
-            "+2 with Physics, Chemistry, Biology (PCB)",
-            "Minimum 50% (Gen) / 45% (OBC) / 40% (SC/ST) aggregate",
+            "+2 with Physics, Chemistry, Biology (or Botany and Zoology)",
+            "No minimum percentage (TN allied prospectus 2026-27)",
             "Age 17+ as on 31 Dec 2026",
             "English as compulsory subject in +2",
             "Medical fitness certificate from registered practitioner"
@@ -281,8 +281,8 @@ export const admissionCourses: AdmissionCourse[] = [
         longDescription: "Bachelor of Medical Radiology and Imaging Technology (B.MRIT) at JKKN College is a 4-year program (3 + 1) training learners to operate the full spectrum of medical imaging equipment: digital X-ray, Computed Tomography (CT), Magnetic Resonance Imaging (MRI), Ultrasonography (USG), Mammography, Fluoroscopy, Bone Densitometry (DEXA), and Interventional Radiology (IR). The learning framework covers radiation physics, anatomy, patient positioning, contrast administration, image post-processing, PACS administration, and radiation safety. Affiliated to TN Dr. MGR Medical University; internship at JKKN's hospital with rotations across all imaging modalities.",
         careerScope: "Medical Radiology and Imaging Technology has one of the strongest international job markets among allied health careers. UK (NHS — chronic radiographer shortage), Australia (AHPRA-registered radiographers earn AUD 80k–120k), Canada (CAMRT certified roles), and Gulf countries actively hire Indian radiographers at ₹18–35 LPA. In India, demand is growing 15% annually with new MRI/CT installations across Tier-2 cities, diagnostic chains (Aarthi Scans, Medall, Vijaya Diagnostics), and corporate hospitals. Specialised pathways include CT/MRI specialist, Interventional Radiology tech, Mammography specialist, Sonographer, and PACS Administrator. With OECD radiographer-to-population ratios still 3-5× higher than India, the domestic shortage will persist for the next decade.",
         eligibility: [
-            "+2 with Physics, Chemistry, Biology (PCB)",
-            "Minimum 50% (Gen) / 45% (OBC) / 40% (SC/ST) aggregate",
+            "+2 with Physics, Chemistry, Biology (or Botany and Zoology)",
+            "No minimum percentage (TN allied prospectus 2026-27)",
             "Age 17+ as on 31 Dec 2026",
             "English as compulsory subject in +2",
             "Medical fitness certificate from registered practitioner"
@@ -374,8 +374,8 @@ export const admissionCourses: AdmissionCourse[] = [
         longDescription: "Bachelor of Anaesthesia and Operation Theatre Technology (B.AOTT) (Anaesthesia & OT Tech) at JKKN College is a 4-year program (3 + 1) training learners to function as Operation Theatre Technologists and Anaesthesia Technicians. The course covers OT setup and sterilisation, surgical instrument identification and handling, anaesthesia machine operation, patient monitoring (ECG, BP, SpO2, EtCO2, ABG), airway management, drug administration, peri-operative care, and CSSD (Central Sterile Services Department) operations. Affiliated to TN Dr. MGR Medical University. Internship rotations cover General Surgery, Orthopaedics, Neurosurgery, Cardiac Surgery, OB-GYN, Paediatric Surgery, and Day-Care OTs.",
         careerScope: "Every hospital with a surgical facility needs OT technologists and anaesthesia technicians — making it one of the most universally employable AHS careers. India performs 5 crore+ surgeries annually with 50,000+ OT technologist openings. Top recruiters: Apollo, Fortis, MIOT, Manipal, Kauvery, Aster, and corporate hospital chains pay ₹2.5–4 LPA at entry, ₹5–9 LPA by year 5. Gulf countries hire Indian OT techs at ₹15–28 LPA — Aster DM, Mediclinic, NMC, and Saudi Government hospitals are active recruiters. Senior pathways include OT In-charge, CSSD Manager, Surgical Robotics Specialist, Cardiac Anaesthesia Tech, and Transplant OT coordinator. With increasing day-care and minimally-invasive surgeries, demand is structurally growing.",
         eligibility: [
-            "+2 with Physics, Chemistry, Biology (PCB)",
-            "Minimum 50% (Gen) / 45% (OBC) / 40% (SC/ST) aggregate",
+            "+2 with Physics, Chemistry, Biology (PCB), or Physics, Chemistry, Maths",
+            "No minimum percentage (TN allied prospectus 2026-27)",
             "Age 17+ as on 31 Dec 2026",
             "English as compulsory subject in +2",
             "Medical fitness certificate from registered practitioner"
@@ -467,8 +467,8 @@ export const admissionCourses: AdmissionCourse[] = [
         longDescription: "Bachelor of Respiratory Technology (B.RT) at JKKN College is a 4-year program (3 + 1) producing certified Respiratory Therapists trained to manage patients with acute and chronic respiratory disorders. The learning framework covers mechanical ventilation, non-invasive ventilation (BiPAP, CPAP, HFNC), arterial blood gas (ABG) analysis, pulmonary function testing, oxygen therapy, airway management, pulmonary rehabilitation, sleep medicine (PSG), and ECMO support. Affiliated to TN Dr. MGR Medical University. Clinical training across MICU, SICU, NICU, PICU, Pulmonology OPD, and Sleep Lab at JKKN's hospital.",
         careerScope: "Respiratory Technology demand exploded post-COVID and continues to grow at 18-22% CAGR globally. India has only ~5,000 qualified respiratory therapists for a population of 1.4 billion — a structural shortage. US-trained RTs earn USD 70,000–90,000; UK, Canada, and Australia have active immigration pathways for Indian BSc RTs. Top Indian recruiters: Apollo, Fortis, MIOT, Christian Medical College, AIIMS, and corporate ICU chains pay ₹2.4–3.5 LPA entry, ₹5–8 LPA after 5 years. Gulf countries (UAE, Saudi, Kuwait) hire Indian RTs at ₹14–26 LPA. Specialisations include ECMO Specialist, Neonatal RT, Pulmonary Rehab Specialist, Sleep Technologist, and Home Ventilation Coordinator.",
         eligibility: [
-            "+2 with Physics, Chemistry, Biology (PCB)",
-            "Minimum 50% (Gen) / 45% (OBC) / 40% (SC/ST) aggregate",
+            "+2 with Physics, Chemistry, Biology (or Botany and Zoology)",
+            "No minimum percentage (TN allied prospectus 2026-27)",
             "Age 17+ as on 31 Dec 2026",
             "English as compulsory subject in +2",
             "Medical fitness certificate from registered practitioner"
@@ -561,8 +561,8 @@ export const admissionCourses: AdmissionCourse[] = [
         longDescription: "Bachelor of Physician Associates (B.PA) at JKKN College is a 4-year program (3 + 1) preparing learners as Clinical Physician Associates who work directly under physicians' supervision. The course covers clinical history-taking, physical examination, basic diagnostic procedures (suturing, IV cannulation, ABG sampling, lumbar puncture assistance), patient counselling, clinical documentation, EMR systems, and OPD/IPD/Emergency workflows. Affiliated to TN Dr. MGR Medical University. Internship rotations cover General Medicine, Cardiology, Neurology, Oncology, OB-GYN, Paediatrics, and Emergency Medicine at partner hospitals.",
         careerScope: "Physician Associate is uniquely positioned as a bridge career between nursing and medicine. In India, demand is growing in corporate hospitals (Apollo, Fortis, Manipal, Aster) for OPD-based clinical assistants — entry packages ₹2.4–3.5 LPA, senior PAs ₹5–9 LPA. The biggest opportunity is international migration: US Physician Assistants earn USD 100,000–130,000 (₹80L–₹1Cr+); UK Physician Associates earn GBP 45,000–65,000. The pathway requires a 2-3 year US PA bridge program or UK PA registration. JKKN B.PA forms an excellent foundation. Specialisations include Cardiology PA, Oncology PA, Emergency PA, and Surgical First Assistant.",
         eligibility: [
-            "+2 with Physics, Chemistry, Biology (PCB)",
-            "Minimum 50% (Gen) / 45% (OBC) / 40% (SC/ST) aggregate",
+            "+2 with Physics, Chemistry, Biology (or Botany and Zoology)",
+            "No minimum percentage (TN allied prospectus 2026-27)",
             "Age 17+ as on 31 Dec 2026",
             "English as compulsory subject in +2",
             "Medical fitness certificate from registered practitioner"
@@ -652,8 +652,8 @@ export const admissionCourses: AdmissionCourse[] = [
         longDescription: "B.Sc Critical Care Technology at JKKN College is a 4-year program (3 + 1) training learners as Critical Care Technologists who form the backbone of every Intensive Care Unit (MICU, SICU, CCU, NICU, PICU). The learning framework covers ICU equipment (ventilators, monitors, infusion pumps, dialysis machines, ECMO), haemodynamic monitoring, ABG analysis, advanced airway management, drug calculations, sepsis protocols, ACLS/BLS, organ donation, and end-of-life care. Affiliated to TN Dr. MGR Medical University. Internship rotates across ICU types at partner hospitals.",
         careerScope: "ICU demand has structurally grown post-COVID — India added 2 lakh+ ICU beds during 2020-2024 with massive ongoing shortage of trained critical care professionals. Top Indian recruiters: Apollo Critical Care, Fortis, MIOT, Manipal, Kauvery, Narayana — pay ₹2.4–3.5 LPA entry, ₹5–8 LPA after 5 years as senior CCT or ICU In-charge. Gulf countries (UAE, Saudi, Qatar) hire Indian CCTs at ₹14–26 LPA. Specialisations include ECMO Specialist, NICU/PICU Specialist, CRRT Specialist, Cardiac ICU Tech, and ICU Manager. The structural shortage means high job security across the next decade.",
         eligibility: [
-            "+2 with Physics, Chemistry, Biology (PCB)",
-            "Minimum 50% (Gen) / 45% (OBC) / 40% (SC/ST) aggregate",
+            "+2 with Physics, Chemistry, Biology (or Botany and Zoology)",
+            "No minimum percentage (TN allied prospectus 2026-27)",
             "Age 17+ as on 31 Dec 2026",
             "English as compulsory subject in +2",
             "Medical fitness certificate from registered practitioner"
@@ -745,8 +745,8 @@ export const admissionCourses: AdmissionCourse[] = [
         longDescription: "Bachelor of Science in Health Information Management (B.Sc. HIM) at JKKN College is a 4-year program (3 + 1) producing Health Information Managers, Medical Coders, and Hospital Data Analysts. The learning framework covers Health Information Management (HIM), ICD-10-CM/PCS and CPT-4 medical coding, EMR/EHR systems, hospital data analytics, healthcare quality (NABH/JCI), insurance and TPA processing, medical transcription, and healthcare law/ethics. Affiliated to TN Dr. MGR Medical University. Internship rotates across Medical Records Department, Quality Cell, Insurance/TPA desk, and Health Analytics at partner hospitals.",
         careerScope: "Health Information Management offers the most diverse career pathways at the lowest fee (₹60K/yr). The US medical coding industry — outsourced largely to India — employs 1.5 lakh+ Indian medical coders. Companies like Optum, Cognizant Healthcare, Omega Healthcare, AGS Health, and IKS Health hire B.Sc. HIM grads at ₹2.5–4 LPA entry; certified CPC/CCS coders earn ₹5–8 LPA in 3-4 years; senior auditors earn ₹10–18 LPA. Hospital HIM roles pay ₹2–3 LPA entry; HIM Managers earn ₹6–10 LPA. Insurance/TPA companies (Star Health, ICICI Lombard, Bajaj Allianz) hire B.Sc. HIM grads at ₹3–5 LPA. This is the best AHS course for an office-based, work-from-home-friendly, recession-proof career.",
         eligibility: [
-            "+2 with Physics, Chemistry, Biology (PCB)",
-            "Minimum 50% (Gen) / 45% (OBC) / 40% (SC/ST) aggregate",
+            "+2 with PCB (or Botany and Zoology), or Commerce or Arts",
+            "Minimum 50% (OC) / 40% (BC, BCM, MBC, DNC, SC, SCA, ST) aggregate",
             "Age 17+ as on 31 Dec 2026",
             "English as compulsory subject in +2",
             "Medical fitness certificate from registered practitioner"
@@ -838,8 +838,8 @@ export const admissionCourses: AdmissionCourse[] = [
         longDescription: "Bachelor of Emergency Medical Technologist (Paramedic) at JKKN College is a 4-year program (3 + 1) training Emergency Medical Care Technologists who form the frontline of every hospital's Emergency Department. The learning framework covers Advanced Cardiac Life Support (ACLS), Basic Life Support (BLS), Advanced Trauma Life Support (ATLS), pre-hospital ambulance care, disaster management, ER triage protocols, polytrauma resuscitation, toxicology, mass casualty incident response, and emergency surgical assistance. Affiliated to TN Dr. MGR Medical University. Internship at JKKN's Emergency Department, Trauma Bay, Ambulance Service, and Disaster Management cell.",
         careerScope: "India's organised Emergency Medicine sector is growing 20% annually — fuelled by trauma centres (NABH-accredited Level 1/2 trauma units), 108 EMRI ambulance services, corporate hospital ERs, and disaster response networks. Top recruiters: Apollo Emergency, Fortis ER, MIOT Trauma, GVK EMRI (108 Services), Ziqitza Healthcare. Entry: ₹2.4–3.5 LPA, senior ER techs ₹5–8 LPA, Gulf packages ₹14–24 LPA. Specialisations: Trauma Care Specialist, Ambulance Paramedic, Disaster Response Specialist, Flight Paramedic (helicopter EMS), 108/EMRI Officer, ER Triage Lead. Career stability is high since emergency services are recession-proof and 24/7 staffed.",
         eligibility: [
-            "+2 with Physics, Chemistry, Biology (PCB)",
-            "Minimum 50% (Gen) / 45% (OBC) / 40% (SC/ST) aggregate",
+            "+2 with Physics, Chemistry, Biology (or Botany and Zoology)",
+            "No minimum percentage (TN allied prospectus 2026-27)",
             "Age 17+ as on 31 Dec 2026",
             "English as compulsory subject in +2",
             "Medical fitness certificate from registered practitioner"

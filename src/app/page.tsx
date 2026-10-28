@@ -72,7 +72,7 @@ const howToSchema = {
       "@type": "HowToStep",
       "position": 2,
       "name": "Document Verification",
-      "text": "Submit original documents for verification either online or in-person at the JKKN campus. The admissions team will verify your 10+2 marks, eligibility criteria (minimum 50% aggregate, 40% for SC/ST, 45% for OBC), and age requirement (17-25 years).",
+      "text": "Submit original documents for verification either online or in-person at the JKKN campus. The admissions team will verify your 10+2 marks, subject eligibility (Health Information Management also needs 50%, or 40% for BC, BCM, MBC, DNC, SC, SCA and ST), and age requirement (17 by 31 December 2026).",
       "url": "https://ahs.jkkn.ac.in/#admissions"
     },
     {

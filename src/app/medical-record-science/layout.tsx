@@ -34,7 +34,7 @@ const courseSchema = {
   "educationalCredentialAwarded": "Bachelor of Science (B.Sc)",
   "timeRequired": "P4Y",
   "inLanguage": "en",
-  "coursePrerequisites": "10+2 or equivalent with Physics, Chemistry, and Biology. Minimum 50% aggregate (40% for SC/ST, 45% for OBC). Age 17+ years.",
+  "coursePrerequisites": "10+2 or equivalent with English and Physics, Chemistry and Biology (or Botany and Zoology), or Commerce or Arts. Minimum 50% aggregate (40% for BC, BCM, MBC, DNC, SC, SCA and ST). Age 17 by 31 December 2026.",
   "hasCourseInstance": {
     "@type": "CourseInstance",
     "courseMode": "full-time",
