@@ -482,12 +482,6 @@ function PlacementHighlights() {
   const stats: { value: string; label: string }[] = [
   ];
 
-  const companies = [
-    "Apollo Hospitals",
-    "Fortis Healthcare",
-    "Manipal Hospitals",
-  ];
-
   return (
     <section className="bg-white py-14 px-4">
       <div className="max-w-5xl mx-auto text-center">
@@ -517,19 +511,6 @@ function PlacementHighlights() {
         </div>
         )}
 
-        <div className="text-xs text-gray-400 font-medium tracking-widest uppercase mb-4">
-          Companies That Hire From Us
-        </div>
-        <div className="flex flex-wrap justify-center gap-2">
-          {companies.map((c) => (
-            <span
-              key={c}
-              className="px-4 py-2 border border-gray-200 rounded-full text-sm text-gray-700"
-            >
-              {c}
-            </span>
-          ))}
-        </div>
         <Link href="/placements" className="inline-flex items-center gap-2 mt-6 text-[#006837] font-bold hover:underline text-sm">
             View full placement details <span aria-hidden="true">&rarr;</span>
         </Link>

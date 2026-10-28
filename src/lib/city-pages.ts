@@ -580,7 +580,7 @@ export const cityPages: CityPage[] = [
     },
     industryFaq: {
       q: "Do JKKN AHS graduates work at major hospital networks like those in Vellore?",
-      a: "The placement cell runs recruitment drives with partner hospitals, including Apollo Hospitals, Fortis Healthcare and Manipal Hospitals, and guides graduates who want to work abroad. The college publishes no audited placement figures; the cell can share current, verifiable numbers on request.",
+      a: "The placement cell runs recruitment drives with partner hospitals and guides graduates who want to work abroad. The college publishes no audited placement figures; the cell can share current, verifiable numbers on request.",
     },
     extraFaqs: [
       {
