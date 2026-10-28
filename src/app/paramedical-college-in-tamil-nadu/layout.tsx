@@ -7,7 +7,7 @@ import { JKKN_PARAMEDICAL_COURSES, JKKN_PARAMEDICAL_SEATS, JKKN_PARAMEDICAL_FEE_
 // about JKKN's own paramedical courses - NOT a list of other colleges.
 export const metadata = createPageMetadata({
   title: "Paramedical College in Tamil Nadu - JKKN Paramedical Courses 2026-27",
-  description: `JKKN College of Allied Health Sciences, Komarapalayam: ${JKKN_PARAMEDICAL_COURSES.length} paramedical courses, ${JKKN_PARAMEDICAL_SEATS} university-sanctioned seats, fees ${inr(JKKN_PARAMEDICAL_FEE_MIN)} to ${inr(JKKN_PARAMEDICAL_FEE_MAX)} a year. Admission 2026-27.`,
+  description: `JKKN College of Allied Health Sciences, Komarapalayam: ${JKKN_PARAMEDICAL_COURSES.length} paramedical courses, ${JKKN_PARAMEDICAL_SEATS} sanctioned seats, fees ${inr(JKKN_PARAMEDICAL_FEE_MIN)} to ${inr(JKKN_PARAMEDICAL_FEE_MAX)} a year. Admission 2026-27.`,
   path: "/paramedical-college-in-tamil-nadu",
   keywords: [
     "paramedical colleges in tamilnadu",
