@@ -61,28 +61,28 @@ export default function ParamedicalCollegePage() {
                 <caption className="sr-only">Paramedical courses and sanctioned seats at JKKN College of Allied Health Sciences</caption>
                 <thead className="bg-[#f0f7f2] text-[#0b6d41]">
                   <tr>
-                    <th scope="col" className="px-4 py-3 font-bold">Course</th>
-                    <th scope="col" className="hidden sm:table-cell px-4 py-3 font-bold">Duration</th>
-                    <th scope="col" className="px-4 py-3 font-bold text-right">Seats</th>
-                    <th scope="col" className="px-4 py-3 font-bold text-right">Fee a year*</th>
+                    <th scope="col" className="px-3 sm:px-4 py-3 font-bold">Course</th>
+                    <th scope="col" className="hidden sm:table-cell px-3 sm:px-4 py-3 font-bold">Duration</th>
+                    <th scope="col" className="px-3 sm:px-4 py-3 font-bold text-right">Seats</th>
+                    <th scope="col" className="px-3 sm:px-4 py-3 font-bold text-right">Fee a year*</th>
                   </tr>
                 </thead>
                 <tbody>
                   {JKKN_PARAMEDICAL_COURSES.map((c) => (
                     <tr key={c.slug} className="border-t border-gray-100">
-                      <td className="px-4 py-3">
+                      <td className="px-3 sm:px-4 py-3">
                         <Link href={`/${c.slug}`} className="text-[#0b6d41] font-semibold hover:underline">{c.name}</Link>
                       </td>
-                      <td className="hidden sm:table-cell px-4 py-3 text-gray-700">3 years + 1 year internship</td>
-                      <td className="px-4 py-3 text-gray-900 text-right">{c.seats}</td>
-                      <td className="px-4 py-3 text-gray-900 text-right whitespace-nowrap">{inr(c.fee)}</td>
+                      <td className="hidden sm:table-cell px-3 sm:px-4 py-3 text-gray-700">3 years + 1 year internship</td>
+                      <td className="px-3 sm:px-4 py-3 text-gray-900 text-right">{c.seats}</td>
+                      <td className="px-3 sm:px-4 py-3 text-gray-900 text-right whitespace-nowrap">{inr(c.fee)}</td>
                     </tr>
                   ))}
                   <tr className="border-t border-gray-200 bg-[#f0f7f2] font-bold">
-                    <td className="px-4 py-3">Total</td>
-                    <td className="hidden sm:table-cell px-4 py-3"></td>
-                    <td className="px-4 py-3 text-right">{JKKN_PARAMEDICAL_SEATS}</td>
-                    <td className="px-4 py-3"></td>
+                    <td className="px-3 sm:px-4 py-3">Total</td>
+                    <td className="hidden sm:table-cell px-3 sm:px-4 py-3"></td>
+                    <td className="px-3 sm:px-4 py-3 text-right">{JKKN_PARAMEDICAL_SEATS}</td>
+                    <td className="px-3 sm:px-4 py-3"></td>
                   </tr>
                 </tbody>
               </table>
