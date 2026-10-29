@@ -231,7 +231,7 @@ export function getMobileNavLinks(pathname: string): MenuGroup[] {
       menus: [
         {
           href: '/pdfs/nirf-report.pdf',
-          label: 'NIRF',
+          label: 'NIRF 2024 Data',
           icon: FileText,
           active: false
         }

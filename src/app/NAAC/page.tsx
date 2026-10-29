@@ -38,7 +38,8 @@ export default function NAACPage() {
           <p className="mb-8 -mt-4 text-center text-sm text-gray-600 max-w-2xl mx-auto">
             The Tamil Nadu Dr. M.G.R. Medical University lists JKKN&apos;s allied health courses under J.K.K.
             Nattraja Dental College &amp; Hospital (code 825). This certificate is that institution&apos;s: NAAC
-            A grade, CGPA 3.01, valid to 26 February 2030.
+            A grade, CGPA 3.01, valid to 26 February 2030.{" "}
+            <Link href="/approvals" className="text-[#0b6d41] font-semibold underline">All approvals and official data</Link>
           </p>
 
           <h2 className="text-3xl font-extrabold text-[#003f13] mb-6">Introduction</h2>
@@ -986,6 +987,9 @@ export default function NAACPage() {
           >
             <h1 className="text-5xl font-black text-[#0b6d41] uppercase tracking-wide text-center mb-2">
               NAAC
+              <span className="block mt-3 text-base md:text-lg font-semibold normal-case tracking-normal text-gray-700">
+                Certificate of J.K.K. Nattraja Dental College &amp; Hospital, the institution the university lists our courses under
+              </span>
             </h1>
             <p className="text-center text-gray-600 text-lg">
               National Assessment and Accreditation Council
