@@ -684,7 +684,7 @@ function WhyChooseSection() {
         { title: "Partner Hospital Training", desc: "Clinical postings at partner hospitals during the course and the one-year internship. The admission office can give the current list in writing.", icon: <Hospital className="w-6 h-6" /> },
         { title: "Placement Support", desc: "Dedicated placement cell running recruitment drives with partner hospitals and guiding graduates who want to work abroad.", icon: <TrendingUp className="w-6 h-6" /> },
         { title: "Global Opportunities", desc: "The placement cell guides graduates who want to work abroad. The college publishes no audited international placement figures.", icon: <Globe className="w-6 h-6" /> },
-        { title: "University Affiliated", desc: "Affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai. The university lists these courses under J.K.K. Nattraja Dental College & Hospital (code 825), an institution NAAC accredited with an A grade.", icon: <Sparkles className="w-6 h-6" /> },
+        { title: "University Affiliated", desc: <>{"Affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai. The university lists these courses under J.K.K. Nattraja Dental College & Hospital (code 825), an institution NAAC accredited with an A grade. AISHE code C-49058. "}<Link href="/approvals" className="text-[#0b6d41] font-semibold hover:underline">Approvals and official data</Link></>, icon: <Sparkles className="w-6 h-6" /> },
         { title: "Clinical Exposure", desc: "2000+ hours of hands-on clinical training across partnered hospitals with expert supervision.", icon: <Stethoscope className="w-6 h-6" /> },
     ];
 

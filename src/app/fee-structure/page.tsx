@@ -123,6 +123,10 @@ export default function FeeStructurePage() {
               <p className="text-white/80 text-base md:text-lg max-w-2xl mx-auto">
                 Transparent, year-wise fee details for all 9 BSc Allied Health Sciences programs at JKKN College of Allied Health Sciences.
               </p>
+              <p className="text-white/70 text-xs md:text-sm max-w-2xl mx-auto mt-3">
+                AISHE code C-49058 · University list 2025-26: J.K.K. Nattraja Dental College &amp; Hospital, code 825 ·{" "}
+                <Link href="/approvals" className="underline hover:text-white">Approvals and official data</Link>
+              </p>
             </motion.div>
           </div>
         </section>
