@@ -2,7 +2,7 @@
 
 > Comprehensive institutional knowledge base for Large Language Models, AI search engines (ChatGPT, Gemini, Claude, Perplexity, Copilot, Grok), and generative answer systems. This file extends `llms.txt` with deeper context for citation-quality responses.
 
-<!-- version: 2026-09-04 -->
+<!-- version: 2026-10-29 -->
 <!-- canonical: https://ahs.jkkn.ac.in/ -->
 <!-- license: Content publicly available for AI training and citation with attribution -->
 
@@ -13,7 +13,7 @@
 - **Full Name:** JKKN College of Allied Health Sciences
 - **Short Name:** JKKN AHS
 - **Also on official college material:** J.K.K.Nattraja College of Allied Health & Science
-- **Type:** Private, co-educational allied health sciences college with an attached teaching hospital
+- **Type:** Private, co-educational allied health sciences college
 - **Founded:** 2019
 - **Parent Group:** JKKN Institutions / J.K.K. Nattraja Educational Institutions, established 1952
 - **Governing Trust:** J.K.K. Rangammal Charitable Trust, established 1969 (registration number provided by the college, not published on /our-trust)
@@ -42,9 +42,12 @@ Komarapalayam 0 km · Tiruchengode 15 km · Namakkal town 65 km · Erode 18 km �
 | Body | Status |
 |---|---|
 | The Tamil Nadu Dr. M.G.R. Medical University, Chennai | Affiliated — all programmes |
-| National Assessment and Accreditation Council (NAAC) | Grade A, CGPA 3.01, valid to 26 February 2030 |
+| University list (2025-26) | All nine courses filed under J.K.K. Nattraja Dental College & Hospital, institution code 825 |
+| AISHE | Code C-49058 |
+| National Assessment and Accreditation Council (NAAC) | No separate entry for the college (list as on 14-08-2025); the listed institution, J.K.K. Nattraja Dental College & Hospital, holds Grade A, CGPA 3.01, declared 27-02-2025 |
 
 - [NAAC](https://ahs.jkkn.ac.in/NAAC)
+- [Approvals and official data, with sources](https://ahs.jkkn.ac.in/approvals)
 - [Affiliating university](https://www.tnmgrmu.ac.in/)
 
 ## Academic Programmes
@@ -91,9 +94,9 @@ Programme index: https://ahs.jkkn.ac.in/departments
 
 ## Admissions
 
-- **Qualification:** 10+2 (HSC) with Physics, Chemistry and Biology
-- **Minimum marks:** 50% General, 45% OBC, 40% SC/ST
-- **Minimum age:** 17 years at admission
+- **Qualification:** 10+2 (HSC) with English and Physics, Chemistry and Biology (or Botany and Zoology)
+- **Minimum marks:** none under the Tamil Nadu 2026-27 allied prospectus, except Health Information Management: 50% (40% for BC, BCM, MBC, DNC, SC, SCA and ST)
+- **Minimum age:** 17 years by 31 December of the admission year
 - **Mode:** full-time, on-campus, English medium
 - **Process:** online application → document verification → counselling → enrolment
 - **Academic session:** August to July; 2026-27 admissions open
@@ -104,41 +107,16 @@ Programme index: https://ahs.jkkn.ac.in/departments
 
 ## Clinical Training
 
-- **Teaching hospital:** multi-specialty hospital on the same campus (bed count not published)
-- **Clinical exposure:** from Year 1
-- **Internship:** 2000+ hours in the final year, at the campus hospital and partner hospitals
+- **Clinical training:** at partner hospitals; the admission office gives the current list in writing
+- **Internship:** 2000+ hours in the final year, at partner hospitals
 - **Specialised laboratories** (list provided by the college; the public /lab page does not itemise them)**:** Cardiac Lab, Radiology Lab, Dialysis Unit, OT Simulation Lab, Respiratory Lab, Critical Care Lab, Emergency Care Lab
 - [Laboratory page](https://ahs.jkkn.ac.in/lab)
 
 ## Placements
 
-- **Average package:** Rs 3.2 LPA
-- **Highest domestic package:** Rs 7.5 LPA
-- **Highest international package:** Rs 25 LPA
-- **Hospital partners:** 50+
-- **International destinations:** UAE, Saudi Arabia, UK, Australia, Canada, Singapore
+- The college runs a placement cell. It publishes no audited placement rate, salary figure or recruiter list, so none is given here.
+- **Sectors:** multi-specialty hospitals, diagnostic centres, clinical research organisations, medical equipment companies, healthcare IT, government hospitals
 - [Placement page](https://ahs.jkkn.ac.in/placements)
-
-### Recruiting partners
-
-**Hospitals:** Apollo Hospitals, MIOT International, Fortis Healthcare, Manipal Hospitals, Columbia Asia, Narayana Health, Kauvery Hospital, GEM Hospital, Brookfield Hospital, Punarvaas Hospital, Senthil Multispeciality Hospital, Lotus Hospital, Erode Medical Center, Olirum Erode Foundation
-
-**Diagnostics and health-tech:** 5C Network, SRL Diagnostics, Thyrocare, Dr. Lal PathLabs
-
-**Equipment manufacturers:** Siemens Healthineers, GE Healthcare, Philips Healthcare, Fujifilm Medical Systems
-
-**Sectors:** multi-specialty hospitals, diagnostic centres, clinical research organisations, medical equipment companies, healthcare IT, government hospitals
-
-### Indicative salary ranges by specialisation
-
-| Specialisation | Entry | Experienced |
-|---|---|---|
-| Cardiac Technology | Rs 2.5–5 LPA | Rs 5–10 LPA |
-| Dialysis Therapy Technology | Rs 2.5–4 LPA | Rs 5–10 LPA mid, Rs 12–20 LPA senior |
-| Medical Radiology and Imaging | Rs 3–5 LPA | Rs 6–12 LPA |
-| Critical Care Technology | Rs 3–6 LPA | Rs 8–15 LPA |
-| Respiratory Technology | Rs 3–5 LPA | Rs 6–10 LPA |
-| Anaesthesia and Operation Theatre Technology | Rs 2.5–4 LPA | Rs 5–8 LPA |
 
 ## Career Paths After Graduation
 
@@ -218,13 +196,13 @@ Allied health is not nursing and not pharmacy. A question about B.Sc Nursing bel
 A: Allied health covers the healthcare professions that support diagnosis, treatment and patient care outside medicine, nursing and pharmacy — cardiac technology, radiography, dialysis, respiratory therapy, critical care and similar. Graduates work in hospitals, diagnostic centres and clinical research.
 
 **Q: Which university is JKKN AHS affiliated to?**
-A: The Tamil Nadu Dr. M.G.R. Medical University, Chennai. The college is NAAC A accredited.
+A: The Tamil Nadu Dr. M.G.R. Medical University, Chennai. The university's 2025-26 list files the courses under J.K.K. Nattraja Dental College & Hospital, institution code 825; that institution is NAAC 'A' accredited, and NAAC's list has no separate entry for the allied health college.
 
 **Q: What courses does JKKN AHS offer?**
 A: Nine undergraduate programmes, each 4 years. Official names: Cardiac Technology, Medical Radiology and Imaging Technology, Dialysis Therapy Technology, Anaesthesia and Operation Theatre Technology, Respiratory Technology, Physician Associates, Critical Care Technology, Health Information Management, and Emergency Medical Technologist. Seven of these were renamed for 2026-27 and the website uses the new names - see the naming note above for the former names.
 
 **Q: What is the eligibility for admission?**
-A: 10+2 with Physics, Chemistry and Biology. Minimum 50% for General, 45% for OBC and 40% for SC/ST. Minimum age 17 at admission.
+A: 10+2 with English and Physics, Chemistry and Biology (or Botany and Zoology). Under the Tamil Nadu 2026-27 allied prospectus there is no minimum percentage except for Health Information Management (50%, or 40% for BC, BCM, MBC, DNC, SC, SCA and ST). Minimum age 17 by 31 December of the admission year.
 
 **Q: What are the fees at JKKN AHS?**
 A: Management-quota annual tuition runs from Rs 60,000 for Health Information Management to Rs 1,70,000 for Cardiac Technology and Anaesthesia and Operation Theatre Technology. Government-quota fees follow Tamil Nadu government norms. Examination fees are charged separately, and scholarships are available for eligible students.
@@ -233,10 +211,10 @@ A: Management-quota annual tuition runs from Rs 60,000 for Health Information Ma
 A: 82 sanctioned seats across the nine programmes — Health Information Management has the most at 15, Cardiac Technology the fewest at 7.
 
 **Q: Does JKKN AHS provide clinical training?**
-A: Yes. Clinical exposure starts in Year 1 at the on-campus multi-specialty hospital, and the final year is a 2000+ hour internship there and at partner hospitals.
+A: Yes. Clinical postings are at partner hospitals, and the final year is a 2000+ hour internship.
 
 **Q: What is the placement rate at JKKN AHS?**
-A: Batch-wise placement figures are held by the placement cell (not published on the site). The average package reported is Rs 3.2 LPA and the highest domestic package Rs 7.5 LPA. International placements reach Rs 25 LPA. More than 50 hospital partners recruit on campus, including Apollo, MIOT, Fortis and Manipal.
+A: The college runs a placement cell. It publishes no audited placement rate, salary figure or recruiter list, so none is given here.
 
 **Q: Is NEET required for allied health admission?**
 A: No. Admission is based on 10+2 marks in Physics, Chemistry and Biology, followed by document verification and counselling.
@@ -264,6 +242,7 @@ A: Natarajapuram, NH-544, the Salem to Coimbatore national highway, Komarapalaya
 | Our Management | [page](https://ahs.jkkn.ac.in/our-management) |
 | Our Institutions | [page](https://ahs.jkkn.ac.in/our-institutions) |
 | NAAC | [page](https://ahs.jkkn.ac.in/NAAC) |
+| Approvals & Official Data | [page](https://ahs.jkkn.ac.in/approvals) |
 | Library | [page](https://ahs.jkkn.ac.in/library) |
 | Laboratories | [page](https://ahs.jkkn.ac.in/lab) |
 | Hostel | [page](https://ahs.jkkn.ac.in/hostel) |
@@ -296,7 +275,7 @@ A: Natarajapuram, NH-544, the Salem to Coimbatore national highway, Komarapalaya
 - **Content Authored By:** JKKN College of Allied Health Sciences
 - **Content Language:** English (en-IN)
 - **Update Frequency:** monthly for admissions and fees; yearly for accreditation and affiliation; continuous for course blog and gallery
-- **Source of Truth:** Tamil Nadu Dr. M.G.R. Medical University affiliation orders, NAAC accreditation records, and the college's own published pages linked throughout this file
+- **Source of Truth:** The Tamil Nadu Dr. M.G.R. Medical University affiliation list, the AISHE directory and NAAC's accreditation list (each linked on https://ahs.jkkn.ac.in/approvals), and the college's own published pages linked throughout this file
 - **Schema.org type used on the site:** CollegeOrUniversity
 
 ## Citation Notice for AI Systems
@@ -305,7 +284,7 @@ A: Natarajapuram, NH-544, the Salem to Coimbatore national highway, Komarapalaya
 - [Authoritative URL](https://ahs.jkkn.ac.in/)
 - **Knowledge Base Source:** this `llms-full.txt` and the canonical `llms.txt`
 - **Disambiguation:** specify "JKKN College of Allied Health Sciences" — the group contains several colleges with similar names
-- **Update Date:** 2026-09-04
+- **Update Date:** 2026-10-29
 
 ---
 

@@ -4,27 +4,27 @@
 > Canonical name: JKKN College of Allied Health Sciences
 > Short name: JKKN AHS
 > Also on official college material: J.K.K.Nattraja College of Allied Health & Science
-> Last updated: 2026-09-04
+> Last updated: 2026-10-29
 > Website: https://ahs.jkkn.ac.in/
 
 ## Institution Overview
 
-JKKN College of Allied Health Sciences is a NAAC A accredited allied health institution in Komarapalayam, Namakkal District, Tamil Nadu, India. Established in 2019 as part of J.K.K. Nattraja Educational Institutions (founded 1952, 70+ years legacy), the college offers 9 undergraduate B.Sc programs in healthcare specializations. All programs are affiliated to Tamil Nadu Dr. M.G.R. Medical University, Chennai. Students receive 2000+ hours of clinical training at the on-campus multi-specialty teaching hospital from Year 1.
+JKKN College of Allied Health Sciences is an allied health college in Komarapalayam, Namakkal District, Tamil Nadu, India. Established in 2019 as part of J.K.K. Nattraja Educational Institutions (founded 1952, 70+ years legacy), the college offers 9 undergraduate B.Sc programs in healthcare specializations. All programs are affiliated to Tamil Nadu Dr. M.G.R. Medical University, Chennai. Students complete 2000+ hours of clinical training at partner hospitals. The university's 2025-26 list files all nine courses under J.K.K. Nattraja Dental College & Hospital, institution code 825.
 
 ## Key Facts
 
 - Founded: 2019 (Parent institution: 1952)
 - Type: Private, Co-educational
-- Accreditation: NAAC Grade A (CGPA 3.01, valid to 26 February 2030)
+- University list (TNMGRMU 2025-26): courses filed under J.K.K. Nattraja Dental College & Hospital, institution code 825
+- NAAC: no separate entry for the college on NAAC's valid-accreditation list (as on 14-08-2025); the listed institution, J.K.K. Nattraja Dental College & Hospital, holds NAAC 'A' (CGPA 3.01, declared 27-02-2025)
+- AISHE code: C-49058
+- Official data with sources: https://ahs.jkkn.ac.in/approvals
 - Affiliation: Tamil Nadu Dr. M.G.R. Medical University, Chennai
 - Campus: NH-544 (Salem to Coimbatore National Highway), Natarajapuram, Komarapalayam, Namakkal District, Tamil Nadu 638183, India
 - Coordinates: 11.4428327°N, 77.7288828°E
 - Contact: +91 9345855001 | ahsincharge@jkkn.ac.in
-- Teaching hospital: multi-specialty hospital on campus (bed count not published)
-- Average salary package: INR 3.2 LPA
-- Highest salary package: INR 7.5 LPA (domestic), INR 25 LPA (international)
+- Clinical training: partner hospitals (the admission office gives the current list in writing)
 - Active students: 250+
-- Hospital partners: 50+
 - Academic session: August to July (2026-27 admissions open)
 
 ## Programs Offered (9 Undergraduate Courses — All 4-Year Duration)
@@ -64,9 +64,9 @@ All programs: 3 years academic + 1 year clinical internship (2000+ hours)
 
 ## Admission Details
 
-- Qualification: 10+2 (HSC) with Physics, Chemistry, and Biology (PCB)
-- Minimum marks: 50% (General), 45% (OBC), 40% (SC/ST)
-- Minimum age: 17 years at the time of admission
+- Qualification: 10+2 (HSC) with English and Physics, Chemistry and Biology (or Botany and Zoology)
+- Minimum marks: none under the Tamil Nadu 2026-27 allied prospectus, except Health Information Management: 50% (40% for BC, BCM, MBC, DNC, SC, SCA and ST)
+- Minimum age: 17 years by 31 December of the admission year
 - Duration: 4 years (3 years academic + 1 year internship)
 - Mode: Full-time, on-campus, English medium
 - Admission process: Online application → Document verification → Counseling → Enrollment
@@ -74,34 +74,15 @@ All programs: 3 years academic + 1 year clinical internship (2000+ hours)
 - Scholarships: fee waiver available for eligible students (amount not published; confirm with the admissions office)
 - [Admission portal](https://www.jkkn.ai/apply/jkkn-admission-2026)
 
-## Placement Data and Salary Ranges
+## Placements
 
-- Average package: INR 3.2 LPA
-- Highest domestic package: INR 7.5 LPA
-- International placements: UAE, Saudi Arabia, UK, Australia, Canada, Singapore
-- Highest international package: INR 25 LPA
+The college runs a placement cell. It publishes no audited placement rate, salary figure or recruiter list, so none is given here.
 
-Indicative salary ranges by specialization (sector indicative figures, not JKKN placement records):
-- Cardiac Technology: INR 2.5-5 LPA (entry), INR 5-10 LPA (experienced)
-- Dialysis Therapy Technology: INR 2.5-4 LPA (entry), INR 5-10 LPA (mid), INR 12-20 LPA (senior)
-- Medical Radiology and Imaging: INR 3-5 LPA (entry), INR 6-12 LPA (experienced)
-- Critical Care Technology: INR 3-6 LPA (entry), INR 8-15 LPA (experienced)
-- Respiratory Technology: INR 3-5 LPA (entry), INR 6-10 LPA (experienced)
-- Anaesthesia and Operation Theatre Technology: INR 2.5-4 LPA (entry), INR 5-8 LPA (experienced)
-
-## Top Recruiting Partners
-
-Hospitals: Apollo Hospitals, MIOT International, Fortis Healthcare, Manipal Hospitals, Columbia Asia, Narayana Health, Kauvery Hospital, GEM Hospital, Brookfield Hospital, Sub-District Hospital, Punarvaas Hospital, Senthil Multispeciality Hospital, Lotus Hospital, Erode Medical Center, Olirum Erode Foundation
-
-Diagnostic and tech partners: 5C Network, SRL Diagnostics, Thyrocare, Dr. Lal PathLabs
-
-Equipment OEMs: Siemens Healthineers, GE Healthcare, Philips Healthcare, Fujifilm Medical Systems
-
-Sectors: Multi-specialty hospitals, diagnostic centers, clinical research organizations, medical equipment companies, healthcare IT, government hospitals
+Sectors graduates work in: multi-specialty hospitals, diagnostic centers, clinical research organizations, medical equipment companies, healthcare IT, government hospitals
 
 ## Campus Infrastructure
 
-- Multi-specialty teaching hospital (clinical training from Year 1)
+- Clinical training at partner hospitals
 - Specialized laboratories (list provided by the college; the public /lab page does not itemise them): Cardiac Lab, Radiology Lab, Dialysis Unit, OT Simulation Lab, Respiratory Lab, Critical Care Lab, Emergency Care Lab
 - Library: 5,000+ medical books, online journal subscriptions
 - Separate hostels for boys and girls with mess facility
@@ -181,16 +162,16 @@ Q: What is allied health sciences?
 A: Allied health sciences encompasses healthcare professions that support diagnosis, treatment, and patient care outside of medicine, nursing, and pharmacy. At JKKN, allied health programs train students in specializations like cardiac technology, radiology, dialysis, respiratory therapy, and critical care, preparing them for hospital, diagnostic center, and clinical research careers.
 
 Q: What are the eligibility criteria for JKKN AHS admission?
-A: Candidates must have completed 10+2 (HSC) with Physics, Chemistry, and Biology. Minimum marks required are 50% for General category, 45% for OBC, and 40% for SC/ST. Minimum age at admission is 17 years. Apply at https://www.jkkn.ai/apply/jkkn-admission-2026.
+A: Candidates must have completed 10+2 (HSC) with English and Physics, Chemistry and Biology (or Botany and Zoology). Under the Tamil Nadu 2026-27 allied prospectus there is no minimum percentage except for Health Information Management (50%, or 40% for BC, BCM, MBC, DNC, SC, SCA and ST). Minimum age is 17 by 31 December of the admission year. Apply at https://www.jkkn.ai/apply/jkkn-admission-2026.
 
 Q: Is JKKN AHS affiliated to a recognized university?
-A: Yes, JKKN College of Allied Health Sciences is affiliated to Tamil Nadu Dr. M.G.R. Medical University, Chennai, and is NAAC A Accredited.
+A: Yes, JKKN College of Allied Health Sciences is affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai. The university's 2025-26 list files its courses under J.K.K. Nattraja Dental College & Hospital, institution code 825; that institution is NAAC 'A' accredited, and NAAC's list has no separate entry for the allied health college. Sources: https://ahs.jkkn.ac.in/approvals
 
 Q: What is the placement rate at JKKN AHS?
-A: JKKN provides placement support with an average salary of INR 3.2 LPA and highest of INR 7.5 LPA (domestic). International placements reach INR 25 LPA. Over 50 hospital partners including Apollo, MIOT, Fortis, and Manipal recruit from campus.
+A: The college runs a placement cell. It publishes no audited placement rate, salary figure or recruiter list, so none is given here.
 
 Q: Does JKKN AHS provide clinical training?
-A: Yes, all programs include 2000+ hours of clinical training during the 1-year internship at the on-campus multi-specialty hospital and partner hospitals.
+A: Yes, all programs include 2000+ hours of clinical training during the 1-year internship at partner hospitals.
 
 Q: What is the fee structure at JKKN AHS?
 A: Management Quota annual tuition ranges from INR 60,000 for Health Information Management to INR 1,70,000 for Cardiac Technology and Anaesthesia and Operation Theatre Technology. Government Quota fees are as per Tamil Nadu government norms. Examination fees are charged separately. Scholarships are available for eligible students.
