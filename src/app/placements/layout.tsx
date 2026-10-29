@@ -58,24 +58,6 @@ const howToSchema = {
   ]
 };
 
-const recruiterListSchema = {
-  "@context": "https://schema.org",
-  "@type": "ItemList",
-  "@id": "https://ahs.jkkn.ac.in/#top-recruiters-at-jkkn-ahs",
-  "name": "Top Recruiters at JKKN AHS",
-  "description": "Hospitals and healthcare organizations named by JKKN College of Allied Health Sciences as placement partners.",
-  "numberOfItems": 18,
-  "itemListElement": [
-    "Apollo Hospitals", "MIOT International", "Fortis Healthcare", "Manipal Hospitals", "Kauvery Hospital", "Columbia Asia",
-    "Narayana Health", "GEM Hospital", "Brookefield Hospital", "5C Network", "Punarvaas", "SRL Diagnostics",
-    "Thyrocare", "Dr. Lal PathLabs", "Meenakshi Mission", "KG Hospital", "PSG Hospitals", "Ganga Hospital"
-  ].map((name, i) => ({
-    "@type": "ListItem",
-    "position": i + 1,
-    "name": name
-  }))
-};
-
 const speakableSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
@@ -105,10 +87,6 @@ export default function PlacementsLayout({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(recruiterListSchema) }}
       />
       <script
         type="application/ld+json"

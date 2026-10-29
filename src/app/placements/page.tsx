@@ -31,9 +31,6 @@ const salaryData = [
     { role: "Emergency Care Technician", link: "/accident-emergency-care" }
 ];
 
-const tier1Recruiters = ["Apollo Hospitals", "MIOT International", "Fortis Healthcare", "Manipal Hospitals", "Kauvery Hospital", "Columbia Asia"];
-const tier2Recruiters = ["Narayana Health", "GEM Hospital", "Brookefield Hospital", "5C Network", "Punarvaas", "SRL Diagnostics", "Thyrocare", "Dr. Lal PathLabs", "Meenakshi Mission", "KG Hospital", "PSG Hospitals", "Ganga Hospital"];
-
 // Destination cards carry no salary, employer or superlative claim: the college publishes
 // no audited international placement data (see the placement-cell statement below).
 const internationalDestinations = [
@@ -70,7 +67,6 @@ export default function PlacementsPage() {
                 <StatsSection />
                 <WhyStandOutSection />
                 <ProcessTimelineSection />
-                <RecruitersSection />
                 <GlobalCareersSection />
                 <SalaryTableSection />
                 <FAQSection />
@@ -97,14 +93,14 @@ function HeroSection() {
             <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] opacity-5" />
             <div className="max-w-7xl mx-auto px-4 relative z-10 text-center">
                 <span className="inline-block text-[#ffde59] font-bold tracking-widest uppercase text-xs mb-4 px-4 py-1.5 bg-white/10 rounded-full">
-                    PLACEMENT RECORD 2024-25
+                    PLACEMENT SUPPORT
                 </span>
                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-6 leading-tight">
                     Allied Health Sciences Placements at JKKN —{' '}
                     <span className="text-[#ffde59]">Placement Support</span>
                 </h1>
                 <p className="text-white/90 text-base sm:text-lg md:text-xl max-w-3xl mx-auto mb-8 leading-relaxed">
-                    JKKN College of Allied Health Sciences, Tamil Nadu, runs a dedicated placement cell that connects graduates with partner hospitals across India and abroad. Your career in Allied Health starts here.
+                    JKKN College of Allied Health Sciences, Tamil Nadu, runs a placement cell that supports graduates looking for hospital roles in India and abroad. Your career in Allied Health starts here.
                 </p>
 
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-3xl mx-auto mb-10">
@@ -205,8 +201,8 @@ function WhyStandOutSection() {
             icon: <Users className="w-7 h-7" />
         },
         {
-            title: "Hospital Network",
-            desc: "Clinical training partnerships with hospitals across Tamil Nadu and India — including Apollo, MIOT, Fortis, Manipal, and Kauvery — for clinical training and direct recruitment.",
+            title: "Clinical Training",
+            desc: "Learners train in hospital settings during clinical postings and the internship year. The college publishes no verified recruiter list, so no hospital is named here; the placement cell can share it on request.",
             icon: <Hospital className="w-7 h-7" />
         },
         {
@@ -324,69 +320,6 @@ function ProcessTimelineSection() {
                         ))}
                     </div>
                 </div>
-            </div>
-        </section>
-    );
-}
-
-// ─── SECTION 5: RECRUITERS GRID ──────────────────────────────────────────────
-
-function RecruitersSection() {
-    return (
-        <section className="py-12 sm:py-16 md:py-20 bg-white">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6">
-                <div className="text-center mb-8 md:mb-12">
-                    <span className="text-[#0b6d41] font-bold tracking-wider uppercase text-xs sm:text-sm mb-4 block">OUR PARTNERS</span>
-                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#0b6d41] leading-tight mb-4">
-                        Top Recruiters — Partner Hospitals
-                    </h2>
-                    <p className="text-gray-600 max-w-3xl mx-auto text-sm sm:text-base">
-                        Leading hospitals and healthcare organizations across India trust JKKN AHS graduates for their clinical skills and professional readiness.
-                    </p>
-                </div>
-
-                {/* Tier 1 — Premium */}
-                <div className="mb-8">
-                    <p className="text-center text-xs font-bold text-gray-400 tracking-widest uppercase mb-4">Premium Partners</p>
-                    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 md:gap-4">
-                        {tier1Recruiters.map((name, i) => (
-                            <motion.div
-                                key={name}
-                                initial={{ opacity: 0, scale: 0.9 }}
-                                whileInView={{ opacity: 1, scale: 1 }}
-                                viewport={{ once: true }}
-                                transition={{ delay: i * 0.06 }}
-                                className="bg-[#0b6d41]/5 border-2 border-[#0b6d41]/20 rounded-xl py-4 px-3 text-center font-bold text-[#0b6d41] text-sm hover:bg-[#0b6d41] hover:text-white transition-colors"
-                            >
-                                {name}
-                            </motion.div>
-                        ))}
-                    </div>
-                </div>
-
-                {/* Tier 2 — Regular */}
-                <div className="mb-6">
-                    <p className="text-center text-xs font-bold text-gray-400 tracking-widest uppercase mb-4">Partner Hospitals</p>
-                    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
-                        {tier2Recruiters.map((name, i) => (
-                            <motion.div
-                                key={name}
-                                initial={{ opacity: 0 }}
-                                whileInView={{ opacity: 1 }}
-                                viewport={{ once: true }}
-                                transition={{ delay: i * 0.04 }}
-                                className="bg-white border border-gray-200 rounded-lg py-3 px-3 text-center text-gray-700 text-xs sm:text-sm hover:border-[#0b6d41] transition-colors"
-                            >
-                                {name}
-                            </motion.div>
-                        ))}
-                    </div>
-                </div>
-
-                {/* Tier 3 — Count */}
-                <p className="text-center text-gray-500 text-sm font-medium">
-                    Further partner hospitals across Tamil Nadu and India — the placement cell can share the current list on request
-                </p>
             </div>
         </section>
     );
@@ -565,7 +498,7 @@ function CTASection() {
                             Ready to Start Your Healthcare Career?
                         </h2>
                         <p className="text-gray-600 text-sm sm:text-base mb-8 max-w-2xl mx-auto">
-                            Admissions for 2026-27 are now open. Join JKKN AHS graduates who start their careers in leading hospitals.
+                            Admissions for 2026-27 are now open.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">

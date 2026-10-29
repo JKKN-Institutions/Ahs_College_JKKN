@@ -112,38 +112,10 @@ export function CareerPaths() {
                         ))}
                     </div>
 
-                    {/* Top Recruiters */}
+                    {/* No recruiter names: the college publishes no verified recruiter list (official sources checked 2026-10-29). */}
                     <div className="text-center">
-                        <h3 className="text-2xl sm:text-3xl md:text-4xl font-black text-[#0b6d41] mb-6 sm:mb-8 md:mb-10">Our Top Recruiters</h3>
-                        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4">
-                            {[
-                                'Apollo Hospitals',
-                                'MIOT International',
-                                'Fortis Healthcare',
-                                'Manipal Hospitals',
-                                'Columbia Asia',
-                                'Narayana Health',
-                                'Kauvery Hospital',
-                                'Sub-District Hospital',
-                                'Brookefield Hospital',
-                                'GEM Hospital',
-                                '5C Network',
-                                'Punarvaas Hospital'
-                            ].map((company, index) => (
-                                <motion.div
-                                    key={index}
-                                    initial={{ opacity: 0, y: 10 }}
-                                    whileInView={{ opacity: 1, y: 0 }}
-                                    viewport={{ once: true }}
-                                    transition={{ delay: index * 0.05 }}
-                                    className="bg-white px-3 sm:px-4 md:px-5 py-3 sm:py-4 rounded-xl sm:rounded-2xl shadow-md hover:shadow-lg transition-shadow"
-                                >
-                                    <span className="text-[#0b6d41] font-bold text-xs sm:text-sm">{company}</span>
-                                </motion.div>
-                            ))}
-                        </div>
-                        <Link href="/placements" className="inline-flex items-center gap-2 mt-8 text-[#0b6d41] font-bold hover:underline text-sm">
-                            View Full Placement Record <span aria-hidden="true">&rarr;</span>
+                        <Link href="/placements" className="inline-flex items-center gap-2 text-[#0b6d41] font-bold hover:underline text-sm">
+                            View Placement Support <span aria-hidden="true">&rarr;</span>
                         </Link>
                     </div>
                 </div>
