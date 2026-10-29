@@ -205,7 +205,7 @@ export default function DepartmentsPage() {
                   Ready to Start Your Healthcare Career?
                 </h3>
                 <p className="text-white/80 text-sm md:text-base">
-                  Apply for admissions 2025–26 — limited seats available.
+                  See courses, sanctioned seats and fees on the admissions page.
                 </p>
               </div>
               <div className="flex flex-wrap gap-3 justify-center shrink-0">
