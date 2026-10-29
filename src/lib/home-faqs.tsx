@@ -19,7 +19,7 @@ export const HOME_FAQS: { question: string; answer: ReactNode }[] = [
     },
     {
         question: "Which university is JKKN Allied Health Sciences College affiliated with?",
-        answer: "J.K.K. Nattraja College of Allied Health Sciences is affiliated with The Tamil Nadu Dr. M.G.R. Medical University, Chennai. The college is approved by the Government of Tamil Nadu Directorate of Medical Education and follows the curriculum prescribed by the university. All degrees are recognized nationally and internationally."
+        answer: <>{"JKKN College of Allied Health Sciences is affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, which awards the degree. The university's 2025-26 list of allied health affiliated colleges shows our nine courses under J.K.K. Nattraja Dental College & Hospital, institution code 825. "}<Link href="/approvals" className="text-[#0b6d41] font-semibold hover:underline">See approvals and official data</Link>.</>
     },
     {
         question: "What is the fee structure for B.Sc. Allied Health Sciences programs?",
