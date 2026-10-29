@@ -36,6 +36,12 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      // ── /testimonials removed 2026-10-29 ─────────────────────────────────
+      // Its six learner quotes (three marked "[SAMPLE]") had no learner, year or consent
+      // behind them, so they were taken off the homepage, /placements and this page.
+      // 301 (user's choice) to /placements, which now carries only sourced facts.
+      { source: '/testimonials', destination: '/placements', statusCode: 301 },
+      { source: '/testimonials/', destination: '/placements', statusCode: 301 },
       // ── Course-mismatch removal 2026-08-11 (DEP-45) ───────────────────────
       // AHS runs nine courses, read live off this site 2026-08-11: Cardiac Technology,
       // Critical Care, Dialysis, Radiology & Imaging, OT & Anaesthesia, Respiratory Therapy,

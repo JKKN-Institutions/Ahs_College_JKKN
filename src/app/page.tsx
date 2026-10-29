@@ -27,10 +27,6 @@ const AdmissionJourney = dynamic(() => import("@/components/sections/AdmissionJo
   loading: () => <div className="h-96 bg-gray-50 animate-pulse" />
 });
 
-const Testimonials = dynamic(() => import("@/components/sections/Testimonials").then(m => ({ default: m.Testimonials })), {
-  loading: () => <div className="h-96 bg-gray-50 animate-pulse" />
-});
-
 import { FAQ } from "@/components/sections/FAQ";
 
 const HomeEvents = dynamic(() => import("@/components/sections/HomeEvents").then(m => ({ default: m.HomeEvents })), {
@@ -170,7 +166,6 @@ export default function Home() {
         <Facilities />
         <HomeEvents />
         <AdmissionJourney />
-        <Testimonials />
         <FAQ />
         <CTASection />
       </main>

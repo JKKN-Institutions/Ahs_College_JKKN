@@ -78,7 +78,6 @@ function buildPages(lastmod: string): Entry[] {
     { loc: `${baseUrl}/scholarships`, changefreq: 'monthly', priority: '0.9', lastmod },
     { loc: `${baseUrl}/faculty`, changefreq: 'monthly', priority: '0.8', lastmod },
     { loc: `${baseUrl}/faq`, changefreq: 'monthly', priority: '0.7', lastmod },
-    { loc: `${baseUrl}/testimonials`, changefreq: 'monthly', priority: '0.7', lastmod },
     { loc: `${baseUrl}/placements`, changefreq: 'monthly', priority: '0.9', lastmod },
 
     // Institutional pages

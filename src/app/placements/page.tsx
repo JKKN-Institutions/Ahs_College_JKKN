@@ -12,61 +12,10 @@ import {
     TrendingUp, ArrowRight, Phone, ChevronDown,
     Award, Hospital, Globe, Users, BookOpen, ClipboardList,
     FileText, UserCheck, Briefcase, HandshakeIcon,
-    Stethoscope, Quote
+    Stethoscope
 } from 'lucide-react';
 
 // ─── DATA ────────────────────────────────────────────────────────────────────
-
-const testimonials = [
-    {
-        name: "Priya Krishnan",
-        role: "B.Sc. OTAT 2022 | Apollo Hospitals",
-        programLink: "/operation-theatre-anaesthesia",
-        initials: "PK",
-        content: "The practical training at JKKN prepared me thoroughly for my role at Apollo. The Learning Facilitators' real-world experience made all the difference in understanding complex procedures.",
-        rating: 5
-    },
-    {
-        name: "Rajesh Sundaram",
-        role: "B.Sc. CCT 2021 | Own Practice",
-        programLink: "/critical-care-technology",
-        initials: "RS",
-        content: "JKKN's CCT program and clinical exposure helped me start my own eye care practice within 2 years of graduation. The foundation was exceptional.",
-        rating: 5
-    },
-    {
-        name: "Anitha Mohan",
-        role: "B.Sc. Cardiac Technology 2023 | MIOT",
-        programLink: "/cardiac-technology",
-        initials: "AM",
-        content: "From state-of-the-art cardiac simulation labs to hospital internship at MIOT, JKKN gave me everything I needed to become a confident cardiac technologist.",
-        rating: 5
-    },
-    {
-        name: "Kavitha Rajan",
-        role: "B.Sc. Radiology 2023 | Fortis Healthcare",
-        programLink: "/radiology-imaging-technology",
-        initials: "KR",
-        content: "JKKN's radiology program gave me hands-on training with CT, MRI, and X-ray equipment from day one. Within months of graduating, I was placed at Fortis Healthcare, Chennai.",
-        rating: 5
-    },
-    {
-        name: "Mr. Senthil Kumar",
-        role: "Parent of B.Sc. Dialysis Technology 2024 Learner",
-        programLink: "/dialysis-technology",
-        initials: "SK",
-        content: "As a parent, choosing the right college was crucial. JKKN's campus safety, hostel facilities, and the placement record convinced us. My daughter already has an internship offer from Kauvery Hospital.",
-        rating: 5
-    },
-    {
-        name: "Mohammed Farhan",
-        role: "B.Sc. Respiratory Therapy 2022 | NHS UK",
-        programLink: "/respiratory-therapy",
-        initials: "MF",
-        content: "JKKN prepared me for an international healthcare career. After completing my Respiratory Therapy degree, I secured a position with the NHS in the United Kingdom.",
-        rating: 5
-    }
-];
 
 // Role -> programme links only. The salary columns that used to sit here were sector
 // guesses with no source, and this page states that no audited salary figure is published.
@@ -123,7 +72,6 @@ export default function PlacementsPage() {
                 <ProcessTimelineSection />
                 <RecruitersSection />
                 <GlobalCareersSection />
-                <TestimonialsSection />
                 <SalaryTableSection />
                 <FAQSection />
                 <CTASection />
@@ -497,53 +445,6 @@ function GlobalCareersSection() {
                             <p className="text-gray-600 text-sm">International protocol training from Year 1</p>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-    );
-}
-
-// ─── SECTION 7: TESTIMONIALS ─────────────────────────────────────────────────
-
-function TestimonialsSection() {
-    return (
-        <section className="py-12 sm:py-16 md:py-20 bg-white overflow-hidden">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6">
-                <div className="text-center mb-8 md:mb-12">
-                    <span className="text-[#0b6d41] font-bold tracking-wider uppercase text-xs sm:text-sm mb-4 block">ALUMNI VOICES</span>
-                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#0b6d41] leading-tight mb-4">
-                        From Campus to Career — Alumni Voices
-                    </h2>
-                    <p className="text-gray-600 max-w-3xl mx-auto text-sm sm:text-base">
-                        Hear from JKKN graduates who are now working in top hospitals across India and abroad.
-                    </p>
-                </div>
-
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
-                    {testimonials.map((t, i) => (
-                        <motion.div
-                            key={i}
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: i * 0.1 }}
-                            className="bg-[#fbfbee] p-6 sm:p-8 rounded-2xl relative shadow-md hover:shadow-xl transition-shadow border border-gray-100"
-                        >
-                            <div className="mb-4">
-                                <Quote className="w-8 h-8 text-[#0b6d41]" />
-                            </div>
-                            <p className="text-gray-700 italic mb-6 text-sm leading-relaxed">{t.content}</p>
-                            <div className="flex items-center gap-3">
-                                <div className="w-10 h-10 bg-[#0b6d41] rounded-full flex items-center justify-center text-white font-bold text-xs shrink-0">
-                                    {t.initials}
-                                </div>
-                                <div>
-                                    <h4 className="font-bold text-gray-900 text-sm">{t.name}</h4>
-                                    <Link href={t.programLink} className="text-xs text-[#0b6d41] hover:underline">{t.role}</Link>
-                                </div>
-                            </div>
-                        </motion.div>
-                    ))}
                 </div>
             </div>
         </section>
