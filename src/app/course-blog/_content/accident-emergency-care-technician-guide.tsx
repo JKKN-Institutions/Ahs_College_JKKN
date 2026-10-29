@@ -225,10 +225,6 @@ export default function EmergencyCareContent() {
           BLS, ACLS, ATLS Provider preparation track during the final year
         </li>
         <li>
-          Strong placement record across Apollo ER, KMCH trauma centre, 108 ambulance
-          services, regional multi-specialty hospitals
-        </li>
-        <li>
           On-campus{" "}
           <Link href="/ambulance-service">ambulance service</Link>,{" "}
           <Link href="/lab">simulation learning labs</Link>,{" "}

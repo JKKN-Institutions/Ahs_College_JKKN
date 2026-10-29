@@ -202,15 +202,7 @@ export default function RadiologyContent() {
           mammography at partner hospitals
         </li>
         <li>
-          Industry partnerships with diagnostic chains (Vijaya, Krsnaa, regional
-          imaging centres) for internships and placements
-        </li>
-        <li>
           PACS workflow training using clinical-grade software during semesters 5–6
-        </li>
-        <li>
-          Excellent placement record across Chennai, Coimbatore, Salem, Bangalore, and
-          Hyderabad corporate hospitals
         </li>
         <li>
           Strong campus infrastructure —{" "}

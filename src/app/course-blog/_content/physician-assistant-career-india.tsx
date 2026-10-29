@@ -204,10 +204,6 @@ export default function PhysicianAssistantContent() {
           Surgery, Emergency Medicine — exactly the specialties hiring PAs aggressively
         </li>
         <li>
-          Strong placement support — Apollo, KMCH, Manipal, Christian Medical College,
-          MIOT actively recruit JKKN PA graduates
-        </li>
-        <li>
           PG diploma pathway guidance for cardiology, critical care, diabetes
           specialization
         </li>

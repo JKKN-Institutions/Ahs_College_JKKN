@@ -208,10 +208,6 @@ export default function CriticalCareContent() {
           Senior learners include practicing intensivists and senior critical care nurses
         </li>
         <li>
-          Strong placement record across Apollo, Fortis, KMCH, MIOT, Manipal critical
-          care departments
-        </li>
-        <li>
           Excellent campus infrastructure —{" "}
           <Link href="/lab">simulation learning labs</Link>,{" "}
           <Link href="/library">digital learning commons</Link>,{" "}

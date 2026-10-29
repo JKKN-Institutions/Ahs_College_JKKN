@@ -198,10 +198,6 @@ export default function CardiacTechnologyContent() {
           observation
         </li>
         <li>
-          Industry partnerships with cardiac device companies for OEM training and
-          placement
-        </li>
-        <li>
           Access to <Link href="/lab">advanced simulation learning labs</Link>,{" "}
           <Link href="/library">medical learning commons</Link>, and{" "}
           <Link href="/hostel">on-campus hostel</Link>

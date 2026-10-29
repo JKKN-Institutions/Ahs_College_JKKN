@@ -226,10 +226,6 @@ export default function MedicalRecordContent() {
           departments
         </li>
         <li>
-          Strong placement record with Optum, Cognizant, Access Healthcare, regional
-          hospitals
-        </li>
-        <li>
           CPC exam preparation track guidance during the final year
         </li>
         <li>

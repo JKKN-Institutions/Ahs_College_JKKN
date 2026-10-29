@@ -199,15 +199,11 @@ export default function DialysisTechnologyContent() {
           treatment systems
         </li>
         <li>
-          Partnered with NephroPlus and regional dialysis chains for placements and
-          internships
-        </li>
-        <li>
           Hands-on lab training on Fresenius and B. Braun machines — the same brands
           used in 80%+ of Indian dialysis chains
         </li>
         <li>
-          Strong placement support and on-campus{" "}
+          Placement cell support and on-campus{" "}
           <Link href="/hostel">hostel</Link>,{" "}
           <Link href="/transport">transport</Link>, and{" "}
           <Link href="/lab">advanced learning labs</Link>

@@ -209,10 +209,6 @@ export default function OperationTheatreContent() {
           carts, electrosurgical units, laparoscopic towers
         </li>
         <li>
-          Strong placement record across Apollo, Fortis, KMCH, MIOT, regional
-          multi-specialty hospitals
-        </li>
-        <li>
           Excellent campus infrastructure —{" "}
           <Link href="/lab">simulation learning labs</Link>,{" "}
           <Link href="/library">learning commons</Link>,{" "}
