@@ -196,8 +196,8 @@ export default function PhysicianAssistantContent() {
       <h2 id="why-jkkn">Why Study at JKKN</h2>
       <ul>
         <li>
-          Affiliated with The Tamil Nadu Dr. M.G.R. Medical University, Chennai —
-          recognized by every major corporate hospital chain
+          Affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, which
+          awards the degree
         </li>
         <li>
           Clinical rotations across General Medicine, Cardiology, Nephrology, Oncology,

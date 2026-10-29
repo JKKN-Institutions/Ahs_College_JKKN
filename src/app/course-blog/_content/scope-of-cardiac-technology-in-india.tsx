@@ -190,8 +190,8 @@ export default function CardiacTechnologyContent() {
       </p>
       <ul>
         <li>
-          Affiliated with The Tamil Nadu Dr. M.G.R. Medical University, Chennai —
-          recognised by every Indian hospital and international registration body
+          Affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, which
+          awards the degree
         </li>
         <li>
           Hands-on cath lab rotations starting from semester 3, not just final-year
