@@ -8,7 +8,7 @@ import { Footer } from "@/components/layout/Footer";
 export const metadata: Metadata = createPageMetadata({
   title: "Course Career Insights — JKKN College of Allied Health Sciences",
   description:
-    "Career guides, salary and scope of allied health courses in India: cardiac, dialysis, radiology, OT, respiratory, physician associate, critical care, HIM, EMT.",
+    "Career guides, pay and scope of allied health courses in India: cardiac, dialysis, radiology, OT, respiratory, physician associate, critical care, HIM, EMT.",
   path: "/course-blog",
   keywords: [
     "allied health science career",
@@ -76,7 +76,7 @@ export default function CourseBlogIndexPage() {
               Course Career Insights for Allied Health Aspirants
             </h1>
             <p className="text-base md:text-lg text-white/90 max-w-3xl leading-relaxed">
-              Industry trends, real salary data, day-in-the-life stories, and global
+              How each role works, how pay works, day-in-the-life stories, and global
               opportunities for every course we offer. Built to help you choose the
               right path — and own it.
             </p>
