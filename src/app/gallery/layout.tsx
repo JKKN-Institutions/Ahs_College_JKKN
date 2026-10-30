@@ -3,7 +3,7 @@ import { createPageMetadata } from "@/lib/metadata";
 export const metadata = createPageMetadata({
   title: "Photo Gallery — JKKN College of Allied Health Sciences",
   description:
-    "Browse photos of JKKN College of Allied Health Sciences campus — learning studios, learning labs, hostel, learning commons, and learner life at Komarapalayam, Tamil Nadu.",
+    "Photos of the JKKN College of Allied Health Sciences campus, Komarapalayam, Tamil Nadu: learning studios, learning labs, hostel, learning commons, learner life.",
   path: "/gallery",
   keywords: [
     "JKKN campus gallery photos",

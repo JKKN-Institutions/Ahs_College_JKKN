@@ -16,7 +16,7 @@ import { CARDIAC_LIST_SOURCE, GOVERNMENT_CARDIAC_COUNT } from "@/lib/cardiac-col
 // 3-4 weeks after deploy; revert only if the admissions page's fee/apply queries fall.
 export const metadata = createPageMetadata({
   title: "BSc Cardiac Technology Colleges in Tamilnadu | JKKN",
-  description: `${CARDIAC_LIST_SOURCE.totalInstitutions} institutions offer BSc Cardiac Technology in Tamilnadu (TN Dr. MGR Medical University list ${CARDIAC_LIST_SOURCE.year}). See the ${GOVERNMENT_CARDIAC_COUNT} government colleges, the Namakkal, Erode & Salem colleges, and JKKN's course.`,
+  description: `${CARDIAC_LIST_SOURCE.totalInstitutions} institutions offer BSc Cardiac Technology in Tamilnadu (TN Dr. MGR Medical University, ${CARDIAC_LIST_SOURCE.year}): ${GOVERNMENT_CARDIAC_COUNT} government, Namakkal, Erode & Salem lists, plus JKKN.`,
   path: "/cardiac-technology",
   keywords: [
     "bsc cardiac technology colleges in tamilnadu",

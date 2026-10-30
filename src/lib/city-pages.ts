@@ -175,7 +175,7 @@ export const cityPages: CityPage[] = [
       { name: "Salem", distance: "~45 km", href: "/salem" },
     ],
     metaDescription:
-      "JKKN AHS — just ~7 km from Bhavani, across the Cauvery. 9 UG allied health programmes, 82 university-sanctioned seats, placement support. Admissions open 2026-27.",
+      "JKKN AHS — ~7 km from Bhavani, across the Cauvery. 9 UG allied health programmes, 82 university-sanctioned seats, placement support. Admissions open 2026-27.",
     extraKeywords: [
       "allied health science colleges in bhavani",
       "paramedical colleges in bhavani",
@@ -409,7 +409,7 @@ export const cityPages: CityPage[] = [
       { name: "Coimbatore", distance: "~85 km", href: "/coimbatore" },
     ],
     metaDescription:
-      "JKKN AHS — ~52 km from Gobichettipalayam via Bhavani. 9 UG allied health programmes, 82 university-sanctioned seats, placement support, hostel available. Admissions open 2026-27.",
+      "JKKN AHS — ~52 km from Gobichettipalayam. 9 UG allied health programmes, 82 university-sanctioned seats, placement support, hostel. Admissions open 2026-27.",
     extraKeywords: [
       "allied health science colleges near gobichettipalayam",
       "paramedical colleges in gobichettipalayam",
@@ -549,7 +549,7 @@ export const cityPages: CityPage[] = [
       { name: "Vellore", distance: "~150 km", href: "/vellore" },
     ],
     metaDescription:
-      "JKKN AHS — ~150 km from Krishnagiri via Salem. 9 UG allied health programmes, 82 university-sanctioned seats, placement support, hostel. Admissions open 2026-27.",
+      "JKKN AHS — ~150 km from Krishnagiri via Salem. 9 UG allied health programmes, 82 university-sanctioned seats, placement support, hostel. Admissions 2026-27.",
     extraKeywords: [
       "allied health science colleges near krishnagiri",
       "paramedical colleges in krishnagiri",
@@ -595,7 +595,7 @@ export const cityPages: CityPage[] = [
       { name: "Salem", distance: "~200 km", href: "/salem" },
     ],
     metaDescription:
-      "JKKN AHS — 9 UG allied health programmes with full hostel support for Vellore students. 82 university-sanctioned seats, placement support. Admissions open 2026-27.",
+      "JKKN AHS — 9 UG allied health programmes with hostel support for Vellore students. 82 university-sanctioned seats, placement support. Admissions open 2026-27.",
     extraKeywords: [
       "allied health science colleges for vellore students",
       "paramedical colleges near vellore",

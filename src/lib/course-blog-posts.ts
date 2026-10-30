@@ -261,7 +261,7 @@ export const courseBlogPosts: CourseBlogPost[] = [
     title: "Respiratory Technology Scope, Salary & Future in India (2026 Complete Guide)",
     metaTitle: "Respiratory Technology Scope & Salary India 2026 — Career, Jobs, Future",
     metaDescription:
-      "Post-COVID demand for respiratory therapists has tripled. Explore the career scope, salary, specializations, and US/Canada licensure paths for B.RT (Respiratory Technology).",
+      "B.RT (Respiratory Technology) career guide: scope, salary, specializations and US/Canada licensure paths for respiratory therapists trained in India.",
     excerpt:
       "Post-COVID, India added 1.5 lakh new ICU ventilator beds. The country has fewer than 8,000 trained respiratory therapists. The math makes this one of the most undersupplied healthcare careers.",
     heroImage: "/images/departments/respiratory-therapy-hero.webp",
@@ -490,7 +490,7 @@ export const courseBlogPosts: CourseBlogPost[] = [
     title: "Emergency Medical Technologist (Paramedic) Career Guide India 2026",
     metaTitle: "Emergency Medical Technologist Career India 2026 — Salary & Jobs",
     metaDescription:
-      "India's trauma care and ambulance services are expanding fast. Discover career scope, salary, EMT certifications, and global jobs for Emergency Medical Technologists (Paramedic).",
+      "Emergency Medical Technologist (Paramedic) career guide: scope, salary, EMT certifications and jobs in India's trauma care and ambulance services and abroad.",
     excerpt:
       "India has 4.5 lakh road accident victims a year but fewer than 15,000 trained emergency care technologists. The Modi government's trauma care expansion is creating thousands of new roles.",
     heroImage: "/accident-emergency-care-hero.webp",

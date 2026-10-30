@@ -9,7 +9,7 @@ export const dynamic = 'force-dynamic';
 export const metadata: Metadata = {
   title: 'Senior Learners | JKKN College of Allied Health Sciences',
   description:
-    'Meet the experienced senior learners of JKKN College of Allied Health Sciences, Komarapalayam. Qualified senior learners and specialists across 9 allied health programmes.',
+    'Meet the senior learners of JKKN College of Allied Health Sciences, Komarapalayam: qualified specialists across its 9 UG allied health programmes.',
   alternates: { canonical: '/faculty' },
   openGraph: {
     title: 'Senior Learners | JKKN College of Allied Health Sciences',

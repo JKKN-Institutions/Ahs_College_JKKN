@@ -8,7 +8,7 @@ import { Footer } from "@/components/layout/Footer";
 export const metadata: Metadata = createPageMetadata({
   title: "Course Career Insights — JKKN College of Allied Health Sciences",
   description:
-    "Career guides, salary outlook, and future scope of allied health science courses in India. Pillar insights for cardiac, dialysis, radiology, OT, respiratory, physician associate, critical care, HIM, and emergency medical careers.",
+    "Career guides, salary and scope of allied health courses in India: cardiac, dialysis, radiology, OT, respiratory, physician associate, critical care, HIM, EMT.",
   path: "/course-blog",
   keywords: [
     "allied health science career",
