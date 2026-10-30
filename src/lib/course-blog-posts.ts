@@ -29,19 +29,19 @@ export type CourseBlogPost = {
 export const courseBlogPosts: CourseBlogPost[] = [
   {
     slug: "scope-of-cardiac-technology-in-india",
-    title: "Scope of Cardiac Care Technology in India: Career, Salary & Future (2026)",
+    title: "Scope of Cardiac Care Technology in India: Career, Pay & Future (2026)",
     metaTitle: "Cardiac Care Technology in India 2026: Scope & Careers",
     metaDescription:
       "Where a B.Sc Cardiac Care Technology degree leads — cath-lab and hospital roles, the skills employers ask for, and how to enter the field.",
     excerpt:
-      "India faces a cardiac care crisis with 4.77 crore CVD patients. Here's why cardiac technologists are in record demand — and what your career, salary, and growth path look like.",
+      "What cardiac technologists do, the career paths and skills that matter, how pay works, and the routes to work abroad.",
     heroImage: "/cardiac-technology-hero.webp",
     heroImageAlt: "Cardiac technologist operating cath lab equipment at JKKN College of Allied Health Sciences",
     courseSlug: "cardiac-technology",
     courseName: "B.Sc Cardiac Care Technology",
     category: "Career Guide",
     publishedDate: "2026-05-16",
-    modifiedDate: "2026-05-16",
+    modifiedDate: "2026-10-30",
     readTimeMinutes: 11,
     author: "JKKN AHS Academic Team",
     keywords: [
@@ -56,8 +56,8 @@ export const courseBlogPosts: CourseBlogPost[] = [
       { id: "industry", label: "Why Cardiac Care Matters in 2026" },
       { id: "day-in-life", label: "Day in the Life of a Cardiac Technologist" },
       { id: "career-paths", label: "Career Paths & Specializations" },
-      { id: "salary", label: "Salary Outlook in India" },
-      { id: "skills", label: "Skills & Certifications That Multiply Your Value" },
+      { id: "salary", label: "How Pay Works in India" },
+      { id: "skills", label: "Skills & Certifications" },
       { id: "global", label: "Global Opportunities" },
       { id: "why-jkkn", label: "Why Study at JKKN" },
       { id: "faq", label: "FAQs" },
@@ -65,7 +65,7 @@ export const courseBlogPosts: CourseBlogPost[] = [
     faqs: [
       {
         q: "Is cardiac care technology a good career in India?",
-        a: "Yes. With over 4.77 crore cardiovascular disease patients in India and a severe shortage of trained cardiac technologists, the demand outpaces supply in every tier-1 and tier-2 city. Entry-level salaries start at ₹2.4–4.2 LPA and reach ₹8–14 LPA with 5+ years of experience.",
+        a: "It suits learners who want hands-on clinical work: cardiac technologists perform ECGs, echocardiograms and stress tests and assist cardiologists in the cath lab. JKKN publishes no placement or salary figure, so check current job notices for openings and pay.",
       },
       {
         q: "What does a cardiac technologist do?",
@@ -73,15 +73,15 @@ export const courseBlogPosts: CourseBlogPost[] = [
       },
       {
         q: "What is the salary of a cardiac technologist in India?",
-        a: "Entry-level: ₹2.4–4.2 LPA in tier-1 hospitals. Mid-level (3–5 years): ₹5–8 LPA. Senior cath lab technologists with 8+ years and cardiology fellowship certifications earn ₹10–18 LPA. Gulf and UK roles can pay 2–3× Indian salaries.",
+        a: "JKKN publishes no salary figure for its graduates, and no official survey gives private-hospital pay for cardiac technologists. Pay depends on the employer, the city, shift work and experience; for government posts, the pay level is printed in each recruitment notification (for example TN MRB, AIIMS or ESIC).",
       },
       {
         q: "Which hospitals hire BSc Cardiac Technology graduates?",
-        a: "Apollo Hospitals, Fortis, Medanta, Narayana Health, MIOT International, KMCH, Manipal Hospitals, Christian Medical College Vellore, AIIMS, and government cardiac centres regularly recruit cardiac technology graduates across India.",
+        a: "JKKN publishes no recruiter list for its graduates. Cardiac technologists work in hospital cath labs, echo and ECG departments and cardiac centres, private and government; check each employer's current openings.",
       },
       {
         q: "Can I work abroad with a BSc in Cardiac Care Technology?",
-        a: "Yes. UK (after IELTS + NHS registration), Gulf countries (DHA/HAAD/Prometric exams), Australia, and Canada hire Indian-trained cardiac technologists. Pay is typically 2.5–4× Indian salaries depending on country and experience.",
+        a: "Working abroad needs the destination country's registration or licensing exam - for example NHS registration (with IELTS) in the UK, or the DHA, HAAD or Prometric exams in the Gulf. Requirements change, so check that country's regulator before you plan.",
       },
     ],
   },
