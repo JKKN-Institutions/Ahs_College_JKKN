@@ -9,7 +9,7 @@
 export const NAMAKKAL_FAQS = [
   {
     q: "What is the best allied health sciences college in Namakkal?",
-    a: "JKKN College of Allied Health Sciences is in Komarapalayam, Namakkal district, on NH-544. Its 9 B.Sc programmes are affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai. For B.Sc Cardiac Technology, the university's 2025-26 list has 8 colleges in Namakkal district, and JKKN is one of them.",
+    a: "JKKN College of Allied Health Sciences is in Komarapalayam, Namakkal district, on NH-544. Its 9 UG programmes are affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai. For B.Sc Cardiac Technology, the university's 2025-26 list has 8 colleges in Namakkal district, and JKKN is one of them.",
   },
   {
     q: "How far is JKKN AHS from Namakkal?",
@@ -17,15 +17,15 @@ export const NAMAKKAL_FAQS = [
   },
   {
     q: "How many seats does JKKN College of Allied Health Sciences have for each course?",
-    a: "The Tamil Nadu Dr. M.G.R. Medical University sanctions 82 seats across nine B.Sc courses at JKKN College of Allied Health Sciences for 2025-26: Medical Record Science 15; Operation Theatre, Respiratory Therapy, Physician Assistant, Critical Care and Accident & Emergency Care 10 each; Cardiac Technology 7; Dialysis and Radiography 5 each.",
+    a: "The Tamil Nadu Dr. M.G.R. Medical University sanctions 82 seats across nine UG courses at JKKN College of Allied Health Sciences for 2025-26: Medical Record Science 15; Operation Theatre, Respiratory Therapy, Physician Assistant, Critical Care and Accident & Emergency Care 10 each; Cardiac Technology 7; Dialysis and Radiography 5 each.",
   },
   {
     q: "Is JKKN College of Allied Health Sciences affiliated to The Tamil Nadu Dr. M.G.R. Medical University?",
-    a: "Yes. The Tamil Nadu Dr. M.G.R. Medical University lists JKKN's nine B.Sc allied health courses under J.K.K. Nattraja Dental College & Hospital, institution code 825, Kumarapalayam, Namakkal district, in its 2025-26 affiliated-colleges list. Search for that name, not JKKN, when you check the university list.",
+    a: "Yes. The Tamil Nadu Dr. M.G.R. Medical University lists JKKN's nine UG allied health courses under J.K.K. Nattraja Dental College & Hospital, institution code 825, Kumarapalayam, Namakkal district, in its 2025-26 affiliated-colleges list. Search for that name, not JKKN, when you check the university list.",
   },
   {
     q: "What is Allied Health Sciences?",
-    a: "Allied Health Sciences are healthcare professions that support doctors and nurses in diagnosing, treating and monitoring patients. At JKKN College of Allied Health Sciences you can study nine B.Sc courses, including Cardiac Technology, Medical Radiology and Imaging, Dialysis Therapy, Anaesthesia and Operation Theatre, Respiratory Technology and Physician Associates.",
+    a: "Allied Health Sciences are healthcare professions that support doctors and nurses in diagnosing, treating and monitoring patients. At JKKN College of Allied Health Sciences you can study nine UG courses, including Cardiac Technology, Medical Radiology and Imaging, Dialysis Therapy, Anaesthesia and Operation Theatre, Respiratory Technology and Physician Associates.",
   },
   {
     q: "How is AHS different from nursing?",
@@ -53,7 +53,7 @@ export const NAMAKKAL_FAQS = [
   },
   {
     q: "How many allied health science colleges are there in Namakkal?",
-    a: "Namakkal district has several allied health science colleges; for B.Sc Cardiac Technology alone, the university's 2025-26 list has 8 in the district. JKKN College of Allied Health Sciences in Komarapalayam is one of them, with nine B.Sc courses and 82 university-sanctioned seats.",
+    a: "Namakkal district has several allied health science colleges; for B.Sc Cardiac Technology alone, the university's 2025-26 list has 8 in the district. JKKN College of Allied Health Sciences in Komarapalayam is one of them, with nine UG courses and 82 university-sanctioned seats.",
   },
   {
     q: "What are the eligibility requirements for allied health science courses?",

@@ -522,7 +522,7 @@ function OtherCoursesSection({ otherCourses }: { otherCourses: AdmissionCourse[]
         <section className="py-12 bg-gray-50">
             <div className="max-w-6xl mx-auto px-4">
                 <h2 className="text-xl sm:text-2xl font-bold text-[#0b6d41] mb-2">Explore Other AHS Programs</h2>
-                <p className="text-sm text-gray-600 mb-6">Compare with the other 8 BSc Allied Health Sciences admission pages at JKKN.</p>
+                <p className="text-sm text-gray-600 mb-6">Compare with the other 8 UG Allied Health Sciences admission pages at JKKN.</p>
                 <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
                     {otherCourses.map((c) => (
                         <Link

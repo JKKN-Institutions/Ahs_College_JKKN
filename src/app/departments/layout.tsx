@@ -3,7 +3,7 @@ import { createPageMetadata } from "@/lib/metadata";
 export const metadata = createPageMetadata({
   title: "Departments — JKKN College of Allied Health Sciences",
   description:
-    "Explore 9 B.Sc Allied Health departments at JKKN — Cardiac, Dialysis Therapy, Medical Radiology, Anaesthesia & OT, Respiratory, Physician Associates & more.",
+    "Explore 9 UG Allied Health departments at JKKN — Cardiac, Dialysis Therapy, Medical Radiology, Anaesthesia & OT, Respiratory, Physician Associates & more.",
   path: "/departments",
   keywords: [
     "JKKN allied health departments",
@@ -41,7 +41,7 @@ const itemListSchema = {
   "@type": "ItemList",
   "@id": "https://ahs.jkkn.ac.in/#b-sc-allied-health-science-departments-at-jkkn",
   "name": "B.Sc Allied Health Science Departments at JKKN",
-  "description": "Nine specialized B.Sc Allied Health Science departments offered at JKKN College of Allied Health Sciences, Komarapalayam, Tamil Nadu.",
+  "description": "Nine specialized UG Allied Health Science departments offered at JKKN College of Allied Health Sciences, Komarapalayam, Tamil Nadu.",
   "url": "https://ahs.jkkn.ac.in/departments",
   "numberOfItems": 9,
   "itemListElement": [

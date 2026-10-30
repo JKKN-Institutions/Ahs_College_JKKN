@@ -4,7 +4,7 @@ import { AHS_MAPS_URL } from "@/lib/entity-profiles";
 export const metadata = createPageMetadata({
   title: "Allied Health Science Colleges near Erode | JKKN AHS",
   description:
-    "JKKN AHS — ~18 km from Erode on NH-544. 9 BSc allied health programmes, 82 university-sanctioned seats, placement support. Admissions open 2026-27.",
+    "JKKN AHS — ~18 km from Erode on NH-544. 9 UG allied health programmes, 82 university-sanctioned seats, placement support. Admissions open 2026-27.",
   path: "/erode",
   keywords: [
     "allied health science colleges in erode",
@@ -61,7 +61,7 @@ const faqSchema = {
       name: "What is the best allied health sciences college near Erode?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "JKKN College of Allied Health Sciences is ~18 km from Erode on NH-544, in Komarapalayam, Namakkal district - it is not in Erode district. Its 9 B.Sc programmes are affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai. Compare it with the colleges inside Erode district too: for B.Sc Cardiac Technology alone, the university's 2025-26 list has 4 there.",
+        text: "JKKN College of Allied Health Sciences is ~18 km from Erode on NH-544, in Komarapalayam, Namakkal district - it is not in Erode district. Its 9 UG programmes are affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai. Compare it with the colleges inside Erode district too: for B.Sc Cardiac Technology alone, the university's 2025-26 list has 4 there.",
       },
     },
     {
@@ -77,7 +77,7 @@ const faqSchema = {
       name: "What is Allied Health Sciences?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Allied Health Sciences are healthcare professions that support doctors and nurses in diagnosing, treating and monitoring patients. At JKKN College of Allied Health Sciences you can study nine B.Sc courses, including Cardiac Technology, Medical Radiology and Imaging, Dialysis Therapy, Anaesthesia and Operation Theatre, Respiratory Technology and Physician Associates.",
+        text: "Allied Health Sciences are healthcare professions that support doctors and nurses in diagnosing, treating and monitoring patients. At JKKN College of Allied Health Sciences you can study nine UG courses, including Cardiac Technology, Medical Radiology and Imaging, Dialysis Therapy, Anaesthesia and Operation Theatre, Respiratory Technology and Physician Associates.",
       },
     },
     {

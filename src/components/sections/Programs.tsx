@@ -107,7 +107,7 @@ export function Programs() {
                     Allied Health Sciences Programs
                 </h2>
                 <p className="text-gray-600 max-w-3xl mx-auto mb-10 sm:mb-12 md:mb-16 text-sm sm:text-base px-4">
-                    Choose from 9 specialized B.Sc. programs designed to launch your healthcare career with practical training and hospital internships.
+                    Choose from 9 specialized UG programs designed to launch your healthcare career with practical training and hospital internships.
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 text-left">

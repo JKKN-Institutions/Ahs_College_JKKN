@@ -10,7 +10,7 @@
 export const SALEM_FAQS = [
   {
     q: "What is the best allied health sciences college near Salem?",
-    a: "JKKN College of Allied Health Sciences is ~57 km from Salem on NH-544, in Komarapalayam, Namakkal district. Its 9 B.Sc programmes are affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai. Salem district has its own colleges too: for B.Sc Cardiac Technology, the university's 2025-26 list has 5 there, including Government Mohan Kumaramangalam Medical College.",
+    a: "JKKN College of Allied Health Sciences is ~57 km from Salem on NH-544, in Komarapalayam, Namakkal district. Its 9 UG programmes are affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai. Salem district has its own colleges too: for B.Sc Cardiac Technology, the university's 2025-26 list has 5 there, including Government Mohan Kumaramangalam Medical College.",
   },
   {
     q: "How far is JKKN AHS from Salem?",
@@ -30,7 +30,7 @@ export const SALEM_FAQS = [
   },
   {
     q: "What is Allied Health Sciences?",
-    a: "Allied Health Sciences are healthcare professions that support doctors and nurses in diagnosing, treating and monitoring patients. At JKKN College of Allied Health Sciences you can study nine B.Sc courses, including Cardiac Technology, Medical Radiology and Imaging, Dialysis Therapy, Anaesthesia and Operation Theatre, Respiratory Technology and Physician Associates.",
+    a: "Allied Health Sciences are healthcare professions that support doctors and nurses in diagnosing, treating and monitoring patients. At JKKN College of Allied Health Sciences you can study nine UG courses, including Cardiac Technology, Medical Radiology and Imaging, Dialysis Therapy, Anaesthesia and Operation Theatre, Respiratory Technology and Physician Associates.",
   },
   {
     q: "How is AHS different from nursing?",
@@ -54,7 +54,7 @@ export const SALEM_FAQS = [
   },
   {
     q: "How many allied health science colleges are there near Salem?",
-    a: "Salem has several allied health science colleges, government and private; for B.Sc Cardiac Technology alone, the university's 2025-26 list has 5 in the district. JKKN College of Allied Health Sciences, about 57 km from Salem on NH-544 in Namakkal district, offers nine B.Sc courses with 82 university-sanctioned seats.",
+    a: "Salem has several allied health science colleges, government and private; for B.Sc Cardiac Technology alone, the university's 2025-26 list has 5 in the district. JKKN College of Allied Health Sciences, about 57 km from Salem on NH-544 in Namakkal district, offers nine UG courses with 82 university-sanctioned seats.",
   },
   {
     q: "What are the eligibility requirements for allied health science courses?",

@@ -5,7 +5,7 @@ import { NAMAKKAL_FAQS } from "./faqs";
 export const metadata = createPageMetadata({
   title: "Allied Health Science College Namakkal | JKKN AHS",
   description:
-    "JKKN AHS, Komarapalayam, Namakkal district: 9 B.Sc allied health courses, 82 university-sanctioned seats, fees ₹60,000-₹1,70,000 a year. Admissions 2026-27.",
+    "JKKN AHS, Komarapalayam, Namakkal district: 9 UG allied health courses, 82 university-sanctioned seats, fees ₹60,000-₹1,70,000 a year. Admissions 2026-27.",
   path: "/namakkal",
   keywords: [
     "allied health science college namakkal",

@@ -5,7 +5,7 @@ import { SALEM_FAQS } from "./faqs";
 export const metadata = createPageMetadata({
   title: "Allied Health Science Colleges near Salem | JKKN AHS",
   description:
-    "JKKN AHS, about 57 km from Salem on NH-544: 9 B.Sc allied health courses, 82 university-sanctioned seats, fees ₹60,000-₹1,70,000 a year. Admissions 2026-27.",
+    "JKKN AHS, about 57 km from Salem on NH-544: 9 UG allied health courses, 82 university-sanctioned seats, fees ₹60,000-₹1,70,000 a year. Admissions 2026-27.",
   path: "/salem",
   keywords: [
     "allied health science courses in salem",

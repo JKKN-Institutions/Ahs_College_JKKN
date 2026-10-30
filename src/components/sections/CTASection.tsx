@@ -28,7 +28,7 @@ export function CTASection() {
                             Ready to Start Your Paramedical Career in <span className="text-[#ffde59]">Tamil Nadu?</span>
                         </h2>
                         <p className="text-gray-600 text-sm sm:text-base md:text-lg mb-8 sm:mb-10 md:mb-12 max-w-2xl mx-auto px-4">
-                            Join thousands of learners who are shaping the future of healthcare. Explore <Link href="/cardiac-technology" className="text-[#0b6d41] font-semibold hover:underline">9 specialized B.Sc programs</Link>, train in our <Link href="/lab" className="text-[#0b6d41] font-semibold hover:underline">learning labs</Link> and at partner hospitals, and benefit from our <Link href="/placements" className="text-[#0b6d41] font-semibold hover:underline">placement support</Link>. Talk to our admission team about the course that suits you.
+                            Join thousands of learners who are shaping the future of healthcare. Explore <Link href="/cardiac-technology" className="text-[#0b6d41] font-semibold hover:underline">9 specialized UG programs</Link>, train in our <Link href="/lab" className="text-[#0b6d41] font-semibold hover:underline">learning labs</Link> and at partner hospitals, and benefit from our <Link href="/placements" className="text-[#0b6d41] font-semibold hover:underline">placement support</Link>. Talk to our admission team about the course that suits you.
                         </p>
 
                         <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-3 sm:gap-4 md:gap-6">

@@ -50,7 +50,7 @@ export const cityPages: CityPage[] = [
     travelTime: "30-35 minutes",
     routeVia: "via Pallipalayam–Tiruchengode Road",
     heroIntro:
-      "Tiruchengode to JKKN is one of the shortest college commutes in the region. JKKN College of Allied Health Sciences offers 9 BSc allied health programmes with placement support — just ~18 km away, so you can study a professional healthcare degree without leaving home.",
+      "Tiruchengode to JKKN is one of the shortest college commutes in the region. JKKN College of Allied Health Sciences offers 9 UG allied health programmes with placement support — just ~18 km away, so you can study a professional healthcare degree without leaving home.",
     localContext:
       "Tiruchengode is known across India for its borewell-rig and lorry transport industry, and local families increasingly want professional, job-oriented degrees for their children. JKKN AHS is just ~18 km away — closer than Salem or Erode colleges — making daily commute genuinely easy for Tiruchengode students.",
     busRoute:
@@ -81,7 +81,7 @@ export const cityPages: CityPage[] = [
       { name: "Salem", distance: "~45 km", href: "/salem" },
     ],
     metaDescription:
-      "JKKN AHS — just ~18 km from Tiruchengode. 9 BSc allied health programmes, 82 university-sanctioned seats, placement support. Admissions open 2026-27.",
+      "JKKN AHS — just ~18 km from Tiruchengode. 9 UG allied health programmes, 82 university-sanctioned seats, placement support. Admissions open 2026-27.",
     extraKeywords: [
       "allied health science colleges in tiruchengode",
       "paramedical colleges in tiruchengode",
@@ -97,7 +97,7 @@ export const cityPages: CityPage[] = [
     travelTime: "35-40 minutes",
     routeVia: "via NH-544 (Salem–Coimbatore Highway)",
     heroIntro:
-      "Sankagiri sits right on NH-544 — the same highway as JKKN. That means a direct ~25 km ride to a university-affiliated allied health sciences campus with 9 BSc programmes and placement support.",
+      "Sankagiri sits right on NH-544 — the same highway as JKKN. That means a direct ~25 km ride to a university-affiliated allied health sciences campus with 9 UG programmes and placement support.",
     localContext:
       "JKKN AHS is a straight ~25 km ride down NH-544 from Sankagiri — no route changes, no city traffic. Sankagiri, famous for its historic hill fort and its position on the Salem–Coimbatore highway corridor, has limited higher-education options within the town itself.",
     busRoute:
@@ -128,7 +128,7 @@ export const cityPages: CityPage[] = [
       { name: "Mettur", distance: "~45 km", href: "/mettur" },
     ],
     metaDescription:
-      "JKKN AHS — ~25 km from Sankagiri on NH-544. 9 BSc allied health programmes, 82 university-sanctioned seats, placement support. Admissions open 2026-27.",
+      "JKKN AHS — ~25 km from Sankagiri on NH-544. 9 UG allied health programmes, 82 university-sanctioned seats, placement support. Admissions open 2026-27.",
     extraKeywords: [
       "allied health science colleges in sankagiri",
       "paramedical colleges in sankagiri",
@@ -144,7 +144,7 @@ export const cityPages: CityPage[] = [
     travelTime: "10-15 minutes",
     routeVia: "across the Cauvery bridge — twin-town connectivity",
     heroIntro:
-      "Bhavani and Komarapalayam are twin towns on opposite banks of the Cauvery — which makes JKKN AHS practically a home-town college for Bhavani students. 9 BSc allied health programmes, university affiliation and placement support, ~7 km from Bhavani bus stand.",
+      "Bhavani and Komarapalayam are twin towns on opposite banks of the Cauvery — which makes JKKN AHS practically a home-town college for Bhavani students. 9 UG allied health programmes, university affiliation and placement support, ~7 km from Bhavani bus stand.",
     localContext:
       "Bhavani — home of the famous Bhavani Jamakkalam handloom carpets and the Sangameshwarar temple at the river confluence — is the closest town of all to the JKKN campus. At ~7 km across the Cauvery bridge, students reach the campus in 10-15 minutes, which means zero relocation cost and maximum family comfort.",
     busRoute:
@@ -175,7 +175,7 @@ export const cityPages: CityPage[] = [
       { name: "Salem", distance: "~45 km", href: "/salem" },
     ],
     metaDescription:
-      "JKKN AHS — just ~7 km from Bhavani, across the Cauvery. 9 BSc allied health programmes, 82 university-sanctioned seats, placement support. Admissions open 2026-27.",
+      "JKKN AHS — just ~7 km from Bhavani, across the Cauvery. 9 UG allied health programmes, 82 university-sanctioned seats, placement support. Admissions open 2026-27.",
     extraKeywords: [
       "allied health science colleges in bhavani",
       "paramedical colleges in bhavani",
@@ -191,7 +191,7 @@ export const cityPages: CityPage[] = [
     travelTime: "about 1.5 hours",
     routeVia: "via Velur–Paramathi or the Erode route",
     heroIntro:
-      "Karur students looking for a professional healthcare degree have a strong option ~65 km away: JKKN College of Allied Health Sciences — 9 BSc programmes, clinical training at partner hospitals and placement support.",
+      "Karur students looking for a professional healthcare degree have a strong option ~65 km away: JKKN College of Allied Health Sciences — 9 UG programmes, clinical training at partner hospitals and placement support.",
     localContext:
       "Karur is Tamil Nadu's bus-body building capital and a major home-textile export hub — a town that values skill-based, employment-ready education. JKKN AHS is ~65 km away via Velur–Paramathi, so Karur students can choose between a manageable bus commute and a comfortable on-campus hostel.",
     busRoute:
@@ -222,7 +222,7 @@ export const cityPages: CityPage[] = [
       { name: "Trichy", distance: "~80 km", href: "/trichy" },
     ],
     metaDescription:
-      "JKKN AHS — ~65 km from Karur. 9 BSc allied health programmes, 82 university-sanctioned seats, placement support, hostel. Admissions open 2026-27.",
+      "JKKN AHS — ~65 km from Karur. 9 UG allied health programmes, 82 university-sanctioned seats, placement support, hostel. Admissions open 2026-27.",
     extraKeywords: [
       "allied health science colleges in karur",
       "paramedical colleges in karur",
@@ -238,7 +238,7 @@ export const cityPages: CityPage[] = [
     travelTime: "about 1 hour",
     routeVia: "via Tiruchengode",
     heroIntro:
-      "Rasipuram students can reach JKKN College of Allied Health Sciences in about an hour via Tiruchengode — unlocking 9 BSc allied health programmes, university affiliation and placement support without moving far from home.",
+      "Rasipuram students can reach JKKN College of Allied Health Sciences in about an hour via Tiruchengode — unlocking 9 UG allied health programmes, university affiliation and placement support without moving far from home.",
     localContext:
       "Rasipuram, famous for its silk sarees and as an education-conscious town in Namakkal district, sends students across the district for professional degrees. JKKN AHS at Komarapalayam is ~40 km away via Tiruchengode — close enough for daily commute, with hostel as a comfortable alternative.",
     busRoute:
@@ -269,7 +269,7 @@ export const cityPages: CityPage[] = [
       { name: "Attur", distance: "~55 km", href: "/attur" },
     ],
     metaDescription:
-      "JKKN AHS — ~40 km from Rasipuram via Tiruchengode. 9 BSc allied health programmes, 82 university-sanctioned seats, placement support. Admissions open 2026-27.",
+      "JKKN AHS — ~40 km from Rasipuram via Tiruchengode. 9 UG allied health programmes, 82 university-sanctioned seats, placement support. Admissions open 2026-27.",
     extraKeywords: [
       "allied health science colleges in rasipuram",
       "paramedical colleges in rasipuram",
@@ -285,7 +285,7 @@ export const cityPages: CityPage[] = [
     travelTime: "about 2 hours",
     routeVia: "via Salem and NH-544",
     heroIntro:
-      "For Attur students, JKKN College of Allied Health Sciences offers 9 specialised BSc allied health programmes on one campus with hostel, clinical training at partner hospitals and placement support, ~90 km away via Salem.",
+      "For Attur students, JKKN College of Allied Health Sciences offers 9 specialised UG allied health programmes on one campus with hostel, clinical training at partner hospitals and placement support, ~90 km away via Salem.",
     localContext:
       "JKKN AHS is ~90 km from Attur via Salem — most Attur students choose the on-campus hostel, study through the week, and take the frequent Salem-route buses home on weekends. Attur, the agricultural heart of eastern Salem district, has very few professional healthcare colleges nearby.",
     busRoute:
@@ -295,7 +295,7 @@ export const cityPages: CityPage[] = [
       desc: "~90 km from Attur. Most students stay in the separate boys/girls hostels and travel home on weekends via Salem.",
     },
     advantageDistance: {
-      title: "9 Specialised BSc Programmes on One Campus",
+      title: "9 Specialised UG Programmes on One Campus",
       desc: "JKKN AHS (~90 km via Salem) offers 9 niche BSc programmes, hostel and clinical training on one campus — worth the move for a professional career. Attur has limited allied health education options locally.",
     },
     industryFaq: {
@@ -315,7 +315,7 @@ export const cityPages: CityPage[] = [
       { name: "Namakkal", distance: "~75 km", href: "/namakkal" },
     ],
     metaDescription:
-      "JKKN AHS — ~90 km from Attur via Salem. 9 BSc allied health programmes, 82 university-sanctioned seats, placement support, hostel. Admissions open 2026-27.",
+      "JKKN AHS — ~90 km from Attur via Salem. 9 UG allied health programmes, 82 university-sanctioned seats, placement support, hostel. Admissions open 2026-27.",
     extraKeywords: [
       "allied health science colleges near attur",
       "paramedical colleges near attur",
@@ -331,7 +331,7 @@ export const cityPages: CityPage[] = [
     travelTime: "about 1.5 hours",
     routeVia: "via Mecheri and Bhavani",
     heroIntro:
-      "Mettur students can reach JKKN College of Allied Health Sciences in about 1.5 hours via Bhavani — 9 BSc allied health programmes, clinical training at partner hospitals and placement support, ~55 km from the Dam town.",
+      "Mettur students can reach JKKN College of Allied Health Sciences in about 1.5 hours via Bhavani — 9 UG allied health programmes, clinical training at partner hospitals and placement support, ~55 km from the Dam town.",
     localContext:
       "JKKN AHS is ~55 km from Mettur via Mecheri–Bhavani, giving Mettur students both commute and hostel options. Mettur — home of the Stanley Reservoir dam, hydro power stations and SIPCOT chemical industries — has a large industrial workforce but few professional healthcare colleges nearby.",
     busRoute:
@@ -362,7 +362,7 @@ export const cityPages: CityPage[] = [
       { name: "Erode", distance: "~55 km", href: "/erode" },
     ],
     metaDescription:
-      "JKKN AHS is about 55 km from Mettur via Bhavani. Nine B.Sc allied health programmes, 82 university-sanctioned seats and a hostel. Admissions 2026-27.",
+      "JKKN AHS is about 55 km from Mettur via Bhavani. Nine UG allied health programmes, 82 university-sanctioned seats and a hostel. Admissions 2026-27.",
     extraKeywords: [
       "allied health science colleges near mettur",
       "paramedical colleges near mettur",
@@ -378,7 +378,7 @@ export const cityPages: CityPage[] = [
     travelTime: "about 1.25 hours",
     routeVia: "via Bhavani",
     heroIntro:
-      "From Gobichettipalayam, JKKN College of Allied Health Sciences is about 1.25 hours away via Bhavani — 9 BSc allied health programmes, clinical training at partner hospitals and placement support at ~52 km.",
+      "From Gobichettipalayam, JKKN College of Allied Health Sciences is about 1.25 hours away via Bhavani — 9 UG allied health programmes, clinical training at partner hospitals and placement support at ~52 km.",
     localContext:
       "Gobichettipalayam — the green agricultural belt of western Erode district, known for its sugar mills and scenic film locations — values stable, professional careers for its students. JKKN AHS is ~52 km away on the Gobi–Bhavani route, keeping both daily commute and hostel stay practical.",
     busRoute:
@@ -409,7 +409,7 @@ export const cityPages: CityPage[] = [
       { name: "Coimbatore", distance: "~85 km", href: "/coimbatore" },
     ],
     metaDescription:
-      "JKKN AHS — ~52 km from Gobichettipalayam via Bhavani. 9 BSc allied health programmes, 82 university-sanctioned seats, placement support, hostel available. Admissions open 2026-27.",
+      "JKKN AHS — ~52 km from Gobichettipalayam via Bhavani. 9 UG allied health programmes, 82 university-sanctioned seats, placement support, hostel available. Admissions open 2026-27.",
     extraKeywords: [
       "allied health science colleges near gobichettipalayam",
       "paramedical colleges in gobichettipalayam",
@@ -427,7 +427,7 @@ export const cityPages: CityPage[] = [
     travelTime: "about 2.5-3 hours",
     routeVia: "via Namakkal and Tiruchengode",
     heroIntro:
-      "Trichy students searching for specialised allied health degrees — cardiac technology, dialysis, respiratory therapy and more — will find all 9 BSc programmes on one campus at JKKN AHS, ~125 km away with full hostel support.",
+      "Trichy students searching for specialised allied health degrees — cardiac technology, dialysis, respiratory therapy and more — will find all 9 UG programmes on one campus at JKKN AHS, ~125 km away with full hostel support.",
     localContext:
       "JKKN AHS, ~125 km from Trichy via Namakkal, offers all 9 specialisations with clinical training at partner hospitals, making the hostel move worthwhile for serious healthcare aspirants. Trichy is one of Tamil Nadu's biggest education and healthcare hubs, but seats in niche allied health specialisations like cardiac technology and respiratory therapy remain limited statewide.",
     busRoute:
@@ -457,7 +457,7 @@ export const cityPages: CityPage[] = [
       { name: "Salem", distance: "~125 km", href: "/salem" },
     ],
     metaDescription:
-      "JKKN AHS — all 9 BSc allied health programmes with hostel, ~125 km from Trichy. 82 university-sanctioned seats, placement support. Admissions open 2026-27.",
+      "JKKN AHS — all 9 UG allied health programmes with hostel, ~125 km from Trichy. 82 university-sanctioned seats, placement support. Admissions open 2026-27.",
     extraKeywords: [
       "allied health science colleges in trichy",
       "paramedical colleges in trichy",
@@ -473,7 +473,7 @@ export const cityPages: CityPage[] = [
     travelTime: "about 2.5 hours",
     routeVia: "via Salem and NH-544",
     heroIntro:
-      "JKKN AHS — ~105 km from Dharmapuri via Salem — offers 9 BSc allied health programmes with hostel, clinical training at partner hospitals and placement support. Dharmapuri students no longer need to travel to Chennai or Bangalore for specialised healthcare degrees.",
+      "JKKN AHS — ~105 km from Dharmapuri via Salem — offers 9 UG allied health programmes with hostel, clinical training at partner hospitals and placement support. Dharmapuri students no longer need to travel to Chennai or Bangalore for specialised healthcare degrees.",
     localContext:
       "JKKN AHS is ~105 km from Dharmapuri via Salem — a straightforward bus route — and its hostel-based campus life lets Dharmapuri students access 9 niche healthcare specialisations without moving to a metro. Dharmapuri, the mango belt of Tamil Nadu, has very limited allied health education options within the district.",
     busRoute:
@@ -503,7 +503,7 @@ export const cityPages: CityPage[] = [
       { name: "Salem", distance: "~70 km", href: "/salem" },
     ],
     metaDescription:
-      "JKKN AHS — ~105 km from Dharmapuri via Salem. 9 BSc allied health programmes, 82 university-sanctioned seats, placement support, hostel. Admissions open 2026-27.",
+      "JKKN AHS — ~105 km from Dharmapuri via Salem. 9 UG allied health programmes, 82 university-sanctioned seats, placement support, hostel. Admissions open 2026-27.",
     extraKeywords: [
       "allied health science colleges near dharmapuri",
       "paramedical colleges in dharmapuri",
@@ -519,7 +519,7 @@ export const cityPages: CityPage[] = [
     travelTime: "about 3 hours",
     routeVia: "via Dharmapuri and Salem",
     heroIntro:
-      "Krishnagiri students seeking professional healthcare careers can access all 9 BSc allied health specialisations at JKKN AHS — a university-affiliated, hostel-based campus with clinical training at partner hospitals, ~150 km away via Dharmapuri and Salem.",
+      "Krishnagiri students seeking professional healthcare careers can access all 9 UG allied health specialisations at JKKN AHS — a university-affiliated, hostel-based campus with clinical training at partner hospitals, ~150 km away via Dharmapuri and Salem.",
     localContext:
       "JKKN AHS offers Krishnagiri students 9 niche healthcare degrees affiliated to The Tamil Nadu Dr. M.G.R. Medical University, with full hostel support, ~150 km away on the Salem route. Krishnagiri — Tamil Nadu's mango capital and home to the fast-growing Hosur industrial belt — sends many students towards Bangalore for higher education.",
     busRoute:
@@ -549,7 +549,7 @@ export const cityPages: CityPage[] = [
       { name: "Vellore", distance: "~150 km", href: "/vellore" },
     ],
     metaDescription:
-      "JKKN AHS — ~150 km from Krishnagiri via Salem. 9 BSc allied health programmes, 82 university-sanctioned seats, placement support, hostel. Admissions open 2026-27.",
+      "JKKN AHS — ~150 km from Krishnagiri via Salem. 9 UG allied health programmes, 82 university-sanctioned seats, placement support, hostel. Admissions open 2026-27.",
     extraKeywords: [
       "allied health science colleges near krishnagiri",
       "paramedical colleges in krishnagiri",
@@ -565,7 +565,7 @@ export const cityPages: CityPage[] = [
     travelTime: "about 4.5-5 hours",
     routeVia: "via Tiruvannamalai/Harur and Salem",
     heroIntro:
-      "Vellore students grow up around one of India's most respected medical ecosystems — and many aspire to healthcare careers beyond MBBS. JKKN AHS offers 9 BSc allied health specialisations on a university-affiliated, hostel-based campus with clinical training at partner hospitals.",
+      "Vellore students grow up around one of India's most respected medical ecosystems — and many aspire to healthcare careers beyond MBBS. JKKN AHS offers 9 UG allied health specialisations on a university-affiliated, hostel-based campus with clinical training at partner hospitals.",
     localContext:
       "JKKN AHS, reachable from Vellore via the Salem route, offers all 9 specialisations with clinical training at partner hospitals and full hostel support when local seats in niche courses fill up. Vellore's CMC-driven healthcare culture means students here understand the value of allied health professions.",
     busRoute:
@@ -595,7 +595,7 @@ export const cityPages: CityPage[] = [
       { name: "Salem", distance: "~200 km", href: "/salem" },
     ],
     metaDescription:
-      "JKKN AHS — 9 BSc allied health programmes with full hostel support for Vellore students. 82 university-sanctioned seats, placement support. Admissions open 2026-27.",
+      "JKKN AHS — 9 UG allied health programmes with full hostel support for Vellore students. 82 university-sanctioned seats, placement support. Admissions open 2026-27.",
     extraKeywords: [
       "allied health science colleges for vellore students",
       "paramedical colleges near vellore",
@@ -611,7 +611,7 @@ export const cityPages: CityPage[] = [
     travelTime: "about 4.5 hours",
     routeVia: "via Dindigul and Karur",
     heroIntro:
-      "Madurai students looking beyond the city's crowded seats for specialised allied health degrees can find all 9 BSc programmes — cardiac technology to emergency care — on one hostel-based campus at JKKN AHS.",
+      "Madurai students looking beyond the city's crowded seats for specialised allied health degrees can find all 9 UG programmes — cardiac technology to emergency care — on one hostel-based campus at JKKN AHS.",
     localContext:
       "JKKN AHS, reachable from Madurai via the Dindigul–Karur route, offers all 9 specialisations with clinical training at partner hospitals when niche seats — cardiac technology, respiratory therapy, critical care — are hard to get locally. Madurai is south Tamil Nadu's healthcare capital, and its students know allied health careers pay.",
     busRoute:
@@ -641,7 +641,7 @@ export const cityPages: CityPage[] = [
       { name: "Namakkal", distance: "~150 km", href: "/namakkal" },
     ],
     metaDescription:
-      "JKKN AHS — 9 BSc allied health programmes with hostel for Madurai students. 82 university-sanctioned seats, placement support. Admissions open 2026-27.",
+      "JKKN AHS — 9 UG allied health programmes with hostel for Madurai students. 82 university-sanctioned seats, placement support. Admissions open 2026-27.",
     extraKeywords: [
       "allied health science colleges for madurai students",
       "paramedical colleges near madurai",
@@ -678,7 +678,7 @@ export function buildCityFaqs(city: CityPage): CityFAQ[] {
   return [
     {
       q: `What is the best allied health sciences college near ${cityName}?`,
-      a: `JKKN College of Allied Health Sciences is located ${dist} from ${cityName} at Komarapalayam on NH-544. Affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers 9 BSc programmes with 82 university-sanctioned seats and placement support.`,
+      a: `JKKN College of Allied Health Sciences is located ${dist} from ${cityName} at Komarapalayam on NH-544. Affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers 9 UG programmes with 82 university-sanctioned seats and placement support.`,
     },
     {
       q: `How far is JKKN AHS from ${cityName}?`,
@@ -686,7 +686,7 @@ export function buildCityFaqs(city: CityPage): CityFAQ[] {
     },
     {
       q: "What is Allied Health Sciences?",
-      a: `Allied Health Sciences covers the healthcare professions that support doctors and nurses in diagnosing, treating, and rehabilitating patients. At JKKN College of Allied Health Sciences, students from ${cityName} can choose from 9 BSc programmes including cardiac technology, dialysis therapy technology, medical radiology and imaging technology, anaesthesia and operation theatre technology, respiratory technology, physician associates, critical care, health information management, and emergency medical technologist (paramedic).`,
+      a: `Allied Health Sciences covers the healthcare professions that support doctors and nurses in diagnosing, treating, and rehabilitating patients. At JKKN College of Allied Health Sciences, students from ${cityName} can choose from 9 UG programmes including cardiac technology, dialysis therapy technology, medical radiology and imaging technology, anaesthesia and operation theatre technology, respiratory technology, physician associates, critical care, health information management, and emergency medical technologist (paramedic).`,
     },
     travelFaq,
     {

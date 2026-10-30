@@ -53,7 +53,7 @@ const howToSchema = {
       "@type": "HowToStep",
       "position": 2,
       "name": "Choose Your Program",
-      "text": "Select from 9 BSc Allied Health Sciences programs including Cardiac Technology, Dialysis Therapy Technology, Medical Radiology and Imaging Technology, Anaesthesia and Operation Theatre Technology, Respiratory Technology, Physician Associates, Critical Care, Health Information Management, and Emergency Medical Technologist (Paramedic).",
+      "text": "Select from 9 UG Allied Health Sciences programs including Cardiac Technology, Dialysis Therapy Technology, Medical Radiology and Imaging Technology, Anaesthesia and Operation Theatre Technology, Respiratory Technology, Physician Associates, Critical Care, Health Information Management, and Emergency Medical Technologist (Paramedic).",
       "url": "https://ahs.jkkn.ac.in/admissions#programs"
     },
     {
@@ -102,7 +102,7 @@ const ADMISSION_FAQS: { q: string; a: React.ReactNode }[] = [
         },
         {
             q: "How many programs does JKKN AHS College offer?",
-            a: "JKKN offers 9 BSc Allied Health Sciences programs: Cardiac Technology, Dialysis Therapy Technology, Medical Radiology and Imaging Technology, Anaesthesia and Operation Theatre, Respiratory Technology, Physician Associate, Critical Care Technology, Health Information Management, and Emergency Medical Technologist (Paramedic)."
+            a: "JKKN offers 9 UG Allied Health Sciences programs: Cardiac Technology, Dialysis Therapy Technology, Medical Radiology and Imaging Technology, Anaesthesia and Operation Theatre, Respiratory Technology, Physician Associate, Critical Care Technology, Health Information Management, and Emergency Medical Technologist (Paramedic)."
         },
         {
             q: "What is the course duration for BSc Allied Health Sciences?",
@@ -765,7 +765,7 @@ function CTASection() {
                     Ready to Begin Your Healthcare Career?
                 </h2>
                 <p className="text-white/80 mb-8 max-w-2xl mx-auto text-sm sm:text-base">
-                    Join 9 BSc Allied Health Sciences programs at JKKN College. Applications open for 2026-27 batch.
+                    Join 9 UG Allied Health Sciences programs at JKKN College. Applications open for 2026-27 batch.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">

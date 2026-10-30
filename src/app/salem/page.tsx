@@ -381,7 +381,7 @@ function ProgrammesSection() {
           Programmes Offered
         </h2>
         <p className="text-gray-500 text-sm mb-3">
-          9 B.Sc. Allied Health Sciences programmes — choose the right career path
+          9 UG Allied Health Sciences programmes — choose the right career path
         </p>
         <div className="w-12 h-1 bg-[#7cb983] rounded mx-auto mb-10"></div>
 
@@ -677,7 +677,7 @@ function CampusGallerySection() {
 function CompetitiveAdvantageSection() {
   const advantages = [
     { title: "Scholarship Support", desc: "Merit-based scholarships available for deserving learners." },
-    { title: "9 Specialized BSc Programmes", desc: "Choose from Cardiac Technology, Dialysis Therapy, Medical Radiology & Imaging, Anaesthesia & OT, Respiratory Technology, Physician Associates, Critical Care, Health Information Management, and Emergency Medical Technologist." },
+    { title: "9 Specialized UG Programmes", desc: "Choose from Cardiac Technology, Dialysis Therapy, Medical Radiology & Imaging, Anaesthesia & OT, Respiratory Technology, Physician Associates, Critical Care, Health Information Management, and Emergency Medical Technologist." },
     { title: "Direct NH-544 Access — 50–60 Minutes from Salem", desc: "Straight highway connectivity via Salem–Coimbatore Highway. Regular bus services from Salem bus stand make the commute convenient." },
     { title: "Support for Careers Abroad", desc: "The placement cell supports graduates who want to work abroad, from licensing exams to visa guidance. The college publishes no audited international placement figures; the cell can share current, verifiable numbers on request." },
     { title: "Clinical Training at Partner Hospitals", desc: "Clinical postings at partner hospitals give hands-on patient exposure during the course and the one-year internship. The admission office can give the current list of posting hospitals in writing." },
@@ -690,7 +690,7 @@ function CompetitiveAdvantageSection() {
           Why Salem Learners Choose JKKN AHS
         </h2>
         <p className="voice-answer text-gray-500 text-sm mb-3 text-center">
-          JKKN AHS offers Salem learners 9 BSc programmes, 82 university-sanctioned seats, clinical training at partner hospitals and scholarship support
+          JKKN AHS offers Salem learners 9 UG programmes, 82 university-sanctioned seats, clinical training at partner hospitals and scholarship support
         </p>
         <div className="w-12 h-1 bg-[#7cb983] rounded mx-auto mb-10"></div>
 
@@ -729,7 +729,7 @@ function SnippetBaitSection() {
           <div className="bg-white rounded-2xl p-6 shadow-sm">
             <h3 className="font-bold text-gray-900 mb-3">What are Allied Health Sciences?</h3>
             <p className="snippet-answer voice-answer text-sm text-gray-600 leading-relaxed">
-              Allied Health Sciences are healthcare professions that support doctors and nurses in diagnosing, treating, and preventing diseases. These include specialisations like cardiac technology, radiology, dialysis technology, respiratory therapy, and emergency care. Near Salem, JKKN College of Allied Health Sciences offers 9 BSc programmes with clinical training at partner hospitals — about 57 km via NH-544.
+              Allied Health Sciences are healthcare professions that support doctors and nurses in diagnosing, treating, and preventing diseases. These include specialisations like cardiac technology, radiology, dialysis technology, respiratory therapy, and emergency care. Near Salem, JKKN College of Allied Health Sciences offers 9 UG programmes with clinical training at partner hospitals — about 57 km via NH-544.
             </p>
           </div>
 

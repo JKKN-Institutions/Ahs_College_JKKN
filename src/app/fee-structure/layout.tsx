@@ -2,7 +2,7 @@ import { createPageMetadata } from "@/lib/metadata";
 
 export const metadata = createPageMetadata({
   title: "Fee Structure 2026-27 | JKKN College of Allied Health Sciences",
-  description: "View the complete fee structure for all 9 BSc Allied Health Sciences programs at JKKN College. Management Quota and Government Quota fees for 2026-27.",
+  description: "View the complete fee structure for all 9 UG Allied Health Sciences programs at JKKN College. Management Quota and Government Quota fees for 2026-27.",
   path: "/fee-structure",
   keywords: [
     "JKKN AHS fee structure 2026",

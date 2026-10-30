@@ -38,7 +38,7 @@ export default function ErodePage() {
           faqs={[
             {
               q: "What is the best allied health sciences college near Erode?",
-              a: "JKKN College of Allied Health Sciences is ~18 km from Erode on NH-544, in Komarapalayam, Namakkal district - it is not in Erode district. Its 9 B.Sc programmes are affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai. Compare it with the colleges inside Erode district too: for B.Sc Cardiac Technology alone, the university's 2025-26 list has 4 there.",
+              a: "JKKN College of Allied Health Sciences is ~18 km from Erode on NH-544, in Komarapalayam, Namakkal district - it is not in Erode district. Its 9 UG programmes are affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai. Compare it with the colleges inside Erode district too: for B.Sc Cardiac Technology alone, the university's 2025-26 list has 4 there.",
             },
             {
               q: "How far is JKKN AHS from Erode?",
@@ -46,7 +46,7 @@ export default function ErodePage() {
             },
             {
               q: "What is Allied Health Sciences?",
-              a: "Allied Health Sciences are healthcare professions that support doctors and nurses in diagnosing, treating and monitoring patients. At JKKN College of Allied Health Sciences you can study nine B.Sc courses, including Cardiac Technology, Medical Radiology and Imaging, Dialysis Therapy, Anaesthesia and Operation Theatre, Respiratory Technology and Physician Associates.",
+              a: "Allied Health Sciences are healthcare professions that support doctors and nurses in diagnosing, treating and monitoring patients. At JKKN College of Allied Health Sciences you can study nine UG courses, including Cardiac Technology, Medical Radiology and Imaging, Dialysis Therapy, Anaesthesia and Operation Theatre, Respiratory Technology and Physician Associates.",
             },
             {
               q: "How is AHS different from nursing?",
@@ -446,7 +446,7 @@ function ProgrammesSection() {
           Programmes Offered
         </h2>
         <p className="text-gray-500 text-sm mb-3">
-          9 B.Sc. Allied Health Sciences programmes — choose the right career path
+          9 UG Allied Health Sciences programmes — choose the right career path
         </p>
         <div className="w-12 h-1 bg-[#7cb983] rounded mx-auto mb-10"></div>
 
@@ -780,7 +780,7 @@ function CampusGallerySection() {
 ────────────────────────────────────────── */
 function CompetitiveAdvantageSection() {
   const advantages = [
-    { title: "9 Specialized BSc Programmes", desc: "Choose from Cardiac Technology, Dialysis Therapy, Medical Radiology & Imaging, Anaesthesia & OT, Respiratory Technology, Physician Associates, Critical Care, Health Information Management, and Emergency Medical Technologist." },
+    { title: "9 Specialized UG Programmes", desc: "Choose from Cardiac Technology, Dialysis Therapy, Medical Radiology & Imaging, Anaesthesia & OT, Respiratory Technology, Physician Associates, Critical Care, Health Information Management, and Emergency Medical Technologist." },
     { title: "Placement Support", desc: "A dedicated placement cell runs recruitment drives with partner hospitals and supports graduates who want to work abroad. The college publishes no audited placement figures; the cell can share current, verifiable numbers on request." },
     { title: "Just 30–40 Minutes from Erode", desc: "Located on NH-544 (Salem–Coimbatore Highway) with direct bus connectivity. Easy commute or hostel stay — both options available for Erode learners." },
     { title: "Clinical Training at Partner Hospitals", desc: "Clinical postings at partner hospitals give hands-on patient exposure during the course and the one-year internship. The admission office can give the current list of posting hospitals in writing." },
@@ -794,7 +794,7 @@ function CompetitiveAdvantageSection() {
           Why Erode Learners Choose JKKN AHS
         </h2>
         <p className="voice-answer text-gray-500 text-sm mb-3 text-center">
-          JKKN AHS offers Erode learners 9 BSc programmes, clinical training from Year 1 and placement support
+          JKKN AHS offers Erode learners 9 UG programmes, clinical training from Year 1 and placement support
         </p>
         <div className="w-12 h-1 bg-[#7cb983] rounded mx-auto mb-10"></div>
 
@@ -833,7 +833,7 @@ function SnippetBaitSection() {
           <div className="bg-white rounded-2xl p-6 shadow-sm">
             <h3 className="font-bold text-gray-900 mb-3">What are Allied Health Sciences?</h3>
             <p className="snippet-answer voice-answer text-sm text-gray-600 leading-relaxed">
-              Allied Health Sciences are healthcare professions that support doctors and nurses in diagnosing, treating, and preventing diseases. These include specialisations like cardiac technology, radiology, dialysis technology, respiratory therapy, and emergency care. In Erode, JKKN College of Allied Health Sciences offers 9 BSc programmes with clinical training at partner hospitals.
+              Allied Health Sciences are healthcare professions that support doctors and nurses in diagnosing, treating, and preventing diseases. These include specialisations like cardiac technology, radiology, dialysis technology, respiratory therapy, and emergency care. In Erode, JKKN College of Allied Health Sciences offers 9 UG programmes with clinical training at partner hospitals.
             </p>
           </div>
 

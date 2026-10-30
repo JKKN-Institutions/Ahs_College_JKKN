@@ -52,7 +52,7 @@ export function Hero() {
                         </h1>
 
                         <p className="voice-answer text-sm sm:text-base text-white/90 mb-4 sm:mb-6 max-w-2xl leading-relaxed">
-                            Join JKKN College of Allied Health Sciences and become a vital part of modern healthcare. 9 specialized B.Sc. programs, hospital training partnerships, and placement support.
+                            Join JKKN College of Allied Health Sciences and become a vital part of modern healthcare. 9 specialized UG programs, hospital training partnerships, and placement support.
                         </p>
 
                         {/* 2026-10-16: the call-back button leads; md and up also has the form card on the right */}
@@ -180,7 +180,7 @@ export function Hero() {
                         </div>
                         <div>
                             <h3 className="text-[10px] sm:text-xs font-bold text-[#1a5f7a] mb-0.5">Sanctioned Seats</h3>
-                            <p className="text-gray-700 font-semibold text-[10px] sm:text-xs">82 across 9 B.Sc</p>
+                            <p className="text-gray-700 font-semibold text-[10px] sm:text-xs">82 across 9 UG courses</p>
                         </div>
                     </div>
 

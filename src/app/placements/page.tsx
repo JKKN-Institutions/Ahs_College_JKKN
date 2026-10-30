@@ -183,7 +183,7 @@ function StatsSection() {
                 {/* AEO snippet paragraph */}
                 <div id="stats-snippet" className="max-w-4xl mx-auto text-center">
                     <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
-                        JKKN College of Allied Health Sciences runs a dedicated placement cell for its nine B.Sc Allied Health Sciences programmes, with clinical training at partner hospitals and support for graduates seeking roles abroad. This college publishes no audited placement rate, recruiter count or salary figure, so none is quoted here — the placement cell can give current, verifiable numbers on request.
+                        JKKN College of Allied Health Sciences runs a dedicated placement cell for its nine UG Allied Health Sciences programmes, with clinical training at partner hospitals and support for graduates seeking roles abroad. This college publishes no audited placement rate, recruiter count or salary figure, so none is quoted here — the placement cell can give current, verifiable numbers on request.
                     </p>
                 </div>
             </div>

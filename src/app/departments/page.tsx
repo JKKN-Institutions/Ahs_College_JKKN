@@ -126,7 +126,7 @@ export default function DepartmentsPage() {
               <p className="text-gray-700 text-base md:text-lg max-w-2xl leading-relaxed">
                 JKKN College of Allied Health Sciences offers{" "}
                 <span className="font-semibold text-[#0b6d41]">
-                  9 specialized B.Sc programs
+                  9 specialized UG programs
                 </span>{" "}
                 designed to build skilled healthcare professionals with hands-on
                 clinical training, modern learning labs, and strong hospital tie-ups.

@@ -54,7 +54,7 @@ export function CareerPaths() {
                         Where Will Allied Health Sciences<br className="hidden sm:block" />Take You?
                     </h2>
                     <p className="text-gray-600 max-w-3xl mx-auto text-sm sm:text-base px-4">
-                        Allied Health professionals are in high demand across hospitals, diagnostics, research, and healthcare administration. Explore our <Link href="/departments" className="text-[#0b6d41] font-semibold hover:underline">9 specialized B.Sc. programs</Link> to find your path.
+                        Allied Health professionals are in high demand across hospitals, diagnostics, research, and healthcare administration. Explore our <Link href="/departments" className="text-[#0b6d41] font-semibold hover:underline">9 specialized UG programs</Link> to find your path.
                     </p>
                 </div>
 

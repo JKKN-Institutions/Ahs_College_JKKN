@@ -26,7 +26,7 @@ export const metadata = {
   icons: { icon: "/ahs-logo.svg" },
   ...createPageMetadata({
     title: "JKKN College of Allied Health Sciences, Tamil Nadu",
-    description: "JKKN College of Allied Health Sciences, Komarapalayam: 9 B.Sc programmes, 82 university-sanctioned seats, partner-hospital training, fees, placement support.",
+    description: "JKKN College of Allied Health Sciences, Komarapalayam: 9 UG programmes, 82 university-sanctioned seats, partner-hospital training, fees, placement support.",
     path: "/",
     keywords: [
       "best allied health sciences college in tamil nadu",
@@ -65,7 +65,7 @@ const collegeSchema = {
   "name": "JKKN College of Allied Health Sciences",
   "alternateName": ["JKKN AHS", "JKKN Allied Health Sciences"],
   "url": "https://ahs.jkkn.ac.in/",
-  "description": "JKKN College of Allied Health Sciences offers 9 specialized B.Sc Allied Health programs with 2,000+ clinical training hours, placement support, and clinical training at partner hospitals. Affiliated to Tamil Nadu Dr. MGR Medical University. Located on NH-544, Komarapalayam, Namakkal, Tamil Nadu.",
+  "description": "JKKN College of Allied Health Sciences offers 9 specialized UG Allied Health programs with 2,000+ clinical training hours, placement support, and clinical training at partner hospitals. Affiliated to Tamil Nadu Dr. MGR Medical University. Located on NH-544, Komarapalayam, Namakkal, Tamil Nadu.",
   "foundingDate": "2019",
   "telephone": "+919345855001",
   "email": "ahsincharge@jkkn.ac.in",

@@ -4,7 +4,7 @@ import { AHS_MAPS_URL } from "@/lib/entity-profiles";
 export const metadata = createPageMetadata({
   title: "Allied Health Sciences Colleges in Tiruppur | JKKN AHS",
   description:
-    "JKKN AHS — ~67 km from Tiruppur via NH-544. 9 BSc allied health programmes, 82 university-sanctioned seats, placement support. Admissions open 2026-27.",
+    "JKKN AHS — ~67 km from Tiruppur via NH-544. 9 UG allied health programmes, 82 university-sanctioned seats, placement support. Admissions open 2026-27.",
   path: "/tiruppur",
   keywords: [
     "allied health science courses in tiruppur",
@@ -61,7 +61,7 @@ const faqSchema = {
       name: "What is the best allied health sciences college in Tiruppur?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "JKKN College of Allied Health Sciences is ~67 km from Tiruppur on NH-544, in Komarapalayam, Namakkal district. Its 9 B.Sc programmes are affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, with 82 university-sanctioned seats and placement support.",
+        text: "JKKN College of Allied Health Sciences is ~67 km from Tiruppur on NH-544, in Komarapalayam, Namakkal district. Its 9 UG programmes are affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, with 82 university-sanctioned seats and placement support.",
       },
     },
     {
@@ -77,7 +77,7 @@ const faqSchema = {
       name: "What is Allied Health Sciences?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Allied Health Sciences are healthcare professions that support doctors and nurses in diagnosing, treating and monitoring patients. At JKKN College of Allied Health Sciences you can study nine B.Sc courses, including Cardiac Technology, Medical Radiology and Imaging, Dialysis Therapy, Anaesthesia and Operation Theatre, Respiratory Technology and Physician Associates.",
+        text: "Allied Health Sciences are healthcare professions that support doctors and nurses in diagnosing, treating and monitoring patients. At JKKN College of Allied Health Sciences you can study nine UG courses, including Cardiac Technology, Medical Radiology and Imaging, Dialysis Therapy, Anaesthesia and Operation Theatre, Respiratory Technology and Physician Associates.",
       },
     },
     {
@@ -125,7 +125,7 @@ const faqSchema = {
       name: "How many allied health science colleges are there near Tiruppur?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Tiruppur has limited allied health science colleges within the city. JKKN College of Allied Health Sciences, located ~67 km from Tiruppur via NH-544, offers a wider selection of 9 BSc programmes with 82 university-sanctioned seats and placement support.",
+        text: "Tiruppur has limited allied health science colleges within the city. JKKN College of Allied Health Sciences, located ~67 km from Tiruppur via NH-544, offers a wider selection of 9 UG programmes with 82 university-sanctioned seats and placement support.",
       },
     },
     {

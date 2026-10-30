@@ -34,7 +34,7 @@ export default function TiruppurPage() {
         <CityFAQAccordion cityName="Tiruppur" faqs={[
           {
             q: "What is the best allied health sciences college in Tiruppur?",
-            a: "JKKN College of Allied Health Sciences is ~67 km from Tiruppur on NH-544, in Komarapalayam, Namakkal district. Its 9 B.Sc programmes are affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, with 82 university-sanctioned seats and placement support.",
+            a: "JKKN College of Allied Health Sciences is ~67 km from Tiruppur on NH-544, in Komarapalayam, Namakkal district. Its 9 UG programmes are affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, with 82 university-sanctioned seats and placement support.",
           },
           {
             q: "How far is JKKN AHS from Tiruppur?",
@@ -42,7 +42,7 @@ export default function TiruppurPage() {
           },
           {
             q: "What is Allied Health Sciences?",
-            a: "Allied Health Sciences are healthcare professions that support doctors and nurses in diagnosing, treating and monitoring patients. At JKKN College of Allied Health Sciences you can study nine B.Sc courses, including Cardiac Technology, Medical Radiology and Imaging, Dialysis Therapy, Anaesthesia and Operation Theatre, Respiratory Technology and Physician Associates.",
+            a: "Allied Health Sciences are healthcare professions that support doctors and nurses in diagnosing, treating and monitoring patients. At JKKN College of Allied Health Sciences you can study nine UG courses, including Cardiac Technology, Medical Radiology and Imaging, Dialysis Therapy, Anaesthesia and Operation Theatre, Respiratory Technology and Physician Associates.",
           },
           {
             q: "How is AHS different from nursing?",
@@ -66,7 +66,7 @@ export default function TiruppurPage() {
           },
           {
             q: "How many allied health science colleges are there near Tiruppur?",
-            a: "Tiruppur has limited allied health science colleges within the city. JKKN College of Allied Health Sciences, located ~67 km from Tiruppur via NH-544, offers a wider selection of 9 BSc programmes with 82 university-sanctioned seats and placement support.",
+            a: "Tiruppur has limited allied health science colleges within the city. JKKN College of Allied Health Sciences, located ~67 km from Tiruppur via NH-544, offers a wider selection of 9 UG programmes with 82 university-sanctioned seats and placement support.",
           },
           {
             q: "What are the eligibility requirements for allied health science courses?",
@@ -407,7 +407,7 @@ function ProgrammesSection() {
           Programmes Offered
         </h2>
         <p className="text-gray-500 text-sm mb-3">
-          9 B.Sc. Allied Health Sciences programmes — choose the right career path
+          9 UG Allied Health Sciences programmes — choose the right career path
         </p>
         <div className="w-12 h-1 bg-[#7cb983] rounded mx-auto mb-10"></div>
 
@@ -702,7 +702,7 @@ function CampusGallerySection() {
 ────────────────────────────────────────── */
 function CompetitiveAdvantageSection() {
   const advantages = [
-    { title: "9 BSc Programmes", desc: "JKKN offers 9 BSc programmes covering cardiac, dialysis, radiology, respiratory, critical care, and more." },
+    { title: "9 UG Programmes", desc: "JKKN offers 9 UG programmes covering cardiac, dialysis, radiology, respiratory, critical care, and more." },
     { title: "Placement Support", desc: "A dedicated placement cell runs recruitment drives with partner hospitals and supports graduates who want to work abroad. The college publishes no audited placement figures; the cell can share current, verifiable numbers on request." },
     { title: "University Affiliated", desc: "Affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai. The university lists these courses under J.K.K. Nattraja Dental College & Hospital (code 825), an institution NAAC accredited with an A grade." },
     { title: "Clinical Training at Partner Hospitals", desc: "Clinical postings at partner hospitals give hands-on patient exposure during the course and the one-year internship. The admission office can give the current list of posting hospitals in writing." },
@@ -716,7 +716,7 @@ function CompetitiveAdvantageSection() {
           Why Tiruppur Learners Choose JKKN AHS
         </h2>
         <p className="voice-answer text-gray-500 text-sm mb-3 text-center">
-          JKKN AHS offers Tiruppur learners 9 BSc programmes, clinical training at partner hospitals and placement support
+          JKKN AHS offers Tiruppur learners 9 UG programmes, clinical training at partner hospitals and placement support
         </p>
         <div className="w-12 h-1 bg-[#7cb983] rounded mx-auto mb-10"></div>
 
@@ -755,7 +755,7 @@ function SnippetBaitSection() {
           <div className="bg-white rounded-2xl p-6 shadow-sm">
             <h3 className="font-bold text-gray-900 mb-3">What are Allied Health Sciences?</h3>
             <p className="snippet-answer voice-answer text-sm text-gray-600 leading-relaxed">
-              Allied Health Sciences are healthcare professions that support doctors and nurses in diagnosing, treating, and preventing diseases. These include specialisations like cardiac technology, radiology, dialysis technology, respiratory therapy, and emergency care. Near Tiruppur, JKKN College of Allied Health Sciences offers 9 BSc programmes with clinical training at partner hospitals — just ~67 km via NH-544.
+              Allied Health Sciences are healthcare professions that support doctors and nurses in diagnosing, treating, and preventing diseases. These include specialisations like cardiac technology, radiology, dialysis technology, respiratory therapy, and emergency care. Near Tiruppur, JKKN College of Allied Health Sciences offers 9 UG programmes with clinical training at partner hospitals — just ~67 km via NH-544.
             </p>
           </div>
 

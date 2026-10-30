@@ -15,7 +15,7 @@ const FEE_GROUPS = Array.from(new Set(JKKN_PARAMEDICAL_COURSES.map((c) => c.fee)
 export const PARAMEDICAL_FAQS: { q: string; a: string; voice?: string }[] = [
   {
     q: "Is JKKN College of Allied Health Sciences a paramedical college?",
-    a: `Yes. Its ${JKKN_PARAMEDICAL_COURSES.length} B.Sc programmes are paramedical (allied health) degree courses affiliated to The Tamil Nadu Dr. M.G.R. Medical University. The university lists them under J.K.K. Nattraja Dental College & Hospital, institution code 825, Kumarapalayam, Namakkal district.`,
+    a: `Yes. Its ${JKKN_PARAMEDICAL_COURSES.length} UG programmes are paramedical (allied health) degree courses affiliated to The Tamil Nadu Dr. M.G.R. Medical University. The university lists them under J.K.K. Nattraja Dental College & Hospital, institution code 825, Kumarapalayam, Namakkal district.`,
   },
   {
     q: "Are paramedical courses and allied health science courses the same?",

@@ -382,7 +382,7 @@ function ProgrammesSection() {
           Programmes Offered
         </h2>
         <p className="text-gray-500 text-sm mb-3">
-          9 B.Sc. Allied Health Sciences programmes — choose the right career path
+          9 UG Allied Health Sciences programmes — choose the right career path
         </p>
         <div className="w-12 h-1 bg-[#7cb983] rounded mx-auto mb-10"></div>
 
@@ -678,7 +678,7 @@ function CampusGallerySection() {
 function CompetitiveAdvantageSection() {
   const advantages = [
     { title: "In Namakkal District — Komarapalayam Campus", desc: "JKKN's campus is in Komarapalayam, Namakkal district, about 26 km from Tiruchengode and 65 km from Namakkal town. Daily commute or hostel accommodation — your choice." },
-    { title: "9 BSc Programmes", desc: "From Cardiac Technology to Emergency Care, JKKN offers 9 allied health programmes." },
+    { title: "9 UG Programmes", desc: "From Cardiac Technology to Emergency Care, JKKN offers 9 allied health programmes." },
     { title: "Placement Support", desc: "A dedicated placement cell runs recruitment drives with partner hospitals and supports graduates who want to work abroad. The college publishes no audited placement figures; the cell can share current, verifiable numbers on request." },
     { title: "74+ Years of Institutional Legacy", desc: "Founded in 1952, JKKN Institutions brings over seven decades of educational excellence. A trusted name for Namakkal families." },
     { title: "Complete Campus Ecosystem", desc: "Clinical training at partner hospitals, separate hostels for boys and girls, transport services, learning commons, learning labs, food court, and Wi-Fi — everything under one roof." },
@@ -691,7 +691,7 @@ function CompetitiveAdvantageSection() {
           Why Namakkal Learners Choose JKKN AHS
         </h2>
         <p className="voice-answer text-gray-500 text-sm mb-3 text-center">
-          JKKN AHS is in Komarapalayam, Namakkal district, with 9 BSc programmes, 82 university-sanctioned seats and clinical training at partner hospitals
+          JKKN AHS is in Komarapalayam, Namakkal district, with 9 UG programmes, 82 university-sanctioned seats and clinical training at partner hospitals
         </p>
         <div className="w-12 h-1 bg-[#7cb983] rounded mx-auto mb-10"></div>
 
@@ -730,7 +730,7 @@ function SnippetBaitSection() {
           <div className="bg-white rounded-2xl p-6 shadow-sm">
             <h3 className="font-bold text-gray-900 mb-3">What are Allied Health Sciences?</h3>
             <p className="snippet-answer voice-answer text-sm text-gray-600 leading-relaxed">
-              Allied Health Sciences are healthcare professions that support doctors and nurses in diagnosing, treating, and preventing diseases. These include specialisations like cardiac technology, radiology, dialysis technology, respiratory therapy, and emergency care. JKKN College of Allied Health Sciences, located in Komarapalayam (Namakkal district) on NH-544, offers 9 BSc programmes with clinical training at partner hospitals.
+              Allied Health Sciences are healthcare professions that support doctors and nurses in diagnosing, treating, and preventing diseases. These include specialisations like cardiac technology, radiology, dialysis technology, respiratory therapy, and emergency care. JKKN College of Allied Health Sciences, located in Komarapalayam (Namakkal district) on NH-544, offers 9 UG programmes with clinical training at partner hospitals.
             </p>
           </div>
 

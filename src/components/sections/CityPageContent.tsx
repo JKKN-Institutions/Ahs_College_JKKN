@@ -379,7 +379,7 @@ function ProgrammesSection() {
           Programmes Offered
         </h2>
         <p className="text-gray-500 text-sm mb-3">
-          9 B.Sc. Allied Health Sciences programmes — choose the right career path
+          9 UG Allied Health Sciences programmes — choose the right career path
         </p>
         <div className="w-12 h-1 bg-[#7cb983] rounded mx-auto mb-10"></div>
 
@@ -479,7 +479,7 @@ function PlacementHighlights() {
 function CompetitiveAdvantageSection({ city }: { city: CityPage }) {
   const advantages = [
     {
-      title: "9 Specialized BSc Programmes",
+      title: "9 Specialized UG Programmes",
       desc: `Choose from Cardiac Technology, Dialysis Therapy, Medical Radiology & Imaging, Anaesthesia & OT, Respiratory Technology, Physician Associates, Critical Care, Health Information Management, and Emergency Medical Technologist.`,
     },
     {
@@ -504,7 +504,7 @@ function CompetitiveAdvantageSection({ city }: { city: CityPage }) {
           What Makes JKKN AHS Different
         </h2>
         <p className="voice-answer text-gray-500 text-sm mb-3 text-center">
-          JKKN AHS offers students from {city.cityName} 9 BSc programmes, clinical training from Year 1 and placement support
+          JKKN AHS offers students from {city.cityName} 9 UG programmes, clinical training from Year 1 and placement support
         </p>
         <div className="w-12 h-1 bg-[#7cb983] rounded mx-auto mb-10"></div>
 
@@ -741,7 +741,7 @@ function SnippetBaitSection({ city }: { city: CityPage }) {
           <div className="bg-white rounded-2xl p-6 shadow-sm">
             <h3 className="font-bold text-gray-900 mb-3">What are Allied Health Sciences?</h3>
             <p className="snippet-answer voice-answer text-sm text-gray-600 leading-relaxed">
-              Allied Health Sciences are healthcare professions that support doctors and nurses in diagnosing, treating, and preventing diseases. These include specialisations like cardiac technology, radiology, dialysis technology, respiratory therapy, and emergency care. For students from {city.cityName}, JKKN College of Allied Health Sciences — ~{city.distanceKm} km away at Komarapalayam — offers 9 BSc programmes with clinical training at partner hospitals.
+              Allied Health Sciences are healthcare professions that support doctors and nurses in diagnosing, treating, and preventing diseases. These include specialisations like cardiac technology, radiology, dialysis technology, respiratory therapy, and emergency care. For students from {city.cityName}, JKKN College of Allied Health Sciences — ~{city.distanceKm} km away at Komarapalayam — offers 9 UG programmes with clinical training at partner hospitals.
             </p>
           </div>
 
