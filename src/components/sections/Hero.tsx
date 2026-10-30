@@ -180,7 +180,7 @@ export function Hero() {
                         </div>
                         <div>
                             <h3 className="text-[10px] sm:text-xs font-bold text-[#1a5f7a] mb-0.5">Sanctioned Seats</h3>
-                            <p className="text-gray-700 font-semibold text-[10px] sm:text-xs">82 across 9 UG courses</p>
+                            <p className="text-gray-700 font-semibold text-[10px] sm:text-xs">82 across 9 courses</p>
                         </div>
                     </div>
 
