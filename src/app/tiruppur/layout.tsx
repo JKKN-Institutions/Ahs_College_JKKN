@@ -141,7 +141,7 @@ const faqSchema = {
       name: "How does Tiruppur's garment industry create healthcare career opportunities?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Tiruppur's massive garment and textile export industry employs over 6 lakh workers, creating strong demand for occupational health specialists, industrial physiotherapists, and emergency care professionals. JKKN AHS graduates find opportunities in factory health centres, ESI hospitals, and corporate wellness programmes serving the garment industry workforce.",
+        text: "JKKN AHS publishes no job record for Tiruppur's garment industry, so it cannot say how many such jobs exist. Its courses closest to factory and industrial health work are Emergency Medical Technologist (Paramedic), B.Sc Critical Care Technology and B.PA Physician Associates, taught at Komarapalayam, ~67 km from Tiruppur via NH-544.",
       },
     },
     {

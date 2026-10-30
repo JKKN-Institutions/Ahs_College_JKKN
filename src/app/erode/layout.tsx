@@ -149,7 +149,7 @@ const faqSchema = {
       name: "Are there healthcare career opportunities in Erode's textile industry?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes, Erode's thriving textile and turmeric industries have created demand for occupational health professionals, industrial physiotherapists, and emergency care technicians. JKKN AHS graduates are well-positioned for roles in occupational health centres at textile mills, industrial clinics, and corporate wellness programmes across the Erode industrial belt.",
+        text: "JKKN AHS publishes no job record for Erode's textile or turmeric industry. Its courses closest to factory and industrial health work are Emergency Medical Technologist (Paramedic), B.Sc Critical Care Technology and B.PA Physician Associates, taught at Komarapalayam, ~18 km from Erode on NH-544.",
       },
     },
     {

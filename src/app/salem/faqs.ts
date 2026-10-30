@@ -62,7 +62,7 @@ export const SALEM_FAQS = [
   },
   {
     q: "Are there healthcare job opportunities in Salem's steel and manufacturing sector?",
-    a: "Yes, Salem's steel plants, SAIL Salem Steel Plant, and manufacturing industries employ occupational health officers, industrial physiotherapists, and emergency medical technicians. JKKN AHS graduates with specialisations in critical care, emergency medical technologist and physician associate programmes are well-suited for industrial healthcare roles in Salem.",
+    a: "JKKN AHS publishes no job record for Salem's steel or manufacturing units. Its courses closest to factory and industrial health work are Emergency Medical Technologist (Paramedic), B.Sc Critical Care Technology and B.PA Physician Associates, taught at Komarapalayam, about 57 km from Salem on NH-544.",
   },
   {
     q: "Does JKKN AHS provide clinical training at Salem government hospitals?",
