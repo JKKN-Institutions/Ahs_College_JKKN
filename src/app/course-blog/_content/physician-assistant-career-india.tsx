@@ -4,48 +4,31 @@ export default function PhysicianAssistantContent() {
   return (
     <>
       <p>
-        Physician Associate (PA) is one of the most misunderstood careers in India.
-        Most learners think it is "just a nursing alternative." It is not. PAs are
+        Physician Associate (PA) is not "just a nursing alternative." PAs are
         clinical extenders — trained to take histories, perform examinations, assist in
-        procedures, write prescriptions under supervision, and counsel patients. India's
-        corporate hospital chains are quietly hiring{" "}
-        <strong>6,000+ physician assistants every year</strong> because they cannot find
-        enough specialist doctors. If you're weighing{" "}
+        procedures, and counsel patients. If
+        you're weighing{" "}
         <Link href="/physician-assistant">Bachelor of Physician Associates (B.PA)</Link> at JKKN, this
         is the honest 2026 picture.
       </p>
 
-      <h2 id="industry">Why PA Role Is Growing in India</h2>
+      <h2 id="industry">The PA Role in India</h2>
       <p>
-        India has 1 doctor for every 834 people (WHO 2024). For specialists, the ratio
-        is dramatically worse — particularly in cardiology, nephrology, oncology, and
-        transplant medicine. Hospitals can't manufacture more specialists. So they hire
-        PAs to extend each consultant's reach.
+        PAs work alongside consultants and extend each consultant's reach.
       </p>
       <ul>
         <li>
-          Apollo Hospitals — India's largest PA employer with{" "}
-          <strong>1,200+ PAs</strong> across its network
+          PAs work in cardiology, nephrology, oncology, and surgical units
         </li>
         <li>
-          Fortis, Medanta, Manipal, KMCH, MIOT, Christian Medical College Vellore all
-          hire PAs in cardiology, nephrology, oncology, and surgical units
+          In transplant centres (kidney, liver, heart), PAs manage pre-transplant
+          workup, post-op care, and immunosuppressant monitoring
         </li>
         <li>
-          Transplant centres (kidney, liver, heart) treat PAs as indispensable —
-          managing pre-transplant workup, post-op care, and immunosuppressant
-          monitoring
-        </li>
-        <li>
-          IVF and fertility clinics increasingly hire PAs for patient counselling and
-          procedure assistance
+          In IVF and fertility clinics, PAs support patient counselling and procedure
+          assistance
         </li>
       </ul>
-      <p>
-        The Indian Association of Physician Associates (IAPA) is also lobbying for
-        formal regulatory recognition — which would significantly elevate salaries and
-        career security in the next 3–5 years.
-      </p>
 
       <h2 id="day-in-life">Day in the Life of a Physician Associate</h2>
       <p>
@@ -73,12 +56,12 @@ export default function PhysicianAssistantContent() {
       <h2 id="career-paths">Career Paths &amp; Specializations</h2>
       <ul>
         <li>
-          <strong>Cardiology PA</strong> — Most common specialization. Works with
+          <strong>Cardiology PA</strong> — Works with
           interventional/non-invasive cardiologists. Strong long-term mentorship
         </li>
         <li>
           <strong>Nephrology PA</strong> — Pre-dialysis CKD management, transplant
-          coordination. Niche and well paid
+          coordination
         </li>
         <li>
           <strong>Oncology PA</strong> — Chemo protocol management, patient counselling,
@@ -86,7 +69,7 @@ export default function PhysicianAssistantContent() {
         </li>
         <li>
           <strong>Transplant Coordinator PA</strong> — Liver, kidney, heart transplant
-          centres. Specialist role with very limited supply
+          centres. Specialist role
         </li>
         <li>
           <strong>Critical Care PA</strong> — ICU support, often pairs with intensivists
@@ -98,49 +81,20 @@ export default function PhysicianAssistantContent() {
         </li>
         <li>
           <strong>Medical Officer (corporate health)</strong> — Move into corporate
-          health, insurance, or pharma medical affairs after 4–6 years
+          health, insurance, or pharma medical affairs
         </li>
       </ul>
 
-      <h2 id="salary">Salary Outlook in India</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Experience Level</th>
-            <th>Tier-1 Corporate</th>
-            <th>Tier-2 Hospitals</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Entry (0–1 years)</td>
-            <td>₹2.5 – 4.2 LPA</td>
-            <td>₹2.2 – 3.6 LPA</td>
-          </tr>
-          <tr>
-            <td>Mid (3–5 years)</td>
-            <td>₹5 – 8 LPA</td>
-            <td>₹4.5 – 6.5 LPA</td>
-          </tr>
-          <tr>
-            <td>Senior PA in super-specialty</td>
-            <td>₹8 – 15 LPA</td>
-            <td>₹6.5 – 11 LPA</td>
-          </tr>
-          <tr>
-            <td>Transplant Coordinator</td>
-            <td>₹10 – 18 LPA</td>
-            <td>—</td>
-          </tr>
-          <tr>
-            <td>Corporate Medical Officer</td>
-            <td>₹8 – 14 LPA</td>
-            <td>—</td>
-          </tr>
-        </tbody>
-      </table>
+      <h2 id="salary">How Pay Works in India</h2>
+      <p>
+        JKKN publishes no salary figure for its graduates, and no official survey gives
+        private-hospital pay for physician associates. Pay depends on the employer, the
+        city, shift work and experience. For government posts, the pay level is printed
+        in each recruitment notification (for example TN MRB, AIIMS or ESIC) — check the
+        current notification for the post you want.
+      </p>
 
-      <h2 id="skills">Skills &amp; Certifications That Multiply Your Value</h2>
+      <h2 id="skills">Skills &amp; Certifications</h2>
       <ol>
         <li>
           <strong>BLS + ACLS</strong> — Standard
@@ -150,13 +104,10 @@ export default function PhysicianAssistantContent() {
           and emergency PA roles
         </li>
         <li>
-          <strong>PG Diploma in Diabetes / Cardiology / Nephrology / Critical Care</strong>{" "}
-          (online programs from CMC Vellore, Manipal, AAPC) — Significantly accelerates
-          mid-career growth
+          <strong>PG Diploma in Diabetes / Cardiology / Nephrology / Critical Care</strong>
         </li>
         <li>
-          <strong>EMR / EHR proficiency</strong> — Cerner Millennium, Epic, SmartCare —
-          differentiates fresh graduates
+          <strong>EMR / EHR proficiency</strong> — Cerner Millennium, Epic, SmartCare
         </li>
         <li>
           <strong>Strong clinical communication training</strong> — Trumps technical
@@ -164,8 +115,8 @@ export default function PhysicianAssistantContent() {
         </li>
       </ol>
       <p>
-        Many JKKN PA graduates also pursue an MBA in Hospital Administration after 4–5
-        years to move into hospital operations leadership tracks.
+        PA graduates can also pursue an MBA in Hospital Administration to move into
+        hospital operations leadership tracks.
       </p>
 
       <h2 id="global">Global Opportunities</h2>
@@ -175,21 +126,15 @@ export default function PhysicianAssistantContent() {
       <ul>
         <li>
           <strong>USA</strong> — Indian PA degree is NOT directly accepted. To practice
-          as a US PA, you need a Master's PA program (PANCE exam). However, Indian PAs
-          frequently move to US clinical research, medical writing, or healthcare
-          consulting roles where the B.PA is highly valued
+          as a US PA, you need a Master's PA program (PANCE exam)
         </li>
         <li>
-          <strong>UK</strong> — PA programs exist via FRCSEd PA(R) registration. Indian
-          PAs can pursue UK PA Master's
+          <strong>UK</strong> — Indian PAs can pursue a UK PA Master's; check the current UK
+          registration rules first
         </li>
         <li>
-          <strong>Gulf countries</strong> — Many Indian PAs work as Medical Assistants
-          in UAE, Saudi, Qatar hospitals. DHA/HAAD/Prometric exams. ₹12–25 LPA + housing
-        </li>
-        <li>
-          <strong>Singapore, Malaysia</strong> — Direct hospital recruitment for PA
-          roles in private hospital chains
+          <strong>Gulf countries</strong> — Indian PAs can work as Medical Assistants
+          in UAE, Saudi, Qatar hospitals. DHA/HAAD/Prometric exams
         </li>
       </ul>
 
@@ -201,14 +146,14 @@ export default function PhysicianAssistantContent() {
         </li>
         <li>
           Clinical rotations across General Medicine, Cardiology, Nephrology, Oncology,
-          Surgery, Emergency Medicine — exactly the specialties hiring PAs aggressively
+          Surgery, Emergency Medicine
         </li>
         <li>
           PG diploma pathway guidance for cardiology, critical care, diabetes
           specialization
         </li>
         <li>
-          Excellent infrastructure —{" "}
+          Infrastructure —{" "}
           <Link href="/lab">simulation learning labs</Link>,{" "}
           <Link href="/library">digital learning commons</Link>,{" "}
           <Link href="/hostel">on-campus hostel</Link>,{" "}

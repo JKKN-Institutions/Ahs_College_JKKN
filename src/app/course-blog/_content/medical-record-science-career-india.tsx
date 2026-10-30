@@ -4,47 +4,29 @@ export default function MedicalRecordContent() {
   return (
     <>
       <p>
-        Health information management (earlier called medical record science) is the most underrated career in allied health. While
-        learners chase glamorous clinical roles, the people quietly earning ₹6–10 LPA
-        in fully remote jobs — without ever wearing scrubs — are{" "}
+        Health information management (earlier called medical record science) is a
+        career in allied health. Its job titles include{" "}
         <strong>medical coders</strong> and <strong>HIM (Health Information
-        Management) executives</strong>. The Indian medical coding industry is now a{" "}
-        <strong>₹4,000 crore export segment</strong>, with US hospitals outsourcing
-        ICD-10 work to Indian graduates. If you're considering{" "}
+        Management) executives</strong>. If you're considering{" "}
         <Link href="/medical-record-science">Bachelor of Science in Health Information Management (B.Sc. HIM)</Link> at
         JKKN, here's the unspoken truth about this career in 2026.
       </p>
 
-      <h2 id="industry">HIM Digitization &amp; The Coding Boom</h2>
+      <h2 id="industry">HIM Digitization &amp; Medical Coding</h2>
       <p>
-        Two forces are simultaneously inflating demand:
+        Two areas where this work is done:
       </p>
       <ul>
         <li>
-          <strong>Domestic HIM digitization</strong> — Every NABH-accredited hospital is
-          moving from paper to EMR (Cerner, Epic, eClinicalWorks, SmartCare). They need
-          medical record officers (MROs), coders, and HIM analysts
+          <strong>Domestic HIM digitization</strong> — Hospitals moving from paper to
+          EMR (Cerner, Epic, eClinicalWorks, SmartCare) use medical record officers
+          (MROs), coders, and HIM analysts
         </li>
         <li>
-          <strong>US medical coding outsourcing</strong> — India dominates global medical
-          coding outsourcing with companies like Optum, Cognizant, Omega Healthcare,
-          Access Healthcare, R1 RCM, Sutherland, and Wipro HealthPlume hiring 50,000+
-          coders annually
-        </li>
-        <li>
-          <strong>ABDM (Ayushman Bharat Digital Mission)</strong> — Mandating standardised
-          health records for every Indian citizen. Massive HIM workforce expansion
-          underway
-        </li>
-        <li>
-          <strong>Insurance growth</strong> — Star Health, HDFC Ergo, ICICI Lombard hire
-          medical coders for claims processing and fraud detection
+          <strong>Insurance</strong> — Medical coders also work in claims processing
+          and fraud detection
         </li>
       </ul>
-      <p>
-        The HIM industry is projected to grow at <strong>18% CAGR</strong> through 2030,
-        making it one of the fastest-growing allied health verticals.
-      </p>
 
       <h2 id="day-in-life">Day in the Life of a Medical Record Officer</h2>
       <p>
@@ -61,17 +43,14 @@ export default function MedicalRecordContent() {
       </p>
       <p>
         <strong>US medical coding (remote-work track):</strong> Often a remote or hybrid
-        role with US shift timing (5 PM – 2 AM IST). You receive scanned charts from US
+        role with US shift timing. You receive scanned charts from US
         hospitals, code them in ICD-10-CM, ICD-10-PCS, CPT, and HCPCS per CMS guidelines,
-        meet daily productivity quotas (~25–35 charts), and undergo QA review weekly.
-        Many JKKN graduates work for Optum, Cognizant, or Access Healthcare entirely
-        from home after the first six months of training.
+        meet daily productivity quotas, and undergo QA review weekly.
       </p>
       <p>
         <strong>Insurance/TPA role:</strong> Audit hospital claims for code accuracy,
         identify fraudulent claims, manage cashless authorization, work with hospital
-        billing departments for resolution. Often the most lucrative non-coding HIM
-        track.
+        billing departments for resolution.
       </p>
 
       <h2 id="career-paths">Career Paths &amp; Specializations</h2>
@@ -82,7 +61,7 @@ export default function MedicalRecordContent() {
         </li>
         <li>
           <strong>Medical Coder (CPC / CCS certified)</strong> — Remote/hybrid work with
-          US medical coding companies. Most graduates' eventual destination
+          US medical coding companies
         </li>
         <li>
           <strong>HIM Executive / HIM Manager</strong> — Hospital HIM department
@@ -90,79 +69,37 @@ export default function MedicalRecordContent() {
         </li>
         <li>
           <strong>Clinical Documentation Improvement (CDI) Specialist</strong> — Work
-          with doctors to improve documentation quality. Highly valued role
+          with doctors to improve documentation quality
         </li>
         <li>
-          <strong>Insurance / TPA Coder</strong> — Star, HDFC Ergo, Bajaj Allianz hire
-          for claims processing and audit
+          <strong>Insurance / TPA Coder</strong> — Claims processing and audit
         </li>
         <li>
           <strong>Medical Records Auditor</strong> — NABH/JCI audit teams. Travel-heavy
-          but well paid
         </li>
         <li>
           <strong>HIM Software Implementation Consultant</strong> — Cerner, Epic, KMR
-          implementation projects. Excellent global pay
+          implementation projects
         </li>
       </ul>
 
-      <h2 id="salary">Salary Outlook in India</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Role &amp; Experience</th>
-            <th>Tier-1 Cities</th>
-            <th>Tier-2 / Remote</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>MRO Entry (Hospital, 0–1 years)</td>
-            <td>₹2 – 3.5 LPA</td>
-            <td>₹1.8 – 3 LPA</td>
-          </tr>
-          <tr>
-            <td>Medical Coder Entry (CPC certified)</td>
-            <td>₹3.5 – 5 LPA</td>
-            <td>₹3.2 – 4.5 LPA (often remote)</td>
-          </tr>
-          <tr>
-            <td>Mid-level (3–5 years)</td>
-            <td>₹4 – 7 LPA</td>
-            <td>₹4 – 7 LPA</td>
-          </tr>
-          <tr>
-            <td>Senior Medical Coder (CCS / specialty)</td>
-            <td>₹6 – 11 LPA</td>
-            <td>₹6 – 11 LPA</td>
-          </tr>
-          <tr>
-            <td>HIM Manager / CDI Specialist</td>
-            <td>₹8 – 14 LPA</td>
-            <td>—</td>
-          </tr>
-          <tr>
-            <td>HIM Implementation Consultant</td>
-            <td>₹10 – 22 LPA + variable</td>
-            <td>—</td>
-          </tr>
-        </tbody>
-      </table>
+      <h2 id="salary">How Pay Works in India</h2>
       <p>
-        Remote US medical coding roles include US time zone shift differentials (often
-        15–25%) and night-shift allowances.
+        JKKN publishes no salary figure for its graduates, and no official survey gives
+        private-hospital pay for medical coders and health-information professionals.
+        Pay depends on the employer, the city, shift work and experience. For government
+        posts, the pay level is printed in each recruitment notification (for example TN
+        MRB, AIIMS or ESIC) — check the current notification for the post you want.
       </p>
 
-      <h2 id="skills">Certifications That 3x Your Salary</h2>
+      <h2 id="skills">Certifications in This Field</h2>
       <ol>
         <li>
-          <strong>CPC (Certified Professional Coder) — AAPC</strong> — The single most
-          valuable certification in this field. JKKN graduates with CPC walk into ₹4–5
-          LPA roles immediately. Cost: ~₹35,000 (training + exam)
+          <strong>CPC (Certified Professional Coder) — AAPC</strong>
         </li>
         <li>
           <strong>CCS (Certified Coding Specialist) — AHIMA</strong> — Inpatient coding
-          specialty. Pairs well with CPC for senior roles
+          specialty
         </li>
         <li>
           <strong>COC (Certified Outpatient Coder)</strong> — For outpatient hospital
@@ -174,43 +111,14 @@ export default function MedicalRecordContent() {
         </li>
         <li>
           <strong>EMR system certifications</strong> — Cerner Millennium, Epic, Allscripts
-          training. Differentiates implementation consultants
+          training
         </li>
       </ol>
-      <p>
-        Most graduates pursue CPC certification within 6 months of graduation. Many JKKN
-        learners target it during their final semester for immediate placement.
-      </p>
 
       <h2 id="global">Remote US Medical Coding Careers</h2>
       <p>
-        This is the career most learners don't know exists. Indian medical coders working
-        for US hospitals from home, earning the same salary as a junior software engineer
-        — without commuting or shift dependency.
+        Indian medical coders can work on charts from US hospitals, including from home.
       </p>
-      <ul>
-        <li>
-          <strong>Optum (UnitedHealth Group)</strong> — Largest medical coding employer in
-          India. Often offers remote work after initial training
-        </li>
-        <li>
-          <strong>Omega Healthcare, Access Healthcare, R1 RCM</strong> — Pure-play medical
-          coding companies hiring CPC-certified graduates
-        </li>
-        <li>
-          <strong>Cognizant, Sutherland, Genpact, Wipro HealthPlume</strong> — Healthcare
-          IT divisions hiring medical coders alongside RCM (Revenue Cycle Management)
-          analysts
-        </li>
-        <li>
-          <strong>EClinicalWorks, Allscripts, Cerner India</strong> — HIM implementation
-          consultants travelling internationally
-        </li>
-        <li>
-          <strong>UK/Australia HIM roles</strong> — Less common but growing. NHS Wales,
-          Scotland actively recruit Indian-trained HIM professionals
-        </li>
-      </ul>
 
       <h2 id="why-jkkn">Why Study at JKKN</h2>
       <ul>
@@ -218,18 +126,14 @@ export default function MedicalRecordContent() {
           Affiliated with The Tamil Nadu Dr. M.G.R. Medical University, Chennai
         </li>
         <li>
-          Learning framework includes ICD-10, CPT, HCPCS coding fundamentals — preparing you for
-          CPC certification within months of graduation
+          Learning framework includes ICD-10 and CPT coding fundamentals
         </li>
         <li>
           Hands-on training with EMR systems of the kind used in hospital records
           departments
         </li>
         <li>
-          CPC exam preparation track guidance during the final year
-        </li>
-        <li>
-          Excellent campus infrastructure —{" "}
+          Campus infrastructure —{" "}
           <Link href="/library">digital learning commons</Link>,{" "}
           <Link href="/wifi">campus-wide WiFi</Link>,{" "}
           <Link href="/hostel">on-campus hostel</Link>,{" "}

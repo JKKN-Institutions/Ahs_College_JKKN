@@ -88,18 +88,18 @@ export const courseBlogPosts: CourseBlogPost[] = [
   {
     slug: "future-of-dialysis-technology-careers",
     title: "Future of Dialysis Therapy Technology in India: Why 2026 Is the Best Time to Start",
-    metaTitle: "Future of Dialysis Therapy Technology in India 2026 — Career, Salary & Scope",
+    metaTitle: "Future of Dialysis Therapy Technology in India 2026 — Career, Pay & Scope",
     metaDescription:
-      "India's dialysis demand is exploding with 2.2 lakh new ESRD cases yearly. Discover dialysis technologist career paths, salary, skills, and global jobs.",
+      "Dialysis technologist careers in India: what the work involves, career paths, how pay works, the skills and certifications that matter, and jobs abroad.",
     excerpt:
-      "Over 2.2 lakh Indians develop end-stage kidney disease every year, but only 30% receive dialysis. The math makes dialysis technology one of the safest healthcare careers of this decade.",
+      "What dialysis technologists do on a shift, where they work, how pay works and which certifications matter.",
     heroImage: "/dialysis-technology-hero.webp",
     heroImageAlt: "Dialysis technologist operating hemodialysis machine at JKKN College",
     courseSlug: "dialysis-technology",
     courseName: "B.Sc Renal Dialysis Therapy Technology",
     category: "Career Guide",
     publishedDate: "2026-05-16",
-    modifiedDate: "2026-05-16",
+    modifiedDate: "2026-10-30",
     readTimeMinutes: 10,
     author: "JKKN AHS Academic Team",
     keywords: [
@@ -110,11 +110,11 @@ export const courseBlogPosts: CourseBlogPost[] = [
       "dialysis technician scope",
     ],
     tableOfContents: [
-      { id: "industry", label: "Why Dialysis Demand Is Exploding" },
+      { id: "industry", label: "Dialysis in 2026" },
       { id: "day-in-life", label: "Day in the Life of a Dialysis Technologist" },
       { id: "career-paths", label: "Career Paths & Specializations" },
-      { id: "salary", label: "Salary Outlook in India" },
-      { id: "skills", label: "Skills & Certifications That Multiply Your Value" },
+      { id: "salary", label: "How Pay Works in India" },
+      { id: "skills", label: "Skills & Certifications" },
       { id: "global", label: "Global Opportunities" },
       { id: "why-jkkn", label: "Why Study at JKKN" },
       { id: "faq", label: "FAQs" },
@@ -122,7 +122,7 @@ export const courseBlogPosts: CourseBlogPost[] = [
     faqs: [
       {
         q: "Is dialysis therapy technology a good career in India?",
-        a: "Yes. India has fewer than 12,000 trained dialysis technicians for over 2 lakh new patients each year. Even rural Tamil Nadu, Kerala, and Andhra Pradesh dialysis chains are short-staffed. Job security and salary growth are exceptional.",
+        a: "Every hospital dialysis unit and stand-alone dialysis centre needs trained technologists to run its sessions. JKKN publishes no placement or salary figure, so check current job notices for openings and pay.",
       },
       {
         q: "What does a dialysis technologist do?",
@@ -130,33 +130,33 @@ export const courseBlogPosts: CourseBlogPost[] = [
       },
       {
         q: "What is the salary of a dialysis technologist?",
-        a: "Entry-level: ₹2.2–3.6 LPA in private dialysis chains. Mid-level (3–5 years): ₹4.2–6.5 LPA. Senior dialysis in-charge or unit manager roles touch ₹7–11 LPA. Gulf jobs pay ₹12–22 LPA depending on country and experience.",
+        a: "JKKN publishes no salary figure for its graduates, and no official survey gives private-hospital pay for dialysis technologists. Pay depends on the employer, the city, shift work and experience; for government posts, the pay level is printed in each recruitment notification (for example TN MRB, AIIMS or ESIC).",
       },
       {
         q: "Which companies hire dialysis technologists in India?",
-        a: "NephroPlus, B. Braun Avitum, DaVita, Apex Kidney Care, Fresenius Medical Care, Apollo Dialysis, Manipal Hospitals, and government hospitals under PMNDP (Pradhan Mantri National Dialysis Programme) hire actively across India.",
+        a: "JKKN publishes no recruiter list for its graduates. Dialysis technologists work in hospital dialysis units, stand-alone dialysis centres and government dialysis services such as the Pradhan Mantri National Dialysis Programme; check each employer's current openings.",
       },
       {
         q: "Can a dialysis technologist work abroad?",
-        a: "Yes. UAE, Saudi Arabia, Qatar, Kuwait, Oman, and the UK regularly recruit dialysis technologists. You will need Prometric/DHA/HAAD or NHS-equivalent registration. Indian-trained dialysis technicians are highly preferred in the Gulf.",
+        a: "Working abroad needs the destination country's registration or licensing exam - for example Prometric, DHA or HAAD in the Gulf, or NHS-equivalent registration in the UK. Requirements change, so check that country's regulator before you plan.",
       },
     ],
   },
   {
     slug: "radiology-imaging-technology-career-guide",
-    title: "Medical Radiology and Imaging Technology Career Guide India 2026 — Salary, Scope & Future",
+    title: "Medical Radiology and Imaging Technology Career Guide India 2026 — Pay, Scope & Future",
     metaTitle: "Medical Radiology and Imaging Technology Careers in India 2026",
     metaDescription:
       "Where a Bachelor of Medical Radiology and Imaging Technology (B.MRIT) leads — MRI, CT and PET roles, the skills hospitals hire for, and routes abroad.",
     excerpt:
-      "India will need 65,000 additional radiology technologists by 2030. AI isn't replacing them — it's multiplying their productivity. Here's what your career, salary, and skills should look like.",
+      "What radiology technologists do, the MRI, CT and PET specialisations, the skills and certifications that matter, and how pay works.",
     heroImage: "/radiology-technology-hero.webp",
     heroImageAlt: "Radiology technologist preparing patient for MRI scan at JKKN College",
     courseSlug: "radiology-imaging-technology",
     courseName: "Bachelor of Medical Radiology and Imaging Technology (B.MRIT)",
     category: "Career Guide",
     publishedDate: "2026-05-16",
-    modifiedDate: "2026-05-16",
+    modifiedDate: "2026-10-30",
     readTimeMinutes: 12,
     author: "JKKN AHS Academic Team",
     keywords: [
@@ -167,10 +167,10 @@ export const courseBlogPosts: CourseBlogPost[] = [
       "AI in radiology career impact",
     ],
     tableOfContents: [
-      { id: "industry", label: "Why Radiology Is Booming in 2026" },
+      { id: "industry", label: "Radiology in 2026" },
       { id: "day-in-life", label: "Day in the Life of a Radiology Technologist" },
       { id: "career-paths", label: "Career Paths & Specializations" },
-      { id: "salary", label: "Salary Outlook by City Tier" },
+      { id: "salary", label: "How Pay Works in India" },
       { id: "skills", label: "Skills, AI Literacy & Certifications" },
       { id: "global", label: "Global Opportunities" },
       { id: "why-jkkn", label: "Why Study at JKKN" },
@@ -179,41 +179,41 @@ export const courseBlogPosts: CourseBlogPost[] = [
     faqs: [
       {
         q: "Will AI replace radiology technologists?",
-        a: "No. AI assists radiologists in image interpretation, but technologists handle patient positioning, machine operation, contrast administration, safety, and image acquisition — none of which AI replaces. AI-literate technologists actually earn more.",
+        a: "No. AI assists radiologists in image interpretation, but technologists handle patient positioning, machine operation, contrast administration, safety, and image acquisition — none of which AI replaces.",
       },
       {
         q: "What is the salary of a radiology technologist in India?",
-        a: "Entry-level: ₹2.8–4.5 LPA. Mid-level (3–5 years) with MRI/CT specialization: ₹5–9 LPA. Senior modality specialists (PET-CT, interventional radiology) earn ₹10–16 LPA in tier-1 hospitals.",
+        a: "JKKN publishes no salary figure for its graduates, and no official survey gives private-hospital pay for radiology technologists. Pay depends on the employer, the city, shift work and experience; for government posts, the pay level is printed in each recruitment notification (for example TN MRB, AIIMS or ESIC).",
       },
       {
         q: "Which is the highest paying specialization in radiology technology?",
-        a: "Interventional radiology technologists, PET-CT technologists, and MRI specialists earn the most in India. Cath lab cross-trained radiology technologists are also in very high demand at top corporate hospitals.",
+        a: "No official survey ranks pay by radiology specialisation, so none is stated here. MRI, CT, PET-CT and interventional radiology each need extra modality training after the degree; check current job notices for the pay offered.",
       },
       {
         q: "Which hospitals hire radiology imaging technology graduates?",
-        a: "Apollo, Fortis, Medanta, Manipal, KMCH, MIOT, Christian Medical College Vellore, AIIMS, Tata Memorial, HCG Cancer Centres, and diagnostic chains like Vijaya Diagnostic, Metropolis, SRL, and Krsnaa Diagnostics actively hire graduates.",
+        a: "JKKN publishes no recruiter list for its graduates. Radiology technologists work in hospital imaging departments and diagnostic centres (X-ray, CT, MRI and ultrasound); check each employer's current openings.",
       },
       {
         q: "Can radiology technologists work abroad?",
-        a: "Yes. Australia (AHPRA registration), UK (HCPC + NHS), Canada (CAMRT), USA (ARRT after additional qualification), and Gulf countries hire Indian-trained radiology technologists. Salaries are 3–5× higher than India.",
+        a: "Each country has its own registration: AHPRA in Australia, HCPC in the UK, CAMRT in Canada and ARRT in the USA (after additional qualification). Requirements change, so check that body before you plan.",
       },
     ],
   },
   {
     slug: "operation-theatre-anaesthesia-technologist-roadmap",
     title: "Anaesthesia and Operation Theatre Technologist Career Roadmap India 2026",
-    metaTitle: "Anaesthesia & OT Technologist Career Roadmap India 2026 — Salary & Scope",
+    metaTitle: "Anaesthesia & OT Technologist Career Roadmap India 2026 — Pay & Scope",
     metaDescription:
-      "Complete career roadmap for B.AOTT (Anaesthesia & OT Technology) in India. Salary, day-in-life, specializations, and global opportunities.",
+      "Complete career roadmap for B.AOTT (Anaesthesia & OT Technology) in India: how pay works, day-in-life, specializations, and global opportunities.",
     excerpt:
-      "India performs 25 million surgeries every year and is short of 80,000 OT technologists. Here's what the career, daily work, salary, and growth path look like.",
+      "What OT and anaesthesia technologists do, how the two roles differ, the skills that matter and how pay works.",
     heroImage: "/allied-health-science-hero.webp",
     heroImageAlt: "Operation theatre technologist preparing surgical instruments at JKKN College",
     courseSlug: "operation-theatre-anaesthesia",
     courseName: "Bachelor of Anaesthesia and Operation Theatre Technology (B.AOTT)",
     category: "Career Guide",
     publishedDate: "2026-05-16",
-    modifiedDate: "2026-05-16",
+    modifiedDate: "2026-10-30",
     readTimeMinutes: 11,
     author: "JKKN AHS Academic Team",
     keywords: [
@@ -224,11 +224,11 @@ export const courseBlogPosts: CourseBlogPost[] = [
       "anaesthesia tech scope",
     ],
     tableOfContents: [
-      { id: "industry", label: "Surgical Volume & Why You're Needed" },
+      { id: "industry", label: "Where OT Technologists Work" },
       { id: "day-in-life", label: "Day in the Life of an OT Technologist" },
       { id: "career-paths", label: "OT Tech vs Anaesthesia Tech: Career Splits" },
-      { id: "salary", label: "Salary Outlook in India" },
-      { id: "skills", label: "Skills & Certifications That Multiply Your Value" },
+      { id: "salary", label: "How Pay Works in India" },
+      { id: "skills", label: "Skills & Certifications" },
       { id: "global", label: "Global Opportunities" },
       { id: "why-jkkn", label: "Why Study at JKKN" },
       { id: "faq", label: "FAQs" },
@@ -236,7 +236,7 @@ export const courseBlogPosts: CourseBlogPost[] = [
     faqs: [
       {
         q: "What is the scope of operation theatre technology in India?",
-        a: "Excellent. India performs 25 million+ surgeries yearly and every multi-specialty hospital, day-care surgical centre, and IVF clinic needs OT technologists. The shortage is acute in tier-2 and tier-3 cities, pushing salaries upward.",
+        a: "Hospitals with operation theatres, day-care surgical centres and IVF clinics all need OT and anaesthesia technologists. JKKN publishes no placement or salary figure, so check current job notices for openings and pay.",
       },
       {
         q: "What is the difference between OT technologist and anaesthesia technologist?",
@@ -244,33 +244,33 @@ export const courseBlogPosts: CourseBlogPost[] = [
       },
       {
         q: "What is the salary of an OT technologist in India?",
-        a: "Entry-level: ₹2.4–4 LPA. Mid-level (3–5 years): ₹4.5–7.5 LPA. Senior OT in-charge or anaesthesia tech specialists: ₹8–14 LPA in tier-1 corporate hospitals. Gulf and UK roles pay 2–3× more.",
+        a: "JKKN publishes no salary figure for its graduates, and no official survey gives private-hospital pay for OT and anaesthesia technologists. Pay depends on the employer, the city, shift work and experience; for government posts, the pay level is printed in each recruitment notification (for example TN MRB, AIIMS or ESIC).",
       },
       {
         q: "Which hospitals hire OT and anaesthesia technologists?",
-        a: "Apollo, Fortis, Medanta, Narayana Health, MIOT, KMCH, Manipal, Yashoda, Kauvery, Christian Medical College Vellore, AIIMS, and all major day-care surgery centres, IVF clinics, and government medical colleges recruit graduates.",
+        a: "JKKN publishes no recruiter list for its graduates. OT and anaesthesia technologists work in hospital operation theatres, day-care surgery centres, IVF clinics and government medical colleges; check each employer's current openings.",
       },
       {
         q: "Can OT technologists work abroad?",
-        a: "Yes. Gulf countries, UK, Ireland, and Australia regularly recruit OT and anaesthesia technologists. You will need country-specific licensure (DHA/HAAD/Prometric/NHS). Pay is typically 2.5–4× Indian salaries.",
+        a: "Working abroad needs country-specific licensure - for example DHA, HAAD or Prometric in the Gulf, or NHS registration in the UK. Requirements change, so check that country's regulator before you plan.",
       },
     ],
   },
   {
     slug: "respiratory-therapy-scope-and-salary-india",
-    title: "Respiratory Technology Scope, Salary & Future in India (2026 Complete Guide)",
-    metaTitle: "Respiratory Technology Scope & Salary India 2026 — Career, Jobs, Future",
+    title: "Respiratory Technology Scope, Pay & Future in India (2026 Complete Guide)",
+    metaTitle: "Respiratory Technology Scope & Pay India 2026 — Career, Jobs, Future",
     metaDescription:
-      "B.RT (Respiratory Technology) career guide: scope, salary, specializations and US/Canada licensure paths for respiratory therapists trained in India.",
+      "B.RT (Respiratory Technology) career guide: scope, pay, specializations and US/Canada licensure paths for respiratory therapists trained in India.",
     excerpt:
-      "Post-COVID, India added 1.5 lakh new ICU ventilator beds. The country has fewer than 8,000 trained respiratory therapists. The math makes this one of the most undersupplied healthcare careers.",
+      "What respiratory therapists do in the ICU, the career paths and certifications, how pay works, and the US and Canada licensing routes.",
     heroImage: "/images/departments/respiratory-therapy-hero.webp",
     heroImageAlt: "Respiratory therapist setting up mechanical ventilator at JKKN College",
     courseSlug: "respiratory-therapy",
     courseName: "Bachelor of Respiratory Technology (B.RT)",
     category: "Career Guide",
     publishedDate: "2026-05-16",
-    modifiedDate: "2026-05-16",
+    modifiedDate: "2026-10-30",
     readTimeMinutes: 11,
     author: "JKKN AHS Academic Team",
     keywords: [
@@ -281,11 +281,11 @@ export const courseBlogPosts: CourseBlogPost[] = [
       "respiratory therapist US Canada",
     ],
     tableOfContents: [
-      { id: "industry", label: "Post-COVID Demand for Respiratory Technology" },
+      { id: "industry", label: "Where Respiratory Therapists Work" },
       { id: "day-in-life", label: "Day in the Life of a Respiratory Therapist" },
       { id: "career-paths", label: "Career Paths & Specializations" },
-      { id: "salary", label: "Salary Outlook in India" },
-      { id: "skills", label: "Skills & Certifications That Multiply Your Value" },
+      { id: "salary", label: "How Pay Works in India" },
+      { id: "skills", label: "Skills & Certifications" },
       { id: "global", label: "US, Canada & Gulf Opportunities" },
       { id: "why-jkkn", label: "Why Study at JKKN" },
       { id: "faq", label: "FAQs" },
@@ -293,7 +293,7 @@ export const courseBlogPosts: CourseBlogPost[] = [
     faqs: [
       {
         q: "Is respiratory technology (respiratory therapy) a good career in India?",
-        a: "Yes. India's ICU and ventilator capacity has doubled post-COVID, but trained respiratory therapists number under 8,000 nationwide. Demand far exceeds supply, salaries are rising, and global mobility (US/Canada) is exceptional.",
+        a: "Respiratory therapists work in ICUs, emergency departments and pulmonary function labs, managing ventilators and airways. JKKN publishes no placement or salary figure, so check current job notices for openings and pay.",
       },
       {
         q: "What does a respiratory therapist do?",
@@ -301,33 +301,33 @@ export const courseBlogPosts: CourseBlogPost[] = [
       },
       {
         q: "What is the salary of a respiratory therapist?",
-        a: "Entry-level: ₹2.8–4.5 LPA. Mid-level (3–5 years): ₹5–8 LPA. Senior ICU respiratory therapists or sleep lab specialists: ₹8–14 LPA. US-licensed (NBRC RRT) therapists earn $65,000–95,000.",
+        a: "JKKN publishes no salary figure for its graduates, and no official survey gives private-hospital pay for respiratory therapists. Pay depends on the employer, the city, shift work and experience; for government posts, the pay level is printed in each recruitment notification (for example TN MRB, AIIMS or ESIC).",
       },
       {
         q: "Can I work as a respiratory therapist in the US?",
-        a: "Yes. After your Bachelor of Respiratory Technology (B.RT) and clearing the NBRC (CRT + RRT) exams, you can practice in the US. Many Indian graduates pursue this pathway. Canada (CSRT registration) and Gulf countries are also strong options.",
+        a: "The US route runs through the NBRC (CRT and RRT) exams and state licensing; Canada registers respiratory therapists province by province. Rules for foreign-trained candidates change, so check the NBRC and the state board before you plan.",
       },
       {
         q: "Which hospitals hire respiratory therapists in India?",
-        a: "Apollo, Fortis, Medanta, Manipal, MIOT, KMCH, AIIMS, Christian Medical College Vellore, AMRI, and every major multi-specialty hospital with a critical care unit recruits respiratory therapists.",
+        a: "JKKN publishes no recruiter list for its graduates. Respiratory therapists work in the ICUs and critical care units of multi-specialty hospitals; check each employer's current openings.",
       },
     ],
   },
   {
     slug: "physician-assistant-career-india",
-    title: "Physician Associate Career in India 2026 — Scope, Salary & Real Opportunities",
-    metaTitle: "Physician Associate Career India 2026 — Salary, Scope, Jobs Guide",
+    title: "Physician Associate Career in India 2026 — Scope, Pay & Opportunities",
+    metaTitle: "Physician Associate Career India 2026 — Pay, Scope, Jobs Guide",
     metaDescription:
-      "Is B.PA (Physician Associates) a good career in India? Explore real scope, salary, day-in-life, hospital adoption, and how PA compares to nursing and MBBS.",
+      "Is B.PA (Physician Associates) a good career in India? Explore the scope, how pay works, a day in the life, and how PA compares to nursing and MBBS.",
     excerpt:
-      "Indian hospitals are quietly hiring 6,000+ physician assistants every year. The role is growing because hospitals can't find enough specialist doctors — and PAs fill a critical gap.",
+      "What physician associates do alongside doctors, how the role compares with nursing and MBBS, and how pay works.",
     heroImage: "/allied-health-science-hero.webp",
     heroImageAlt: "Physician associate learner in clinical training at JKKN College",
     courseSlug: "physician-assistant",
     courseName: "Bachelor of Physician Associates (B.PA)",
     category: "Career Guide",
     publishedDate: "2026-05-16",
-    modifiedDate: "2026-05-16",
+    modifiedDate: "2026-10-30",
     readTimeMinutes: 11,
     author: "JKKN AHS Academic Team",
     keywords: [
@@ -338,11 +338,11 @@ export const courseBlogPosts: CourseBlogPost[] = [
       "physician assistant jobs",
     ],
     tableOfContents: [
-      { id: "industry", label: "Why PA Role Is Growing in India" },
+      { id: "industry", label: "The PA Role in India" },
       { id: "day-in-life", label: "Day in the Life of a Physician Associate" },
       { id: "career-paths", label: "Career Paths & Specializations" },
-      { id: "salary", label: "Salary Outlook in India" },
-      { id: "skills", label: "Skills & Certifications That Multiply Your Value" },
+      { id: "salary", label: "How Pay Works in India" },
+      { id: "skills", label: "Skills & Certifications" },
       { id: "global", label: "Global Opportunities" },
       { id: "why-jkkn", label: "Why Study at JKKN" },
       { id: "faq", label: "FAQs" },
@@ -350,7 +350,7 @@ export const courseBlogPosts: CourseBlogPost[] = [
     faqs: [
       {
         q: "Is physician associate (physician assistant) a good career in India?",
-        a: "Yes — especially in corporate hospitals. Apollo, Fortis, Medanta, Manipal, and KMCH actively hire PAs for cardiology, nephrology, oncology, and surgical units. Salaries are competitive and the role is becoming formally recognized.",
+        a: "Physician associates work alongside doctors in OPD, wards and specialty units, taking histories, examining patients and assisting in procedures. JKKN publishes no placement or salary figure, so check current job notices for openings and pay.",
       },
       {
         q: "What is the difference between a physician associate and a nurse?",
@@ -358,33 +358,33 @@ export const courseBlogPosts: CourseBlogPost[] = [
       },
       {
         q: "What is the salary of a physician associate in India?",
-        a: "Entry-level: ₹2.5–4.2 LPA. Mid-level (3–5 years): ₹5–8 LPA. Senior PAs attached to senior consultants in cardiology, oncology, transplant medicine: ₹8–15 LPA. International PA roles pay considerably more.",
+        a: "JKKN publishes no salary figure for its graduates, and no official survey gives private-hospital pay for physician associates. Pay depends on the employer, the city, shift work and experience; for government posts, the pay level is printed in each recruitment notification (for example TN MRB, AIIMS or ESIC).",
       },
       {
         q: "Which hospitals hire physician associates?",
-        a: "Apollo Hospitals (the largest PA employer in India), Fortis, Medanta, Manipal, KMCH, MIOT, Christian Medical College Vellore, Yashoda, Care Hospitals, and most super-specialty hospitals with cardiology, oncology, and transplant departments.",
+        a: "JKKN publishes no recruiter list for its graduates. Physician associates work in OPD, wards and specialty units such as cardiology, oncology and surgery, alongside doctors; check each employer's current openings.",
       },
       {
         q: "Should I do PA or MBBS?",
-        a: "Different goals. MBBS is 5.5 years + PG and leads to independent practice. PA is 4 years + 1 year internship and you work alongside doctors. PA suits those who want quicker entry to healthcare without competitive NEET pressure but still want clinical exposure.",
+        a: "Different goals. MBBS is 5.5 years + PG and leads to independent practice. B.PA is 3 years plus a 1-year internship, and you work alongside doctors. PA suits those who want quicker entry to healthcare without competitive NEET pressure but still want clinical exposure.",
       },
     ],
   },
   {
     slug: "critical-care-technology-future-india",
-    title: "Future of Critical Care Technology in India: Career, Salary & Scope (2026)",
-    metaTitle: "Critical Care Technology Career India 2026 — ICU Tech Salary, Scope & Future",
+    title: "Future of Critical Care Technology in India: Career, Pay & Scope (2026)",
+    metaTitle: "Critical Care Technology Career India 2026 — ICU Tech Pay, Scope & Future",
     metaDescription:
-      "India added 1.5 lakh ICU beds post-COVID but lacks trained critical care technologists. Explore career, salary, specializations, and certifications.",
+      "What a critical care technologist does in the ICU: career paths, how pay works, specializations and certifications for B.Sc Critical Care Technology.",
     excerpt:
-      "Every 100 ICU beds need 8–10 trained critical care technologists. India has fewer than 10,000 of them for 95,000+ ICU beds. The gap defines opportunity.",
+      "What critical care technologists do in the ICU, the career paths and certifications, how pay works and routes abroad.",
     heroImage: "/critical-care-technology-hero.webp",
     heroImageAlt: "Critical care technologist managing ICU monitors at JKKN College",
     courseSlug: "critical-care-technology",
     courseName: "B.Sc Critical Care Technology",
     category: "Career Guide",
     publishedDate: "2026-05-16",
-    modifiedDate: "2026-05-16",
+    modifiedDate: "2026-10-30",
     readTimeMinutes: 11,
     author: "JKKN AHS Academic Team",
     keywords: [
@@ -395,11 +395,11 @@ export const courseBlogPosts: CourseBlogPost[] = [
       "ICU tech scope India",
     ],
     tableOfContents: [
-      { id: "industry", label: "ICU Expansion & The Talent Shortage" },
+      { id: "industry", label: "Critical Care in 2026" },
       { id: "day-in-life", label: "Day in the Life of a Critical Care Technologist" },
       { id: "career-paths", label: "Career Paths & Specializations" },
-      { id: "salary", label: "Salary Outlook in India" },
-      { id: "skills", label: "Skills & Certifications That Multiply Your Value" },
+      { id: "salary", label: "How Pay Works in India" },
+      { id: "skills", label: "Skills & Certifications" },
       { id: "global", label: "Global Opportunities" },
       { id: "why-jkkn", label: "Why Study at JKKN" },
       { id: "faq", label: "FAQs" },
@@ -407,7 +407,7 @@ export const courseBlogPosts: CourseBlogPost[] = [
     faqs: [
       {
         q: "What is the scope of critical care technology in India?",
-        a: "Excellent. India has 95,000+ ICU beds and fewer than 10,000 trained critical care technologists. Every multi-specialty hospital, cardiac centre, neonatal ICU, and trauma centre actively hires graduates.",
+        a: "Multi-specialty hospitals, cardiac centres, neonatal ICUs and trauma centres all run intensive care units that need trained critical care technologists. JKKN publishes no placement or salary figure, so check current job notices for openings and pay.",
       },
       {
         q: "What does a critical care technologist do?",
@@ -415,7 +415,7 @@ export const courseBlogPosts: CourseBlogPost[] = [
       },
       {
         q: "What is the salary of a critical care technologist?",
-        a: "Entry-level: ₹2.6–4.2 LPA. Mid-level (3–5 years): ₹5–8 LPA. Senior critical care technologists with ECMO, CRRT specialization: ₹9–15 LPA in tier-1 hospitals. Gulf and SEA hospitals pay 2–3× more.",
+        a: "JKKN publishes no salary figure for its graduates, and no official survey gives private-hospital pay for critical care technologists. Pay depends on the employer, the city, shift work and experience; for government posts, the pay level is printed in each recruitment notification (for example TN MRB, AIIMS or ESIC).",
       },
       {
         q: "Is critical care technology different from BSc Nursing?",
@@ -423,25 +423,25 @@ export const courseBlogPosts: CourseBlogPost[] = [
       },
       {
         q: "Can I work abroad with a BSc Critical Care Technology?",
-        a: "Yes. Gulf countries (Saudi, UAE, Qatar, Kuwait, Oman) actively hire critical care technologists. UK, Ireland, and Australia also recognize the qualification after additional registration. Pay is 2.5–4× Indian salaries.",
+        a: "Working abroad needs the destination country's registration or licensing exam - for example Prometric, DHA or HAAD in the Gulf, or additional registration in the UK, Ireland or Australia. Requirements change, so check that country's regulator before you plan.",
       },
     ],
   },
   {
     slug: "medical-record-science-career-india",
     title: "Health Information Management Career in India 2026 — HIM, Coding & Remote Work",
-    metaTitle: "Health Information Management Career India 2026 — Salary & Jobs",
+    metaTitle: "Health Information Management Career India 2026 — Pay & Jobs",
     metaDescription:
-      "Health Information Management (formerly medical record science): ICD-10 coding and remote US coding careers. Scope, salary, certifications, global jobs.",
+      "Health Information Management (formerly medical record science): ICD-10 coding and remote US coding careers. Scope, pay, certifications, global jobs.",
     excerpt:
-      "Medical coding is now a ₹4,000 crore industry in India, with US hospitals outsourcing ICD-10 work to Indian coders. Bachelor of Science in Health Information Management (B.Sc. HIM) is the entry ticket.",
+      "Health information management covers hospital records, ICD-10 coding and insurance work. Here is what the job involves, the certifications that matter and how pay works for B.Sc. HIM graduates.",
     heroImage: "/medical-record-science-hero.webp",
     heroImageAlt: "Health Information Management learner working on HIM digitization at JKKN College",
     courseSlug: "medical-record-science",
     courseName: "Bachelor of Science in Health Information Management (B.Sc. HIM)",
     category: "Career Guide",
     publishedDate: "2026-05-16",
-    modifiedDate: "2026-05-16",
+    modifiedDate: "2026-10-30",
     readTimeMinutes: 10,
     author: "JKKN AHS Academic Team",
     keywords: [
@@ -453,11 +453,11 @@ export const courseBlogPosts: CourseBlogPost[] = [
       "US medical coding remote work",
     ],
     tableOfContents: [
-      { id: "industry", label: "HIM Digitization & The Coding Boom" },
+      { id: "industry", label: "HIM Digitization & Medical Coding" },
       { id: "day-in-life", label: "Day in the Life of a Medical Record Officer" },
       { id: "career-paths", label: "Career Paths & Specializations" },
-      { id: "salary", label: "Salary Outlook in India" },
-      { id: "skills", label: "Certifications That 3x Your Salary" },
+      { id: "salary", label: "How Pay Works in India" },
+      { id: "skills", label: "Certifications in This Field" },
       { id: "global", label: "Remote US Medical Coding Careers" },
       { id: "why-jkkn", label: "Why Study at JKKN" },
       { id: "faq", label: "FAQs" },
@@ -465,41 +465,41 @@ export const courseBlogPosts: CourseBlogPost[] = [
     faqs: [
       {
         q: "Is health information management (medical record science) a good career in India?",
-        a: "Yes. The HIM industry is growing at 18% CAGR, and US-bound medical coding is a ₹4,000 crore export segment. Graduates can work in hospitals, insurance, HIM consulting, or remote-coding for US hospitals.",
+        a: "Graduates can work in hospital medical-record departments, insurance and health-information teams, and medical coding. JKKN publishes no placement or salary figure, so check current job notices for openings and pay.",
       },
       {
         q: "What is medical coding and how does it pay?",
-        a: "Medical coders translate clinical documentation into ICD-10, CPT, and HCPCS codes used for insurance claims. CPC-certified Indian coders working for US hospitals earn ₹4–10 LPA, often fully remote.",
+        a: "Medical coders translate clinical documentation into ICD-10, CPT, and HCPCS codes used for insurance claims. No official survey gives coders' pay and JKKN publishes no salary figure; pay depends on the employer, certification and experience.",
       },
       {
         q: "What is the salary of a medical record officer in India?",
-        a: "Entry-level in hospitals: ₹2–3.5 LPA. Mid-level HIM executive (3–5 years): ₹4–7 LPA. CPC-certified medical coders: ₹4–10 LPA. Senior HIM managers in corporate hospitals: ₹8–14 LPA.",
+        a: "JKKN publishes no salary figure for its graduates, and no official survey gives private-hospital pay for medical record officers and coders. Pay depends on the employer, the city, shift work and experience; for government posts, the pay level is printed in each recruitment notification (for example TN MRB, AIIMS or ESIC).",
       },
       {
         q: "Can I work from home as a health information management graduate?",
-        a: "Yes. Once you earn CPC (AAPC) or CCS (AHIMA) certification, US-bound medical coding companies like Optum, Cognizant, Omega Healthcare, Access Healthcare, R1 RCM, and Sutherland hire fully remote coders.",
+        a: "Some medical coding roles are remote. Employers usually ask for a coding certification such as CPC (AAPC) or CCS (AHIMA); check each employer's current openings for the terms.",
       },
       {
         q: "Which companies hire health information management graduates?",
-        a: "All Apollo, Fortis, Manipal, MIOT, KMCH, AIIMS, and government hospitals hire MRO/HIM staff. Medical coding companies: Optum, Cognizant, Omega Healthcare, Access Healthcare, R1 RCM, Sutherland, Genpact, and Wipro HealthPlume.",
+        a: "JKKN publishes no recruiter list for its graduates. Health information management graduates work in hospital medical-record departments, insurance teams and medical coding companies; check each employer's current openings.",
       },
     ],
   },
   {
     slug: "accident-emergency-care-technician-guide",
     title: "Emergency Medical Technologist (Paramedic) Career Guide India 2026",
-    metaTitle: "Emergency Medical Technologist Career India 2026 — Salary & Jobs",
+    metaTitle: "Emergency Medical Technologist Career India 2026 — Pay & Jobs",
     metaDescription:
-      "Emergency Medical Technologist (Paramedic) career guide: scope, salary, EMT certifications and jobs in India's trauma care and ambulance services and abroad.",
+      "Emergency Medical Technologist (Paramedic) career guide: scope, pay, EMT certifications and jobs in India's trauma care and ambulance services and abroad.",
     excerpt:
-      "India has 4.5 lakh road accident victims a year but fewer than 15,000 trained emergency care technologists. The Modi government's trauma care expansion is creating thousands of new roles.",
+      "What emergency medical technologists do in ambulances and emergency departments, the certifications that matter, and how pay works.",
     heroImage: "/accident-emergency-care-hero.webp",
     heroImageAlt: "Emergency care technologist responding to trauma case at JKKN College",
     courseSlug: "accident-emergency-care",
     courseName: "Bachelor of Emergency Medical Technologist (Paramedic)",
     category: "Career Guide",
     publishedDate: "2026-05-16",
-    modifiedDate: "2026-05-16",
+    modifiedDate: "2026-10-30",
     readTimeMinutes: 10,
     author: "JKKN AHS Academic Team",
     keywords: [
@@ -510,11 +510,11 @@ export const courseBlogPosts: CourseBlogPost[] = [
       "trauma care technician jobs",
     ],
     tableOfContents: [
-      { id: "industry", label: "Trauma Care Expansion in India" },
+      { id: "industry", label: "Emergency Care Settings in India" },
       { id: "day-in-life", label: "Day in the Life of an Emergency Medical Technologist" },
       { id: "career-paths", label: "Career Paths & Specializations" },
-      { id: "salary", label: "Salary Outlook in India" },
-      { id: "skills", label: "Skills & Certifications That Multiply Your Value" },
+      { id: "salary", label: "How Pay Works in India" },
+      { id: "skills", label: "Skills & Certifications" },
       { id: "global", label: "Global EMT & Pre-Hospital Care Opportunities" },
       { id: "why-jkkn", label: "Why Study at JKKN" },
       { id: "faq", label: "FAQs" },
@@ -522,7 +522,7 @@ export const courseBlogPosts: CourseBlogPost[] = [
     faqs: [
       {
         q: "What is the scope of an emergency medical technologist (paramedic) career in India?",
-        a: "Excellent. India has 4.5 lakh road accident victims yearly, expanding 108 ambulance services, growing trauma centres under PMSSY, and corporate hospitals all hiring emergency care technologists.",
+        a: "Emergency medical technologists work in ambulance services such as 108, hospital emergency departments and trauma centres. JKKN publishes no placement or salary figure, so check current job notices for openings and pay.",
       },
       {
         q: "What does an emergency care technologist do?",
@@ -530,15 +530,15 @@ export const courseBlogPosts: CourseBlogPost[] = [
       },
       {
         q: "What is the salary of an emergency care technologist in India?",
-        a: "Entry-level: ₹2.4–4 LPA. Mid-level (3–5 years): ₹4.5–7 LPA. Senior emergency care technologists in trauma centres or air ambulance services: ₹7–13 LPA. Gulf and Saudi roles pay 2.5–4× higher.",
+        a: "JKKN publishes no salary figure for its graduates, and no official survey gives private-hospital pay for emergency medical technologists. Pay depends on the employer, the city, shift work and experience; for government posts, the pay level is printed in each recruitment notification (for example TN MRB, AIIMS or ESIC).",
       },
       {
         q: "Where can I work after Bachelor of Emergency Medical Technologist (Paramedic)?",
-        a: "Trauma centres (Apollo, Medanta, AIIMS, Christian Medical College Vellore), 108 ambulance services, corporate emergency departments, disaster response teams, oil-rig medical services, air ambulance companies, and ER chains like CARE Hospitals.",
+        a: "Trauma centres, 108 ambulance services, hospital emergency departments, disaster response teams, oil-rig medical services and air ambulance services.",
       },
       {
         q: "Can emergency care technologists work abroad?",
-        a: "Yes. Gulf countries hire Indian EMTs for hospital emergency departments and oil-field medical services. UK, Australia, and Canada have structured EMT-paramedic pathways after additional certifications.",
+        a: "Working abroad needs the destination country's registration or extra certification; the UK, Australia and Canada run their own paramedic registration routes. Requirements change, so check that country's regulator before you plan.",
       },
     ],
   },

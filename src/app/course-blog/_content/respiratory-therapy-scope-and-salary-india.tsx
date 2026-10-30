@@ -4,51 +4,22 @@ export default function RespiratoryTherapyContent() {
   return (
     <>
       <p>
-        Before COVID-19, India had roughly 70,000 ICU beds. Today it has{" "}
-        <strong>over 1.5 lakh</strong>. Every ventilator added needs someone qualified
-        to set it up, troubleshoot it, and decide when to wean a patient off it. That
-        someone is a <strong>respiratory therapist</strong>. India has under 8,000 of
-        them. The supply-demand gap is the most lopsided of any allied health career —
-        and if you're considering{" "}
-        <Link href="/respiratory-therapy">Bachelor of Respiratory Technology (B.RT)</Link> at JKKN, you
-        are entering a field where you will not lack for opportunity.
+        Every ventilator needs someone qualified to set it up, troubleshoot it, and
+        decide when to wean a patient off it. That someone is a{" "}
+        <strong>respiratory therapist</strong>. If you're considering{" "}
+        <Link href="/respiratory-therapy">Bachelor of Respiratory Technology (B.RT)</Link> at JKKN, here
+        is what the career looks like.
       </p>
 
-      <h2 id="industry">Post-COVID Demand for Respiratory Technology</h2>
+      <h2 id="industry">Where Respiratory Therapists Work</h2>
       <p>
-        The pandemic exposed a structural shortage: India had ventilators but not the
-        trained people to operate them. Government and private sector response:
-      </p>
-      <ul>
-        <li>
-          <strong>1.5 lakh new ventilators</strong> deployed in 2020-22 under PM CARES
-          and state procurement
-        </li>
-        <li>
-          Most major corporate hospital chains created dedicated respiratory therapy
-          departments — Apollo, Fortis, Manipal, Medanta, KMCH
-        </li>
-        <li>
-          Indian Society of Critical Care Medicine (ISCCM) now mandates respiratory
-          therapist staffing ratios for accredited ICUs
-        </li>
-        <li>
-          NABH 5th edition explicitly recognizes respiratory therapy as a distinct
-          critical care role
-        </li>
-        <li>
-          Pulmonology has become a top corporate revenue specialty post-COVID — sleep
-          labs, bronchoscopy suites, pulmonary rehab clinics are all hiring
-        </li>
-      </ul>
-      <p>
-        Translation: hospitals are competing for respiratory therapists. Starting
-        salaries for JKKN graduates have grown 35% since 2021.
+        Respiratory therapists work in ICUs, sleep labs, bronchoscopy suites and
+        pulmonary rehab clinics.
       </p>
 
       <h2 id="day-in-life">Day in the Life of a Respiratory Therapist</h2>
       <p>
-        A typical day in a 30-bed multi-specialty ICU starts at 7 AM with bedside ABG
+        A typical day in a multi-specialty ICU starts at 7 AM with bedside ABG
         (arterial blood gas) sample collection and analysis for ventilated patients,
         followed by ventilator parameter optimization based on the previous shift's
         clinical course.
@@ -62,8 +33,7 @@ export default function RespiratoryTherapyContent() {
       </p>
       <p>
         In emergencies you are part of the rapid response team for respiratory failure
-        and ARDS cases. You also manage prone ventilation positioning (a COVID-era
-        skill that became standard ICU practice). Senior therapists run bronchoscopy
+        and ARDS cases. You also manage prone ventilation positioning. Senior therapists run bronchoscopy
         suites alongside pulmonologists and manage sleep lab studies (polysomnography
         for OSA diagnosis).
       </p>
@@ -71,17 +41,15 @@ export default function RespiratoryTherapyContent() {
       <h2 id="career-paths">Career Paths &amp; Specializations</h2>
       <ul>
         <li>
-          <strong>Adult ICU Respiratory Therapist</strong> — Core entry path. Most
-          common across multi-specialty hospitals
+          <strong>Adult ICU Respiratory Therapist</strong> — Core entry path
         </li>
         <li>
           <strong>Neonatal/Paediatric Respiratory Therapist</strong> — NICU/PICU
-          specialization. Critical role with limited supply, hence excellent
-          compensation
+          specialization
         </li>
         <li>
           <strong>Pulmonary Function Lab Specialist</strong> — Sleep studies,
-          spirometry, body plethysmography. Excellent work-life balance
+          spirometry, body plethysmography
         </li>
         <li>
           <strong>Bronchoscopy Suite Technologist</strong> — Diagnostic and
@@ -92,100 +60,59 @@ export default function RespiratoryTherapyContent() {
           post-tuberculosis, post-COVID rehab programs
         </li>
         <li>
-          <strong>ECMO Specialist</strong> — Extracorporeal life support, very few
-          trained professionals nationwide, very high salaries
+          <strong>ECMO Specialist</strong> — Extracorporeal life support
         </li>
         <li>
-          <strong>Sleep Lab Technologist</strong> — Polysomnography. Growing rapidly
-          with obstructive sleep apnea (OSA) awareness
+          <strong>Sleep Lab Technologist</strong> — Polysomnography for obstructive
+          sleep apnea (OSA) diagnosis
         </li>
       </ul>
 
-      <h2 id="salary">Salary Outlook in India</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Experience Level</th>
-            <th>Tier-1 Corporate</th>
-            <th>Tier-2 Hospitals</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Entry (0–1 years)</td>
-            <td>₹2.8 – 4.5 LPA</td>
-            <td>₹2.4 – 3.8 LPA</td>
-          </tr>
-          <tr>
-            <td>Mid (3–5 years)</td>
-            <td>₹5 – 8 LPA</td>
-            <td>₹4.5 – 7 LPA</td>
-          </tr>
-          <tr>
-            <td>Senior ICU RT (5–8 years)</td>
-            <td>₹8 – 14 LPA</td>
-            <td>₹6.5 – 11 LPA</td>
-          </tr>
-          <tr>
-            <td>ECMO Specialist</td>
-            <td>₹12 – 20 LPA</td>
-            <td>—</td>
-          </tr>
-          <tr>
-            <td>NBRC-RRT (US licensed)</td>
-            <td>$65,000 – $95,000 (₹54–80 LPA)</td>
-            <td>—</td>
-          </tr>
-        </tbody>
-      </table>
+      <h2 id="salary">How Pay Works in India</h2>
+      <p>
+        JKKN publishes no salary figure for its graduates, and no official survey gives
+        private-hospital pay for respiratory therapists. Pay depends on the hospital,
+        the city, shift work and experience. For government posts, the pay level is
+        printed in each recruitment notification (for example TN MRB, AIIMS or ESIC) —
+        check the current notification for the post you want.
+      </p>
 
-      <h2 id="skills">Skills &amp; Certifications That Multiply Your Value</h2>
+      <h2 id="skills">Skills &amp; Certifications</h2>
       <ol>
         <li>
-          <strong>BLS + ACLS</strong> — Standard
+          <strong>BLS + ACLS</strong>
         </li>
         <li>
           <strong>PALS / NRP</strong> — For paediatric/neonatal track
         </li>
         <li>
-          <strong>FCCS (Fundamental Critical Care Support)</strong> from SCCM —
-          Universally recognized critical care credential
+          <strong>FCCS (Fundamental Critical Care Support)</strong> from SCCM
         </li>
         <li>
-          <strong>NBRC CRT + RRT</strong> — US Registered Respiratory Therapist.
-          Considered the gold standard globally. Opens US, Canada, Gulf doors at
-          significantly higher salaries
+          <strong>NBRC CRT + RRT</strong> — US Registered Respiratory Therapist
         </li>
         <li>
-          <strong>ECMO Specialist Certification (ELSO)</strong> — Niche, lucrative
+          <strong>ECMO Specialist Certification (ELSO)</strong>
         </li>
         <li>
-          <strong>Pulmonary Function / Sleep Lab certifications</strong> — Sub-specialty
-          differentiators
+          <strong>Pulmonary Function / Sleep Lab certifications</strong>
         </li>
       </ol>
 
       <h2 id="global">US, Canada &amp; Gulf Opportunities</h2>
       <ul>
         <li>
-          <strong>USA</strong> — The biggest opportunity. After clearing NBRC CRT + RRT,
-          state-licensed RTs earn $65,000–95,000 starting (more in California, Texas,
-          NY). Many Indian RT graduates aim for this pathway directly
+          <strong>USA</strong> — NBRC CRT + RRT + state licensure
         </li>
         <li>
-          <strong>Canada</strong> — CSRT registration. Provinces like Ontario, BC,
-          Alberta actively hire Indian-trained RTs. CAD 70,000–95,000 starting
+          <strong>Canada</strong> — Provincial registration
         </li>
         <li>
-          <strong>UK</strong> — Critical Care/Respiratory Practitioner roles, NHS Band
-          5/6. GBP 28,407–34,581 starting
-        </li>
-        <li>
-          <strong>Australia</strong> — AHPRA assessment. AUD 75,000–110,000 starting
+          <strong>UK</strong> — Critical Care/Respiratory Practitioner roles in the NHS
         </li>
         <li>
           <strong>Gulf</strong> — Saudi, UAE, Qatar, Kuwait, Oman — DHA/HAAD/Prometric/
-          SCFHS. Salary: ₹15–28 LPA + housing + flights
+          SCFHS
         </li>
       </ul>
 
@@ -199,17 +126,13 @@ export default function RespiratoryTherapyContent() {
           postings
         </li>
         <li>
-          Hands-on training with multiple ventilator platforms (Hamilton, Drager,
-          Maquet, Mindray) — the same brands used in 90% of Indian ICUs
+          Hands-on training on ventilators
         </li>
         <li>
-          Senior learners include practicing intensivists and pulmonologists
+          Learn from experienced pulmonologists
         </li>
         <li>
-          Strong NBRC exam preparation track for US-aspiring learners
-        </li>
-        <li>
-          Excellent campus —{" "}
+          Campus —{" "}
           <Link href="/lab">advanced learning labs</Link>,{" "}
           <Link href="/library">digital learning commons</Link>,{" "}
           <Link href="/hostel">on-campus hostel</Link>,{" "}

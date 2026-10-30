@@ -4,48 +4,35 @@ export default function EmergencyCareContent() {
   return (
     <>
       <p>
-        India loses <strong>4.5 lakh people to road accidents</strong> every year — the
-        highest absolute number in the world (NCRB 2024). Half of these deaths happen in
-        the "golden hour" between injury and definitive care. Behind every saved life is
-        an emergency care technologist who triaged, stabilised, and transported the
-        patient. Yet India has fewer than <strong>15,000 trained emergency care
-        technologists</strong> for a country that needs at least 100,000. If you're
-        considering{" "}
+        An emergency care technologist triages, stabilises, and transports patients
+        between injury and definitive care. If you're considering{" "}
         <Link href="/accident-emergency-care">
           Bachelor of Emergency Medical Technologist (Paramedic)
         </Link>{" "}
         at JKKN, here's what the career, daily work, and growth path actually look like.
       </p>
 
-      <h2 id="industry">Trauma Care Expansion in India</h2>
+      <h2 id="industry">Emergency Care Settings in India</h2>
       <p>
-        Three structural shifts are creating massive demand:
+        Settings where emergency care technologists work:
       </p>
       <ul>
         <li>
-          <strong>National Trauma Care Programme</strong> — Government is funding Level
-          1 and Level 2 trauma centres at every district hospital and AIIMS facility.
-          Each centre needs 12–20 trained emergency care staff
+          <strong>Trauma centres</strong> — Level 1 and Level 2 trauma care
         </li>
         <li>
-          <strong>108 ambulance expansion</strong> — GVK EMRI, Ziqitza, and state
-          ambulance services now operate over 30,000 ambulances nationwide, each needing
-          paramedic-grade staff
+          <strong>108 ambulance service</strong> — Pre-hospital care with state
+          ambulance services
         </li>
         <li>
-          <strong>Corporate ER expansion</strong> — Apollo, Fortis, Medanta, KMCH, MIOT
-          have all transformed their emergency departments into 24×7 trauma-ready
-          centres requiring trained emergency care technologists
+          <strong>Hospital emergency departments</strong> — 24×7 trauma-ready
+          emergency care
         </li>
         <li>
-          <strong>Air ambulance services</strong> — Companies like ICATT, Aviation
-          Medicine, and Medulance hire trained emergency care personnel for high-acuity
-          inter-hospital transfers
+          <strong>Air ambulance services</strong> — High-acuity inter-hospital transfers
         </li>
         <li>
-          <strong>Disaster response &amp; oil-rig medical services</strong> — Indian
-          emergency care techs are hired by global oil/gas and disaster response
-          organisations
+          <strong>Disaster response &amp; oil-rig medical services</strong>
         </li>
       </ul>
 
@@ -80,95 +67,57 @@ export default function EmergencyCareContent() {
         </li>
         <li>
           <strong>Trauma Centre Specialist</strong> — Dedicated trauma centre roles in
-          Level 1 trauma facilities. Highest paying within hospital ER
+          Level 1 trauma facilities
         </li>
         <li>
           <strong>108 / Ambulance Paramedic</strong> — Pre-hospital care role with state
-          and private ambulance services. EMT-Basic and EMT-Advanced certifications
-          accelerate growth
+          and private ambulance services
         </li>
         <li>
-          <strong>Air Ambulance Medical Crew</strong> — ICATT, Aviation Medicine, and
-          corporate aviation health teams. Niche, well paid, requires aviation medicine
-          certification
+          <strong>Air Ambulance Medical Crew</strong> — Corporate aviation health
+          teams. Requires aviation medicine certification
         </li>
         <li>
           <strong>Industrial Medical Officer</strong> — Oil rigs, mines, manufacturing
-          plants. Excellent pay, often international postings
+          plants
         </li>
         <li>
-          <strong>Disaster Response Specialist</strong> — NDRF, SDMA, international
-          humanitarian organisations
+          <strong>Disaster Response Specialist</strong> — International humanitarian
+          organisations
         </li>
         <li>
-          <strong>Emergency Department In-Charge</strong> — After 5–7 years, manage ER
+          <strong>Emergency Department In-Charge</strong> — Manage ER
           technician teams, quality compliance, NABH/JCI ER protocols
         </li>
       </ul>
 
-      <h2 id="salary">Salary Outlook in India</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Role &amp; Experience</th>
-            <th>Tier-1 Corporate</th>
-            <th>Tier-2 / Government</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Hospital ER Technologist (0–1 years)</td>
-            <td>₹2.4 – 4 LPA</td>
-            <td>₹2.2 – 3.5 LPA</td>
-          </tr>
-          <tr>
-            <td>108 / Ambulance Paramedic</td>
-            <td>₹2.6 – 4 LPA</td>
-            <td>₹2.4 – 3.8 LPA</td>
-          </tr>
-          <tr>
-            <td>Mid-level (3–5 years)</td>
-            <td>₹4.5 – 7 LPA</td>
-            <td>₹4 – 6 LPA</td>
-          </tr>
-          <tr>
-            <td>Trauma Centre Specialist</td>
-            <td>₹6 – 10 LPA</td>
-            <td>₹5 – 8 LPA</td>
-          </tr>
-          <tr>
-            <td>Air Ambulance Crew</td>
-            <td>₹8 – 14 LPA</td>
-            <td>—</td>
-          </tr>
-          <tr>
-            <td>Industrial Medical Officer (oil rig)</td>
-            <td>₹10 – 22 LPA</td>
-            <td>—</td>
-          </tr>
-        </tbody>
-      </table>
+      <h2 id="salary">How Pay Works in India</h2>
+      <p>
+        JKKN publishes no salary figure for its graduates, and no official survey gives
+        private-hospital pay for emergency medical technologists. Pay depends on the
+        employer, the city, shift work and experience. For government posts, the pay
+        level is printed in each recruitment notification (for example TN MRB, AIIMS or
+        ESIC) — check the current notification for the post you want.
+      </p>
 
-      <h2 id="skills">Skills &amp; Certifications That Multiply Your Value</h2>
+      <h2 id="skills">Skills &amp; Certifications</h2>
       <ol>
         <li>
-          <strong>BLS + ACLS</strong> — Mandatory for all emergency care work
+          <strong>BLS + ACLS</strong>
         </li>
         <li>
-          <strong>ATLS (Advanced Trauma Life Support)</strong> — Even technician-level
-          ATLS Provider course adds enormous value
+          <strong>ATLS (Advanced Trauma Life Support)</strong>
         </li>
         <li>
           <strong>PALS (Paediatric Advanced Life Support)</strong> — For paediatric ER
           and hospital ER tracks
         </li>
         <li>
-          <strong>NIMS / FCCS</strong> — Disaster response and critical care care
+          <strong>NIMS / FCCS</strong> — Disaster response and critical care
           credentialing
         </li>
         <li>
-          <strong>EMT-Basic / EMT-Advanced certification</strong> — NHM accredited
-          courses; mandatory for international EMT roles
+          <strong>EMT-Basic / EMT-Advanced certification</strong>
         </li>
         <li>
           <strong>Aviation Medicine training</strong> — For air ambulance and offshore
@@ -184,27 +133,23 @@ export default function EmergencyCareContent() {
       <ul>
         <li>
           <strong>Gulf countries</strong> — Saudi (SCFHS), UAE (DHA/HAAD), Qatar
-          (Prometric), Oman, Kuwait — most popular international move for Indian
-          emergency care techs. Salary: ₹15–30 LPA + housing + flights. Roles span
-          hospital ER, oil-rig medical, and pre-hospital services
+          (Prometric), Oman, Kuwait. Roles span hospital ER, oil-rig medical, and
+          pre-hospital services
         </li>
         <li>
           <strong>United Kingdom</strong> — Emergency Care Assistant / Emergency
-          Medical Technician (NHS Band 3-5) via HCPC route or direct NHS recruitment.
-          GBP 22,000–32,000 starting
+          Medical Technician via HCPC route
         </li>
         <li>
           <strong>Australia</strong> — Paramedic roles via additional Bachelor of
-          Paramedicine. AUD 75,000–110,000 starting
+          Paramedicine
         </li>
         <li>
-          <strong>USA</strong> — EMT-B and EMT-Paramedic exam pathways. Indian degree
-          counts toward credentialing
+          <strong>USA</strong> — EMT-B and EMT-Paramedic exam pathways
         </li>
         <li>
-          <strong>Offshore oil-rig and merchant marine medical roles</strong> — Highly
-          paid, work rotation schedules (60 days on / 30 off). Major employers: Shell,
-          ONGC, Reliance, BP, Schlumberger
+          <strong>Offshore oil-rig and merchant marine medical roles</strong> — Work
+          rotation schedules
         </li>
       </ul>
 
@@ -222,7 +167,7 @@ export default function EmergencyCareContent() {
           mannequins, splints, and stretcher equipment
         </li>
         <li>
-          BLS, ACLS, ATLS Provider preparation track during the final year
+          ACLS, BLS &amp; PALS certified training
         </li>
         <li>
           On-campus{" "}
