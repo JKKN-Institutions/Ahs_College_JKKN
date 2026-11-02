@@ -1,6 +1,6 @@
 import { createPageMetadata } from "@/lib/metadata";
 import { COURSE_FAQS } from "@/lib/course-faqs";
-import { CARDIAC_LIST_SOURCE, GOVERNMENT_CARDIAC_COUNT } from "@/lib/cardiac-colleges-tn";
+import { CARDIAC_LIST_SOURCE, GOVERNMENT_CARDIAC_COUNT, JKKN_CARDIAC_SEATS } from "@/lib/cardiac-colleges-tn";
 
 // Canonical: SELF, since 2026-09-23 (was /admissions/cardiac-technology under DEP-15, 2026-08-08).
 //
@@ -14,9 +14,14 @@ import { CARDIAC_LIST_SOURCE, GOVERNMENT_CARDIAC_COUNT } from "@/lib/cardiac-col
 //
 // A canonical is a hint and reverts in one deploy - this is a two-way door. Re-read GSC per-page
 // 3-4 weeks after deploy; revert only if the admissions page's fee/apply queries fall.
+//
+// Title + meta (2026-11-02, 10,300-lead plan AHS Step 1): the top mobile query on this page is
+// "bsc cardiology" (484 impressions @ 8.4, GSC 2026-08-02..10-30), ahead of "bsc cardiac technology"
+// (308), and the old title never said "Cardiology". The meta now leads with JKKN's own facts; the
+// "no minimum %" rule stays on the page only, where it is attributed to the TN prospectus.
 export const metadata = createPageMetadata({
-  title: "BSc Cardiac Technology Colleges in Tamilnadu | JKKN",
-  description: `${CARDIAC_LIST_SOURCE.totalInstitutions} institutions offer BSc Cardiac Technology in Tamilnadu (TN Dr. MGR Medical University, ${CARDIAC_LIST_SOURCE.year}): ${GOVERNMENT_CARDIAC_COUNT} government, Namakkal, Erode & Salem lists, plus JKKN.`,
+  title: "BSc Cardiac Technology (Cardiology): Colleges in TN | JKKN",
+  description: `JKKN BSc Cardiac Technology, Komarapalayam: ${JKKN_CARDIAC_SEATS} seats, 3 yrs + 1 yr internship, Class 12 PCB. Plus all ${CARDIAC_LIST_SOURCE.totalInstitutions} Tamil Nadu colleges, ${GOVERNMENT_CARDIAC_COUNT} of them govt.`,
   path: "/cardiac-technology",
   keywords: [
     "bsc cardiac technology colleges in tamilnadu",

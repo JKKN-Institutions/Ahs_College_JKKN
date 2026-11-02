@@ -2,9 +2,12 @@ import { createPageMetadata } from "@/lib/metadata";
 import { COURSE_FAQS } from "@/lib/course-faqs";
 import { PA_LIST_SOURCE, PA_GOVT_COLLEGES, PA_JKKN_SEATS } from "@/lib/pa-colleges-tn";
 
+// Title + meta (2026-11-02, 10,300-lead plan AHS Step 1): searchers type "physician assistant"
+// ("physician assistant course" 345 mobile impressions @ 8.2, GSC 2026-08-02..10-30; "b.pa" 1 in 28
+// days), so the search name leads and the official 2026-27 name B.PA follows in brackets.
 export const metadata = createPageMetadata({
-  title: "B.PA Physician Associates Course & Colleges in TN | JKKN AHS",
-  description: `${PA_LIST_SOURCE.totalInstitutions} institutions offer B.PA Physician Associates (formerly BSc Physician Assistant) in TN (TNMGRMU ${PA_LIST_SOURCE.year}), ${PA_GOVT_COLLEGES.length} govt. Govt list, seats, JKKN ${PA_JKKN_SEATS} seats.`,
+  title: "Physician Assistant Course (B.PA) & Colleges in TN | JKKN",
+  description: `JKKN Physician Assistant course (now B.PA), Komarapalayam: ${PA_JKKN_SEATS} seats, 3 yrs + 1 yr internship, Class 12 PCB. Plus all ${PA_LIST_SOURCE.totalInstitutions} TN colleges, ${PA_GOVT_COLLEGES.length} govt.`,
   path: "/physician-assistant",
   keywords: [
     "physician assistant course in tamilnadu",

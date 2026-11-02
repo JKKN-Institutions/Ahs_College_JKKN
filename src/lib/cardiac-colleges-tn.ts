@@ -92,3 +92,8 @@ export function districtTotals(district: District) {
 export const GOVERNMENT_CARDIAC_SEATS = GOVERNMENT_CARDIAC_COLLEGES.reduce((sum, r) => sum + r.intake, 0);
 
 export const GOVERNMENT_CARDIAC_COUNT = GOVERNMENT_CARDIAC_COLLEGES.length;
+
+/** JKKN's own B.Sc Cardiac Technology intake on the same list (code 825), read off its row. */
+const jkknCardiacRow = CARDIAC_COLLEGES_BY_DISTRICT.Namakkal.find((r) => r.isJkkn);
+if (!jkknCardiacRow) throw new Error("cardiac-colleges-tn: the JKKN row (isJkkn) is missing");
+export const JKKN_CARDIAC_SEATS = jkknCardiacRow.intake;
