@@ -18,6 +18,10 @@ import { Breadcrumb } from '@/components/Breadcrumb';
 import AhsEnquiryForm from "@/components/lead/AhsEnquiryForm";
 import { DEFAULT_PROGRAMME_BY_PAGE } from "@/lib/ahs-programmes";
 import { PaCollegesTamilNadu } from "@/components/PaCollegesTamilNadu";
+import { CourseQuickAnswer } from "@/components/CourseQuickAnswer";
+import { COURSE_QUICK_FACTS } from "@/lib/course-quick-facts";
+
+const QUICK_FACTS = COURSE_QUICK_FACTS["physician-assistant"];
 
 export default function PhysicianAssistant() {
     return (
@@ -34,6 +38,7 @@ export default function PhysicianAssistant() {
                 </div>
                 <HeroSection />
                 <StatsSection />
+                <CourseQuickAnswer facts={QUICK_FACTS} />
                 <AboutSection />
                 <EligibilitySection />
                 <SyllabusSection />
@@ -141,7 +146,7 @@ export default function PhysicianAssistant() {
 
             {/* DEP-34 - enquiry form. Posts to the CRM from the server; a browser cannot POST there */}
             {/* directly - the endpoint sends no Access-Control-Allow-Origin header. */}
-            <section className="bg-gradient-to-br from-[#0b6d41] to-[#12a15f] py-16">
+            <section id="enquiry-form" className="bg-gradient-to-br from-[#0b6d41] to-[#12a15f] py-16 scroll-mt-24">
                 <div className="max-w-3xl mx-auto px-4">
                     <h2 className="text-white text-2xl md:text-3xl font-black text-center mb-2">Get a Call Back</h2>
                     <p className="text-white/80 text-center text-sm mb-8">Leave your details and our admission team will contact you within 24 hours.</p>
@@ -215,8 +220,8 @@ function HeroSection() {
 function StatsSection() {
     const stats = [
         { label: "Years Duration", value: "3+1", icon: <Clock className="w-5 h-5" /> },
-        { label: "Hospital Partners", value: "25+", icon: <Building2 className="w-5 h-5" /> },
-        { label: "Clinical Hours", value: "2000+", icon: <Activity className="w-5 h-5" /> },
+        { label: "Colleges in TN", value: String(QUICK_FACTS.total), icon: <Building2 className="w-5 h-5" /> },
+        { label: "JKKN Seats", value: String(QUICK_FACTS.seats), icon: <Activity className="w-5 h-5" /> },
     ];
 
     return (
@@ -250,7 +255,7 @@ function AboutSection() {
                 <h2 className="text-3xl font-black text-[#0b6d41] mb-6">What is Bachelor of Physician Associates (B.PA)?</h2>
                 <div className="text-gray-600 leading-relaxed text-lg space-y-6 text-justify">
                     <p>
-                        Bachelor of Physician Associates (B.PA) is a specialized undergraduate program designed to train healthcare professionals who work alongside physicians in diagnosing illnesses, developing treatment plans, and providing patient care. Physician Associates are licensed medical professionals who practice medicine under the supervision of physicians, extending healthcare access to more patients.
+                        Bachelor of Physician Associates (B.PA) is a specialized undergraduate program designed to train healthcare professionals who work alongside physicians in diagnosing illnesses, developing treatment plans, and providing patient care. Physician Associates work under a doctor's supervision to examine patients and support diagnosis, treatment and patient care.
                     </p>
                     <p>
                         The learning framework covers clinical medicine fundamentals, patient assessment techniques, diagnostic reasoning, pharmacology, medical procedures, emergency care, surgical assistance, and patient management across various specialties. Learners gain expertise in physical examinations, ordering diagnostic tests, interpreting results, prescribing medications, and counseling patients.
@@ -264,7 +269,7 @@ function AboutSection() {
                     {[
                         { title: "Clinical Excellence", icon: <Stethoscope />, desc: "Comprehensive patient care training" },
                         { title: "Diagnostic Skills", icon: <ClipboardList />, desc: "Patient assessment & diagnosis support" },
-                        { title: "Hands-on Training", icon: <Shield />, desc: "2000+ hours clinical experience" },
+                        { title: "Hands-on Training", icon: <Shield />, desc: "1-year compulsory internship after 3 years of study" },
                         { title: "Expert Senior Learners", icon: <UserCog />, desc: "Learn from physicians & specialists" },
                     ].map((item, i) => (
                         <div key={i} className="flex gap-4 items-start p-4 bg-white rounded-xl hover:shadow-lg transition-all border border-gray-100">
@@ -287,9 +292,9 @@ function AboutSection() {
                     <ul className="space-y-4 text-sm">
                         {[
                             { label: "Duration", value: "3 + 1" },
-                            { label: "Degree", value: "B.Sc" },
+                            { label: "Degree", value: "B.PA" },
                             { label: "Sanctioned Intake", value: "10 Seats" },
-                            { label: "Session", value: "2026-2027" },
+                            { label: "Seat list", value: `TNMGRMU ${QUICK_FACTS.listYear}` },
                             { label: "Affiliation", value: "TN Dr. M.G.R. Medical University" },
                             { label: "Fee", value: "Contact Us" },
                         ].map((item, i) => (
@@ -299,14 +304,10 @@ function AboutSection() {
                             </li>
                         ))}
                     </ul>
-                    <button
-                        onClick={() => {
-                            alert("For course brochure, please contact our admissions office at +91 93458 55001 or visit the contact page.");
-                        }}
-                        className="w-full mt-8 py-3 bg-[#0b6d41] text-white font-bold rounded-xl shadow-lg hover:bg-[#095c37] transition-all flex items-center justify-center gap-2"
-                    >
-                        <Download className="w-4 h-4" /> Download Brochure
-                    </button>
+                    <a href="#enquiry-form"
+                        className="w-full mt-8 py-3 bg-[#0b6d41] text-white font-bold rounded-xl shadow-lg hover:bg-[#095c37] transition-all flex items-center justify-center gap-2">
+                        <Download className="w-4 h-4" /> Request Brochure
+                    </a>
                 </div>
             </div>
         </section>

@@ -18,6 +18,10 @@ import { Breadcrumb } from '@/components/Breadcrumb';
 import AhsEnquiryForm from "@/components/lead/AhsEnquiryForm";
 import { DEFAULT_PROGRAMME_BY_PAGE } from "@/lib/ahs-programmes";
 import { DialysisCollegesTamilNadu } from "@/components/DialysisCollegesTamilNadu";
+import { CourseQuickAnswer } from "@/components/CourseQuickAnswer";
+import { COURSE_QUICK_FACTS } from "@/lib/course-quick-facts";
+
+const QUICK_FACTS = COURSE_QUICK_FACTS["dialysis-technology"];
 
 export default function DialysisTechnology() {
     return (
@@ -34,6 +38,7 @@ export default function DialysisTechnology() {
                 </div>
                 <HeroSection />
                 <StatsSection />
+                <CourseQuickAnswer facts={QUICK_FACTS} />
                 <AboutSection />
                 <EligibilitySection />
                 <SyllabusSection />
@@ -141,7 +146,7 @@ export default function DialysisTechnology() {
 
             {/* DEP-34 - enquiry form. Posts to the CRM from the server; a browser cannot POST there */}
             {/* directly - the endpoint sends no Access-Control-Allow-Origin header. */}
-            <section className="bg-gradient-to-br from-[#0b6d41] to-[#12a15f] py-16">
+            <section id="enquiry-form" className="bg-gradient-to-br from-[#0b6d41] to-[#12a15f] py-16 scroll-mt-24">
                 <div className="max-w-3xl mx-auto px-4">
                     <h2 className="text-white text-2xl md:text-3xl font-black text-center mb-2">Get a Call Back</h2>
                     <p className="text-white/80 text-center text-sm mb-8">Leave your details and our admission team will contact you within 24 hours.</p>
@@ -215,8 +220,8 @@ function HeroSection() {
 function StatsSection() {
     const stats = [
         { label: "Years Duration", value: "3+1", icon: <Clock className="w-5 h-5" /> },
-        { label: "Hospital Partners", value: "25+", icon: <Building2 className="w-5 h-5" /> },
-        { label: "Clinical Hours", value: "2000+", icon: <Activity className="w-5 h-5" /> },
+        { label: "Colleges in TN", value: String(QUICK_FACTS.total), icon: <Building2 className="w-5 h-5" /> },
+        { label: "JKKN Seats", value: String(QUICK_FACTS.seats), icon: <Activity className="w-5 h-5" /> },
     ];
 
     return (
@@ -263,7 +268,7 @@ function AboutSection() {
 
                     <div className="grid md:grid-cols-2 gap-6 mt-10">
                         {[
-                            { title: "Clinical Excellence", icon: <Shield />, desc: "2000+ hours hands-on training" },
+                            { title: "Clinical Excellence", icon: <Shield />, desc: "1-year compulsory internship after 3 years of study" },
                             { title: "Expert Guidance", icon: <Stethoscope />, desc: "Learn from nephrologists" },
                         ].map((item, i) => (
                             <div key={i} className="flex gap-4 items-start p-4 bg-white rounded-xl hover:shadow-lg transition-all border border-gray-100">
@@ -286,9 +291,9 @@ function AboutSection() {
                         <ul className="space-y-4 text-sm">
                             {[
                                 { label: "Duration", value: "3 + 1" },
-                                { label: "Degree", value: "B.Sc" },
+                                { label: "Degree", value: "B.DTT" },
                                 { label: "Sanctioned Intake", value: "5 Seats" },
-                                { label: "Session", value: "2026-2027" },
+                                { label: "Seat list", value: `TNMGRMU ${QUICK_FACTS.listYear}` },
                                 { label: "Affiliation", value: "TN Dr. M.G.R. Medical University" },
                                 { label: "Fee", value: "Contact Us" },
                             ].map((item, i) => (
@@ -298,9 +303,9 @@ function AboutSection() {
                                 </li>
                             ))}
                         </ul>
-                        <button className="w-full mt-8 py-3 bg-[#0b6d41] text-white font-bold rounded-xl shadow-lg hover:bg-[#095c37] transition-all flex items-center justify-center gap-2">
-                            <Download className="w-4 h-4" /> Download Brochure
-                        </button>
+                        <a href="#enquiry-form" className="w-full mt-8 py-3 bg-[#0b6d41] text-white font-bold rounded-xl shadow-lg hover:bg-[#095c37] transition-all flex items-center justify-center gap-2">
+                            <Download className="w-4 h-4" /> Request Brochure
+                        </a>
                     </div>
                 </div>
             </div>
