@@ -49,11 +49,11 @@ export default function NamakkalPage() {
         <section className="bg-gradient-to-br from-[#0b6d41] to-[#12a15f] py-16">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-white text-2xl md:text-3xl font-black text-center mb-2">
-              Admissions 2026 &mdash; Get a Call Back
+              Admissions 2026 &mdash; Talk to Our Admission Team
             </h2>
             <p className="text-white/80 text-center text-sm mb-8">
               Students from Namakkal join JKKN College of Allied Health Sciences every year. Leave
-              your details and our admission team will contact you within 24 hours.
+              your details, then call or WhatsApp our admission team right away.
             </p>
             <AhsEnquiryForm sourcePage="city-namakkal" />
           </div>

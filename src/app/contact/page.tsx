@@ -127,7 +127,7 @@ export default function ContactPage() {
                                     Start Your Journey Today
                                 </h3>
                                 <p className="text-gray-600 mb-6">
-                                    Leave your details and our admission team will contact you within 24 hours.
+                                    Fill your details, then call or WhatsApp our admission team right away.
                                 </p>
 
                                 {/* DEP-34 - enquiry form. Posts to the CRM from the server. The form is its
