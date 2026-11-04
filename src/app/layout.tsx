@@ -22,8 +22,18 @@ const poppins = Poppins({
 
 const LAST_UPDATED = "2026-03-28";
 
+// ANALYTICS_OFF=1 at build time is for a LOCAL test build only (the 2026-11-04 test of the Call /
+// WhatsApp gate runs `next start` on this laptop). Vercel never sets it, so production and preview
+// builds load every tag exactly as before.
+const IS_PRODUCTION_BUILD =
+  process.env.NODE_ENV === "production" && process.env.ANALYTICS_OFF !== "1";
+
 export const metadata = {
   icons: { icon: "/ahs-logo.svg" },
+  // iPhone Safari turns any phone number in plain text into a dial link of its own, which skipped
+  // the Call / WhatsApp form gate (user's choice 2026-11-04: those taps must also go form -> dialer).
+  // Off here; EnquiryModal's plain-number tap listener takes those taps instead.
+  formatDetection: { telephone: false },
   ...createPageMetadata({
     title: "JKKN College of Allied Health Sciences, Tamil Nadu",
     description: "JKKN College of Allied Health Sciences, Komarapalayam: 9 UG programmes, 82 university-sanctioned seats, partner-hospital training, fees, placement support.",
@@ -218,8 +228,11 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="author" content="JKKN College of Allied Health Sciences" />
+        {/* Analytics load only in a real production build (2026-11-04): a local test - the Call /
+            WhatsApp gate test included - must not write test taps into GTM, Clarity, GA4 or the
+            Meta pixel. Vercel production and preview builds are unaffected. */}
         {/* Google Tag Manager */}
-        <script dangerouslySetInnerHTML={{ __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-W5JJJVHB');` }} />
+        {IS_PRODUCTION_BUILD && <script dangerouslySetInnerHTML={{ __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-W5JJJVHB');` }} />}
         {/* End Google Tag Manager */}
         {/* Microsoft Clarity - B-06, 2026-08-27. Project vemha068xm, verified against
             clarity.ms with a control before it was written here: a valid id returns HTTP 200 and
@@ -227,13 +240,13 @@ export default function RootLayout({
             went in, no JKKN site in the fleet carried the tag - all eight Clarity projects
             existed and none of them had ever received a session, which is why B-06 could not
             answer the rage-click and dead-click half of its own brief. */}
-        <script dangerouslySetInnerHTML={{ __html: `(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window, document, "clarity", "script", "vemha068xm");` }} />
+        {IS_PRODUCTION_BUILD && <script dangerouslySetInnerHTML={{ __html: `(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window, document, "clarity", "script", "vemha068xm");` }} />}
         {/* End Microsoft Clarity */}
         {/* Google Analytics 4 */}
-        <GAScript />
+        {IS_PRODUCTION_BUILD && <GAScript />}
         {/* End Google Analytics 4 */}
         {/* Meta Pixel */}
-        <MetaPixelScript />
+        {IS_PRODUCTION_BUILD && <MetaPixelScript />}
         {/* End Meta Pixel */}
         <script
           type="application/ld+json"
@@ -254,6 +267,7 @@ export default function RootLayout({
       </head>
       <body className={`${poppins.variable} antialiased`} suppressHydrationWarning>
         {/* Google Tag Manager (noscript) */}
+        {IS_PRODUCTION_BUILD && (
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-W5JJJVHB"
@@ -262,12 +276,13 @@ export default function RootLayout({
             style={{ display: "none", visibility: "hidden" }}
           />
         </noscript>
+        )}
         {/* End Google Tag Manager (noscript) */}
         {/* Meta Pixel (noscript) */}
-        <MetaPixelNoscript />
+        {IS_PRODUCTION_BUILD && <MetaPixelNoscript />}
         {/* End Meta Pixel (noscript) */}
-        <MetaPixelRouteTracker />
-        <GARouteTracker />
+        {IS_PRODUCTION_BUILD && <MetaPixelRouteTracker />}
+        {IS_PRODUCTION_BUILD && <GARouteTracker />}
         <ConversionTracking />
         <LayoutWrapper>
           {children}

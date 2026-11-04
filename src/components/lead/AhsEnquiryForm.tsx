@@ -14,15 +14,24 @@
 // The three-step strip answers the parent's first doubt ("what happens after I give my number?")
 // and the trust line answers the second ("is this college genuine?"). Fields, labels, button text
 // and the CRM payload are unchanged.
+//
+// CALL / WHATSAPP (user's choice 2026-11-04, the Dental pattern; the user OK'd this change to the
+// frozen AHS form for it). No form ends on the "we call in 24 hours" thank-you screen any more:
+// every form shows "Call Counsellor" + "Chat on WhatsApp", and ONE tap sends the lead (keepalive
+// fetch to /api/enquiry, the same server action behind it) and opens the dialer / WhatsApp. The
+// server action stays as the form's action for visitors without JavaScript. Fields, the hidden
+// source_page, the programme ids and the CRM payload are unchanged.
 
 "use client"
 
-import { useActionState, useEffect, useId, useRef } from "react"
+import { useActionState, useEffect, useId, useRef, useState, type FormEvent } from "react"
 import { CheckCircle2, ChevronDown } from "lucide-react"
 import { submitAhsEnquiry, type AhsEnquiryState } from "@/app/actions/ahs-enquiry"
 import CampaignFields from "@/components/lead/CampaignFields"
 import { AHS_PROGRAMMES } from "@/lib/ahs-programmes"
 import { ENQUIRY_DONE_KEY, writeStore } from "@/lib/enquiry-store"
+import { sendGaEvent } from "@/lib/ga-event"
+import { GATE_PHONE_DISPLAY, telGateUrl, whatsappGateUrl, type GateIntent } from "@/lib/call-gate"
 
 const ADMISSION_PHONE = "+919345855001"
 const ADMISSION_PHONE_DISPLAY = "+91 93458 55001"
@@ -50,14 +59,24 @@ type Props = {
   compact?: boolean
   /** No white card of its own — for a host that already is the white card (homepage hero, popup). */
   bare?: boolean
+  /** Call / WhatsApp gate (src/lib/call-gate.ts): ONE button, "Call Counsellor" or "Chat on
+   *  WhatsApp" (set by EnquiryModal when a call / WhatsApp link was tapped). Left out (every page
+   *  form and the Enquire Now popup, user's choice 2026-11-04): TWO buttons, "Call Counsellor" +
+   *  "Chat on WhatsApp". Either way ONE tap sends the lead and opens the app. */
+  gate?: GateIntent
 }
+
+type GatePhase =
+  | { step: "form" }
+  | { step: "opened"; result: "waiting" | "saved" | "failed"; programmeId: string; intent: GateIntent }
 
 export default function AhsEnquiryForm({
   sourcePage,
   defaultProgrammeId,
-  heading = "Get a Call Back",
+  heading = "Call or WhatsApp our admission team",
   compact = false,
   bare = false,
+  gate,
 }: Props) {
   // Unique per instance: the homepage can show this form twice (hero card + popup).
   const uid = useId()
@@ -102,6 +121,121 @@ export default function AhsEnquiryForm({
     ? ""
     : "bg-white rounded-[20px] shadow-[0_18px_40px_rgba(3,40,22,0.35)] p-4 sm:p-6"
 
+  const [gatePhase, setGatePhase] = useState<GatePhase>({ step: "form" })
+  // Which of the two buttons was pressed. Read from SubmitEvent.submitter where the browser has it;
+  // this ref (set on the button's own click) covers the rest. Enter in a box = the first button, Call.
+  const chosen = useRef<GateIntent>(gate ?? "call")
+  const eventFor = (intent: GateIntent) => (intent === "call" ? "gate_call" : "gate_wa")
+
+  // Opens the dialer / WhatsApp. Called inside the visitor's tap (the browser allows another app
+  // only then), and again from the fallback button if the phone ignored the first try.
+  const openApp = (programmeId: string, intent: GateIntent) => {
+    if (intent === "call") {
+      window.location.assign(telGateUrl)
+      return
+    }
+    const url = whatsappGateUrl(programmeId, window.location.pathname)
+    // A new tab keeps this page (and the request still in flight) alive; a blocked tab falls back
+    // to the same tab, where keepalive still lets the request finish.
+    const tab = window.open(url, "_blank")
+    if (tab) tab.opener = null
+    else window.location.assign(url)
+  }
+
+  // ONE tap: check the 3 boxes, send the lead without waiting, open the app at once.
+  const onGateSubmit = (e: FormEvent<HTMLFormElement>) => {
+    // preventDefault also stops React's form action (it skips a prevented submit), so the server
+    // action runs only when JavaScript is off - the progressive-enhancement path stays intact.
+    e.preventDefault()
+    const form = e.currentTarget
+    const submitter = (e.nativeEvent as SubmitEvent).submitter as HTMLButtonElement | null
+    const fromButton = submitter?.value === "whatsapp" || submitter?.value === "call" ? submitter.value : null
+    const intent: GateIntent = gate ?? (fromButton as GateIntent | null) ?? chosen.current
+    const gateEvent = eventFor(intent)
+    const nameBox = form.elements.namedItem("name") as HTMLInputElement | null
+    if (nameBox) nameBox.setCustomValidity(nameBox.value.trim().length < 2 ? "Please enter your full name." : "")
+    // Same three rules as the server (name, 10-digit mobile from 6-9, a programme). Checked here
+    // because the app opens before the server has answered.
+    if (!form.reportValidity()) return
+
+    const data = new FormData(form)
+    const programmeId = String(data.get("programme") ?? "")
+    const body = new URLSearchParams()
+    data.forEach((value, key) => {
+      if (typeof value === "string") body.append(key, value)
+    })
+    // No trailing slash: this site does not set trailingSlash, so "/api/enquiry/" would answer 308.
+    const request = fetch("/api/enquiry", { method: "POST", body, keepalive: true })
+
+    sendGaEvent(`${gateEvent}_launch`, { source_page: sourcePage, page_path: window.location.pathname })
+    openApp(programmeId, intent)
+    setGatePhase({ step: "opened", result: "waiting", programmeId, intent })
+
+    request
+      .then((res) => res.json() as Promise<AhsEnquiryState>)
+      .then((result) => {
+        if (!result.success) throw new Error("not accepted")
+        writeStore(ENQUIRY_DONE_KEY, new Date().toISOString())
+        // Same event, same params as the ordinary form, so lead_form_submit stays one series.
+        sendGaEvent("lead_form_submit", {
+          form_name: "ahs_enquiry",
+          source_page: sourcePage,
+          programme: result.tracking?.programme_id ?? "not_selected",
+          destination: "crm",
+          page_path: window.location.pathname,
+        })
+        sendGaEvent(`${gateEvent}_lead`, { source_page: sourcePage, page_path: window.location.pathname })
+        setGatePhase((p) => (p.step === "opened" ? { ...p, result: "saved" } : p))
+      })
+      .catch(() => {
+        sendGaEvent("lead_form_error", {
+          form_name: "ahs_enquiry",
+          source_page: sourcePage,
+          page_path: window.location.pathname,
+        })
+        sendGaEvent(`${gateEvent}_fail`, { source_page: sourcePage, page_path: window.location.pathname })
+        setGatePhase((p) => (p.step === "opened" ? { ...p, result: "failed" } : p))
+      })
+  }
+
+  if (gatePhase.step === "opened") {
+    const isCall = gatePhase.intent === "call"
+    const gateEvent = eventFor(gatePhase.intent)
+    return (
+      <div className={`${surface} space-y-4 text-center`} role="status" aria-live="polite">
+        <p className="text-[#032816] text-lg font-semibold">
+          {isCall ? "Opening your phone dialer…" : "Opening WhatsApp…"}
+        </p>
+        <p className="text-[#4b5563] text-sm">
+          {isCall
+            ? `Tap the green Call button on your phone to talk to our counsellor at ${GATE_PHONE_DISPLAY}.`
+            : "Your message is typed in WhatsApp. Tap Send to reach our admission team."}
+        </p>
+        {/* A <button>, not an <a>: ConversionTracking counts <a> taps, and this second try must not
+            count as a second call tap. */}
+        <button
+          type="button"
+          onClick={() => {
+            sendGaEvent(`${gateEvent}_fallback`, { source_page: sourcePage, page_path: window.location.pathname })
+            openApp(gatePhase.programmeId, gatePhase.intent)
+          }}
+          className={
+            isCall
+              ? "w-full bg-[#0b6d41] hover:bg-[#095a36] text-white font-bold py-4 rounded-full text-base transition-colors"
+              : "w-full bg-[#25d366] hover:bg-[#1ebe5a] text-[#032816] font-bold py-4 rounded-full text-base transition-colors"
+          }
+        >
+          {isCall ? `Did not open? Call ${GATE_PHONE_DISPLAY}` : "Did not open? Open WhatsApp"}
+        </button>
+        {gatePhase.result === "failed" && (
+          <p className="text-[#b42318] text-sm" role="alert">
+            Your details did not reach our system. Please tell the counsellor your name and course.
+          </p>
+        )}
+      </div>
+    )
+  }
+
   if (state?.success) {
     return (
       <div className={`${surface} space-y-4 text-center`} role="status" aria-live="polite">
@@ -136,11 +270,17 @@ export default function AhsEnquiryForm({
     "w-full bg-white border-[1.5px] border-[#75867e] rounded-xl px-4 py-3 text-base text-[#1f2a24] placeholder:text-[#5f6b66] focus:outline-none focus:border-[#0b6d41] focus:ring-[3px] focus:ring-[#0b6d41]/20"
   const labelCls = "block text-[#032816] text-sm font-semibold mb-1.5"
   const errCls = "text-[#b42318] text-xs mt-1"
-  // No-break space keeps "24 hrs" on one line: at 375 px the strip box broke it as "24 / hrs".
-  const steps = [compact ? "Fill 3 details" : "Fill your details", "We call in 24 hrs", "Get fee and admission details"]
+  // The 3-step strip says what the buttons do (the old "We call in 24 hrs" step went with the
+  // 24-hour call back, 2026-11-04).
+  const steps =
+    gate === "call"
+      ? ["Fill 3 details", "Tap Call Counsellor", "Talk to us now"]
+      : gate === "whatsapp"
+        ? ["Fill 3 details", "Tap Chat on WhatsApp", "Send the message"]
+        : [compact ? "Fill 3 details" : "Fill your details", "Tap Call or WhatsApp", "Talk to us now"]
 
   return (
-    <form action={formAction} className={`${surface} space-y-4 text-left`}>
+    <form action={formAction} onSubmit={onGateSubmit} className={`${surface} space-y-4 text-left`}>
       <input type="hidden" name="source_page" value={sourcePage} />
       <CampaignFields />
 
@@ -155,7 +295,9 @@ export default function AhsEnquiryForm({
         className="absolute left-[-9999px] h-0 w-0 opacity-0"
       />
 
-      <h2 className="sr-only">{heading}</h2>
+      <h2 className="sr-only">
+        {gate === "call" ? "Call our admission counsellor" : gate === "whatsapp" ? "Chat with us on WhatsApp" : heading}
+      </h2>
 
       <ol aria-label="What happens next" className="grid grid-cols-3 gap-1.5">
         {steps.map((step, i) => (
@@ -275,13 +417,27 @@ export default function AhsEnquiryForm({
       </div>
       )}
 
-      <button
-        type="submit"
-        disabled={isPending}
-        className="w-full bg-[#0b6d41] hover:bg-[#095a36] disabled:opacity-60 text-white font-bold py-4 rounded-full text-base transition-colors"
-      >
-        {isPending ? "Submitting…" : compact ? "Get a Call Back" : "Submit Enquiry — Get a Call Back"}
-      </button>
+      {/* One tap = lead + app. Two buttons on every page form and the Enquire Now popup (user's choice
+          2026-11-04: the old "Get a Call Back" ended on a 24-hour thank-you screen); one in a gate. */}
+      {(gate ? [gate] : (["call", "whatsapp"] as GateIntent[])).map((intent) => (
+        <button
+          key={intent}
+          type="submit"
+          name="cta"
+          value={intent}
+          disabled={isPending}
+          onClick={() => {
+            chosen.current = intent
+          }}
+          className={
+            intent === "whatsapp"
+              ? "w-full bg-[#25d366] hover:bg-[#1ebe5a] disabled:opacity-60 text-[#032816] font-bold py-4 rounded-full text-base transition-colors"
+              : "w-full bg-[#0b6d41] hover:bg-[#095a36] disabled:opacity-60 text-white font-bold py-4 rounded-full text-base transition-colors"
+          }
+        >
+          {isPending ? "Submitting…" : intent === "call" ? "Call Counsellor" : "Chat on WhatsApp"}
+        </button>
+      ))}
 
       {state && !state.success && state.error && (
         <p className="text-[#b42318] text-sm text-center" role="alert">
@@ -300,22 +456,6 @@ export default function AhsEnquiryForm({
           </li>
         ))}
       </ul>
-
-      <p className="text-center text-[#4b5563] text-sm">
-        Or call us directly:{" "}
-        <a href={`tel:${ADMISSION_PHONE}`} className="text-[#0b6d41] font-semibold underline">
-          {ADMISSION_PHONE_DISPLAY}
-        </a>{" "}
-        •{" "}
-        <a
-          href={`https://wa.me/${ADMISSION_PHONE.replace("+", "")}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-[#0b6d41] font-semibold underline"
-        >
-          WhatsApp
-        </a>
-      </p>
 
       {compact && (
         <p className="text-center text-[#5f6b66] text-xs">

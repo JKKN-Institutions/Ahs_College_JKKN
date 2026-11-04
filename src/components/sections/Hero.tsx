@@ -56,15 +56,17 @@ export function Hero() {
                         </p>
 
                         {/* 2026-10-16: the call-back button leads; md and up also has the form card on the right */}
-                        <p className="lg:hidden text-sm text-white/90 mb-3">Fill 3 details. Our admission team will call you within 24 hours.</p>
+                        <p className="lg:hidden text-sm text-white/90 mb-3">Fill 3 details, then talk to our admission counsellor right away.</p>
                         <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
+                            {/* Call gate (user's choice 2026-11-04): form, then the dialer opens in the same tap. */}
                             <EnquiryButton
-                                sourcePage="home-hero-btn"
+                                sourcePage="call-gate-home-hero"
+                                intent="call"
                                 fallbackHref={siteConfig.admissionFormUrl}
                                 fallbackLabel="Apply for 2026-27"
                                 className="w-full sm:w-auto px-5 sm:px-6 py-2.5 bg-white text-[#0b6d41] rounded-full font-semibold transition-all hover:bg-white/90 hover:shadow-2xl hover:scale-105 flex items-center justify-center gap-2 text-sm min-h-[44px]"
                             >
-                                Get a Call Back
+                                Call Counsellor
                             </EnquiryButton>
                             <a
                                 href="#programs"
