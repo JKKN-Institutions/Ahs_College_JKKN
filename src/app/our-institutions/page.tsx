@@ -84,7 +84,7 @@ export default function OurInstitutions() {
 
             {/* Floating WhatsApp Button */}
             <a
-                href="https://wa.me/919344555001"
+                href="https://wa.me/919345855001"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="fixed bottom-36 right-2 md:bottom-18 md:right-4 z-50 w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
