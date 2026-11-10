@@ -39,6 +39,17 @@ export default function MedicalRecordScience() {
                 <HeroSection />
                 <StatsSection />
                 <CourseQuickAnswer facts={QUICK_FACTS} />
+                {/* Lead option #4 (round 2, 2026-11-10, user OK in chat): the course-selected form sat 20-23 phone
+                    screens down (#enquiry-form below, kept as it is). A compact copy right after the course answer box,
+                    tagged medical-record-science-top. Same frame as the homepage AdmissionJourney card; AhsEnquiryForm itself is unchanged. */}
+                <section aria-label="Admission enquiry" className="px-4 py-6 sm:py-8">
+                    <div className="max-w-xl mx-auto bg-[#0b6d41] rounded-xl sm:rounded-2xl p-3 sm:p-6">
+                        <h2 className="mb-3 px-1 sm:px-0 sm:mb-4 text-xl sm:text-2xl font-bold text-white leading-snug">
+                            {`Get ${QUICK_FACTS.heading} Fee & Admission Details`}
+                        </h2>
+                        <AhsEnquiryForm sourcePage="medical-record-science-top" defaultProgrammeId={DEFAULT_PROGRAMME_BY_PAGE["medical-record-science"]} compact />
+                    </div>
+                </section>
                 <AboutSection />
                 <EligibilitySection />
                 <SyllabusSection />
