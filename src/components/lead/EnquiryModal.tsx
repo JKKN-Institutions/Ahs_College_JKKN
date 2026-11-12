@@ -85,7 +85,10 @@ export function EnquiryModalProvider({ children }: { children: ReactNode }) {
     setOpen({
       sourcePage: source,
       withPoster: !!options?.withPoster,
-      programmeId: options?.programmeId,
+      // On a course page (or its blog / admissions page) the header "Enquire Now" and the Apply links
+      // now arrive with that course already picked, the same way the phone / WhatsApp gate already
+      // did (2026-11-13, user: fix the pending list). Elsewhere it stays "Select a Programme".
+      programmeId: options?.programmeId ?? programmeForPath(window.location.pathname),
       intent: options?.intent,
     })
   }, [])
