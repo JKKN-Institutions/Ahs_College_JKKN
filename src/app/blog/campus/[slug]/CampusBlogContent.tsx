@@ -1,5 +1,6 @@
 'use client';
 
+import BlogEnquiryBox from '@/components/lead/BlogEnquiryBox';
 import { useState } from 'react';
 import { Clock, Calendar, Tag, MessageSquare, Send, Check, Loader2, ChevronUp, ChevronDown } from 'lucide-react';
 import { createClient } from '@/lib/supabase/client';
@@ -182,6 +183,9 @@ export default function CampusBlogContent({
             ))}
           </div>
         )}
+
+        {/* Enquiry box (user's call 2026-11-13): the comment box below never reaches the CRM. */}
+        <BlogEnquiryBox slug={post.slug} />
 
         {/* ── Comments ──────────────────────────────────────────────────── */}
         <div className="mb-6">

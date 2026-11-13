@@ -1,5 +1,6 @@
 "use client";
 
+import EnquirySection from "@/components/lead/EnquirySection";
 import React from "react";
 import Link from "next/link";
 import { Navbar } from "@/components/layout/Navbar";
@@ -178,6 +179,8 @@ export default function ScholarshipsPage() {
             </div>
           </div>
         </section>
+        {/* Enquiry form (user's call 2026-11-13): an admission page with no form of its own. */}
+        <EnquirySection sourcePage="scholarships" heading="Ask About Scholarships and Fees" />
       </main>
 
       <Footer />

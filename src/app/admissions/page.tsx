@@ -1,5 +1,6 @@
 "use client";
 
+import EnquirySection from "@/components/lead/EnquirySection";
 import React, { useState } from 'react';
 import { nodeText } from "@/lib/node-text";
 import Link from 'next/link';
@@ -182,6 +183,8 @@ export default function AdmissionPage() {
                 <FAQSection />
                 <CTASection />
                 <CrossLinksSection />
+                {/* Enquiry form (user's call 2026-11-13): an admission page with no form of its own. */}
+                <EnquirySection sourcePage="admissions" />
             </main>
 
             <Footer />

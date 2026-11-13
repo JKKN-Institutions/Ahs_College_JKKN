@@ -1,5 +1,6 @@
 "use client";
 
+import EnquirySection from "@/components/lead/EnquirySection";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { siteConfig } from '@/lib/site-config';
@@ -227,6 +228,8 @@ export default function DepartmentsPage() {
             </motion.div>
           </div>
         </section>
+        {/* Enquiry form (user's call 2026-11-13): an admission page with no form of its own. */}
+        <EnquirySection sourcePage="departments" />
       </main>
 
       <Footer />

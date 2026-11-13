@@ -1,3 +1,4 @@
+import EnquirySection from '@/components/lead/EnquirySection';
 import { HOME_FAQS } from '@/lib/home-faqs';
 import { nodeText } from '@/lib/node-text';
 import { Navbar } from '@/components/layout/Navbar';
@@ -49,6 +50,8 @@ export default function FAQPage() {
                 </div>
             </div>
             <FAQ />
+            {/* Enquiry form (user's call 2026-11-13): an admission page with no form of its own. */}
+            <EnquirySection sourcePage="faq" />
         </main>
         <Footer />
         </>

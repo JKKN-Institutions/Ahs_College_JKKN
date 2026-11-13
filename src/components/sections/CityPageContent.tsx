@@ -1,3 +1,4 @@
+import EnquirySection from "@/components/lead/EnquirySection";
 import { CityFAQAccordion } from "@/components/ui/CityFAQAccordion";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
@@ -65,6 +66,8 @@ export function CityPageContent({ city }: CityPageContentProps) {
         <SnippetBaitSection city={city} />
         <CityFAQAccordion cityName={city.cityName} faqs={buildCityFaqs(city)} />
         <ExploreCitiesSection city={city} />
+        {/* Enquiry form (user's call 2026-11-13): an admission page with no form of its own. */}
+        <EnquirySection sourcePage={`city-${city.slug}`} />
       </main>
       <Footer />
     </>

@@ -1,3 +1,4 @@
+import EnquirySection from "@/components/lead/EnquirySection";
 import Link from "next/link";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
@@ -144,6 +145,8 @@ export default function ParamedicalCollegePage() {
             </div>
           </div>
         </section>
+        {/* Enquiry form (user's call 2026-11-13): an admission page with no form of its own. */}
+        <EnquirySection sourcePage="paramedical-list" />
       </main>
       <Footer />
     </>

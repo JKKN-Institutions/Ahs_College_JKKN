@@ -1,5 +1,6 @@
 "use client";
 
+import EnquirySection from "@/components/lead/EnquirySection";
 import React, { useState } from 'react';
 import { PLACEMENT_FAQS } from "@/lib/placement-faqs";
 import Link from 'next/link';
@@ -71,6 +72,8 @@ export default function PlacementsPage() {
                 <SalaryTableSection />
                 <FAQSection />
                 <CTASection />
+                {/* Enquiry form (user's call 2026-11-13): an admission page with no form of its own. */}
+                <EnquirySection sourcePage="placements" heading="Ask About Placements and Admission" />
             </main>
 
             <Footer />

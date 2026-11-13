@@ -1,3 +1,5 @@
+import EnquirySection from "@/components/lead/EnquirySection";
+import { courseForBlogSlug, programmeForBlogSlug, programmeLabel } from "@/lib/blog-course";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { createPageMetadata } from "@/lib/metadata";
@@ -153,6 +155,12 @@ export default async function CourseBlogDetailPage(
       <CourseBlogLayout post={post}>
         <ContentComponent />
       </CourseBlogLayout>
+      {/* Enquiry form (user's call 2026-11-13): the course blog posts had no form. */}
+      <EnquirySection
+        sourcePage={`course-blog-${courseForBlogSlug(post.slug) ?? "general"}`}
+        programmeId={programmeForBlogSlug(post.slug)}
+        heading={programmeLabel(programmeForBlogSlug(post.slug)) ? `Get ${programmeLabel(programmeForBlogSlug(post.slug))} Fee & Admission Details` : undefined}
+      />
       <Footer />
     </>
   );

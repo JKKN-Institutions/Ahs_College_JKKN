@@ -1,3 +1,4 @@
+import EnquirySection from "@/components/lead/EnquirySection";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
@@ -86,6 +87,8 @@ export default function TiruppurPage() {
           },
         ]} />
         <ExploreCitiesSection />
+        {/* Enquiry form (user's call 2026-11-13): an admission page with no form of its own. */}
+        <EnquirySection sourcePage="city-tiruppur" />
       </main>
       <Footer />
     </>
