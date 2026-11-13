@@ -103,29 +103,26 @@ export default function AhsEnquiryForm({
     if (!state?.success || fired.current) return
     fired.current = true
     writeStore(ENQUIRY_DONE_KEY, new Date().toISOString())
-    const w = window as unknown as { gtag?: (...args: unknown[]) => void }
-    if (typeof w.gtag === "function") {
-      w.gtag("event", "lead_form_submit", {
-        form_name: "ahs_enquiry",
-        source_page: sourcePage,
-        programme: state.tracking?.programme_id ?? "not_selected",
-        destination: "crm",
-        page_path: window.location.pathname,
-      })
-    }
+    // DEP-100 (2026-11-13), same rule as Arts since 2026-11-02: a 409 (phone already applied) is not a
+    // new CRM lead, so it is lead_form_duplicate and lead_form_submit counts new leads only. The old
+    // series is submit + duplicate. sendGaEvent waits up to 10 s for gtag instead of dropping the event.
+    sendGaEvent(state.duplicate ? "lead_form_duplicate" : "lead_form_submit", {
+      form_name: "ahs_enquiry",
+      source_page: sourcePage,
+      programme: state.tracking?.programme_id ?? "not_selected",
+      destination: "crm",
+      page_path: window.location.pathname,
+    })
   }, [state, sourcePage])
 
   // A form that silently fails and a form nobody used both read 0. This is what separates them.
   useEffect(() => {
     if (!state || state.success || !state.error) return
-    const w = window as unknown as { gtag?: (...args: unknown[]) => void }
-    if (typeof w.gtag === "function") {
-      w.gtag("event", "lead_form_error", {
-        form_name: "ahs_enquiry",
-        source_page: sourcePage,
-        page_path: window.location.pathname,
-      })
-    }
+    sendGaEvent("lead_form_error", {
+      form_name: "ahs_enquiry",
+      source_page: sourcePage,
+      page_path: window.location.pathname,
+    })
   }, [state, sourcePage])
 
   const surface = bare
@@ -187,8 +184,9 @@ export default function AhsEnquiryForm({
       .then((result) => {
         if (!result.success) throw new Error("not accepted")
         writeStore(ENQUIRY_DONE_KEY, new Date().toISOString())
-        // Same event, same params as the ordinary form, so lead_form_submit stays one series.
-        sendGaEvent("lead_form_submit", {
+        // Same event, same params as the ordinary form, so lead_form_submit stays one series
+        // (a 409 is lead_form_duplicate here too - DEP-100).
+        sendGaEvent(result.duplicate ? "lead_form_duplicate" : "lead_form_submit", {
           form_name: "ahs_enquiry",
           source_page: sourcePage,
           programme: result.tracking?.programme_id ?? "not_selected",
