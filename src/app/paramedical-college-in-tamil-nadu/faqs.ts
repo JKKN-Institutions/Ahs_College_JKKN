@@ -35,7 +35,7 @@ export const PARAMEDICAL_FAQS: { q: string; a: string; voice?: string }[] = [
   },
   {
     q: "What are the fees for paramedical courses at JKKN?",
-    a: `Management-quota tuition a year for 2026-27 at JKKN College of Allied Health Sciences: ${FEE_GROUPS.slice(0, -1).join("; ")}; and ${FEE_GROUPS[FEE_GROUPS.length - 1]}. Government-quota fees follow government norms.`,
+    a: `Management-quota tuition a year for 2026-27 at JKKN College of Allied Health Sciences: ${FEE_GROUPS.slice(0, -1).join("; ")}; and ${FEE_GROUPS[FEE_GROUPS.length - 1]}. Government-quota fees are As Per Government Norm.`,
     voice: "JKKN la paramedical course fees evlo?",
   },
   {

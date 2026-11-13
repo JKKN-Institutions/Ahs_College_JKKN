@@ -59,8 +59,8 @@ export function CriticalCareCollegesTamilNadu() {
         </div>
         <p className="text-sm text-gray-700 mt-4">
           Government seats are allotted through the Tamil Nadu Selection Committee (tnmedicalselection.org), on merit
-          from +2 marks. The 2026-27 prospectus sets the government-college tuition fee at{" "}
-          {CC_GOVT_TUITION_FEE_PER_YEAR} per year and keeps the course name B.Sc. Critical Care Technology.
+          from +2 marks. The government-college tuition fee is{" "}
+          {CC_GOVT_TUITION_FEE_PER_YEAR}, and the 2026-27 prospectus keeps the course name B.Sc. Critical Care Technology.
         </p>
         <p className="text-xs text-gray-500 mt-6">
           Sources: {CC_LIST_SOURCE.title}; Tamil Nadu Selection Committee prospectus for Allied and Healthcare UG Degree

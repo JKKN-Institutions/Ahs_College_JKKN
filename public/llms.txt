@@ -70,7 +70,7 @@ All programs: 3 years academic + 1 year clinical internship (2000+ hours)
 - Duration: 4 years (3 years academic + 1 year internship)
 - Mode: Full-time, on-campus, English medium
 - Admission process: Online application → Document verification → Counseling → Enrollment
-- Fee range (Management Quota): INR 60,000 (Health Information Management) to INR 1,70,000 (Cardiac Technology, Anaesthesia and Operation Theatre Technology) per year; GQ as per Govt norms
+- Fee range (Management Quota): INR 60,000 (Health Information Management) to INR 1,70,000 (Cardiac Technology, Anaesthesia and Operation Theatre Technology) per year; GQ fees: As Per Government Norm
 - Scholarships: fee waiver available for eligible students (amount not published; confirm with the admissions office)
 - [Admission portal](https://www.jkkn.ai/apply/jkkn-admission-2026)
 
@@ -174,7 +174,7 @@ Q: Does JKKN AHS provide clinical training?
 A: Yes, all programs include 2000+ hours of clinical training during the 1-year internship at partner hospitals.
 
 Q: What is the fee structure at JKKN AHS?
-A: Management Quota annual tuition ranges from INR 60,000 for Health Information Management to INR 1,70,000 for Cardiac Technology and Anaesthesia and Operation Theatre Technology. Government Quota fees are as per Tamil Nadu government norms. Examination fees are charged separately. Scholarships are available for eligible students.
+A: Management Quota annual tuition ranges from INR 60,000 for Health Information Management to INR 1,70,000 for Cardiac Technology and Anaesthesia and Operation Theatre Technology. Government Quota fees are As Per Government Norm. Examination fees are charged separately. Scholarships are available for eligible students.
 
 ## Structured Data References
 

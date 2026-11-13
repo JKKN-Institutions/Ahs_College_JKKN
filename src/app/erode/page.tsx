@@ -62,7 +62,7 @@ export default function ErodePage() {
             },
             {
               q: "What are the fees for BSc allied health science in Tamil Nadu?",
-              a: "Management-quota tuition at JKKN College of Allied Health Sciences for 2026-27 is ₹1,70,000 a year for Cardiac Technology and Anaesthesia & OT Technology, ₹1,30,000 for Medical Radiology & Imaging and Physician Associates, ₹1,10,000 for Dialysis Therapy, Respiratory Technology, Critical Care and Emergency Medical Technologist, and ₹60,000 for Health Information Management. Government-quota fees follow government norms.",
+              a: "Management-quota tuition at JKKN College of Allied Health Sciences for 2026-27 is ₹1,70,000 a year for Cardiac Technology and Anaesthesia & OT Technology, ₹1,30,000 for Medical Radiology & Imaging and Physician Associates, ₹1,10,000 for Dialysis Therapy, Respiratory Technology, Critical Care and Emergency Medical Technologist, and ₹60,000 for Health Information Management. Government-quota fees are As Per Government Norm.",
               voice: "JKKN AHS fees evlo?",
             },
             {
@@ -526,7 +526,7 @@ function ProgrammesSection() {
             </table>
           </div>
           <p className="text-xs text-gray-400 mt-3 text-center">
-            Government-quota fees: as per government norms. Seats: The Tamil Nadu Dr. M.G.R. Medical University,
+            Government-quota fees: As Per Government Norm. Seats: The Tamil Nadu Dr. M.G.R. Medical University,
             AHS affiliated colleges 2025-26, institution code 825. Fees: JKKN AHS fee structure 2026-27.
           </p>
         </div>

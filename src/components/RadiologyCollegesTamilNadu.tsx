@@ -62,8 +62,8 @@ export function RadiologyCollegesTamilNadu() {
         </div>
         <p className="text-sm text-gray-700 mt-4">
           Government seats are allotted through the Tamil Nadu Selection Committee (tnmedicalselection.org), on merit
-          from +2 marks. The 2026-27 prospectus sets the government-college tuition fee at{" "}
-          {RAD_GOVT_TUITION_FEE_PER_YEAR} per year. Near our campus, the list has{" "}
+          from +2 marks. The government-college tuition fee is{" "}
+          {RAD_GOVT_TUITION_FEE_PER_YEAR} (2026-27 prospectus). Near our campus, the list has{" "}
           {RAD_LIST_SOURCE.districtCounts.Namakkal} institutions in Namakkal district,{" "}
           {RAD_LIST_SOURCE.districtCounts.Salem} in Salem district and {RAD_LIST_SOURCE.districtCounts.Erode} in Erode
           district offering this course.
@@ -120,7 +120,7 @@ export function RadiologyCollegesTamilNadu() {
           <li>Check the sanctioned seats for the course; the list shows each college&apos;s intake.</li>
           <li>Ask which hospital gives the X-ray, CT and MRI training, and visit it.</li>
           <li>
-            Compare fees: government seats cost {RAD_GOVT_TUITION_FEE_PER_YEAR} a year in tuition; ask each
+            Compare fees: government-seat tuition is {RAD_GOVT_TUITION_FEE_PER_YEAR}; ask each
             self-financing college for its fee in writing.
           </li>
           <li>Make sure it is the B.Sc degree (3 years + 1 year internship), not a diploma or certificate course.</li>

@@ -44,7 +44,7 @@ export default function SeatsFeesSection() {
               <tr className="font-semibold">
                 <td className="p-3 text-gray-900">Total</td>
                 <td className="p-3 text-gray-900">{total}</td>
-                <td className="p-3 text-gray-600 font-normal">Government quota: as per government norms</td>
+                <td className="p-3 text-gray-600 font-normal">Government quota: As Per Government Norm</td>
               </tr>
             </tbody>
           </table>

@@ -90,7 +90,7 @@ export default function ParamedicalCollegePage() {
             </div>
             <p className="text-xs text-gray-500 mt-3">
               Every course is 3 years + 1 year internship. *Management-quota tuition a year, 2026-27; government-quota
-              fees as per government norms. Seats: sanctioned intake on {AHS_LIST_SOURCE.title}, institution code 825.
+              fees: As Per Government Norm. Seats: sanctioned intake on {AHS_LIST_SOURCE.title}, institution code 825.
               Fees:{" "}<Link href="/fee-structure" className="underline">fee structure 2026-27</Link>.
             </p>
           </div>

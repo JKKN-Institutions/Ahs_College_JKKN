@@ -19,9 +19,9 @@ export const DIALYSIS_LIST_SOURCE = {
 
 // The 2026-27 Selection Committee prospectus (G.O. (D) No.710, Health and Family Welfare, 18-06-2026)
 // names the course "Bachelor of Dialysis Therapy Technology (B.DTT)" and sets the government-college
-// tuition fee at Rs.3,000 per annum for all allied and healthcare UG courses.
+// tuition fee for all allied and healthcare UG courses.
 export const DIALYSIS_COUNSELLING_NAME = "Bachelor of Dialysis Therapy Technology (B.DTT)";
-export const GOVT_TUITION_FEE_PER_YEAR = "Rs. 3,000";
+export const GOVT_TUITION_FEE_PER_YEAR = "As Per Government Norm"; // user's rule 2026-11-13: no government-college fee amount on the site
 
 export const DIALYSIS_GOVT_COLLEGES: { code: string; name: string; place: string; seats: number }[] = [
   { code: "395", name: "Madras Medical College", place: "Chennai", seats: 10 },

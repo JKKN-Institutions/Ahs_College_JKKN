@@ -82,7 +82,7 @@ const howToSchema = {
       "@type": "HowToStep",
       "position": 6,
       "name": "Complete Fee Payment",
-      "text": "Government Quota (GQ) fees are as per government norms. Management Quota (MQ) annual fees range from 60000 to 170000 rupees per year depending on the program. Installment options and scholarship assistance are available.",
+      "text": "Government Quota (GQ) fees are As Per Government Norm. Management Quota (MQ) annual fees range from 60000 to 170000 rupees per year depending on the program. Installment options and scholarship assistance are available.",
       "url": "https://ahs.jkkn.ac.in/admissions#programs"
     }
   ]
@@ -99,7 +99,7 @@ const ADMISSION_FAQS: { q: string; a: React.ReactNode }[] = [
         },
         {
             q: "What is the fee range for BSc AHS programs?",
-            a: "Government Quota (GQ) fees are as per Govt norms. Management Quota (MQ) annual fees range from ₹60,000 (Health Information Management) to ₹1,70,000 (Cardiac & Operation Theatre Technology) depending on the specialization. Fee payment can be made in installments. Government scholarships and JKKN merit scholarships are available to reduce the financial burden."
+            a: "Government Quota (GQ) fees are As Per Government Norm. Management Quota (MQ) annual fees range from ₹60,000 (Health Information Management) to ₹1,70,000 (Cardiac & Operation Theatre Technology) depending on the specialization. Fee payment can be made in installments. Government scholarships and JKKN merit scholarships are available to reduce the financial burden."
         },
         {
             q: "How many programs does JKKN AHS College offer?",

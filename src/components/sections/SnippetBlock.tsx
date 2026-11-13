@@ -40,7 +40,7 @@ export function SnippetBlock() {
             <li><strong>Clinical Training at Partner Hospitals</strong> — hands-on clinical postings, with 2,000+ training hours.</li>
             <li><strong>Placement Support</strong> — a dedicated placement cell that helps learners apply to hospitals and diagnostic centres.</li>
             <li><strong>International Careers</strong> — allied health graduates can work abroad after meeting that country&apos;s registration rules; ask the placement cell what guidance is offered.</li>
-            <li><strong>Affordable Fees with Scholarships</strong> — GQ fees as per Govt norms; MQ annual fees from ₹60,000 to ₹1,70,000 with merit-based scholarships available.</li>
+            <li><strong>Affordable Fees with Scholarships</strong> — GQ fees: As Per Government Norm; MQ annual fees from ₹60,000 to ₹1,70,000 with merit-based scholarships available.</li>
             <li><strong>Complete Campus Facilities</strong> — <Link href="/hostel" className="text-[#0b6d41] font-semibold hover:underline">Hostel</Link>, <Link href="/lab" className="text-[#0b6d41] font-semibold hover:underline">advanced learning labs</Link>, <Link href="/library" className="text-[#0b6d41] font-semibold hover:underline">digital learning commons</Link>, <Link href="/transport" className="text-[#0b6d41] font-semibold hover:underline">transport</Link>, and Wi-Fi on a green campus along NH-544.</li>
           </ul>
         </div>

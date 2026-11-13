@@ -62,8 +62,8 @@ export function EmergencyCollegesTamilNadu() {
         </div>
         <p className="text-sm text-gray-700 mt-4">
           Government seats are allotted through the Tamil Nadu Selection Committee (tnmedicalselection.org), on merit
-          from +2 marks. The 2026-27 prospectus sets the government-college tuition fee at{" "}
-          {AE_GOVT_TUITION_FEE_PER_YEAR} per year. Near our campus, the list has{" "}
+          from +2 marks. The government-college tuition fee is{" "}
+          {AE_GOVT_TUITION_FEE_PER_YEAR} (2026-27 prospectus). Near our campus, the list has{" "}
           {AE_LIST_SOURCE.districtCounts.Namakkal} institutions in Namakkal district,{" "}
           {AE_LIST_SOURCE.districtCounts.Salem} in Salem district and {AE_LIST_SOURCE.districtCounts.Erode} in Erode
           district offering this course.

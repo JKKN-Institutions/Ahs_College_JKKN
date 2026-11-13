@@ -76,7 +76,7 @@ export const admissionCourses: AdmissionCourse[] = [
             "Medical fitness certificate from registered practitioner"
         ],
         feeBreakdown: [
-            { label: "Govt. Quota (GQ)", value: "As per TN Govt norms" },
+            { label: "Govt. Quota (GQ)", value: "As Per Government Norm" },
             { label: "Management Quota (MQ)", value: "₹1,70,000 / year" },
             { label: "Total (4 years, MQ)", value: "₹6,80,000" }
         ],
@@ -146,7 +146,7 @@ export const admissionCourses: AdmissionCourse[] = [
         faqs: [
             { q: "What does a BSc Cardiac Technologist do after graduation?", a: "A BSc Cardiac Technologist performs and assists in non-invasive and invasive cardiac diagnostic procedures including ECG, Echocardiography (TTE/TEE/Stress Echo), TMT, Holter monitoring, and Cath Lab procedures like angiograms, angioplasties, pacemaker implantation, and electrophysiology studies. They work directly with cardiologists in OPD, ICCU, CTVS, and Cath Labs." },
             { q: "Is BSc Cardiac Technology a good career in 2026?", a: "Yes — cardiac technology is one of the fastest-growing allied health careers globally. With cardiovascular disease being the leading cause of mortality worldwide, demand for cardiac technologists is growing 14–18% in India and 20–25% globally." },
-            { q: "What is the fee for BSc Cardiac Technology at JKKN?", a: "Management Quota (MQ) fee is ₹1,70,000 per year. Total course fee (4 years, MQ) is ₹6,80,000. Government Quota (GQ) fee is as per Tamil Nadu Government norms. Installment payments, education loan assistance, and merit-based scholarships are available." },
+            { q: "What is the fee for BSc Cardiac Technology at JKKN?", a: "Management Quota (MQ) fee is ₹1,70,000 per year. Total course fee (4 years, MQ) is ₹6,80,000. Government Quota (GQ) fee is As Per Government Norm. Installment payments, education loan assistance, and merit-based scholarships are available." },
             { q: "How many seats are available for BSc Cardiac Technology at JKKN?", a: "JKKN College of Allied Health Sciences offers 7 sanctioned seats for BSc Cardiac Technology. Government Quota candidates are allotted from this same sanctioned intake through Tamil Nadu Government counselling — they are not additional seats." },
             { q: "Do I need to pass NEET for BSc Cardiac Technology admission?", a: "No — NEET is NOT required for BSc Cardiac Technology admission at JKKN College. Admission is purely merit-based using +2 marks. Eligibility: +2 with PCB and English, no minimum percentage under the TN allied prospectus 2026-27, age 17+ as on 31 Dec 2026." },
             { q: "Can BSc Cardiac Technology graduates work abroad?", a: "Yes — BSc Cardiac Technology has excellent international scope. Cardiac technologists work in the UK (NHS), the UAE, Saudi Arabia and Singapore after meeting each country's registration rules. Licensing (HAAD/DHA/MOH for Gulf, NHS registration for UK) may be required." }
@@ -175,7 +175,7 @@ export const admissionCourses: AdmissionCourse[] = [
             "Medical fitness certificate from registered practitioner"
         ],
         feeBreakdown: [
-            { label: "Govt. Quota (GQ)", value: "As per TN Govt norms" },
+            { label: "Govt. Quota (GQ)", value: "As Per Government Norm" },
             { label: "Management Quota (MQ)", value: "₹1,10,000 / year" },
             { label: "Total (4 years, MQ)", value: "₹4,40,000" }
         ],
@@ -228,7 +228,7 @@ export const admissionCourses: AdmissionCourse[] = [
         faqs: [
             { q: "What is the job role of a BSc Dialysis Technologist?", a: "A BSc Dialysis Technologist sets up and operates haemodialysis machines, monitors patients during 4-hour dialysis sessions, manages vascular access (AV fistulas, catheters), performs CRRT in ICU, handles peritoneal dialysis, manages water treatment systems, and assists nephrologists. They typically handle 2-3 patients per shift in a dialysis unit." },
             { q: "Is Bachelor of Dialysis Therapy Technology (B.DTT) in demand in 2026?", a: "Very high demand. India has 2.2 lakh+ new end-stage kidney disease patients yearly but only ~12,000 trained dialysis technicians — a severe shortage. Government's PMNDP scheme has opened dialysis centres in every district. Private chains like NephroPlus, DaVita, and Apollo Dialysis hire 500+ BSc Dialysis grads each year." },
-            { q: "What is the fee for Bachelor of Dialysis Therapy Technology (B.DTT) at JKKN?", a: "Management Quota (MQ) fee is ₹1,10,000 per year — total ₹4,40,000 for 4 years. Government Quota (GQ) is as per TN Govt norms. Installment options, education loan support, and scholarships available." },
+            { q: "What is the fee for Bachelor of Dialysis Therapy Technology (B.DTT) at JKKN?", a: "Management Quota (MQ) fee is ₹1,10,000 per year — total ₹4,40,000 for 4 years. Government Quota (GQ) fee is As Per Government Norm. Installment options, education loan support, and scholarships available." },
             { q: "How many seats are there for Bachelor of Dialysis Therapy Technology (B.DTT) at JKKN?", a: "5 sanctioned seats. Government Quota candidates are allotted from this same sanctioned intake through Tamil Nadu Government counselling — they are not additional seats." },
             { q: "Can I do MSc or further study after Bachelor of Dialysis Therapy Technology (B.DTT)?", a: "Yes — after B.DTT, you can pursue MSc Renal Sciences, MSc Medical Lab Technology, MBA Hospital Administration, or specialised certifications like ASN Nephrology Technologist (US) and AVR (Australia). Many grads also become dialysis unit managers or trainers." }
         ]
@@ -256,7 +256,7 @@ export const admissionCourses: AdmissionCourse[] = [
             "Medical fitness certificate from registered practitioner"
         ],
         feeBreakdown: [
-            { label: "Govt. Quota (GQ)", value: "As per TN Govt norms" },
+            { label: "Govt. Quota (GQ)", value: "As Per Government Norm" },
             { label: "Management Quota (MQ)", value: "₹1,30,000 / year" },
             { label: "Total (4 years, MQ)", value: "₹5,20,000" }
         ],
@@ -309,7 +309,7 @@ export const admissionCourses: AdmissionCourse[] = [
         faqs: [
             { q: "What does a Medical Radiology and Imaging Technologist do?", a: "A Medical Radiology and Imaging Technologist performs and operates X-ray, CT scans, MRI, Ultrasonography, Mammography, Fluoroscopy, and Bone Density scans. They position patients correctly, administer contrast agents, manage radiation safety, process images via PACS, and assist radiologists during interventional procedures." },
             { q: "Is B.MRIT (Medical Radiology) a good career for going abroad?", a: "Excellent — radiography has the strongest international scope of any AHS career. UK (NHS), Australia (AHPRA), Canada (CAMRT), and Gulf countries face chronic radiographer shortages. UK NHS sponsors visas for qualified radiographers. Average time from BSc to overseas job is 2-3 years." },
-            { q: "What is the fee for B.MRIT (Medical Radiology) at JKKN?", a: "Management Quota (MQ) annual fee is ₹1,30,000 — total ₹5,20,000 for the 4-year course. Government Quota (GQ) is as per Tamil Nadu Govt norms. Scholarships, installments, and education loan support available." },
+            { q: "What is the fee for B.MRIT (Medical Radiology) at JKKN?", a: "Management Quota (MQ) annual fee is ₹1,30,000 — total ₹5,20,000 for the 4-year course. Government Quota (GQ) fee is As Per Government Norm. Scholarships, installments, and education loan support available." },
             { q: "How many seats are available for B.MRIT (Medical Radiology) at JKKN?", a: "5 sanctioned seats. Government Quota candidates are allotted from this same sanctioned intake through Tamil Nadu Government counselling — they are not additional seats." },
             { q: "Is there exposure to MRI and CT during the course?", a: "Yes — CT and MRI are part of the course. The 1-year internship at partner hospitals rotates learners across imaging modalities for hands-on patient positioning, scan protocols and image processing; ask the admission office which hospitals your batch will rotate through." },
             { q: "Can I specialise in CT or MRI after B.MRIT?", a: "Yes — after BSc you can pursue PG Diploma in CT/MRI, MSc Medical Imaging Technology, certifications like IAEA Radiation Safety, ARRT (US), or vendor-specific training (Siemens, GE, Philips)." }
@@ -338,7 +338,7 @@ export const admissionCourses: AdmissionCourse[] = [
             "Medical fitness certificate from registered practitioner"
         ],
         feeBreakdown: [
-            { label: "Govt. Quota (GQ)", value: "As per TN Govt norms" },
+            { label: "Govt. Quota (GQ)", value: "As Per Government Norm" },
             { label: "Management Quota (MQ)", value: "₹1,70,000 / year" },
             { label: "Total (4 years, MQ)", value: "₹6,80,000" }
         ],
@@ -392,7 +392,7 @@ export const admissionCourses: AdmissionCourse[] = [
         faqs: [
             { q: "What is the role of an Anaesthesia & OT Technologist?", a: "Anaesthesia & OT Technologists set up the operation theatre, prepare instruments and equipment, assist the anaesthesiologist with airway management and drug administration, monitor patient vitals (ECG/BP/SpO2/EtCO2) during surgery, manage the CSSD, and ensure sterile field maintenance. They are critical members of every surgical team." },
             { q: "Is Bachelor of Anaesthesia and Operation Theatre Technology (B.AOTT) a good career?", a: "Yes — universal employability since every hospital with surgical capability needs OT and anaesthesia techs. India has 50,000+ open positions." },
-            { q: "What is the fee for Bachelor of Anaesthesia and Operation Theatre Technology (B.AOTT) at JKKN?", a: "Management Quota (MQ) annual fee is ₹1,70,000 — total ₹6,80,000 for 4 years. Government Quota (GQ) is as per Tamil Nadu Govt norms. Installments, scholarships, and education loan assistance are available." },
+            { q: "What is the fee for Bachelor of Anaesthesia and Operation Theatre Technology (B.AOTT) at JKKN?", a: "Management Quota (MQ) annual fee is ₹1,70,000 — total ₹6,80,000 for 4 years. Government Quota (GQ) fee is As Per Government Norm. Installments, scholarships, and education loan assistance are available." },
             { q: "How many seats for Bachelor of Anaesthesia and Operation Theatre Technology (B.AOTT) at JKKN?", a: "10 sanctioned seats — among the larger intakes among AHS courses at JKKN. Government Quota candidates are allotted from this same sanctioned intake through Tamil Nadu Government counselling — they are not additional seats." },
             { q: "Will I get hands-on training in OT during the course?", a: "Yes. The 1-year mandatory internship at partner hospitals includes rotations across General Surgery, Ortho, Neuro, Cardiac, OB-GYN, Paediatric and Day-Care OTs." },
             { q: "Can Anaesthesia & OT graduates work in cardiac surgery?", a: "Yes — with 2-3 years of general OT experience, technologists can specialise in Cardiac Anaesthesia, CTVS OT, or Transplant OT." }
@@ -421,7 +421,7 @@ export const admissionCourses: AdmissionCourse[] = [
             "Medical fitness certificate from registered practitioner"
         ],
         feeBreakdown: [
-            { label: "Govt. Quota (GQ)", value: "As per TN Govt norms" },
+            { label: "Govt. Quota (GQ)", value: "As Per Government Norm" },
             { label: "Management Quota (MQ)", value: "₹1,10,000 / year" },
             { label: "Total (4 years, MQ)", value: "₹4,40,000" }
         ],
@@ -476,7 +476,7 @@ export const admissionCourses: AdmissionCourse[] = [
         faqs: [
             { q: "What does a BSc Respiratory Therapist do?", a: "A Respiratory Therapist manages mechanical ventilators in ICU, performs ABG analysis, sets up non-invasive ventilation (BiPAP/CPAP/HFNC), conducts pulmonary function tests, manages airway and oxygen therapy, runs pulmonary rehab programs, and supports ECMO patients. Critical role in ICUs, ERs, NICUs, and Sleep Labs." },
             { q: "Is respiratory technology (respiratory therapy) a good career after COVID?", a: "Excellent — post-COVID, demand surged 18-22% globally. India has only ~5,000 qualified RTs for 1.4 billion people. Canada, UK, Australia have active visa pathways." },
-            { q: "What is the fee for Bachelor of Respiratory Technology (B.RT) at JKKN?", a: "Management Quota (MQ) annual fee is ₹1,10,000 — total ₹4,40,000 for 4 years. Government Quota (GQ) is as per Tamil Nadu Govt norms. Installments and scholarships available." },
+            { q: "What is the fee for Bachelor of Respiratory Technology (B.RT) at JKKN?", a: "Management Quota (MQ) annual fee is ₹1,10,000 — total ₹4,40,000 for 4 years. Government Quota (GQ) fee is As Per Government Norm. Installments and scholarships available." },
             { q: "How many seats for Bachelor of Respiratory Technology (B.RT) at JKKN?", a: "10 sanctioned seats. Government Quota candidates are allotted from this same sanctioned intake through Tamil Nadu Government counselling — they are not additional seats. Affordable fee + strong placement makes it one of the most popular AHS courses at JKKN." },
             { q: "Can Bachelor of Respiratory Technology (B.RT) graduates migrate to the USA?", a: "Yes — but the US requires the NBRC CRT/RRT certification and additional bridge education (typically a 1-year US AS-RT program). JKKN B.RT is a strong foundation. Canada and Australia have simpler bridging programs." },
             { q: "Will I learn ECMO and advanced ventilation?", a: "The course covers mechanical and non-invasive ventilation (BiPAP, CPAP, HFNC) and ECMO support. Hands-on exposure during the 1-year internship depends on the partner hospital's ICU, so ask the admission office which hospitals take interns." }
@@ -505,7 +505,7 @@ export const admissionCourses: AdmissionCourse[] = [
             "Medical fitness certificate from registered practitioner"
         ],
         feeBreakdown: [
-            { label: "Govt. Quota (GQ)", value: "As per TN Govt norms" },
+            { label: "Govt. Quota (GQ)", value: "As Per Government Norm" },
             { label: "Management Quota (MQ)", value: "₹1,30,000 / year" },
             { label: "Total (4 years, MQ)", value: "₹5,20,000" }
         ],
@@ -559,7 +559,7 @@ export const admissionCourses: AdmissionCourse[] = [
         faqs: [
             { q: "What does a Bachelor of Physician Associates (B.PA) do?", a: "A Physician Associate works under a physician's supervision — takes patient history, performs physical examinations, orders and interprets basic tests, performs procedures (suturing, IV access, ABG, dressings), counsels patients, manages EMR documentation, and runs OPD/IPD workflows. PAs are doctor-extenders in busy hospitals." },
             { q: "How is Bachelor of Physician Associates (B.PA) different from BSc Nursing?", a: "BSc Nursing focuses on bedside nursing care, medication administration, and patient monitoring. B.PA focuses on doctor-side clinical work — history taking, examination, basic procedures, and clinical decision support. PAs work in OPDs/clinics under doctors; nurses primarily work in wards/ICUs. PAs have stronger international migration pathways (US/UK PA programs)." },
-            { q: "What is the fee for Bachelor of Physician Associates (B.PA) at JKKN?", a: "Management Quota (MQ) annual fee is ₹1,30,000 — total ₹5,20,000 for 4 years. Government Quota (GQ) as per TN Govt norms. Installments and scholarships available." },
+            { q: "What is the fee for Bachelor of Physician Associates (B.PA) at JKKN?", a: "Management Quota (MQ) annual fee is ₹1,30,000 — total ₹5,20,000 for 4 years. Government Quota (GQ) fee is As Per Government Norm. Installments and scholarships available." },
             { q: "How many seats for Bachelor of Physician Associates (B.PA) at JKKN?", a: "10 sanctioned seats + GQ seats via Tamil Nadu counselling. One of the more competitive intakes due to international PA pathway appeal." },
             { q: "Can I become a US Physician Assistant after B.PA from India?", a: "Yes, with additional steps. The US requires a Master's-level accredited PA program (typically 2-3 years post-bachelor). Indian B.PA is a strong foundation but you'll need to complete the US PA program + PANCE certification. Alternative: UK Physician Associate registration (1-year bridge)." },
             { q: "Will I get hands-on patient interaction during the course?", a: "Yes — patient interaction starts in Year 2. The 1-year mandatory clinical internship at partner hospitals covers Medicine, Cardiology, Neurology, Oncology, OB-GYN, Paediatrics and Emergency." }
@@ -587,7 +587,7 @@ export const admissionCourses: AdmissionCourse[] = [
             "Medical fitness certificate from registered practitioner"
         ],
         feeBreakdown: [
-            { label: "Govt. Quota (GQ)", value: "As per TN Govt norms" },
+            { label: "Govt. Quota (GQ)", value: "As Per Government Norm" },
             { label: "Management Quota (MQ)", value: "₹1,10,000 / year" },
             { label: "Total (4 years, MQ)", value: "₹4,40,000" }
         ],
@@ -641,7 +641,7 @@ export const admissionCourses: AdmissionCourse[] = [
         faqs: [
             { q: "What does a BSc Critical Care Technologist do?", a: "A Critical Care Technologist operates ICU equipment (ventilators, monitors, infusion pumps, ECMO machines), performs ABG analysis, assists intensivists with intubation/central lines, manages haemodynamic monitoring, runs CRRT, participates in Code Blue responses, and provides 24/7 critical patient care in MICU/SICU/CCU/NICU." },
             { q: "Is BSc Critical Care a good career in 2026?", a: "Excellent — post-COVID India added 2 lakh+ ICU beds with massive ongoing shortage of trained critical care professionals. ICUs operate 24/7 with high staffing ratios." },
-            { q: "What is the fee for BSc Critical Care Technology at JKKN?", a: "Management Quota (MQ) annual fee is ₹1,10,000 — total ₹4,40,000 for 4 years. Government Quota (GQ) as per Tamil Nadu Govt norms. Installments and scholarships available." },
+            { q: "What is the fee for BSc Critical Care Technology at JKKN?", a: "Management Quota (MQ) annual fee is ₹1,10,000 — total ₹4,40,000 for 4 years. Government Quota (GQ) fee is As Per Government Norm. Installments and scholarships available." },
             { q: "How many seats for BSc Critical Care at JKKN?", a: "10 sanctioned seats. Government Quota candidates are allotted from this same sanctioned intake through Tamil Nadu Government counselling — they are not additional seats." },
             { q: "Will I learn ECMO during BSc Critical Care?", a: "Hands-on ECMO exposure depends on whether the partner hospital where you do the internship runs an ECMO programme, so ask the admission office before you join. ELSO certification after graduation is the usual route to ECMO specialist roles." },
             { q: "Is the work in ICU stressful?", a: "Critical care is intense — long shifts, life-and-death decisions, emotional weight. But it's also one of the most rewarding healthcare careers because you directly save lives. JKKN's internship includes mentorship and gradual responsibility scaling to build resilience and clinical confidence." }
@@ -670,7 +670,7 @@ export const admissionCourses: AdmissionCourse[] = [
             "Medical fitness certificate from registered practitioner"
         ],
         feeBreakdown: [
-            { label: "Govt. Quota (GQ)", value: "As per TN Govt norms" },
+            { label: "Govt. Quota (GQ)", value: "As Per Government Norm" },
             { label: "Management Quota (MQ)", value: "₹60,000 / year — lowest among AHS courses" },
             { label: "Total (4 years, MQ)", value: "₹2,40,000" }
         ],
@@ -754,7 +754,7 @@ export const admissionCourses: AdmissionCourse[] = [
             "Medical fitness certificate from registered practitioner"
         ],
         feeBreakdown: [
-            { label: "Govt. Quota (GQ)", value: "As per TN Govt norms" },
+            { label: "Govt. Quota (GQ)", value: "As Per Government Norm" },
             { label: "Management Quota (MQ)", value: "₹1,10,000 / year" },
             { label: "Total (4 years, MQ)", value: "₹4,40,000" }
         ],
@@ -808,7 +808,7 @@ export const admissionCourses: AdmissionCourse[] = [
         faqs: [
             { q: "What does an Emergency Medical Technologist (Paramedic) do?", a: "An Emergency Medical Technologist works on the frontline of the Emergency Department — performs trauma resuscitation, ACLS/BLS, manages polytrauma cases, runs ER triage, handles pre-hospital ambulance care, responds to disasters and mass casualty incidents, assists ER physicians during emergency procedures, and operates 108 ambulance services." },
             { q: "Is Emergency Medical Technologist (Paramedic) a good career?", a: "Yes — India's organised emergency medicine is growing 20% annually. Trauma centres, 108 EMRI ambulance services, corporate hospital ERs, and disaster response networks all need trained emergency techs. Recession-proof, 24/7 staffed." },
-            { q: "What is the fee for Bachelor of Emergency Medical Technologist (Paramedic) at JKKN?", a: "Management Quota (MQ) annual fee is ₹1,10,000 — total ₹4,40,000 for 4 years. Government Quota (GQ) as per Tamil Nadu Govt norms. Installments and scholarships available." },
+            { q: "What is the fee for Bachelor of Emergency Medical Technologist (Paramedic) at JKKN?", a: "Management Quota (MQ) annual fee is ₹1,10,000 — total ₹4,40,000 for 4 years. Government Quota (GQ) fee is As Per Government Norm. Installments and scholarships available." },
             { q: "How many seats for Bachelor of Emergency Medical Technologist (Paramedic) at JKKN?", a: "10 sanctioned seats. Government Quota candidates are allotted from this same sanctioned intake through Tamil Nadu Government counselling — they are not additional seats." },
             { q: "Will I learn to drive an ambulance during the course?", a: "Ambulance driving requires a separate commercial license, not part of BSc. However, you'll get extensive training on pre-hospital ambulance care, equipment operation (defibrillator, ventilator, suction), patient stabilisation in transit, and coordination with the receiving ER. JKKN partners with 108 EMRI for ambulance rotations." },
             { q: "Is BSc Emergency Care stressful?", a: "Yes — emergency medicine is one of the most stressful clinical environments (trauma, deaths, mass casualties, long shifts). It's also one of the most rewarding because you directly save lives in critical moments. JKKN's learning framework includes resilience training, peer support, and gradual exposure scaling during the internship." }

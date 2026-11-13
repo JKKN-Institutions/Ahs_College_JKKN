@@ -22,7 +22,7 @@ export const SALEM_FAQS = [
   },
   {
     q: "What are the fees at JKKN College of Allied Health Sciences for students from Salem?",
-    a: "Fees are the same for every district. Management-quota tuition for 2026-27 runs from ₹60,000 a year for Health Information Management to ₹1,70,000 for Cardiac Technology and Anaesthesia & OT Technology; most courses are ₹1,10,000 or ₹1,30,000. Government-quota fees follow government norms.",
+    a: "Fees are the same for every district. Management-quota tuition for 2026-27 runs from ₹60,000 a year for Health Information Management to ₹1,70,000 for Cardiac Technology and Anaesthesia & OT Technology; most courses are ₹1,10,000 or ₹1,30,000. Government-quota fees are As Per Government Norm.",
   },
   {
     q: "Can students from Salem travel daily to JKKN College of Allied Health Sciences?",
@@ -46,7 +46,7 @@ export const SALEM_FAQS = [
   },
   {
     q: "What are the fees for BSc allied health science in Tamil Nadu?",
-    a: "Management-quota tuition at JKKN College of Allied Health Sciences for 2026-27 is ₹1,70,000 a year for Cardiac Technology and Anaesthesia & OT Technology, ₹1,30,000 for Medical Radiology & Imaging and Physician Associates, ₹1,10,000 for Dialysis Therapy, Respiratory Technology, Critical Care and Emergency Medical Technologist, and ₹60,000 for Health Information Management. Government-quota fees follow government norms.",
+    a: "Management-quota tuition at JKKN College of Allied Health Sciences for 2026-27 is ₹1,70,000 a year for Cardiac Technology and Anaesthesia & OT Technology, ₹1,30,000 for Medical Radiology & Imaging and Physician Associates, ₹1,10,000 for Dialysis Therapy, Respiratory Technology, Critical Care and Emergency Medical Technologist, and ₹60,000 for Health Information Management. Government-quota fees are As Per Government Norm.",
   },
   {
     q: "What is the salary after BSc allied health science?",

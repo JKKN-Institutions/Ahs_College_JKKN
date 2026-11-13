@@ -59,8 +59,8 @@ export function DialysisCollegesTamilNadu() {
         </div>
         <p className="text-sm text-gray-700 mt-4">
           Government seats are allotted through the Tamil Nadu Selection Committee (tnmedicalselection.org), on merit
-          from +2 marks. The course is not free in government colleges: the 2026-27 prospectus sets the tuition fee
-          at {GOVT_TUITION_FEE_PER_YEAR} per year, with an exemption for candidates selected under the benchmark
+          from +2 marks. The course is not free in government colleges: the tuition fee is
+          {GOVT_TUITION_FEE_PER_YEAR} (2026-27 prospectus), with an exemption for candidates selected under the benchmark
           disability category. Near our campus, the list has {DIALYSIS_LIST_SOURCE.districtCounts.Namakkal}{" "}
           institutions in Namakkal district, {DIALYSIS_LIST_SOURCE.districtCounts.Salem} in Salem district and{" "}
           {DIALYSIS_LIST_SOURCE.districtCounts.Erode} in Erode district offering this course.

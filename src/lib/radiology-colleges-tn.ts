@@ -23,9 +23,9 @@ export const RAD_LIST_SOURCE = {
 // The 2026-27 Selection Committee prospectus (G.O. (D) No.710, Health and Family Welfare, 18-06-2026)
 // names the course "Bachelor of Medical Radiology and Imaging Technology (B.MRIT)", 3 years plus a 1-year
 // compulsory internship, Physics, Chemistry and Biology mandatory, merit on +2 marks, and sets the
-// government-college tuition fee at Rs.3,000 per annum for all allied and healthcare UG courses.
+// government-college tuition fee for all allied and healthcare UG courses.
 export const RAD_COUNSELLING_NAME = "Bachelor of Medical Radiology and Imaging Technology (B.MRIT)";
-export const RAD_GOVT_TUITION_FEE_PER_YEAR = "Rs. 3,000";
+export const RAD_GOVT_TUITION_FEE_PER_YEAR = "As Per Government Norm"; // user's rule 2026-11-13: no government-college fee amount on the site
 
 export const RAD_GOVT_COLLEGES: { code: string; name: string; place: string; seats: number }[] = [
   { code: "395", name: "Madras Medical College", place: "Chennai", seats: 20 },
