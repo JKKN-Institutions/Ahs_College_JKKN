@@ -137,7 +137,7 @@ export default function FeeStructurePage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-start gap-2 text-sm text-[#1a1a1a]">
             <Info className="w-4 h-4 text-[#0b6d41] mt-0.5 shrink-0" />
             <span>
-              <strong>Government Quota (GQ)</strong> fees are regulated by the Tamil Nadu Government and are subject to revision each academic year.{" "}
+              <strong>Government Quota (GQ)</strong> fees: As Per Government Norm.{" "}
               <strong>Management Quota (MQ)</strong> fees shown are per annum and remain the same across all 4 years of the program.
             </span>
           </div>
@@ -186,11 +186,11 @@ export default function FeeStructurePage() {
                         <td className="px-6 py-4 font-medium text-gray-700">Government Quota</td>
                         {YEARS.map((yr) => (
                           <td key={yr} className="px-4 py-4 text-center text-gray-500 italic text-xs">
-                            As Per Govt Norms
+                            As Per Government Norm
                           </td>
                         ))}
                         <td className="px-4 py-4 text-center text-gray-500 italic text-xs">
-                          As Per Govt Norms
+                          As Per Government Norm
                         </td>
                       </tr>
                       <tr className="border-t border-gray-100 bg-[#0b6d41]/3">
@@ -251,7 +251,7 @@ export default function FeeStructurePage() {
                             {["Year 1", "Year 2", "Year 3", "Year 4 (Internship)"].map((yr) => (
                               <div key={yr} className="bg-gray-50 rounded-lg px-3 py-2">
                                 <p className="text-xs text-gray-400">{yr}</p>
-                                <p className="text-xs italic text-gray-500 mt-0.5">As Per Govt Norms</p>
+                                <p className="text-xs italic text-gray-500 mt-0.5">As Per Government Norm</p>
                               </div>
                             ))}
                           </div>
