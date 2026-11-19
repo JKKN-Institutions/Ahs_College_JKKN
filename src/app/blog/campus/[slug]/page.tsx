@@ -5,6 +5,8 @@ import type { Metadata } from 'next';
 import { Navbar as Header } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import CampusBlogContent from './CampusBlogContent';
+import { blogFromMyJkkn, blogSiteKey, getPost as getMyJkknPost, listPosts } from '@/lib/blog/myjkkn';
+import { MYJKKN_URL } from '@/lib/blog/config';
 
 export const revalidate = 300;
 
@@ -22,12 +24,62 @@ const getPost = cache(async (slug: string) => {
   return data;
 });
 
-export async function generateMetadata({
-  params,
-}: {
+type PageProps = {
   params: Promise<{ slug: string }>;
-}): Promise<Metadata> {
+  /** ?preview=<token>: the Preview link in MyJKKN opens a draft (BLOG_SOURCE=myjkkn only). */
+  searchParams: Promise<{ preview?: string | string[] }>;
+};
+
+function previewToken(preview: string | string[] | undefined): string | undefined {
+  return (Array.isArray(preview) ? preview[0] : preview) || undefined;
+}
+
+export async function generateMetadata({ params, searchParams }: PageProps): Promise<Metadata> {
   const { slug } = await params;
+
+  if (blogFromMyJkkn()) {
+    const detail = await getMyJkknPost(slug, previewToken((await searchParams).preview));
+    if (!detail) {
+      return {
+        title: 'Campus Blog | JKKN College of Allied Health Sciences',
+        description: 'Latest campus news and updates from JKKN College of Allied Health Sciences.',
+      };
+    }
+    const { post } = detail;
+    // The SEO fields are filled in MyJKKN; where the writer left one empty, MyJKKN has
+    // already fallen back to the title, excerpt, featured image and the post's own address.
+    const title =
+      post.seo.title === post.title ? `${post.title} | JKKN AHS Campus Blog` : post.seo.title;
+    const description =
+      post.seo.description ??
+      'Read the latest campus news and updates from JKKN College of Allied Health Sciences.';
+    const imageUrl = post.seo.og_image ?? 'https://ahs.jkkn.ac.in/allied-health-science-hero.webp';
+    return {
+      title,
+      description,
+      ...(post.seo.keywords.length > 0 && { keywords: post.seo.keywords }),
+      alternates: { canonical: post.seo.canonical_url },
+      openGraph: {
+        title,
+        description,
+        url: `https://ahs.jkkn.ac.in/blog/campus/${slug}`,
+        siteName: 'JKKN College of Allied Health Sciences',
+        images: [{ url: imageUrl, width: 1200, height: 630, alt: post.title }],
+        type: 'article',
+        publishedTime: post.published_at ?? post.created_at,
+      },
+      twitter: {
+        card: 'summary_large_image',
+        title,
+        description,
+        images: [imageUrl],
+      },
+      ...((detail.preview || post.seo.noindex) && {
+        robots: { index: false, follow: !detail.preview },
+      }),
+    };
+  }
+
   const post = await getPost(slug);
 
   if (!post) {
@@ -107,12 +159,96 @@ function calcReadMeta(content: string): { words: number; readTime: number } {
   return { words, readTime: Math.max(1, Math.ceil(words / 200)) };
 }
 
-export default async function CampusBlogPost({
-  params,
-}: {
-  params: Promise<{ slug: string }>;
-}) {
+/** The post page when posts come from MyJKKN (BLOG_SOURCE=myjkkn). Same markup as below. */
+async function MyJkknBlogPost({ slug, token }: { slug: string; token?: string }) {
+  const detail = await getMyJkknPost(slug, token);
+  if (!detail) notFound();
+  const { post, related, comments, preview } = detail;
+
+  const popularPosts = (await listPosts(4)).posts.filter((p) => p.slug !== slug).slice(0, 3);
+  const { processedHtml, tocItems } = processContent(post.content);
+  const { words, readTime } = calcReadMeta(post.content);
+
+  const siteUrl = 'https://ahs.jkkn.ac.in';
+  const postUrl = `${siteUrl}/blog/campus/${slug}`;
+  const blogPostingSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: post.title,
+    description: post.seo.description ?? post.excerpt ?? '',
+    url: postUrl,
+    datePublished: post.published_at ?? post.created_at,
+    dateModified: post.updated_at,
+    author: {
+      '@type': 'Person',
+      name: 'JKKN Editorial Team',
+      url: siteUrl,
+    },
+    publisher: { "@id": "https://ahs.jkkn.ac.in/#organization" },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': postUrl,
+    },
+    ...(post.cover_image_url ? { image: post.cover_image_url } : {}),
+    ...(post.tags ? { keywords: post.tags } : {}),
+  };
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'JKKN Institutions', item: 'https://jkkn.ac.in/' },
+      { '@type': 'ListItem', position: 2, name: 'Allied Health Sciences', item: siteUrl },
+      { '@type': 'ListItem', position: 3, name: 'Blog', item: `${siteUrl}/blog` },
+      { '@type': 'ListItem', position: 4, name: post.title, item: postUrl },
+    ],
+  };
+
+  return (
+    <div className="min-h-screen bg-white">
+      {preview ? (
+        <div className="sticky top-0 z-[60] bg-amber-400 text-amber-950">
+          <p className="max-w-7xl mx-auto px-4 py-2 text-sm font-semibold">
+            Draft Preview — this post is not published yet and is hidden from search engines.
+          </p>
+        </div>
+      ) : (
+        <>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+          />
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+          />
+        </>
+      )}
+      <Header />
+      <CampusBlogContent
+        post={post}
+        processedContent={processedHtml}
+        tocItems={tocItems}
+        readTime={readTime}
+        wordCount={words}
+        popularPosts={popularPosts}
+        relatedPosts={related}
+        initialComments={comments}
+        commentsVia={{ api: `${MYJKKN_URL}/api/public/blog/comments`, site: blogSiteKey() }}
+        commentFormOpen={post.allow_comments && !preview}
+      />
+      <Footer />
+    </div>
+  );
+}
+
+export default async function CampusBlogPost({ params, searchParams }: PageProps) {
   const { slug } = await params;
+
+  if (blogFromMyJkkn()) {
+    return <MyJkknBlogPost slug={slug} token={previewToken((await searchParams).preview)} />;
+  }
+
   const post = await getPost(slug);
 
   if (!post) notFound();

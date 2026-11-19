@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import { createClient } from '@supabase/supabase-js';
+import { blogFromMyJkkn, listAllPosts } from '@/lib/blog/myjkkn';
 
 const domain = (process.env.NEXT_PUBLIC_SITE_DOMAIN ?? 'ahs.jkkn.ac.in')
   .replace(/^https?:\/\//, '')
@@ -31,12 +32,25 @@ export async function GET() {
   let dynamicPosts: { loc: string; lastmod: string; changefreq: string; priority: string }[] = [];
 
   try {
-    const { data: blogs } = await supabase
-      .from('blogs')
-      .select('slug, category, updated_at, published_at, created_at')
-      .eq('college_id', collegeId)
-      .eq('is_published', true)
-      .order('created_at', { ascending: false });
+    // BLOG_SOURCE=myjkkn: the published posts come from MyJKKN (never throws; empty on an
+    // outage). A post marked "hide from search engines" there is left out.
+    const { data: blogs } = blogFromMyJkkn()
+      ? {
+          data: (await listAllPosts())
+            .filter((p) => !p.seo.noindex)
+            .map((p) => ({
+              slug: p.slug,
+              updated_at: p.updated_at,
+              published_at: p.published_at,
+              created_at: p.created_at,
+            })),
+        }
+      : await supabase
+          .from('blogs')
+          .select('slug, category, updated_at, published_at, created_at')
+          .eq('college_id', collegeId)
+          .eq('is_published', true)
+          .order('created_at', { ascending: false });
 
     if (blogs) {
       // EVERY CMS post renders at /blog/campus/<slug>. There is no category that changes that,
