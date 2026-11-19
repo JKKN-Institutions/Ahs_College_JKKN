@@ -17,6 +17,12 @@ const nextConfig: NextConfig = {
         hostname: '**.supabase.co',
         pathname: '/**',
       },
+      {
+        // Blog images served by MyJKKN (BLOG_SOURCE=myjkkn).
+        protocol: 'https',
+        hostname: 'www.jkkn.ai',
+        pathname: '/api/public/blog/image/**',
+      },
     ],
   },
   async headers() {
