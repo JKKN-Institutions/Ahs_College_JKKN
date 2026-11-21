@@ -205,7 +205,7 @@ function WhyStandOutSection() {
         },
         {
             title: "Clinical Training",
-            desc: "Learners train in hospital settings during clinical postings and the internship year. The college publishes no verified recruiter list, so no hospital is named here; the placement cell can share it on request.",
+            desc: "Learners train during clinical postings and the internship year at partner hospitals including Senthil Multispeciality, Lotus, Erode Medical Center and Olirum Erode Foundation. These are training partners; the college publishes no verified recruiter list, and the placement cell can share recruitment details on request.",
             icon: <Hospital className="w-7 h-7" />
         },
         {
