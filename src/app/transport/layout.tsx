@@ -66,7 +66,7 @@ const faqSchema = {
   "mainEntity": [
     { "@type": "Question", "name": "Does JKKN College provide bus transport for learners?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, JKKN College of Allied Health Sciences provides a well-maintained bus fleet for learners and senior learners from nearby towns and cities." } },
     { "@type": "Question", "name": "What areas does the JKKN college bus service cover?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN buses cover Salem, Erode, Namakkal, Tiruchengode, Komarapalayam, and surrounding areas, ensuring broad accessibility for learners." } },
-    { "@type": "Question", "name": "What is the transport fee at JKKN College?", "acceptedAnswer": { "@type": "Answer", "text": "Transport fees vary by distance and route. Contact JKKN admissions at 9345855001 for current bus fee details and route schedules." } },
+    { "@type": "Question", "name": "What is the transport fee at JKKN College?", "acceptedAnswer": { "@type": "Answer", "text": "The college bus fee is ₹5,500 per year, the same for all routes. Contact JKKN admissions at 9345855001 for route schedules and pick-up points." } },
     { "@type": "Question", "name": "Are there separate buses for boys and girls at JKKN?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN transport is mixed but ensures safety with CCTV cameras on buses and female attendants available to assist girl learners." } },
     { "@type": "Question", "name": "What is the bus timing for JKKN College?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN buses operate on a strict schedule aligned with college hours. Contact the transport office at 9345855001 for exact timings." } }
   ]

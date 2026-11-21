@@ -138,7 +138,8 @@ export default function FeeStructurePage() {
             <Info className="w-4 h-4 text-[#0b6d41] mt-0.5 shrink-0" />
             <span>
               <strong>Government Quota (GQ)</strong> fees: As Per Government Norm.{" "}
-              <strong>Management Quota (MQ)</strong> fees shown are per annum and remain the same across all 4 years of the program.
+              <strong>Management Quota (MQ)</strong> fees shown are per annum, include uniform and hospital training, and remain the same across all 4 years of the program.{" "}
+              <strong>College bus</strong>: ₹5,500 per year for all routes.
             </span>
           </div>
         </div>
