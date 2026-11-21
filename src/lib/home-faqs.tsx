@@ -59,7 +59,7 @@ export const HOME_FAQS: { question: string; answer: ReactNode }[] = [
     },
     {
         question: "What is the salary after B.Sc Allied Health Sciences in India?",
-        answer: <>Salaries for B.Sc Allied Health Sciences graduates in India vary by specialisation, employer and city. JKKN publishes no audited average or highest package, so no figure for this college is stated here. Specializations like <Link href="/cardiac-technology" className="text-[#0b6d41] font-semibold hover:underline">Cardiac Technology</Link> and <Link href="/radiology-imaging-technology" className="text-[#0b6d41] font-semibold hover:underline">Medical Radiology and Imaging</Link> command higher salaries. International placements in the UK, UAE, and Saudi Arabia offer significantly higher packages. With experience, senior technologists earn ₹8-15 LPA in corporate hospital chains.</>
+        answer: <>Salaries for B.Sc Allied Health Sciences graduates in India vary by specialisation, employer and city. JKKN publishes no audited average or highest package, so no figure for this college is stated here. For course-wise roles, see <Link href="/cardiac-technology" className="text-[#0b6d41] font-semibold hover:underline">Cardiac Technology</Link> and <Link href="/radiology-imaging-technology" className="text-[#0b6d41] font-semibold hover:underline">Medical Radiology and Imaging</Link>, and ask the placement cell for current, verifiable pay figures.</>
     },
     {
         question: "Which is better — B.Sc Nursing or B.Sc Allied Health Sciences?",
