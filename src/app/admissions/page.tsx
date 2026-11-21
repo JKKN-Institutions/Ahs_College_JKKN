@@ -115,7 +115,7 @@ const ADMISSION_FAQS: { q: string; a: React.ReactNode }[] = [
         },
         {
             q: "Are scholarships available for AHS Learners?",
-            a: "Yes, the following scholarships are available for AHS Learners: (1) Trust Scholarship (Merit Based) — ₹5,000–₹10,000/year for BC/MBC/DNC/BCM category Learners. (2) Naan Mudhalvan Scholarship — ₹1,000/month for learners who studied in Tamil Medium Government or Government-Aided Schools (Class 6–12). Installment payment options and education loan assistance are also available."
+            a: "Yes, the following scholarships are available for AHS Learners: (1) Trust Scholarship (Merit Based) — ₹5,000–₹10,000/year for BC/MBC/DNC/BCM category Learners. (2) Tamil Pudhalvan scheme (Government of Tamil Nadu) — ₹1,000/month for boys who studied Class 6–12 in Tamil Medium Government or Government-Aided Schools. Installment payment options and education loan assistance are also available."
         },
         {
             q: "What is the placement record at JKKN AHS?",
@@ -625,9 +625,9 @@ function ScholarshipsSection() {
             icon: <Building2 className="w-6 h-6" />
         },
         {
-            title: "Naan Mudhalvan Scholarship",
-            desc: "For all community learners who studied in Tamil Medium Government or Government-Aided Schools from Class 6 to 12. Available for both Boys and Girls.",
-            highlights: ["₹1,000 per month", "Boys & Girls eligible", "Tamil Medium Govt / Govt Aided School (Class 6–12)"],
+            title: "Tamil Pudhalvan Scheme",
+            desc: "Government of Tamil Nadu scheme for boys of all communities who studied in Tamil Medium Government or Government-Aided Schools from Class 6 to 12.",
+            highlights: ["₹1,000 per month", "For boys", "Tamil Medium Govt / Govt Aided School (Class 6–12)"],
             color: "border-[#ffde59]",
             icon: <Award className="w-6 h-6" />
         },
