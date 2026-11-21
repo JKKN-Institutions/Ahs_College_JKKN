@@ -51,7 +51,7 @@ export const HOME_FAQS: { question: string; answer: ReactNode }[] = [
     },
     {
         question: "How much does B.Sc Allied Health Sciences cost in Tamil Nadu?",
-        answer: <>B.Sc Allied Health Sciences fees in Tamil Nadu typically range from ₹50,000 to ₹2,00,000 per year depending on the college and program. At JKKN, Government Quota (GQ) fees are As Per Government Norm. Management Quota (MQ) annual fees range from ₹60,000 to ₹1,70,000 covering tuition, <Link href="/lab" className="text-[#0b6d41] font-semibold hover:underline">learning lab access</Link>, and hospital training. Merit-based scholarships cover up to 50% of fees. The 4-year program (3 years academics + 1 year internship) offers strong return on investment with placement support. JKKN publishes no audited starting salary, so no figure is stated here.</>
+        answer: <>At JKKN, Government Quota (GQ) fees are As Per Government Norm. Management Quota (MQ) annual fees range from ₹60,000 to ₹1,70,000 covering tuition, <Link href="/lab" className="text-[#0b6d41] font-semibold hover:underline">learning lab access</Link>, uniform and hospital training. A Trust scholarship of ₹5,000–₹10,000 per year is available for eligible BC, MBC, DNC and BCM learners; see <Link href="/scholarships" className="text-[#0b6d41] font-semibold hover:underline">scholarships</Link>. The 4-year program (3 years academics + 1 year internship) offers strong return on investment with placement support. JKKN publishes no audited starting salary, so no figure is stated here.</>
     },
     {
         question: "Is NEET required for B.Sc Allied Health Sciences admission?",
